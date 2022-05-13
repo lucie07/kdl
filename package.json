@@ -4,7 +4,7 @@
   "description": "KDL Web Project",
   "scripts": {
     "compose": "docker-compose",
-    "backend:up": "npm run compose up --build",
+    "backend:up": "npm run compose up -- --build",
     "backend:down": "npm run compose down",
     "backend:exec": "npm run compose exec backend",
     "backend:yarn": "npm run backend:exec yarn",
