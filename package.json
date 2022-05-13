@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "KDL Web Project",
   "scripts": {
-    "compose": "docker-compose",
+    "compose": "trap 'echo Stopped; exit 0' SIGINT; docker-compose",
     "backend:up": "npm run compose up -- --build",
     "backend:down": "npm run compose down",
     "backend:exec": "npm run compose exec backend",
