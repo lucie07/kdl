@@ -1,0 +1,24 @@
+{
+  "name": "kdl",
+  "version": "0.1.0",
+  "description": "KDL Web Project",
+  "scripts": {
+    "compose": "docker-compose",
+    "backend:up": "npm run compose up --build",
+    "backend:down": "npm run compose down",
+    "backend:exec": "npm run compose exec backend",
+    "backend:yarn": "npm run backend:exec yarn",
+    "backend:snapshot": "npm run backend:yarn snapshot:create",
+    "backend:snapshot:apply": "npm run backend:yarn snapshot:apply ./snapshots/${npm_config_snapshot}.yaml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingsdigitallab/kdl.git"
+  },
+  "author": "King's Digital Lab",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/kingsdigitallab/kdl/issues"
+  },
+  "homepage": "https://github.com/kingsdigitallab/kdl#readme"
+}

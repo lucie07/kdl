@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  backend:
+    build:
+      dockerfile: docker/local/backend/Dockerfile
+    ports:
+      - 8000:8055
+    volumes:
+      - ./backend:/srv/app
+      - /srv/app/node_modules
+
+  database:
+    volumes:
+      - ./.volumes/postgres_data:/var/lib/postgresql/data
+      - ./.volumes/postgres_backups:/backups

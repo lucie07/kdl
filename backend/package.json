@@ -1,0 +1,18 @@
+{
+  "name": "kdl-backend",
+  "version": "0.1.0",
+  "description": "Backend service for the KDL Web Project",
+  "scripts": {
+    "bootstrap": "directus bootstrap",
+    "start": "directus start",
+    "snapshot:create": "directus schema snapshot --yes ./snapshots/\"$(date \"+%F\")\"-schema-\"$(date \"+%s\")\".yaml",
+    "snapshot:apply": "directus schema apply"
+  },
+  "keywords": [],
+  "author": "King's Digital Lab",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "directus": "^9.10.0",
+    "pg": "^8.7.3"
+  }
+}
