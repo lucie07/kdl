@@ -5,7 +5,7 @@ ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /srv/build
 
-COPY ./package.json /srv/build/
+COPY ./backend/package.json /srv/build/
 
 RUN yarn install && yarn cache clean
 
