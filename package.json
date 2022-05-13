@@ -1,6 +1,6 @@
 {
   "name": "kdl",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "KDL Web Project",
   "scripts": {
     "compose": "docker-compose",
