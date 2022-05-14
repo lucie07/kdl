@@ -1,17 +1,18 @@
-FROM node:16-alpine as build
-
 ARG NODE_ENV=development
+
+FROM node:lts-slim as build
+
 ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /srv/build
 
 COPY ./backend/package.json /srv/build/
 
-RUN yarn install && yarn cache clean
+RUN npm install && npm cache clean --force
 
-ENV PATH="/srv/build/node_modules/.bin:$PATH"
+FROM node:lts-slim as local
 
-FROM node:16-alpine as local
+ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /srv/app
 
@@ -24,6 +25,6 @@ RUN chmod +x /start.sh
 
 ENV PATH="/srv/node_modules/.bin:$PATH"
 
-EXPOSE 1337
+EXPOSE 8055
 
 CMD ["/start.sh"]

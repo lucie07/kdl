@@ -7,9 +7,9 @@
     "backend:up": "npm run compose up -- --build",
     "backend:down": "npm run compose down",
     "backend:exec": "npm run compose exec backend",
-    "backend:yarn": "npm run backend:exec yarn",
-    "backend:snapshot": "npm run backend:yarn snapshot:create",
-    "backend:snapshot:apply": "npm run backend:yarn snapshot:apply ./snapshots/${npm_config_snapshot}.yaml"
+    "backend:pkg": "npm run backend:exec npm",
+    "backend:snapshot": "npm run backend:npm snapshot:create",
+    "backend:snapshot:apply": "npm run backend:npm snapshot:apply ./snapshots/${npm_config_snapshot}.yaml"
   },
   "repository": {
     "type": "git",

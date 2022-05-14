@@ -1,21 +1,20 @@
+ARG NODE_ENV=production
+
 FROM node:16-slim as build
 
-ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /srv/build
 
-COPY ./backend/package.json ./backend/yarn.lock /srv/build/
+COPY ./backend/package.json ./backend/package-lock.json /srv/build/
 
-RUN yarn install && yarn cache clean
-
-ENV PATH="/srv/build/node_modules/.bin:$PATH"
+RUN npm ci && npm cache clean --force
 
 COPY ./backend /srv/build/
 
-RUN yarn build
-
 FROM node:16-slim as production
+
+ENV NODE_ENV=${NODE_ENV}
 
 RUN apt-get update && apt-get install -y \
   tini \
@@ -28,15 +27,15 @@ USER kdl
 
 WORKDIR /srv/app
 
-COPY --from=build --chown=kdl:kdl /srv/build /srv/app
+COPY --from=build --chown=kdl:kdl /srv/build/node_modules /srv/node_modules
 
-COPY ./docker/local/backend/start.sh /start.sh
+COPY ./docker/production/backend/start.sh /start.sh
 RUN chmod +x /start.sh
 
-ENV PATH="/srv/app/node_modules/.bin:$PATH"
+ENV PATH="/srv/node_modules/.bin:$PATH"
 
-EXPOSE 1337
+EXPOSE 8055
 
 ENTRYPOINT ["tini", "--"]
 
-CMD ["node", "directus", "start"]
+CMD ["/start.sh"]

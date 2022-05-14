@@ -1,5 +1,5 @@
 #!/bin/sh
 set -ea
 
-yarn bootstrap
-yarn start
+npm run bootstrap
+npm run start
