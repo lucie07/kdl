@@ -1,6 +1,6 @@
-ARG NODE_ENV=production
-
 FROM node:16-slim as build
+
+ARG NODE_ENV=production
 
 ENV NODE_ENV=${NODE_ENV}
 
@@ -13,6 +13,8 @@ RUN npm ci && npm cache clean --force
 COPY ./backend /srv/build/
 
 FROM node:16-slim as production
+
+ARG NODE_ENV=production
 
 ENV NODE_ENV=${NODE_ENV}
 

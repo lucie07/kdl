@@ -1,6 +1,6 @@
-ARG NODE_ENV=development
-
 FROM node:lts-slim as build
+
+ARG NODE_ENV=development
 
 ENV NODE_ENV=${NODE_ENV}
 
@@ -11,6 +11,8 @@ COPY ./backend/package.json /srv/build/
 RUN npm install && npm cache clean --force
 
 FROM node:lts-slim as local
+
+ARG NODE_ENV=development
 
 ENV NODE_ENV=${NODE_ENV}
 
