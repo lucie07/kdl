@@ -8,8 +8,8 @@
     "backend:down": "npm run compose down",
     "backend:exec": "npm run compose exec backend",
     "backend:pkg": "npm run backend:exec npm",
-    "backend:snapshot": "npm run backend:npm snapshot:create",
-    "backend:snapshot:apply": "npm run backend:npm snapshot:apply ./snapshots/${npm_config_snapshot}.yaml"
+    "backend:snapshot": "npm run backend:pkg run snapshot:create",
+    "backend:snapshot:apply": "npm run backend:pkg run snapshot:apply ./snapshots/${npm_config_snapshot}.yaml"
   },
   "repository": {
     "type": "git",
