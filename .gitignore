@@ -68,5 +68,6 @@ dist
 
 # Project specific ignores
 .volumes
+backend/database/*
 backend/uploads/*
 docker-compose.override.yaml

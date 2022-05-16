@@ -19,6 +19,8 @@ ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
 
 RUN apt-get update && apt-get install -y \
+  libsqlite3-mod-spatialite \
+  sendmail \
   tini \
   && rm -rf /var/lib/apt/lists/*
 
@@ -29,12 +31,12 @@ USER kdl
 
 WORKDIR /srv/app
 
-COPY --from=build --chown=kdl:kdl /srv/build/node_modules /srv/node_modules
+COPY --from=build --chown=kdl:kdl /srv/build/node_modules /srv/app/node_modules
+
+ENV PATH="/srv/app/node_modules/.bin:$PATH"
 
 COPY ./docker/production/backend/start.sh /start.sh
 RUN chmod +x /start.sh
-
-ENV PATH="/srv/node_modules/.bin:$PATH"
 
 EXPOSE 8055
 

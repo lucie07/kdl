@@ -2,8 +2,8 @@ version: "3"
 
 volumes:
   directus_uploads: {}
-  postgres_data: {}
-  postgres_backups: {}
+  database_data: {}
+  database_backups: {}
 
 services:
   backend:
@@ -14,28 +14,8 @@ services:
       - ./backend/.env
     volumes:
       - directus_uploads:/directus/uploads
-    depends_on:
-      - database
-      - cache
-    networks:
-      - kdl
-    restart: unless-stopped
-
-  database:
-    image: postgis/postgis:14-master
-    env_file:
-      - ./backend/.env
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-      - postgres_backups:/backups
-    ports:
-      - 5432:5432
-    networks:
-      - kdl
-    restart: unless-stopped
-
-  cache:
-    image: redis:6
+      - database_data:/srv/database
+      - database_backups:/srv/database/backups
     networks:
       - kdl
     restart: unless-stopped

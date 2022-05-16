@@ -9,8 +9,3 @@ services:
     volumes:
       - ./backend:/srv/app
       - /srv/app/node_modules
-
-  database:
-    volumes:
-      - ./.volumes/postgres_data:/var/lib/postgresql/data
-      - ./.volumes/postgres_backups:/backups
