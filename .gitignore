@@ -67,6 +67,8 @@ typings/
 dist
 
 # Project specific ignores
+.envs/*
+!.envs/*.example
 .volumes
 backend/database/*
 backend/uploads/*
