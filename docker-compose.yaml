@@ -2,8 +2,8 @@ version: "3"
 
 volumes:
   directus_uploads: {}
-  database_data: {}
-  database_backups: {}
+  postgres_data: {}
+  postgres_backups: {}
 
 services:
   backend:
@@ -11,11 +11,31 @@ services:
       context: .
       dockerfile: docker/production/backend/Dockerfile
     env_file:
-      - ./backend/.env
+      - ./.envs/.backend
     volumes:
       - directus_uploads:/directus/uploads
-      - database_data:/srv/database
-      - database_backups:/srv/database/backups
+    depends_on:
+      - database
+      - cache
+    networks:
+      - kdl
+    restart: unless-stopped
+
+  database:
+    image: postgis/postgis:14-master
+    env_file:
+      - ./.envs/.database
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - postgres_backups:/backups
+    ports:
+      - 5432:5432
+    networks:
+      - kdl
+    restart: unless-stopped
+
+  cache:
+    image: redis:6
     networks:
       - kdl
     restart: unless-stopped

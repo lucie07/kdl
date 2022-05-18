@@ -1,7 +1,6 @@
 FROM node:16-slim as build
 
 ARG NODE_ENV=production
-
 ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /srv/build
@@ -15,27 +14,22 @@ COPY ./backend /srv/build/
 FROM node:16-slim as production
 
 ARG NODE_ENV=production
-
 ENV NODE_ENV=${NODE_ENV}
 
 RUN apt-get update && apt-get install -y \
-  libsqlite3-mod-spatialite \
   sendmail \
   tini \
   && rm -rf /var/lib/apt/lists/*
 
-RUN addgroup --system kdl && \
-  adduser --system --ingroup kdl kdl
-
-USER kdl
+USER node
 
 WORKDIR /srv/app
 
-COPY --from=build --chown=kdl:kdl /srv/build/node_modules /srv/app/node_modules
+COPY --from=build --chown=node:node /srv/build /srv/app
 
 ENV PATH="/srv/app/node_modules/.bin:$PATH"
 
-COPY ./docker/production/backend/start.sh /start.sh
+COPY --chown=node:node ./docker/production/backend/start.sh /start.sh
 RUN chmod +x /start.sh
 
 EXPOSE 8055
