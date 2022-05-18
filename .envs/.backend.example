@@ -3,14 +3,21 @@
 
 HOST="0.0.0.0"
 PORT=8055
+# TDOD: Add public url
 PUBLIC_URL="/"
 
 ################################################################################
 ## Database
 
-DB_CLIENT="sqlite3"
-DB_FILENAME="/srv/database/data.db"
+# TODO: Add database settings
+DB_CLIENT = 'pg'
+DB_HOST = 'database'
+DB_PORT = '5432'
+DB_DATABASE = 'backend'
+DB_USER = 'backend'
+DB_PASSWORD = 'backend'
 
+# TODO: Add initial admin user
 ADMIN_EMAIL = 'admin@example.com'
 ADMIN_PASSWORD = 'password'
 
@@ -39,8 +46,9 @@ STORAGE_LOCAL_ROOT="./uploads"
 ################################################################################
 ## Security
 
-KEY="366d0d2b-a7e2-4eb4-a9eb-f53b9b360669"
-SECRET="0zIT7-IxlnkneNrmtQth9eQ5xhQG4aSW"
+# TODO: Add security settings
+KEY=""
+SECRET=""
 
 ACCESS_TOKEN_TTL="15m"
 REFRESH_TOKEN_TTL="7d"
