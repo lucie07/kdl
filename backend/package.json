@@ -15,5 +15,8 @@
     "directus": "^9.10.0",
     "directus-extension-wpslug-interface": "^1.1.0",
     "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
