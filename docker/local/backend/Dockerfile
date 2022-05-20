@@ -5,7 +5,7 @@ ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /srv/build
 
-COPY ./backend/package.json /srv/build/
+COPY ./backend/package.json ./backend/package-lock.json /srv/build/
 
 RUN npm install && npm cache clean --force
 
@@ -16,15 +16,17 @@ RUN \
   sendmail \
   && rm -rf /var/lib/apt/lists/*
 
-RUN echo "update-notifier=false" >> ~/.npmrc
-
 ARG NODE_ENV=development
 ENV NODE_ENV=${NODE_ENV}
 
+RUN mkdir -p /srv/app \
+    && chown node:node /srv/app
+
 USER node
 
+RUN echo "update-notifier=false" >> ~/.npmrc
+
 WORKDIR /srv/app
-VOLUME /srv/app
 
 COPY --from=build --chown=node:node /srv/build/node_modules /srv/app/node_modules
 

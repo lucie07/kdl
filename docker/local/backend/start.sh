@@ -2,4 +2,4 @@
 set -ea
 
 npm run bootstrap
-npm run start
+npx nodemon --exec npm run start
