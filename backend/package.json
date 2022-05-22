@@ -12,6 +12,7 @@
   "author": "King's Digital Lab",
   "license": "MPL-2.0",
   "dependencies": {
+    "@directus/sdk": "^9.11.0",
     "directus": "^9.10.0",
     "directus-extension-wpslug-interface": "^1.1.0",
     "pg": "^8.7.3"
