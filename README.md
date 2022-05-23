@@ -18,7 +18,7 @@ Run the backend:
 
     npm run backend:up
 
-The backend is available at http://localhost:8000/ by default and if no port
+The backend is available at http://localhost:8055/ by default and if no port
 configuration was changed.
 
 #### Data model versioning
