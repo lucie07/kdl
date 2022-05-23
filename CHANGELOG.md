@@ -13,3 +13,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [Docker](https://www.docker.com/) configuration files.
 - Package configuration with scripts to interact with the backend.
 - [Directus slug extensions](https://github.com/dimitrov-adrian/directus-extension-wpslug-interface).
+- Initial [schema.org](https://schema.org) based data model based.
