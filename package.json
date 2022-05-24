@@ -4,12 +4,12 @@
   "description": "KDL Web Project",
   "scripts": {
     "compose": "trap 'echo Stopped; exit 0' SIGINT; docker-compose",
-    "backend:up": "npm run compose up -- --build",
-    "backend:down": "npm run compose down",
-    "backend:exec": "npm run compose exec backend",
-    "backend:pkg": "npm run backend:exec npm",
-    "backend:snapshot": "npm run backend:pkg run snapshot:create",
-    "backend:snapshot:apply": "npm run backend:pkg run snapshot:apply ./snapshots/${npm_config_snapshot}.yaml"
+    "up": "npm run compose up -- --build",
+    "down": "npm run compose down",
+    "exec": "npm run compose exec ${npm_config_service}",
+    "pkg": "npm run exec npm",
+    "cms:snapshot": "npm run pkg --service=cms run snapshot:create",
+    "cms:snapshot:apply": "npm run pkg --service=cms run snapshot:apply ./snapshots/${npm_config_snapshot}.yaml"
   },
   "repository": {
     "type": "git",

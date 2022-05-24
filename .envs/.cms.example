@@ -78,3 +78,10 @@ EMAIL_SENDMAIL_PATH="/usr/sbin/sendmail"
 ## Telemetry
 
 TELEMETRY=false
+
+################################################################################
+## ActiveCollab
+
+AC_BASE_URL = ""
+AC_API_URL = ""
+AC_API_TOKEN = ""

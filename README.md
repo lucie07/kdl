@@ -2,7 +2,7 @@
 
 ## Set up
 
-### Backend
+### CMS
 
 Set up [Docker](https://www.docker.com/):
 
@@ -11,28 +11,28 @@ Set up [Docker](https://www.docker.com/):
 Set up the environment files:
 
     cd .envs
-    cp .backend.example .backend
+    cp .cms.example .cms
     cp .database.example .database
 
-Run the backend:
+Run the stack:
 
-    npm run backend:up
+    npm run up
 
-The backend is available at http://localhost:8055/ by default and if no port
+The cms is available at http://localhost:8055/ by default and if no port
 configuration was changed.
 
 #### Data model versioning
 
 Create a snapshot:
 
-    npm run backend:snapshot
+    npm run cms:snapshot
 
 Apply a snapshot:
 
-    npm run backend:snapshot:apply --snapshot=SNAPSHOT_NAME
+    npm run cms:snapshot:apply --snapshot=SNAPSHOT_NAME
 
 Where `SNAPSHOT_NAME` is the name of the snapshot without path or extension. By default
-the data model snapshots are stored at [backend/snapshots](backend/snapshots/README.md).
+the data model snapshots are stored at [cms/snapshots](cms/snapshots/README.md).
 
 ### Data model
 

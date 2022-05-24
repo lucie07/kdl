@@ -1,7 +1,7 @@
 {
-  "name": "kdl-backend",
+  "name": "kdl-cms",
   "version": "0.1.0",
-  "description": "Backend service for the KDL Web Project",
+  "description": "Headless CMS service for the KDL Web Project",
   "scripts": {
     "bootstrap": "directus bootstrap",
     "start": "directus start",
@@ -12,7 +12,6 @@
   "author": "King's Digital Lab",
   "license": "MPL-2.0",
   "dependencies": {
-    "@directus/sdk": "^9.11.0",
     "directus": "^9.10.0",
     "directus-extension-wpslug-interface": "^1.1.0",
     "pg": "^8.7.3"

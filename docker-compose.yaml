@@ -6,12 +6,12 @@ volumes:
   postgres_backups: {}
 
 services:
-  backend:
+  cms:
     build:
       context: .
-      dockerfile: docker/production/backend/Dockerfile
+      dockerfile: docker/production/cms/Dockerfile
     env_file:
-      - ./.envs/.backend
+      - ./.envs/.cms
     volumes:
       - directus_uploads:/directus/uploads
     depends_on:

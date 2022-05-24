@@ -5,7 +5,7 @@ ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /srv/build
 
-COPY ./backend/package.json ./backend/package-lock.json /srv/build/
+COPY ./cms/package.json ./cms/package-lock.json /srv/build/
 
 RUN npm install && npm cache clean --force
 
@@ -20,7 +20,7 @@ ARG NODE_ENV=development
 ENV NODE_ENV=${NODE_ENV}
 
 RUN mkdir -p /srv/app \
-    && chown node:node /srv/app
+  && chown node:node /srv/app
 
 USER node
 
@@ -32,7 +32,7 @@ COPY --from=build --chown=node:node /srv/build/node_modules /srv/app/node_module
 
 ENV PATH="/srv/app/node_modules/.bin:$PATH"
 
-COPY --chown=node:node ./docker/local/backend/start.sh /start.sh
+COPY --chown=node:node ./docker/local/cms/start.sh /start.sh
 RUN chmod +x /start.sh
 
 EXPOSE 8055

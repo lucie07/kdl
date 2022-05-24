@@ -70,6 +70,6 @@ dist
 .envs/*
 !.envs/*.example
 .volumes
-backend/database/*
-backend/uploads/*
+cms/database/*
+cms/uploads/*
 docker-compose.override.yaml

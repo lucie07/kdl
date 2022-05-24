@@ -1,13 +1,13 @@
 version: "3"
 
 services:
-  backend:
+  cms:
     build:
-      dockerfile: docker/local/backend/Dockerfile
+      dockerfile: docker/local/cms/Dockerfile
     ports:
       - 8055:8055
     volumes:
-      - ./backend:/srv/app
+      - ./cms:/srv/app
       - /srv/app/node_modules
 
   database:

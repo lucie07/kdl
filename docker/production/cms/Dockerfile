@@ -5,11 +5,11 @@ ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /srv/build
 
-COPY ./backend/package.json ./backend/package-lock.json /srv/build/
+COPY ./cms/package.json ./cms/package-lock.json /srv/build/
 
 RUN npm ci && npm cache clean --force
 
-COPY ./backend /srv/build/
+COPY ./cms /srv/build/
 
 FROM node:16-slim as production
 
@@ -29,7 +29,7 @@ COPY --from=build --chown=node:node /srv/build /srv/app
 
 ENV PATH="/srv/app/node_modules/.bin:$PATH"
 
-COPY --chown=node:node ./docker/production/backend/start.sh /start.sh
+COPY --chown=node:node ./docker/production/cms/start.sh /start.sh
 RUN chmod +x /start.sh
 
 EXPOSE 8055

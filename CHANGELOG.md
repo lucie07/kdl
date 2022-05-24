@@ -9,8 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- [Directus](https://docs.directus.io/) backend.
+- [Directus](https://docs.directus.io/) headless CMS.
 - [Docker](https://www.docker.com/) configuration files.
-- Package configuration with scripts to interact with the backend.
+- Package configuration with scripts to interact with the stack.
 - [Directus slug extensions](https://github.com/dimitrov-adrian/directus-extension-wpslug-interface).
 - Initial [schema.org](https://schema.org) based data model based.
