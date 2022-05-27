@@ -37,13 +37,14 @@ the data model snapshots are stored at [cms/snapshots](cms/snapshots/README.md).
 ### Data model
 
 This data model is based on the [schema.org](https://schema.org/) vocabulary.
+Local customisations are prefixed with `kdl`.
 
 ```mermaid
 erDiagram
     AGENT }o--o{ LINKROLE: url
     AGENT ||..o{ ORGANISATION: is
-    AGENT }o--o{ ORGANISATION: memberOf
     AGENT ||..o{ PERSON: is
+    AGENT }o--o{ kdlROLE: memberOf
     AGENT {
         string name
         string alternateName
@@ -75,7 +76,7 @@ erDiagram
     PROJECT }o--o{ LINKROLE: url
     PROJECT ||--o{ ORGANISATION: department
     PROJECT }o--o{ AGENT: funder
-    PROJECT }o--o{ AGENT: member
+    PROJECT }o--o{ kdlROLE: member
     PROJECT }o--o{ PROJECT: relatedTo
     PROJECT {
         string name
@@ -85,14 +86,19 @@ erDiagram
         text description
     }
 
-    ROLE ||..o{ LINKROLE: is
-    ROLE {
+    kdlROLE ||--|| AGENT: agent
+    kdlROLE ||--|| ORGANISATION: inOrganisation
+    kdlROLE ||--|| PROJECT: inProject
+    kdlROLE {
         string name
         date startDate
         date endDate
     }
 
     LINKROLE {
+        string name
+        date startDate
+        date endDate
         string url
     }
 
