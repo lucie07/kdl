@@ -1,7 +1,8 @@
 version: "3"
 
 volumes:
-  directus_uploads: {}
+  cms_uploads: {}
+  data_data: {}
   postgres_data: {}
   postgres_backups: {}
 
@@ -13,13 +14,27 @@ services:
     env_file:
       - ./.envs/.cms
     volumes:
-      - directus_uploads:/directus/uploads
+      - cms_uploads:/directus/uploads
     depends_on:
       - database
       - cache
     networks:
       - kdl
     restart: unless-stopped
+
+  data:
+    build:
+      context: .
+      dockerfile: docker/production/data/Dockerfile
+    env_file:
+      - ./.envs/.data
+    volumes:
+      - data_data:/srv/app/data
+    depends_on:
+      - cms
+      - database
+    networks:
+      - kdl
 
   database:
     image: postgis/postgis:14-master

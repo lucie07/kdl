@@ -10,6 +10,13 @@ services:
       - ./cms:/srv/app
       - /srv/app/node_modules
 
+  data:
+    build:
+      dockerfile: docker/local/data/Dockerfile
+    volumes:
+      - ./data:/srv/app
+      - /srv/app/node_modules
+
   database:
     volumes:
       - ./.volumes/postgres_data:/var/lib/postgresql/data

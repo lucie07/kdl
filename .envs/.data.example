@@ -1,0 +1,14 @@
+################################################################################
+## Directus
+
+# TODO: Add Directus API URL, use cms if running in Docker
+DIRECTUS_URL="http://0.0.0.0:8055/"
+# TODO: Create an access token in the user admin and set it here
+DIRECTUS_ACCESS_TOKEN=""
+
+################################################################################
+## ActiveCollab
+
+# TODO: Add ActiveCollab API URL and token
+AC_API_URL = ""
+AC_API_TOKEN = ""
