@@ -2,9 +2,22 @@
 
 ## Set up
 
-### CMS
+### Dependencies
 
-Set up [Docker](https://www.docker.com/):
+- [Docker](https://www.docker.com/)
+- [Node](https://nodejs.org/) 16
+
+1. Install:
+
+   npm install
+
+2. Install the git hooks:
+
+   npx simple-git-hooks
+
+### CMS module
+
+Set up Docker:
 
     cp docker-compose.override.yaml.example docker-compose.override.yaml
 
@@ -37,14 +50,15 @@ the data model snapshots are stored at [cms/snapshots](cms/snapshots/README.md).
 ### Data model
 
 This data model is based on the [schema.org](https://schema.org/) vocabulary.
-Local customisations are prefixed with `kdl`.
+Local customisations are prefixed with `KDL` and models internal to the CMS
+are prefixed with `CMS`.
 
 ```mermaid
 erDiagram
     AGENT }o--o{ LINKROLE: url
     AGENT ||..o{ ORGANISATION: is
     AGENT ||..o{ PERSON: is
-    AGENT }o--o{ kdlROLE: memberOf
+    AGENT }o--o{ KDLROLE: memberOf
     AGENT {
         string name
         string alternateName
@@ -52,7 +66,6 @@ erDiagram
 
     }
 
-    ORGANISATION ||--o| ORGANISATION: department
     ORGANISATION ||--o| ORGANISATION: parentOrganisation
     ORGANISATION {
         date foundingDate
@@ -72,11 +85,11 @@ erDiagram
 
     PROJECT ||--|| DEFINEDTERM: creativeWorkStatus
     PROJECT }o--o{ DEFINEDTERM: keywords
-    PROJECT ||--o| IMAGE: image
+    PROJECT ||--o| cmsIMAGE: image
     PROJECT }o--o{ LINKROLE: url
     PROJECT ||--o{ ORGANISATION: department
     PROJECT }o--o{ AGENT: funder
-    PROJECT }o--o{ kdlROLE: member
+    PROJECT }o--o{ KDLROLE: member
     PROJECT }o--o{ PROJECT: relatedTo
     PROJECT {
         string name
@@ -86,10 +99,10 @@ erDiagram
         text description
     }
 
-    kdlROLE ||--|| AGENT: agent
-    kdlROLE ||--|| ORGANISATION: inOrganisation
-    kdlROLE ||--|| PROJECT: inProject
-    kdlROLE {
+    KDLROLE ||--|| AGENT: agent
+    KDLROLE ||--|| ORGANISATION: inOrganisation
+    KDLROLE ||--|| PROJECT: inProject
+    KDLROLE {
         string name
         date startDate
         date endDate
@@ -105,7 +118,7 @@ erDiagram
     WEBPAGE ||--|{ AGENT: author
     WEBPAGE }o--o{ AGENT: contributor
     WEBPAGE ||--o{ DEFINEDTERM: keywords
-    WEBPAGE ||--o| IMAGE: image
+    WEBPAGE ||--o| CMSIMAGE: image
     WEBPAGE }o--o{ AGENT: about
     WEBPAGE }o--o{ PROJECT: about
     WEBPAGE ||--|| WEBPAGE: isPartOf
