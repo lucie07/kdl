@@ -293,6 +293,11 @@ class ProjectImporter {
     });
   }
 
+  /**
+   * @description Convert a key/value object to a Directus query filter.
+   * @param {Object} filter - The filter to convert.
+   * @returns {Object}
+   */
   getQueryFilter(filter) {
     if (!filter || typeof filter !== "object") {
       return {};
@@ -303,11 +308,35 @@ class ProjectImporter {
     }))[0];
   }
 
+  /**
+   * @description Get or create an agent from/in Directus.
+   * @param {String} name - The name of the agent.
+   * @param {String} type - The type of the agent.
+   * @param {Object} filter - The filter to use to find the agent, a key/value object.
+   * @param {Object} data - The data to use to create the agent.
+   * @returns {Promise<Object>}
+   */
   getOrCreateAgent(name, type, filter, data) {
     if (!name || !type || !filter || !data) {
       return Promise.reject(
         new Error("No name, type, filter or data provided")
       );
+    }
+
+    if (typeof name !== "string" || name.length === 0) {
+      return Promise.reject(new Error("No valid name provided"));
+    }
+
+    if (typeof type !== "string" || type.length === 0) {
+      return Promise.reject(new Error("No valid type provided"));
+    }
+
+    if (typeof filter !== "object" || Object.keys(filter).length === 0) {
+      return Promise.reject(new Error("No valid filter provided"));
+    }
+
+    if (typeof data !== "object" || Object.keys(data).length === 0) {
+      return Promise.reject(new Error("No valid data provided"));
     }
 
     return this.getOrCreateItem("agent", filter, data).then((obj) => {
@@ -316,9 +345,19 @@ class ProjectImporter {
     });
   }
 
+  /**
+   * @description Get or create an organisation and parent organisation from/in
+   * Directus.
+   * @param {String} name - The name of the organisation.
+   * @returns {Promise<Object>}
+   */
   getOrCreateDepartment(name) {
     if (!name) {
-      return Promise.reject(new Error("No name, filter or data provided"));
+      return Promise.reject(new Error("No name provided"));
+    }
+
+    if (typeof name !== "string" || name.length === 0) {
+      return Promise.reject(new Error("No valid name provided"));
     }
 
     let [company, department] = name.split(":");

@@ -363,4 +363,179 @@ describe("ProjectImporter", () => {
       expect(queryFilter).toEqual({ name: { _eq: filter.name } });
     });
   });
+
+  describe("getOrCreateAgent", () => {
+    it("throws an error if no parameters  given", async () => {
+      await expect(importer.getOrCreateAgent()).rejects.toThrowError();
+      await expect(importer.getOrCreateAgent("name")).rejects.toThrowError();
+      await expect(
+        importer.getOrCreateAgent("name", "type")
+      ).rejects.toThrowError();
+      await expect(
+        importer.getOrCreateAgent("name", "type", {})
+      ).rejects.toThrowError();
+    });
+
+    it("throws an error if no valid parameters are given", async () => {
+      await expect(
+        importer.getOrCreateAgent("", "type", { a: 1 }, { b: 2 })
+      ).rejects.toThrowError();
+      await expect(
+        importer.getOrCreateAgent(1, "type", { a: 1 }, { b: 2 })
+      ).rejects.toThrowError();
+      await expect(
+        importer.getOrCreateAgent("name", "", { a: 1 }, { b: 2 })
+      ).rejects.toThrowError();
+      await expect(
+        importer.getOrCreateAgent("name", 2, { a: 1 }, { b: 2 })
+      ).rejects.toThrowError();
+      await expect(
+        importer.getOrCreateAgent("name", "type", {}, { b: 2 })
+      ).rejects.toThrowError();
+      await expect(
+        importer.getOrCreateAgent("name", "type", 1, { b: 2 })
+      ).rejects.toThrowError();
+      await expect(
+        importer.getOrCreateAgent("name", "type", { a: 1 }, {})
+      ).rejects.toThrowError();
+      await expect(
+        importer.getOrCreateAgent("name", "type", { a: 1 }, "data")
+      ).rejects.toThrowError();
+    });
+
+    it("gets the agent if it exists", async () => {
+      const collection = "person";
+      const filter = { name: "name" };
+
+      nock(DIRECTUS_API_URL)
+        .get(
+          `/items/agent?filter=${JSON.stringify(
+            importer.getQueryFilter(filter)
+          )}`
+        )
+        .reply(200, { data: [{ id: 1, name: filter.name }] });
+      nock(DIRECTUS_API_URL)
+        .get(
+          `/items/${collection}?filter=${JSON.stringify(
+            importer.getQueryFilter({ agent: 1 })
+          )}`
+        )
+        .reply(200, { data: [{ id: 1, name: filter.name }] });
+
+      const item = await importer.getOrCreateAgent(
+        filter.name,
+        collection,
+        filter,
+        { x: 1 }
+      );
+      expect(item).toBeDefined();
+      expect(item.name).toEqual(filter.name);
+    });
+
+    it("creates the agent if it doesn't exist", async () => {
+      const collection = "person";
+      const filter = { name: "name" };
+
+      nock(DIRECTUS_API_URL)
+        .get(
+          `/items/agent?filter=${JSON.stringify(
+            importer.getQueryFilter(filter)
+          )}`
+        )
+        .reply(200, { data: [] });
+      nock(DIRECTUS_API_URL)
+        .post("/items/agent")
+        .reply(200, { data: { id: 1, name: filter.name } });
+      nock(DIRECTUS_API_URL)
+        .get(
+          `/items/${collection}?filter=${JSON.stringify(
+            importer.getQueryFilter({ agent: 1 })
+          )}`
+        )
+        .reply(200, { data: [] });
+      nock(DIRECTUS_API_URL)
+        .post(`/items/${collection}`)
+        .reply(200, { data: { id: 1, name: filter.name } });
+
+      const item = await importer.getOrCreateAgent(
+        filter.name,
+        collection,
+        filter,
+        { x: 1 }
+      );
+      expect(item).toBeDefined();
+      expect(item.name).toEqual(filter.name);
+    });
+  });
+
+  describe("getOrCreateDepartment", () => {
+    it("it throws an error if no name is given", async () => {
+      await expect(importer.getOrCreateDepartment()).rejects.toThrowError();
+    });
+
+    it("it throws an error if the name is invalid", async () => {
+      await expect(importer.getOrCreateDepartment("")).rejects.toThrowError();
+      await expect(importer.getOrCreateDepartment(1)).rejects.toThrowError();
+    });
+
+    it("gets or creates the parent organisation if the name doesn't have a `:``", async () => {
+      const filter = { name: "name" };
+
+      nock(DIRECTUS_API_URL)
+        .get(
+          `/items/agent?filter=${JSON.stringify(
+            importer.getQueryFilter(filter)
+          )}`
+        )
+        .reply(200, { data: [{ id: 1, name: filter.name }] });
+      nock(DIRECTUS_API_URL)
+        .get(
+          `/items/organisation?filter=${JSON.stringify(
+            importer.getQueryFilter({ agent: 1 })
+          )}`
+        )
+        .reply(200, { data: [{ id: 1, name: filter.name }] });
+
+      const item = await importer.getOrCreateDepartment(filter.name);
+      expect(item).toBeDefined();
+      expect(item.name).toEqual(filter.name);
+    });
+
+    it("gets or creates a parent organisation and sub-organisation", async () => {
+      const name = "parent: sub";
+      nock(DIRECTUS_API_URL)
+        .get(
+          `/items/agent?filter=${JSON.stringify(
+            importer.getQueryFilter({ name: "parent" })
+          )}`
+        )
+        .reply(200, { data: [{ id: 1, name: "parent" }] });
+      nock(DIRECTUS_API_URL)
+        .get(
+          `/items/organisation?filter=${JSON.stringify(
+            importer.getQueryFilter({ agent: 1 })
+          )}`
+        )
+        .reply(200, { data: [{ id: 1, name: "parent" }] });
+
+      nock(DIRECTUS_API_URL)
+        .get(
+          `/items/agent?filter=${JSON.stringify(
+            importer.getQueryFilter({ name: "sub" })
+          )}`
+        )
+        .reply(200, { data: [{ id: 2, name: "sub" }] });
+      nock(DIRECTUS_API_URL)
+        .get(
+          `/items/organisation?filter=${JSON.stringify(
+            importer.getQueryFilter({ agent: 2 })
+          )}`
+        )
+        .reply(200, { data: [{ id: 2, name: "sub" }] });
+
+      const item = await importer.getOrCreateDepartment(name);
+      expect(item).toBeDefined();
+      expect(item.name).toEqual("sub");
+    });
+  });
 });
