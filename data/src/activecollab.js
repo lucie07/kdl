@@ -1,7 +1,3 @@
-const {
-  cacheAdapterEnhancer,
-  throttleAdapterEnhancer,
-} = require("axios-extensions");
 const axios = require("axios");
 const https = require("https");
 
@@ -10,26 +6,14 @@ class ActiveCollab {
    * @description Create a new ActiveCollab object.
    * @param {string} apiURL - The URL of the ActiveCollab API.
    * @param {string} apiToken - The API token to use for authentication.
-   * @param {string} [throttle=1000] - The number of milliseconds to throttle requests.
    */
-  constructor(apiURL, apiToken, throttle = 1000) {
+  constructor(apiURL, apiToken) {
     this.apiURL = apiURL;
     this.apiToken = apiToken;
 
-    const adapter =
-      throttle > 0
-        ? throttleAdapterEnhancer(
-            cacheAdapterEnhancer(axios.defaults.adapter, {
-              threshold: throttle,
-            })
-          )
-        : axios.defaults.adapter;
-
     this.api = axios.create({
       baseURL: this.apiURL,
-      headers: { common: this.headers },
-      adapter: adapter,
-      timeout: 30 * 60 * 1000,
+      headers: this.headers,
       httpsAgent: new https.Agent({ keepAlive: true }),
     });
   }
