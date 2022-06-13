@@ -7,13 +7,13 @@
 - [Docker](https://www.docker.com/)
 - [Node](https://nodejs.org/) 16
 
-1. Install:
+Install the node packages:
 
-   npm install
+    npm install
 
-2. Install the git hooks:
+Install the git hooks:
 
-   npx simple-git-hooks
+    npx simple-git-hooks
 
 ### CMS module
 
