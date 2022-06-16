@@ -1,0 +1,19 @@
+{
+  "name": "kdl-frontend",
+  "version": "0.1.0",
+  "description": "Frontend for the KDL project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "King's Digital Lab",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "dotenv": "^16.0.1"
+  },
+  "dependencies": {
+    "@directus/sdk": "^9.12.2"
+  }
+}
