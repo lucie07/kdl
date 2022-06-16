@@ -1,3 +1,5 @@
+.DS_Store
+
 # Logs
 logs
 *.log
@@ -72,4 +74,5 @@ dist
 .volumes
 cms/database/*
 cms/uploads/*
+frontend/_site
 docker-compose.override.yaml
