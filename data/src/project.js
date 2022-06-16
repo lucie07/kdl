@@ -1,4 +1,5 @@
 const { parse } = require("csv-parse");
+const slugify = require("slugify");
 const fs = require("fs");
 
 class ProjectImporter {
@@ -147,6 +148,7 @@ class ProjectImporter {
           resolve({
             ...project,
             name: acProject.name,
+            slug: slugify(acProject.name),
             creativeWorkStatus: labels[acProject.label_id],
             department: acCompany.name,
           })
@@ -241,6 +243,7 @@ class ProjectImporter {
           filter = { name: project.name };
           this.getOrCreateItem("project", filter, {
             ...filter,
+            slug: project.slug,
             creativeWorkStatus: definedTerm.id,
             department: department ? department.id : null,
             funder: funder ? [{ agent_id: { id: funder.agent } }] : [],
