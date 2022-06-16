@@ -4,5 +4,5 @@ pagination:
   data: projects
   size: 1
   alias: project
-permalink: "projects/{{ project.name | slugify }}/"
+permalink: "projects/{{ project.slug }}/"
 ---

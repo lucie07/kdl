@@ -148,13 +148,26 @@ class ProjectImporter {
           resolve({
             ...project,
             name: acProject.name,
-            slug: slugify(acProject.name),
+            slug: this.getSlug(acProject.name),
             creativeWorkStatus: labels[acProject.label_id],
             department: acCompany.name,
           })
         )
         .catch((err) => reject(err));
     });
+  }
+
+  /**
+   * @description Generate a slug for a project name.
+   * @param {String} name - The name of the project.
+   * @returns {String}
+   */
+  getSlug(name) {
+    if (!name) {
+      return "";
+    }
+
+    return slugify(name, { remove: /[*+~.()'"!:@]/g, lower: true });
   }
 
   /**
