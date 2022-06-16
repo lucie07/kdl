@@ -24,7 +24,8 @@
     "lint:fix": "npm run lint -- --fix",
     "prettier": "prettier . --check",
     "prettier:fix": "npm run prettier -- --write",
-    "format": "npm run prettier:fix && npm run lint:fix"
+    "format": "npm run prettier:fix && npm run lint:fiX",
+    "test": "npm run test --workspaces --if-present"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.18.2",
@@ -41,6 +42,11 @@
   },
   "lint-staged": {
     "*.{js}": "npm run format",
-    "*.{md,yaml}": "prettier --write"
-  }
+    "*.{md,yaml}": "npm run prettier:fix"
+  },
+  "workspaces": [
+    "frontend",
+    "cms",
+    "data"
+  ]
 }

@@ -8,7 +8,7 @@
     "test": "jest --coverage"
   },
   "bin": {
-    "kdl-data": "./src/cli.js"
+    "kdl-data": "src/cli.js"
   },
   "dependencies": {
     "@directus/sdk": "^9.11.0",
@@ -21,5 +21,17 @@
   "devDependencies": {
     "jest": "^28.1.1",
     "nock": "^13.2.6"
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingsdigitallab/kdl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kingsdigitallab/kdl/issues"
+  },
+  "homepage": "https://github.com/kingsdigitallab/kdl#readme"
 }

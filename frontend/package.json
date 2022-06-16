@@ -17,5 +17,13 @@
   },
   "dependencies": {
     "@directus/sdk": "^9.12.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingsdigitallab/kdl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kingsdigitallab/kdl/issues"
+  },
+  "homepage": "https://github.com/kingsdigitallab/kdl#readme"
 }
