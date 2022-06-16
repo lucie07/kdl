@@ -93,6 +93,7 @@ erDiagram
     PROJECT }o--o{ PROJECT: relatedTo
     PROJECT {
         string name
+        string slug
         string alternateName
         date foundingDate
         date dissolutionDate
