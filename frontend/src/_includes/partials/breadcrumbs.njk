@@ -1,0 +1,2 @@
+{% set navPages = collections.all | eleventyNavigationBreadcrumb(navKey, { includeSelf: true }) %}
+{{ navPages | eleventyNavigationToHtml | safe }}

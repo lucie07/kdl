@@ -3,5 +3,13 @@ layout: layouts/base.njk
 templateClass: tmpl-home
 ---
 
-<h1>{{ project.name }}</h1>
-{{ project.creativeWorkStatus.name }}
+<header>
+  {% set navKey = "Projects" %}
+  {% include "partials/breadcrumbs.njk" %}
+  <h1>{{ project.name }}</h1>
+</header>
+<section>
+    <dl>
+    {% include "partials/project.njk" %}
+    </dl>
+</section>
