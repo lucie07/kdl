@@ -1,4 +1,5 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const pluginSEO = require("eleventy-plugin-seo");
 const { Directus } = require("@directus/sdk");
 
 require("dotenv").config();
@@ -12,6 +13,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("public");
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(pluginSEO, require("./src/_data/seo.json"));
 
   eleventyConfig.addGlobalData("directus", getDirectus);
 

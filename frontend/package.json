@@ -14,7 +14,8 @@
     "@11ty/eleventy": "^1.0.1",
     "@11ty/eleventy-navigation": "^0.3.3",
     "debug": "^4.3.4",
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.1",
+    "eleventy-plugin-seo": "^0.5.2"
   },
   "dependencies": {
     "@directus/sdk": "^9.12.2"
