@@ -26,6 +26,7 @@ Set up the environment files:
     cd .envs
     cp .cms.example .cms
     cp .database.example .database
+    cp .etl.example .etl
 
 Run the stack:
 

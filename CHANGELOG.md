@@ -14,5 +14,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Package configuration with scripts to interact with the stack.
 - [Directus slug extensions](https://github.com/dimitrov-adrian/directus-extension-wpslug-interface).
 - Initial [schema.org](https://schema.org) based data model based.
-- Data service to manage data imports.
+- ETL service to manage data imports.
 - [11ty](https://www.11ty.dev) frontend app.

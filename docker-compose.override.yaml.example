@@ -10,11 +10,11 @@ services:
       - ./cms:/srv/app
       - /srv/app/node_modules
 
-  data:
+  etl:
     build:
-      dockerfile: docker/local/data/Dockerfile
+      dockerfile: docker/local/etl/Dockerfile
     volumes:
-      - ./data:/srv/app
+      - ./etl:/srv/app
       - /srv/app/node_modules
 
   database:

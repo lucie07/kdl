@@ -2,7 +2,7 @@ version: "3"
 
 volumes:
   cms_uploads: {}
-  data_data: {}
+  etl_data: {}
   postgres_data: {}
   postgres_backups: {}
 
@@ -22,14 +22,14 @@ services:
       - kdl
     restart: unless-stopped
 
-  data:
+  etl:
     build:
       context: .
-      dockerfile: docker/production/data/Dockerfile
+      dockerfile: docker/production/etl/Dockerfile
     env_file:
-      - ./.envs/.data
+      - ./.envs/.etl
     volumes:
-      - data_data:/srv/app/data
+      - etl_data:/srv/app/data
     depends_on:
       - cms
       - database
