@@ -5,7 +5,7 @@ ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /srv/build
 
-COPY ./data/package.json ./data/package-lock.json /srv/build/
+COPY ./etl/package.json ./etl/package-lock.json /srv/build/
 
 RUN npm install && npm cache clean --force
 
