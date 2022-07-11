@@ -1,14 +1,14 @@
 {
-  "name": "kdl-data",
+  "name": "kdl-etl",
   "version": "0.1.0",
-  "description": "Data CLI for the KDL Web Project",
+  "description": "ETL CLI for the KDL Web Project",
   "author": "King's Digital Lab",
   "license": "MPL-2.0",
   "scripts": {
     "test": "jest --coverage"
   },
   "bin": {
-    "kdl-data": "src/cli.js"
+    "kdl-etl": "src/cli.js"
   },
   "dependencies": {
     "@directus/sdk": "^9.11.0",
@@ -16,6 +16,7 @@
     "commander": "^9.3.0",
     "csv-parse": "^5.1.0",
     "dotenv": "^16.0.1",
+    "lodash": "^4.17.21",
     "slugify": "^1.6.5"
   },
   "devDependencies": {
