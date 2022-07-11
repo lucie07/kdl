@@ -1,19 +1,24 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-home
+permalink: "projects/{{ pagination.pageNumber }}"
 ---
 
 <header>
-  {% set navKey = eleventyNavigation.key %}
-  {% include "partials/breadcrumbs.njk" %}
+  {% set navKey = eleventyNavigation.key %} {% include
+  "partials/breadcrumbs.njk" %}
   <h1>Projects</h1>
 </header>
-<section>
-<dl>
-  {%- for project in projects -%}
-    <dt>Project name</dt>
-    <dd><a href="/projects/{{ project.slug }}/">{{ project.name }}</a></dd>
-    {% include "partials/project.njk" %}
+
+<ul>
+  {%- for project in paginatedProjects -%}
+  <li>
+    <a href="/projects/{{ project.slug }}/">
+      <h2>{{ project.name }}</h2>
+      {% include "partials/project.njk" %}
+    </a>
+  </li>
   {%- endfor -%}
-</dl>
-</section>
+</ul>
+
+{% set label = "Projects" %} {% include "partials/pagination.njk" %}

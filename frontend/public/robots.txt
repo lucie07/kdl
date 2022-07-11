@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Hosts
+Host: https://kdl.kcl.ac.uk/
+
+# Sitemap
+Sitemap: https://kdl.kcl.ac.uk/sitemap.xml
