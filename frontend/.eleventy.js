@@ -4,13 +4,13 @@ const { Directus } = require("@directus/sdk");
 
 require("dotenv").config();
 
-const getDirectus = () => {
+function getDirectus() {
   return new Directus(process.env.DIRECTUS_URL);
-};
+}
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setTemplateFormats(["html", "njk", "md"]);
-  eleventyConfig.addPassthroughCopy("public");
+  eleventyConfig.addPassthroughCopy({ public: "/" });
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(pluginSEO, require("./src/_data/seo.json"));
@@ -27,6 +27,7 @@ module.exports = (eleventyConfig) => {
     dir: {
       input: "src",
       includes: "_includes",
+      output: "_site",
     },
   };
 };
