@@ -13,7 +13,7 @@
       {%- else -%}Previous
       {%- endif -%}
     </li>
-    <li>Page {{ pagination.pageNumber }} of {{ pagination.pages.length }}</li>
+    <li>Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</li>
     <li>
       {%- if pagination.href.next -%}
       <a href="{{ pagination.href.next }}">Next</a>
