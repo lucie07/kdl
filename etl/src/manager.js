@@ -77,7 +77,7 @@ class Manager {
           alternateName: project.Acronym,
           pi: project.PI,
           funder: project.Funder,
-          team: this.parseList(project["Project Team"]),
+          team: this.parseList(project["KDL Project Team"]),
           url: project["Project URL"],
         }));
 
@@ -92,7 +92,8 @@ class Manager {
 
     return string
       .split(",")
-      .map((name) => name.trim().replace(/[\[\]\"]/g, "")); // eslint-disable-line
+      .map((name) => name.trim().replace(/[\[\]\"]/g, ""))
+      .filter((name) => name.length > 0); // eslint-disable-line
   }
 
   /**
