@@ -6,10 +6,31 @@ templateClass: tmpl-home
 <header>
   {% set navKey = "Projects" %}
   {% include "partials/breadcrumbs.njk" %}
-  <h1>{{ project.name }}</h1>
+  <h1>
+    {{- project.name }}
+    {%- if project.alternateName %} <span>{{ project.alternateName }}</span>{% endif -%}
+  </h1>
 </header>
 <section>
-  <dl>
-    {% include "partials/project.njk" %}
-  </dl>
+  {% include "partials/project.njk" %}
+
+  {% if project.member %}
+  <h2>Project team</h2>
+  <ul>
+    {% for member in project.member %}
+    <li>{{ member.agent.name }}: {{ member.name }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if project.url %}
+  <h2>URLs</h2>
+  <ul>
+    {% for url in project.url %}
+    <li>
+      <a href="{{ url.linkrole_id.url }}">{{ url.linkrole_id.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
 </section>
