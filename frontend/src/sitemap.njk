@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
   {% for page in collections.all %}
   <url>
     <loc>https://kdl.kcl.ac.uk{{ page.url }}</loc>
-    <lastmod>{% getCurrentDate page.date %}</lastmod>
+    <lastmod>{{ page.date }}</lastmod>
   </url>
   {% endfor %}
 </urlset>
