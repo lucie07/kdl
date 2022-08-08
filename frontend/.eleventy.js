@@ -1,6 +1,8 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const pluginSEO = require("eleventy-plugin-seo");
 const { Directus } = require("@directus/sdk");
+const path = require("node:path");
+const sass = require("sass");
 
 require("dotenv").config();
 
@@ -21,6 +23,23 @@ module.exports = (eleventyConfig) => {
     if (!id) return null;
 
     return `${process.env.DIRECTUS_URL}/assets/${id}`;
+  });
+
+  // https://www.11ty.dev/docs/languages/custom/#example-add-sass-support-to-eleventy
+  eleventyConfig.addTemplateFormats("scss");
+  eleventyConfig.addExtension("scss", {
+    outputFileExtension: "css",
+    style: "compressed",
+    compile: async function (inputContent, inputPath) {
+      const parsed = path.parse(inputPath);
+      const result = sass.compileString(inputContent, {
+        loadPaths: [parsed.dir || ".", this.config.dir.includes],
+      });
+
+      return (data) => {
+        return result.css;
+      };
+    },
   });
 
   return {

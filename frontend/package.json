@@ -18,7 +18,8 @@
     "eleventy-plugin-seo": "^0.5.2"
   },
   "dependencies": {
-    "@directus/sdk": "^9.12.2"
+    "@directus/sdk": "^9.12.2",
+    "sass": "^1.54.3"
   },
   "repository": {
     "type": "git",
