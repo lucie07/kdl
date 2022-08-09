@@ -11,10 +11,20 @@
 </head>
 
 <body>
-  {% include "partials/header.njk" %}
-  <main>
-    {{ content | safe }}
-  </main>
+  <div class="wrapper">
+    <input id="menu-switch" type="checkbox" checked="">
+    {% include "partials/header.njk" %}
+    <main>
+        <div id="sitename">
+    King's Digital Lab
+  </div>
+      <div id="kcl-logo">
+    <img src="https://kdl.kcl.ac.uk/static/images/kings-logo-red.svg" alt="King's College London logo">
+  </div>
+              <label for="menu-switch" id="menu-toggle"></label>
+      {{ content | safe }}
+    </main>
+  </div>
 </body>
 
 </html>

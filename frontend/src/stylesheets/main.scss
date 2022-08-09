@@ -1,3 +1,520 @@
-body {
-  background-color: lightgray;
+/** Your custom scss here **/
+
+/************
+MENU
+
+// Mixins
+// Colours
+// General
+// Grid
+// Header
+*************/
+
+
+/***** Mixins  *****/
+
+@mixin calc($prop,
+    $val) {
+    @each $pre in -webkit-,
+    -moz-,
+    -o- {
+        #{$prop}: $pre+calc(#{$val});
+    }
+
+    #{$prop}: calc(#{$val});
 }
+
+@mixin translate3d($x,
+    $y,
+    $z) {
+    -webkit-transform: translate3d($x, $y, $z);
+    -moz-transform: translate3d($x, $y, $z);
+    -o-transform: translate3d($x, $y, $z);
+    transform: translate3d($x, $y, $z);
+}
+
+
+/***** Colours *****/
+
+$black:#1a1a1a;
+$white:#fff;
+$gray:#888;
+$red:#c11609;
+
+
+
+/***** General *****/
+.page-anchor {
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    min-height: 100%;
+    height: 100%;
+    font-family: 'Sorts Mill Goudy', serif;
+    width:100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h5
+{
+    text-align: center;
+}
+
+strong.title
+{
+    display: block;
+}
+
+
+*, *:before, *:after {
+  outline:none;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+.wrapper {
+    height: 100vh;
+    overflow: scroll;
+    /* the bottom margin is the negative value of the footer's height */
+    position: relative;
+    width:100%;
+    padding-bottom: 9rem;
+}
+
+
+/***** Header *****/
+header {
+    padding: 1.5rem 0 0.8rem 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 1;
+    margin: 0 auto;
+    a{
+        >h1 {
+            font-size: 2.1rem;
+            font-variant: small-caps;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8rem;
+            display:inline-block;
+            span{
+                color: $red;
+            }
+        }
+        >h2 {
+            font-size: 1.2rem;
+            line-height: 0.9rem;
+            color: #999;
+            margin: 0;
+            font-variant: small-caps;
+            font-family: 'Libre Baskerville', serif;  
+        }
+    }
+}
+
+/***** Privacy Policy *****/
+/** #privacy-alert{
+    background: rgba(0,0,0, 0.8);
+    bottom: 0;
+    color: #fff;
+    display: none;
+    padding: 40px 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+
+    a{
+        color: #aaa;
+        border-bottom: 1px solid #aaa;
+
+        &#privacy-alert-agree{
+            border: 1px solid #fff;
+            color: #fff;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto 0 auto;
+            padding: 5px 0;
+            width: 100px;
+        }
+    }
+} **/
+
+
+/***** Navigation *****/
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+[hidden] { /* Hidden fallback */
+  display: none;
+  visibility: hidden;
+}
+
+
+@media screen and (min-width: 768px){
+    #menu-toggle{
+        display: none!important;
+    }
+}
+
+/* MENU */
+#menu-switch{
+    display:none;
+    &:checked ~ #menu {
+        left: 0;
+    }
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: -20rem;
+    min-width: 20rem;
+    width: 20%;
+    height: 100%;
+    padding: 50px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow:scroll;
+    font-size:1.6rem;
+    z-index: 2;
+    border-right:1px solid black;
+  >ul{  /* level1 */
+      margin: 0 0 0 -40px;
+      list-style: none;
+      >li{
+        margin-top: 0;
+        >a { 
+          display: block;
+          text-decoration: none;
+      }
+      >ol{ /* level2 */
+        margin-left:-40px;
+        list-style: none;
+        counter-reset: li;
+        >li{
+          margin-top: -1.5rem;
+          //&:hover{
+          //  opacity: 0.8;
+          //}
+        &:before{
+          counter-increment: li;
+          content: counter(li);
+          font-size: 2rem;
+          opacity: 0.4;
+          vertical-align: top;
+          position: relative;
+          line-height: 0;
+          top: 3.8rem;
+          left: 0.3rem;
+          font-family: 'Libre Baskerville', serif;
+          z-index:1;
+          //color:darken($white, 20%);
+          color:white;
+      }
+          >ol{ /* level3 */
+              list-style-type: none;
+              counter-reset: li -1;
+              margin-left:-40px;
+
+              >li{
+                line-height: 1;
+                margin-top: -1.5rem;
+                font-size: 1.1rem;
+                &:before{
+                    counter-increment: li;
+                    content: counter(li,lower-roman);
+                    opacity: 0.7;
+                    vertical-align: top;
+                    text-align: center;
+                    line-height: 1rem;
+                    font-family: 'Libre Baskerville',serif;
+                    color: white;
+                    font-size: 0.8rem;
+                    width: 2.8rem;
+                    display: inline-block;
+                    top: 2.1rem;
+                    left: -0.5rem;
+                    position: relative;
+                }
+                 &:first-child{
+                     &:before{
+                        color:transparent;
+                     }
+                    }
+            }
+        }
+    }
+}
+.search-box {
+    margin: 0;
+    form{
+        padding-bottom: 0.5rem;
+    }
+    input {
+        box-shadow: none;
+        border: none;
+        font-family: 'Sorts Mill Goudy', serif;
+        font-size: 1.4rem;
+        width: 73%;
+        outline: 0;
+        margin: 0.5rem 0 0.5rem 0.8rem;
+        float: left;
+        border-bottom: 1px solid white;
+        color: white;
+        background: black;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .fa{
+        font-size: 1.3rem;
+    }
+    button{
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border: 0;
+        margin: 0.08rem 0 0 -0.3rem;
+        line-height: 0;
+        background: none;
+        color: white;
+        width: 3rem;
+        &:hover{
+            color: darken($white, 30%);
+        }
+    }
+}
+
+}
+}
+
+a,label {
+  display: block;
+  padding: .85rem;
+  cursor: pointer;
+  //&:focus,
+  //&:hover {opacity:0.7;}
+}
+  .level1-list a, /* Styling first level lists items */
+  .level1-list label {
+    padding-left: 2rem;
+    //background: #252525;
+    background: rgba(255,255,255,0.1);
+    //box-shadow: inset 0 -1px lighten(#252525, 7%);
+    line-height: 1.2;
+    padding-right: 2rem;
+}
+
+  .level2-list a, /* Styling second level list items */
+  .level2-list label {
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+    //box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+  .level1-list, /* Hide nested lists */
+  .level2-list{
+    height: 100%;
+    max-height: 0;
+    overflow: scroll;
+    transition: max-height .5s ease-in-out;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+input[type=checkbox]:checked + label + ul,
+  input[type=checkbox]:checked + label + ol{ /* reset the height when checkbox is checked */
+    max-height: 1000px;
+}  
+
+  input[type=checkbox] + label.check{ /*** Plus icon ***/
+      position: relative;
+      &:before, &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        background-color:$gray;
+        transition: transform .65s ease;
+    }
+    &:after{
+        height: 9px;
+        margin-top: -5px;
+        right: 25px;
+        width: 1px;
+        top: 50%;
+    }
+    &:before{
+        height: 1px;
+        margin-top: -1px;
+        right: 21px;
+        width: 9px;
+        top: 50%;
+    }  
+}
+
+input[type=checkbox]:checked + label.check{ /*** Minus icon ***/
+  &:before, &:after{
+    transform: rotate(90deg);
+}
+&:before{
+    display:none;  
+}  
+}
+
+}
+
+
+/* MAIN PAGE */
+main {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+#menu-switch:checked ~ main {
+    margin-left: 20rem;
+}
+
+/* MENU TOGGLE ICON */
+#menu-toggle:focus {
+    outline: none;
+}
+#menu-toggle {
+    display:inline-block;
+    position: fixed;
+    top: 1rem;
+    margin-left: 0.5rem;
+    //left:0;
+    width: 51px;
+    height: 51px;
+    cursor: pointer;
+    border: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    z-index: 3;
+}
+#menu-toggle:before,
+#menu-toggle:after {
+    position: absolute;
+    content: "";
+    background-color: #232629;
+
+}
+
+#menu-toggle:before {
+    top: 12px;
+    left: 25px;
+    width: 1px;
+    height: 28px;
+}
+#menu-toggle:after {
+    top: 25px;
+    left: 12px;
+    width: 27px;
+    height: 1px;
+}
+
+#menu-switch:checked ~ main #menu-toggle {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    &:before,
+    &:after {
+    //background-color: white;
+    }
+}
+/* CONTENT CONTAINER */
+.container {
+    //max-width: 1500px;
+    min-width: 200px;
+    margin: 0 auto;
+    max-width: 2000px;
+}
+
+
+#sitename{
+  font-weight: bold; 
+  font-size:1.5em;
+  margin-left:0.5em;
+}
+#kcl-logo{
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+
+
+//// Breadcrumbs
+
+header {
+  padding: 1.2rem 0 0.7rem 0;
+  background: rgba(255,255,255,0.95);
+      ul li{
+      list-style-type: none;  
+      margin-left:-40px;
+      font-size: 0.8em;
+      a {
+          color: #c11609;
+          font-weight: bold; 
+          display: inline-block;
+          line-height: 1.3;
+
+      }//a
+      &::after{
+        content:'>';
+        position:absolute;
+        padding:0 0.5em;
+        
+      }//&::after
+
+    }// ul li
+      h1{
+        font-size:1.2em;
+      }
+  }//header
+
+
+
+
+
+// Placeholder: To remove
+img{
+  width:100px;
+  height:auto;
+}
+
