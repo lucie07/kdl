@@ -14,6 +14,10 @@ templateClass: tmpl-home
 <section>
   {% include "partials/project.njk" %}
 
+  {% if project.description %}
+  <p>{{ project.description }}</p>
+  {% endif %}
+
   {% if project.member %}
   <h2>Project team</h2>
   <ul>
