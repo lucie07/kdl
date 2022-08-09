@@ -1,3 +1,4 @@
+const extractUrls = require("extract-urls");
 const { parse } = require("csv-parse");
 const slugify = require("slugify");
 const _ = require("lodash");
@@ -75,10 +76,11 @@ class Manager {
           activecollabId: parseInt(project["Project ID"]),
           name: project.Title,
           alternateName: project.Acronym,
+          description: project["Project Description"],
           pi: project.PI,
           funder: project.Funder,
           team: this.parseList(project["KDL Project Team"]),
-          url: project["Project URL"],
+          url: this.getURLs(project, ["Project URL", "GitHub URL"]),
         }));
 
       resolve(projects);
@@ -92,8 +94,21 @@ class Manager {
 
     return string
       .split(",")
-      .map((name) => name.trim().replace(/[\[\]\"]/g, ""))
-      .filter((name) => name.length > 0); // eslint-disable-line
+      .map((name) => name.trim().replace(/[\[\]\"]/g, "")) // eslint-disable-line
+      .filter((name) => name.length > 0);
+  }
+
+  getURLs(project, columns) {
+    return columns
+      .map((c) => ({
+        name: c,
+        values: extractUrls(project[c].replaceAll("&%2358;", ":")),
+      }))
+      .filter((url) => url.values)
+      .map((url) => ({ name: url.name, values: [...new Set(url.values)] }))
+      .flatMap((url) =>
+        url.values.map((value) => ({ name: url.name, url: value }))
+      );
   }
 
   /**
@@ -238,9 +253,9 @@ class Manager {
       departments
     );
 
-    const urls = [...new Set(projects.map((project) => project.url))]
-      .filter((url) => url.length > 0)
-      .map((url) => ({ name: "Project URL", url: url }));
+    const urls = projects
+      .map((project) => project.url)
+      .filter((url) => url.length > 0);
     const urlRoles = await this.getOrCreateLinkRoles("linkrole", urls);
 
     return await this.getOrCreateProjects(
@@ -365,10 +380,12 @@ class Manager {
   async getOrCreateLinkRoles(collection, values) {
     const roles = {};
 
-    for (const item of values) {
-      const role = await this.getOrCreateItem(collection, item, item);
+    for (const value of values) {
+      for (const item of value) {
+        const role = await this.getOrCreateItem(collection, item, item);
 
-      roles[item.url] = role;
+        roles[item.url] = role;
+      }
     }
 
     return roles;
@@ -426,11 +443,19 @@ class Manager {
       }
     });
 
+    const linkRoles = [];
+    project.url
+      .filter((url) => urls[url.url] !== undefined)
+      .forEach((url) =>
+        linkRoles.push({ linkrole_id: { id: urls[url.url].id } })
+      );
+
     const filter = { name: project.name };
     const data = {
       name: project.name,
       alternateName: project.alternateName,
       slug: project.slug,
+      description: project.description,
       creativeWorkStatus: definedTerms[project.creativeWorkStatus]
         ? definedTerms[project.creativeWorkStatus].id
         : null,
@@ -441,9 +466,7 @@ class Manager {
         ? departments[project.department.name].id
         : null,
       member: members,
-      url: urls[project.url]
-        ? [{ linkrole_id: { id: urls[project.url].id } }]
-        : null,
+      url: linkRoles,
     };
 
     return await this.getOrCreateItem("project", filter, data);
