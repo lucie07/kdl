@@ -443,7 +443,6 @@ class Manager {
       }
     });
 
-    console.log(urls);
     const linkRoles = [];
     project.url
       .filter((url) => urls[url.url] !== undefined)
