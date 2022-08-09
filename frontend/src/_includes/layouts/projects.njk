@@ -13,10 +13,11 @@ permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
   {%- for project in paginatedProjects -%}
   <li>
     <a href="/projects/{{ project.slug }}/">
-      <img src="https://images.pexels.com/photos/2117937/pexels-photo-2117937.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="insert text">
+      <img src="https://images.pexels.com/photos/2117937/pexels-photo-2117937.jpeg?auto=compress&cs=tinysrgb&w=1200"
+        alt="insert text">
       <h2>{{ project.name }}</h2>
-      {% include "partials/project.njk" %}
     </a>
+    {% include "partials/project.njk" %}
   </li>
   {%- endfor -%}
 </ol>
