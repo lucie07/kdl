@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="King's Digital Lab" />
   {% seo "" %}
 
   <link rel="stylesheet" href="/stylesheets/main.css" />
@@ -12,12 +11,14 @@
 
 <body>
   <div class="wrapper">
-    {% include "partials/nav.njk" %}
+    {% include "partials/menu.njk" %}
     <main>
       {% include "partials/header.njk" %}
       <label for="menu-switch" id="menu-toggle"></label>
 
-      {{ content | safe }}
+      <section>
+        {{ content | safe }}
+      </section>
     </main>
   </div>
 </body>
