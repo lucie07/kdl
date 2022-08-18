@@ -32,8 +32,8 @@ Run the stack:
 
     npm run up
 
-The cms is available at http://localhost:8055/ by default and if no port
-configuration was changed.
+The cms is available at http://localhost:8055/ by default and if no port configuration
+changed.
 
 #### Data model versioning
 
@@ -46,7 +46,7 @@ Apply a snapshot:
     npm run cms:snapshot:apply --snapshot=SNAPSHOT_NAME
 
 Where `SNAPSHOT_NAME` is the name of the snapshot without path or extension. By default
-the data model snapshots are stored at [cms/snapshots](cms/snapshots/README.md).
+the data model snapshots are saved in [cms/snapshots](cms/snapshots/README.md).
 
 ### Data model
 
