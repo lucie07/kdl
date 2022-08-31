@@ -231,7 +231,9 @@ class Manager {
       .map((name) => ({ name: name }));
     const piAgents = await this.getOrCreateAgents("person", piNames);
 
-    const funderNames = [...new Set(projects.map((project) => project.funder))]
+    const funderNames = [
+      ...new Set(projects.flatMap((project) => project.funder)),
+    ]
       .filter((name) => name.length > 0)
       .map((name) => ({ name: name }));
     const funderAgents = await this.getOrCreateAgents(
@@ -437,6 +439,13 @@ class Manager {
       });
     }
 
+    const fundersData = [];
+    project.funder
+      .filter((funder) => funders[funder] !== undefined)
+      .forEach((funder) =>
+        fundersData.push({ agent_id: { id: funders[funder].agent } })
+      );
+
     project.team.forEach((person) => {
       if (teams[person]) {
         members.push({ name: "KDL member", agent: teams[person].agent });
@@ -459,9 +468,7 @@ class Manager {
       creativeWorkStatus: definedTerms[project.creativeWorkStatus]
         ? definedTerms[project.creativeWorkStatus].id
         : null,
-      funder: funders[project.funder]
-        ? [{ agent_id: { id: funders[project.funder].agent } }]
-        : null,
+      funder: fundersData,
       department: departments[project.department.name]
         ? departments[project.department.name].id
         : null,
