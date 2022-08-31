@@ -18,11 +18,22 @@ templateClass: tmpl-home
   <p>{{ project.description }}</p>
   {% endif %}
 
+  {% if project.funder %}
+  <h2>Funder</h2>
+  <ul>
+    {% for funder in project.funder %}
+    <li>{{ funder.agent_id.name }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
   {% if project.member %}
   <h2>Project team</h2>
   <ul>
-    {% for member in project.member %}
-    <li>{{ member.agent.name }}: {{ member.name }}</li>
+    {% for member in project.member|sort(false, false, "agent.name") %}
+    <li>{{ member.agent.name }}, {{ member.name }}
+      {%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}
+    </li>
     {% endfor %}
   </ul>
   {% endif %}
