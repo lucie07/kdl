@@ -27,28 +27,20 @@ templateClass: tmpl-home
 
   <!-- Overview -->
   {% if project.description %}
-  <div id="overview" <p>{{ project.description }}</p>
+  <div id="overview">
+    <p>{{ project.description }}</p>
   </div>
   {% endif %}
 
   {% if project.funder %}
-  <h2>Funder</h2>
-  <ul>
-    {% for funder in project.funder %}
-    <li>{{ funder.agent_id.name }}</li>
-    {% endfor %}
-  </ul>
-  {% endif %}
-
-  {% if project.member %}
-  <h2>Project team</h2>
-  <ul>
-    {% for member in project.member|sort(false, false, "agent.name") %}
-    <li>{{ member.agent.name }}, {{ member.name }}
-      {%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}
-    </li>
-    {% endfor %}
-  </ul>
+  <div class="funder">
+    <h2>Funder</h2>
+    <ul>
+      {% for funder in project.funder %}
+      <li>{{ funder.agent_id.name }}</li>
+      {% endfor %}
+    </ul>
+  </div>
   {% endif %}
 
   {% if project.url %}
@@ -69,15 +61,17 @@ templateClass: tmpl-home
   </div>
 
   <!-- Team -->
+  {% if project.member %}
   <div id="team">
-    {% if project.member %}
     <h2>Team</h2>
     <ul>
-      {% for member in project.member %}
-      <li>{{ member.agent.name }}: {{ member.name }}</li>
+      {% for member in project.member|sort(false, false, "agent.name") %}
+      <li>{{ member.agent.name }}, {{ member.name }}
+        {%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}
+      </li>
       {% endfor %}
     </ul>
-    {% endif %}
   </div>
+  {% endif %}
 
 </section>
