@@ -33,6 +33,13 @@ MENU
     transform: translate3d($x, $y, $z);
 }
 
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+  }
 
 // ** Colours 
 
@@ -326,7 +333,7 @@ a,label {
     height: 100%;
     max-height: 0;
     overflow: scroll;
-    transition: max-height .5s ease-in-out;
+    @include transition(all 300ms ease-in); 
 }
 
 ::-webkit-scrollbar { 
@@ -346,7 +353,7 @@ input[type=checkbox]:checked + label + ul,
         position: absolute;
         z-index: 1;
         background-color:$gray;
-        transition: transform .65s ease;
+        @include transition(all 200ms ease-in); 
     }
     &:after{
         height: 9px;
@@ -420,11 +427,7 @@ main {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-
-    -webkit-transition: all .3s ease-in;
-    -moz-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-    transition: all .3s ease-in;
+    @include transition(all 300ms ease-in); 
     width:calc(100% - 15em);
     padding:0 5%;
 }
@@ -559,6 +562,7 @@ figure{
         margin-left:-40px;
         li{
             list-style-type: none;
+            margin-top: 1vw;
             a{
                 color:white;
                 background:black;
@@ -566,10 +570,12 @@ figure{
                 display:block;
                 border:1px solid black;
                 text-align: center;
+                @include transition(all 200ms ease-in); 
                 &:hover{
                     border:1px solid black;
                     background:white;
                     color:black;
+                    @include transition(all 200ms ease-in); 
                 }//&:hover
             }//a
         }//li
