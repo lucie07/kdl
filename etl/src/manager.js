@@ -77,7 +77,7 @@ class Manager {
           name: project.Title,
           alternateName: project.Acronym,
           description: project["Project Description"],
-          pi: project.PI,
+          pi: this.parseList(project.PI),
           funder: this.parseList(project.Funder),
           team: this.parseList(project["KDL Project Team"]),
           url: this.getURLs(project, ["Project URL", "GitHub URL"]),
@@ -226,7 +226,7 @@ class Manager {
       creativeWorkStatuses
     );
 
-    const piNames = [...new Set(projects.map((project) => project.pi))]
+    const piNames = [...new Set(projects.flatMap((project) => project.pi))]
       .filter((name) => name.length > 0)
       .map((name) => ({ name: name }));
     const piAgents = await this.getOrCreateAgents("person", piNames);
@@ -432,12 +432,19 @@ class Manager {
   ) {
     const members = [];
 
-    if (pis[project.pi]) {
-      members.push({
-        name: "Principal investigator",
-        agent: pis[project.pi].agent,
-      });
-    }
+    project.pi
+      .filter((pi) => pis[pi] !== undefined)
+      .forEach((pi) =>
+        members.push({
+          name: "Principal investigator",
+          agent: pis[pi].agent,
+        })
+      );
+    project.team.forEach((person) => {
+      if (teams[person]) {
+        members.push({ name: "KDL member", agent: teams[person].agent });
+      }
+    });
 
     const fundersData = [];
     project.funder
@@ -445,12 +452,6 @@ class Manager {
       .forEach((funder) =>
         fundersData.push({ agent_id: { id: funders[funder].agent } })
       );
-
-    project.team.forEach((person) => {
-      if (teams[person]) {
-        members.push({ name: "KDL member", agent: teams[person].agent });
-      }
-    });
 
     const linkRoles = [];
     project.url
