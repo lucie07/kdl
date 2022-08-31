@@ -6,16 +6,29 @@ templateClass: tmpl-home
 <header>
   {% set navKey = "Projects" %}
   {% include "partials/breadcrumbs.njk" %}
+  <!-- Project title -->
   <h1>
     {{- project.name }}
     {%- if project.alternateName %} <span>{{ project.alternateName }}</span>{% endif -%}
   </h1>
 </header>
-<section>
-  {% include "partials/project.njk" %}
 
+<section>
+
+  <!-- Images -->
+  <div id="images">
+    <figure>
+      <img src="https://placeimg.com/640/480/arch" alt="random technology image from placeimg.com">
+      <figcaption>
+        image caption
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- Overview -->
   {% if project.description %}
-  <p>{{ project.description }}</p>
+  <div id="overview" <p>{{ project.description }}</p>
+  </div>
   {% endif %}
 
   {% if project.funder %}
@@ -39,13 +52,32 @@ templateClass: tmpl-home
   {% endif %}
 
   {% if project.url %}
-  <h2>URLs</h2>
-  <ul>
-    {% for url in project.url %}
-    <li>
-      <a href="{{ url.linkrole_id.url }}">{{ url.linkrole_id.name }}</a>
-    </li>
-    {% endfor %}
-  </ul>
+  <div id="links">
+    <ul>
+      {% for url in project.url %}
+      <li>
+        <a href="{{ url.linkrole_id.url }}" role="button">{{ url.linkrole_id.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
   {% endif %}
+
+  <!-- Information -->
+  <div id="information">
+    {% include "partials/project.njk" %}
+  </div>
+
+  <!-- Team -->
+  <div id="team">
+    {% if project.member %}
+    <h2>Team</h2>
+    <ul>
+      {% for member in project.member %}
+      <li>{{ member.agent.name }}: {{ member.name }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+
 </section>
