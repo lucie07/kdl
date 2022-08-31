@@ -77,7 +77,7 @@ class Manager {
           name: project.Title,
           alternateName: project.Acronym,
           description: project["Project Description"],
-          pi: this.parseList(project.PI),
+          pi: this.parseList(project.PI).map((pi) => this.parseMember(pi)),
           funder: this.parseList(project.Funder),
           team: this.parseList(project["KDL Project Team"]),
           url: this.getURLs(project, ["Project URL", "GitHub URL"]),
@@ -96,6 +96,13 @@ class Manager {
       .split(",")
       .map((name) => name.trim().replace(/[\[\]\"]/g, "")) // eslint-disable-line
       .filter((name) => name.length > 0);
+  }
+
+  parseMember(member) {
+    const parts = member.split("(");
+    const org = parts[1].replace(")", "");
+
+    return { name: parts[0].trim(), org: org };
   }
 
   getURLs(project, columns) {
@@ -226,10 +233,18 @@ class Manager {
       creativeWorkStatuses
     );
 
-    const piNames = [...new Set(projects.flatMap((project) => project.pi))]
-      .filter((name) => name.length > 0)
-      .map((name) => ({ name: name }));
-    const piAgents = await this.getOrCreateAgents("person", piNames);
+    const piNames = [...new Set(projects.flatMap((project) => project.pi))].map(
+      (pi) => ({ name: pi.name })
+    );
+    const piPersonAgents = await this.getOrCreateAgents("person", piNames);
+
+    const piOrganisations = [
+      ...new Set(projects.flatMap((project) => project.pi)),
+    ].map((pi) => ({ name: pi.org }));
+    const piOrganisationAgents = await this.getOrCreateAgents(
+      "organisation",
+      piOrganisations
+    );
 
     const funderNames = [
       ...new Set(projects.flatMap((project) => project.funder)),
@@ -263,7 +278,8 @@ class Manager {
     return await this.getOrCreateProjects(
       projects,
       definedTerms,
-      piAgents,
+      piPersonAgents,
+      piOrganisationAgents,
       funderAgents,
       teamAgents,
       departmentAgents,
@@ -396,7 +412,8 @@ class Manager {
   async getOrCreateProjects(
     projects,
     definedTerms,
-    pis,
+    piPersonAgents,
+    piOrganisationAgents,
     funders,
     teams,
     departments,
@@ -409,7 +426,8 @@ class Manager {
         await this.getOrCreateProject(
           project,
           definedTerms,
-          pis,
+          piPersonAgents,
+          piOrganisationAgents,
           funders,
           teams,
           departments,
@@ -424,7 +442,8 @@ class Manager {
   async getOrCreateProject(
     project,
     definedTerms,
-    pis,
+    piPersonAgents,
+    piOrganisationAgents,
     funders,
     teams,
     departments,
@@ -432,14 +451,14 @@ class Manager {
   ) {
     const members = [];
 
-    project.pi
-      .filter((pi) => pis[pi] !== undefined)
-      .forEach((pi) =>
-        members.push({
-          name: "Principal investigator",
-          agent: pis[pi].agent,
-        })
-      );
+    project.pi.forEach((pi) =>
+      members.push({
+        name: "Principal investigator",
+        agent: piPersonAgents[pi.name].agent,
+        inOrganisation: { agent: piOrganisationAgents[pi.org].agent },
+      })
+    );
+
     project.team.forEach((person) => {
       if (teams[person]) {
         members.push({ name: "KDL member", agent: teams[person].agent });
