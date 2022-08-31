@@ -78,7 +78,7 @@ class Manager {
           alternateName: project.Acronym,
           description: project["Project Description"],
           pi: project.PI,
-          funder: project.Funder,
+          funder: this.parseList(project.Funder),
           team: this.parseList(project["KDL Project Team"]),
           url: this.getURLs(project, ["Project URL", "GitHub URL"]),
         }));
@@ -174,7 +174,7 @@ class Manager {
           resolve({
             ...project,
             name: acProject.name,
-            slug: this.getSlug(acProject.name),
+            slug: this.getSlug(project.acronym ?? acProject.name),
             creativeWorkStatus: labels[acProject.label_id],
             department: this.getDepartment(acCompany.name),
           })
