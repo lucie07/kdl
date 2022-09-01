@@ -95,7 +95,7 @@ class Manager {
 
     return string
       .split(",")
-      .map((name) => name.trim().replace(/[\[\]\"]/g, "")) // eslint-disable-line
+      .map((name) => name.trim().replace(/[[\]"]/g, ""))
       .filter((name) => name.length > 0);
   }
 
@@ -115,8 +115,19 @@ class Manager {
       .filter((url) => url.values)
       .map((url) => ({ name: url.name, values: [...new Set(url.values)] }))
       .flatMap((url) =>
-        url.values.map((value) => ({ name: url.name, url: value }))
+        url.values.map((value) => ({
+          name: this.getURLName(url.name, value),
+          url: value,
+        }))
       );
+  }
+
+  getURLName(name, url) {
+    if (name === "Project URL") {
+      return name;
+    }
+
+    return `Repository: ${url.split("/").slice(3).join("/")}`;
   }
 
   /**
@@ -215,7 +226,7 @@ class Manager {
       return "";
     }
 
-    let slug = slugify(name, { remove: /[\#*+~.,()'"!:@]/g, lower: true }); // eslint-disable-line
+    let slug = slugify(name, { remove: /[#*+~.,()'"!:@]/g, lower: true });
 
     if (this.slugs[slug] !== undefined) {
       this.slugs[slug] += 1;
