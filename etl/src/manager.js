@@ -8,6 +8,7 @@ class Manager {
   constructor(activecollab, directus) {
     this.activecollab = activecollab;
     this.directus = directus;
+    this.slugs = {};
   }
 
   /**
@@ -181,7 +182,7 @@ class Manager {
           resolve({
             ...project,
             name: acProject.name,
-            slug: this.getSlug(project.acronym ?? acProject.name),
+            slug: this.getSlug(project.acronym ?? acProject.name.split(":")[0]),
             creativeWorkStatus: labels[acProject.label_id],
             department: this.getDepartment(acCompany.name),
           })
@@ -214,7 +215,16 @@ class Manager {
       return "";
     }
 
-    return slugify(name, { remove: /[*+~.,()'"!:@]/g, lower: true });
+    let slug = slugify(name, { remove: /[\#*+~.,()'"!:@]/g, lower: true }); // eslint-disable-line
+
+    if (this.slugs[slug] !== undefined) {
+      this.slugs[slug] += 1;
+      slug = `${slug}-${this.slugs[slug]}`;
+    } else {
+      this.slugs[slug] = 1;
+    }
+
+    return slug;
   }
 
   /**
