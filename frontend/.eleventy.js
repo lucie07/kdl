@@ -1,4 +1,5 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const projects = require("./src/_data/projects");
 const pluginSEO = require("eleventy-plugin-seo");
 const { Directus } = require("@directus/sdk");
 const path = require("node:path");
@@ -23,6 +24,14 @@ module.exports = (eleventyConfig) => {
     if (!id) return null;
 
     return `${process.env.DIRECTUS_URL}/assets/${id}`;
+  });
+
+  eleventyConfig.addFilter("fundedProjects", (projects, funder) => {
+    if (!projects || !funder) return null;
+
+    return projects.filter((project) =>
+      project.funder.some((funded) => funded.agent_id.id === funder.agent.id)
+    );
   });
 
   // https://www.11ty.dev/docs/languages/custom/#example-add-sass-support-to-eleventy

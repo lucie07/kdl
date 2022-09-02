@@ -37,7 +37,11 @@ templateClass: tmpl-home
     <h2>Funder</h2>
     <ul>
       {% for funder in project.funder %}
-      <li>{{ funder.agent_id.name }}</li>
+      <li>
+        <a href="/organisations/{{ funder.agent_id.id }}/">
+        {{ funder.agent_id.name }}
+        </a>
+      </li>
       {% endfor %}
     </ul>
   </div>
@@ -66,7 +70,9 @@ templateClass: tmpl-home
     <h2>Team</h2>
     <ul>
       {% for member in project.member|sort(false, false, "agent.name") %}
-      <li>{{ member.agent.name }}, {{ member.name }}
+      <li>
+        <a href="/people/{{ member.agent.id }}/">{{ member.agent.name }}</a>,
+        {{ member.name }}
         {%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}
       </li>
       {% endfor %}

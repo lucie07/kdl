@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+{{ person.agent.name }}
+
+{% if person.agent.memberOf %}
+<div>
+  <h2>Part of</h2>
+  <ul>
+    {% for member in person.agent.memberOf|sort(false, false, "inProject.name") %}
+    <li>
+      <a href="/projects/{{ member.inProject.slug }}/">{{ member.inProject.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

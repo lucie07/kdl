@@ -11,7 +11,7 @@ module.exports = {
 
         return directus
           .items(collection)
-          .readByQuery({ fields: ["*.*.*.*"], sort: "name", limit: -1 })
+          .readByQuery({ fields: ["*.*.*.*"], limit: -1 })
           .then((response) => response.data)
           .then((projects) => {
             fs.writeFile(
