@@ -32,21 +32,6 @@ templateClass: tmpl-home
   </div>
   {% endif %}
 
-  {% if project.funder %}
-  <div class="funder">
-    <h2>Funder</h2>
-    <ul>
-      {% for funder in project.funder %}
-      <li>
-        <a href="/organisations/{{ funder.agent_id.id }}/">
-        {{ funder.agent_id.name }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
-
   {% if project.url %}
   <div id="links">
     <ul>
@@ -59,8 +44,24 @@ templateClass: tmpl-home
   </div>
   {% endif %}
 
+
   <!-- Information -->
   <div id="information">
+    {% if project.funder %}
+    <div class="funder">
+      <h2>Funder</h2>
+      <ul>
+        {% for funder in project.funder %}
+        <li>
+          <a href="/organisations/{{ funder.agent_id.id }}/">
+          {{- funder.agent_id.name -}}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
     {% include "partials/project.njk" %}
   </div>
 

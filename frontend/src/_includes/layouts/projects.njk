@@ -9,6 +9,11 @@ permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
   <h1>Projects</h1>
 </header>
 
+  <input type="radio" name="view-filter" id="grid" class="radio" checked><label for="grid">⊞ Grid</label> |
+  <input type="radio" name="view-filter" id="list" class="list-view radio" ><label for="list"> ≣ List</label>
+				
+
+
 <ol start="{{ pagination.pageNumber * 10 + 1}}">
   {%- for project in paginatedProjects -%}
   <li>
@@ -22,7 +27,7 @@ permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
         </figcaption>
       </figure>
     </a>
-    <div id="index-information">
+    <div class="index-information">
     {% include "partials/project.njk" %}
     </div>
   </li>
