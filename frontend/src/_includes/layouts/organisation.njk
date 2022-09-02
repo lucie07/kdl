@@ -1,11 +1,17 @@
 ---
-layout: layouts/base.njk
-templateClass: tmpl-home
+layout: layouts/agent.njk
 ---
 
-{{ organisation.id }}: {{ organisation.agent.name }}
-
-{% set funded = projects | fundedProjects(organisation) %}
-{% for project in funded %}
-{{ project.name }}
-{% endfor %}
+{% set funded = projects | fundedProjects(agentInstance) %}
+{% if funded %}
+<div id="funded">
+  <h2>Funded</h2>
+  <ul>
+    {% for project in funded %}
+    <li>
+      <a href="/projects/{{ project.slug }}/">{{ project.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

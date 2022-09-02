@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+{% set agent = agentInstance.agent %}
+
+<header>
+  {# set navKey = "Agents" #}
+  {# include "partials/breadcrumbs.njk" #}
+  <h1>
+    {{- agent.name }}
+    {%- if agent.alternateName %} <span>{{ agent.alternateName }}</span>{% endif -%}
+  </h1>
+</header>
+
+<section>
+  {{ content | safe }}
+</section>
