@@ -486,6 +486,7 @@ main {
   max-width: 2000px;
 } //.container
 
+
 #sitename {
   font-weight: bold;
   font-size: 1.5em;
@@ -495,6 +496,7 @@ main {
   top: 0;
   right: 0;
 } //#kcl-logo
+
 
 section {
   margin: 3vw 0 0 0;
@@ -528,7 +530,86 @@ figure {
 } //figure
 
 //* PROJECT INDEX
-#index-information {
+
+// List Grid Radio 
+
+
+// Grid style (default view)
+li {
+	float: none;
+}
+
+// Set styles for a checked radio/option
+.radio {
+	display: none;
+	
+	+ label {
+		color: gray;
+		cursor: pointer;
+		display: inline-block;
+        @include transition(all 200ms ease-in);
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+
+// Set the checked styles for our labels
+.radio:checked {
+	+ label {
+		color: black;
+        border-bottom:0.1vw solid black;
+        @include transition(all 200ms ease-in);
+
+	}
+}
+
+// Styles for our List radio being checked
+.list-view:checked {
+	// Find the sibling content container div
+	~ ol {
+		// Adjust styles for the individual block items
+        
+		li {
+            display: flex; 
+            border:0.1vw solid black;
+            border-bottom:none;
+            padding:0.5vw;
+            &:last-of-type{
+                border-bottom:0.1vw solid black;
+            }
+
+            a h2{
+                width:40vw;
+                margin:0;
+                font-size:1em;
+   
+            }
+			figure {
+                display:none;
+				float: left;
+				margin-right: rem(15);
+			}
+            dl{
+                width:30vw;
+                display: flex; 
+                dt{
+                    width:15vw;
+            
+                }
+                dd{
+                    width:15vw;
+               
+                }
+            }//dl
+		}//li
+	}	//ol
+}//.list-view:checked 
+
+// List Grid Radio 
+
+
+.index-information {
   dl {
     dt {
       margin-top: 1.2vw;
