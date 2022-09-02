@@ -254,24 +254,34 @@ class Manager {
       creativeWorkStatuses
     );
 
-    const piNames = [...new Set(projects.flatMap((project) => project.pi))].map(
-      (pi) => ({ name: pi.name })
+    const piNames = _.uniqWith(
+      projects
+        .flatMap((project) => project.pi)
+        .map((pi) => ({ name: pi.name })),
+      _.isEqual
     );
     const piPersonAgents = await this.getOrCreateAgents("person", piNames);
 
-    const piOrganisations = [
-      ...new Set(projects.flatMap((project) => project.pi)),
-    ].map((pi) => ({ name: pi.org }));
+    const piOrganisations = _.uniqWith(
+      projects
+        .flatMap((project) => project.pi)
+        .map((pi) => ({
+          name: pi.org,
+        })),
+      _.isEqual
+    );
     const piOrganisationAgents = await this.getOrCreateAgents(
       "organisation",
       piOrganisations
     );
 
-    const funderNames = [
-      ...new Set(projects.flatMap((project) => project.funder)),
-    ]
-      .filter((name) => name.length > 0)
-      .map((name) => ({ name: name }));
+    const funderNames = _.uniqWith(
+      projects
+        .flatMap((project) => project.funder)
+        .filter((name) => name.length > 0)
+        .map((name) => ({ name: name })),
+      _.isEqual
+    );
     const funderAgents = await this.getOrCreateAgents(
       "organisation",
       funderNames
@@ -476,7 +486,7 @@ class Manager {
       members.push({
         name: "Principal investigator",
         agent: piPersonAgents[pi.name].agent,
-        inOrganisation: { agent: piOrganisationAgents[pi.org].agent },
+        inOrganisation: piOrganisationAgents[pi.org].id,
       })
     );
 
