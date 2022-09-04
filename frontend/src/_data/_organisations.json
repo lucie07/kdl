@@ -13015,9 +13015,7 @@
             "foundingDate": null,
             "dissolutionDate": null,
             "parentOrganisation": null,
-            "subOrganisation": [
-              "43aaccf5-c112-4d3f-8bd3-dc452bc18b06"
-            ]
+            "subOrganisation": ["43aaccf5-c112-4d3f-8bd3-dc452bc18b06"]
           },
           "subOrganisation": []
         }

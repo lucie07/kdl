@@ -34,9 +34,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "5b8a77c3-6b56-4fa1-8e02-2483843f5863"
-            ]
+            "memberOf": ["5b8a77c3-6b56-4fa1-8e02-2483843f5863"]
           },
           "inProject": {
             "id": "89f29090-6bff-450b-b0d3-3ffdd931f171",
@@ -56,13 +54,8 @@
             "department": "43aaccf5-c112-4d3f-8bd3-dc452bc18b06",
             "slug": "field",
             "keywords": [],
-            "url": [
-              1072,
-              1073
-            ],
-            "funder": [
-              983
-            ],
+            "url": [1072, 1073],
+            "funder": [983],
             "relatedTo": [],
             "member": [
               "1610b15c-8f66-445a-bc21-76d28fe3adbc",
@@ -151,17 +144,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "iospe",
             "keywords": [],
-            "url": [
-              1098
-            ],
-            "funder": [
-              1002,
-              1003,
-              1004,
-              1005,
-              1006,
-              1007
-            ],
+            "url": [1098],
+            "funder": [1002, 1003, 1004, 1005, 1006, 1007],
             "relatedTo": [],
             "member": [
               "4a0f8659-cd0d-4f5c-bb23-835e0d665b42",
@@ -219,12 +203,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "moi",
             "keywords": [],
-            "url": [
-              1109
-            ],
-            "funder": [
-              1015
-            ],
+            "url": [1109],
+            "funder": [1015],
             "relatedTo": [],
             "member": [
               "0c9a1653-5d35-4256-a2ba-11fc57ce12e7",
@@ -278,9 +258,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "94f1b501-3193-4b5c-adf9-6510c41f686c"
-            ]
+            "memberOf": ["94f1b501-3193-4b5c-adf9-6510c41f686c"]
           },
           "inProject": {
             "id": "00c1ae62-7dbd-4bc1-aecf-94daca130647",
@@ -300,14 +278,8 @@
             "department": "3d39cbd4-789a-4c7e-9a38-dc6634a3c776",
             "slug": "madih",
             "keywords": [],
-            "url": [
-              1103,
-              1104
-            ],
-            "funder": [
-              1011,
-              1012
-            ],
+            "url": [1103, 1104],
+            "funder": [1011, 1012],
             "relatedTo": [],
             "member": [
               "198cb160-6d5e-43ff-a451-154cbc233948",
@@ -359,9 +331,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "ed5271c8-4531-4f1c-829c-f2de89a75dde"
-            ]
+            "memberOf": ["ed5271c8-4531-4f1c-829c-f2de89a75dde"]
           },
           "inProject": {
             "id": "f7ee46eb-f396-4aab-b5fc-d4a97a972c8d",
@@ -381,14 +351,8 @@
             "department": "0e982bc3-4435-4989-a90d-304cf8da989b",
             "slug": "ego-media",
             "keywords": [],
-            "url": [
-              1063,
-              1064
-            ],
-            "funder": [
-              975,
-              976
-            ],
+            "url": [1063, 1064],
+            "funder": [975, 976],
             "relatedTo": [],
             "member": [
               "11ec3089-76e1-4911-8794-507e13ed9d10",
@@ -453,9 +417,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "8bc67b36-3959-40de-ac3c-02c988be6bca"
-            ]
+            "memberOf": ["8bc67b36-3959-40de-ac3c-02c988be6bca"]
           },
           "inProject": {
             "id": "5c121045-4a87-42b1-b063-87f574267ef5",
@@ -475,12 +437,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "mkcheur",
             "keywords": [],
-            "url": [
-              1108
-            ],
-            "funder": [
-              1014
-            ],
+            "url": [1108],
+            "funder": [1014],
             "relatedTo": [],
             "member": [
               "8bc67b36-3959-40de-ac3c-02c988be6bca",
@@ -566,14 +524,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "poms",
             "keywords": [],
-            "url": [
-              1117,
-              1118
-            ],
-            "funder": [
-              1023,
-              1024
-            ],
+            "url": [1117, 1118],
+            "funder": [1023, 1024],
             "relatedTo": [],
             "member": [
               "05740620-8cad-4ed3-add5-b9b2858167c4",
@@ -641,15 +593,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cotr",
             "keywords": [],
-            "url": [
-              1057,
-              1058,
-              1059,
-              1060
-            ],
-            "funder": [
-              971
-            ],
+            "url": [1057, 1058, 1059, 1060],
+            "funder": [971],
             "relatedTo": [],
             "member": [
               "685cdb6a-c69e-4e57-83c9-e86134f3f52e",
@@ -712,9 +657,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "954c3a8a-df15-4bb2-ad42-06be1115e425"
-            ]
+            "memberOf": ["954c3a8a-df15-4bb2-ad42-06be1115e425"]
           },
           "inProject": {
             "id": "ff22df9f-fdf9-416b-86a1-4a8a9b69d8de",
@@ -734,12 +677,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "saw",
             "keywords": [],
-            "url": [
-              1124
-            ],
-            "funder": [
-              1028
-            ],
+            "url": [1124],
+            "funder": [1028],
             "relatedTo": [],
             "member": [
               "0d01c1ed-af49-4e1a-832b-0c8ac9793eb4",
@@ -792,9 +731,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "f2177dd5-0a9b-4167-8721-be229e6193e0"
-            ]
+            "memberOf": ["f2177dd5-0a9b-4167-8721-be229e6193e0"]
           },
           "inProject": {
             "id": "768e6b54-97e1-4655-8247-8591820a8bae",
@@ -815,9 +752,7 @@
             "slug": "re-mixing-de-humanisation",
             "keywords": [],
             "url": [],
-            "funder": [
-              1033
-            ],
+            "funder": [1033],
             "relatedTo": [],
             "member": [
               "34be5edc-14b1-44ea-9cb9-801f351619c2",
@@ -909,14 +844,8 @@
             "department": "3d39cbd4-789a-4c7e-9a38-dc6634a3c776",
             "slug": "madih",
             "keywords": [],
-            "url": [
-              1103,
-              1104
-            ],
-            "funder": [
-              1011,
-              1012
-            ],
+            "url": [1103, 1104],
+            "funder": [1011, 1012],
             "relatedTo": [],
             "member": [
               "198cb160-6d5e-43ff-a451-154cbc233948",
@@ -978,14 +907,8 @@
             "department": "0e982bc3-4435-4989-a90d-304cf8da989b",
             "slug": "ego-media",
             "keywords": [],
-            "url": [
-              1063,
-              1064
-            ],
-            "funder": [
-              975,
-              976
-            ],
+            "url": [1063, 1064],
+            "funder": [975, 976],
             "relatedTo": [],
             "member": [
               "11ec3089-76e1-4911-8794-507e13ed9d10",
@@ -1047,13 +970,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "etat-civil",
             "keywords": [],
-            "url": [
-              1085,
-              1086
-            ],
-            "funder": [
-              992
-            ],
+            "url": [1085, 1086],
+            "funder": [992],
             "relatedTo": [],
             "member": [
               "46b141af-c2a2-416b-ab52-2e3a373a20d9",
@@ -1113,12 +1031,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "moi",
             "keywords": [],
-            "url": [
-              1109
-            ],
-            "funder": [
-              1015
-            ],
+            "url": [1109],
+            "funder": [1015],
             "relatedTo": [],
             "member": [
               "0c9a1653-5d35-4256-a2ba-11fc57ce12e7",
@@ -1182,12 +1096,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -1261,13 +1171,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "dral",
             "keywords": [],
-            "url": [
-              1081,
-              1082
-            ],
-            "funder": [
-              990
-            ],
+            "url": [1081, 1082],
+            "funder": [990],
             "relatedTo": [],
             "member": [
               "05537f26-27a1-47ce-ab18-2cb4dcc97b37",
@@ -1327,13 +1232,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "ircyr",
             "keywords": [],
-            "url": [
-              1100,
-              1101
-            ],
-            "funder": [
-              1010
-            ],
+            "url": [1100, 1101],
+            "funder": [1010],
             "relatedTo": [],
             "member": [
               "188d1203-9484-4b79-bc63-12c26f806434",
@@ -1399,13 +1299,8 @@
             "department": "c8a8b51a-242b-4eca-8dc7-26ae0097ccef",
             "slug": "radical-translations",
             "keywords": [],
-            "url": [
-              1055,
-              1056
-            ],
-            "funder": [
-              970
-            ],
+            "url": [1055, 1056],
+            "funder": [970],
             "relatedTo": [],
             "member": [
               "1d8af49c-9636-4d4c-923b-05dd576084d4",
@@ -1466,16 +1361,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "pbw",
             "keywords": [],
-            "url": [
-              1114,
-              1115
-            ],
-            "funder": [
-              1018,
-              1019,
-              1020,
-              1021
-            ],
+            "url": [1114, 1115],
+            "funder": [1018, 1019, 1020, 1021],
             "relatedTo": [],
             "member": [
               "154bdb43-73e9-400c-a696-d91afd63a38b",
@@ -1531,9 +1418,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "a49841c1-f501-4914-9e38-e4e73482e823"
-            ]
+            "memberOf": ["a49841c1-f501-4914-9e38-e4e73482e823"]
           },
           "inProject": {
             "id": "ad3d9244-1569-4f31-b1e3-2ad0dc67df8f",
@@ -1553,12 +1438,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -1635,9 +1516,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "c0a8da9c-54bd-4d28-b86f-0bc0526d1e60"
-            ]
+            "memberOf": ["c0a8da9c-54bd-4d28-b86f-0bc0526d1e60"]
           },
           "inProject": {
             "id": "7e2dc6e5-03b4-4ab3-995d-5f8ab964a02e",
@@ -1657,17 +1536,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "iospe",
             "keywords": [],
-            "url": [
-              1098
-            ],
-            "funder": [
-              1002,
-              1003,
-              1004,
-              1005,
-              1006,
-              1007
-            ],
+            "url": [1098],
+            "funder": [1002, 1003, 1004, 1005, 1006, 1007],
             "relatedTo": [],
             "member": [
               "4a0f8659-cd0d-4f5c-bb23-835e0d665b42",
@@ -1748,14 +1618,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "poms",
             "keywords": [],
-            "url": [
-              1117,
-              1118
-            ],
-            "funder": [
-              1023,
-              1024
-            ],
+            "url": [1117, 1118],
+            "funder": [1023, 1024],
             "relatedTo": [],
             "member": [
               "05740620-8cad-4ed3-add5-b9b2858167c4",
@@ -1813,16 +1677,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "pbw",
             "keywords": [],
-            "url": [
-              1114,
-              1115
-            ],
-            "funder": [
-              1018,
-              1019,
-              1020,
-              1021
-            ],
+            "url": [1114, 1115],
+            "funder": [1018, 1019, 1020, 1021],
             "relatedTo": [],
             "member": [
               "154bdb43-73e9-400c-a696-d91afd63a38b",
@@ -1884,12 +1740,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -1958,12 +1810,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -2033,17 +1881,8 @@
             "department": "3d39cbd4-789a-4c7e-9a38-dc6634a3c776",
             "slug": "kdl-archetype",
             "keywords": [],
-            "url": [
-              1065,
-              1066,
-              1067,
-              1068
-            ],
-            "funder": [
-              977,
-              978,
-              979
-            ],
+            "url": [1065, 1066, 1067, 1068],
+            "funder": [977, 978, 979],
             "relatedTo": [],
             "member": [
               "046b9df5-0a4f-4720-acc6-b769e9f8a5db",
@@ -2128,12 +1967,8 @@
             "department": "0e982bc3-4435-4989-a90d-304cf8da989b",
             "slug": "scrambled",
             "keywords": [],
-            "url": [
-              1121
-            ],
-            "funder": [
-              1026
-            ],
+            "url": [1121],
+            "funder": [1026],
             "relatedTo": [],
             "member": [
               "01eb66b6-cbab-40be-90fe-650212765b82",
@@ -2193,13 +2028,8 @@
             "department": "2aff7ee9-bea7-4229-8852-31965ef0f9cf",
             "slug": "owri",
             "keywords": [],
-            "url": [
-              1112,
-              1113
-            ],
-            "funder": [
-              1017
-            ],
+            "url": [1112, 1113],
+            "funder": [1017],
             "relatedTo": [],
             "member": [
               "0c54e218-ea8f-41e3-9b94-77f34e6eec0e",
@@ -2261,14 +2091,8 @@
             "department": "3d39cbd4-789a-4c7e-9a38-dc6634a3c776",
             "slug": "madih",
             "keywords": [],
-            "url": [
-              1103,
-              1104
-            ],
-            "funder": [
-              1011,
-              1012
-            ],
+            "url": [1103, 1104],
+            "funder": [1011, 1012],
             "relatedTo": [],
             "member": [
               "198cb160-6d5e-43ff-a451-154cbc233948",
@@ -2331,13 +2155,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "dprr",
             "keywords": [],
-            "url": [
-              1083,
-              1084
-            ],
-            "funder": [
-              991
-            ],
+            "url": [1083, 1084],
+            "funder": [991],
             "relatedTo": [],
             "member": [
               "13337d42-0f6e-42dc-b1d8-d007f6ccb17c",
@@ -2400,13 +2219,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "mozartmc",
             "keywords": [],
-            "url": [
-              1110,
-              1111
-            ],
-            "funder": [
-              1016
-            ],
+            "url": [1110, 1111],
+            "funder": [1016],
             "relatedTo": [],
             "member": [
               "04d7a88d-1483-4292-83fc-ebd9b3d94036",
@@ -2469,9 +2283,7 @@
             "slug": "scoping-a-data-service-for-complex-3d-data-in-the-arts-and-humanities",
             "keywords": [],
             "url": [],
-            "funder": [
-              972
-            ],
+            "funder": [972],
             "relatedTo": [],
             "member": [
               "086c2823-aa00-4f50-9935-1d2927020a4b",
@@ -2532,13 +2344,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "renskin-2",
             "keywords": [],
-            "url": [
-              1119,
-              1120
-            ],
-            "funder": [
-              1025
-            ],
+            "url": [1119, 1120],
+            "funder": [1025],
             "relatedTo": [],
             "member": [
               "0f462c7d-bef0-4f1e-9d02-8bd4ccded1fe",
@@ -2602,9 +2409,7 @@
             "slug": "digital-cultures-of-covid19",
             "keywords": [],
             "url": [],
-            "funder": [
-              974
-            ],
+            "funder": [974],
             "relatedTo": [],
             "member": [
               "3d0ef2e3-995f-48a9-8209-dc40e32fd4bf",
@@ -2664,12 +2469,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "moi",
             "keywords": [],
-            "url": [
-              1109
-            ],
-            "funder": [
-              1015
-            ],
+            "url": [1109],
+            "funder": [1015],
             "relatedTo": [],
             "member": [
               "0c9a1653-5d35-4256-a2ba-11fc57ce12e7",
@@ -2734,13 +2535,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "ircyr",
             "keywords": [],
-            "url": [
-              1100,
-              1101
-            ],
-            "funder": [
-              1010
-            ],
+            "url": [1100, 1101],
+            "funder": [1010],
             "relatedTo": [],
             "member": [
               "188d1203-9484-4b79-bc63-12c26f806434",
@@ -2796,9 +2592,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "4e750870-8cc9-4f3c-ade7-db88c18c5ecd"
-            ]
+            "memberOf": ["4e750870-8cc9-4f3c-ade7-db88c18c5ecd"]
           },
           "inProject": {
             "id": "041edc04-ed38-4826-9d3f-33d6687d2a98",
@@ -2818,12 +2612,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -2886,9 +2676,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "18470b79-235a-4490-8ac5-47217241c083"
-            ]
+            "memberOf": ["18470b79-235a-4490-8ac5-47217241c083"]
           },
           "inProject": {
             "id": "590fa1d4-626b-4700-92c9-d9af80fbfff5",
@@ -2908,12 +2696,8 @@
             "department": "0e982bc3-4435-4989-a90d-304cf8da989b",
             "slug": "scrambled",
             "keywords": [],
-            "url": [
-              1121
-            ],
-            "funder": [
-              1026
-            ],
+            "url": [1121],
+            "funder": [1026],
             "relatedTo": [],
             "member": [
               "01eb66b6-cbab-40be-90fe-650212765b82",
@@ -2975,9 +2759,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "704012f3-395b-4084-bcb8-634aa15b0ff5"
-            ]
+            "memberOf": ["704012f3-395b-4084-bcb8-634aa15b0ff5"]
           },
           "inProject": {
             "id": "841e7eff-f486-4f5b-b9cd-933b8eb7b8db",
@@ -2997,13 +2779,8 @@
             "department": "2aff7ee9-bea7-4229-8852-31965ef0f9cf",
             "slug": "owri",
             "keywords": [],
-            "url": [
-              1112,
-              1113
-            ],
-            "funder": [
-              1017
-            ],
+            "url": [1112, 1113],
+            "funder": [1017],
             "relatedTo": [],
             "member": [
               "0c54e218-ea8f-41e3-9b94-77f34e6eec0e",
@@ -3095,12 +2872,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "saw",
             "keywords": [],
-            "url": [
-              1124
-            ],
-            "funder": [
-              1028
-            ],
+            "url": [1124],
+            "funder": [1028],
             "relatedTo": [],
             "member": [
               "0d01c1ed-af49-4e1a-832b-0c8ac9793eb4",
@@ -3174,13 +2947,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "cyprus",
             "keywords": [],
-            "url": [
-              1079
-            ],
-            "funder": [
-              988,
-              989
-            ],
+            "url": [1079],
+            "funder": [988, 989],
             "relatedTo": [],
             "member": [
               "120fda20-7831-416e-9430-3714fb264d67",
@@ -3252,15 +3020,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "hgl",
             "keywords": [],
-            "url": [
-              1092,
-              1093
-            ],
-            "funder": [
-              997,
-              998,
-              999
-            ],
+            "url": [1092, 1093],
+            "funder": [997, 998, 999],
             "relatedTo": [],
             "member": [
               "23501cf3-e2e3-4704-9e0f-b2fff4d9be2e",
@@ -3331,13 +3092,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "epapp",
             "keywords": [],
-            "url": [
-              1125
-            ],
-            "funder": [
-              1029,
-              1030
-            ],
+            "url": [1125],
+            "funder": [1029, 1030],
             "relatedTo": [],
             "member": [
               "076655fb-2f5c-4971-92b1-5e5cb1f3dcc1",
@@ -3408,12 +3164,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "inventory-of-byzantine-churches-on-cyprus",
             "keywords": [],
-            "url": [
-              1097
-            ],
-            "funder": [
-              1001
-            ],
+            "url": [1097],
+            "funder": [1001],
             "relatedTo": [],
             "member": [
               "57df5ea6-a664-4324-87ba-770060745fc4",
@@ -3487,12 +3239,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "inscriptions-of-aphrodisias",
             "keywords": [],
-            "url": [
-              1096
-            ],
-            "funder": [
-              1000
-            ],
+            "url": [1096],
+            "funder": [1000],
             "relatedTo": [],
             "member": [
               "23958d4a-fa45-4669-89a4-7fb06a1afa26",
@@ -3566,13 +3314,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "ircyr",
             "keywords": [],
-            "url": [
-              1100,
-              1101
-            ],
-            "funder": [
-              1010
-            ],
+            "url": [1100, 1101],
+            "funder": [1010],
             "relatedTo": [],
             "member": [
               "188d1203-9484-4b79-bc63-12c26f806434",
@@ -3667,12 +3410,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "saw",
             "keywords": [],
-            "url": [
-              1124
-            ],
-            "funder": [
-              1028
-            ],
+            "url": [1124],
+            "funder": [1028],
             "relatedTo": [],
             "member": [
               "0d01c1ed-af49-4e1a-832b-0c8ac9793eb4",
@@ -3731,12 +3470,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -3805,12 +3540,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -3880,14 +3611,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "poms",
             "keywords": [],
-            "url": [
-              1117,
-              1118
-            ],
-            "funder": [
-              1023,
-              1024
-            ],
+            "url": [1117, 1118],
+            "funder": [1023, 1024],
             "relatedTo": [],
             "member": [
               "05740620-8cad-4ed3-add5-b9b2858167c4",
@@ -3945,13 +3670,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "ipm",
             "keywords": [],
-            "url": [
-              1099
-            ],
-            "funder": [
-              1008,
-              1009
-            ],
+            "url": [1099],
+            "funder": [1008, 1009],
             "relatedTo": [],
             "member": [
               "2134c406-f04d-4df3-93b9-261027a4557c",
@@ -4004,9 +3724,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "6ed34d77-2b53-4965-a8eb-194bf9a79ae2"
-            ]
+            "memberOf": ["6ed34d77-2b53-4965-a8eb-194bf9a79ae2"]
           },
           "inProject": {
             "id": "bf17d998-97c3-4942-aff2-eacc20b4fc5a",
@@ -4027,9 +3745,7 @@
             "slug": "costar",
             "keywords": [],
             "url": [],
-            "funder": [
-              968
-            ],
+            "funder": [968],
             "relatedTo": [],
             "member": [
               "2224809a-c37d-45b7-be82-0094d731d7c0",
@@ -4091,9 +3807,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "11ec3089-76e1-4911-8794-507e13ed9d10"
-            ]
+            "memberOf": ["11ec3089-76e1-4911-8794-507e13ed9d10"]
           },
           "inProject": {
             "id": "f7ee46eb-f396-4aab-b5fc-d4a97a972c8d",
@@ -4113,14 +3827,8 @@
             "department": "0e982bc3-4435-4989-a90d-304cf8da989b",
             "slug": "ego-media",
             "keywords": [],
-            "url": [
-              1063,
-              1064
-            ],
-            "funder": [
-              975,
-              976
-            ],
+            "url": [1063, 1064],
+            "funder": [975, 976],
             "relatedTo": [],
             "member": [
               "11ec3089-76e1-4911-8794-507e13ed9d10",
@@ -4185,9 +3893,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "2930c802-fe75-48d3-a44e-f6cf8ec1ba2c"
-            ]
+            "memberOf": ["2930c802-fe75-48d3-a44e-f6cf8ec1ba2c"]
           },
           "inProject": {
             "id": "b8d0a608-18f2-447a-b748-809fb91b2d5a",
@@ -4207,13 +3913,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "mozartmc",
             "keywords": [],
-            "url": [
-              1110,
-              1111
-            ],
-            "funder": [
-              1016
-            ],
+            "url": [1110, 1111],
+            "funder": [1016],
             "relatedTo": [],
             "member": [
               "04d7a88d-1483-4292-83fc-ebd9b3d94036",
@@ -4277,9 +3978,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "38584f58-d93d-4dcd-8be2-081035aec958"
-            ]
+            "memberOf": ["38584f58-d93d-4dcd-8be2-081035aec958"]
           },
           "inProject": {
             "id": "041edc04-ed38-4826-9d3f-33d6687d2a98",
@@ -4299,12 +3998,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -4367,9 +4062,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "e265abb0-ae11-4a80-9a94-eb49404a4d50"
-            ]
+            "memberOf": ["e265abb0-ae11-4a80-9a94-eb49404a4d50"]
           },
           "inProject": {
             "id": "87a252a8-54e8-4e58-877f-dc8ebc486c4a",
@@ -4389,12 +4082,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "charm",
             "keywords": [],
-            "url": [
-              1077
-            ],
-            "funder": [
-              987
-            ],
+            "url": [1077],
+            "funder": [987],
             "relatedTo": [],
             "member": [
               "0fbcd783-f4a7-497c-8c9f-1c691d302ee8",
@@ -4452,9 +4141,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "7b70c2f4-006d-4a8f-96a4-a4c46a1dcd86"
-            ]
+            "memberOf": ["7b70c2f4-006d-4a8f-96a4-a4c46a1dcd86"]
           },
           "inProject": {
             "id": "f775d64c-d2b2-4ef5-82c8-58c59b7b72ee",
@@ -4474,14 +4161,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "poms",
             "keywords": [],
-            "url": [
-              1117,
-              1118
-            ],
-            "funder": [
-              1023,
-              1024
-            ],
+            "url": [1117, 1118],
+            "funder": [1023, 1024],
             "relatedTo": [],
             "member": [
               "05740620-8cad-4ed3-add5-b9b2858167c4",
@@ -4569,12 +4250,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "moi",
             "keywords": [],
-            "url": [
-              1109
-            ],
-            "funder": [
-              1015
-            ],
+            "url": [1109],
+            "funder": [1015],
             "relatedTo": [],
             "member": [
               "0c9a1653-5d35-4256-a2ba-11fc57ce12e7",
@@ -4631,13 +4308,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "ipm",
             "keywords": [],
-            "url": [
-              1099
-            ],
-            "funder": [
-              1008,
-              1009
-            ],
+            "url": [1099],
+            "funder": [1008, 1009],
             "relatedTo": [],
             "member": [
               "2134c406-f04d-4df3-93b9-261027a4557c",
@@ -4690,9 +4362,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "b4f0a079-f6af-4da4-b2e7-68c29b2da02b"
-            ]
+            "memberOf": ["b4f0a079-f6af-4da4-b2e7-68c29b2da02b"]
           },
           "inProject": {
             "id": "6101f11c-d995-45e1-bf85-f44934fccb75",
@@ -4712,13 +4382,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "etat-civil",
             "keywords": [],
-            "url": [
-              1085,
-              1086
-            ],
-            "funder": [
-              992
-            ],
+            "url": [1085, 1086],
+            "funder": [992],
             "relatedTo": [],
             "member": [
               "46b141af-c2a2-416b-ab52-2e3a373a20d9",
@@ -4781,9 +4446,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "281454c6-6534-48d4-a394-b597ca2219a6"
-            ]
+            "memberOf": ["281454c6-6534-48d4-a394-b597ca2219a6"]
           },
           "inProject": {
             "id": "87a252a8-54e8-4e58-877f-dc8ebc486c4a",
@@ -4803,12 +4466,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "charm",
             "keywords": [],
-            "url": [
-              1077
-            ],
-            "funder": [
-              987
-            ],
+            "url": [1077],
+            "funder": [987],
             "relatedTo": [],
             "member": [
               "0fbcd783-f4a7-497c-8c9f-1c691d302ee8",
@@ -4889,16 +4548,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "pbw",
             "keywords": [],
-            "url": [
-              1114,
-              1115
-            ],
-            "funder": [
-              1018,
-              1019,
-              1020,
-              1021
-            ],
+            "url": [1114, 1115],
+            "funder": [1018, 1019, 1020, 1021],
             "relatedTo": [],
             "member": [
               "154bdb43-73e9-400c-a696-d91afd63a38b",
@@ -4957,12 +4608,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -5026,9 +4673,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "5f5d2ab5-b3b0-49de-afe2-03cdd6d2e5d0"
-            ]
+            "memberOf": ["5f5d2ab5-b3b0-49de-afe2-03cdd6d2e5d0"]
           },
           "inProject": {
             "id": "06582ed8-5f70-4569-a746-4fed14361f3b",
@@ -5049,9 +4694,7 @@
             "slug": "digital-silk-road",
             "keywords": [],
             "url": [],
-            "funder": [
-              984
-            ],
+            "funder": [984],
             "relatedTo": [],
             "member": [
               "493e3392-e853-4913-9266-627a257fbe7a",
@@ -5144,13 +4787,8 @@
             "department": "5a99b380-9d30-411e-850a-3a07232de757",
             "slug": "shak",
             "keywords": [],
-            "url": [
-              1122,
-              1123
-            ],
-            "funder": [
-              1027
-            ],
+            "url": [1122, 1123],
+            "funder": [1027],
             "relatedTo": [],
             "member": [
               "05a0a4ac-9b4f-4324-b8b6-4872198c4a39",
@@ -5211,14 +4849,8 @@
             "department": "0e982bc3-4435-4989-a90d-304cf8da989b",
             "slug": "sharc",
             "keywords": [],
-            "url": [
-              1070,
-              1071
-            ],
-            "funder": [
-              981,
-              982
-            ],
+            "url": [1070, 1071],
+            "funder": [981, 982],
             "relatedTo": [],
             "member": [
               "1198cf04-4ca1-460f-9eab-41c5ec996e09",
@@ -5282,13 +4914,8 @@
             "department": "43aaccf5-c112-4d3f-8bd3-dc452bc18b06",
             "slug": "field",
             "keywords": [],
-            "url": [
-              1072,
-              1073
-            ],
-            "funder": [
-              983
-            ],
+            "url": [1072, 1073],
+            "funder": [983],
             "relatedTo": [],
             "member": [
               "1610b15c-8f66-445a-bc21-76d28fe3adbc",
@@ -5353,9 +4980,7 @@
             "slug": "costar",
             "keywords": [],
             "url": [],
-            "funder": [
-              968
-            ],
+            "funder": [968],
             "relatedTo": [],
             "member": [
               "2224809a-c37d-45b7-be82-0094d731d7c0",
@@ -5415,14 +5040,8 @@
             "department": "3d39cbd4-789a-4c7e-9a38-dc6634a3c776",
             "slug": "madih",
             "keywords": [],
-            "url": [
-              1103,
-              1104
-            ],
-            "funder": [
-              1011,
-              1012
-            ],
+            "url": [1103, 1104],
+            "funder": [1011, 1012],
             "relatedTo": [],
             "member": [
               "198cb160-6d5e-43ff-a451-154cbc233948",
@@ -5485,12 +5104,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -5565,16 +5180,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "pbw",
             "keywords": [],
-            "url": [
-              1114,
-              1115
-            ],
-            "funder": [
-              1018,
-              1019,
-              1020,
-              1021
-            ],
+            "url": [1114, 1115],
+            "funder": [1018, 1019, 1020, 1021],
             "relatedTo": [],
             "member": [
               "154bdb43-73e9-400c-a696-d91afd63a38b",
@@ -5641,13 +5248,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "cyprus",
             "keywords": [],
-            "url": [
-              1079
-            ],
-            "funder": [
-              988,
-              989
-            ],
+            "url": [1079],
+            "funder": [988, 989],
             "relatedTo": [],
             "member": [
               "120fda20-7831-416e-9430-3714fb264d67",
@@ -5709,13 +5311,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "dprr",
             "keywords": [],
-            "url": [
-              1083,
-              1084
-            ],
-            "funder": [
-              991
-            ],
+            "url": [1083, 1084],
+            "funder": [991],
             "relatedTo": [],
             "member": [
               "13337d42-0f6e-42dc-b1d8-d007f6ccb17c",
@@ -5778,14 +5375,8 @@
             "department": "3d39cbd4-789a-4c7e-9a38-dc6634a3c776",
             "slug": "the-digital-ghost-hunt",
             "keywords": [],
-            "url": [
-              1130,
-              1131,
-              1132
-            ],
-            "funder": [
-              1032
-            ],
+            "url": [1130, 1131, 1132],
+            "funder": [1032],
             "relatedTo": [],
             "member": [
               "2f77bfc1-5d7c-411d-a92c-1d0e4bd0cdc0",
@@ -5833,9 +5424,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "0c8e3109-175a-4d39-a27b-64a919b978d4"
-            ]
+            "memberOf": ["0c8e3109-175a-4d39-a27b-64a919b978d4"]
           },
           "inProject": {
             "id": "c98a1c1f-6656-4051-be02-ae35d38a1e14",
@@ -5855,15 +5444,8 @@
             "department": "b9b64d39-650b-492b-b6ac-6e0b70c3d820",
             "slug": "gssn",
             "keywords": [],
-            "url": [
-              1089,
-              1090
-            ],
-            "funder": [
-              994,
-              995,
-              996
-            ],
+            "url": [1089, 1090],
+            "funder": [994, 995, 996],
             "relatedTo": [],
             "member": [
               "0c8e3109-175a-4d39-a27b-64a919b978d4",
@@ -5950,13 +5532,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "renskin-2",
             "keywords": [],
-            "url": [
-              1119,
-              1120
-            ],
-            "funder": [
-              1025
-            ],
+            "url": [1119, 1120],
+            "funder": [1025],
             "relatedTo": [],
             "member": [
               "0f462c7d-bef0-4f1e-9d02-8bd4ccded1fe",
@@ -6024,13 +5601,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "renskin",
             "keywords": [],
-            "url": [
-              1053,
-              1054
-            ],
-            "funder": [
-              967
-            ],
+            "url": [1053, 1054],
+            "funder": [967],
             "relatedTo": [],
             "member": [
               "2a56089e-3150-4f05-9afb-4a9eaaaa20b1",
@@ -6116,12 +5688,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "saw",
             "keywords": [],
-            "url": [
-              1124
-            ],
-            "funder": [
-              1028
-            ],
+            "url": [1124],
+            "funder": [1028],
             "relatedTo": [],
             "member": [
               "0d01c1ed-af49-4e1a-832b-0c8ac9793eb4",
@@ -6177,13 +5745,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "ipm",
             "keywords": [],
-            "url": [
-              1099
-            ],
-            "funder": [
-              1008,
-              1009
-            ],
+            "url": [1099],
+            "funder": [1008, 1009],
             "relatedTo": [],
             "member": [
               "2134c406-f04d-4df3-93b9-261027a4557c",
@@ -6260,12 +5823,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "inscriptions-of-aphrodisias",
             "keywords": [],
-            "url": [
-              1096
-            ],
-            "funder": [
-              1000
-            ],
+            "url": [1096],
+            "funder": [1000],
             "relatedTo": [],
             "member": [
               "23958d4a-fa45-4669-89a4-7fb06a1afa26",
@@ -6322,17 +5881,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "iospe",
             "keywords": [],
-            "url": [
-              1098
-            ],
-            "funder": [
-              1002,
-              1003,
-              1004,
-              1005,
-              1006,
-              1007
-            ],
+            "url": [1098],
+            "funder": [1002, 1003, 1004, 1005, 1006, 1007],
             "relatedTo": [],
             "member": [
               "4a0f8659-cd0d-4f5c-bb23-835e0d665b42",
@@ -6391,13 +5941,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "epapp",
             "keywords": [],
-            "url": [
-              1125
-            ],
-            "funder": [
-              1029,
-              1030
-            ],
+            "url": [1125],
+            "funder": [1029, 1030],
             "relatedTo": [],
             "member": [
               "076655fb-2f5c-4971-92b1-5e5cb1f3dcc1",
@@ -6447,9 +5992,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "05537f26-27a1-47ce-ab18-2cb4dcc97b37"
-            ]
+            "memberOf": ["05537f26-27a1-47ce-ab18-2cb4dcc97b37"]
           },
           "inProject": {
             "id": "fb0259e4-1c4d-4b53-b89c-f8ce668dc591",
@@ -6469,13 +6012,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "dral",
             "keywords": [],
-            "url": [
-              1081,
-              1082
-            ],
-            "funder": [
-              990
-            ],
+            "url": [1081, 1082],
+            "funder": [990],
             "relatedTo": [],
             "member": [
               "05537f26-27a1-47ce-ab18-2cb4dcc97b37",
@@ -6538,9 +6076,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "addf9f3f-ee5c-4319-99cf-646d157d4b87"
-            ]
+            "memberOf": ["addf9f3f-ee5c-4319-99cf-646d157d4b87"]
           },
           "inProject": {
             "id": "041edc04-ed38-4826-9d3f-33d6687d2a98",
@@ -6560,12 +6096,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -6658,12 +6190,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "charm",
             "keywords": [],
-            "url": [
-              1077
-            ],
-            "funder": [
-              987
-            ],
+            "url": [1077],
+            "funder": [987],
             "relatedTo": [],
             "member": [
               "0fbcd783-f4a7-497c-8c9f-1c691d302ee8",
@@ -6731,15 +6259,8 @@
             "department": "1fc2cfe2-d581-4a23-839f-497510d0d812",
             "slug": "tvof",
             "keywords": [],
-            "url": [
-              1126,
-              1127,
-              1128,
-              1129
-            ],
-            "funder": [
-              1031
-            ],
+            "url": [1126, 1127, 1128, 1129],
+            "funder": [1031],
             "relatedTo": [],
             "member": [
               "03b97b55-1065-4045-a2b7-3aceb3c8e93a",
@@ -6799,13 +6320,8 @@
             "department": "43aaccf5-c112-4d3f-8bd3-dc452bc18b06",
             "slug": "field",
             "keywords": [],
-            "url": [
-              1072,
-              1073
-            ],
-            "funder": [
-              983
-            ],
+            "url": [1072, 1073],
+            "funder": [983],
             "relatedTo": [],
             "member": [
               "1610b15c-8f66-445a-bc21-76d28fe3adbc",
@@ -6868,13 +6384,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "exon-domesday",
             "keywords": [],
-            "url": [
-              1087,
-              1088
-            ],
-            "funder": [
-              993
-            ],
+            "url": [1087, 1088],
+            "funder": [993],
             "relatedTo": [],
             "member": [
               "5acc445f-7382-4a18-85c7-20931bfd258d",
@@ -6932,13 +6443,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "dral",
             "keywords": [],
-            "url": [
-              1081,
-              1082
-            ],
-            "funder": [
-              990
-            ],
+            "url": [1081, 1082],
+            "funder": [990],
             "relatedTo": [],
             "member": [
               "05537f26-27a1-47ce-ab18-2cb4dcc97b37",
@@ -6998,15 +6504,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cotr",
             "keywords": [],
-            "url": [
-              1057,
-              1058,
-              1059,
-              1060
-            ],
-            "funder": [
-              971
-            ],
+            "url": [1057, 1058, 1059, 1060],
+            "funder": [971],
             "relatedTo": [],
             "member": [
               "685cdb6a-c69e-4e57-83c9-e86134f3f52e",
@@ -7066,13 +6565,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "renskin-2",
             "keywords": [],
-            "url": [
-              1119,
-              1120
-            ],
-            "funder": [
-              1025
-            ],
+            "url": [1119, 1120],
+            "funder": [1025],
             "relatedTo": [],
             "member": [
               "0f462c7d-bef0-4f1e-9d02-8bd4ccded1fe",
@@ -7134,17 +6628,8 @@
             "department": "3d39cbd4-789a-4c7e-9a38-dc6634a3c776",
             "slug": "kdl-archetype",
             "keywords": [],
-            "url": [
-              1065,
-              1066,
-              1067,
-              1068
-            ],
-            "funder": [
-              977,
-              978,
-              979
-            ],
+            "url": [1065, 1066, 1067, 1068],
+            "funder": [977, 978, 979],
             "relatedTo": [],
             "member": [
               "046b9df5-0a4f-4720-acc6-b769e9f8a5db",
@@ -7208,13 +6693,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "renskin",
             "keywords": [],
-            "url": [
-              1053,
-              1054
-            ],
-            "funder": [
-              967
-            ],
+            "url": [1053, 1054],
+            "funder": [967],
             "relatedTo": [],
             "member": [
               "2a56089e-3150-4f05-9afb-4a9eaaaa20b1",
@@ -7264,9 +6744,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "4abfb26e-4224-4faf-a54a-85c7f9684e33"
-            ]
+            "memberOf": ["4abfb26e-4224-4faf-a54a-85c7f9684e33"]
           },
           "inProject": {
             "id": "6101f11c-d995-45e1-bf85-f44934fccb75",
@@ -7286,13 +6764,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "etat-civil",
             "keywords": [],
-            "url": [
-              1085,
-              1086
-            ],
-            "funder": [
-              992
-            ],
+            "url": [1085, 1086],
+            "funder": [992],
             "relatedTo": [],
             "member": [
               "46b141af-c2a2-416b-ab52-2e3a373a20d9",
@@ -7342,9 +6815,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "941e6339-f2b8-49b3-90eb-33275b7aec20"
-            ]
+            "memberOf": ["941e6339-f2b8-49b3-90eb-33275b7aec20"]
           },
           "inProject": {
             "id": "1f08f71f-00c0-405f-9c83-c52fbd573e1e",
@@ -7364,16 +6835,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "pbw",
             "keywords": [],
-            "url": [
-              1114,
-              1115
-            ],
-            "funder": [
-              1018,
-              1019,
-              1020,
-              1021
-            ],
+            "url": [1114, 1115],
+            "funder": [1018, 1019, 1020, 1021],
             "relatedTo": [],
             "member": [
               "154bdb43-73e9-400c-a696-d91afd63a38b",
@@ -7429,9 +6892,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "0f52a3b9-137a-4a4e-b50a-58af06797597"
-            ]
+            "memberOf": ["0f52a3b9-137a-4a4e-b50a-58af06797597"]
           },
           "inProject": {
             "id": "761307c7-7edf-4567-8864-0a649b279a71",
@@ -7451,17 +6912,8 @@
             "department": "3d39cbd4-789a-4c7e-9a38-dc6634a3c776",
             "slug": "kdl-archetype",
             "keywords": [],
-            "url": [
-              1065,
-              1066,
-              1067,
-              1068
-            ],
-            "funder": [
-              977,
-              978,
-              979
-            ],
+            "url": [1065, 1066, 1067, 1068],
+            "funder": [977, 978, 979],
             "relatedTo": [],
             "member": [
               "046b9df5-0a4f-4720-acc6-b769e9f8a5db",
@@ -7556,15 +7008,8 @@
             "department": "1fc2cfe2-d581-4a23-839f-497510d0d812",
             "slug": "tvof",
             "keywords": [],
-            "url": [
-              1126,
-              1127,
-              1128,
-              1129
-            ],
-            "funder": [
-              1031
-            ],
+            "url": [1126, 1127, 1128, 1129],
+            "funder": [1031],
             "relatedTo": [],
             "member": [
               "03b97b55-1065-4045-a2b7-3aceb3c8e93a",
@@ -7635,13 +7080,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "cyprus",
             "keywords": [],
-            "url": [
-              1079
-            ],
-            "funder": [
-              988,
-              989
-            ],
+            "url": [1079],
+            "funder": [988, 989],
             "relatedTo": [],
             "member": [
               "120fda20-7831-416e-9430-3714fb264d67",
@@ -7713,15 +7153,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "hgl",
             "keywords": [],
-            "url": [
-              1092,
-              1093
-            ],
-            "funder": [
-              997,
-              998,
-              999
-            ],
+            "url": [1092, 1093],
+            "funder": [997, 998, 999],
             "relatedTo": [],
             "member": [
               "23501cf3-e2e3-4704-9e0f-b2fff4d9be2e",
@@ -7792,13 +7225,8 @@
             "department": "c8a8b51a-242b-4eca-8dc7-26ae0097ccef",
             "slug": "radical-translations",
             "keywords": [],
-            "url": [
-              1055,
-              1056
-            ],
-            "funder": [
-              970
-            ],
+            "url": [1055, 1056],
+            "funder": [970],
             "relatedTo": [],
             "member": [
               "1d8af49c-9636-4d4c-923b-05dd576084d4",
@@ -7870,13 +7298,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "ircyr",
             "keywords": [],
-            "url": [
-              1100,
-              1101
-            ],
-            "funder": [
-              1010
-            ],
+            "url": [1100, 1101],
+            "funder": [1010],
             "relatedTo": [],
             "member": [
               "188d1203-9484-4b79-bc63-12c26f806434",
@@ -7953,13 +7376,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "dprr",
             "keywords": [],
-            "url": [
-              1083,
-              1084
-            ],
-            "funder": [
-              991
-            ],
+            "url": [1083, 1084],
+            "funder": [991],
             "relatedTo": [],
             "member": [
               "13337d42-0f6e-42dc-b1d8-d007f6ccb17c",
@@ -8032,13 +7450,8 @@
             "department": "43aaccf5-c112-4d3f-8bd3-dc452bc18b06",
             "slug": "field",
             "keywords": [],
-            "url": [
-              1072,
-              1073
-            ],
-            "funder": [
-              983
-            ],
+            "url": [1072, 1073],
+            "funder": [983],
             "relatedTo": [],
             "member": [
               "1610b15c-8f66-445a-bc21-76d28fe3adbc",
@@ -8112,14 +7525,8 @@
             "department": "0e982bc3-4435-4989-a90d-304cf8da989b",
             "slug": "ego-media",
             "keywords": [],
-            "url": [
-              1063,
-              1064
-            ],
-            "funder": [
-              975,
-              976
-            ],
+            "url": [1063, 1064],
+            "funder": [975, 976],
             "relatedTo": [],
             "member": [
               "11ec3089-76e1-4911-8794-507e13ed9d10",
@@ -8192,13 +7599,8 @@
             "department": "2aff7ee9-bea7-4229-8852-31965ef0f9cf",
             "slug": "owri",
             "keywords": [],
-            "url": [
-              1112,
-              1113
-            ],
-            "funder": [
-              1017
-            ],
+            "url": [1112, 1113],
+            "funder": [1017],
             "relatedTo": [],
             "member": [
               "0c54e218-ea8f-41e3-9b94-77f34e6eec0e",
@@ -8270,15 +7672,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cotr",
             "keywords": [],
-            "url": [
-              1057,
-              1058,
-              1059,
-              1060
-            ],
-            "funder": [
-              971
-            ],
+            "url": [1057, 1058, 1059, 1060],
+            "funder": [971],
             "relatedTo": [],
             "member": [
               "685cdb6a-c69e-4e57-83c9-e86134f3f52e",
@@ -8349,13 +7744,8 @@
             "department": "5a99b380-9d30-411e-850a-3a07232de757",
             "slug": "shak",
             "keywords": [],
-            "url": [
-              1122,
-              1123
-            ],
-            "funder": [
-              1027
-            ],
+            "url": [1122, 1123],
+            "funder": [1027],
             "relatedTo": [],
             "member": [
               "05a0a4ac-9b4f-4324-b8b6-4872198c4a39",
@@ -8426,12 +7816,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "mkcheur",
             "keywords": [],
-            "url": [
-              1108
-            ],
-            "funder": [
-              1014
-            ],
+            "url": [1108],
+            "funder": [1014],
             "relatedTo": [],
             "member": [
               "8bc67b36-3959-40de-ac3c-02c988be6bca",
@@ -8502,12 +7888,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "inventory-of-byzantine-churches-on-cyprus",
             "keywords": [],
-            "url": [
-              1097
-            ],
-            "funder": [
-              1001
-            ],
+            "url": [1097],
+            "funder": [1001],
             "relatedTo": [],
             "member": [
               "57df5ea6-a664-4324-87ba-770060745fc4",
@@ -8581,9 +7963,7 @@
             "department": "1fc2cfe2-d581-4a23-839f-497510d0d812",
             "slug": "medieval-francophone-literature-outside-france",
             "keywords": [],
-            "url": [
-              1107
-            ],
+            "url": [1107],
             "funder": [],
             "relatedTo": [],
             "member": [
@@ -8654,13 +8034,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "renskin-2",
             "keywords": [],
-            "url": [
-              1119,
-              1120
-            ],
-            "funder": [
-              1025
-            ],
+            "url": [1119, 1120],
+            "funder": [1025],
             "relatedTo": [],
             "member": [
               "0f462c7d-bef0-4f1e-9d02-8bd4ccded1fe",
@@ -8734,13 +8109,9 @@
             "slug": "ui/ux-design-and-software-development",
             "keywords": [],
             "url": [],
-            "funder": [
-              969
-            ],
+            "funder": [969],
             "relatedTo": [],
-            "member": [
-              "ed8c35f4-2d2b-41da-b1e0-49ac65c8f71a"
-            ]
+            "member": ["ed8c35f4-2d2b-41da-b1e0-49ac65c8f71a"]
           },
           "inOrganisation": {
             "id": "ddf897b2-7f06-48d4-bc99-a080d1a32181",
@@ -8817,13 +8188,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "dral",
             "keywords": [],
-            "url": [
-              1081,
-              1082
-            ],
-            "funder": [
-              990
-            ],
+            "url": [1081, 1082],
+            "funder": [990],
             "relatedTo": [],
             "member": [
               "05537f26-27a1-47ce-ab18-2cb4dcc97b37",
@@ -8895,9 +8261,7 @@
             "slug": "scoping-a-data-service-for-complex-3d-data-in-the-arts-and-humanities",
             "keywords": [],
             "url": [],
-            "funder": [
-              972
-            ],
+            "funder": [972],
             "relatedTo": [],
             "member": [
               "086c2823-aa00-4f50-9935-1d2927020a4b",
@@ -8968,15 +8332,8 @@
             "department": "b9b64d39-650b-492b-b6ac-6e0b70c3d820",
             "slug": "gssn",
             "keywords": [],
-            "url": [
-              1089,
-              1090
-            ],
-            "funder": [
-              994,
-              995,
-              996
-            ],
+            "url": [1089, 1090],
+            "funder": [994, 995, 996],
             "relatedTo": [],
             "member": [
               "0c8e3109-175a-4d39-a27b-64a919b978d4",
@@ -9048,12 +8405,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "moi",
             "keywords": [],
-            "url": [
-              1109
-            ],
-            "funder": [
-              1015
-            ],
+            "url": [1109],
+            "funder": [1015],
             "relatedTo": [],
             "member": [
               "0c9a1653-5d35-4256-a2ba-11fc57ce12e7",
@@ -9107,9 +8460,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "69d4ea99-56c0-4afc-9e21-569624cd0e5b"
-            ]
+            "memberOf": ["69d4ea99-56c0-4afc-9e21-569624cd0e5b"]
           },
           "inProject": {
             "id": "ad3d9244-1569-4f31-b1e3-2ad0dc67df8f",
@@ -9129,12 +8480,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -9221,13 +8568,8 @@
             "department": "5a99b380-9d30-411e-850a-3a07232de757",
             "slug": "shak",
             "keywords": [],
-            "url": [
-              1122,
-              1123
-            ],
-            "funder": [
-              1027
-            ],
+            "url": [1122, 1123],
+            "funder": [1027],
             "relatedTo": [],
             "member": [
               "05a0a4ac-9b4f-4324-b8b6-4872198c4a39",
@@ -9293,14 +8635,8 @@
             "department": "0e982bc3-4435-4989-a90d-304cf8da989b",
             "slug": "sharc",
             "keywords": [],
-            "url": [
-              1070,
-              1071
-            ],
-            "funder": [
-              981,
-              982
-            ],
+            "url": [1070, 1071],
+            "funder": [981, 982],
             "relatedTo": [],
             "member": [
               "1198cf04-4ca1-460f-9eab-41c5ec996e09",
@@ -9366,9 +8702,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "4790b7b4-b2ed-410b-b585-118c05c8d678"
-            ]
+            "memberOf": ["4790b7b4-b2ed-410b-b585-118c05c8d678"]
           },
           "inProject": {
             "id": "43ba7f14-ad74-4b2d-a8a1-50b6f2853269",
@@ -9388,12 +8722,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "nanotoms-and-open-scholarship-experiences",
             "keywords": [],
-            "url": [
-              1069
-            ],
-            "funder": [
-              980
-            ],
+            "url": [1069],
+            "funder": [980],
             "relatedTo": [],
             "member": [
               "4790b7b4-b2ed-410b-b585-118c05c8d678",
@@ -9477,12 +8807,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -9549,12 +8875,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -9644,12 +8966,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -9720,12 +9038,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "inscriptions-of-aphrodisias",
             "keywords": [],
-            "url": [
-              1096
-            ],
-            "funder": [
-              1000
-            ],
+            "url": [1096],
+            "funder": [1000],
             "relatedTo": [],
             "member": [
               "23958d4a-fa45-4669-89a4-7fb06a1afa26",
@@ -9798,12 +9112,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -9873,16 +9183,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "pbw",
             "keywords": [],
-            "url": [
-              1114,
-              1115
-            ],
-            "funder": [
-              1018,
-              1019,
-              1020,
-              1021
-            ],
+            "url": [1114, 1115],
+            "funder": [1018, 1019, 1020, 1021],
             "relatedTo": [],
             "member": [
               "154bdb43-73e9-400c-a696-d91afd63a38b",
@@ -9945,13 +9247,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "ircyr",
             "keywords": [],
-            "url": [
-              1100,
-              1101
-            ],
-            "funder": [
-              1010
-            ],
+            "url": [1100, 1101],
+            "funder": [1010],
             "relatedTo": [],
             "member": [
               "188d1203-9484-4b79-bc63-12c26f806434",
@@ -10014,12 +9311,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "charm",
             "keywords": [],
-            "url": [
-              1077
-            ],
-            "funder": [
-              987
-            ],
+            "url": [1077],
+            "funder": [987],
             "relatedTo": [],
             "member": [
               "0fbcd783-f4a7-497c-8c9f-1c691d302ee8",
@@ -10077,9 +9370,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "6dfb66a7-5e3e-4238-b765-0d608f7e18e8"
-            ]
+            "memberOf": ["6dfb66a7-5e3e-4238-b765-0d608f7e18e8"]
           },
           "inProject": {
             "id": "b0d08dcb-cf91-465e-8c59-29cddc440c95",
@@ -10099,13 +9390,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "dprr",
             "keywords": [],
-            "url": [
-              1083,
-              1084
-            ],
-            "funder": [
-              991
-            ],
+            "url": [1083, 1084],
+            "funder": [991],
             "relatedTo": [],
             "member": [
               "13337d42-0f6e-42dc-b1d8-d007f6ccb17c",
@@ -10170,9 +9456,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "ed4634df-3904-4956-be7d-af5372a10629"
-            ]
+            "memberOf": ["ed4634df-3904-4956-be7d-af5372a10629"]
           },
           "inProject": {
             "id": "7e2dc6e5-03b4-4ab3-995d-5f8ab964a02e",
@@ -10192,17 +9476,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "iospe",
             "keywords": [],
-            "url": [
-              1098
-            ],
-            "funder": [
-              1002,
-              1003,
-              1004,
-              1005,
-              1006,
-              1007
-            ],
+            "url": [1098],
+            "funder": [1002, 1003, 1004, 1005, 1006, 1007],
             "relatedTo": [],
             "member": [
               "4a0f8659-cd0d-4f5c-bb23-835e0d665b42",
@@ -10270,9 +9545,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "34be5edc-14b1-44ea-9cb9-801f351619c2"
-            ]
+            "memberOf": ["34be5edc-14b1-44ea-9cb9-801f351619c2"]
           },
           "inProject": {
             "id": "768e6b54-97e1-4655-8247-8591820a8bae",
@@ -10293,9 +9566,7 @@
             "slug": "re-mixing-de-humanisation",
             "keywords": [],
             "url": [],
-            "funder": [
-              1033
-            ],
+            "funder": [1033],
             "relatedTo": [],
             "member": [
               "34be5edc-14b1-44ea-9cb9-801f351619c2",
@@ -10381,12 +9652,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "sudan-memory",
             "keywords": [],
-            "url": [
-              1074
-            ],
-            "funder": [
-              985
-            ],
+            "url": [1074],
+            "funder": [985],
             "relatedTo": [],
             "member": [
               "0fc23d2b-0efb-4040-9a2a-579901f8049f",
@@ -10438,14 +9705,8 @@
             "department": "3d39cbd4-789a-4c7e-9a38-dc6634a3c776",
             "slug": "madih",
             "keywords": [],
-            "url": [
-              1103,
-              1104
-            ],
-            "funder": [
-              1011,
-              1012
-            ],
+            "url": [1103, 1104],
+            "funder": [1011, 1012],
             "relatedTo": [],
             "member": [
               "198cb160-6d5e-43ff-a451-154cbc233948",
@@ -10501,14 +9762,8 @@
             "department": "3d39cbd4-789a-4c7e-9a38-dc6634a3c776",
             "slug": "madih",
             "keywords": [],
-            "url": [
-              1103,
-              1104
-            ],
-            "funder": [
-              1011,
-              1012
-            ],
+            "url": [1103, 1104],
+            "funder": [1011, 1012],
             "relatedTo": [],
             "member": [
               "198cb160-6d5e-43ff-a451-154cbc233948",
@@ -10599,12 +9854,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -10673,13 +9924,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "mao-era-in-objects",
             "keywords": [],
-            "url": [
-              1105,
-              1106
-            ],
-            "funder": [
-              1013
-            ],
+            "url": [1105, 1106],
+            "funder": [1013],
             "relatedTo": [],
             "member": [
               "293b036f-17db-4062-9a35-53efa84ccf7d",
@@ -10736,14 +9982,8 @@
             "department": "0e982bc3-4435-4989-a90d-304cf8da989b",
             "slug": "sharc",
             "keywords": [],
-            "url": [
-              1070,
-              1071
-            ],
-            "funder": [
-              981,
-              982
-            ],
+            "url": [1070, 1071],
+            "funder": [981, 982],
             "relatedTo": [],
             "member": [
               "1198cf04-4ca1-460f-9eab-41c5ec996e09",
@@ -10802,13 +10042,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "ircyr",
             "keywords": [],
-            "url": [
-              1100,
-              1101
-            ],
-            "funder": [
-              1010
-            ],
+            "url": [1100, 1101],
+            "funder": [1010],
             "relatedTo": [],
             "member": [
               "188d1203-9484-4b79-bc63-12c26f806434",
@@ -10870,17 +10105,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "iospe",
             "keywords": [],
-            "url": [
-              1098
-            ],
-            "funder": [
-              1002,
-              1003,
-              1004,
-              1005,
-              1006,
-              1007
-            ],
+            "url": [1098],
+            "funder": [1002, 1003, 1004, 1005, 1006, 1007],
             "relatedTo": [],
             "member": [
               "4a0f8659-cd0d-4f5c-bb23-835e0d665b42",
@@ -10935,9 +10161,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "34296ca0-42a0-4f01-bb3a-adc7bb59c940"
-            ]
+            "memberOf": ["34296ca0-42a0-4f01-bb3a-adc7bb59c940"]
           },
           "inProject": {
             "id": "041edc04-ed38-4826-9d3f-33d6687d2a98",
@@ -10957,12 +10181,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -11038,9 +10258,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "e8fa2060-ec4d-4004-a3f0-a1f897eea321"
-            ]
+            "memberOf": ["e8fa2060-ec4d-4004-a3f0-a1f897eea321"]
           },
           "inProject": {
             "id": "6be047c3-eea2-42b1-97d5-8adf93b3f837",
@@ -11060,13 +10278,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "mao-era-in-objects",
             "keywords": [],
-            "url": [
-              1105,
-              1106
-            ],
-            "funder": [
-              1013
-            ],
+            "url": [1105, 1106],
+            "funder": [1013],
             "relatedTo": [],
             "member": [
               "293b036f-17db-4062-9a35-53efa84ccf7d",
@@ -11154,16 +10367,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "pbw",
             "keywords": [],
-            "url": [
-              1114,
-              1115
-            ],
-            "funder": [
-              1018,
-              1019,
-              1020,
-              1021
-            ],
+            "url": [1114, 1115],
+            "funder": [1018, 1019, 1020, 1021],
             "relatedTo": [],
             "member": [
               "154bdb43-73e9-400c-a696-d91afd63a38b",
@@ -11236,12 +10441,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -11308,12 +10509,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -11377,9 +10574,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "52e226d6-de20-429b-85de-d5556986326e"
-            ]
+            "memberOf": ["52e226d6-de20-429b-85de-d5556986326e"]
           },
           "inProject": {
             "id": "4bb85622-5f04-443d-90ab-39b582b17191",
@@ -11399,12 +10594,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "inscriptions-of-aphrodisias",
             "keywords": [],
-            "url": [
-              1096
-            ],
-            "funder": [
-              1000
-            ],
+            "url": [1096],
+            "funder": [1000],
             "relatedTo": [],
             "member": [
               "23958d4a-fa45-4669-89a4-7fb06a1afa26",
@@ -11481,9 +10672,7 @@
             "slug": "digital-cultures-of-covid19",
             "keywords": [],
             "url": [],
-            "funder": [
-              974
-            ],
+            "funder": [974],
             "relatedTo": [],
             "member": [
               "3d0ef2e3-995f-48a9-8209-dc40e32fd4bf",
@@ -11548,13 +10737,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "data-portal-explorer",
             "keywords": [],
-            "url": [
-              1061,
-              1062
-            ],
-            "funder": [
-              973
-            ],
+            "url": [1061, 1062],
+            "funder": [973],
             "relatedTo": [],
             "member": [
               "5423afc2-d7dd-4922-9523-e24aa6f3f7fb",
@@ -11638,12 +10822,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -11710,12 +10890,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "inscriptions-of-aphrodisias",
             "keywords": [],
-            "url": [
-              1096
-            ],
-            "funder": [
-              1000
-            ],
+            "url": [1096],
+            "funder": [1000],
             "relatedTo": [],
             "member": [
               "23958d4a-fa45-4669-89a4-7fb06a1afa26",
@@ -11768,9 +10944,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "b16d57be-d6c3-45a4-a6c7-3969797182b5"
-            ]
+            "memberOf": ["b16d57be-d6c3-45a4-a6c7-3969797182b5"]
           },
           "inProject": {
             "id": "87a252a8-54e8-4e58-877f-dc8ebc486c4a",
@@ -11790,12 +10964,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "charm",
             "keywords": [],
-            "url": [
-              1077
-            ],
-            "funder": [
-              987
-            ],
+            "url": [1077],
+            "funder": [987],
             "relatedTo": [],
             "member": [
               "0fbcd783-f4a7-497c-8c9f-1c691d302ee8",
@@ -11853,9 +11023,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "de66ad52-26de-4e03-8ca3-5292c450d9e3"
-            ]
+            "memberOf": ["de66ad52-26de-4e03-8ca3-5292c450d9e3"]
           },
           "inProject": {
             "id": "aca08e12-31b7-4956-a832-f9e18a5c537c",
@@ -11875,13 +11043,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "exon-domesday",
             "keywords": [],
-            "url": [
-              1087,
-              1088
-            ],
-            "funder": [
-              993
-            ],
+            "url": [1087, 1088],
+            "funder": [993],
             "relatedTo": [],
             "member": [
               "5acc445f-7382-4a18-85c7-20931bfd258d",
@@ -11942,9 +11105,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "761be07b-3330-4fb9-9481-92c7f8303be1"
-            ]
+            "memberOf": ["761be07b-3330-4fb9-9481-92c7f8303be1"]
           },
           "inProject": {
             "id": "7702ca8c-43b8-494e-8180-65efb4f40e31",
@@ -11965,9 +11126,7 @@
             "slug": "scoping-a-data-service-for-complex-3d-data-in-the-arts-and-humanities",
             "keywords": [],
             "url": [],
-            "funder": [
-              972
-            ],
+            "funder": [972],
             "relatedTo": [],
             "member": [
               "086c2823-aa00-4f50-9935-1d2927020a4b",
@@ -12030,9 +11189,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "c0be7b27-b237-4d4a-b1d8-633964dc4377"
-            ]
+            "memberOf": ["c0be7b27-b237-4d4a-b1d8-633964dc4377"]
           },
           "inProject": {
             "id": "ff22df9f-fdf9-416b-86a1-4a8a9b69d8de",
@@ -12052,12 +11209,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "saw",
             "keywords": [],
-            "url": [
-              1124
-            ],
-            "funder": [
-              1028
-            ],
+            "url": [1124],
+            "funder": [1028],
             "relatedTo": [],
             "member": [
               "0d01c1ed-af49-4e1a-832b-0c8ac9793eb4",
@@ -12110,9 +11263,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "4c991a70-1e13-49e6-9337-ff620e004ce5"
-            ]
+            "memberOf": ["4c991a70-1e13-49e6-9337-ff620e004ce5"]
           },
           "inProject": {
             "id": "ad3d9244-1569-4f31-b1e3-2ad0dc67df8f",
@@ -12132,12 +11283,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -12237,13 +11384,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "dprr",
             "keywords": [],
-            "url": [
-              1083,
-              1084
-            ],
-            "funder": [
-              991
-            ],
+            "url": [1083, 1084],
+            "funder": [991],
             "relatedTo": [],
             "member": [
               "13337d42-0f6e-42dc-b1d8-d007f6ccb17c",
@@ -12298,12 +11440,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "mkcheur",
             "keywords": [],
-            "url": [
-              1108
-            ],
-            "funder": [
-              1014
-            ],
+            "url": [1108],
+            "funder": [1014],
             "relatedTo": [],
             "member": [
               "8bc67b36-3959-40de-ac3c-02c988be6bca",
@@ -12353,9 +11491,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "453a089e-ab54-4e6f-8b60-e4fab0887356"
-            ]
+            "memberOf": ["453a089e-ab54-4e6f-8b60-e4fab0887356"]
           },
           "inProject": {
             "id": "87a252a8-54e8-4e58-877f-dc8ebc486c4a",
@@ -12375,12 +11511,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "charm",
             "keywords": [],
-            "url": [
-              1077
-            ],
-            "funder": [
-              987
-            ],
+            "url": [1077],
+            "funder": [987],
             "relatedTo": [],
             "member": [
               "0fbcd783-f4a7-497c-8c9f-1c691d302ee8",
@@ -12438,9 +11570,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "9c352d98-e2aa-4958-8b4d-37db88d1eb50"
-            ]
+            "memberOf": ["9c352d98-e2aa-4958-8b4d-37db88d1eb50"]
           },
           "inProject": {
             "id": "55136a64-f983-44e0-af51-17a5c7fa6786",
@@ -12460,12 +11590,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "sudan-memory",
             "keywords": [],
-            "url": [
-              1074
-            ],
-            "funder": [
-              985
-            ],
+            "url": [1074],
+            "funder": [985],
             "relatedTo": [],
             "member": [
               "0fc23d2b-0efb-4040-9a2a-579901f8049f",
@@ -12526,9 +11652,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "6ce6d3a6-1a76-4f9a-bdd8-97b40c9447f8"
-            ]
+            "memberOf": ["6ce6d3a6-1a76-4f9a-bdd8-97b40c9447f8"]
           },
           "inProject": {
             "id": "ff22df9f-fdf9-416b-86a1-4a8a9b69d8de",
@@ -12548,12 +11672,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "saw",
             "keywords": [],
-            "url": [
-              1124
-            ],
-            "funder": [
-              1028
-            ],
+            "url": [1124],
+            "funder": [1028],
             "relatedTo": [],
             "member": [
               "0d01c1ed-af49-4e1a-832b-0c8ac9793eb4",
@@ -12606,9 +11726,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "0c79695e-9f10-44c6-bd47-6f3f0f804c13"
-            ]
+            "memberOf": ["0c79695e-9f10-44c6-bd47-6f3f0f804c13"]
           },
           "inProject": {
             "id": "ad3d9244-1569-4f31-b1e3-2ad0dc67df8f",
@@ -12628,12 +11746,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -12697,9 +11811,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "fc4bd126-e94d-47f5-a79a-507d7af688d5"
-            ]
+            "memberOf": ["fc4bd126-e94d-47f5-a79a-507d7af688d5"]
           },
           "inProject": {
             "id": "041edc04-ed38-4826-9d3f-33d6687d2a98",
@@ -12719,12 +11831,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -12787,9 +11895,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "2f77bfc1-5d7c-411d-a92c-1d0e4bd0cdc0"
-            ]
+            "memberOf": ["2f77bfc1-5d7c-411d-a92c-1d0e4bd0cdc0"]
           },
           "inProject": {
             "id": "20edf0ba-3ce5-440d-8abf-27427d64f401",
@@ -12809,14 +11915,8 @@
             "department": "3d39cbd4-789a-4c7e-9a38-dc6634a3c776",
             "slug": "the-digital-ghost-hunt",
             "keywords": [],
-            "url": [
-              1130,
-              1131,
-              1132
-            ],
-            "funder": [
-              1032
-            ],
+            "url": [1130, 1131, 1132],
+            "funder": [1032],
             "relatedTo": [],
             "member": [
               "2f77bfc1-5d7c-411d-a92c-1d0e4bd0cdc0",
@@ -12877,9 +11977,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "8466803e-517f-4137-b5ad-174ebe922a93"
-            ]
+            "memberOf": ["8466803e-517f-4137-b5ad-174ebe922a93"]
           },
           "inProject": {
             "id": "f7ee46eb-f396-4aab-b5fc-d4a97a972c8d",
@@ -12899,14 +11997,8 @@
             "department": "0e982bc3-4435-4989-a90d-304cf8da989b",
             "slug": "ego-media",
             "keywords": [],
-            "url": [
-              1063,
-              1064
-            ],
-            "funder": [
-              975,
-              976
-            ],
+            "url": [1063, 1064],
+            "funder": [975, 976],
             "relatedTo": [],
             "member": [
               "11ec3089-76e1-4911-8794-507e13ed9d10",
@@ -12971,9 +12063,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "5f483a4c-ecb8-4b77-9f65-826998246855"
-            ]
+            "memberOf": ["5f483a4c-ecb8-4b77-9f65-826998246855"]
           },
           "inProject": {
             "id": "be719dd0-81cf-4233-beb1-e2bfc0ae8f9c",
@@ -12993,13 +12083,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "ipm",
             "keywords": [],
-            "url": [
-              1099
-            ],
-            "funder": [
-              1008,
-              1009
-            ],
+            "url": [1099],
+            "funder": [1008, 1009],
             "relatedTo": [],
             "member": [
               "2134c406-f04d-4df3-93b9-261027a4557c",
@@ -13065,9 +12150,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "5f2d52a6-ec3c-47d6-8c00-73669af4ac12"
-            ]
+            "memberOf": ["5f2d52a6-ec3c-47d6-8c00-73669af4ac12"]
           },
           "inProject": {
             "id": "1f08f71f-00c0-405f-9c83-c52fbd573e1e",
@@ -13087,16 +12170,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "pbw",
             "keywords": [],
-            "url": [
-              1114,
-              1115
-            ],
-            "funder": [
-              1018,
-              1019,
-              1020,
-              1021
-            ],
+            "url": [1114, 1115],
+            "funder": [1018, 1019, 1020, 1021],
             "relatedTo": [],
             "member": [
               "154bdb43-73e9-400c-a696-d91afd63a38b",
@@ -13205,12 +12280,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -13293,14 +12364,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "poms",
             "keywords": [],
-            "url": [
-              1117,
-              1118
-            ],
-            "funder": [
-              1023,
-              1024
-            ],
+            "url": [1117, 1118],
+            "funder": [1023, 1024],
             "relatedTo": [],
             "member": [
               "05740620-8cad-4ed3-add5-b9b2858167c4",
@@ -13372,13 +12437,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "etat-civil",
             "keywords": [],
-            "url": [
-              1085,
-              1086
-            ],
-            "funder": [
-              992
-            ],
+            "url": [1085, 1086],
+            "funder": [992],
             "relatedTo": [],
             "member": [
               "46b141af-c2a2-416b-ab52-2e3a373a20d9",
@@ -13449,9 +12509,7 @@
             "slug": "digital-silk-road",
             "keywords": [],
             "url": [],
-            "funder": [
-              984
-            ],
+            "funder": [984],
             "relatedTo": [],
             "member": [
               "493e3392-e853-4913-9266-627a257fbe7a",
@@ -13520,12 +12578,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "charm",
             "keywords": [],
-            "url": [
-              1077
-            ],
-            "funder": [
-              987
-            ],
+            "url": [1077],
+            "funder": [987],
             "relatedTo": [],
             "member": [
               "0fbcd783-f4a7-497c-8c9f-1c691d302ee8",
@@ -13604,9 +12658,7 @@
             "slug": "digital-cultures-of-covid19",
             "keywords": [],
             "url": [],
-            "funder": [
-              974
-            ],
+            "funder": [974],
             "relatedTo": [],
             "member": [
               "3d0ef2e3-995f-48a9-8209-dc40e32fd4bf",
@@ -13675,17 +12727,8 @@
             "department": "3d39cbd4-789a-4c7e-9a38-dc6634a3c776",
             "slug": "kdl-archetype",
             "keywords": [],
-            "url": [
-              1065,
-              1066,
-              1067,
-              1068
-            ],
-            "funder": [
-              977,
-              978,
-              979
-            ],
+            "url": [1065, 1066, 1067, 1068],
+            "funder": [977, 978, 979],
             "relatedTo": [],
             "member": [
               "046b9df5-0a4f-4720-acc6-b769e9f8a5db",
@@ -13759,13 +12802,8 @@
             "department": "5a99b380-9d30-411e-850a-3a07232de757",
             "slug": "shak",
             "keywords": [],
-            "url": [
-              1122,
-              1123
-            ],
-            "funder": [
-              1027
-            ],
+            "url": [1122, 1123],
+            "funder": [1027],
             "relatedTo": [],
             "member": [
               "05a0a4ac-9b4f-4324-b8b6-4872198c4a39",
@@ -13835,12 +12873,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "nanotoms-and-open-scholarship-experiences",
             "keywords": [],
-            "url": [
-              1069
-            ],
-            "funder": [
-              980
-            ],
+            "url": [1069],
+            "funder": [980],
             "relatedTo": [],
             "member": [
               "4790b7b4-b2ed-410b-b585-118c05c8d678",
@@ -13908,14 +12942,8 @@
             "department": "0e982bc3-4435-4989-a90d-304cf8da989b",
             "slug": "sharc",
             "keywords": [],
-            "url": [
-              1070,
-              1071
-            ],
-            "funder": [
-              981,
-              982
-            ],
+            "url": [1070, 1071],
+            "funder": [981, 982],
             "relatedTo": [],
             "member": [
               "1198cf04-4ca1-460f-9eab-41c5ec996e09",
@@ -13988,13 +13016,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "dprr",
             "keywords": [],
-            "url": [
-              1083,
-              1084
-            ],
-            "funder": [
-              991
-            ],
+            "url": [1083, 1084],
+            "funder": [991],
             "relatedTo": [],
             "member": [
               "13337d42-0f6e-42dc-b1d8-d007f6ccb17c",
@@ -14066,12 +13089,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "moi",
             "keywords": [],
-            "url": [
-              1109
-            ],
-            "funder": [
-              1015
-            ],
+            "url": [1109],
+            "funder": [1015],
             "relatedTo": [],
             "member": [
               "0c9a1653-5d35-4256-a2ba-11fc57ce12e7",
@@ -14145,13 +13164,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "ipm",
             "keywords": [],
-            "url": [
-              1099
-            ],
-            "funder": [
-              1008,
-              1009
-            ],
+            "url": [1099],
+            "funder": [1008, 1009],
             "relatedTo": [],
             "member": [
               "2134c406-f04d-4df3-93b9-261027a4557c",
@@ -14224,13 +13238,8 @@
             "department": "43aaccf5-c112-4d3f-8bd3-dc452bc18b06",
             "slug": "field",
             "keywords": [],
-            "url": [
-              1072,
-              1073
-            ],
-            "funder": [
-              983
-            ],
+            "url": [1072, 1073],
+            "funder": [983],
             "relatedTo": [],
             "member": [
               "1610b15c-8f66-445a-bc21-76d28fe3adbc",
@@ -14303,13 +13312,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "data-portal-explorer",
             "keywords": [],
-            "url": [
-              1061,
-              1062
-            ],
-            "funder": [
-              973
-            ],
+            "url": [1061, 1062],
+            "funder": [973],
             "relatedTo": [],
             "member": [
               "5423afc2-d7dd-4922-9523-e24aa6f3f7fb",
@@ -14377,13 +13381,8 @@
             "department": "c8a8b51a-242b-4eca-8dc7-26ae0097ccef",
             "slug": "radical-translations",
             "keywords": [],
-            "url": [
-              1055,
-              1056
-            ],
-            "funder": [
-              970
-            ],
+            "url": [1055, 1056],
+            "funder": [970],
             "relatedTo": [],
             "member": [
               "1d8af49c-9636-4d4c-923b-05dd576084d4",
@@ -14454,14 +13453,8 @@
             "department": "0e982bc3-4435-4989-a90d-304cf8da989b",
             "slug": "ego-media",
             "keywords": [],
-            "url": [
-              1063,
-              1064
-            ],
-            "funder": [
-              975,
-              976
-            ],
+            "url": [1063, 1064],
+            "funder": [975, 976],
             "relatedTo": [],
             "member": [
               "11ec3089-76e1-4911-8794-507e13ed9d10",
@@ -14533,13 +13526,8 @@
             "department": "2aff7ee9-bea7-4229-8852-31965ef0f9cf",
             "slug": "owri",
             "keywords": [],
-            "url": [
-              1112,
-              1113
-            ],
-            "funder": [
-              1017
-            ],
+            "url": [1112, 1113],
+            "funder": [1017],
             "relatedTo": [],
             "member": [
               "0c54e218-ea8f-41e3-9b94-77f34e6eec0e",
@@ -14610,17 +13598,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "iospe",
             "keywords": [],
-            "url": [
-              1098
-            ],
-            "funder": [
-              1002,
-              1003,
-              1004,
-              1005,
-              1006,
-              1007
-            ],
+            "url": [1098],
+            "funder": [1002, 1003, 1004, 1005, 1006, 1007],
             "relatedTo": [],
             "member": [
               "4a0f8659-cd0d-4f5c-bb23-835e0d665b42",
@@ -14675,9 +13654,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "da327cb7-7732-459f-9ef2-0daa5fc1d73c"
-            ]
+            "memberOf": ["da327cb7-7732-459f-9ef2-0daa5fc1d73c"]
           },
           "inProject": {
             "id": "8a88a446-b48a-4176-bac1-b1822a246c66",
@@ -14697,13 +13674,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "ircyr",
             "keywords": [],
-            "url": [
-              1100,
-              1101
-            ],
-            "funder": [
-              1010
-            ],
+            "url": [1100, 1101],
+            "funder": [1010],
             "relatedTo": [],
             "member": [
               "188d1203-9484-4b79-bc63-12c26f806434",
@@ -14794,9 +13766,7 @@
             "department": "1fc2cfe2-d581-4a23-839f-497510d0d812",
             "slug": "medieval-francophone-literature-outside-france",
             "keywords": [],
-            "url": [
-              1107
-            ],
+            "url": [1107],
             "funder": [],
             "relatedTo": [],
             "member": [
@@ -14862,9 +13832,7 @@
             "slug": "scoping-a-data-service-for-complex-3d-data-in-the-arts-and-humanities",
             "keywords": [],
             "url": [],
-            "funder": [
-              972
-            ],
+            "funder": [972],
             "relatedTo": [],
             "member": [
               "086c2823-aa00-4f50-9935-1d2927020a4b",
@@ -14929,15 +13897,8 @@
             "department": "b9b64d39-650b-492b-b6ac-6e0b70c3d820",
             "slug": "gssn",
             "keywords": [],
-            "url": [
-              1089,
-              1090
-            ],
-            "funder": [
-              994,
-              995,
-              996
-            ],
+            "url": [1089, 1090],
+            "funder": [994, 995, 996],
             "relatedTo": [],
             "member": [
               "0c8e3109-175a-4d39-a27b-64a919b978d4",
@@ -15004,9 +13965,7 @@
             "slug": "re-mixing-de-humanisation",
             "keywords": [],
             "url": [],
-            "funder": [
-              1033
-            ],
+            "funder": [1033],
             "relatedTo": [],
             "member": [
               "34be5edc-14b1-44ea-9cb9-801f351619c2",
@@ -15070,17 +14029,8 @@
             "department": "3d39cbd4-789a-4c7e-9a38-dc6634a3c776",
             "slug": "kdl-archetype",
             "keywords": [],
-            "url": [
-              1065,
-              1066,
-              1067,
-              1068
-            ],
-            "funder": [
-              977,
-              978,
-              979
-            ],
+            "url": [1065, 1066, 1067, 1068],
+            "funder": [977, 978, 979],
             "relatedTo": [],
             "member": [
               "046b9df5-0a4f-4720-acc6-b769e9f8a5db",
@@ -15149,15 +14099,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "hgl",
             "keywords": [],
-            "url": [
-              1092,
-              1093
-            ],
-            "funder": [
-              997,
-              998,
-              999
-            ],
+            "url": [1092, 1093],
+            "funder": [997, 998, 999],
             "relatedTo": [],
             "member": [
               "23501cf3-e2e3-4704-9e0f-b2fff4d9be2e",
@@ -15223,9 +14166,7 @@
             "slug": "costar",
             "keywords": [],
             "url": [],
-            "funder": [
-              968
-            ],
+            "funder": [968],
             "relatedTo": [],
             "member": [
               "2224809a-c37d-45b7-be82-0094d731d7c0",
@@ -15289,13 +14230,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "ipm",
             "keywords": [],
-            "url": [
-              1099
-            ],
-            "funder": [
-              1008,
-              1009
-            ],
+            "url": [1099],
+            "funder": [1008, 1009],
             "relatedTo": [],
             "member": [
               "2134c406-f04d-4df3-93b9-261027a4557c",
@@ -15364,9 +14300,7 @@
             "slug": "digital-silk-road",
             "keywords": [],
             "url": [],
-            "funder": [
-              984
-            ],
+            "funder": [984],
             "relatedTo": [],
             "member": [
               "493e3392-e853-4913-9266-627a257fbe7a",
@@ -15430,14 +14364,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "poms",
             "keywords": [],
-            "url": [
-              1117,
-              1118
-            ],
-            "funder": [
-              1023,
-              1024
-            ],
+            "url": [1117, 1118],
+            "funder": [1023, 1024],
             "relatedTo": [],
             "member": [
               "05740620-8cad-4ed3-add5-b9b2858167c4",
@@ -15504,13 +14432,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "cyprus",
             "keywords": [],
-            "url": [
-              1079
-            ],
-            "funder": [
-              988,
-              989
-            ],
+            "url": [1079],
+            "funder": [988, 989],
             "relatedTo": [],
             "member": [
               "120fda20-7831-416e-9430-3714fb264d67",
@@ -15576,12 +14499,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "mkcheur",
             "keywords": [],
-            "url": [
-              1108
-            ],
-            "funder": [
-              1014
-            ],
+            "url": [1108],
+            "funder": [1014],
             "relatedTo": [],
             "member": [
               "8bc67b36-3959-40de-ac3c-02c988be6bca",
@@ -15646,13 +14565,8 @@
             "department": "43aaccf5-c112-4d3f-8bd3-dc452bc18b06",
             "slug": "field",
             "keywords": [],
-            "url": [
-              1072,
-              1073
-            ],
-            "funder": [
-              983
-            ],
+            "url": [1072, 1073],
+            "funder": [983],
             "relatedTo": [],
             "member": [
               "1610b15c-8f66-445a-bc21-76d28fe3adbc",
@@ -15720,13 +14634,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "ircyr",
             "keywords": [],
-            "url": [
-              1100,
-              1101
-            ],
-            "funder": [
-              1010
-            ],
+            "url": [1100, 1101],
+            "funder": [1010],
             "relatedTo": [],
             "member": [
               "188d1203-9484-4b79-bc63-12c26f806434",
@@ -15782,9 +14691,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "b7292de0-6072-4056-a190-16d9eec6c5b5"
-            ]
+            "memberOf": ["b7292de0-6072-4056-a190-16d9eec6c5b5"]
           },
           "inProject": {
             "id": "87a252a8-54e8-4e58-877f-dc8ebc486c4a",
@@ -15804,12 +14711,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "charm",
             "keywords": [],
-            "url": [
-              1077
-            ],
-            "funder": [
-              987
-            ],
+            "url": [1077],
+            "funder": [987],
             "relatedTo": [],
             "member": [
               "0fbcd783-f4a7-497c-8c9f-1c691d302ee8",
@@ -15904,13 +14807,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "mozartmc",
             "keywords": [],
-            "url": [
-              1110,
-              1111
-            ],
-            "funder": [
-              1016
-            ],
+            "url": [1110, 1111],
+            "funder": [1016],
             "relatedTo": [],
             "member": [
               "04d7a88d-1483-4292-83fc-ebd9b3d94036",
@@ -15965,14 +14863,8 @@
             "department": "0e982bc3-4435-4989-a90d-304cf8da989b",
             "slug": "sharc",
             "keywords": [],
-            "url": [
-              1070,
-              1071
-            ],
-            "funder": [
-              981,
-              982
-            ],
+            "url": [1070, 1071],
+            "funder": [981, 982],
             "relatedTo": [],
             "member": [
               "1198cf04-4ca1-460f-9eab-41c5ec996e09",
@@ -16029,13 +14921,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "mao-era-in-objects",
             "keywords": [],
-            "url": [
-              1105,
-              1106
-            ],
-            "funder": [
-              1013
-            ],
+            "url": [1105, 1106],
+            "funder": [1013],
             "relatedTo": [],
             "member": [
               "293b036f-17db-4062-9a35-53efa84ccf7d",
@@ -16086,9 +14973,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "33a8932b-e7a2-42e7-a379-fec464d584ae"
-            ]
+            "memberOf": ["33a8932b-e7a2-42e7-a379-fec464d584ae"]
           },
           "inProject": {
             "id": "8a88a446-b48a-4176-bac1-b1822a246c66",
@@ -16108,13 +14993,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "ircyr",
             "keywords": [],
-            "url": [
-              1100,
-              1101
-            ],
-            "funder": [
-              1010
-            ],
+            "url": [1100, 1101],
+            "funder": [1010],
             "relatedTo": [],
             "member": [
               "188d1203-9484-4b79-bc63-12c26f806434",
@@ -16204,13 +15084,8 @@
             "department": "2aff7ee9-bea7-4229-8852-31965ef0f9cf",
             "slug": "owri",
             "keywords": [],
-            "url": [
-              1112,
-              1113
-            ],
-            "funder": [
-              1017
-            ],
+            "url": [1112, 1113],
+            "funder": [1017],
             "relatedTo": [],
             "member": [
               "0c54e218-ea8f-41e3-9b94-77f34e6eec0e",
@@ -16275,17 +15150,8 @@
             "department": "3d39cbd4-789a-4c7e-9a38-dc6634a3c776",
             "slug": "kdl-archetype",
             "keywords": [],
-            "url": [
-              1065,
-              1066,
-              1067,
-              1068
-            ],
-            "funder": [
-              977,
-              978,
-              979
-            ],
+            "url": [1065, 1066, 1067, 1068],
+            "funder": [977, 978, 979],
             "relatedTo": [],
             "member": [
               "046b9df5-0a4f-4720-acc6-b769e9f8a5db",
@@ -16353,13 +15219,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "mao-era-in-objects",
             "keywords": [],
-            "url": [
-              1105,
-              1106
-            ],
-            "funder": [
-              1013
-            ],
+            "url": [1105, 1106],
+            "funder": [1013],
             "relatedTo": [],
             "member": [
               "293b036f-17db-4062-9a35-53efa84ccf7d",
@@ -16424,13 +15285,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "renskin-2",
             "keywords": [],
-            "url": [
-              1119,
-              1120
-            ],
-            "funder": [
-              1025
-            ],
+            "url": [1119, 1120],
+            "funder": [1025],
             "relatedTo": [],
             "member": [
               "0f462c7d-bef0-4f1e-9d02-8bd4ccded1fe",
@@ -16496,13 +15352,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "cyprus",
             "keywords": [],
-            "url": [
-              1079
-            ],
-            "funder": [
-              988,
-              989
-            ],
+            "url": [1079],
+            "funder": [988, 989],
             "relatedTo": [],
             "member": [
               "120fda20-7831-416e-9430-3714fb264d67",
@@ -16567,15 +15418,8 @@
             "department": "1fc2cfe2-d581-4a23-839f-497510d0d812",
             "slug": "tvof",
             "keywords": [],
-            "url": [
-              1126,
-              1127,
-              1128,
-              1129
-            ],
-            "funder": [
-              1031
-            ],
+            "url": [1126, 1127, 1128, 1129],
+            "funder": [1031],
             "relatedTo": [],
             "member": [
               "03b97b55-1065-4045-a2b7-3aceb3c8e93a",
@@ -16639,17 +15483,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "iospe",
             "keywords": [],
-            "url": [
-              1098
-            ],
-            "funder": [
-              1002,
-              1003,
-              1004,
-              1005,
-              1006,
-              1007
-            ],
+            "url": [1098],
+            "funder": [1002, 1003, 1004, 1005, 1006, 1007],
             "relatedTo": [],
             "member": [
               "4a0f8659-cd0d-4f5c-bb23-835e0d665b42",
@@ -16718,12 +15553,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "inventory-of-byzantine-churches-on-cyprus",
             "keywords": [],
-            "url": [
-              1097
-            ],
-            "funder": [
-              1001
-            ],
+            "url": [1097],
+            "funder": [1001],
             "relatedTo": [],
             "member": [
               "57df5ea6-a664-4324-87ba-770060745fc4",
@@ -16790,13 +15621,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "renskin",
             "keywords": [],
-            "url": [
-              1053,
-              1054
-            ],
-            "funder": [
-              967
-            ],
+            "url": [1053, 1054],
+            "funder": [967],
             "relatedTo": [],
             "member": [
               "2a56089e-3150-4f05-9afb-4a9eaaaa20b1",
@@ -16860,15 +15686,8 @@
             "department": "b9b64d39-650b-492b-b6ac-6e0b70c3d820",
             "slug": "gssn",
             "keywords": [],
-            "url": [
-              1089,
-              1090
-            ],
-            "funder": [
-              994,
-              995,
-              996
-            ],
+            "url": [1089, 1090],
+            "funder": [994, 995, 996],
             "relatedTo": [],
             "member": [
               "0c8e3109-175a-4d39-a27b-64a919b978d4",
@@ -16933,15 +15752,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cotr",
             "keywords": [],
-            "url": [
-              1057,
-              1058,
-              1059,
-              1060
-            ],
-            "funder": [
-              971
-            ],
+            "url": [1057, 1058, 1059, 1060],
+            "funder": [971],
             "relatedTo": [],
             "member": [
               "685cdb6a-c69e-4e57-83c9-e86134f3f52e",
@@ -17005,13 +15817,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "mozartmc",
             "keywords": [],
-            "url": [
-              1110,
-              1111
-            ],
-            "funder": [
-              1016
-            ],
+            "url": [1110, 1111],
+            "funder": [1016],
             "relatedTo": [],
             "member": [
               "04d7a88d-1483-4292-83fc-ebd9b3d94036",
@@ -17076,14 +15883,8 @@
             "department": "0e982bc3-4435-4989-a90d-304cf8da989b",
             "slug": "sharc",
             "keywords": [],
-            "url": [
-              1070,
-              1071
-            ],
-            "funder": [
-              981,
-              982
-            ],
+            "url": [1070, 1071],
+            "funder": [981, 982],
             "relatedTo": [],
             "member": [
               "1198cf04-4ca1-460f-9eab-41c5ec996e09",
@@ -17161,13 +15962,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "epapp",
             "keywords": [],
-            "url": [
-              1125
-            ],
-            "funder": [
-              1029,
-              1030
-            ],
+            "url": [1125],
+            "funder": [1029, 1030],
             "relatedTo": [],
             "member": [
               "076655fb-2f5c-4971-92b1-5e5cb1f3dcc1",
@@ -17222,12 +16018,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -17296,12 +16088,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "charm",
             "keywords": [],
-            "url": [
-              1077
-            ],
-            "funder": [
-              987
-            ],
+            "url": [1077],
+            "funder": [987],
             "relatedTo": [],
             "member": [
               "0fbcd783-f4a7-497c-8c9f-1c691d302ee8",
@@ -17364,12 +16152,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "inscriptions-of-aphrodisias",
             "keywords": [],
-            "url": [
-              1096
-            ],
-            "funder": [
-              1000
-            ],
+            "url": [1096],
+            "funder": [1000],
             "relatedTo": [],
             "member": [
               "23958d4a-fa45-4669-89a4-7fb06a1afa26",
@@ -17450,12 +16234,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "charm",
             "keywords": [],
-            "url": [
-              1077
-            ],
-            "funder": [
-              987
-            ],
+            "url": [1077],
+            "funder": [987],
             "relatedTo": [],
             "member": [
               "0fbcd783-f4a7-497c-8c9f-1c691d302ee8",
@@ -17521,16 +16301,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "pbw",
             "keywords": [],
-            "url": [
-              1114,
-              1115
-            ],
-            "funder": [
-              1018,
-              1019,
-              1020,
-              1021
-            ],
+            "url": [1114, 1115],
+            "funder": [1018, 1019, 1020, 1021],
             "relatedTo": [],
             "member": [
               "154bdb43-73e9-400c-a696-d91afd63a38b",
@@ -17594,12 +16366,8 @@
             "department": "0e982bc3-4435-4989-a90d-304cf8da989b",
             "slug": "scrambled",
             "keywords": [],
-            "url": [
-              1121
-            ],
-            "funder": [
-              1026
-            ],
+            "url": [1121],
+            "funder": [1026],
             "relatedTo": [],
             "member": [
               "01eb66b6-cbab-40be-90fe-650212765b82",
@@ -17656,12 +16424,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -17732,12 +16496,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -17809,13 +16569,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "epapp",
             "keywords": [],
-            "url": [
-              1125
-            ],
-            "funder": [
-              1029,
-              1030
-            ],
+            "url": [1125],
+            "funder": [1029, 1030],
             "relatedTo": [],
             "member": [
               "076655fb-2f5c-4971-92b1-5e5cb1f3dcc1",
@@ -17873,17 +16628,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "iospe",
             "keywords": [],
-            "url": [
-              1098
-            ],
-            "funder": [
-              1002,
-              1003,
-              1004,
-              1005,
-              1006,
-              1007
-            ],
+            "url": [1098],
+            "funder": [1002, 1003, 1004, 1005, 1006, 1007],
             "relatedTo": [],
             "member": [
               "4a0f8659-cd0d-4f5c-bb23-835e0d665b42",
@@ -17938,9 +16684,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "3d6047cd-679b-42dd-8291-5f1a49067953"
-            ]
+            "memberOf": ["3d6047cd-679b-42dd-8291-5f1a49067953"]
           },
           "inProject": {
             "id": "ad3d9244-1569-4f31-b1e3-2ad0dc67df8f",
@@ -17960,12 +16704,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -18029,9 +16769,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "e38363c5-f39f-468a-8f5b-4e5f41ab3eed"
-            ]
+            "memberOf": ["e38363c5-f39f-468a-8f5b-4e5f41ab3eed"]
           },
           "inProject": {
             "id": "041edc04-ed38-4826-9d3f-33d6687d2a98",
@@ -18051,12 +16789,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -18119,9 +16853,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "f8cf62e8-492f-499d-b21b-df827d7abd17"
-            ]
+            "memberOf": ["f8cf62e8-492f-499d-b21b-df827d7abd17"]
           },
           "inProject": {
             "id": "761307c7-7edf-4567-8864-0a649b279a71",
@@ -18141,17 +16873,8 @@
             "department": "3d39cbd4-789a-4c7e-9a38-dc6634a3c776",
             "slug": "kdl-archetype",
             "keywords": [],
-            "url": [
-              1065,
-              1066,
-              1067,
-              1068
-            ],
-            "funder": [
-              977,
-              978,
-              979
-            ],
+            "url": [1065, 1066, 1067, 1068],
+            "funder": [977, 978, 979],
             "relatedTo": [],
             "member": [
               "046b9df5-0a4f-4720-acc6-b769e9f8a5db",
@@ -18241,12 +16964,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "charm",
             "keywords": [],
-            "url": [
-              1077
-            ],
-            "funder": [
-              987
-            ],
+            "url": [1077],
+            "funder": [987],
             "relatedTo": [],
             "member": [
               "0fbcd783-f4a7-497c-8c9f-1c691d302ee8",
@@ -18307,17 +17026,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "iospe",
             "keywords": [],
-            "url": [
-              1098
-            ],
-            "funder": [
-              1002,
-              1003,
-              1004,
-              1005,
-              1006,
-              1007
-            ],
+            "url": [1098],
+            "funder": [1002, 1003, 1004, 1005, 1006, 1007],
             "relatedTo": [],
             "member": [
               "4a0f8659-cd0d-4f5c-bb23-835e0d665b42",
@@ -18372,9 +17082,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "880d8cc7-0ae1-41df-b12b-7a49710ca9be"
-            ]
+            "memberOf": ["880d8cc7-0ae1-41df-b12b-7a49710ca9be"]
           },
           "inProject": {
             "id": "87a252a8-54e8-4e58-877f-dc8ebc486c4a",
@@ -18394,12 +17102,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "charm",
             "keywords": [],
-            "url": [
-              1077
-            ],
-            "funder": [
-              987
-            ],
+            "url": [1077],
+            "funder": [987],
             "relatedTo": [],
             "member": [
               "0fbcd783-f4a7-497c-8c9f-1c691d302ee8",
@@ -18457,9 +17161,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "1d8af49c-9636-4d4c-923b-05dd576084d4"
-            ]
+            "memberOf": ["1d8af49c-9636-4d4c-923b-05dd576084d4"]
           },
           "inProject": {
             "id": "d90b71ef-f362-4b2d-92d1-ef1c87c61d5c",
@@ -18479,13 +17181,8 @@
             "department": "c8a8b51a-242b-4eca-8dc7-26ae0097ccef",
             "slug": "radical-translations",
             "keywords": [],
-            "url": [
-              1055,
-              1056
-            ],
-            "funder": [
-              970
-            ],
+            "url": [1055, 1056],
+            "funder": [970],
             "relatedTo": [],
             "member": [
               "1d8af49c-9636-4d4c-923b-05dd576084d4",
@@ -18549,9 +17246,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "c3c021ff-29b4-4987-9401-afdb4c905430"
-            ]
+            "memberOf": ["c3c021ff-29b4-4987-9401-afdb4c905430"]
           },
           "inProject": {
             "id": "94742df6-51c7-474c-abd3-dfc61cc8492a",
@@ -18571,12 +17266,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "inventory-of-byzantine-churches-on-cyprus",
             "keywords": [],
-            "url": [
-              1097
-            ],
-            "funder": [
-              1001
-            ],
+            "url": [1097],
+            "funder": [1001],
             "relatedTo": [],
             "member": [
               "57df5ea6-a664-4324-87ba-770060745fc4",
@@ -18629,9 +17320,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "c50a83af-6a30-4465-a305-43fa09b9e35c"
-            ]
+            "memberOf": ["c50a83af-6a30-4465-a305-43fa09b9e35c"]
           },
           "inProject": {
             "id": "26d6f4f1-5677-48ac-b210-2a4758364257",
@@ -18651,12 +17340,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "moi",
             "keywords": [],
-            "url": [
-              1109
-            ],
-            "funder": [
-              1015
-            ],
+            "url": [1109],
+            "funder": [1015],
             "relatedTo": [],
             "member": [
               "0c9a1653-5d35-4256-a2ba-11fc57ce12e7",
@@ -18746,15 +17431,8 @@
             "department": "1fc2cfe2-d581-4a23-839f-497510d0d812",
             "slug": "tvof",
             "keywords": [],
-            "url": [
-              1126,
-              1127,
-              1128,
-              1129
-            ],
-            "funder": [
-              1031
-            ],
+            "url": [1126, 1127, 1128, 1129],
+            "funder": [1031],
             "relatedTo": [],
             "member": [
               "03b97b55-1065-4045-a2b7-3aceb3c8e93a",
@@ -18820,9 +17498,7 @@
             "department": "1fc2cfe2-d581-4a23-839f-497510d0d812",
             "slug": "medieval-francophone-literature-outside-france",
             "keywords": [],
-            "url": [
-              1107
-            ],
+            "url": [1107],
             "funder": [],
             "relatedTo": [],
             "member": [
@@ -18885,9 +17561,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "60a8ff25-6785-4b47-bd7b-7b2c0c6b77b4"
-            ]
+            "memberOf": ["60a8ff25-6785-4b47-bd7b-7b2c0c6b77b4"]
           },
           "inProject": {
             "id": "041edc04-ed38-4826-9d3f-33d6687d2a98",
@@ -18907,12 +17581,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -18988,9 +17658,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "046b9df5-0a4f-4720-acc6-b769e9f8a5db"
-            ]
+            "memberOf": ["046b9df5-0a4f-4720-acc6-b769e9f8a5db"]
           },
           "inProject": {
             "id": "761307c7-7edf-4567-8864-0a649b279a71",
@@ -19010,17 +17678,8 @@
             "department": "3d39cbd4-789a-4c7e-9a38-dc6634a3c776",
             "slug": "kdl-archetype",
             "keywords": [],
-            "url": [
-              1065,
-              1066,
-              1067,
-              1068
-            ],
-            "funder": [
-              977,
-              978,
-              979
-            ],
+            "url": [1065, 1066, 1067, 1068],
+            "funder": [977, 978, 979],
             "relatedTo": [],
             "member": [
               "046b9df5-0a4f-4720-acc6-b769e9f8a5db",
@@ -19074,9 +17733,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "e7d7df71-b709-4723-96e2-9eaf33ac8fe5"
-            ]
+            "memberOf": ["e7d7df71-b709-4723-96e2-9eaf33ac8fe5"]
           },
           "inProject": {
             "id": "041edc04-ed38-4826-9d3f-33d6687d2a98",
@@ -19096,12 +17753,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -19177,9 +17830,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "0d36f166-ac52-40d6-af9e-48176baa6677"
-            ]
+            "memberOf": ["0d36f166-ac52-40d6-af9e-48176baa6677"]
           },
           "inProject": {
             "id": "ad3d9244-1569-4f31-b1e3-2ad0dc67df8f",
@@ -19199,12 +17850,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -19304,12 +17951,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "saw",
             "keywords": [],
-            "url": [
-              1124
-            ],
-            "funder": [
-              1028
-            ],
+            "url": [1124],
+            "funder": [1028],
             "relatedTo": [],
             "member": [
               "0d01c1ed-af49-4e1a-832b-0c8ac9793eb4",
@@ -19365,12 +18008,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "inventory-of-byzantine-churches-on-cyprus",
             "keywords": [],
-            "url": [
-              1097
-            ],
-            "funder": [
-              1001
-            ],
+            "url": [1097],
+            "funder": [1001],
             "relatedTo": [],
             "member": [
               "57df5ea6-a664-4324-87ba-770060745fc4",
@@ -19436,9 +18075,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "b58a1be2-3a11-495b-aa93-85f8630a80df"
-            ]
+            "memberOf": ["b58a1be2-3a11-495b-aa93-85f8630a80df"]
           },
           "inProject": {
             "id": "94742df6-51c7-474c-abd3-dfc61cc8492a",
@@ -19458,12 +18095,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "inventory-of-byzantine-churches-on-cyprus",
             "keywords": [],
-            "url": [
-              1097
-            ],
-            "funder": [
-              1001
-            ],
+            "url": [1097],
+            "funder": [1001],
             "relatedTo": [],
             "member": [
               "57df5ea6-a664-4324-87ba-770060745fc4",
@@ -19529,9 +18162,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "a864f94b-edbc-41f6-8614-2ed10b7194b7"
-            ]
+            "memberOf": ["a864f94b-edbc-41f6-8614-2ed10b7194b7"]
           },
           "inProject": {
             "id": "1f08f71f-00c0-405f-9c83-c52fbd573e1e",
@@ -19551,16 +18182,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "pbw",
             "keywords": [],
-            "url": [
-              1114,
-              1115
-            ],
-            "funder": [
-              1018,
-              1019,
-              1020,
-              1021
-            ],
+            "url": [1114, 1115],
+            "funder": [1018, 1019, 1020, 1021],
             "relatedTo": [],
             "member": [
               "154bdb43-73e9-400c-a696-d91afd63a38b",
@@ -19659,13 +18282,8 @@
             "department": "8c045a66-5b2a-4619-a89c-09ad6bdad389",
             "slug": "mozartmc",
             "keywords": [],
-            "url": [
-              1110,
-              1111
-            ],
-            "funder": [
-              1016
-            ],
+            "url": [1110, 1111],
+            "funder": [1016],
             "relatedTo": [],
             "member": [
               "04d7a88d-1483-4292-83fc-ebd9b3d94036",
@@ -19726,13 +18344,8 @@
             "department": "c8a8b51a-242b-4eca-8dc7-26ae0097ccef",
             "slug": "radical-translations",
             "keywords": [],
-            "url": [
-              1055,
-              1056
-            ],
-            "funder": [
-              970
-            ],
+            "url": [1055, 1056],
+            "funder": [970],
             "relatedTo": [],
             "member": [
               "1d8af49c-9636-4d4c-923b-05dd576084d4",
@@ -19793,13 +18406,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "renskin",
             "keywords": [],
-            "url": [
-              1053,
-              1054
-            ],
-            "funder": [
-              967
-            ],
+            "url": [1053, 1054],
+            "funder": [967],
             "relatedTo": [],
             "member": [
               "2a56089e-3150-4f05-9afb-4a9eaaaa20b1",
@@ -19859,13 +18467,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "mao-era-in-objects",
             "keywords": [],
-            "url": [
-              1105,
-              1106
-            ],
-            "funder": [
-              1013
-            ],
+            "url": [1105, 1106],
+            "funder": [1013],
             "relatedTo": [],
             "member": [
               "293b036f-17db-4062-9a35-53efa84ccf7d",
@@ -19926,14 +18529,8 @@
             "department": "0e982bc3-4435-4989-a90d-304cf8da989b",
             "slug": "sharc",
             "keywords": [],
-            "url": [
-              1070,
-              1071
-            ],
-            "funder": [
-              981,
-              982
-            ],
+            "url": [1070, 1071],
+            "funder": [981, 982],
             "relatedTo": [],
             "member": [
               "1198cf04-4ca1-460f-9eab-41c5ec996e09",
@@ -19996,12 +18593,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "moi",
             "keywords": [],
-            "url": [
-              1109
-            ],
-            "funder": [
-              1015
-            ],
+            "url": [1109],
+            "funder": [1015],
             "relatedTo": [],
             "member": [
               "0c9a1653-5d35-4256-a2ba-11fc57ce12e7",
@@ -20065,13 +18658,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "renskin-2",
             "keywords": [],
-            "url": [
-              1119,
-              1120
-            ],
-            "funder": [
-              1025
-            ],
+            "url": [1119, 1120],
+            "funder": [1025],
             "relatedTo": [],
             "member": [
               "0f462c7d-bef0-4f1e-9d02-8bd4ccded1fe",
@@ -20133,15 +18721,8 @@
             "department": "b9b64d39-650b-492b-b6ac-6e0b70c3d820",
             "slug": "gssn",
             "keywords": [],
-            "url": [
-              1089,
-              1090
-            ],
-            "funder": [
-              994,
-              995,
-              996
-            ],
+            "url": [1089, 1090],
+            "funder": [994, 995, 996],
             "relatedTo": [],
             "member": [
               "0c8e3109-175a-4d39-a27b-64a919b978d4",
@@ -20202,13 +18783,8 @@
             "department": "43aaccf5-c112-4d3f-8bd3-dc452bc18b06",
             "slug": "field",
             "keywords": [],
-            "url": [
-              1072,
-              1073
-            ],
-            "funder": [
-              983
-            ],
+            "url": [1072, 1073],
+            "funder": [983],
             "relatedTo": [],
             "member": [
               "1610b15c-8f66-445a-bc21-76d28fe3adbc",
@@ -20261,9 +18837,7 @@
             "alternateName": null,
             "description": null,
             "url": [],
-            "memberOf": [
-              "04990fd3-f25f-4577-b363-6a57bb05990d"
-            ]
+            "memberOf": ["04990fd3-f25f-4577-b363-6a57bb05990d"]
           },
           "inProject": {
             "id": "041edc04-ed38-4826-9d3f-33d6687d2a98",
@@ -20283,12 +18857,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "pde/pase",
             "keywords": [],
-            "url": [
-              1116
-            ],
-            "funder": [
-              1022
-            ],
+            "url": [1116],
+            "funder": [1022],
             "relatedTo": [],
             "member": [
               "04990fd3-f25f-4577-b363-6a57bb05990d",
@@ -20374,13 +18944,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "ircyr",
             "keywords": [],
-            "url": [
-              1100,
-              1101
-            ],
-            "funder": [
-              1010
-            ],
+            "url": [1100, 1101],
+            "funder": [1010],
             "relatedTo": [],
             "member": [
               "188d1203-9484-4b79-bc63-12c26f806434",
@@ -20439,13 +19004,8 @@
             "department": "5baf0c83-291c-4e23-82bf-3d3d8a3745f4",
             "slug": "ipm",
             "keywords": [],
-            "url": [
-              1099
-            ],
-            "funder": [
-              1008,
-              1009
-            ],
+            "url": [1099],
+            "funder": [1008, 1009],
             "relatedTo": [],
             "member": [
               "2134c406-f04d-4df3-93b9-261027a4557c",
@@ -20521,12 +19081,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "inventory-of-byzantine-churches-on-cyprus",
             "keywords": [],
-            "url": [
-              1097
-            ],
-            "funder": [
-              1001
-            ],
+            "url": [1097],
+            "funder": [1001],
             "relatedTo": [],
             "member": [
               "57df5ea6-a664-4324-87ba-770060745fc4",
@@ -20582,15 +19138,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "hgl",
             "keywords": [],
-            "url": [
-              1092,
-              1093
-            ],
-            "funder": [
-              997,
-              998,
-              999
-            ],
+            "url": [1092, 1093],
+            "funder": [997, 998, 999],
             "relatedTo": [],
             "member": [
               "23501cf3-e2e3-4704-9e0f-b2fff4d9be2e",
@@ -20663,12 +19212,8 @@
             "department": "2f38c583-dc67-4886-aaf1-8ae37d29366a",
             "slug": "cced",
             "keywords": [],
-            "url": [
-              1076
-            ],
-            "funder": [
-              986
-            ],
+            "url": [1076],
+            "funder": [986],
             "relatedTo": [],
             "member": [
               "038e7563-7859-4163-9a5f-7c4702a23ece",
@@ -20735,12 +19280,8 @@
             "department": "9bf4cb67-60dc-4c36-ac82-2e2f561e7914",
             "slug": "inscriptions-of-aphrodisias",
             "keywords": [],
-            "url": [
-              1096
-            ],
-            "funder": [
-              1000
-            ],
+            "url": [1096],
+            "funder": [1000],
             "relatedTo": [],
             "member": [
               "23958d4a-fa45-4669-89a4-7fb06a1afa26",
