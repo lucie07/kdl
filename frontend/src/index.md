@@ -5,6 +5,4 @@ eleventyNavigation:
   order: 1
 ---
 
-# Hello Eleventy!
-
-## Projects
+# Home

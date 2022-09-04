@@ -5,14 +5,15 @@ permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
 ---
 
 <header>
-  {% set navKey = eleventyNavigation.key %} {% include "partials/breadcrumbs.njk" %}
+  {% set navKey = eleventyNavigation.key %}
+  {% include "partials/breadcrumbs.njk" %}
   <h1>Projects</h1>
 </header>
 
-  <input type="radio" name="view-filter" id="grid" class="radio" checked><label for="grid">⊞ Grid</label> |
-  <input type="radio" name="view-filter" id="list" class="list-view radio" ><label for="list"> ≣ List</label>
-				
-
+<input type="radio" name="view-filter" id="grid" class="radio" checked>
+<label for="grid">⊞ Grid</label> |
+<input type="radio" name="view-filter" id="list" class="list-view radio">
+<label for="list"> ≣ List</label>
 
 <ol start="{{ pagination.pageNumber * 10 + 1}}">
   {%- for project in paginatedProjects -%}
@@ -20,18 +21,18 @@ permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
     <a href="/projects/{{ project.slug }}/">
       <h2>{{ project.name }}</h2>
       <figure>
-        <img src="https://placeimg.com/640/480/arch"
-        alt="random technology image from placeimg.com">
+        <img src="https://placeimg.com/640/480/arch" alt="random technology image from placeimg.com">
         <figcaption>
           image caption
         </figcaption>
       </figure>
     </a>
     <div class="index-information">
-    {% include "partials/project.njk" %}
+      {% include "partials/project.njk" %}
     </div>
   </li>
   {%- endfor -%}
 </ol>
 
-{% set label = "Projects" %} {% include "partials/pagination.njk" %}
+{% set label = "Projects" %}
+{% include "partials/pagination.njk" %}

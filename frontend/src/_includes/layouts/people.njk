@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+permalink: "people/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
+---
+
+<header>
+  {% set navKey = eleventyNavigation.key %}
+  {% include "partials/breadcrumbs.njk" %}
+  <h1>People</h1>
+</header>
+
+<input type="radio" name="view-filter" id="grid" class="radio" checked>
+<label for="grid">⊞ Grid</label> |
+<input type="radio" name="view-filter" id="list" class="list-view radio">
+<label for="list"> ≣ List</label>
+
+<ol start="{{ pagination.pageNumber * 10 + 1}}">
+  {%- for person in paginatedPeople -%}
+  <li>
+    <a href="/people/{{ person.agent.id }}/">
+      <h2>{{ person.agent.name }}</h2>
+    </a>
+  </li>
+  {%- endfor -%}
+</ol>
+
+{% set label = "People" %}
+{% include "partials/pagination.njk" %}

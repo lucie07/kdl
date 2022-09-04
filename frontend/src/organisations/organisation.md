@@ -1,4 +1,5 @@
 ---
+breadcrumb: Organisations
 layout: layouts/organisation.njk
 pagination:
   data: organisations

@@ -6,8 +6,8 @@ templateClass: tmpl-home
 {% set agent = agentInstance.agent %}
 
 <header>
-  {# set navKey = "Agents" #}
-  {# include "partials/breadcrumbs.njk" #}
+  {% set navKey = breadcrumb %}
+  {% include "partials/breadcrumbs.njk" %}
   <h1>
     {{- agent.name }}
     {%- if agent.alternateName %} <span>{{ agent.alternateName }}</span>{% endif -%}

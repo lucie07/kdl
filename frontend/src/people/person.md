@@ -1,4 +1,5 @@
 ---
+breadcrumb: People
 layout: layouts/person.njk
 pagination:
   data: people
