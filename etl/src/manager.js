@@ -505,7 +505,7 @@ class Manager {
 
     project.team.forEach((person) => {
       if (teams[person]) {
-        members.push({ name: "KDL member", agent: teams[person].agent });
+        members.push({ name: "RSE team member", agent: teams[person].agent });
       }
     });
 
