@@ -79,6 +79,9 @@ class Manager {
           alternateName: project.Acronym,
           description: project["Project Description"],
           pi: this.parseList(project.PI).map((pi) => this.parseMember(pi)),
+          researchers: this.parseList(project["Other Project Team"]).map((r) =>
+            this.parseMember(r)
+          ),
           funder: this.parseList(project.Funder),
           team: this.parseList(project["KDL Project Team"]),
           url: this.getURLs(project, ["Project URL", "GitHub URL"]),
@@ -100,8 +103,10 @@ class Manager {
   }
 
   parseMember(member) {
+    if (!member) return;
+
     const parts = member.split("(");
-    const org = parts[1].replace(")", "");
+    const org = parts[1] ? parts[1].replace(")", "") : "Unknown organisation";
 
     return { name: parts[0].trim(), org: org };
   }
@@ -289,6 +294,31 @@ class Manager {
       piOrganisations
     );
 
+    const researchersNames = _.uniqWith(
+      projects
+        .flatMap((project) => project.researchers)
+        .filter((r) => r.name.length > 0)
+        .map((r) => ({ name: r.name })),
+      _.isEqual
+    );
+    const researchersPersonAgents = await this.getOrCreateAgents(
+      "person",
+      researchersNames
+    );
+
+    const researchersOrganisations = _.uniqWith(
+      projects
+        .flatMap((project) => project.researchers)
+        .map((r) => ({
+          name: r.org,
+        })),
+      _.isEqual
+    );
+    const researchersOrganisationAgents = await this.getOrCreateAgents(
+      "organisation",
+      researchersOrganisations
+    );
+
     const funderNames = _.uniqWith(
       projects
         .flatMap((project) => project.funder)
@@ -325,6 +355,8 @@ class Manager {
       definedTerms,
       piPersonAgents,
       piOrganisationAgents,
+      researchersPersonAgents,
+      researchersOrganisationAgents,
       funderAgents,
       teamAgents,
       departmentAgents,
@@ -458,6 +490,8 @@ class Manager {
     definedTerms,
     piPersonAgents,
     piOrganisationAgents,
+    researchersPersonAgents,
+    researchersOrganisationAgents,
     funders,
     teams,
     departments,
@@ -472,6 +506,8 @@ class Manager {
           definedTerms,
           piPersonAgents,
           piOrganisationAgents,
+          researchersPersonAgents,
+          researchersOrganisationAgents,
           funders,
           teams,
           departments,
@@ -488,6 +524,8 @@ class Manager {
     definedTerms,
     piPersonAgents,
     piOrganisationAgents,
+    researchersPersonAgents,
+    researchersOrganisationAgents,
     funders,
     teams,
     departments,
@@ -502,6 +540,16 @@ class Manager {
         inOrganisation: piOrganisationAgents[pi.org].id,
       })
     );
+
+    project.researchers
+      .filter((r) => researchersPersonAgents[r] !== undefined)
+      .forEach((r) =>
+        members.push({
+          name: "Researcher",
+          agent: researchersPersonAgents[r.name].agent,
+          inOrganisation: researchersOrganisationAgents[r.org].id,
+        })
+      );
 
     project.team.forEach((person) => {
       if (teams[person]) {
