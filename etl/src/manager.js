@@ -194,26 +194,14 @@ class Manager {
             ...project,
             name: acProject.name,
             slug: this.getSlug(project.acronym ?? acProject.name.split(":")[0]),
-            creativeWorkStatus: labels[acProject.label_id],
+            creativeWorkStatus: this.getCreativeWorkStatus(
+              labels[acProject.label_id]
+            ),
             department: this.getDepartment(acCompany.name),
           })
         )
         .catch((err) => reject(err));
     });
-  }
-
-  getDepartment(name) {
-    let [company, department] = name.split(":");
-    company = company.trim();
-
-    if (department) {
-      department = department.trim();
-    }
-
-    return {
-      name: department,
-      related: { name: company, relationship: "parentOrganisation" },
-    };
   }
 
   /**
@@ -236,6 +224,32 @@ class Manager {
     }
 
     return slug;
+  }
+
+  getCreativeWorkStatus(label) {
+    switch (label.toLowerCase()) {
+      case "foundations":
+      case "evolutionary development":
+        return "Active";
+      case "post-project":
+        return "Maintained";
+      default:
+        return "Post-project";
+    }
+  }
+
+  getDepartment(name) {
+    let [company, department] = name.split(":");
+    company = company.trim();
+
+    if (department) {
+      department = department.trim();
+    }
+
+    return {
+      name: department,
+      related: { name: company, relationship: "parentOrganisation" },
+    };
   }
 
   /**
