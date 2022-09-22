@@ -395,15 +395,14 @@ class Manager {
 
     for (const item of names) {
       const filter = { name: item.name };
-      let data = filter;
+      let data = { ...filter, slug: this.getSlug(filter.name) };
 
       if (item.related) {
         const relatedFilter = { name: item.related.name };
-        const related = await this.getOrCreateAgent(
-          collection,
-          relatedFilter,
-          relatedFilter
-        );
+        const related = await this.getOrCreateAgent(collection, relatedFilter, {
+          ...relatedFilter,
+          slug: this.getSlug(relatedFilter.name),
+        });
 
         data = { ...data, [item.related.relationship]: related.id };
       }
