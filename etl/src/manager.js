@@ -187,14 +187,9 @@ class Manager {
         reject(new Error("No project, categories or labels provided"));
       }
 
-      const acProjectPromise = this.activecollab.project(
-        project.activecollabId
-      );
-      const acCompanyPromise = acProjectPromise.then((acProject) =>
-        this.activecollab.company(acProject.company_id)
-      );
-      Promise.all([acProjectPromise, acCompanyPromise])
-        .then(([acProject, acCompany]) =>
+      this.activecollab
+        .project(project.activecollabId)
+        .then((acProject) =>
           resolve({
             ...project,
             name: acProject.name,
@@ -202,7 +197,6 @@ class Manager {
             creativeWorkStatus: this.getCreativeWorkStatus(
               labels[acProject.label_id]
             ),
-            department: this.getDepartment(acCompany.name),
           })
         )
         .catch((err) => reject(err));
@@ -241,20 +235,6 @@ class Manager {
       default:
         return "Post-project";
     }
-  }
-
-  getDepartment(name) {
-    let [company, department] = name.split(":");
-    company = company.trim();
-
-    if (department) {
-      department = department.trim();
-    }
-
-    return {
-      name: department,
-      related: { name: company, relationship: "parentOrganisation" },
-    };
   }
 
   /**
@@ -336,15 +316,6 @@ class Manager {
     ].map((name) => ({ name: name }));
     const teamAgents = await this.getOrCreateAgents("person", teamNames);
 
-    const departments = _.uniqWith(
-      projects.map((project) => project.department),
-      _.isEqual
-    );
-    const departmentAgents = await this.getOrCreateAgents(
-      "organisation",
-      departments
-    );
-
     const urls = projects
       .map((project) => project.url)
       .filter((url) => url.length > 0);
@@ -359,7 +330,6 @@ class Manager {
       researchersOrganisationAgents,
       funderAgents,
       teamAgents,
-      departmentAgents,
       urlRoles
     );
   }
@@ -494,7 +464,6 @@ class Manager {
     researchersOrganisationAgents,
     funders,
     teams,
-    departments,
     urls
   ) {
     const data = [];
@@ -510,7 +479,6 @@ class Manager {
           researchersOrganisationAgents,
           funders,
           teams,
-          departments,
           urls
         )
       );
@@ -528,7 +496,6 @@ class Manager {
     researchersOrganisationAgents,
     funders,
     teams,
-    departments,
     urls
   ) {
     const members = [];
@@ -557,6 +524,14 @@ class Manager {
       }
     });
 
+    const departments = [];
+
+    project.pi.forEach((pi) =>
+      departments.push({
+        organisation_id: { id: piOrganisationAgents[pi.org].id },
+      })
+    );
+
     const fundersData = [];
     project.funder
       .filter((funder) => funders[funder] !== undefined)
@@ -581,9 +556,7 @@ class Manager {
         ? definedTerms[project.creativeWorkStatus].id
         : null,
       funder: fundersData,
-      department: departments[project.department.name]
-        ? departments[project.department.name].id
-        : null,
+      department: departments,
       member: members,
       url: linkRoles,
     };
