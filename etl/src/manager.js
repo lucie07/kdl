@@ -526,9 +526,9 @@ class Manager {
 
     const departments = [];
 
-    project.pi.forEach((pi) =>
+    _.uniq(project.pi.map((pi) => pi.org)).forEach((org) =>
       departments.push({
-        organisation_id: { id: piOrganisationAgents[pi.org].id },
+        organisation_id: { id: piOrganisationAgents[org].id },
       })
     );
 
