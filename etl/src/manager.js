@@ -509,7 +509,7 @@ class Manager {
     );
 
     project.researchers
-      .filter((r) => researchersPersonAgents[r] !== undefined)
+      .filter((r) => researchersPersonAgents[r.name] !== undefined)
       .forEach((r) =>
         members.push({
           name: "Researcher",
