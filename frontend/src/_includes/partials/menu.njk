@@ -1,36 +1,18 @@
 <input id="menu-switch" type="checkbox" checked="">
 <nav id="menu">
-  {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
-  <!-- Placeholder - Static content for multilevel example -->
+  {% set navPages = collections.all | eleventyNavigation %}
+  {% macro renderNavListItem(entry) -%}
+  <li{% if entry.url==page.url %} class="my-active-class" {% endif %}>
+    <a href="{{ entry.url }}">{{ entry.title }}</a>
+    {%- if entry.children.length -%}
+    <ul>
+      {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+    </ul>
+    {%- endif -%}
+  </li>
+  {%- endmacro %}
+
   <ul>
-    <li>
-      <input id="about" type="checkbox" hidden="">
-      <label for="about" class="check">About</label>
-      <ol class="level1-list">
-        <li>
-          <input id="chapter-22" type="checkbox" hidden="">
-          <label for="chapter-22" class="check">Lab</label>
-          <ol class="level2-list">
-            <li><a href="/">Overview</a></li>
-            <li><a href="/">History</a></li>
-            <li><a href="/">Misson</a></li>
-          </ol>
-        </li>
-
-        <li>
-          <input id="chapter-11" type="checkbox" hidden="">
-          <label for="chapter-11" class="check">People</label>
-          <ol class="level2-list">
-            <li><a href="/">Current</a></li>
-            <li><a href="/">Past</a></li>
-          </ol>
-        </li>
-
-        <li>
-          <input id="chapter-13" type="checkbox" hidden="">
-          <label for="chapter-13" class="check">Partners</label>
-        </li>
-      </ol>
-    </li>
+    {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
   </ul>
 </nav>

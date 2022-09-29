@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-home
-permalink: "organisations/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
+permalink: "about/organisations/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
 ---
 
 <header>
@@ -18,7 +18,7 @@ permalink: "organisations/{% if pagination.pageNumber > 0 %}{{ pagination.pageNu
 <ol start="{{ pagination.pageNumber * 10 + 1}}">
   {%- for org in paginatedOrganisations -%}
   <li>
-    <a href="/organisations/{{ org.agent.slug }}/">
+    <a href="/about/organisations/{{ org.agent.slug }}/">
       <h2>{{ org.agent.name }}</h2>
     </a>
   </li>

@@ -5,5 +5,5 @@ pagination:
   data: organisations
   size: 1
   alias: agentInstance
-permalink: "organisations/{{ agentInstance.agent.slug }}/"
+permalink: "about/organisations/{{ agentInstance.agent.slug }}/"
 ---
