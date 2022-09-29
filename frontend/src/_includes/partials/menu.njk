@@ -1,13 +1,17 @@
 <input id="menu-switch" type="checkbox" checked="">
 <nav id="menu">
   {% set navPages = collections.all | eleventyNavigation %}
+
   {% macro renderNavListItem(entry) -%}
-  <li{% if entry.url==page.url %} class="my-active-class" {% endif %}>
-    <a href="{{ entry.url }}">{{ entry.title }}</a>
+  <li{% if entry.url==page.url %} class="active" {% endif %}>
     {%- if entry.children.length -%}
-    <ul>
+    <input id="{{ entry.key }}" type="checkbox" hidden="">
+    <label for="{{ entry.key }}" class="check">About</label>
+    <ol class="level1-list">
       {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
-    </ul>
+    </ol>
+    {%- else -%}
+    <a href="{{ entry.url }}">{{ entry.title }}</a>
     {%- endif -%}
   </li>
   {%- endmacro %}
