@@ -1,7 +1,7 @@
 const fs = require("fs/promises");
 
 module.exports = {
-  async loadData(directus, collection, fileName, sort = "name") {
+  async loadData(directus, collection, fileName, fields, sort = "name") {
     return fs
       .readFile(`./src/_data/_${fileName}.json`)
       .then((data) => JSON.parse(data))
@@ -11,7 +11,7 @@ module.exports = {
 
         return directus
           .items(collection)
-          .readByQuery({ fields: ["*.*.*.*"], sort: sort, limit: -1 })
+          .readByQuery({ fields: fields, sort: sort, limit: -1 })
           .then((response) => response.data)
           .then((projects) => {
             fs.writeFile(

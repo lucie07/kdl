@@ -5,6 +5,7 @@ module.exports = async ({ directus }) => {
     directus,
     "organisation",
     "organisations",
+    ["*.*.*.*"],
     "agent.name"
   );
 };
