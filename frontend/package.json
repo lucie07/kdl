@@ -17,10 +17,12 @@
     "debug": "^4.3.4",
     "dotenv": "^16.0.1",
     "eleventy-plugin-seo": "^0.5.2",
+    "luxon": "^3.0.4",
     "sass": "^1.54.3"
   },
   "dependencies": {
-    "@directus/sdk": "^9.12.2"
+    "@directus/sdk": "^9.12.2",
+    "yaml": "^2.1.1"
   },
   "repository": {
     "type": "git",

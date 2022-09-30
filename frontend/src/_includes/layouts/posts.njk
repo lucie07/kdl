@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+permalink: "blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
+---
+
+<header>
+  <h1>Blog</h1>
+</header>
+
+<ol start="{{ pagination.pageNumber * 25 + 1}}">
+  {%- for post in posts -%}
+  <li>
+    <a href="{{ post.url }}">
+      <h2>{{ post.data.title }}</h2>
+    </a>
+    <div class="index-information">
+      <p>{{ post.data.excerpt }}</p>
+      {{ post.date | asPostDate }}, by {{ post.data.author }}
+    </div>
+  </li>
+  {%- endfor -%}
+</ol>
+
+{% set label = "Posts" %}
+{% include "partials/pagination.njk" %}

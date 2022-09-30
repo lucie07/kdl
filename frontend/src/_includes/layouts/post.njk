@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+<header>
+  {% set navKey = "Blog" %}
+  {% include "partials/breadcrumbs.njk" %}
+  <h1>{{ title }}</h1>
+</header>
+
+{{ content | safe }}
