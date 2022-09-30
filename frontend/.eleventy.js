@@ -1,7 +1,7 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const projects = require("./src/_data/projects");
 const pluginSEO = require("eleventy-plugin-seo");
 const { Directus } = require("@directus/sdk");
+const { DateTime } = require("luxon");
 const path = require("node:path");
 const sass = require("sass");
 
@@ -24,6 +24,10 @@ module.exports = (eleventyConfig) => {
     if (!id) return null;
 
     return `${process.env.DIRECTUS_URL}/assets/${id}`;
+  });
+
+  eleventyConfig.addFilter("asPostDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
 
   eleventyConfig.addFilter("fundedProjects", (projects, funder) => {
