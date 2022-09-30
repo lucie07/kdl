@@ -2,6 +2,7 @@
 
 const ActiveCollab = require("./activecollab");
 const Manager = require("./manager");
+const Scraper = require("./scraper");
 require("dotenv").config();
 
 const { Directus } = require("@directus/sdk");
@@ -17,7 +18,9 @@ async function cli() {
     .usage("<command> [options]")
     .version(pkg.version, "-v, --version");
 
-  const projectsCommand = program.command("projects");
+  const projectsCommand = program
+    .command("projects")
+    .description("Manage project data");
   projectsCommand
     .command("import")
     .argument("<file>", "CSV projects list")
@@ -41,6 +44,20 @@ async function cli() {
         .then((projects) =>
           console.info(`Successfully imported ${projects.length} projects`)
         )
+        .catch((err) => console.error(err));
+    });
+
+  const scrapeCommand = program
+    .command("scrape")
+    .description("Scrape content from the current web site");
+  scrapeCommand
+    .command("blog")
+    .argument("<path>", "Path to save the blog posts")
+    .action((path) => {
+      const scraper = new Scraper("https://kdl.kcl.ac.uk/blog", path);
+      scraper
+        .scrape("*")
+        .then(() => console.info("Scraping done"))
         .catch((err) => console.error(err));
     });
 
