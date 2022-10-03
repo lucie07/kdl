@@ -27,14 +27,14 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addFilter("route", function (navigationKey, path = "") {
-    const url = `${navigationKey.toLowerCase()}`;
+    let url = `${navigationKey.toLowerCase()}/${path}/`;
 
     const graph = eleventyNavigationPlugin.navigation.getDependencyGraph(
       this.ctx.collections.all
     );
     const found = graph.getNodeData(navigationKey);
     if (found) {
-      return `${found.url}${path}`;
+      url = `${found.url}${path}/`;
     }
 
     const urlFilter = this.getFilter("url");

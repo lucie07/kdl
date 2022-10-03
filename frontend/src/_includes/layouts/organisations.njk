@@ -18,7 +18,7 @@ permalink: "about/organisations/{% if pagination.pageNumber > 0 %}{{ pagination.
 <ol start="{{ pagination.pageNumber * 10 + 1}}">
   {%- for org in paginatedOrganisations -%}
   <li>
-    <a href="{{ 'Organisations' | route(org.agent.slug) }}/">
+    <a href="{{ 'Organisations' | route(org.agent.slug) }}">
       <h2>{{ org.agent.name }}</h2>
     </a>
   </li>
