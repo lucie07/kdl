@@ -15,8 +15,10 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 
       <h2>{{ post.data.title }}</h2>
     </a>
     <div class="index-information">
-      <p>{{ post.data.excerpt }}</p>
-      {{ post.date | asPostDate }}, by {{ post.data.author }}
+      <em>{{ post.data.excerpt }}</em>
+      {% set author = post.data.author %}
+      {% set date = post.date %}
+      {% include "partials/byline.njk" %}
     </div>
   </li>
   {%- endfor -%}
