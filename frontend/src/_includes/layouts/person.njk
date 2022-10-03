@@ -11,9 +11,10 @@ layout: layouts/agent.njk
     {% for member in agent.memberOf|sort(false, false, "name") %}
     <li>
       {% if member.inProject %}
-      <a href="/projects/{{ member.inProject.slug }}/">{{ member.inProject.name }}</a>
+      <a href="{{ 'Projects' | route(member.inProject.slug) }}/">{{ member.inProject.name }}</a>
       {% else %}
-      <a href="/organisations/{{ member.inOrganisation.agent.slug }}/">{{ member.inOrganisation.agent.name }}</a>
+      <a href="{{ 'Organisations' | route(member.inOrganisation.agent.slug) }}/">{{ member.inOrganisation.agent.name
+        }}</a>
       {% endif %}
     </li>
     {% endfor %}

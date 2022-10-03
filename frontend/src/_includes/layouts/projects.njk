@@ -16,7 +16,7 @@ permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
 <ol start="{{ pagination.pageNumber * 25 + 1}}">
   {%- for project in paginatedProjects -%}
   <li>
-    <a href="/projects/{{ project.slug }}/">
+    <a href="{{ 'Projects' | route(project.slug) }}/">
       <h2>{{ project.name }}</h2>
       <figure>
         <img src="https://placeimg.com/640/480/arch" alt="random technology image from placeimg.com">

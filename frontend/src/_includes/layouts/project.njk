@@ -53,8 +53,8 @@ templateClass: tmpl-home
       <ul>
         {% for funder in project.funder %}
         <li>
-          <a href="/about/organisations/{{ funder.agent_id.slug }}/">
-          {{- funder.agent_id.name -}}
+          <a href="{{ 'Organisations' | route(funder.agent_id.slug)}}">
+            {{- funder.agent_id.name -}}
           </a>
         </li>
         {% endfor %}
@@ -72,7 +72,7 @@ templateClass: tmpl-home
     <ul>
       {% for member in project.member|sort(false, false, "agent.name") %}
       <li>
-        <a href="/about/people/{{ member.agent.slug }}/">{{ member.agent.name }}</a>,
+        <a href="{{ 'People' | route(member.agent.slug) }}">{{ member.agent.name }}</a>,
         {{ member.name }}
         {%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}
       </li>

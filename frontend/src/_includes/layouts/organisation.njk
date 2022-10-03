@@ -9,7 +9,7 @@ layout: layouts/agent.njk
   <ul>
     {% for project in funded %}
     <li>
-      <a href="/projects/{{ project.slug }}/">{{ project.name }}</a>
+      <a href="{{ 'Projects' | route(project.slug) }}/">{{ project.name }}</a>
     </li>
     {% endfor %}
   </ul>
