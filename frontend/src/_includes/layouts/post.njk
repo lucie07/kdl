@@ -6,7 +6,22 @@ templateClass: tmpl-home
 <header>
   {% set navKey = "Blog" %}
   {% include "partials/breadcrumbs.njk" %}
-  <h1>{{ title }}</h1>
+  <h2>{{ title }}</h2>
+  <h1>{{ subtitle }}</h1>
 </header>
 
-{{ content | safe }}
+<article>
+  <header class="post-meta">
+    {% include "partials/byline.njk" %}
+  </header>
+  {% if banner and banner.image %}
+  <div id="images">
+    <figure>
+      <img src="{{ banner.image }}" alt="{{ banner.description }}">
+      <figcaption>{{ banner.description }}</figcaption>
+    </figure>
+  </div>
+  {% endif %}
+
+  {{ content | safe }}
+</article>
