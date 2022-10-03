@@ -26,6 +26,22 @@ module.exports = (eleventyConfig) => {
     return `${process.env.DIRECTUS_URL}/assets/${id}`;
   });
 
+  eleventyConfig.addFilter("route", function (navigationKey, path = "") {
+    const url = `${navigationKey.toLowerCase()}`;
+
+    const graph = eleventyNavigationPlugin.navigation.getDependencyGraph(
+      this.ctx.collections.all
+    );
+    const found = graph.getNodeData(navigationKey);
+    if (found) {
+      return `${found.url}${path}`;
+    }
+
+    const urlFilter = this.getFilter("url");
+
+    return urlFilter(url);
+  });
+
   eleventyConfig.addFilter("asPostDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
@@ -49,7 +65,7 @@ module.exports = (eleventyConfig) => {
         loadPaths: [parsed.dir || ".", this.config.dir.includes],
       });
 
-      return (data) => {
+      return (_) => {
         return result.css;
       };
     },
