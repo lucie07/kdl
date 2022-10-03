@@ -21,8 +21,7 @@
     "sass": "^1.54.3"
   },
   "dependencies": {
-    "@directus/sdk": "^9.12.2",
-    "yaml": "^2.1.1"
+    "@directus/sdk": "^9.12.2"
   },
   "repository": {
     "type": "git",
