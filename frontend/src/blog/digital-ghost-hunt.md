@@ -1,13 +1,18 @@
 ---
 layout: layouts/post.njk
-title: The Digital Ghost Hunt begins development
+title: The Digital Ghost Hunt
+subtitle: The Digital Ghost Hunt begins development
 tags:
   - post
 author: Elliott Hall
 date: 2018-02-05
 excerpt: An AHRC-funded project fusing coding education and immersive theatre
-banner: /images/KIT_scientist.original.jpg
+banner:
+  image: /images/KIT_scientist.original.jpg
+  description: KIT taken by Natalie Raaum
 ---
+
+An AHRC-funded project fusing coding education and immersive theatre
 
 The Digital Ghost Hunt combines coding education, Augmented Reality and live performance into an immersive storytelling experience.  The project seeks to rescue coding and digital technology from its narrow roles as job preparation and curriculum box ticking and restore it to its proper place as a tool of the imagination.
 

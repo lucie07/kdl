@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: Reflections after a month at KDL
+title: Blog
+subtitle: Reflections after a month at KDL
 tags:
   - post
 author: Arianna Ciula
@@ -9,7 +10,12 @@ excerpt: I took the role of analyst at King’s Digital Lab (KDL) just over a
   month ago. It is difficult to judge whether time flew so quickly because I
   feel at home or because the pace and rhythm of the place goes tick tick
   tick...
+banner:
+  image:
+  description:
 ---
+
+I took the role of analyst at King’s Digital Lab (KDL) just over a month ago. It is difficult to judge whether time flew so quickly because I feel at home or because the pace and rhythm of the place goes tick tick tick...
 
 So what is life like at KDL? Of course I wondered myself, before joining in this new role. It has only been one month, but I can summarise from my own particular perspective.
 

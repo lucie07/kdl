@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: A low bandwidth solution for cultural heritage web content
+title: Blog
+subtitle: A low bandwidth solution for cultural heritage web content
 tags:
   - post
   - rock art
@@ -11,8 +12,12 @@ author: Neil Jakeman
 date: 2018-01-17
 excerpt: KDL help the British Museum to ensure that the natural custodians of
   cultural heritage have equal access to scholarship
-banner: /images/ara.original.jpg
+banner:
+  image: /images/ara.original.jpg
+  description: ARA 2
 ---
+
+KDL help the British Museum to ensure that the natural custodians of cultural heritage have equal access to scholarship
 
 We give careful consideration to all projects that are proposed to us and we make a decision collectively about whether or not they are viable based on many factors; the level of innovation involved, the time frame, the subject matter, having the right spread of skills in the lab, other commitments etc. Sometimes we have to reluctantly pass on projects that appeal to everyone in the lab but which simply came along at the wrong time. Occasionally projects come along that we know we just have to do.
 

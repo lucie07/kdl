@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: SUP and KDL collaboration goes into next phase
+title: Blog
+subtitle: SUP and KDL collaboration goes into next phase
 tags:
   - post
 author: Arianna Ciula
@@ -8,7 +9,12 @@ date: 2018-02-21
 excerpt: "Stanford University Press and King's Digital Lab are pleased to
   announce our selection of the most compelling ideas that were submitted in
   this round of the call for expressions of interest. "
+banner:
+  image:
+  description:
 ---
+
+[Stanford University Press](http://sup.org/) and [King's Digital Lab](https://www.kdl.kcl.ac.uk/) are pleased to announce our selection of the most compelling ideas that were submitted in this round of the call for expressions of interest.
 
 [![Links to King's Digital Lab](/images/kdl-heading.original.png)](//kdl.kcl.ac.uk/)
 

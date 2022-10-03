@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: Archetype Rising
+title: Blog
+subtitle: Archetype Rising
 tags:
   - post
   - Iconography
@@ -12,8 +13,12 @@ excerpt: There have been some mysterious and intriguing noises coming out of KDL
   recently. The development team have been (metaphorically) hammering away to
   add the final touches to a digital behemoth hidden underneath an equally
   metaphorical, oil-stained tarpaulin...
-banner: /images/metropolis57fsam.original.jpg
+banner:
+  image: /images/metropolis57fsam.original.jpg
+  description: metropolis3
 ---
+
+There have been some mysterious and intriguing noises coming out of KDL recently. The development team have been (metaphorically) hammering away to add the final touches to a digital behemoth hidden underneath an equally metaphorical, oil-stained tarpaulin...
 
 The KDL designers have been polishing and buffing logos and arranging them nicely in banners and footers. The analysts have been cooling the wine and slicing the sandwiches into triangles in preparation for a grand unveiling. Whispers are being heard at conferences and the very air is electric with the accumulated anticipation of the digital research community. “Something is coming! What are those boffins at KDL about now?” Well, we’re almost ready to draw aside the veil and reveal what many of you already know. But first, a history lesson.
 

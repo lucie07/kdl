@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: A Research Theme under Development
+title: Indigenous Digital Humanities
+subtitle: A Research Theme under Development
 tags:
   - post
 author: Samantha Callaghan
@@ -9,10 +10,24 @@ excerpt: Whaia e koe ki te iti kahurangi, kia tāpapa koe,he maunga
   tiketikeFollow your treasured aspirations, if you must bow your head,let it be
   to a lofty mountainNāku te rourou, nāu te rourou,ka ora ai te iwiWith my
   basket, and your basket,we will feed the people
-banner: /images/IDH_banner.original.jpg
+banner:
+  image: /images/IDH_banner.original.jpg
+  description: Indigenous Digital Humanities Banner
 ---
 
-Ko wai au? (Who am I?)
+Whaia e koe ki te iti kahurangi, kia tāpapa koe,  
+he maunga tiketike
+
+_Follow your treasured aspirations, if you must bow your head,  
+let it be to a lofty mountain_
+
+Nāku te rourou, nāu te rourou,  
+ka ora ai te iwi
+
+_With my basket, and your basket,  
+we will feed the people_
+
+## Ko wai au? (Who am I?)
 
 ![Te Whanau a Apanui sign, Hawai by Te Ara, 2007- edited](/images/whanau_x2.width-1024.jpg)
 
@@ -22,7 +37,7 @@ Ko Te Whānau a Apanui rātou ko Ngāti Kahungunu, ko Ngāi Pākehā ngā iwi. K
 
 My name is Samantha Callaghan and I am of Māori (Indigenous peoples of Aotearoa/New Zealand) and Pākehā (European New Zealander) descent. I am a Research Software Analyst at King’s Digital Lab (KDL). I was previously based in the Lab as the Metadata Analyst for the [Georgian Papers Programme.](https://georgianpapers.com/)
 
-Introduction
+## Introduction
 
 N.B. Te Reo Māori/Māori language terms are included in this post in alignment with its [kaupapa](https://maoridictionary.co.nz/search?idiom=&phrase=&proverb=&loan=&histLoanWords=&keywords=kaupapa) (theme).
 
@@ -36,7 +51,7 @@ Indigenous Digital Humanities (DH) as we use it at KDL can mean:
 
 The definition of ‘Indigenous’ as a term itself is contentious and we do not seek to explicitly define it. Instead, we follow the practice used within the [UN Declaration on the Rights of Indigenous Peoples](https://www.un.org/en/about-us/universal-declaration-of-human-rights) that explicitly does not include a definition of Indigenous peoples to ensure that it cannot be used to deny certain groups the defined rights included in the Declaration.
 
-Outreach
+## Outreach
 
 A substantial amount of work that underpins some of the thinking for our developing research theme is my outreach work. I’ve spoken to GLAM (Galleries, Libraries, Archives and Museums) sector staff and academics at conferences, symposia, seminars, and by invitation to the DH Oxford Summer School and the Tate Britain. Some of this outreach work has been supported by KDL; other outreach has been done via my volunteer work with [Te Maru o Hinemihi](http://www.hinemihi.co.uk/), a [pūkenga](https://maoridictionary.co.nz/search?idiom=&phrase=&proverb=&loan=&histLoanWords=&keywords=pukenga) (expert) group predominantly based in the UK supporting the care, and now [exchange](https://www.nationaltrust.org.uk/clandon-park/features/an-update-on-hinemihi), of the [wharenui](https://maoridictionary.co.nz/search?idiom=&phrase=&proverb=&loan=&histLoanWords=&keywords=wharenui) (meeting house), [Hinemihi o te Ao Tawhito](https://www.nationaltrust.org.uk/clandon-park/features/hinemihi-of-the-old-world). My volunteer work is, at times, supported via the Service Time policy here at King’s.
 
@@ -94,7 +109,7 @@ Although not an exhaustive list, these benefits might be:
 
 Ngāti Rānana perform in front of Hinemihi o te Ao Tawhito, 2012 © Sean Pike, 2022. Reproduced with permission.
 
-Projects
+## Projects
 
 Within KDL there has already been some work done within the Indigenous Digital Humanities context, especially in relation to:
 
@@ -110,7 +125,7 @@ Mapping Digital Cultural Heritage in Jordan is a project with a focus specifical
 
 In addition to the project work the Lab has done, readers of this blog might be interested in the fourth discussion paper of the UK-Ireland DH Network, [_Promoting Diversity and Inclusivity in DH in Ireland and the UK_](https://osf.io/63wdr/) that I contributed to. The Faculty of Arts and Humanities at King's has also recently set up a Global Cultures Institute (I am the KDL representative) which aims to give organised structure and support to activities and initiatives already happening within the Faculty and across the College, as well as providing a platform to foreground and publicise them. This includes teaching in cultural competencies, the MA in Global Cultures, as well as offering a home to research projects such as Queer at King’s. The main focus of the Institute in the coming year will be hosting events and offering networking opportunities.
 
-Indigenous Digital Humanities - a KDL Research Theme
+## Indigenous Digital Humanities - a KDL Research Theme
 
 Discussions regarding the development of an Indigenous DH research theme within the Lab have been ongoing for a number of years. These discussions were somewhat hindered by availability of people to be involved and a sense of where it would be best to start. [James Smithies](https://www.kcl.ac.uk/people/james-smithies), former KDL Director and now Professor of Digital Humanities at King’s College London, was instrumental in the early discussions and supported the outreach work undertaken under the auspices of the Lab.
 

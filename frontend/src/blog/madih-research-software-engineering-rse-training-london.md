@@ -1,12 +1,15 @@
 ---
 layout: layouts/post.njk
-title: London, 2nd-5th July 2019
+title: "MaDiH (مديح): Research Software Engineering (RSE) Training"
+subtitle: London, 2nd-5th July 2019
 tags:
   - post
 author: Alessandra Esposito
 date: 2019-09-26
 excerpt: ""
-banner: /images/IMG_20190702_145840736.original.jpg
+banner:
+  image: /images/IMG_20190702_145840736.original.jpg
+  description: KDL-MaDIH1
 ---
 
 ###

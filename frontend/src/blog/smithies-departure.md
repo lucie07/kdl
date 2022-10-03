@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: New starts, new possibilities
+title: Announcing my departure from KDL
+subtitle: New starts, new possibilities
 tags:
   - post
 author: James Smithies
@@ -12,8 +13,12 @@ excerpt: I’ll be leaving King’s Digital Lab (KDL) this month, after 6 wonder
   fractional appointment in, it represents a significant milestone in my career.
   I’m grateful to the many people who have supported me to this point, in New
   Zealand, Australia, Jordan, and the United States, as well as the UK.
-banner: /images/torsten-dederichs-t5IN6vx0cLs-unsplash_830h.original.jpg
+banner:
+  image: /images/torsten-dederichs-t5IN6vx0cLs-unsplash_830h.original.jpg
+  description: torsten-dederichs-t5IN6vx0cLs-unsplash_830h.jpg
 ---
+
+I’ll be leaving King’s Digital Lab (KDL) this month, after 6 wonderful years, for a new role as Professor of Digital Humanities in King’s Department of Digital Humanities (DDH). Although merely a move over to the other half of Digital Humanities at King’s, and a return to a department I used to hold a fractional appointment in, it represents a significant milestone in my career. I’m grateful to the many people who have supported me to this point, in New Zealand, Australia, Jordan, and the United States, as well as the UK.
 
 Primarily, though, the change represents a major milestone for King’s Digital Lab. I’ve always wanted someone else to follow me as director, to ensure the creative, intellectual, and administrative health of the team, but the timing had to be right. Building new research facilities is hard work, especially if the goal is to see them endure. Sustainability doesn’t only require a succession of high-quality projects, but stewardship of existing ones, funding and design of technical infrastructure, definition of [engineering](https://github.com/kingsdigitallab/sdlc-for-rse), governance, financial, and administrative processes, and definition of reporting metrics. In KDL’s case it also involved the development of [Research Software Engineering (RSE) roles and career pathways](https://zenodo.org/record/2564790), to help recruit and retain the best team possible and provide them with equitable conditions. As [Arianna Ciula and I have noted](https://www.taylorfrancis.com/chapters/edit/10.4324/9780429777028-13/humans-loop-james-smithies-arianna-ciula), this institutional ‘conceptual work’ has direct parallels in the establishment of research laboratories across all disciplines over many centuries and intersects with foundational issues in research method and epistemology.
 

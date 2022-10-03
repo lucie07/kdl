@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: Heritage Gazetteer of Libya launched
+title: Blog
+subtitle: Heritage Gazetteer of Libya launched
 tags:
   - post
 author: Neil Jakeman
@@ -8,14 +9,18 @@ date: 2016-11-17
 excerpt: Toponyms are slippery things, meaning one place to one person and
   perhaps a whole region to another. They are encumbered with cultural baggage,
   questions of identity, temporality and language.
-banner: /images/libya_blog_hero.original.original.jpg
+banner:
+  image: /images/libya_blog_hero.original.original.jpg
+  description: Libya
 ---
+
+Toponyms are slippery things, meaning one place to one person and perhaps a whole region to another. They are encumbered with cultural baggage, questions of identity, temporality and language.
 
 KDL have been involved in a number of projects which look at differing models of place names. Most recently, the Heritage Gazetteer of Libya was launched, building on place names accumulated in a project mapping the ancient inscriptions of Tripolitania. It was an excellent opportunity to repurpose this data and enhance an area of that database into a fully fledged project.
 
 Place names are a problem that KDL Academic Affiliate Charlotte Roueché has grappled with on many occasions.
 
-Link to the Heritage Gazetteer of Libya website
+[Link to the Heritage Gazetteer of Libya website](http://www.slsgazetteer.org/)
 
 > The apparent simplicity of place names is largely the result of modern standardisations; but their instability is reflected in the fact that so many countries actually use post codes. The challenge is particularly great when more than one alphabet is in use, producing inconsistent transliterations.
 >

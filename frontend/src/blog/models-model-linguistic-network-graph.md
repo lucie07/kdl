@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: A modelling of "model" - a linguistic network graph
+title: Blog
+subtitle: A modelling of "model" - a linguistic network graph
 tags:
   - post
   - Visualisation
@@ -13,8 +14,12 @@ excerpt: Modelling is a concept that is central to DH, though its various
   linguistic associations can encompass complementary and contradictory
   meanings. By happy providence, the act of modelling itself leads to new
   insights for our KDL Postdoctoral Research Associate Chris Pak ...
-banner: /images/graph.original.jpg
+banner:
+  image: /images/graph.original.jpg
+  description: Network Graph
 ---
+
+Modelling is a concept that is central to DH, though its various linguistic associations can encompass complementary and contradictory meanings. By happy providence, the act of modelling itself leads to new insights for our KDL Postdoctoral Research Associate Chris Pak ...
 
 I took up the gauntlet of developing a visualisation that would complement a forthcoming paper by Cristina Marras and Michela Tardella entitled “Modelling between Digital and Humanities: Looking Back and Forward,” part of the Volkswagen Foundation-funded project “[Modelling Between Digital and Humanities: Thinking in Practice](http://modellingdh.eu/)”. This paper will appear as a chapter in an open-access collection edited by researchers on the project.
 

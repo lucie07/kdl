@@ -1,15 +1,20 @@
 ---
 layout: layouts/post.njk
-title: After successful scratch performances, the project begins a new life
+title: A new Digital Ghost Hunt
+subtitle: After successful scratch performances, the project begins a new life
 tags:
   - post
 author: Elliott Hall
 date: 2019-02-13
 excerpt: After a successful scratch performance, the project begins a new life
-banner: /images/BAC-24-web.original.jpg
+banner:
+  image: /images/BAC-24-web.original.jpg
+  description: BAC Michael
 ---
 
-A new Digital Ghost Hunt
+## A new Digital Ghost Hunt
+
+After a successful scratch performance, the project begins a new life
 
 The [Digital Ghost Hunt](https://digitalghosthunt.com) is a mixture of coding education, Augmented Reality and immersive storytelling created by lab Senior Software Engineer Elliott Hall.  It was performed at the Battersea Arts Centre in November, 2018, funded by the Arts & Humanities Research Council's  [Next Generation of Immersive Experiences](https://ceprogramme.com/immersive-experiences/projects)  program.
 

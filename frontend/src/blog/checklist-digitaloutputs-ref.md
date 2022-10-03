@@ -1,12 +1,15 @@
 ---
 layout: layouts/post.njk
-title: KDL Checklist for Digital Outputs Assessment in the REF
+title: What Makes Good Honey?
+subtitle: KDL Checklist for Digital Outputs Assessment in the REF
 tags:
   - post
 author: Arianna Ciula
 date: 2019-08-07
 excerpt: ""
-banner: /images/REF_blog_Damien_Tupinier_Unsplash.original.jpg
+banner:
+  image: /images/REF_blog_Damien_Tupinier_Unsplash.original.jpg
+  description: Adapted from photo by Damien TUPINIER on Unsplash
 ---
 
 Download the King’s Digital Lab Checklist for Digital Outputs Assessment in the REF [here](http://doi.org/10.5281/zenodo.3361580).

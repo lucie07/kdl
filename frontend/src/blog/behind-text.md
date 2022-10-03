@@ -1,12 +1,15 @@
 ---
 layout: layouts/post.njk
-title: What is happening behind the text?
+title: Knowledge creation in the Humanities
+subtitle: What is happening behind the text?
 tags:
   - post
 author: Urszula Pawlicka-Deger
 date: 2020-11-18
 excerpt: ""
-banner: /images/book_network.original.jpg
+banner:
+  image: /images/book_network.original.jpg
+  description: ursula_blog_feed
 ---
 
 _'You doubt what I wrote? Let me show you.' The very rare and obstinate dissenter who has not been convinced by the scientific text, and who has not found other ways to get rid of the author, is led from the text into the place where the text is said to come from._ (B. Latour, Science in Action, 1987).

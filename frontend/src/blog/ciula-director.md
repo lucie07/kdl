@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: As new Director of KDL ...
+title: High level priorities
+subtitle: As new Director of KDL ...
 tags:
   - post
 author: Arianna Ciula
@@ -9,8 +10,12 @@ excerpt: After almost exactly five years since I joined King’s Digital Lab (KD
   as Research Software Analyst, I have recently been appointed Director for the
   next four years, following the departure of KDL first director, James
   Smithies.
-banner: /images/chris-lawton-vBA-JNHAraI-unsplash.original.jpg
+banner:
+  image: /images/chris-lawton-vBA-JNHAraI-unsplash.original.jpg
+  description: Bunting flags
 ---
+
+After almost exactly five years [since I joined King’s Digital Lab (KDL)](/blog/first-month-lab/) as Research Software Analyst, I have recently been appointed Director for the next four years, following the [departure of KDL first director](https://kdl.kcl.ac.uk/blog/smithies-departure/), James Smithies.
 
 Very aware of the challenges ahead and with a sense of excitement and humility towards this responsibility, I share this post as an opportunity to outline what I see as KDL priorities going forward.
 
@@ -40,13 +45,13 @@ They can be summarised under these overarching headings:
 
 Let me explain what I mean by each of these priorities and how I see them evolving in the next few years...
 
-Faculty alignment
+## Faculty alignment
 
 The Faculty is an organic body which regularly changes its governance, structure and priorities. I therefore see it being of particular importance for KDL to periodically and iteratively re-align with the Faculty’s research agenda and, in particular, its digital strategy. During my term as Director, this will entail closer collaboration with Vice Deans and their teams - in particular the newly established teams around Research Culture, Impact and Knowledge Exchange but also the research office - to plan high quality collaborative projects, ensure coordination and improve communication. Part of this priority is a socialised refreshed outlook on KDL mission and activities aligned with a [TRAC-based](https://www.trac.ac.uk/) financial model (as used in comparable research facilities across disciplines) and associated allocation of resources.
 
 In addition to its core mission to design and develop high quality digital products for research, a Research Software Engineering (RSE) lab can perform many other functions to enhance digital capability, research and scholarship. Balancing out demand and capacity remains the core challenge here, but ultimately the quality and innovation of the projects KDL will be involved in will depend on this renewed integration of RSE expertise within the faculty. In the short term, this engagement will entail setting up an affiliation scheme with departments as well as increasing KDL input in early concepts proposals (ranging from an advisory role to formal peer review). Mechanisms to bridge KDL RSE expertise with other new Faculty appointments in the area of research data and impact will also be crucial to ensure this alignment. Indeed, RSE expertise typically interacts not only with the research inspirations, directions and aspirations tout court of the settings in which it lives but also other essential functions such as research data management, communication strategy and pathways to impact.
 
-eResearch evolution
+## eResearch evolution
 
 KDL integration with this unit as it evolves will ensure, first and foremost, our infrastructure security and sustainability, but also best-in-class operational methods and alignment with relevant institutional actors and policies with respect to the management of a research facility and the development of RSE careers.
 
@@ -54,7 +59,7 @@ Last year KDL completed a long phase of upgrades of all its servers and applicat
 
 The eResearch ethos is very much to enable and support local infrastructures located in labs and research groups across the College, such as KDL. Therefore, it is paramount that KDL retains the freedom to focus on its technical strategy informed by RSE best practices and the specialisms of the areas of knowledge and production we operate in (mainly Arts and Humanities, cultural heritage and digital creativity). Our technical strategy is in evolution with a focus to design and develop an archiving-first approach and associated technical stack as well as an attention to refine our overall [Software Development Lifecycle](/blog/sdlc-for-rse/) design and building methods, for example with respect to (data) modelling workflows and requirements elicitation.
 
-Community engagement
+## Community engagement
 
 This requires coordination with other relevant actors in the Faculty including the [Department of Digital Humanities](https://www.kcl.ac.uk/ddh) with its diverse and ever expanding research agenda. It also includes collaboration with other players in the community such as [Research Software London](https://rslondon.ac.uk/), [UK Society for Research Software Engineers](https://society-rse.org/), [DH Tech](https://dh-tech.github.io/) and including funders with programmes that are increasing sensitive to a holistic digital research infrastructure agenda beyond single-projects funding. Examples of these investments in the Arts and Humanities is the AHRC [Towards a National Collection programme](https://www.nationalcollection.org.uk/) and, more broadly, the [AHRC infrastructure team](https://www.ukri.org/blog/arts-and-humanities-infrastructure-enabling-knowledge-with-impact/).
 
@@ -62,7 +67,7 @@ I also believe that our RSE perspective is relatively unique and useful in the D
 
 While I appreciate that the sense of community proposed here is rather narrow, my hope is that via our mainly publicly-funded projects informed by an evolving human-centred design approach – usually with a substantial open access component - we will continue to serve a wide spectrum of communities beyond our immediate reach.
 
-Innovation incubation
+## Innovation incubation
 
 A fundamental priority is for KDL to identify paths of innovation leading to an enhanced portfolio of research and co-production including practice-based research activities. Building on ongoing work initiated by KDL’s first Director, this will be achieved via selected research themes to invest in, such as digital creativity, machine learning and artificial intelligence, design, modelling and visualisation.
 
@@ -70,7 +75,7 @@ Innovation breeding does not happen in a silo so, here again, it will be fundame
 
 During my role as Director I would like to support the definition of what a research theme within our RSE lab means, starting with a template to assess aims, plan resources, strengthen existing and build new partnerships within academia, in the GLAM sector and creative industries in line with our mission and core activities.
 
-Team culture
+## Team culture
 
 Underpinning the four priorities above is the recognition and the nurturing of talents within the KDL team that can be supported also via collaboration with extant networks and partners. Via the College Professional Development Reviews scheme and other mechanisms, my aim would be to contribute both to sustaining our collective profile as a lab and to lifting  individual profiles, for example, encouraging individual applications to relevant schemes amenable to RSE careers (our Senior Research Software UI/UX Designer was appointed as [Software Sustainability Institute fellow in 2022](https://software.ac.uk/news/ssi-fellowship-programme-2022)!) and ideally initiating mentoring schemes beyond the boundaries of the lab across RSE pools, other akin research groups and centres within and outside the College.
 

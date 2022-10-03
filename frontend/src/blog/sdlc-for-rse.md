@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: Software Development Lifecycle for Research Software Engineering
+title: Safeguarding an inheritance and ensuring a legacy
+subtitle: Software Development Lifecycle for Research Software Engineering
 tags:
   - post
   - Research Software Engineering
@@ -9,8 +10,12 @@ date: 2020-08-19
 excerpt: "At its inception in 2015, King’s Digital Lab became the de facto
   custodian of a rich legacy of Digital Humanities (DH) research projects
   spanning decades of experimentation... "
-banner: /images/SDLC_blog_banner.original.jpg
+banner:
+  image: /images/SDLC_blog_banner.original.jpg
+  description: SDLC_blog_banner_v2
 ---
+
+At its inception in 2015, King’s Digital Lab became the de facto custodian of a rich legacy of Digital Humanities (DH) research projects spanning decades of experimentation...
 
 Many of these projects represented very first forays into new methods of research, and new models of impact and dissemination, built by researchers simultaneously discovering and testing the affordances of digital tools. Later on, some of these early exploratory works became the foundations of efforts to consolidate approaches to humanities datasets, and new standards proliferated. More recently still DH projects exhibit the high production values that a sophisticated audience has come to expect from its daily interactions with the world wide web. Specialist resources now appeal to, and cater for, broader audiences beyond their core academic targets.
 

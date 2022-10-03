@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: A subjective retrospective
+title: How KDL applies Machine Learning to research projects
+subtitle: A subjective retrospective
 tags:
   - post
   - Machine Learning
@@ -15,12 +16,16 @@ excerpt: As our new director, Arianna, mentioned in her recent blog post,
   techniques (as you would expect from a Lab) but also because, as AI research
   moves quickly, it continuously brings new methodological opportunities to many
   scientific fields including the Humanities.
-banner: /images/sunset-boulevard-in-512-0.01.original.png
+banner:
+  image: /images/sunset-boulevard-in-512-0.01.original.png
+  description: Image rendered by VQGAN-CLIP
 ---
+
+As our new director, Arianna, [mentioned in her recent blog post](/blog/ciula-director/), Machine Learning (ML) is one of the research themes we are keen to start prioritising. Not only because it matches strong personal interests among the solution development team who are eager to experiment with new and exciting techniques (as you would expect from a Lab) but also because, as AI research moves quickly, it continuously brings new methodological opportunities to many scientific fields including the Humanities.
 
 This blog post comes at a time when there seems to be a noticeable step change in the attention given to such new opportunities during our pre-grant feasibility studies (when requirements for a project are discussed to assess technical feasibility before design and development begin). This obviously reflects transformations caused by AI within research fields and brought to our attention by our project partners. It also coincides with the relatively recent explosion of open-source machine learning tools ignited by a handful of extremely versatile deep learning frameworks such as [TensorFlow](https://www.tensorflow.org/) or [Pytorch](https://pytorch.org/). Thanks in part to the [end-to-end property of Deep Learning (DL)](https://www.capitalone.com/tech/machine-learning/pros-and-cons-of-end-to-end-models/), many of those tools are deceptively easy to use (even with limited programming or AI skills) despite the new level of complexity of the tasks they can tackle. More on the flip side of that coin at the end of this post.
 
-Use Cases
+## Use Cases
 
 Illustrated below are different facets of AI applied to a variety of projects I contributed to over the years (from legacy to new projects), with some notes on the reason why I used them and hopefully some interesting insights into our Research Software Engineering (RSE) processes. My colleagues will soon share their own experience separately as part of this new series of posts on ML to complement this very subjective and partial retrospective.
 
@@ -76,7 +81,7 @@ Surprisingly I can't think of many applications of intelligent Computer Vision t
 
 One interesting observation about this approach so far is that the computational model is very sensitive to how faithfully the artificial corruption matches the natural degradation of the ink. As explained earlier, ML tends to shift the design of the problem definition to a different space; from reconstruction to (methodical) destruction in this occurrence.
 
-What can we take away from those use cases?
+## What can we take away from those use cases?
 
 AI is a very versatile and potent addition to humanities methodologies. Sometimes it can be creatively added on top of an existing digital environment to bring up alternative views over the research material (albeit without any understanding of its historical context). At other times its own creativity relieves researchers and RSEs from fully crafting novel or complex computational procedures to meet well defined objectives.
 

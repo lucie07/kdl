@@ -1,12 +1,15 @@
 ---
 layout: layouts/post.njk
-title: Research Software Careers in King’s Digital Lab
+title: The Continuum Approach to Career Development
+subtitle: Research Software Careers in King’s Digital Lab
 tags:
   - post
 author: James Smithies
 date: 2019-02-07
 excerpt: ""
-banner: /images/cr-benjamin-davies-260884-unsplash_J22jBOc.original.jpg
+banner:
+  image: /images/cr-benjamin-davies-260884-unsplash_J22jBOc.original.jpg
+  description: Photo by Benjamin Davies on Unsplash
 ---
 
 Download the King’s Digital Lab Career Development document [here](http://doi.org/10.5281/zenodo.2559235).

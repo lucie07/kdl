@@ -1,12 +1,15 @@
 ---
 layout: layouts/post.njk
-title: Opening up 3D for Smaller Heritage Organisations
+title: Room to Breathe
+subtitle: Opening up 3D for Smaller Heritage Organisations
 tags:
   - post
 author: Neil Jakeman
 date: 2019-12-06
 excerpt: ""
-banner: /images/blog_header-scaled.original.jpg
+banner:
+  image: /images/blog_header-scaled.original.jpg
+  description: liberty_header
 ---
 
 _This post also appears on the Sketchfab cultural heritage blog_

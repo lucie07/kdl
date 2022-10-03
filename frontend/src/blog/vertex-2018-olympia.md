@@ -1,11 +1,15 @@
 ---
 layout: layouts/post.njk
-title: A peak behind the scenes of leading CGI and game studios
+title: Vertex 2018, Olympia
+subtitle: A peak behind the scenes of leading CGI and game studios
 tags:
   - post
 author: Neil Jakeman
 date: 2018-04-05
 excerpt: ""
+banner:
+  image:
+  description:
 ---
 
 [Vertex 2018](http://www.vertexconf.com/) at Olympia a few weeks ago wasn’t an entirely typical event for King’s Digital Lab to be attending. It’s a commercial event, bringing together an array of big names in the fields of 3D art, games and the CGI industry with an eager audience looking for guidance, practical workshops and career advice on how to enter this hugely competitive industry. The number of universities exhibiting their courses made it clear that there was a large appetite for formal training.

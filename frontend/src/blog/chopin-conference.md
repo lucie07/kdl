@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: Chopin Online Variorum Edition conference, January 2017
+title: Blog
+subtitle: Chopin Online Variorum Edition conference, January 2017
 tags:
   - post
   - OCVE
@@ -10,8 +11,12 @@ author: Elliott Hall
 date: 2017-03-06
 excerpt: KDL balance the tensions inherent when digital solutions are applied to
   analogue problems.
-banner: /images/ocve_hero.original.jpg
+banner:
+  image: /images/ocve_hero.original.jpg
+  description: ocve hero
 ---
+
+KDL balance the tensions inherent when digital solutions are applied to analogue problems.
 
 On Friday 13 January, I had the pleasure of attending a conference at St John’s College Cambridge, organised by the Chopin Online Variorum Edition project (www.chopinonline.ac.uk/ocve). It was led by PI John Rink and is based on the vast scholarship that he and Christophe Grabowski published in the [_Annotated Catalogue of Chopin’s First Editions_](http://www.chopinonline.ac.uk/aco/) (Cambridge University Press, 2010). I have been involved with the project in one way or another since 2005, first as part of King’s Department of Digital Humanities, and now here at the Lab. The project has sought to make every variant found in the multiple witnesses of Chopin’s works – ranging from manuscripts through to published editions, including annotated scores used by his students -- available in a single resource.
 

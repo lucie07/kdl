@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: A family immersive adventure
+title: Ghost Hunt at Spinners Mill
+subtitle: A family immersive adventure
 tags:
   - post
 author: Elliott Hall
@@ -12,8 +13,16 @@ excerpt: "Tom Bowtell of KIT Theatre and Elliott Hall of Kings Digital Lab
   Tales discussing the show, with Tom, Elliott, and Leigh Ambassador (and part
   time ghost) Mike Burwin.Emma Bradburn, intern for the ‘Civic Theatres: A Place
   for Towns’ research project wrote an account of the show on her blog."
-banner: /images/Leigh_Spinners_Leigh_-_geograph.org.uk_-_637989.original.png
+banner:
+  image: /images/Leigh_Spinners_Leigh_-_geograph.org.uk_-_637989.original.png
+  description: Spinners Mill
 ---
+
+Tom Bowtell of [KIT Theatre](https://www.kittheatre.org/) and Elliott Hall of Kings Digital Lab worked in collaboration with Leigh Ambassadors group to create a new [Digital Ghost Hunt](https://digitalghosthunt.com/) at [Spinners Mill](http://www.leighspinnersmill.co.uk/) for family audiences (9+) inspired by real historical events.
+
+[Listen to an episode](https://anchor.fm/ret-leigh-ambassadors/episodes/EP6-Connecting-Tales-At-The-Den-Part-2-e18d78e/a-a6ldf9a) of the Exchange's podcast [Connecting Tales](https://www.royalexchange.co.uk/connecting-tales-the-podcast) discussing the show, with Tom, Elliott, and Leigh Ambassador (and part time ghost) Mike Burwin.
+
+Emma Bradburn, intern for the ‘Civic Theatres: A Place for Towns’ research project wrote an account of the show on her [blog.](https://creativetownsresearch.wordpress.com/2021/10/18/spinners-mills-has-so-many-stories-to-tell/)
 
 The Mill show was the project's first independent commission.  As part of the Manchester Royal Exchange's [Local Exchange](https://www.royalexchange.co.uk/local-exchange) programme, Tom pitched a group of Leigh ambassadors on the idea of doing a ghost hunt at the mill.  It would be part of the [Den](https://www.royalexchange.co.uk/spinnersmillleigh) festival , the culmination of the Exchange's three year residency program in Leigh.  The ambassadors were excited by the idea, and the date was set for summer 2020.  Then one or two other events intervened.  We finally got the chance to make the show in August this year.
 
@@ -45,7 +54,7 @@ What they find leads them inside the mill, to interrogate the volunteer making t
 
 ![Stanley_1](/images/PHOTO-2021-08-08-18-29-09_3.width-300.jpg)
 
-Some reactions from our audience:
+### Some reactions from our audience:
 
 > When we saw him (the ghost) at the end, it was upsetting but in a good way!
 >
@@ -67,7 +76,7 @@ In the coming year the project is planning to do more work with early career pra
 
 The cast, dwarfed by the spectacular (and potentially dangerous) historic machinery
 
-Cast
+### Cast
 
 **The Ministry of Real Paranormal Hygience (MORPH)**
 

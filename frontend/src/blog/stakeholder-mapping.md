@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: A focused approach for high-level requirements
+title: Making sense of the Stakeholder Map
+subtitle: A focused approach for high-level requirements
 tags:
   - post
   - Requirements
@@ -10,8 +11,12 @@ date: 2022-06-28
 excerpt: We recently embarked with partners on an AHRC funded scoping exercise,
   to define the specifications of a Complex 3D Data Repository for the Arts and
   Humanities.
-banner: /images/blog_banner_aX9rBsr.original.jpg
+banner:
+  image: /images/blog_banner_aX9rBsr.original.jpg
+  description: MarconiTapper
 ---
+
+We recently embarked with partners on an AHRC funded scoping exercise, to define the specifications of a [Complex 3D Data Repository for the Arts and Humanities](https://blogs.brighton.ac.uk/3ddataservice/).
 
 These data have the potential for positive public impact by virtue of being visually engaging and accessible to a range of audiences. They can also be of immense pedagogical value, acting as digital surrogates for real-world items or helping to visualize interpretations of past environments.
 

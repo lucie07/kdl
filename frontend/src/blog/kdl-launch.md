@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: KDL, established 2016
+title: Blog
+subtitle: KDL, established 2016
 tags:
   - post
   - Infrastructure
@@ -12,8 +13,12 @@ excerpt: King’s Digital Lab continues a proud tradition of digital humanities 
   King’s College London. Formally launching on November 17th 2016, the lab
   builds on a legacy that includes 30 years of activity, set against a
   background of rapid innovation and change.
-banner: /images/blog_hero_mq.original.jpg
+banner:
+  image: /images/blog_hero_mq.original.jpg
+  description: kdl blog launch hero mq
 ---
+
+King’s Digital Lab continues a proud tradition of digital humanities at King’s College London. Formally launching on November 17th 2016, the lab builds on a legacy that includes 30 years of activity, set against a background of rapid innovation and change.
 
 Our lab has evolved from the Centre for Computing and the Humanities (1991), the Centre for eResearch in the Humanities (2008), and the Department of Digital Humanities (2011-). Our inaugural Academic Affiliates represent continuity with this history. Professors Harold Short, Willard McCarty, Marilyn Deegan, and Charlotte Rouché will be joined by new affiliates in years to come, but it seemed appropriate to establish King’s Digital Lab with their guidance to ensure continuity, and signal our indebtedness to their vision and commitment over so many years. Professor Sheila Anderson, Head of the Department of Digital Humanities joins us as an affiliate in that capacity, but also in acknowledgement of her role in the Center for eResearch in the Humanities.
 

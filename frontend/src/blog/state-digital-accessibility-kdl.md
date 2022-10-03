@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: The state of digital accessibility at KDL
+title: The road to a more inclusive web
+subtitle: The state of digital accessibility at KDL
 tags:
   - post
   - accessibility
@@ -13,8 +14,14 @@ excerpt: >-
 
 
   KDL joined the board from day one to help shape the College’s digital accessibility policy and help scope the work that needed to be done to make every platform as accessible as possible.
-banner: /images/liane-metzler-v3bWNXeInQA-unsplash-small.original.jpg
+banner:
+  image: /images/liane-metzler-v3bWNXeInQA-unsplash-small.original.jpg
+  description: Liane Metzler Unsplash - White stairs
 ---
+
+Recently I was asked to present the lab’s progress on the work done to improve accessibility in our products to the Digital Accessibility Programme Board at King’s.
+
+KDL joined the board from day one to help shape the College’s digital accessibility policy and help scope the work that needed to be done to make every platform as accessible as possible.
 
 Every designer I have met in my eight years at King's has been invested in creating accessible designs, but there was never a solid workflow embedded in our processes to go about it. When the [new government regulations](https://www.legislation.gov.uk/uksi/2018/952/contents/made) came out in 2018, KDL took the opportunity to update its approach to accessibility, make it more formal, robust and better integrated with its Software Development Life Cycle (SDLC).
 

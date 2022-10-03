@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: Ghosts in the Machine
+title: Blog
+subtitle: Ghosts in the Machine
 tags:
   - post
 author: Elliott Hall
@@ -9,7 +10,12 @@ excerpt: Digital ghosts, eye vibrations and narratives in physical space.  KDL
   Developer Elliott Hall is currently participating in the Reframed
   Project Development Programme 2017, exploring immersive and interactive
   storytelling at Lighthouse in Brighton...
+banner:
+  image:
+  description:
 ---
+
+Digital ghosts, eye vibrations and narratives in physical space.  KDL Developer Elliott Hall is currently participating in the [Reframed Project](http://www.lighthouse.org.uk/programme/reframed-2017?query=reframed) Development Programme 2017, exploring immersive and interactive storytelling at [Lighthouse](http://www.lighthouse.org.uk/) in Brighton...
 
 Digital Ghost Hunt is an immersive educational storytelling experience which combines micro computing, augmented reality and live performance to inspire children to get into coding and support educators in delivering the coding requirements of the national curriculum.
 

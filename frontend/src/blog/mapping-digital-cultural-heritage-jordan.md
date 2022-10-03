@@ -1,12 +1,15 @@
 ---
 layout: layouts/post.njk
-title: Sustainable development of digital cultural heritage
+title: Mapping Digital Cultural Heritage in Jordan (مديح)
+subtitle: Sustainable development of digital cultural heritage
 tags:
   - post
 author: James Smithies
 date: 2019-04-03
 excerpt: ""
-banner: /images/banner_jordan.original.jpg
+banner:
+  image: /images/banner_jordan.original.jpg
+  description: jordan_banner
 ---
 
 MaDiH (مديح): Mapping Digital Cultural Heritage in Jordan, is an AHRC / Newton funded collaborative project between [King’s Digital Lab (KDL)](http://kdl.kcl.ac.uk), the [Hashemite University](https://hu.edu.jo/), the [Council for British Research in the Levant (CBRL)](http://cbrl.ac.uk), the [Department of Antiquities](http://doa.gov.jo/en/) of Jordan, the [Jordanian Open Source Association](https://opencollective.com/josa), and the [Endangered Archaeology in the Middle East and North Africa (EAMENA)](http://eamena.arch.ox.ac.uk/) project. It is scheduled to run for two years, from February 2019 - February 2021. The project will contribute to the long-term sustainable development of Jordan’s digital cultural heritage, identifying key systems, datasets, standards, and policies, and aligning them to government digital infrastructure capabilities and strategies. Defining a robust technical and operational architecture for digital cultural heritage will assist the Department of Antiquities in their planning processes, help product development teams develop their systems, facilitate the aggregation of valuable datasets held in disparate repositories, and ensure data generated from research activity is properly stored and widely accessible. Analysis will also result in the identification of infrastructural gaps and opportunities for further development, including system development, data aggregation, online learning, and expansion to support refugee studies. Practical prototyping will ensure analysis and lessons learned are cost-effective and aligned to real-world scenarios, and a series of workshops with stakeholders from the cultural heritage, research, government, and technology sectors, will ensure the project fulfils the needs of the local community. A hackathon, led by the Jordanian Open Source Association will ensure analysis and lessons learned are aligned to educational and commercial opportunities. Key outputs from MaDiH (مديح), which will be made available online, will include:

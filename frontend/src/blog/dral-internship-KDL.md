@@ -1,12 +1,15 @@
 ---
 layout: layouts/post.njk
-title: Internship in the Distant Reading across Languages (DRaL) project
+title: First Published on the Department of Digital Humanities Blog 14 September 2019
+subtitle: Internship in the Distant Reading across Languages (DRaL) project
 tags:
   - post
 author: Natalia Romanova
 date: 2019-10-30
 excerpt: ""
-banner: /images/Viz_UTGKaWw.original.jpg
+banner:
+  image: /images/Viz_UTGKaWw.original.jpg
+  description: Example visualisation
 ---
 
 Coming to the Master’s in Digital Humanities in 2017 as a mature student with some previous experience of working in academia, I was attracted by the reputation of Digital Humanities at King’s. I was particularly interested in [King’s Digital Lab (KDL)](https://www.kdl.kcl.ac.uk/) and was hoping to find a project that I could contribute to.

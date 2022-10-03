@@ -1,13 +1,18 @@
 ---
 layout: layouts/post.njk
-title: Reflections on my Erasmus Traineeship
+title: Using Archetype
+subtitle: Reflections on my Erasmus Traineeship
 tags:
   - post
 author: Guest
 date: 2018-06-15
 excerpt: This is a guest post by Valentina Gettatelli
-banner: /images/annotation.original.png
+banner:
+  image: /images/annotation.original.png
+  description: VG_annotation
 ---
+
+This is a guest post by Valentina Gettatelli
 
 I recently had the chance to spend a few weeks hosted by King’s College London, at the Digital Humanities department and at King’s Digital Lab (KDL) working on a small proof-of-concept of the [Archetype](http://archetype.ink/) Framework as part of my Erasmus traineeship. Dr. Peter Stokes and  Dr. Arianna Ciula have been my supervisors and led me to the discovery of this powerful tool and most importantly , gave me the opportunity to witness what happens when good academic research is supported by a team of information technology professionals. I would like to first share some thoughts on this and then consider some questions raised by using the Archetype framework.
 

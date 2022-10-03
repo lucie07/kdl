@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: Conferences and gatherings while working from home
+title: Meeting in Virtual Reality
+subtitle: Conferences and gatherings while working from home
 tags:
   - post
   - XR
@@ -13,8 +14,12 @@ excerpt: |-
   gatherings that have been developing steadily and quietly are now 
   finding themselves suddenly ushered to the front of the class as we ask 
   what might change in the workplace post COVID-19.
-banner: /images/banner_vr.original.jpg
+banner:
+  image: /images/banner_vr.original.jpg
+  description: banner_vr
 ---
+
+In these strange days technologies for virtual meetings and gatherings that have been developing steadily and quietly are now finding themselves suddenly ushered to the front of the class as we ask what might change in the workplace post COVID-19.
 
 These questions were posed in a conference yesterday and explored through the very medium being asked to step up to plug the gap; namely VR. The [event](https://www.immerseuk.org/resources/future-of-work-in-vr-virtual-events/?utm_campaign=1726502_HTC%20Vive%20events%20e-shot14%20April%2020_Immerse%20UK&utm_medium=email&utm_source=dotdigital&dm_i=2VFU,1106E,7BJPRK,3WSMN,1) was jointly organised by Immerse UK and Vive and generously hosted on [Engage VR’s](https://engagevr.io/)  learning and conference platform.
 

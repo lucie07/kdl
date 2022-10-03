@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: KDL experience
+title: Exposing legacy project datasets in Digital Humanities
+subtitle: KDL experience
 tags:
   - post
   - Sustainability
@@ -13,8 +14,12 @@ date: 2020-07-07
 excerpt: How to address pragmatically the substantial challenge of curating and
   archiving a rich estate of over 100 legacy projects without funding? Deep
   breath…
-banner: /images/exposing-legacy-datasets.original.jpg
+banner:
+  image: /images/exposing-legacy-datasets.original.jpg
+  description: exposing-datasets
 ---
+
+How to address pragmatically the substantial challenge of curating and archiving a rich estate of over 100 legacy projects without funding? Deep breath…
 
 In this blogpost we share our experiences at King’s Digital Lab (KDL). While we can call the process a success overall (and you can read more about it in this article and in the summary of our current [archiving and sustainability approach](/our-work/archiving-sustainability/)), the road has been bumpy and we stumbled across some interesting challenges along the way. In this blogpost we talk about how we made use of the Open Knowledge Foundation’s open source data portal platform [CKAN](https://ckan.org/) to catalogue and make visible some of our legacy projects’ data.
 

@@ -1,12 +1,18 @@
 ---
 layout: layouts/post.njk
-title: Trends in Linked Open Data
+title: Blog
+subtitle: Trends in Linked Open Data
 tags:
   - post
 author: Samantha Callaghan
 date: 2017-07-25
 excerpt: Two days in Venice offered a wealth of insights into Linked Open Data practice
+banner:
+  image:
+  description:
 ---
+
+Two days in Venice offered a wealth of insights into Linked Open Data practice
 
 The [Georgian Papers Programme](http://georgianpapersprogramme.com/) (GPP) is an ambitious transatlantic project contributed to by King's College London, Royal Collections Trust, College of William and Mary, Omohundro Institute, the Sons of the American Revolution, the Mount Vernon Ladies' Association. King's Digital Lab, where I am hosted as GPP Metadata Analyst, is providing technical strategy and developing a proof of concept digital humanities tool. The rich content derives from the Royal Archives’ holdings of the papers of the Hanoverian kings and their courts.
 

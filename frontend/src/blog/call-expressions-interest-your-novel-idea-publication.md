@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
-title: "Call for expressions of interest: your novel idea of publication"
+title: Blog
+subtitle: "Call for expressions of interest: your novel idea of publication"
 tags:
   - post
 author: Arianna Ciula
@@ -9,7 +10,12 @@ excerpt: Stanford University Press (SUP) and King’s Digital Lab (KDL, King’s
   College London) invite expressions of interest to propose ideas for a digital
   academic publication blending cutting-edge technology with very high quality
   scholarship.
+banner:
+  image:
+  description:
 ---
+
+[Stanford University Press](http://sup.org/) (SUP) and [King’s Digital Lab](https://www.kdl.kcl.ac.uk/) (KDL, King’s College London) invite expressions of interest to propose ideas for a digital academic publication blending cutting-edge technology with very high quality scholarship.
 
 [![Links to King's Digital Lab](/images/kdl-heading.original.png)](//kdl.kcl.ac.uk/)
 
@@ -28,13 +34,13 @@ Anybody affiliated - also temporarily - to an academic institution can apply; pr
 
 This call encourages forward thinking proposals that seek to deploy cutting edge technology to enlarge our conception of the monograph form and associated issues of research data management and sustainability. King’s Digital Lab and Stanford University Press encourage expansive (high risk) ideas that blend quality scholarship with advanced technologies and best in class design principles.
 
-Selection and follow up process
+## Selection and follow up process
 
 The call welcomes experimental and technology-agnostic ideas which will be reviewed and, if deemed promising, selected by an _ad hoc_ committee including but not limited to key KDL and SUP staff.
 
 While funding is not immediately available to develop expressions of interest into fully-fledged products, KDL and SUP will work with the selected candidate/s to seek funding for the winning idea/s to be realised. Once funding is secured, and pending approval by  SUP's peer review process, the selected publication will be developed in collaboration with KDL and SUP staff. The final product would bear the SUP imprint. The ultimate aim of this experimental call is to expand towards a dedicated series.
 
-How to apply and schedule
+## How to apply and schedule
 
 Ideas should be submitted by **8\*\***th of January 2018\*\* using this [online form](/kdl-sup-publication-idea/).
 

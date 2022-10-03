@@ -1,12 +1,15 @@
 ---
 layout: layouts/post.njk
-title: Legacy Data Project
+title: Reflections on an Internship at KDL
+subtitle: Legacy Data Project
 tags:
   - post
 author: Minmin Yu
 date: 2020-04-23
 excerpt: ""
-banner: /images/legacy_data_blog.original.jpg
+banner:
+  image: /images/legacy_data_blog.original.jpg
+  description: legacy data blog
 ---
 
 > Art challenges technology and technology inspires art
