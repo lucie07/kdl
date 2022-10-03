@@ -56,8 +56,8 @@ async function cli() {
     .action((path) => {
       const scraper = new Scraper("https://kdl.kcl.ac.uk/blog", path);
       scraper
-        .scrape("*")
-        .then(() => console.info("Scraping done"))
+        .scrape("*", scraper.getBlogData)
+        .then(() => console.info("Blog scraping done"))
         .catch((err) => console.error(err));
     });
 
