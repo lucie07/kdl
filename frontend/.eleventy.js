@@ -37,7 +37,7 @@ module.exports = (eleventyConfig) => {
       url = `${found.url}${path}/`;
     }
 
-    const urlFilter = this.getFilter("url");
+    const urlFilter = eleventyConfig.getFilter("url");
 
     return urlFilter(url);
   });
