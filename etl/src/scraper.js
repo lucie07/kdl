@@ -16,7 +16,7 @@ class Scraper {
     Promise.resolve(fs.mkdir(this.imagesPath, { recursive: true }));
   }
 
-  scrape(glob, getDataCallback = this.getBlogData) {
+  scrape(glob, getDataCallback) {
     return new Promise((resolve, reject) => {
       const self = this;
 
@@ -48,33 +48,37 @@ class Scraper {
   }
 
   getBlogData($) {
+    const td = Turndown({
+      headingStyle: "atx",
+      bulletListMarker: "-",
+      emDelimiter: "*",
+    });
+
     const data = { frontmatter: {}, html: null };
 
     const tags = ["post"];
     $(".tags a").each((_, el) => tags.push($(el).text()));
 
     data.frontmatter.layout = "layouts/post.njk";
-    data.frontmatter.title = $("h1").text().trim();
+    data.frontmatter.title = $(".subtitle").text().trim();
+    data.frontmatter.subtitle = $(".subtitle").next("h1").text().trim();
     data.frontmatter.tags = tags;
     data.frontmatter.author = $(".author").text().trim();
     data.frontmatter.date = $(".datetime").attr("datetime");
     data.frontmatter.excerpt = $(".intro").text();
 
-    const banner = $(".banner-image img").attr("src");
+    const banner = $(".banner-image img");
     if (banner) {
-      data.frontmatter.banner = banner;
+      data.frontmatter.banner = {};
+      data.frontmatter.banner.image = banner.attr("src");
+      data.frontmatter.banner.description = banner.attr("alt");
     }
 
     const html = [];
     $("article.post")
-      .children(":not(.post-meta):not(.intro)")
-      .each((_, el) => html.push($(el).html()));
+      .children(":not(.post-meta)")
+      .each((_, el) => html.push($(el)));
 
-    const td = Turndown({
-      headingStyle: "atx",
-      bulletListMarker: "-",
-      emDelimiter: "*",
-    });
     data.md = td.turndown(html.join("\n"));
 
     return data;
