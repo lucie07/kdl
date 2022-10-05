@@ -1,8 +1,8 @@
 ---
-layout: layouts/base.njk
+layout: layouts/resources.njk
 eleventyNavigation:
   key: Resources
   order: 6
 ---
 
-# Resources
+Something about resources
