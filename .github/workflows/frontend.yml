@@ -23,8 +23,8 @@ jobs:
       - name: Install dependencies and build
         run: |
           npm ci -w frontend
-          npm run build
-          npm run index
+          npm run build -w frontend
+          npm run index -w frontend
 
       - name: Deploy to GitHub pages
         uses: peaceiris/actions-gh-pages@v3
