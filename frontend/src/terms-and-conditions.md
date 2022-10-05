@@ -4,8 +4,6 @@ title: Terms and conditions
 tags: resource
 ---
 
-# Terms and conditions
-
 This page contains a **sample** of the Terms and Conditions for the provision of any work or service that King's Digital Lab have been instructed to complete including, but not limited to, research projects, software development projects or item of consultancy.
 
 In practice, these terms will be supplied in full to the partners, clients and collaborators involved in the work or service, accompanied by a Scheme of Work detailing the deliverables.

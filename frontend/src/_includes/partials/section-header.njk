@@ -1,0 +1,9 @@
+<header>
+  {% include "partials/breadcrumbs.njk" %}
+  {% if subtitle %}
+  <h2>{{ title }}</h2>
+  <h1>{{ subtitle }}</h1>
+  {% else %}
+  <h1>{{ title | safe }}</h1>
+  {% endif %}
+</header>

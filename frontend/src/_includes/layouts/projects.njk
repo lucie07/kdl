@@ -3,11 +3,6 @@ layout: layouts/base.njk
 permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
 ---
 
-<header>
-  {% include "partials/breadcrumbs.njk" %}
-  <h1>{{ title }}</h1>
-</header>
-
 <input type="radio" name="view-filter" id="grid" class="radio" checked>
 <label for="grid">⊞ Grid</label> |
 <input type="radio" name="view-filter" id="list" class="list-view radio">

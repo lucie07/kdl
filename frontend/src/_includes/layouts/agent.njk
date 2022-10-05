@@ -4,15 +4,6 @@ layout: layouts/base.njk
 
 {% set agent = agentInstance.agent %}
 
-<header>
-  {% set navKey = breadcrumb %}
-  {% include "partials/breadcrumbs.njk" %}
-  <h1>
-    {{- agent.name }}
-    {%- if agent.alternateName %} <span>{{ agent.alternateName }}</span>{% endif -%}
-  </h1>
-</header>
-
 <section>
   {{ content | safe }}
 </section>

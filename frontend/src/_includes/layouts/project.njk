@@ -2,15 +2,6 @@
 layout: layouts/base.njk
 ---
 
-<header>
-  {% set navKey = "Projects" %}
-  {% include "partials/breadcrumbs.njk" %}
-  <!-- Project title -->
-  <h1>
-    {{- project.name }}
-    {%- if project.alternateName %} <span>{{ project.alternateName }}</span>{% endif -%}
-  </h1>
-</header>
 
 <section>
 

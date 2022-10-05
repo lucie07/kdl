@@ -6,5 +6,3 @@ eleventyNavigation:
   parent: About
   order: 1
 ---
-
-# Overview

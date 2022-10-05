@@ -4,8 +4,6 @@ title: Privacy policy
 tags: resource
 ---
 
-# Privacy policy
-
 ## Privacy statement
 
 King’s College London (KCL) through its department King's Digital Lab (KDL) is committed to protecting your privacy.

@@ -1,6 +1,5 @@
-{% if not navKey %}
-{% set navKey = eleventyNavigation.key %}
-{% endif %}
-
+{% if navKey and navKey != "Home" %}
 {% set navPages = collections.all | eleventyNavigationBreadcrumb(navKey, { includeSelf: true }) %}
+
 {{ navPages | eleventyNavigationToHtml | safe }}
+{% endif %}
