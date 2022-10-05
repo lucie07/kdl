@@ -6,20 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {% seo "" %}
 
-  <link rel="stylesheet" href="/stylesheets/main.css" />
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <link href="/stylesheets/main.css" rel="stylesheet" />
 </head>
 
 <body>
-    {% include "partials/menu.njk" %}
-    <main>
-      {% include "partials/header.njk" %}
-      <label for="menu-switch" id="menu-toggle"></label>
+  {% include "partials/menu.njk" %}
+  <main>
+    {% include "partials/header.njk" %}
+    <label for="menu-switch" id="menu-toggle"></label>
 
-      <section>
-        {% include "partials/section-header.njk" %}
-        {{ content | safe }}
-      </section>
-    </main>
+    <section>
+      <div id="search"></div>
+    </section>
+
+    <section>
+      {% include "partials/section-header.njk" %}
+      {{ content | safe }}
+    </section>
+  </main>
+
+  <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      new PagefindUI({element: "#search"});
+    });
+  </script>
 </body>
 
 </html>
