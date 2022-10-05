@@ -4,7 +4,8 @@ permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
 ---
 
 <header>
-  <h1>Projects</h1>
+  {% include "partials/breadcrumbs.njk" %}
+  <h1>{{ title }}</h1>
 </header>
 
 <input type="radio" name="view-filter" id="grid" class="radio" checked>

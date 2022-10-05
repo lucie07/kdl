@@ -1,2 +1,6 @@
+{% if not navKey %}
+{% set navKey = eleventyNavigation.key %}
+{% endif %}
+
 {% set navPages = collections.all | eleventyNavigationBreadcrumb(navKey, { includeSelf: true }) %}
 {{ navPages | eleventyNavigationToHtml | safe }}

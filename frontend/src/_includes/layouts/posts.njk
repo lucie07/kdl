@@ -4,7 +4,8 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 
 ---
 
 <header>
-  <h1>Blog</h1>
+  {% include "partials/breadcrumbs.njk" %}
+  <h1>{{ title }}</h1>
 </header>
 
 <ol start="{{ pagination.pageNumber * 25 + 1}}">

@@ -4,9 +4,8 @@ permalink: "about/organisations/{% if pagination.pageNumber > 0 %}{{ pagination.
 ---
 
 <header>
-  {% set navKey = eleventyNavigation.key %}
   {% include "partials/breadcrumbs.njk" %}
-  <h1>Organisations</h1>
+  <h1>{{ title }}</h1>
 </header>
 
 <input type="radio" name="view-filter" id="grid" class="radio" checked>
