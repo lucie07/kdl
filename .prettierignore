@@ -1,4 +1,0 @@
-cms/snapshots/*.yaml
-coverage
-frontend/_site
-node_modules

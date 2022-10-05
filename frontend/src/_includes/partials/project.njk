@@ -1,8 +1,0 @@
-<dl>
-  <dt>Status:</dt>
-  <dd>{{ project.creativeWorkStatus.name }}</dd>
-  <dt>Partner institutions:</dt>
-  {% for department in project.department %}
-  <dd>{{ department.organisation_id.agent.name }}</dd>
-  {% endfor %}
-</dl>

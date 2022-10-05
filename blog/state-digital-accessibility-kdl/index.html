@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The road to a more inclusive web - King&apos;s Digital Lab</title>
+
+<meta name="description" content="Recently I was asked to present the lab&rsquo;s progress on the work done to improve accessibility in our products to the Digital Accessibility Programme Board at King&rsquo;s.
+
+KDL joined the board from day one to help shape the College&rsquo;s digital accessibility policy and help scope the work that needed to be done to make every platform as accessible as possible.">
+<meta name="robots" content="index,follow">
+<meta name="author" content="Ginestra Ferraro">
+
+<link rel="canonical" href="https://kdl.kcl.ac.uk//blog/state-digital-accessibility-kdl/">
+
+<meta property="og:title" content="The road to a more inclusive web - King&apos;s Digital Lab">
+<meta property="og:type" content="article">
+
+<meta property="og:url" content="https://kdl.kcl.ac.uk//blog/state-digital-accessibility-kdl/">
+<meta property="og:description" content="Recently I was asked to present the lab&rsquo;s progress on the work done to improve accessibility in our products to the Digital Accessibility Programme Board at King&rsquo;s.
+
+KDL joined the board from day one to help shape the College&rsquo;s digital accessibility policy and help scope the work that needed to be done to make every platform as accessible as possible.">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@kingsdigitallab">
+<meta name="twitter:url" content="https://kdl.kcl.ac.uk//blog/state-digital-accessibility-kdl/">
+<meta name="twitter:title" content="The road to a more inclusive web - King&apos;s Digital Lab">
+<meta name="twitter:description" content="Recently I was asked to present the lab&rsquo;s progress on the work done to improve accessibility in our products to the Digital Accessibility Programme Board at King&rsquo;s.
+
+KDL joined the board from day one to help shape the College&rsquo;s digital accessibility policy and help scope the work that needed to be done to make every platform as accessible as possible.">
+
+
+
+
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <link href="/stylesheets/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <input id="menu-switch" type="checkbox" checked="">
+<nav id="menu">
+  
+
+  
+
+  <ul><li><a href="/">Home</a></li><li><a href="/projects/">Projects</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact us/">Contact us</a></li><li><input id="About" type="checkbox" hidden="">
+    <label for="About" class="check">About</label>
+    <ol class="level1-list"><li><a href="/about/overview/">Overview</a></li><li><a href="/about/people/">People</a></li><li><a href="/about/organisations/">Organisations</a></li></ol></li><li><a href="/resources/">Resources</a></li></ul>
+</nav>
+
+  <main>
+    <header>
+  <div id="sitename">
+    King's Digital Lab
+  </div>
+  <div id="kcl-logo">
+    <img src="https://kdl.kcl.ac.uk/static/images/kings-logo-red.svg" alt="King's College London logo">
+  </div>
+</header>
+
+    <label for="menu-switch" id="menu-toggle"></label>
+
+    <section>
+      <div id="search"></div>
+    </section>
+
+    <section>
+      <header>
+  
+
+
+<ul><li><a href="/blog/">Blog</a></li></ul>
+
+
+  
+  <h2>The road to a more inclusive web</h2>
+  <h1 data-pagefind-meta="title[data-title]" data-title="The road to a more inclusive web: The state of digital accessibility at KDL">The state of digital accessibility at KDL</h1>
+  
+</header>
+
+      
+<article>
+  <header class="post-meta">
+    <p>by
+  <span class="author">
+    <a href="/about/people/ginestra-ferraro/">Ginestra Ferraro</a>
+  </span>
+  on
+  <time datetime="Thu Apr 22 2021 00:00:00 GMT+0000 (Coordinated Universal Time)" class="datetime">Apr 22, 2021</time>
+</p>
+
+  </header>
+  
+  <div id="images">
+    <figure>
+      <img src="/images/liane-metzler-v3bWNXeInQA-unsplash-small.original.jpg" alt="Liane Metzler Unsplash - White stairs">
+      <figcaption>Liane Metzler Unsplash - White stairs</figcaption>
+    </figure>
+  </div>
+  
+
+  <p>Recently I was asked to present the lab’s progress on the work done to improve accessibility in our products to the Digital Accessibility Programme Board at King’s.</p>
+<p>KDL joined the board from day one to help shape the College’s digital accessibility policy and help scope the work that needed to be done to make every platform as accessible as possible.</p>
+<p>Every designer I have met in my eight years at King's has been invested in creating accessible designs, but there was never a solid workflow embedded in our processes to go about it. When the <a href="https://www.legislation.gov.uk/uksi/2018/952/contents/made">new government regulations</a> came out in 2018, KDL took the opportunity to update its approach to accessibility, make it more formal, robust and better integrated with its Software Development Life Cycle (SDLC).</p>
+<h2>Ask an expert</h2>
+<p>We decided to have an independent body assess where we stood with respect to accessibility at the time to get an honest picture and remove any potential bias.</p>
+<p>I have attended more than one event where I listened to <a href="https://twitter.com/LeonieWatson">Léonie Watson</a>, from <a href="https://tetralogical.com/">TetraLogical</a>, present on web accessibility and so I got in touch with her. She agreed to run a light assessment on a sample of our products and produce a short report highlighting issues and offering recommendations.</p>
+<p>What we received is called a &quot;gap analysis report&quot;. The results were not flattering. We discovered that in our customisation of the front-end stack, we had introduced some issues and were not meeting <a href="https://www.w3.org/TR/WCAG21/">WCAG A standards</a>. Focusing on the positives: most of the big issues were easy to fix and we knew where to start.</p>
+<p><img src="/images/gap-analysis-data-screenshot.width-1024.png" alt="Gap analysis data screenshot"></p>
+<p><em>Fig. 1</em> A screenshot of the gap analysis document section where some results are highlighted, in particular:<br>
+32 Level A issues affecting 38% of the website (8409 pages) and 4 Level AA issues affecting 1% of the website (133 pages).</p>
+<h2>Embrace the work</h2>
+<p>With the regulations being blurry on who would be affected and the College yet to set a wide policy, I saw this as an opportunity for the KDL team to take the initiative and commit to accessibility for all its digital outputs.1 This commitment requires an investment in resources, a wide collaboration across the team and, more importantly, <strong>a shared view on the importance of the work we were about to embark on</strong>.</p>
+<p>KDL actively takes part in the <a href="https://www.kcl.ac.uk/hr/diversity">Equality, Diversity and Inclusion</a> work done at King's and improving our digital accessibility is in line with our philosophy and ethics of design and development.<br>
+From a research impact and business point of view, choosing to improve digital accessibility is also the way forward:</p>
+<ul>
+<li>A more accessible site reaches a wider audience.</li>
+<li>A more accessible site is likely to be more sustainable.</li>
+<li>Digital accessibility should (hopefully) be a requirement for all web products in the future; getting ahead of the game and establishing a robust workflow early on, will pay off.</li>
+</ul>
+<p>That said, we knew we were taking on a massive task. KDL inherited circa 100 legacy websites in 2015 when it was created.</p>
+<p>We were faced with:</p>
+<ul>
+<li>Legacy technical stacks and infrastructure resulting in no ability to automate the accessibility assessments for most sites.</li>
+<li>Limited resources available in the lab: at the time of writing only 1.5 FTE designers, who take on the biggest share of the accessibility work, and a little less than 4.0 FTE developers, although more people contributed to the accessibility work over time.</li>
+<li>We also had (and still have) 2 or 3 dozen of active projects running at any given time.</li>
+</ul>
+<p>In 2019/2020 KDL was able to temporarily expand the design team; partial justification for the expansion, was, in fact, to undertake the &quot;accessibility treatment&quot;, as we begun to call it, of our products. We went from 2.0 FTE to 3.0 FTE, including an intern.<br>
+I’d like to take this opportunity to thank the staff that joined us then, for the effort they put into improving our design outputs as a whole, and in particular for the impact they had in pushing the work on accessibility off its starting blocks:</p>
+<ul>
+<li><strong>Cindy Fu</strong>, KDL Research Software UI/UX Designer (2020)</li>
+<li><strong>Olga Loboda</strong>, KDL Research Software UI/UX Designer (2019-2021)</li>
+<li><strong>Yu Fei</strong>, Department of Digital Humanities Student Intern (2020)</li>
+</ul>
+<h2>Set the objectives and build a routine. Actually, build two.</h2>
+<p>To get the work underway, we had to figure out where in our process accessibility would fall.</p>
+<p>The five phases in our design workflow are:</p>
+<ul>
+<li><strong>Research</strong></li>
+<li>User requirements definition</li>
+<li>Workshop(s) with project partners</li>
+<li><strong>Design iterations and user testing</strong></li>
+<li>Launch</li>
+</ul>
+<p><img src="/images/UX-design-workflow.width-1024.png" alt="KDL UX workflow"></p>
+<p><em>Fig. 2</em> KDL's design workflow.</p>
+<p>Accessibility is present in each phase, but we identified <em>Research</em> and <em>Design iterations and user testing</em> as the two phases where we actively plan and work on it the most.</p>
+<p>While this approach works well for new projects — allowing us to plan accordingly, test frameworks and tools beforehand and set out usability testing with targeted objectives to cover accessibility as well as user experience (UX) — it doesn’t really fit legacy projects, where we have to test a finished product and consider the impact any little change would have in terms of implementation and roles in the lab who will need to be involved (designers, developers, system admins, project managers and analysts alike).</p>
+<p>This resulted in two different approaches: one for legacy projects, one for current and new ones.</p>
+<p>The latter follows the design workflow, with continuous integration and final testing before launch. The former became an <em>ad hoc</em> one.</p>
+<p>We compiled a list of legacy websites and prioritised them following <a href="https://en.wikipedia.org/wiki/MoSCoW_method">MoSCoW principles</a>, using the following criteria to assign higher priorities:</p>
+<ul>
+<li>Projects that were to be submitted as research outputs or as part of impact case studies to <a href="https://www.ref.ac.uk/">REF 2021</a>.</li>
+<li>Recent date of publishing since they were likely to have more traffic.</li>
+<li>Traffic data from analytics and considerable public engagement, for the same reason as above.</li>
+<li>And finally, the (often dated) software and infrastructure the resource was sitting on: we had to consider how feasible it was to assess and edit the resource without breaking it (the more fragile its state, the lower the priority).</li>
+</ul>
+<p>We also excluded sites that could be considered archives based on the definition of archive in the UK government regulations.2</p>
+<p><strong>The result is a list of circa 90 sites, of which, at the time of writing, 17 have been rendered accessible, 2 are in progress, 4 in the pipeline and the rest of the list will be revaluated in due course to reassign priority.</strong></p>
+<p><img src="/images/Screenshot_2021-04-19_at_12.03.48.width-1024.png" alt="Screenshot of a bird’s eye view of the prioritised spreadsheet."></p>
+<p><em>Fig. 3</em> Screenshot of a bird’s eye view of the prioritised spreadsheet.</p>
+<h2>Evaluate</h2>
+<p>17 out of 90 doesn't seem like much, and we might consider the progress to be relatively slow, but when we take into account the manual labour that had to go into the task, we can claim it as a success. The work is not complete, but it's moving forward.<br>
+The confirmation we received from the legal team that our outputs don't fall under the Public Sector Bodies umbrella laid out by the regulations, relieves some urgency but does not resolve our professional imperative and we can continue to build upon what we have done.</p>
+<p>We have learned a lot in the last two years and a half, and have identified some technical and workflow issues, some of which are only relevant for the more problematic work on legacy sites:</p>
+<ul>
+<li><strong>Little to no automation</strong>
+<ul>
+<li>Our sites don't sit in the standard College ITS environment, so we are not able to take advantage of the College instance of <a href="https://siteimprove.com/"><strong>Siteimprove</strong></a>. Having our own instance of the software is <strong>too expensive</strong>.</li>
+<li>We are currently tracing all detectable WCAG issues <strong>using Siteimprove's plugin for Google Chrome</strong> and compiling a list manually for every product assessed.</li>
+<li>We are <strong>experimenting with <a href="https://pa11y.org/">pa11y</a></strong>, an open-source tool to crawl sites and highlight accessibility issues.</li>
+</ul>
+</li>
+<li><strong>Content curation responsibility</strong>
+<ul>
+<li>KDL often acts as the technical partner in research projects. Our core contribution is designing and developing software, and providing technical documentation.</li>
+<li>We rely on project partners to generate their own content. We can only offer support in finding guidelines to write accessible content (eg. KDL REF checklist <a href="https://zenodo.org/record/3361580">10.5281/zenodo.3361580</a>).</li>
+<li>When KDL does generate content, it is indeed responsible to make it accessible.</li>
+</ul>
+</li>
+<li><strong>Experimental work and highly interactive content</strong>
+<ul>
+<li>Some of our projects are exploratory, and there are no widely accepted standards yet when it comes to accessibility (eg. Immersive experience (XR), 3D rendering, data visualisations, etc.)</li>
+<li>KDL sees these as opportunities to be on the front line to define those standards.</li>
+</ul>
+</li>
+</ul>
+<h2>What's next?</h2>
+<p>KDL’s commitment to accessibility means that we are consolidating our design workflow and integrating it into our SDLC to smooth the process.<br>
+We are adding more automated testing, allocating resources with more accurate estimates and continuing to contribute to the College-wide policies on accessibility.<br>
+I have personally noticed a different awareness and approach when it comes to this subject and can appreciate the evolved ethos around it.<br>
+Everyone in the team is playing a part: from analysts including accessibility and usability testing in product quotes, to project managers overseeing the workflow integration, from developers assessing and implementing more accessible software and testing platforms, to system admins ensuring everything is supported by our infrastructure.<br>
+Designers may be the main point of contact and responsible for bringing the topic to the table, but it has taken the whole team, top to bottom (which in a flat structure such as KDL's, is wider rather than tall), to get where we are.</p>
+<p>This extract from the <a href="https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps">government guidelines</a> on digital accessibility is something to share far and wide, to understand the importance of accessible content:</p>
+<blockquote>
+<p>Even if you’re exempt from the accessibility regulations, or judge that meeting them would be a disproportionate burden, under the Equality Act 2010 or the Disability Discrimination Act 1995 (in Northern Ireland) you’re still legally required to make reasonable adjustments for disabled people when they’re needed - for example, by providing the information they need in another, more accessible format.</p>
+<p>gov.uk</p>
+</blockquote>
+<p>In my opinion, striving for perfection is always a double-edged sword: it motivates you to do better, but it might also make you feel like the work is never really completed. I consider it healthier to think in terms of progression, rather than ultimate and definitive results. When it comes to digital products, they are hardly ever final. My view is that <strong>the work is unlikely to be perfect on its first release, but it's okay as long as it is an improvement of the previous version, and it becomes more inclusive with each iteration</strong>.</p>
+<hr>
+<p>1 These considerations were made before we received confirmation from the legal team at King's, that our outputs don't require the &quot;accessibility treatment&quot;, as we begun to call it, as they are considered research outputs. Nonetheless KDL remains committed to accessibility.</p>
+<p>2 Following the &quot;archive&quot; definition provided by the <a href="https://www.legislation.gov.uk/uksi/2018/952/regulation/4/made">UK government regulations</a>:<br>
+   (3) In this regulation—<br>
+     (a) &quot;archives&quot; means a website or mobile application which—<br>
+       (i) only contains content that is not needed for active administrative processes; and<br>
+       (ii) is not updated or edited after 23rd September 2019;</p>
+
+</article>
+
+    </section>
+  </main>
+
+  <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      new PagefindUI({element: "#search"});
+    });
+  </script>
+</body>
+
+</html>
