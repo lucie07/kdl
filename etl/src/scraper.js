@@ -59,19 +59,18 @@ class Scraper {
     const tags = ["post"];
     $(".tags a").each((_, el) => tags.push($(el).text()));
 
-    data.frontmatter.layout = "layouts/post.njk";
     data.frontmatter.title = $(".subtitle").text().trim();
     data.frontmatter.subtitle = $(".subtitle").next("h1").text().trim();
     data.frontmatter.tags = tags;
-    data.frontmatter.author = $(".author").text().trim();
+    data.frontmatter.authors = [$(".author").text().trim()];
     data.frontmatter.date = $(".datetime").attr("datetime");
     data.frontmatter.excerpt = $(".intro").text();
 
     const banner = $(".banner-image img");
     if (banner) {
-      data.frontmatter.banner = {};
-      data.frontmatter.banner.image = banner.attr("src");
-      data.frontmatter.banner.description = banner.attr("alt");
+      data.frontmatter.feature = {};
+      data.frontmatter.feature.image = banner.attr("src");
+      data.frontmatter.feature.description = banner.attr("alt");
     }
 
     const html = [];
