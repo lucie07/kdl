@@ -368,6 +368,18 @@ main {
   padding: 0 5%;
 }
 
+footer {
+  border-top: 1px solid #888;
+  bottom: 0;
+  left: 0;
+  margin-left: 16em;
+  padding: 0 1em;
+  width: calc(100% - 16em);
+}
+footer li {
+  list-style: none;
+}
+
 #menu-switch:checked ~ main {
   margin-left: 15em;
 }
