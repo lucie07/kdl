@@ -1,15 +1,15 @@
 ---
-layout: layouts/post.njk
 title: Blog
 subtitle: SUP and KDL collaboration goes into next phase
 tags:
   - post
-author: Arianna Ciula
+authors:
+  - Arianna Ciula
 date: 2018-02-21
 excerpt: "Stanford University Press and King's Digital Lab are pleased to
   announce our selection of the most compelling ideas that were submitted in
   this round of the call for expressions of interest. "
-banner:
+feature:
   image:
   description:
 ---

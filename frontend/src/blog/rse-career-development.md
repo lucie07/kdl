@@ -1,13 +1,13 @@
 ---
-layout: layouts/post.njk
 title: The Continuum Approach to Career Development
 subtitle: Research Software Careers in King’s Digital Lab
 tags:
   - post
-author: James Smithies
+authors:
+  - James Smithies
 date: 2019-02-07
 excerpt: ""
-banner:
+feature:
   image: /images/cr-benjamin-davies-260884-unsplash_J22jBOc.original.jpg
   description: Photo by Benjamin Davies on Unsplash
 ---

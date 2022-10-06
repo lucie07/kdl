@@ -1,13 +1,13 @@
 ---
-layout: layouts/post.njk
 title: The Digital Ghost Hunt
 subtitle: The Digital Ghost Hunt begins development
 tags:
   - post
-author: Elliott Hall
+authors:
+  - Elliott Hall
 date: 2018-02-05
 excerpt: An AHRC-funded project fusing coding education and immersive theatre
-banner:
+feature:
   image: /images/KIT_scientist.original.jpg
   description: KIT taken by Natalie Raaum
 ---

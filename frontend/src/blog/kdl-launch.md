@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: Blog
 subtitle: KDL, established 2016
 tags:
@@ -7,13 +6,14 @@ tags:
   - Infrastructure
   - Launch
   - Agile
-author: James Smithies
+authors:
+  - James Smithies
 date: 2016-10-21
 excerpt: King’s Digital Lab continues a proud tradition of digital humanities at
   King’s College London. Formally launching on November 17th 2016, the lab
   builds on a legacy that includes 30 years of activity, set against a
   background of rapid innovation and change.
-banner:
+feature:
   image: /images/blog_hero_mq.original.jpg
   description: kdl blog launch hero mq
 ---

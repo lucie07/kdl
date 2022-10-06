@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: Exposing legacy project datasets in Digital Humanities
 subtitle: KDL experience
 tags:
@@ -9,12 +8,13 @@ tags:
   - Cultural Heritage
   - Data
   - DDH
-author: Arianna Ciula
+authors:
+  - Arianna Ciula
 date: 2020-07-07
 excerpt: How to address pragmatically the substantial challenge of curating and
   archiving a rich estate of over 100 legacy projects without funding? Deep
   breath…
-banner:
+feature:
   image: /images/exposing-legacy-datasets.original.jpg
   description: exposing-datasets
 ---

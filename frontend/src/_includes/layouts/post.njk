@@ -6,11 +6,11 @@ layout: layouts/base.njk
   <header class="post-meta">
     {% include "partials/byline.njk" %}
   </header>
-  {% if banner and banner.image %}
+  {% if feature and feature.image %}
   <div id="images">
     <figure>
-      <img src="{{ banner.image }}" alt="{{ banner.description }}">
-      <figcaption>{{ banner.description }}</figcaption>
+      <img src="{{ feature.image }}" alt="{{ feature.description }}">
+      <figcaption>{{ feature.description }}</figcaption>
     </figure>
   </div>
   {% endif %}

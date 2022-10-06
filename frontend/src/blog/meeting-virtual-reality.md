@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: Meeting in Virtual Reality
 subtitle: Conferences and gatherings while working from home
 tags:
@@ -7,14 +6,15 @@ tags:
   - XR
   - VR
   - Conferencing
-author: Neil Jakeman
+authors:
+  - Neil Jakeman
 date: 2020-04-24
 excerpt: |-
   In these strange days technologies for virtual meetings and 
   gatherings that have been developing steadily and quietly are now 
   finding themselves suddenly ushered to the front of the class as we ask 
   what might change in the workplace post COVID-19.
-banner:
+feature:
   image: /images/banner_vr.original.jpg
   description: banner_vr
 ---

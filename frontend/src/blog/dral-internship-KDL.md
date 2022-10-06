@@ -1,13 +1,13 @@
 ---
-layout: layouts/post.njk
 title: First Published on the Department of Digital Humanities Blog 14 September 2019
 subtitle: Internship in the Distant Reading across Languages (DRaL) project
 tags:
   - post
-author: Natalia Romanova
+authors:
+  - Natalia Romanova
 date: 2019-10-30
 excerpt: ""
-banner:
+feature:
   image: /images/Viz_UTGKaWw.original.jpg
   description: Example visualisation
 ---

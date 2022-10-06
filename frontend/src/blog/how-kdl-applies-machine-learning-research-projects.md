@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: How KDL applies Machine Learning to research projects
 subtitle: A subjective retrospective
 tags:
@@ -7,7 +6,8 @@ tags:
   - Machine Learning
   - Modelling
   - Artificial Intelligence
-author: Geoffroy Noël
+authors:
+  - Geoffroy Noël
 date: 2022-04-19
 excerpt: As our new director, Arianna, mentioned in her recent blog post,
   Machine Learning (ML) is one of the research themes we are keen to start
@@ -16,7 +16,7 @@ excerpt: As our new director, Arianna, mentioned in her recent blog post,
   techniques (as you would expect from a Lab) but also because, as AI research
   moves quickly, it continuously brings new methodological opportunities to many
   scientific fields including the Humanities.
-banner:
+feature:
   image: /images/sunset-boulevard-in-512-0.01.original.png
   description: Image rendered by VQGAN-CLIP
 ---

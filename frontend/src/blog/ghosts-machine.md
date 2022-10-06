@@ -1,16 +1,16 @@
 ---
-layout: layouts/post.njk
 title: Blog
 subtitle: Ghosts in the Machine
 tags:
   - post
-author: Elliott Hall
+authors:
+  - Elliott Hall
 date: 2017-07-31
 excerpt: Digital ghosts, eye vibrations and narratives in physical space.  KDL
   Developer Elliott Hall is currently participating in the Reframed
   Project Development Programme 2017, exploring immersive and interactive
   storytelling at Lighthouse in Brighton...
-banner:
+feature:
   image:
   description:
 ---

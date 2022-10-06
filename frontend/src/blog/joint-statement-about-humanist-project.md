@@ -1,13 +1,13 @@
 ---
-layout: layouts/post.njk
 title: KDL / DDH Joint Statement
 subtitle: Humanist
 tags:
   - post
-author: King's Digital Lab
+authors:
+  - King's Digital Lab
 date: 2020-08-17
 excerpt: ""
-banner:
+feature:
   image:
   description:
 ---

@@ -1,10 +1,10 @@
 ---
-layout: layouts/post.njk
 title: Announcing my departure from KDL
 subtitle: New starts, new possibilities
 tags:
   - post
-author: James Smithies
+authors:
+  - James Smithies
 date: 2021-09-06
 excerpt: I’ll be leaving King’s Digital Lab (KDL) this month, after 6 wonderful
   years, for a new role as Professor of Digital Humanities in King’s Department
@@ -13,7 +13,7 @@ excerpt: I’ll be leaving King’s Digital Lab (KDL) this month, after 6 wonder
   fractional appointment in, it represents a significant milestone in my career.
   I’m grateful to the many people who have supported me to this point, in New
   Zealand, Australia, Jordan, and the United States, as well as the UK.
-banner:
+feature:
   image: /images/torsten-dederichs-t5IN6vx0cLs-unsplash_830h.original.jpg
   description: torsten-dederichs-t5IN6vx0cLs-unsplash_830h.jpg
 ---

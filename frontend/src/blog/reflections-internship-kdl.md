@@ -1,13 +1,13 @@
 ---
-layout: layouts/post.njk
 title: Reflections on an Internship at KDL
 subtitle: Legacy Data Project
 tags:
   - post
-author: Minmin Yu
+authors:
+  - Minmin Yu
 date: 2020-04-23
 excerpt: ""
-banner:
+feature:
   image: /images/legacy_data_blog.original.jpg
   description: legacy data blog
 ---

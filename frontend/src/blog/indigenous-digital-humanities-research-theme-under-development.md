@@ -1,16 +1,16 @@
 ---
-layout: layouts/post.njk
 title: Indigenous Digital Humanities
 subtitle: A Research Theme under Development
 tags:
   - post
-author: Samantha Callaghan
+authors:
+  - Samantha Callaghan
 date: 2022-09-07
 excerpt: Whaia e koe ki te iti kahurangi, kia tāpapa koe,he maunga
   tiketikeFollow your treasured aspirations, if you must bow your head,let it be
   to a lofty mountainNāku te rourou, nāu te rourou,ka ora ai te iwiWith my
   basket, and your basket,we will feed the people
-banner:
+feature:
   image: /images/IDH_banner.original.jpg
   description: Indigenous Digital Humanities Banner
 ---

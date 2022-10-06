@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: Blog
 subtitle: A low bandwidth solution for cultural heritage web content
 tags:
@@ -8,11 +7,12 @@ tags:
   - jekyll
   - low-bandwidth
   - Africa
-author: Neil Jakeman
+authors:
+  - Neil Jakeman
 date: 2018-01-17
 excerpt: KDL help the British Museum to ensure that the natural custodians of
   cultural heritage have equal access to scholarship
-banner:
+feature:
   image: /images/ara.original.jpg
   description: ARA 2
 ---

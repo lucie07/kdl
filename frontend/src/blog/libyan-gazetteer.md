@@ -1,15 +1,15 @@
 ---
-layout: layouts/post.njk
 title: Blog
 subtitle: Heritage Gazetteer of Libya launched
 tags:
   - post
-author: Neil Jakeman
+authors:
+  - Neil Jakeman
 date: 2016-11-17
 excerpt: Toponyms are slippery things, meaning one place to one person and
   perhaps a whole region to another. They are encumbered with cultural baggage,
   questions of identity, temporality and language.
-banner:
+feature:
   image: /images/libya_blog_hero.original.original.jpg
   description: Libya
 ---

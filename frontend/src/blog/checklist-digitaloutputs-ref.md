@@ -1,13 +1,13 @@
 ---
-layout: layouts/post.njk
 title: What Makes Good Honey?
 subtitle: KDL Checklist for Digital Outputs Assessment in the REF
 tags:
   - post
-author: Arianna Ciula
+authors:
+  - Arianna Ciula
 date: 2019-08-07
 excerpt: ""
-banner:
+feature:
   image: /images/REF_blog_Damien_Tupinier_Unsplash.original.jpg
   description: Adapted from photo by Damien TUPINIER on Unsplash
 ---

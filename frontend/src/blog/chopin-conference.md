@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: Blog
 subtitle: Chopin Online Variorum Edition conference, January 2017
 tags:
@@ -7,11 +6,12 @@ tags:
   - OCVE
   - Chopin
   - Musicology
-author: Elliott Hall
+authors:
+  - Elliott Hall
 date: 2017-03-06
 excerpt: KDL balance the tensions inherent when digital solutions are applied to
   analogue problems.
-banner:
+feature:
   image: /images/ocve_hero.original.jpg
   description: ocve hero
 ---

@@ -1,10 +1,10 @@
 ---
-layout: layouts/post.njk
 title: Ghost Hunt at Spinners Mill
 subtitle: A family immersive adventure
 tags:
   - post
-author: Elliott Hall
+authors:
+  - Elliott Hall
 date: 2021-10-24
 excerpt: "Tom Bowtell of KIT Theatre and Elliott Hall of Kings Digital Lab
   worked in collaboration with Leigh Ambassadors group to create a new Digital
@@ -13,7 +13,7 @@ excerpt: "Tom Bowtell of KIT Theatre and Elliott Hall of Kings Digital Lab
   Tales discussing the show, with Tom, Elliott, and Leigh Ambassador (and part
   time ghost) Mike Burwin.Emma Bradburn, intern for the ‘Civic Theatres: A Place
   for Towns’ research project wrote an account of the show on her blog."
-banner:
+feature:
   image: /images/Leigh_Spinners_Leigh_-_geograph.org.uk_-_637989.original.png
   description: Spinners Mill
 ---

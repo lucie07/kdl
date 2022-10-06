@@ -1,16 +1,16 @@
 ---
-layout: layouts/post.njk
 title: Blog
 subtitle: Reflections after a month at KDL
 tags:
   - post
-author: Arianna Ciula
+authors:
+  - Arianna Ciula
 date: 2017-03-09
 excerpt: I took the role of analyst at King’s Digital Lab (KDL) just over a
   month ago. It is difficult to judge whether time flew so quickly because I
   feel at home or because the pace and rhythm of the place goes tick tick
   tick...
-banner:
+feature:
   image:
   description:
 ---

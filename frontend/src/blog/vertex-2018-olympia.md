@@ -1,13 +1,13 @@
 ---
-layout: layouts/post.njk
 title: Vertex 2018, Olympia
 subtitle: A peak behind the scenes of leading CGI and game studios
 tags:
   - post
-author: Neil Jakeman
+authors:
+  - Neil Jakeman
 date: 2018-04-05
 excerpt: ""
-banner:
+feature:
   image:
   description:
 ---

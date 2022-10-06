@@ -1,13 +1,13 @@
 ---
-layout: layouts/post.njk
 title: Blog
 subtitle: Trends in Linked Open Data
 tags:
   - post
-author: Samantha Callaghan
+authors:
+  - Samantha Callaghan
 date: 2017-07-25
 excerpt: Two days in Venice offered a wealth of insights into Linked Open Data practice
-banner:
+feature:
   image:
   description:
 ---

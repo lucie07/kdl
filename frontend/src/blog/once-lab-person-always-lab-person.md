@@ -1,13 +1,13 @@
 ---
-layout: layouts/post.njk
 title: Once a Lab person, always a Lab person
 subtitle: Reflections from a KDL Research Fellow
 tags:
   - post
-author: Anna-Maria Sichani
+authors:
+  - Anna-Maria Sichani
 date: 2018-07-27
 excerpt: ""
-banner:
+feature:
   image: /images/KDL_mug_letterbox.original.jpg
   description: KDL Mug Letterbox
 ---

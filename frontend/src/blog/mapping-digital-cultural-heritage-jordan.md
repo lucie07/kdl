@@ -1,13 +1,13 @@
 ---
-layout: layouts/post.njk
 title: Mapping Digital Cultural Heritage in Jordan (مديح)
 subtitle: Sustainable development of digital cultural heritage
 tags:
   - post
-author: James Smithies
+authors:
+  - James Smithies
 date: 2019-04-03
 excerpt: ""
-banner:
+feature:
   image: /images/banner_jordan.original.jpg
   description: jordan_banner
 ---

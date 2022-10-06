@@ -1,13 +1,13 @@
 ---
-layout: layouts/post.njk
 title: Using Archetype
 subtitle: Reflections on my Erasmus Traineeship
 tags:
   - post
-author: Guest
+authors:
+  - Guest
 date: 2018-06-15
 excerpt: This is a guest post by Valentina Gettatelli
-banner:
+feature:
   image: /images/annotation.original.png
   description: VG_annotation
 ---

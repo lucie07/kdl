@@ -1,11 +1,11 @@
 ---
-layout: layouts/post.njk
 title: The road to a more inclusive web
 subtitle: The state of digital accessibility at KDL
 tags:
   - post
   - accessibility
-author: Ginestra Ferraro
+authors:
+  - Ginestra Ferraro
 date: 2021-04-22
 excerpt: >-
   Recently I was asked to present the lab’s progress on the work done to improve
@@ -14,7 +14,7 @@ excerpt: >-
 
 
   KDL joined the board from day one to help shape the College’s digital accessibility policy and help scope the work that needed to be done to make every platform as accessible as possible.
-banner:
+feature:
   image: /images/liane-metzler-v3bWNXeInQA-unsplash-small.original.jpg
   description: Liane Metzler Unsplash - White stairs
 ---

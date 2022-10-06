@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: Blog
 subtitle: Archetype Rising
 tags:
@@ -7,13 +6,14 @@ tags:
   - Iconography
   - Art
   - Palaeography
-author: Neil Jakeman
+authors:
+  - Neil Jakeman
 date: 2017-10-04
 excerpt: There have been some mysterious and intriguing noises coming out of KDL
   recently. The development team have been (metaphorically) hammering away to
   add the final touches to a digital behemoth hidden underneath an equally
   metaphorical, oil-stained tarpaulin...
-banner:
+feature:
   image: /images/metropolis57fsam.original.jpg
   description: metropolis3
 ---

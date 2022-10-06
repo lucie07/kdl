@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: Blog
 subtitle: A modelling of "model" - a linguistic network graph
 tags:
@@ -8,13 +7,14 @@ tags:
   - modelling
   - linguitics
   - network graph
-author: Chris Pak
+authors:
+  - Chris Pak
 date: 2018-01-24
 excerpt: Modelling is a concept that is central to DH, though its various
   linguistic associations can encompass complementary and contradictory
   meanings. By happy providence, the act of modelling itself leads to new
   insights for our KDL Postdoctoral Research Associate Chris Pak ...
-banner:
+feature:
   image: /images/graph.original.jpg
   description: Network Graph
 ---

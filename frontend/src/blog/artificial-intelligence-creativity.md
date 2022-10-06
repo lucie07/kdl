@@ -1,15 +1,15 @@
 ---
-layout: layouts/post.njk
 title: Artificial Intelligence in Creativity
 subtitle: Notes from the Beyond Conference 2019
 tags:
   - post
   - Machine Learning
   - Artificial Intelligence
-author: Neil Jakeman
+authors:
+  - Neil Jakeman
 date: 2019-12-05
 excerpt: ""
-banner:
+feature:
   image: /images/franck-v-U3sOwViXhkY-unsplash.original.jpg
   description: AI_music
 ---

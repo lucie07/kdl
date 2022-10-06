@@ -1,16 +1,16 @@
 ---
-layout: layouts/post.njk
 title: Safeguarding an inheritance and ensuring a legacy
 subtitle: Software Development Lifecycle for Research Software Engineering
 tags:
   - post
   - Research Software Engineering
-author: King's Digital Lab
+authors:
+  - King's Digital Lab
 date: 2020-08-19
 excerpt: "At its inception in 2015, King’s Digital Lab became the de facto
   custodian of a rich legacy of Digital Humanities (DH) research projects
   spanning decades of experimentation... "
-banner:
+feature:
   image: /images/SDLC_blog_banner.original.jpg
   description: SDLC_blog_banner_v2
 ---

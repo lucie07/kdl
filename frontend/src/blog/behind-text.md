@@ -1,13 +1,13 @@
 ---
-layout: layouts/post.njk
 title: Knowledge creation in the Humanities
 subtitle: What is happening behind the text?
 tags:
   - post
-author: Urszula Pawlicka-Deger
+authors:
+  - Urszula Pawlicka-Deger
 date: 2020-11-18
 excerpt: ""
-banner:
+feature:
   image: /images/book_network.original.jpg
   description: ursula_blog_feed
 ---

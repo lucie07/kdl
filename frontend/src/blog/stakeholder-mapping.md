@@ -1,17 +1,17 @@
 ---
-layout: layouts/post.njk
 title: Making sense of the Stakeholder Map
 subtitle: A focused approach for high-level requirements
 tags:
   - post
   - Requirements
   - Stakeholders
-author: Neil Jakeman
+authors:
+  - Neil Jakeman
 date: 2022-06-28
 excerpt: We recently embarked with partners on an AHRC funded scoping exercise,
   to define the specifications of a Complex 3D Data Repository for the Arts and
   Humanities.
-banner:
+feature:
   image: /images/blog_banner_aX9rBsr.original.jpg
   description: MarconiTapper
 ---
