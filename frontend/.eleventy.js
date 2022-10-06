@@ -26,22 +26,6 @@ module.exports = (eleventyConfig) => {
     return `${process.env.DIRECTUS_URL}/assets/${id}`;
   });
 
-  eleventyConfig.addFilter("route", function (navigationKey, path = "") {
-    let url = `${navigationKey.toLowerCase()}/${path}/`;
-
-    const graph = eleventyNavigationPlugin.navigation.getDependencyGraph(
-      this.ctx.collections.all
-    );
-    const found = graph.getNodeData(navigationKey);
-    if (found) {
-      url = `${found.url}${path}/`;
-    }
-
-    const urlFilter = eleventyConfig.getFilter("url");
-
-    return urlFilter(url);
-  });
-
   eleventyConfig.addFilter("asPostDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
@@ -52,6 +36,25 @@ module.exports = (eleventyConfig) => {
     return projects.filter((project) =>
       project.funder.some((funded) => funded.agent_id.id === funder.agent.id)
     );
+  });
+
+  eleventyConfig.addShortcode("route", function (path, navigationKey = "") {
+    const urlFilter = eleventyConfig.getFilter("url");
+
+    let url = path;
+
+    if (navigationKey) {
+      const graph = eleventyNavigationPlugin.navigation.getDependencyGraph(
+        this.ctx.collections.all
+      );
+
+      const found = graph.getNodeData(navigationKey);
+      if (found) {
+        url = `${found.url}${path}`;
+      }
+    }
+
+    return urlFilter(url);
   });
 
   // https://www.11ty.dev/docs/languages/custom/#example-add-sass-support-to-eleventy

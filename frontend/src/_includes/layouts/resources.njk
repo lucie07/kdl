@@ -7,7 +7,7 @@ layout: layouts/base.njk
 <ol>
   {%- for resource in collections.resource | sort(false, false, "data.title") -%}
   <li>
-    <a href="{{ resource.url }}">
+    <a href="{% route resource.url %}">
       <h2>{{ resource.data.title }}</h2>
     </a>
   </li>

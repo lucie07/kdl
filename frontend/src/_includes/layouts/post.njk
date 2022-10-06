@@ -9,7 +9,7 @@ layout: layouts/base.njk
   {% if feature and feature.image %}
   <div id="images">
     <figure>
-      <img src="{{ feature.image }}" alt="{{ feature.description }}">
+      <img src="{% route feature.image %}" alt="{{ feature.description }}">
       <figcaption>{{ feature.description }}</figcaption>
     </figure>
   </div>

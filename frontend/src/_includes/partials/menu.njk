@@ -11,7 +11,7 @@
       {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
     </ol>
     {%- else -%}
-    <a href="{{ entry.url }}">{{ entry.title }}</a>
+    <a href="{% route entry.url %}">{{ entry.title }}</a>
     {%- endif -%}
   </li>
   {%- endmacro %}

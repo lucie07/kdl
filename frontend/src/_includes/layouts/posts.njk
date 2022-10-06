@@ -6,7 +6,7 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 
 <ol start="{{ pagination.pageNumber * 25 + 1}}">
   {%- for post in posts -%}
   <li>
-    <a href="{{ post.url }}">
+    <a href="{% route post.url %}">
       <h2>{{ post.data.title }}</h2>
     </a>
     <div class="index-information">

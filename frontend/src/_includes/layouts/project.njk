@@ -2,7 +2,6 @@
 layout: layouts/base.njk
 ---
 
-
 <section>
 
   <!-- Images -->
@@ -27,7 +26,7 @@ layout: layouts/base.njk
     <ul>
       {% for url in project.url %}
       <li>
-        <a href="{{ url.linkrole_id.url }}" role="button">{{ url.linkrole_id.name }}</a>
+        <a href="{% route url.linkrole_id.url %}" role="button">{{ url.linkrole_id.name }}</a>
       </li>
       {% endfor %}
     </ul>
@@ -43,7 +42,7 @@ layout: layouts/base.njk
       <ul>
         {% for funder in project.funder %}
         <li>
-          <a href="{{ 'Organisations' | route(funder.agent_id.slug)}}">
+          <a href="{% route funder.agent_id.slug, 'Organisations' %}">
             {{- funder.agent_id.name -}}
           </a>
         </li>
@@ -62,7 +61,7 @@ layout: layouts/base.njk
     <ul>
       {% for member in project.member|sort(false, false, "agent.name") %}
       <li>
-        <a href="{{ 'People' | route(member.agent.slug) }}">{{ member.agent.name }}</a>,
+        <a href="{% route member.agent.slug, 'People' %}">{{ member.agent.name }}</a>,
         {{ member.name }}
         {%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}
       </li>

@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {% seo "" %}
 
-  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
-  <link href="/stylesheets/main.css" rel="stylesheet" />
+  <link href="{% route '/_pagefind/pagefind-ui.css' %}" rel="stylesheet">
+  <link href="{% route '/stylesheets/main.css' %}" rel="stylesheet" />
 </head>
 
 <body>
@@ -26,7 +26,11 @@
     </section>
   </main>
 
-  <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+  <footer>
+    {% include "partials/footer.njk" %}
+  </footer>
+
+  <script src="{% route '/_pagefind/pagefind-ui.js' %}" type="text/javascript"></script>
   <script>
     window.addEventListener('DOMContentLoaded', (event) => {
       new PagefindUI({element: "#search"});
