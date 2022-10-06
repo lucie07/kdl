@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies and build
         run: |
           npm ci -w frontend
-          npm run build -w frontend
+          npm run build -w frontend --pathprefix 'kdl'
           npm run index -w frontend
 
       - name: Deploy to GitHub pages
