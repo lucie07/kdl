@@ -374,7 +374,6 @@ footer {
   left: 0;
   margin-left: 16em;
   padding: 0 1em;
-  width: calc(100% - 16em);
 }
 footer li {
   list-style: none;
