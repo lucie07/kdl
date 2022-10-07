@@ -1,9 +1,8 @@
 ---
-layout: layouts/resources.njk
+layout: layouts/redirect.njk
 title: Resources
 eleventyNavigation:
   key: Resources
   order: 6
+redirect: "overview/"
 ---
-
-Something about resources
