@@ -1,6 +1,7 @@
 const { CheerioCrawler } = require("crawlee");
 const download = require("image-downloader");
 const Turndown = require("turndown");
+const slugify = require("slugify");
 const fs = require("fs/promises");
 const path = require("path");
 const YAML = require("yaml");
@@ -11,9 +12,13 @@ class Scraper {
     this.outputPath = path.resolve(outputPath);
     this.imagesPath = path.join(this.outputPath, "images");
 
-    console.log(this.imagesPath);
-
     Promise.resolve(fs.mkdir(this.imagesPath, { recursive: true }));
+
+    this.turndown = Turndown({
+      headingStyle: "atx",
+      bulletListMarker: "-",
+      emDelimiter: "*",
+    });
   }
 
   scrape(glob, getDataCallback) {
@@ -25,13 +30,17 @@ class Scraper {
           log.info(request.url);
 
           const name = request.url.split("/").at(-2);
-          const data = getDataCallback($);
+          const data = getDataCallback(self, $);
 
           const images = [];
           $(".main img").each((_, img) => images.push($(img).attr("src")));
           self.downloadImages(images);
 
-          self.save(name, data);
+          if (data instanceof Array) {
+            data.forEach((d) => self.save(d.name, d, d.path));
+          } else {
+            self.save(name, data);
+          }
 
           await enqueueLinks({
             globs: [`${self.url}/${glob}`],
@@ -47,13 +56,7 @@ class Scraper {
     });
   }
 
-  getBlogData($) {
-    const td = Turndown({
-      headingStyle: "atx",
-      bulletListMarker: "-",
-      emDelimiter: "*",
-    });
-
+  getBlogData(scraper, $) {
     const data = { frontmatter: {}, html: null };
 
     const tags = ["post"];
@@ -78,7 +81,7 @@ class Scraper {
       .children(":not(.post-meta)")
       .each((_, el) => html.push($(el)));
 
-    data.md = td.turndown(html.join("\n"));
+    data.md = scraper.turndown.turndown(html.join("\n"));
 
     return data;
   }
@@ -96,16 +99,83 @@ class Scraper {
     });
   }
 
-  save(name, data) {
+  save(name, data, subpath = null) {
     const content = ["---"];
     content.push(YAML.stringify(data.frontmatter).trim());
     content.push("---\n");
     content.push(data.md);
 
-    fs.writeFile(
-      `${this.outputPath}/${name}.md`,
-      content.join("\n").replaceAll("/static/media", "")
+    let outputPath = this.outputPath;
+    if (subpath) {
+      outputPath = path.join(outputPath, subpath);
+    }
+
+    Promise.resolve(fs.mkdir(outputPath, { recursive: true })).then(() =>
+      fs.writeFile(
+        `${outputPath}/${name}.md`,
+        content.join("\n").replaceAll("/static/media", "")
+      )
     );
+  }
+
+  getFaqData(scraper, $) {
+    const faqs = [];
+
+    let data = { frontmatter: {}, html: null };
+    let slug = null;
+    let tags = [];
+    let html = [];
+
+    const elements = $(".page-content").children(
+      ":not(.default-banner):not(a#content):not(.intro)"
+    );
+    elements.each((idx, el) => {
+      const text = $(el).text();
+
+      switch (el.name) {
+        case "h2":
+          slug = slugify(text, { lower: true });
+          faqs.push({
+            frontmatter: { title: text, tags: ["faqs"], slug: slug },
+            path: slug,
+            name: "index",
+            html: "",
+          });
+
+          if (idx > 1) {
+            data.md = scraper.turndown.turndown(html.join("\n"));
+            faqs.push(data);
+          }
+
+          data = { frontmatter: {}, html: null };
+          tags = ["faq", slug];
+          html = [];
+
+          break;
+        case "h3":
+          if (idx > 2) {
+            data.md = scraper.turndown.turndown(html.join("\n"));
+            faqs.push(data);
+          }
+
+          data = { frontmatter: {}, html: null };
+          html = [];
+          data.frontmatter.title = text;
+          data.frontmatter.tags = tags;
+          data.path = slug;
+          data.name = slugify(text, { lower: true });
+
+          break;
+        default:
+          html.push($(el));
+          break;
+      }
+
+      data.md = scraper.turndown.turndown(html.join("\n"));
+      faqs.push(data);
+    });
+
+    return faqs;
   }
 }
 

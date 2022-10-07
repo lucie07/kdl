@@ -50,6 +50,7 @@ async function cli() {
   const scrapeCommand = program
     .command("scrape")
     .description("Scrape content from the current web site");
+
   scrapeCommand
     .command("blog")
     .argument("<path>", "Path to save the blog posts")
@@ -58,6 +59,17 @@ async function cli() {
       scraper
         .scrape("*", scraper.getBlogData)
         .then(() => console.info("Blog scraping done"))
+        .catch((err) => console.error(err));
+    });
+
+  scrapeCommand
+    .command("faqs")
+    .argument("<path>", "Path to save the faqs")
+    .action((path) => {
+      const scraper = new Scraper("https://kdl.kcl.ac.uk/how-we-work", path);
+      scraper
+        .scrape("faq-partners", scraper.getFaqData)
+        .then(() => console.info("FAQs scraping done"))
         .catch((err) => console.error(err));
     });
 
