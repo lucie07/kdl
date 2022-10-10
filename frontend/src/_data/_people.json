@@ -383,40 +383,8 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "État Civil",
-            "slug": "etat-civil"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "MOI: A Publishing and Communication History of the Ministry of Information, 1939-45",
-            "slug": "moi"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "CCED: Clergy of the Church of England Database Project",
-            "slug": "cced"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "Radical Translations: The Transfer of Revolutionary Culture between Britain, France and Italy (1789-1815)  ",
-            "slug": "radical-translations"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "MaDiH: Mapping Digital Cultural Heritage in Jordan",
-            "slug": "madih"
+            "name": "DRaL: Distant Reading across Languages",
+            "slug": "dral"
           },
           "inOrganisation": null
         },
@@ -431,8 +399,40 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "DRaL: Distant Reading across Languages",
-            "slug": "dral"
+            "name": "Ego-media: The impact of new media on forms and practices of self-presentation",
+            "slug": "ego-media"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "MOI: A Publishing and Communication History of the Ministry of Information, 1939-45",
+            "slug": "moi"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "État Civil",
+            "slug": "etat-civil"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "CCED: Clergy of the Church of England Database Project",
+            "slug": "cced"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "MaDiH: Mapping Digital Cultural Heritage in Jordan",
+            "slug": "madih"
           },
           "inOrganisation": null
         },
@@ -447,8 +447,8 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "Ego-media: The impact of new media on forms and practices of self-presentation",
-            "slug": "ego-media"
+            "name": "Radical Translations: The Transfer of Revolutionary Culture between Britain, France and Italy (1789-1815)  ",
+            "slug": "radical-translations"
           },
           "inOrganisation": null
         }
@@ -537,8 +537,8 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "PDE/PASE: Profile of a Doomed Elite: The Structure of English Landed Society in 1066/Prosopography of Anglo-Saxon England",
-            "slug": "pde/pase"
+            "name": "KDL Archetype",
+            "slug": "kdl-archetype"
           },
           "inOrganisation": null
         },
@@ -553,16 +553,16 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "KDL Archetype",
-            "slug": "kdl-archetype"
+            "name": "CCED: Clergy of the Church of England Database Project",
+            "slug": "cced"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "CCED: Clergy of the Church of England Database Project",
-            "slug": "cced"
+            "name": "PDE/PASE: Profile of a Doomed Elite: The Structure of English Landed Society in 1066/Prosopography of Anglo-Saxon England",
+            "slug": "pde/pase"
           },
           "inOrganisation": null
         }
@@ -694,56 +694,8 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "MOZARTMC: Mozart and Material Culture",
-            "slug": "mozartmc"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "RENSKIN: Renaissance Skin",
-            "slug": "renskin-2"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
             "name": "DPRR: Digital Prosopography of the Roman Republic",
             "slug": "dprr"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "MOI: A Publishing and Communication History of the Ministry of Information, 1939-45",
-            "slug": "moi"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "IRCYR: Inscriptions of Roman Cyrenaica",
-            "slug": "ircyr"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "Scoping a Data Service for Complex 3D Data in the Arts and Humanities",
-            "slug": "scoping-a-data-service-for-complex-3d-data-in-the-arts-and-humanities"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "OWRI: Languages Acts and Worldmaking",
-            "slug": "owri"
           },
           "inOrganisation": null
         },
@@ -758,6 +710,22 @@
         {
           "name": "RSE team member",
           "inProject": {
+            "name": "OWRI: Languages Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "RENSKIN: Renaissance Skin",
+            "slug": "renskin-2"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
             "name": "MaDiH: Mapping Digital Cultural Heritage in Jordan",
             "slug": "madih"
           },
@@ -766,8 +734,40 @@
         {
           "name": "RSE team member",
           "inProject": {
+            "name": "MOZARTMC: Mozart and Material Culture",
+            "slug": "mozartmc"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "Scoping a Data Service for Complex 3D Data in the Arts and Humanities",
+            "slug": "scoping-a-data-service-for-complex-3d-data-in-the-arts-and-humanities"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "IRCYR: Inscriptions of Roman Cyrenaica",
+            "slug": "ircyr"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
             "name": "SCRAMBLED: Scrambled Messages: The Telegraphic Imaginary 1857-1900",
             "slug": "scrambled"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "MOI: A Publishing and Communication History of the Ministry of Information, 1939-45",
+            "slug": "moi"
           },
           "inOrganisation": null
         }
@@ -797,8 +797,8 @@
         {
           "name": "Researcher",
           "inProject": {
-            "name": "Inscriptions of Aphrodisias",
-            "slug": "inscriptions-of-aphrodisias"
+            "name": "EPAPP: The Epidoc Aphrodisias Project",
+            "slug": "epapp"
           },
           "inOrganisation": {
             "agent": {
@@ -810,8 +810,8 @@
         {
           "name": "Researcher",
           "inProject": {
-            "name": "EPAPP: The Epidoc Aphrodisias Project",
-            "slug": "epapp"
+            "name": "Inscriptions of Aphrodisias",
+            "slug": "inscriptions-of-aphrodisias"
           },
           "inOrganisation": {
             "agent": {
@@ -964,6 +964,19 @@
       "description": null,
       "memberOf": [
         {
+          "name": "Principal investigator",
+          "inProject": {
+            "name": "EPAPP: The Epidoc Aphrodisias Project",
+            "slug": "epapp"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
+            }
+          }
+        },
+        {
           "name": "Researcher",
           "inProject": {
             "name": "PBW: Prosopography of the Byzantine World",
@@ -979,21 +992,8 @@
         {
           "name": "Principal investigator",
           "inProject": {
-            "name": "Inscriptions of Aphrodisias",
-            "slug": "inscriptions-of-aphrodisias"
-          },
-          "inOrganisation": {
-            "agent": {
-              "name": "KCL",
-              "slug": "kcl"
-            }
-          }
-        },
-        {
-          "name": "Principal investigator",
-          "inProject": {
-            "name": "EPAPP: The Epidoc Aphrodisias Project",
-            "slug": "epapp"
+            "name": "IBCC: Inventory of Byzantine Churches on Cyprus",
+            "slug": "ibcc"
           },
           "inOrganisation": {
             "agent": {
@@ -1018,8 +1018,8 @@
         {
           "name": "Principal investigator",
           "inProject": {
-            "name": "SAW: Sharing Ancient Wisdoms",
-            "slug": "saw"
+            "name": "Inscriptions of Aphrodisias",
+            "slug": "inscriptions-of-aphrodisias"
           },
           "inOrganisation": {
             "agent": {
@@ -1057,8 +1057,8 @@
         {
           "name": "Principal investigator",
           "inProject": {
-            "name": "IBCC: Inventory of Byzantine Churches on Cyprus",
-            "slug": "ibcc"
+            "name": "SAW: Sharing Ancient Wisdoms",
+            "slug": "saw"
           },
           "inOrganisation": {
             "agent": {
@@ -1078,22 +1078,6 @@
       "description": null,
       "memberOf": [
         {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "SAW: Sharing Ancient Wisdoms",
-            "slug": "saw"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "CCED: Clergy of the Church of England Database Project",
-            "slug": "cced"
-          },
-          "inOrganisation": null
-        },
-        {
           "name": "Researcher",
           "inProject": {
             "name": "Medieval Francophone Literature Outside France",
@@ -1109,16 +1093,32 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "POMS: People of Medieval Scotland",
-            "slug": "poms"
+            "name": "PDE/PASE: Profile of a Doomed Elite: The Structure of English Landed Society in 1066/Prosopography of Anglo-Saxon England",
+            "slug": "pde/pase"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "PDE/PASE: Profile of a Doomed Elite: The Structure of English Landed Society in 1066/Prosopography of Anglo-Saxon England",
-            "slug": "pde/pase"
+            "name": "CCED: Clergy of the Church of England Database Project",
+            "slug": "cced"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "SAW: Sharing Ancient Wisdoms",
+            "slug": "saw"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "POMS: People of Medieval Scotland",
+            "slug": "poms"
           },
           "inOrganisation": null
         },
@@ -1384,10 +1384,10 @@
       "description": null,
       "memberOf": [
         {
-          "name": "Researcher",
+          "name": "Principal investigator",
           "inProject": {
-            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
-            "slug": "cotr"
+            "name": "POMS: People of Medieval Scotland",
+            "slug": "poms"
           },
           "inOrganisation": {
             "agent": {
@@ -1397,10 +1397,10 @@
           }
         },
         {
-          "name": "Principal investigator",
+          "name": "Researcher",
           "inProject": {
-            "name": "POMS: People of Medieval Scotland",
-            "slug": "poms"
+            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
+            "slug": "cotr"
           },
           "inOrganisation": {
             "agent": {
@@ -1742,16 +1742,16 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "PBW: Prosopography of the Byzantine World",
-            "slug": "pbw"
+            "name": "CCED: Clergy of the Church of England Database Project",
+            "slug": "cced"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "CCED: Clergy of the Church of England Database Project",
-            "slug": "cced"
+            "name": "PBW: Prosopography of the Byzantine World",
+            "slug": "pbw"
           },
           "inOrganisation": null
         }
@@ -1791,8 +1791,56 @@
         {
           "name": "RSE team member",
           "inProject": {
+            "name": "CoSTAR: Convergent Screen Technologies And performance in Realtime ",
+            "slug": "costar"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "CYPRUS: Gazetteer of Cyprus Project",
+            "slug": "cyprus"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "CCED: Clergy of the Church of England Database Project",
+            "slug": "cced"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "FIELD: Farm-level Interdisciplinary Approaches to Endemic Livestock Disease",
+            "slug": "field"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "MaDiH: Mapping Digital Cultural Heritage in Jordan",
+            "slug": "madih"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
             "name": "SHARC: Shakespeare Holdings in the Royal Collection",
             "slug": "sharc"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "PBW: Prosopography of the Byzantine World",
+            "slug": "pbw"
           },
           "inOrganisation": null
         },
@@ -1823,56 +1871,8 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "PBW: Prosopography of the Byzantine World",
-            "slug": "pbw"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "MaDiH: Mapping Digital Cultural Heritage in Jordan",
-            "slug": "madih"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "FIELD: Farm-level Interdisciplinary Approaches to Endemic Livestock Disease",
-            "slug": "field"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "CoSTAR: Convergent Screen Technologies And performance in Realtime ",
-            "slug": "costar"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "CCED: Clergy of the Church of England Database Project",
-            "slug": "cced"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
             "name": "SHAK: Shakespeare400",
             "slug": "shak"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "CYPRUS: Gazetteer of Cyprus Project",
-            "slug": "cyprus"
           },
           "inOrganisation": null
         }
@@ -2017,16 +2017,16 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "SAW: Sharing Ancient Wisdoms",
-            "slug": "saw"
+            "name": "IPM: Mapping the Medieval Countryside: The Fifteenth-Century Inquisitions Post Mortem",
+            "slug": "ipm"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "IPM: Mapping the Medieval Countryside: The Fifteenth-Century Inquisitions Post Mortem",
-            "slug": "ipm"
+            "name": "SAW: Sharing Ancient Wisdoms",
+            "slug": "saw"
           },
           "inOrganisation": null
         }
@@ -2095,20 +2095,17 @@
           "inOrganisation": null
         },
         {
-          "name": "RSE team member",
+          "name": "Researcher",
           "inProject": {
-            "name": "EPAPP: The Epidoc Aphrodisias Project",
-            "slug": "epapp"
+            "name": "HGL: Heritage Gazetteer for Libya",
+            "slug": "hgl"
           },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "IOSPE: Ancient Inscriptions of the Northern Black Sea",
-            "slug": "iospe"
-          },
-          "inOrganisation": null
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
+            }
+          }
         },
         {
           "name": "Researcher",
@@ -2124,17 +2121,20 @@
           }
         },
         {
-          "name": "Researcher",
+          "name": "RSE team member",
           "inProject": {
-            "name": "HGL: Heritage Gazetteer for Libya",
-            "slug": "hgl"
+            "name": "IOSPE: Ancient Inscriptions of the Northern Black Sea",
+            "slug": "iospe"
           },
-          "inOrganisation": {
-            "agent": {
-              "name": "KCL",
-              "slug": "kcl"
-            }
-          }
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "EPAPP: The Epidoc Aphrodisias Project",
+            "slug": "epapp"
+          },
+          "inOrganisation": null
         }
       ]
     }
@@ -2190,8 +2190,32 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "TVOF: The Values of French",
-            "slug": "tvof"
+            "name": "RENSKIN: Renaissance Skin - Visible Skin",
+            "slug": "renskin"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "Exon Domesday: The Conqueror's Commissioners: Unlocking the Domesday Survey of South-Western England",
+            "slug": "exon-domesday"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
+            "slug": "cotr"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "KDL Archetype",
+            "slug": "kdl-archetype"
           },
           "inOrganisation": null
         },
@@ -2200,6 +2224,14 @@
           "inProject": {
             "name": "DRaL: Distant Reading across Languages",
             "slug": "dral"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "TVOF: The Values of French",
+            "slug": "tvof"
           },
           "inOrganisation": null
         },
@@ -2222,40 +2254,8 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "RENSKIN: Renaissance Skin - Visible Skin",
-            "slug": "renskin"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
-            "slug": "cotr"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
             "name": "RENSKIN: Renaissance Skin",
             "slug": "renskin-2"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "Exon Domesday: The Conqueror's Commissioners: Unlocking the Domesday Survey of South-Western England",
-            "slug": "exon-domesday"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "KDL Archetype",
-            "slug": "kdl-archetype"
           },
           "inOrganisation": null
         }
@@ -2349,72 +2349,40 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "HGL: Heritage Gazetteer for Libya",
-            "slug": "hgl"
+            "name": "DRaL: Distant Reading across Languages",
+            "slug": "dral"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "Medieval Francophone Literature Outside France",
-            "slug": "medieval-francophone-literature-outside-france"
+            "name": "RENSKIN: Renaissance Skin",
+            "slug": "renskin-2"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "OWRI: Languages Acts and Worldmaking",
-            "slug": "owri"
+            "name": "Ego-media: The impact of new media on forms and practices of self-presentation",
+            "slug": "ego-media"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "Scoping a Data Service for Complex 3D Data in the Arts and Humanities",
-            "slug": "scoping-a-data-service-for-complex-3d-data-in-the-arts-and-humanities"
+            "name": "CYPRUS: Gazetteer of Cyprus Project",
+            "slug": "cyprus"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "GSSN: German Screen Studies Network",
-            "slug": "gssn"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "MOI: A Publishing and Communication History of the Ministry of Information, 1939-45",
-            "slug": "moi"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "DPRR: Digital Prosopography of the Roman Republic",
-            "slug": "dprr"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "IRCYR: Inscriptions of Roman Cyrenaica",
-            "slug": "ircyr"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
-            "slug": "cotr"
+            "name": "Radical Translations: The Transfer of Revolutionary Culture between Britain, France and Italy (1789-1815)  ",
+            "slug": "radical-translations"
           },
           "inOrganisation": null
         },
@@ -2442,16 +2410,40 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "DRaL: Distant Reading across Languages",
-            "slug": "dral"
+            "name": "TVOF: The Values of French",
+            "slug": "tvof"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "RENSKIN: Renaissance Skin",
-            "slug": "renskin-2"
+            "name": "Scoping a Data Service for Complex 3D Data in the Arts and Humanities",
+            "slug": "scoping-a-data-service-for-complex-3d-data-in-the-arts-and-humanities"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "IRCYR: Inscriptions of Roman Cyrenaica",
+            "slug": "ircyr"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
+            "slug": "cotr"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "OWRI: Languages Acts and Worldmaking",
+            "slug": "owri"
           },
           "inOrganisation": null
         },
@@ -2466,14 +2458,6 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "TVOF: The Values of French",
-            "slug": "tvof"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
             "name": "MKCHEUR: Making of Charlemagne's Europe",
             "slug": "mkcheur"
           },
@@ -2482,16 +2466,16 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "Radical Translations: The Transfer of Revolutionary Culture between Britain, France and Italy (1789-1815)  ",
-            "slug": "radical-translations"
+            "name": "HGL: Heritage Gazetteer for Libya",
+            "slug": "hgl"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "Ego-media: The impact of new media on forms and practices of self-presentation",
-            "slug": "ego-media"
+            "name": "MOI: A Publishing and Communication History of the Ministry of Information, 1939-45",
+            "slug": "moi"
           },
           "inOrganisation": null
         },
@@ -2506,8 +2490,24 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "CYPRUS: Gazetteer of Cyprus Project",
-            "slug": "cyprus"
+            "name": "GSSN: German Screen Studies Network",
+            "slug": "gssn"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "DPRR: Digital Prosopography of the Roman Republic",
+            "slug": "dprr"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "Medieval Francophone Literature Outside France",
+            "slug": "medieval-francophone-literature-outside-france"
           },
           "inOrganisation": null
         }
@@ -2599,10 +2599,10 @@
       "description": null,
       "memberOf": [
         {
-          "name": "Principal investigator",
+          "name": "Researcher",
           "inProject": {
-            "name": "Nanotoms and Open Scholarship Experiences",
-            "slug": "nanotoms-and-open-scholarship-experiences"
+            "name": "CoSTAR: Convergent Screen Technologies And performance in Realtime ",
+            "slug": "costar"
           },
           "inOrganisation": {
             "agent": {
@@ -2612,10 +2612,10 @@
           }
         },
         {
-          "name": "Researcher",
+          "name": "Principal investigator",
           "inProject": {
-            "name": "CoSTAR: Convergent Screen Technologies And performance in Realtime ",
-            "slug": "costar"
+            "name": "Nanotoms and Open Scholarship Experiences",
+            "slug": "nanotoms-and-open-scholarship-experiences"
           },
           "inOrganisation": {
             "agent": {
@@ -2643,6 +2643,19 @@
           "inOrganisation": null
         },
         {
+          "name": "Researcher",
+          "inProject": {
+            "name": "IRCYR: Inscriptions of Roman Cyrenaica",
+            "slug": "ircyr"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
+            }
+          }
+        },
+        {
           "name": "RSE team member",
           "inProject": {
             "name": "CCED: Clergy of the Church of England Database Project",
@@ -2655,19 +2668,6 @@
           "inProject": {
             "name": "HGL: Heritage Gazetteer for Libya",
             "slug": "hgl"
-          },
-          "inOrganisation": {
-            "agent": {
-              "name": "KCL",
-              "slug": "kcl"
-            }
-          }
-        },
-        {
-          "name": "Researcher",
-          "inProject": {
-            "name": "IRCYR: Inscriptions of Roman Cyrenaica",
-            "slug": "ircyr"
           },
           "inOrganisation": {
             "agent": {
@@ -2746,6 +2746,35 @@
       "description": null,
       "memberOf": [
         {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "CCED: Clergy of the Church of England Database Project",
+            "slug": "cced"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "Principal investigator",
+          "inProject": {
+            "name": "Inscriptions of Aphrodisias",
+            "slug": "inscriptions-of-aphrodisias"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
+            }
+          }
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "IRCYR: Inscriptions of Roman Cyrenaica",
+            "slug": "ircyr"
+          },
+          "inOrganisation": null
+        },
+        {
           "name": "Researcher",
           "inProject": {
             "name": "MOZARTMC: Mozart and Material Culture",
@@ -2769,39 +2798,10 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "CCED: Clergy of the Church of England Database Project",
-            "slug": "cced"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
             "name": "PBW: Prosopography of the Byzantine World",
             "slug": "pbw"
           },
           "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "IRCYR: Inscriptions of Roman Cyrenaica",
-            "slug": "ircyr"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "Principal investigator",
-          "inProject": {
-            "name": "Inscriptions of Aphrodisias",
-            "slug": "inscriptions-of-aphrodisias"
-          },
-          "inOrganisation": {
-            "agent": {
-              "name": "KCL",
-              "slug": "kcl"
-            }
-          }
         },
         {
           "name": "RSE team member",
@@ -3019,14 +3019,6 @@
           }
         },
         {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "Sudan Memory",
-            "slug": "sudan-memory"
-          },
-          "inOrganisation": null
-        },
-        {
           "name": "Principal investigator",
           "inProject": {
             "name": "MaDiH: Mapping Digital Cultural Heritage in Jordan",
@@ -3038,6 +3030,14 @@
               "slug": "kcl"
             }
           }
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "Sudan Memory",
+            "slug": "sudan-memory"
+          },
+          "inOrganisation": null
         },
         {
           "name": "RSE team member",
@@ -3060,6 +3060,14 @@
         {
           "name": "RSE team member",
           "inProject": {
+            "name": "IRCYR: Inscriptions of Roman Cyrenaica",
+            "slug": "ircyr"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
             "name": "IOSPE: Ancient Inscriptions of the Northern Black Sea",
             "slug": "iospe"
           },
@@ -3076,24 +3084,16 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "Mao Era in Objects",
-            "slug": "mao-era-in-objects"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "IRCYR: Inscriptions of Roman Cyrenaica",
-            "slug": "ircyr"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
             "name": "PDE/PASE: Profile of a Doomed Elite: The Structure of English Landed Society in 1066/Prosopography of Anglo-Saxon England",
             "slug": "pde/pase"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "Mao Era in Objects",
+            "slug": "mao-era-in-objects"
           },
           "inOrganisation": null
         }
@@ -3190,6 +3190,27 @@
       "description": null,
       "memberOf": [
         {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "CCED: Clergy of the Church of England Database Project",
+            "slug": "cced"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "Researcher",
+          "inProject": {
+            "name": "DPRR: Digital Prosopography of the Roman Republic",
+            "slug": "dprr"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
+            }
+          }
+        },
+        {
           "name": "Principal investigator",
           "inProject": {
             "name": "PBW: Prosopography of the Byzantine World",
@@ -3222,27 +3243,6 @@
             "slug": "pde/pase"
           },
           "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "CCED: Clergy of the Church of England Database Project",
-            "slug": "cced"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "Researcher",
-          "inProject": {
-            "name": "DPRR: Digital Prosopography of the Roman Republic",
-            "slug": "dprr"
-          },
-          "inOrganisation": {
-            "agent": {
-              "name": "KCL",
-              "slug": "kcl"
-            }
-          }
         },
         {
           "name": "Researcher",
@@ -3334,8 +3334,8 @@
         {
           "name": "Principal investigator",
           "inProject": {
-            "name": "Digital Cultures of #covid19: Digital Methods for Investigating Online Engagement with Coronavirus",
-            "slug": "digital-cultures-of-covid19"
+            "name": "Data Portal Explorer",
+            "slug": "data-portal-explorer"
           },
           "inOrganisation": {
             "agent": {
@@ -3347,8 +3347,8 @@
         {
           "name": "Principal investigator",
           "inProject": {
-            "name": "Data Portal Explorer",
-            "slug": "data-portal-explorer"
+            "name": "Digital Cultures of #covid19: Digital Methods for Investigating Online Engagement with Coronavirus",
+            "slug": "digital-cultures-of-covid19"
           },
           "inOrganisation": {
             "agent": {
@@ -3370,8 +3370,8 @@
         {
           "name": "Researcher",
           "inProject": {
-            "name": "EPAPP: The Epidoc Aphrodisias Project",
-            "slug": "epapp"
+            "name": "Inscriptions of Aphrodisias",
+            "slug": "inscriptions-of-aphrodisias"
           },
           "inOrganisation": {
             "agent": {
@@ -3383,8 +3383,8 @@
         {
           "name": "Researcher",
           "inProject": {
-            "name": "Inscriptions of Aphrodisias",
-            "slug": "inscriptions-of-aphrodisias"
+            "name": "EPAPP: The Epidoc Aphrodisias Project",
+            "slug": "epapp"
           },
           "inOrganisation": {
             "agent": {
@@ -3419,16 +3419,16 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "CCED: Clergy of the Church of England Database Project",
-            "slug": "cced"
+            "name": "Inscriptions of Aphrodisias",
+            "slug": "inscriptions-of-aphrodisias"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "Inscriptions of Aphrodisias",
-            "slug": "inscriptions-of-aphrodisias"
+            "name": "CCED: Clergy of the Church of England Database Project",
+            "slug": "cced"
           },
           "inOrganisation": null
         }
@@ -4282,19 +4282,6 @@
         {
           "name": "Researcher",
           "inProject": {
-            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
-            "slug": "cotr"
-          },
-          "inOrganisation": {
-            "agent": {
-              "name": "KCL",
-              "slug": "kcl"
-            }
-          }
-        },
-        {
-          "name": "Researcher",
-          "inProject": {
             "name": "POMS: People of Medieval Scotland",
             "slug": "poms"
           },
@@ -4302,6 +4289,19 @@
             "agent": {
               "name": "University of Glasgow",
               "slug": "university-of-glasgow"
+            }
+          }
+        },
+        {
+          "name": "Researcher",
+          "inProject": {
+            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
+            "slug": "cotr"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
             }
           }
         }
@@ -4456,120 +4456,8 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "FIELD: Farm-level Interdisciplinary Approaches to Endemic Livestock Disease",
-            "slug": "field"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
             "name": "État Civil",
             "slug": "etat-civil"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "Digital Silk Road",
-            "slug": "digital-silk-road"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "Nanotoms and Open Scholarship Experiences",
-            "slug": "nanotoms-and-open-scholarship-experiences"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "POMS: People of Medieval Scotland",
-            "slug": "poms"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "Radical Translations: The Transfer of Revolutionary Culture between Britain, France and Italy (1789-1815)  ",
-            "slug": "radical-translations"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "PDE/PASE: Profile of a Doomed Elite: The Structure of English Landed Society in 1066/Prosopography of Anglo-Saxon England",
-            "slug": "pde/pase"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "Ego-media: The impact of new media on forms and practices of self-presentation",
-            "slug": "ego-media"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "MOI: A Publishing and Communication History of the Ministry of Information, 1939-45",
-            "slug": "moi"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "IPM: Mapping the Medieval Countryside: The Fifteenth-Century Inquisitions Post Mortem",
-            "slug": "ipm"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "Data Portal Explorer",
-            "slug": "data-portal-explorer"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "SHAK: Shakespeare400",
-            "slug": "shak"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "KDL Archetype",
-            "slug": "kdl-archetype"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "CHARM: AHRC Research Centre for the History and Analysis of Recorded Music",
-            "slug": "charm"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "Digital Cultures of #covid19: Digital Methods for Investigating Online Engagement with Coronavirus",
-            "slug": "digital-cultures-of-covid19"
           },
           "inOrganisation": null
         },
@@ -4584,8 +4472,24 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "IOSPE: Ancient Inscriptions of the Northern Black Sea",
-            "slug": "iospe"
+            "name": "Radical Translations: The Transfer of Revolutionary Culture between Britain, France and Italy (1789-1815)  ",
+            "slug": "radical-translations"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "Ego-media: The impact of new media on forms and practices of self-presentation",
+            "slug": "ego-media"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "Data Portal Explorer",
+            "slug": "data-portal-explorer"
           },
           "inOrganisation": null
         },
@@ -4600,8 +4504,104 @@
         {
           "name": "RSE team member",
           "inProject": {
+            "name": "PDE/PASE: Profile of a Doomed Elite: The Structure of English Landed Society in 1066/Prosopography of Anglo-Saxon England",
+            "slug": "pde/pase"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "Nanotoms and Open Scholarship Experiences",
+            "slug": "nanotoms-and-open-scholarship-experiences"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "CHARM: AHRC Research Centre for the History and Analysis of Recorded Music",
+            "slug": "charm"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "IOSPE: Ancient Inscriptions of the Northern Black Sea",
+            "slug": "iospe"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "KDL Archetype",
+            "slug": "kdl-archetype"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
             "name": "SHARC: Shakespeare Holdings in the Royal Collection",
             "slug": "sharc"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "FIELD: Farm-level Interdisciplinary Approaches to Endemic Livestock Disease",
+            "slug": "field"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "Digital Silk Road",
+            "slug": "digital-silk-road"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "Digital Cultures of #covid19: Digital Methods for Investigating Online Engagement with Coronavirus",
+            "slug": "digital-cultures-of-covid19"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "POMS: People of Medieval Scotland",
+            "slug": "poms"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "SHAK: Shakespeare400",
+            "slug": "shak"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "IPM: Mapping the Medieval Countryside: The Fifteenth-Century Inquisitions Post Mortem",
+            "slug": "ipm"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "MOI: A Publishing and Communication History of the Ministry of Information, 1939-45",
+            "slug": "moi"
           },
           "inOrganisation": null
         }
@@ -4705,8 +4705,8 @@
         {
           "name": "Researcher",
           "inProject": {
-            "name": "TVOF: The Values of French",
-            "slug": "tvof"
+            "name": "DRaL: Distant Reading across Languages",
+            "slug": "dral"
           },
           "inOrganisation": {
             "agent": {
@@ -4718,8 +4718,8 @@
         {
           "name": "Researcher",
           "inProject": {
-            "name": "DRaL: Distant Reading across Languages",
-            "slug": "dral"
+            "name": "TVOF: The Values of French",
+            "slug": "tvof"
           },
           "inOrganisation": {
             "agent": {
@@ -4749,6 +4749,22 @@
         {
           "name": "RSE team member",
           "inProject": {
+            "name": "CoSTAR: Convergent Screen Technologies And performance in Realtime ",
+            "slug": "costar"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "KDL Archetype",
+            "slug": "kdl-archetype"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
             "name": "IRCYR: Inscriptions of Roman Cyrenaica",
             "slug": "ircyr"
           },
@@ -4765,20 +4781,10 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "CoSTAR: Convergent Screen Technologies And performance in Realtime ",
-            "slug": "costar"
+            "name": "Medieval Francophone Literature Outside France",
+            "slug": "medieval-francophone-literature-outside-france"
           },
           "inOrganisation": null
-        },
-        {
-          "name": "KDLer",
-          "inProject": null,
-          "inOrganisation": {
-            "agent": {
-              "name": "DDH/KDL",
-              "slug": "ddh/kdl"
-            }
-          }
         },
         {
           "name": "RSE team member",
@@ -4799,24 +4805,8 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "FIELD: Farm-level Interdisciplinary Approaches to Endemic Livestock Disease",
-            "slug": "field"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "Medieval Francophone Literature Outside France",
-            "slug": "medieval-francophone-literature-outside-france"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "(Re) Mixing (de) Humanisation:  Virtual Reality Migration Stories for Hard to Reach Audiences with Museums of Migration  ",
-            "slug": "re-mixing-de-humanisation"
+            "name": "POMS: People of Medieval Scotland",
+            "slug": "poms"
           },
           "inOrganisation": null
         },
@@ -4831,16 +4821,16 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "Digital Silk Road",
-            "slug": "digital-silk-road"
+            "name": "(Re) Mixing (de) Humanisation:  Virtual Reality Migration Stories for Hard to Reach Audiences with Museums of Migration  ",
+            "slug": "re-mixing-de-humanisation"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "KDL Archetype",
-            "slug": "kdl-archetype"
+            "name": "FIELD: Farm-level Interdisciplinary Approaches to Endemic Livestock Disease",
+            "slug": "field"
           },
           "inOrganisation": null
         },
@@ -4855,8 +4845,8 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "POMS: People of Medieval Scotland",
-            "slug": "poms"
+            "name": "Digital Silk Road",
+            "slug": "digital-silk-road"
           },
           "inOrganisation": null
         }
@@ -4988,6 +4978,14 @@
         {
           "name": "RSE team member",
           "inProject": {
+            "name": "MOZARTMC: Mozart and Material Culture",
+            "slug": "mozartmc"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
             "name": "SHARC: Shakespeare Holdings in the Royal Collection",
             "slug": "sharc"
           },
@@ -4998,14 +4996,6 @@
           "inProject": {
             "name": "Mao Era in Objects",
             "slug": "mao-era-in-objects"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "MOZARTMC: Mozart and Material Culture",
-            "slug": "mozartmc"
           },
           "inOrganisation": null
         }
@@ -5040,32 +5030,16 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "KDL Archetype",
-            "slug": "kdl-archetype"
+            "name": "RENSKIN: Renaissance Skin - Visible Skin",
+            "slug": "renskin"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
-            "slug": "cotr"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "SHARC: Shakespeare Holdings in the Royal Collection",
-            "slug": "sharc"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "IBCC: Inventory of Byzantine Churches on Cyprus",
-            "slug": "ibcc"
+            "name": "IOSPE: Ancient Inscriptions of the Northern Black Sea",
+            "slug": "iospe"
           },
           "inOrganisation": null
         },
@@ -5080,16 +5054,16 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "RENSKIN: Renaissance Skin",
-            "slug": "renskin-2"
+            "name": "OWRI: Languages Acts and Worldmaking",
+            "slug": "owri"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "OWRI: Languages Acts and Worldmaking",
-            "slug": "owri"
+            "name": "SHARC: Shakespeare Holdings in the Royal Collection",
+            "slug": "sharc"
           },
           "inOrganisation": null
         },
@@ -5104,16 +5078,16 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "CYPRUS: Gazetteer of Cyprus Project",
-            "slug": "cyprus"
+            "name": "IBCC: Inventory of Byzantine Churches on Cyprus",
+            "slug": "ibcc"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "RENSKIN: Renaissance Skin - Visible Skin",
-            "slug": "renskin"
+            "name": "CYPRUS: Gazetteer of Cyprus Project",
+            "slug": "cyprus"
           },
           "inOrganisation": null
         },
@@ -5136,8 +5110,24 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "IOSPE: Ancient Inscriptions of the Northern Black Sea",
-            "slug": "iospe"
+            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
+            "slug": "cotr"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "KDL Archetype",
+            "slug": "kdl-archetype"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "RENSKIN: Renaissance Skin",
+            "slug": "renskin-2"
           },
           "inOrganisation": null
         }
@@ -5154,8 +5144,8 @@
         {
           "name": "Researcher",
           "inProject": {
-            "name": "IPM: Mapping the Medieval Countryside: The Fifteenth-Century Inquisitions Post Mortem",
-            "slug": "ipm"
+            "name": "OWRI: Languages Acts and Worldmaking",
+            "slug": "owri"
           },
           "inOrganisation": {
             "agent": {
@@ -5175,16 +5165,16 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "EPAPP: The Epidoc Aphrodisias Project",
-            "slug": "epapp"
+            "name": "CCED: Clergy of the Church of England Database Project",
+            "slug": "cced"
           },
           "inOrganisation": null
         },
         {
           "name": "Researcher",
           "inProject": {
-            "name": "OWRI: Languages Acts and Worldmaking",
-            "slug": "owri"
+            "name": "IPM: Mapping the Medieval Countryside: The Fifteenth-Century Inquisitions Post Mortem",
+            "slug": "ipm"
           },
           "inOrganisation": {
             "agent": {
@@ -5196,16 +5186,16 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "CHARM: AHRC Research Centre for the History and Analysis of Recorded Music",
-            "slug": "charm"
+            "name": "EPAPP: The Epidoc Aphrodisias Project",
+            "slug": "epapp"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "CCED: Clergy of the Church of England Database Project",
-            "slug": "cced"
+            "name": "CHARM: AHRC Research Centre for the History and Analysis of Recorded Music",
+            "slug": "charm"
           },
           "inOrganisation": null
         }
@@ -5219,6 +5209,38 @@
       "slug": "paul-vetch",
       "description": null,
       "memberOf": [
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "CCED: Clergy of the Church of England Database Project",
+            "slug": "cced"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "PBW: Prosopography of the Byzantine World",
+            "slug": "pbw"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "PDE/PASE: Profile of a Doomed Elite: The Structure of English Landed Society in 1066/Prosopography of Anglo-Saxon England",
+            "slug": "pde/pase"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "IOSPE: Ancient Inscriptions of the Northern Black Sea",
+            "slug": "iospe"
+          },
+          "inOrganisation": null
+        },
         {
           "name": "RSE team member",
           "inProject": {
@@ -5241,38 +5263,6 @@
           }
         },
         {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "EPAPP: The Epidoc Aphrodisias Project",
-            "slug": "epapp"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "IOSPE: Ancient Inscriptions of the Northern Black Sea",
-            "slug": "iospe"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "SCRAMBLED: Scrambled Messages: The Telegraphic Imaginary 1857-1900",
-            "slug": "scrambled"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "PDE/PASE: Profile of a Doomed Elite: The Structure of English Landed Society in 1066/Prosopography of Anglo-Saxon England",
-            "slug": "pde/pase"
-          },
-          "inOrganisation": null
-        },
-        {
           "name": "Researcher",
           "inProject": {
             "name": "MOI: A Publishing and Communication History of the Ministry of Information, 1939-45",
@@ -5288,16 +5278,16 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "PBW: Prosopography of the Byzantine World",
-            "slug": "pbw"
+            "name": "EPAPP: The Epidoc Aphrodisias Project",
+            "slug": "epapp"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "CCED: Clergy of the Church of England Database Project",
-            "slug": "cced"
+            "name": "SCRAMBLED: Scrambled Messages: The Telegraphic Imaginary 1857-1900",
+            "slug": "scrambled"
           },
           "inOrganisation": null
         }
@@ -5394,10 +5384,10 @@
       "description": null,
       "memberOf": [
         {
-          "name": "Principal investigator",
+          "name": "Researcher",
           "inProject": {
-            "name": "KDL Archetype",
-            "slug": "kdl-archetype"
+            "name": "Exon Domesday: The Conqueror's Commissioners: Unlocking the Domesday Survey of South-Western England",
+            "slug": "exon-domesday"
           },
           "inOrganisation": {
             "agent": {
@@ -5407,10 +5397,10 @@
           }
         },
         {
-          "name": "Researcher",
+          "name": "Principal investigator",
           "inProject": {
-            "name": "Exon Domesday: The Conqueror's Commissioners: Unlocking the Domesday Survey of South-Western England",
-            "slug": "exon-domesday"
+            "name": "KDL Archetype",
+            "slug": "kdl-archetype"
           },
           "inOrganisation": {
             "agent": {
@@ -6042,18 +6032,10 @@
       "description": null,
       "memberOf": [
         {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "SAW: Sharing Ancient Wisdoms",
-            "slug": "saw"
-          },
-          "inOrganisation": null
-        },
-        {
           "name": "Researcher",
           "inProject": {
-            "name": "CYPRUS: Gazetteer of Cyprus Project",
-            "slug": "cyprus"
+            "name": "HGL: Heritage Gazetteer for Libya",
+            "slug": "hgl"
           },
           "inOrganisation": {
             "agent": {
@@ -6076,10 +6058,18 @@
           }
         },
         {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "SAW: Sharing Ancient Wisdoms",
+            "slug": "saw"
+          },
+          "inOrganisation": null
+        },
+        {
           "name": "Researcher",
           "inProject": {
-            "name": "HGL: Heritage Gazetteer for Libya",
-            "slug": "hgl"
+            "name": "CYPRUS: Gazetteer of Cyprus Project",
+            "slug": "cyprus"
           },
           "inOrganisation": {
             "agent": {
@@ -6147,8 +6137,24 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "Radical Translations: The Transfer of Revolutionary Culture between Britain, France and Italy (1789-1815)  ",
-            "slug": "radical-translations"
+            "name": "SHARC: Shakespeare Holdings in the Royal Collection",
+            "slug": "sharc"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "RENSKIN: Renaissance Skin",
+            "slug": "renskin-2"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "GSSN: German Screen Studies Network",
+            "slug": "gssn"
           },
           "inOrganisation": null
         },
@@ -6163,32 +6169,8 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "SHARC: Shakespeare Holdings in the Royal Collection",
-            "slug": "sharc"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
             "name": "MOI: A Publishing and Communication History of the Ministry of Information, 1939-45",
             "slug": "moi"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "RENSKIN: Renaissance Skin - Visible Skin",
-            "slug": "renskin"
-          },
-          "inOrganisation": null
-        },
-        {
-          "name": "RSE team member",
-          "inProject": {
-            "name": "GSSN: German Screen Studies Network",
-            "slug": "gssn"
           },
           "inOrganisation": null
         },
@@ -6211,8 +6193,16 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "RENSKIN: Renaissance Skin",
-            "slug": "renskin-2"
+            "name": "Radical Translations: The Transfer of Revolutionary Culture between Britain, France and Italy (1789-1815)  ",
+            "slug": "radical-translations"
+          },
+          "inOrganisation": null
+        },
+        {
+          "name": "RSE team member",
+          "inProject": {
+            "name": "RENSKIN: Renaissance Skin - Visible Skin",
+            "slug": "renskin"
           },
           "inOrganisation": null
         }
@@ -6480,16 +6470,16 @@
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "HGL: Heritage Gazetteer for Libya",
-            "slug": "hgl"
+            "name": "IBCC: Inventory of Byzantine Churches on Cyprus",
+            "slug": "ibcc"
           },
           "inOrganisation": null
         },
         {
           "name": "RSE team member",
           "inProject": {
-            "name": "IBCC: Inventory of Byzantine Churches on Cyprus",
-            "slug": "ibcc"
+            "name": "HGL: Heritage Gazetteer for Libya",
+            "slug": "hgl"
           },
           "inOrganisation": null
         }

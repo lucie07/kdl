@@ -30,6 +30,14 @@ module.exports = (eleventyConfig) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
 
+  eleventyConfig.addFilter("asProjectDate", (dateObj) => {
+    if (!dateObj) {
+      return "";
+    }
+
+    return DateTime.fromISO(dateObj).get("year");
+  });
+
   eleventyConfig.addFilter("fundedProjects", (projects, funder) => {
     if (!projects || !funder) return null;
 

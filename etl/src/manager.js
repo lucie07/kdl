@@ -1,5 +1,6 @@
 const extractUrls = require("extract-urls");
 const { parse } = require("csv-parse");
+const { DateTime } = require("luxon");
 const slugify = require("slugify");
 const _ = require("lodash");
 const fs = require("fs");
@@ -77,6 +78,8 @@ class Manager {
           activecollabId: parseInt(project["Project ID"]),
           name: project.Title,
           alternateName: project.Acronym,
+          foundingDate: this.getDate(project["Project Start Date"]),
+          dissolutionDate: this.getDate(project["Project End Date"]),
           description: project["Project Description"],
           pi: this.parseList(project.PI).map((pi) => this.parseMember(pi)),
           researchers: this.parseList(project["Other Project Team"]).map((r) =>
@@ -89,6 +92,14 @@ class Manager {
 
       resolve(projects);
     });
+  }
+
+  getDate(string) {
+    if (!string || string.length === 0) {
+      return null;
+    }
+
+    return DateTime.fromFormat(string, "dd/mm/yyyy").toISODate();
   }
 
   parseList(string) {
@@ -551,6 +562,8 @@ class Manager {
       name: project.name,
       alternateName: project.alternateName,
       slug: project.slug,
+      foundingDate: project.foundingDate,
+      dissolutionDate: project.dissolutionDate,
       description: project.description,
       creativeWorkStatus: definedTerms[project.creativeWorkStatus]
         ? definedTerms[project.creativeWorkStatus].id
