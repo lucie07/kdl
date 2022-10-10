@@ -3,26 +3,26 @@
   <ol>
     <li>
       {%- if page.url != pagination.href.first -%}
-      <a href="{{ pagination.href.first }}">First</a>
+      <a href="{% route pagination.href.first %}">First</a>
       {%- else -%}First
       {%- endif -%}
     </li>
     <li>
       {%- if pagination.href.previous -%}
-      <a href="{{ pagination.href.previous }}">Previous</a>
+      <a href="{% route pagination.href.previous %}">Previous</a>
       {%- else -%}Previous
       {%- endif -%}
     </li>
     <li>Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</li>
     <li>
       {%- if pagination.href.next -%}
-      <a href="{{ pagination.href.next }}">Next</a>
+      <a href="{% route pagination.href.next %}">Next</a>
       {%- else -%}Next
       {%- endif -%}
     </li>
     <li>
       {%- if page.url != pagination.href.last -%}
-      <a href="{{ pagination.href.last }}">Last</a>
+      <a href="{% route pagination.href.last %}">Last</a>
       {%- else -%}Last
       {%- endif -%}
     </li>
