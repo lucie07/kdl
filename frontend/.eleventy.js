@@ -1,6 +1,9 @@
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
+const markdownItAnchor = require("markdown-it-anchor");
 const pluginSEO = require("eleventy-plugin-seo");
+const pluginTOC = require("eleventy-plugin-toc");
 const { Directus } = require("@directus/sdk");
+const markdownIt = require("markdown-it");
 const { DateTime } = require("luxon");
 const path = require("node:path");
 const sass = require("sass");
@@ -15,16 +18,13 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.setTemplateFormats(["html", "njk", "md"]);
   eleventyConfig.addPassthroughCopy({ public: "/" });
 
-  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(pluginEleventyNavigation);
   eleventyConfig.addPlugin(pluginSEO, require("./src/_data/seo.json"));
+  eleventyConfig.addPlugin(pluginTOC);
+
+  eleventyConfig.setLibrary("md", markdownIt().use(markdownItAnchor));
 
   eleventyConfig.addGlobalData("directus", getDirectus);
-
-  eleventyConfig.addShortcode("getAssetURL", (id) => {
-    if (!id) return null;
-
-    return `${process.env.DIRECTUS_URL}/assets/${id}`;
-  });
 
   eleventyConfig.addFilter("asPostDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
@@ -46,13 +46,28 @@ module.exports = (eleventyConfig) => {
     );
   });
 
+  eleventyConfig.addFilter("asToc", (content) => {
+    const tocFilter = eleventyConfig.getFilter("toc");
+
+    const toc = tocFilter(content);
+    if (toc) {
+      const items = toc.split("<li>");
+
+      if (items.length > 2) {
+        return toc;
+      }
+    }
+
+    return undefined;
+  });
+
   eleventyConfig.addShortcode("route", function (path, navigationKey = "") {
     const urlFilter = eleventyConfig.getFilter("url");
 
     let url = path;
 
     if (navigationKey) {
-      const graph = eleventyNavigationPlugin.navigation.getDependencyGraph(
+      const graph = pluginEleventyNavigation.navigation.getDependencyGraph(
         this.ctx.collections.all
       );
 

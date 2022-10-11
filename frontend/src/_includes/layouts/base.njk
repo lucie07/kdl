@@ -12,6 +12,7 @@
 
 <body>
   {% include "partials/menu.njk" %}
+
   <main>
     {% include "partials/header.njk" %}
     <label for="menu-switch" id="menu-toggle"></label>
@@ -22,6 +23,8 @@
 
     <section>
       {% include "partials/header-section.njk" %}
+      {% include "partials/toc.njk" %}
+
       {{ content | safe }}
     </section>
   </main>

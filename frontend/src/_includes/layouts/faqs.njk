@@ -4,18 +4,12 @@ layout: layouts/base.njk
 
 {{ content | safe }}
 
-<ul>
-  {% for group in faqs|sort(false, false, "data.order") %}
-  <li>
-    <h3>{{ group.data.title }}</h3>
-    {% set tag = group.data.slug %}
-    <ul>
-      {% for faq in collections[tag] %}
-      <li>
-        <a href="{% route faq.url %}">{{ faq.data.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </li>
-  {% endfor %}
+{% for group in faqs|sort(false, false, "data.order") %}
+<h2 id="{{ group.data.slug }}">{{ group.data.title }}</h2>
+{% set tag = group.data.slug %}
+{% for faq in collections[tag] %}
+<h3 id="{{ faq.data.title | slugify }}">{{ faq.data.title }}</h3>
+{{ faq.data.content | safe }}
+{% endfor %}
+{% endfor %}
 </ul>
