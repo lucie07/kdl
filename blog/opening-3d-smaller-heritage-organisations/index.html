@@ -46,6 +46,7 @@
     <ol class="level1-list"><li><a href="/kdl/resources/overview/">Overview</a></li><li><a href="/kdl/resources/faqs/">FAQs</a></li></ol></li></ul>
 </nav>
 
+
   <main>
     <header>
   <div id="sitename">King's Digital Lab</div>
@@ -74,6 +75,13 @@
   
 </header>
 
+      <aside>
+  <h2>Table of contents</h2>
+  <nav class="toc" >
+        <ol><li><a href="#planning-for-maximum-reuse">Planning for Maximum Reuse</a></li><li><a href="#digitisation">Digitisation</a></li><li><a href="#designing-the-experience">Designing the Experience</a></li><li><a href="#afterword">Afterword</a></li></ol>
+      </nav>
+</aside>
+
       
 <article>
   <header class="post-meta">
@@ -100,10 +108,10 @@
 <p>It’s clear that emerging media forms such as VR and AR storytelling are opening up exciting opportunities for sharing of heritage. Audience appetites are evolving and their expectations of production values are high. However, while large museums and national heritage institutions are able to invest in experimentation with these new media forms, there are many smaller organisations for which digital collections and digital exhibitions are perceived as a low priority use of their scarce resources.</p>
 <p>One such institution is the <a href="https://www.migrationmuseum.org/exhibition/room-to-breathe/">Migration Museum</a> in London. The temporary exhibition <a href="https://www.migrationmuseum.org/exhibition/room-to-breathe/">Room to Breathe</a>, is a thoughtfully curated, physically immersive experience, which tells the stories of many migrants coming to the UK and aims to disrupt populist rhetoric around what it means to be British. The content was co-created by working with communities who have contributed many items and memories to the exhibition. Although the exhibition is free-roaming, visitors are subtly guided through a series of environments; an Arrivals space, a generic Bedsit, a busy Kitchen, a School Classroom and even a Barber’s shop. Hidden throughout in plain sight are stories, attached to objects which tell us about the experiences of settling in a new place.</p>
 <p>The exhibition has welcomed numerous visitors, many of them schoolchildren, and has received very positive feedback. It seems a shame that such an impactive exhibition must eventually be dismantled, packed away, and remembered only by a few fortunate visitors. What if it were possible instead, to bring the experience to new audiences, some perhaps reluctant to engage with the material, or too far away, and or less mobile?</p>
-<h2>Planning for Maximum Reuse</h2>
+<h2 id="planning-for-maximum-reuse" tabindex="-1">Planning for Maximum Reuse</h2>
 <p>We aim to demonstrate that even with a modest budget and a bit of imagination, the essence of an exhibition can be preserved and disseminated. We also want to develop a methodology that looks forward, over the technological horizon, so that as access to technology becomes more affordable, smaller institutions will be well poised to take advantage of it.</p>
 <p>We began work in June 2019 with a workshop that brought together expert voices from museology, media production (<a href="http://www.themill.com/">The Mill</a>), academia, and community stakeholders. It was important as a day of fact-finding and for refining the scope for the project. Everyone was invited to talk about what they thought was striking about the exhibition and what it meant to them. For those that were less familiar with immersive technologies, we demonstrated some immersive experiences and talked about the very different sorts of outputs that could be thought of as immersive in some way. There were breakout groups to generate ideas about the elements we might include in any digital recreation, and how they might work together as a whole.</p>
-<h2>Digitisation</h2>
+<h2 id="digitisation" tabindex="-1">Digitisation</h2>
 <p>In whatever ways we eventually decided to remix the elements of Room to Breathe, we would need to efficiently digitally capture it.</p>
 <p>Our capture process started very methodically, by making lists. Even in a small exhibition the amount of potential content soon becomes overwhelming. We needed to decide what is content, what is environment, and what it is we are trying to achieve. Initially adopting an archival approach, we performed an Analytical Inventory of the collections. For this inventory the items were described in terms of their overall role in the exhibition, and from these assessments a capture strategy would be assigned. For instance, No Capture Needed, or Low Priority, or Important Environmental Items, or Research Grade Items. (This last term, Research Grade, would be more suited to museums that house artifacts that invite detailed examination and comparison with other items in other collections, i.e., they should be digitised in great detail with good quality metadata).</p>
 <p>This initial scoping of the collection helped to whittle down our ideas and allowed us to focus our efforts on what was practically achievable in our project timeframe. We devised protocols for digitising the different items but ultimately chose to concentrate on one or two settings so that we might develop the most mature prototypes for testing in the time available.</p>
@@ -118,13 +126,13 @@
 <p>Ultimately, through mixing photo textures with simple modeling in <a href="https://www.blender.org/">Blender</a>, we created a version of the classroom space that is largely realistic in its interpretation and faithful to the original space. It serves dual purposes as an archival approach and as a model that is well optimised to be used in a game engine:</p>
 <p><a href="https://sketchfab.com/3d-models/rtbclassroomv2-88e38a07cbd34d3a810041ad5a9fc3af?utm_medium=embed&amp;utm_source=website&amp;utm_campaign=share-popup">RTBClassroomV2</a> by <a href="https://sketchfab.com/kingsdigitallab?utm_medium=embed&amp;utm_source=website&amp;utm_campaign=share-popup">King's Digital Lab</a> on <a href="https://sketchfab.com?utm_medium=embed&amp;utm_source=website&amp;utm_campaign=share-popup">Sketchfab</a></p>
 <p><a href="https://sketchfab.com/3d-models/room-to-breathe-bedroom-b2c8f22434c54f57bdbfb46a860fb1e7?utm_medium=embed&amp;utm_source=website&amp;utm_campaign=share-popup">Room to Breathe Bedroom</a> by <a href="https://sketchfab.com/kingsdigitallab?utm_medium=embed&amp;utm_source=website&amp;utm_campaign=share-popup">King's Digital Lab</a> on <a href="https://sketchfab.com?utm_medium=embed&amp;utm_source=website&amp;utm_campaign=share-popup">Sketchfab</a></p>
-<h2>Designing the Experience</h2>
+<h2 id="designing-the-experience" tabindex="-1">Designing the Experience</h2>
 <p>We chose to focus on a school audience for a prototype learning experience. VR is generally a solo experience and we wanted school kids to be able to share an experience and for that experience to be a catalyst for conversation and debate. For this reason, we settled on remixing our assets into an AR experience.</p>
 <p>In keeping with the project ethos of using simple and functional tools, we discovered that <a href="https://www.torch.app/">TorchAR</a> offered a great way to compose an AR experience using an intuitive drag-n-drop interface on recent iOS devices. Of course not everyone will have access to these devices, but we felt that this restriction on platform was a reasonable compromise. Sketchfab proved invaluable for sharing works in progress and as a means of getting content into our AR application as TorchAR can download directly from Sketchfab.</p>
 <p>In our prototype we have a very specific experience in mind for schoolchildren. In groups of two, they will share an iPad, using it as a <em>window-on-the-world</em> to move around the virtual exhibition. Much like in the physical space, stories can be accessed through touch or proximity and might be read or listened to, or both. The experience should be considered as a supplement to a taught class. It is designed to stimulate classroom conversations and inspire new reflective work. Anyone is able to view the work so far if they have a recent iOS device by following the <a href="https://home.torch.app/projects/view/RnQBRYFU1B4N6YglgZ79">link</a>.</p>
 <p>Basic user testing has taken place and we now understand that we need a reasonable amount of space (say a school dinner hall), and a static environment to get the best out of the experience. Users often need encouragement or guidance to understand that they can move around the virtual space and might need to bend down, or look up to interact with different elements.</p>
 <p>In the most recent version of the AR experience, there are three separate spaces to explore. We didn’t have the time to stress-test the software and so we only show one space at a time, with movement between the spaces being triggered by touch interactions. Of course, there is some artistic license at work in how the spaces have been interpreted but we feel we kept the <em>spirit</em> of the exhibition intact. (We encourage you to have a go, touch everything, move around, and remember to bend your knees! Do let us know if you get stuck in any dead-ends)</p>
-<h2>Afterword</h2>
+<h2 id="afterword" tabindex="-1">Afterword</h2>
 <p>The project began with the conviction that any organisation, using the right approach, can make use of immersive technology to widen their audience. In reality, the workflow is often complex and requires multiple iterations, but small projects like this one have enabled us to partially refine a workflow that should be accessible to all. Tools like Sketchfab and TorchAR are invaluable assets for authoring and collaborating in this work. In due course, King’s Digital Lab plans to publish guidelines that will accompany our Software Development Life Cycle for Humanities Research. Please do follow us on Twitter to stay up to date with this and other projects!</p>
 
 </article>
