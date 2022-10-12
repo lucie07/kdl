@@ -23,6 +23,8 @@ RUN apt-get update && apt-get install -y \
 
 USER node
 
+RUN echo "update-notifier=false" >> ~/.npmrc
+
 WORKDIR /srv/app
 
 COPY --from=build --chown=node:node /srv/build /srv/app
