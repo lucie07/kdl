@@ -4,8 +4,6 @@ services:
   cms:
     build:
       dockerfile: docker/local/cms/Dockerfile
-    ports:
-      - 8055:8055
     volumes:
       - ./cms:/srv/app
       - /srv/app/node_modules
