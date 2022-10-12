@@ -10,5 +10,5 @@ DIRECTUS_ACCESS_TOKEN=""
 ## ActiveCollab
 
 # TODO: Add ActiveCollab API URL and token
-AC_API_URL = ""
-AC_API_TOKEN = ""
+AC_API_URL=""
+AC_API_TOKEN=""
