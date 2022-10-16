@@ -1,22 +1,11 @@
+{% from "macros/nav-list-item.njk" import renderNavListItem %}
+
 <input id="menu-switch" type="checkbox" checked="">
 <nav id="menu">
-  {% set navPages = collections.all | eleventyNavigation %}
-
-  {% macro renderNavListItem(entry) -%}
-  <li{% if entry.url==page.url %} class="active" {% endif %}>
-    {%- if entry.children.length -%}
-    <input id="{{ entry.key }}" type="checkbox" hidden="">
-    <label for="{{ entry.key }}" class="check">{{ entry.title }}</label>
-    <ol class="level1-list">
-      {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
-    </ol>
-    {%- else -%}
-    <a href="{% route entry.url %}">{{ entry.title }}</a>
-    {%- endif -%}
-  </li>
-  {%- endmacro %}
-
   <ul>
-    {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
+    {%- set navPages = collections.all | eleventyNavigation %}
+    {%- for entry in navPages -%}
+    {{ renderNavListItem(entry) }}
+    {%- endfor %}
   </ul>
 </nav>
