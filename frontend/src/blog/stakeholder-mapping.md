@@ -12,7 +12,7 @@ excerpt: We recently embarked with partners on an AHRC funded scoping exercise,
   to define the specifications of a Complex 3D Data Repository for the Arts and
   Humanities.
 feature:
-  image: /images/blog_banner_aX9rBsr.original.jpg
+  image: images/blog_banner_aX9rBsr.original.jpg
   description: MarconiTapper
 ---
 
@@ -122,7 +122,7 @@ _User Interactions and Experience should enhance and encourage best practice, an
 
 Based on the number of mentions and co-occurence of these interest areas between stakeholders we attempted to visualise their relative importance and gain a clear sense of the areas that intersect:
 
-![VennDiagram](/images/venn_fig_1_report.width-1024.jpg)
+![VennDiagram](images/venn_fig_1_report.width-1024.jpg)
 
 Fig. 1. Venn diagram of intersecting needs and proportional importance
 
@@ -167,7 +167,7 @@ The conceptual journey described above is a useful tool as it asks us to restate
 
 Having so much collected experience together in one workshop, we also took the opportunity to ask delegates to think about what was likely to change over the next 5 to 10 years in this domain. As an "end-of-a-long-day" activity this was intended as a fun exercise in futurology and playful speculation, but it was also possible to pick out valuable narratives that we needed to consider when compiling our roadmap for a sustainable resource that would continue to meet changing needs.
 
-![timeline v5](/images/timeline_v5.width-1024.png)
+![timeline v5](images/timeline_v5.width-1024.png)
 
 Fig. 2. How will 3D data change over the next decade?
 
@@ -197,4 +197,4 @@ Workshop link: [Multi-Dimensional Visual Datasets in the Arts and Humanities - 
 
 ## Project Consortium and Funder
 
-[![Project Consortium](/images/ConsortiumLogos.width-300.png)](https://blogs.brighton.ac.uk/3ddataservice/team/)
+[![Project Consortium](images/ConsortiumLogos.width-300.png)](https://blogs.brighton.ac.uk/3ddataservice/team/)

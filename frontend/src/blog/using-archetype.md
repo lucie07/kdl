@@ -8,7 +8,7 @@ authors:
 date: 2018-06-15
 excerpt: This is a guest post by Valentina Gettatelli
 feature:
-  image: /images/annotation.original.png
+  image: images/annotation.original.png
   description: VG_annotation
 ---
 
@@ -26,7 +26,7 @@ Also, confronting ideas against the limits and capabilities of a digital archite
 
 I was supposed to develop a small proof-of-concept of the framework within the paleographical domain using materials of my choice. When starting my small proof-of-concept, I didn't have any clear idea on how to choose some manuscripts rather than others. I thus decided to focus on some of the witnesses of the old French lyrics tradition. Choosing a sample corpus based on language and content it is not a paleographical criteria but it led to the collection of a fairly uniform set of documents from a palaeographical point of view.
 
-![vg_homepage](/images/homepage.width-1024.png)
+![vg_homepage](images/homepage.width-1024.png)
 
 Homepage of my Proof of Concept
 
@@ -42,11 +42,11 @@ This tension, necessitates a compromise between the description of the concrete 
 
 I therefore experienced how using the framework fosters a fruitful observation of the script under enquiry and, most of all, leads the to question “which are the meaningful aspect to highlight?”, and to decide which characteristics, why they must be recorded and to what extent.
 
-![VG_annotation](/images/annotation.width-1024.png)
+![VG_annotation](images/annotation.width-1024.png)
 
 Example of an annotated page with graph description (Bibliothèque Nationale de France, Arsenal 5198)
 
-![VG_graphs](/images/graphs.width-1024.png)
+![VG_graphs](images/graphs.width-1024.png)
 
 Annotated graphs - overview
 

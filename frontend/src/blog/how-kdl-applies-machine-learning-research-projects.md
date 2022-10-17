@@ -17,7 +17,7 @@ excerpt: As our new director, Arianna, mentioned in her recent blog post,
   moves quickly, it continuously brings new methodological opportunities to many
   scientific fields including the Humanities.
 feature:
-  image: /images/sunset-boulevard-in-512-0.01.original.png
+  image: images/sunset-boulevard-in-512-0.01.original.png
   description: Image rendered by VQGAN-CLIP
 ---
 
@@ -31,7 +31,7 @@ Illustrated below are different facets of AI applied to a variety of projects I 
 
 ### [Early English Laws](https://earlyenglishlaws.ac.uk/laws/texts/iii-cn/relationships/) (2009-2011, AHRC, PI: Jane Winters)
 
-![](https://kdl.kcl.ac.uk/images/out-001.width-500.jpg) ![](https://raw.githubusercontent.com/kingsdigitallab/eel/main/doc/evolution.gif)
+![](https://kdl.kcl.ac.ukimages/out-001.width-500.jpg) ![](https://raw.githubusercontent.com/kingsdigitallab/eel/main/doc/evolution.gif)
 
 Context: Our research partners requested a web visualisation of the dependency graph among early English legal texts (10th to 13th century) where a node represents a text and an edge indicates textual borrowing. Each law code has its own graph centred around it (Cnut’s Winchester code or I–II Cn, in the screenshots above). When a graph gets more crowded, arranging the nodes into an elegant and readable layout is tricky. At the time I didn’t manage to design (or find) a good layout algorithm for our specific needs.
 
@@ -39,7 +39,7 @@ Use case: I decided to define what makes a good layout (e.g., vertically compact
 
 ### [Exon Domesday](https://www.exondomesday.ac.uk/lab/hundreds/) (2014-2017, AHRC, PI: Julia Crick)
 
-![Patterns of hundredal orders in Exon Domesday book](/images/out-002.width-1024.png)
+![Patterns of hundredal orders in Exon Domesday book](images/out-002.width-1024.png)
 
 [Hundredal Order page](https://www.exondomesday.ac.uk/lab/hundreds/) on the Exon Domesday project website ([introduction by P. Stokes](https://www.exondomesday.ac.uk/labs/hundredal-order/)).
 
@@ -49,7 +49,7 @@ Use case: I adapted the [metaheuristic](http://scholarpedia.org/article/Metaheur
 
 ### [The Community of the realm in Scotland](https://cotr.ac.uk/lab/regions?parent=custom&diff=region-vecs-ft-30.json&texts=7,20,36,23,12,17) (2017-2021, AHRC, PI: Alice Taylor)
 
-![Collation table with colour-coded textual distance](/images/out-003.width-1024.png)
+![Collation table with colour-coded textual distance](images/out-003.width-1024.png)
 
 [Collation table with colour-coded textual distances](https://cotr.ac.uk/lab/regions?parent=custom&diff=region-vecs-ft-30.json&texts=7,20,36,23,12,17). (See also the [Help page](https://cotr.ac.uk/lab/regions/?parent=custom&panel=help&diff=region-vecs-ft-30.json&texts=7,20,36,23,12,17)).
 
@@ -65,7 +65,7 @@ Use case: text classification is a very well-studied type of ML tasks with many 
 
 ### Word alignment across translations (2022, pre-grant analysis, PI: Gabriele Salciute Civiliene)
 
-![Semi-automated word alignment interface](/images/out-004.width-1024.png)
+![Semi-automated word alignment interface](images/out-004.width-1024.png)
 
 Proof of concept of a semi-automated word alignment interface, inspired by the concepts developed by Gabriele Salciute Civiliene
 
@@ -73,7 +73,7 @@ In this pre-project (the pre-grant analysis that feeds into an application) phas
 
 This is only a sample of use cases. In other projects in the Lab we are also applying topic modelling, text summarization, hierarchical clustering and neural search to help other partners discover major trends among their projects datasets. For example, my colleague Miguel Vieira has also recently fine-tuned generative language models to produce fictional narratives about the provenance of real heritage material.
 
-![Character reconstruction](/images/out-005.width-1024.jpg)
+![Character reconstruction](images/out-005.width-1024.jpg)
 
 Attempt at using convolutional networks to reconstruct OCRed text.
 

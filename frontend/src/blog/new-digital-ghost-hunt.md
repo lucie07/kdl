@@ -8,7 +8,7 @@ authors:
 date: 2019-02-13
 excerpt: After a successful scratch performance, the project begins a new life
 feature:
-  image: /images/BAC-24-web.original.jpg
+  image: images/BAC-24-web.original.jpg
   description: BAC Michael
 ---
 
@@ -26,10 +26,10 @@ Here is Primary Investigator Mary Krell and and Elliott Hall speaking about the 
 
 .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-![Louisa](/images/BAC-Kit_Theatre-32-web.width-300.jpg)
+![Louisa](images/BAC-Kit_Theatre-32-web.width-300.jpg)
 
-![BAC](/images/BAC-Kit_Theatre-4-web.width-300.jpg)
+![BAC](images/BAC-Kit_Theatre-4-web.width-300.jpg)
 
-![Hemi siren](/images/BAC-Kit_Theatre-53-web.width-300.jpg)
+![Hemi siren](images/BAC-Kit_Theatre-53-web.width-300.jpg)
 
-![Louisa 2](/images/BAC-Kit_Theatre-11-web.width-300.jpg)
+![Louisa 2](images/BAC-Kit_Theatre-11-web.width-300.jpg)

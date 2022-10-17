@@ -16,9 +16,9 @@ feature:
 
 [Stanford University Press](http://sup.org/) and [King's Digital Lab](https://www.kdl.kcl.ac.uk/) are pleased to announce our selection of the most compelling ideas that were submitted in this round of the call for expressions of interest.
 
-[![Links to King's Digital Lab](/images/kdl-heading.original.png)](//kdl.kcl.ac.uk/)
+[![Links to King's Digital Lab](images/kdl-heading.original.png)](//kdl.kcl.ac.uk/)
 
-[![Links to SUP Digital logo](/images/DigitalBlogHeaderRedBlackTxp.original.png)](http://sup.org/)
+[![Links to SUP Digital logo](images/DigitalBlogHeaderRedBlackTxp.original.png)](http://sup.org/)
 
 This initiative emerged from a conversation at the Digital Humanities conference 2017, held in Montreal, between Friederike Sundaram (SUP) and James Smithies (KDL) which evolved into a [call](https://www.kdl.kcl.ac.uk/blog/call-expressions-interest-your-novel-idea-publication/) opened last November with a deadline of the 8th of January 2018.
 

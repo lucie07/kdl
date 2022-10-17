@@ -8,7 +8,7 @@ authors:
 date: 2019-08-07
 excerpt: ""
 feature:
-  image: /images/REF_blog_Damien_Tupinier_Unsplash.original.jpg
+  image: images/REF_blog_Damien_Tupinier_Unsplash.original.jpg
   description: Adapted from photo by Damien TUPINIER on Unsplash
 ---
 

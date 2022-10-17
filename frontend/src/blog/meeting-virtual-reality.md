@@ -15,7 +15,7 @@ excerpt: |-
   finding themselves suddenly ushered to the front of the class as we ask 
   what might change in the workplace post COVID-19.
 feature:
-  image: /images/banner_vr.original.jpg
+  image: images/banner_vr.original.jpg
   description: banner_vr
 ---
 
@@ -35,19 +35,19 @@ Much like a real-space event, I experienced the visceral anticipation of meeting
 
 Once in the Engage VR environment I am equipped (virtually) with a better tablet than I actually own in the real world on which I can make notes, look at presentation slides close-up and best of all, take ill-judged selfies:
 
-![quest_vr](/images/Quest.width-1024.jpg)
+![quest_vr](images/Quest.width-1024.jpg)
 
 The Enage VR conference space using the Oculus Quest
 
 The conference’s chosen environment was pleasing enough; an open-air amphitheatre under a blue sky, by the sea, but the trouble I’d taken over my virtual appearance seemed poorly spent as I looked around at my co-attendees. I realised that as I’d joined the event using the Oculus Quest version of the Engage app, I was provided with a slightly less rich version of the environment; participants were represented by only torsos and hands and the photorealistic avatars were absent. This wasn’t necessarily an issue but once I realised, I opted instead to dive headlong into the [uncanny valley](https://en.wikipedia.org/wiki/Uncanny_valley) and I re-joined the event using the SteamVR implementation which provides a much more detailed rendering:
 
-![rift_vr](/images/Rift.width-1024.jpg)
+![rift_vr](images/Rift.width-1024.jpg)
 
 Engage VR using SteamVR
 
 An initial problem, (with the medium rather than the platform) is that the novelty of the environment overshadowed the event itself. I found I was preoccupied looking around at other participants, trying to recognise names and observing their behaviour. Many of the attendees had adopted bizarre and athletically challenging postures. It took me a few moments to realise why: if you put down your VR hand controls your virtual hands might suddenly manifest by your feet. If you take off your headset to rub your eyes or visit the loo, your avatar might be left in the virtual world with your neck angled up at the sky as if expecting an alien invasion. If you have been automatically ‘seated and muted’ by the event administrator in VR and then actually sit down in the physical world, you may find that your virtual head is resting disembodied on your virtual chair. I ended up taking a lot of photos of these odd VR yoga poses:
 
-![vr_yoga](/images/VR_yoga.width-1024.jpg)
+![vr_yoga](images/VR_yoga.width-1024.jpg)
 
 VR Yoga. Be careful how you leave your headset and where you put your controllers!
 
@@ -69,6 +69,6 @@ This was a toe dipped into a new world for me. There are other VR meeting platfo
 
 I could ramble on as there is a lot to think about, but instead I’ll leave you with a group selfie complete with photobombing by the Vive and Engage team!
 
-![grpoup selfie](/images/group_selfie.width-1024.jpg)
+![grpoup selfie](images/group_selfie.width-1024.jpg)
 
 Group selfie with my new VR pals

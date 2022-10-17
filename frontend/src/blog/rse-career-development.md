@@ -8,7 +8,7 @@ authors:
 date: 2019-02-07
 excerpt: ""
 feature:
-  image: /images/cr-benjamin-davies-260884-unsplash_J22jBOc.original.jpg
+  image: images/cr-benjamin-davies-260884-unsplash_J22jBOc.original.jpg
   description: Photo by Benjamin Davies on Unsplash
 ---
 
@@ -22,7 +22,7 @@ The document was used to define a baseline for KDL RSE roles, resulting in a gre
 
 This has solidified our sense that although the KDL team are by no means a simple service unit, most of the team aren’t primarily motivated to produce research outputs, either. We do act as Principal Investigator or Co-Investigator on grants, but it isn’t feasible to do that for the ~35 grant submissions we’re involved in each year. We position ourselves differently (as research enablers and co-conspirators) on 70% of our work. The Lab sits in a boundary area of what we might term the ‘RSE career continuum’ between the research-intensive activity of full time academics and post-docs, and technical roles supporting High Performance Computing and other resources.
 
-![RSE Careers](/images/rse-careers.width-1024.png)
+![RSE Careers](images/rse-careers.width-1024.png)
 
 Promotions processes aligned to the RSE continuum
 

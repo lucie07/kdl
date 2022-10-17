@@ -14,7 +14,7 @@ excerpt: I’ll be leaving King’s Digital Lab (KDL) this month, after 6 wonder
   I’m grateful to the many people who have supported me to this point, in New
   Zealand, Australia, Jordan, and the United States, as well as the UK.
 feature:
-  image: /images/torsten-dederichs-t5IN6vx0cLs-unsplash_830h.original.jpg
+  image: images/torsten-dederichs-t5IN6vx0cLs-unsplash_830h.original.jpg
   description: torsten-dederichs-t5IN6vx0cLs-unsplash_830h.jpg
 ---
 

@@ -13,7 +13,7 @@ date: 2018-01-17
 excerpt: KDL help the British Museum to ensure that the natural custodians of
   cultural heritage have equal access to scholarship
 feature:
-  image: /images/ara.original.jpg
+  image: images/ara.original.jpg
   description: ARA 2
 ---
 

@@ -113,7 +113,7 @@ class Scraper {
     Promise.resolve(fs.mkdir(outputPath, { recursive: true })).then(() =>
       fs.writeFile(
         `${outputPath}/${name}.md`,
-        content.join("\n").replaceAll("/static/media", "")
+        content.join("\n").replaceAll("/static/media/", "")
       )
     );
   }

@@ -8,7 +8,7 @@ authors:
 date: 2019-10-30
 excerpt: ""
 feature:
-  image: /images/Viz_UTGKaWw.original.jpg
+  image: images/Viz_UTGKaWw.original.jpg
   description: Example visualisation
 ---
 

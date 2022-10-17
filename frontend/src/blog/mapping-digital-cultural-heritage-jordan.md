@@ -8,7 +8,7 @@ authors:
 date: 2019-04-03
 excerpt: ""
 feature:
-  image: /images/banner_jordan.original.jpg
+  image: images/banner_jordan.original.jpg
   description: jordan_banner
 ---
 

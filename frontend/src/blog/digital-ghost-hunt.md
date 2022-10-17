@@ -8,7 +8,7 @@ authors:
 date: 2018-02-05
 excerpt: An AHRC-funded project fusing coding education and immersive theatre
 feature:
-  image: /images/KIT_scientist.original.jpg
+  image: images/KIT_scientist.original.jpg
   description: KIT taken by Natalie Raaum
 ---
 

@@ -26,7 +26,7 @@ The natural concerns that surface as we digest the possibilities here are releva
 
 Nichols co-founded the Digital Human League, which currently has a project to create a reusable set of standards for the high quality rendering of digital people in an open source approach. You can download Digital Emily from their [WikiHuman](http://gl.ict.usc.edu/Research/DigitalEmily2/) project. Physically Based Rendering (PBR), when properly applied, gives some incredible results. The team behind Digital Emily have created a set of guidelines for creating skin textures with blends of diffuse and light, and used displacement and bump maps to add detail and complexity without an overly complex mesh. The technical approaches to rendering aren’t in themselves anything new but the standardisation of approaches to capturing and processing to avoid duplication of efforts are incredibly valuable. They are setting  new benchmarks in quality and providing a roadmap for life-like human rendering. I can see myself creating a digital me one day, when costs, time and technology allow.
 
-![Digital Emily](/images/digi_emily.width-1024.jpg)
+![Digital Emily](images/digi_emily.width-1024.jpg)
 
 Digital Emily - created by the WikiHuman project
 

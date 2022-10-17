@@ -11,7 +11,7 @@ excerpt: After almost exactly five years since I joined King’s Digital Lab (KD
   next four years, following the departure of KDL first director, James
   Smithies.
 feature:
-  image: /images/chris-lawton-vBA-JNHAraI-unsplash.original.jpg
+  image: images/chris-lawton-vBA-JNHAraI-unsplash.original.jpg
   description: Bunting flags
 ---
 
