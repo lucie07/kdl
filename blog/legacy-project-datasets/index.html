@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <base href="/kdl/" />
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Exposing legacy project datasets in Digital Humanities - King&apos;s Digital Lab</title>
@@ -17,14 +19,14 @@
 
 <meta property="og:url" content="https://kdl.kcl.ac.uk/blog/legacy-project-datasets/">
 <meta property="og:description" content="How to address pragmatically the substantial challenge of curating and archiving a rich estate of over 100 legacy projects without funding? Deep breath&hellip;">
-<meta property="og:image" content="/images/exposing-legacy-datasets.original.jpg">
+<meta property="og:image" content="images/exposing-legacy-datasets.original.jpg">
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@kingsdigitallab">
 <meta name="twitter:url" content="https://kdl.kcl.ac.uk/blog/legacy-project-datasets/">
 <meta name="twitter:title" content="Exposing legacy project datasets in Digital Humanities - King&apos;s Digital Lab">
 <meta name="twitter:description" content="How to address pragmatically the substantial challenge of curating and archiving a rich estate of over 100 legacy projects without funding? Deep breath&hellip;">
-<meta name="twitter:image" content="/images/exposing-legacy-datasets.original.jpg">
+<meta name="twitter:image" content="images/exposing-legacy-datasets.original.jpg">
 
 
 
@@ -33,17 +35,51 @@
 </head>
 
 <body>
-  <input id="menu-switch" type="checkbox" checked="">
+  
+
+<input id="menu-switch" type="checkbox" checked="">
 <nav id="menu">
-  
-
-  
-
-  <ul><li><a href="/kdl/">Home</a></li><li><a href="/kdl/projects/">Projects</a></li><li><a href="/kdl/blog/">Blog</a></li><li><a href="/kdl/contact us/">Contact us</a></li><li><input id="About" type="checkbox" hidden="">
-    <label for="About" class="check">About</label>
-    <ol class="level1-list"><li><a href="/kdl/about/overview/">Overview</a></li><li><a href="/kdl/about/people/">People</a></li><li><a href="/kdl/about/organisations/">Organisations</a></li></ol></li><li><input id="Resources" type="checkbox" hidden="">
-    <label for="Resources" class="check">Resources</label>
-    <ol class="level1-list"><li><a href="/kdl/resources/overview/">Overview</a></li><li><a href="/kdl/resources/faqs/">FAQs</a></li></ol></li></ul>
+  <ul>
+<li>
+  <a href="/kdl/">Home</a>
+</li>
+<li>
+  <a href="/kdl/projects/">Projects</a>
+</li>
+<li>
+  <a href="/kdl/blog/">Blog</a>
+</li>
+<li>
+  <a href="/kdl/contact us/">Contact us</a>
+</li>
+<li>
+  <input id="About" type="checkbox" hidden="">
+  <label for="About" class="check">About</label>
+  <ol class="level1-list">
+<li>
+  <a href="/kdl/about/overview/">Overview</a>
+</li>
+<li>
+  <a href="/kdl/about/people/">People</a>
+</li>
+<li>
+  <a href="/kdl/about/organisations/">Organisations</a>
+</li>
+  </ol>
+</li>
+<li>
+  <input id="Resources" type="checkbox" hidden="">
+  <label for="Resources" class="check">Resources</label>
+  <ol class="level1-list">
+<li>
+  <a href="/kdl/resources/overview/">Overview</a>
+</li>
+<li>
+  <a href="/kdl/resources/faqs/">FAQs</a>
+</li>
+  </ol>
+</li>
+  </ul>
 </nav>
 
 
@@ -92,7 +128,7 @@
   
   <div id="images">
     <figure>
-      <img src="/kdl/images/exposing-legacy-datasets.original.jpg" alt="exposing-datasets">
+      <img src="images/exposing-legacy-datasets.original.jpg" alt="exposing-datasets">
       <figcaption>exposing-datasets</figcaption>
     </figure>
   </div>
@@ -104,9 +140,9 @@
 <p>First things first, a step back to what KDL is about and what the data we inherited and produced entail. KDL builds on a recent yet relatively long history - for the field of Digital Humanities - of creating tools and web resources in collaboration with researchers in the arts and humanities as well as the cultural heritage sector. While KDL started operation as a team of Research Software Engineers within the Faculty of the Arts and Humanities at King’s College London (UK) in 2015, some of the projects we inherited were developed 5, 10 or even 20 years before the Lab’s existence. Out of the ca. 100 legacy projects, some started in the late 1990s or early 2000s out of many collaborative projects led or co-led by the <a href="https://www.kcl.ac.uk/ddh">Department of Digital Humanities</a> (DDH). The tools and resources KDL inherited span a wide spectrum from text analysis and annotation tools, digital corpora of texts, images and musical scores to digital editions, historical databases and layered maps.</p>
 <p>The resources you will find in the <a href="http://data.kdl.kcl.ac.uk">KDL CKAN instance</a> aren’t numerous but our plan is to increase their number as further support is obtained for a project undertaken by KDL (in particular with the involvement of <a href="/who-we-are/samantha-callaghan/">Samantha Callaghan</a>, <a href="/who-we-are/dr-paul-caton/">Paul Caton</a>, <a href="/who-we-are/dr-arianna-ciula/">Arianna Ciula</a>, <a href="/who-we-are/neil-jakeman/">Neil Jakeman</a>, <a href="/who-we-are/brian-maher/">Brian Maher</a>, <a href="/who-we-are/pamela-mellen/">Pam Mellen</a>, <a href="/who-we-are/miguel-vieira/">Miguel Vieira</a>, <a href="/who-we-are/tim-watts/">Tim Watts</a>) in collaboration with colleagues and students at the Department of Digital Humanities (<a href="https://www.kcl.ac.uk/people/paul-spence">Paul Spence</a>, <a href="https://www.kcl.ac.uk/people/dr-kristen-schuster">Kristen Shuster</a>, Minmin Yu). This work was a continuation of the wider archiving and sustainability effort described in <a href="http://www.digitalhumanities.org/dhq/vol/13/1/000411/000411.html">Smithies et al. 2019</a> article and was possible through a seed fund grant offered by DDH and complemented by a student internship on the <a href="https://www.kcl.ac.uk/study/postgraduate/taught-courses/digital-humanities-ma">MA in Digital Humanities</a>.</p>
 <p>The datasets and resources we collected and catalogued range from summarised (so called ‘calendared’) editions of medieval documents to collections of modern correspondence, from ontologies adapted to express complex entities and relations in medieval documents to corresponding guides for encoding and data modelling. The default CKAN mask mapped to international cataloguing standards allows the capture of important dataset information such as creator and maintainer details, version etc. However, given that our legacy datasets are mainly project-based, we also decided to enhance the catalogue with project metadata (see related code at our <a href="https://github.com/kingsdigitallab/ckanext-kdl_metadata_schema">github repository</a>) ranging from information about the collaborative teams (typically including academics, archivists, designers, software engineers, analysts) to details on funders and period of activity. This slight modification of the data ingest form was then re-used in a currently active project - <a href="http://madih-jordan.org/">MaDiH (مديح): Mapping Digital Cultural Heritage in Jordan</a> - which is looking at scoping the landscape of Jordanian cultural heritage datasets and also opted for a KDL-hosted <a href="https://madih-data.kdl.kcl.ac.uk/">CKAN instance</a> as its core solution architecture (the code associated to other MaDiH-specific CKAN extensions including detailed tagging for time periods and data types is available at this other <a href="https://github.com/kingsdigitallab/ckanext-kdl_madih">github repository</a>).</p>
-<p><img src="/images/CKAN_mask_1_ryyMyGY.width-1024.png" alt="CKAN mask first part"></p>
+<p><img src="images/CKAN_mask_1_ryyMyGY.width-1024.png" alt="CKAN mask first part"></p>
 <p>The CKAN mask for KDL instance (part 1)</p>
-<p><img src="/images/CKAN_mask_2_0AGTUjW.width-1024.png" alt="CKAN mask entry second part"></p>
+<p><img src="images/CKAN_mask_2_0AGTUjW.width-1024.png" alt="CKAN mask entry second part"></p>
 <p>The CKAN mask for KDL instance (part 2)</p>
 <p>What follows is the workflow we implemented for our cataloguing project:</p>
 <ol>

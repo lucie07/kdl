@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <base href="/kdl/" />
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vertex 2018, Olympia - King&apos;s Digital Lab</title>
@@ -33,17 +35,51 @@
 </head>
 
 <body>
-  <input id="menu-switch" type="checkbox" checked="">
+  
+
+<input id="menu-switch" type="checkbox" checked="">
 <nav id="menu">
-  
-
-  
-
-  <ul><li><a href="/kdl/">Home</a></li><li><a href="/kdl/projects/">Projects</a></li><li><a href="/kdl/blog/">Blog</a></li><li><a href="/kdl/contact us/">Contact us</a></li><li><input id="About" type="checkbox" hidden="">
-    <label for="About" class="check">About</label>
-    <ol class="level1-list"><li><a href="/kdl/about/overview/">Overview</a></li><li><a href="/kdl/about/people/">People</a></li><li><a href="/kdl/about/organisations/">Organisations</a></li></ol></li><li><input id="Resources" type="checkbox" hidden="">
-    <label for="Resources" class="check">Resources</label>
-    <ol class="level1-list"><li><a href="/kdl/resources/overview/">Overview</a></li><li><a href="/kdl/resources/faqs/">FAQs</a></li></ol></li></ul>
+  <ul>
+<li>
+  <a href="/kdl/">Home</a>
+</li>
+<li>
+  <a href="/kdl/projects/">Projects</a>
+</li>
+<li>
+  <a href="/kdl/blog/">Blog</a>
+</li>
+<li>
+  <a href="/kdl/contact us/">Contact us</a>
+</li>
+<li>
+  <input id="About" type="checkbox" hidden="">
+  <label for="About" class="check">About</label>
+  <ol class="level1-list">
+<li>
+  <a href="/kdl/about/overview/">Overview</a>
+</li>
+<li>
+  <a href="/kdl/about/people/">People</a>
+</li>
+<li>
+  <a href="/kdl/about/organisations/">Organisations</a>
+</li>
+  </ol>
+</li>
+<li>
+  <input id="Resources" type="checkbox" hidden="">
+  <label for="Resources" class="check">Resources</label>
+  <ol class="level1-list">
+<li>
+  <a href="/kdl/resources/overview/">Overview</a>
+</li>
+<li>
+  <a href="/kdl/resources/faqs/">FAQs</a>
+</li>
+  </ol>
+</li>
+  </ul>
 </nav>
 
 
@@ -98,7 +134,7 @@
 <p>The most notable example of this mindset for me was the opening speaker <a href="http://www.vertexconf.com/features/keynote-sessions">Chris Nichols</a>, who gave an engaging talk both about the challenges of creating a digital human and the potentials for misuse that we are struggling to navigate in the era of fake news. Questions about whether it’s right to digitally bring back an actor from the dead to complete a <a href="http://screencrush.com/furious-7-digital-paul-walker/">movie</a> seem less pressing when AIs are demonstrating the ability effectively to create puppeted footage of our <a href="http://www.wired.co.uk/article/ai-lip-sync-barack-obama">politicians</a>. So called <em><a href="http://www.bbc.co.uk/news/technology-42912529">Deep Fake</a></em> technology is putting this ability into the hands of the masses when it was once the preserve of multi-million dollar budget movies.</p>
 <p>The natural concerns that surface as we digest the possibilities here are relevant to cultural heritage research as well. KDL might not often have occasion to create photorealistic human avatars, but we do anticipate creating convincing and immersive experiences that make it clear where the lines are between conjecture and cold hard fact. My old colleagues at King’s Visualisation Lab understood this very well and the <a href="http://www.londoncharter.org/">London Charter</a> was conceived precisely to address approaches to visualisation that did not mislead or imply certainty where there were multiple interpretations possible.</p>
 <p>Nichols co-founded the Digital Human League, which currently has a project to create a reusable set of standards for the high quality rendering of digital people in an open source approach. You can download Digital Emily from their <a href="http://gl.ict.usc.edu/Research/DigitalEmily2/">WikiHuman</a> project. Physically Based Rendering (PBR), when properly applied, gives some incredible results. The team behind Digital Emily have created a set of guidelines for creating skin textures with blends of diffuse and light, and used displacement and bump maps to add detail and complexity without an overly complex mesh. The technical approaches to rendering aren’t in themselves anything new but the standardisation of approaches to capturing and processing to avoid duplication of efforts are incredibly valuable. They are setting  new benchmarks in quality and providing a roadmap for life-like human rendering. I can see myself creating a digital me one day, when costs, time and technology allow.</p>
-<p><img src="/images/digi_emily.width-1024.jpg" alt="Digital Emily"></p>
+<p><img src="images/digi_emily.width-1024.jpg" alt="Digital Emily"></p>
 <p>Digital Emily - created by the WikiHuman project</p>
 <p>Bridging the <a href="https://en.wikipedia.org/wiki/Uncanny_valley">uncanny valley</a> seems to be a little way off yet though in animated avatars, due in part to the difficulty in understanding our innate sense of others. There are micro-cues in our perception of other living beings that we aren’t fully aware of ourselves. Extremely close inspection of a stationary human will reveal minute fluctuations in skin tone that reflect the pulse. Eyes are not in the least bit regularly shaped but are in fact rather lumpy, to accommodate the nose! Even convincing eyes tend to flick about quickly and meet the eyes of an interrogator. It’s not just about static photorealism but the micro-gestures and upper body animation that really add to the illusion of reality and rendering these sorts of details in realtime is still next to impossible unless a lot of the necessary material and texture assets are extensively pre-baked. The same team are already at work on Digital Mike and are continuing to refine their processes.</p>
 <p>Games developers and movie compositors work in huge teams and with apparently unlimited resources, in contrast to many of our projects at KDL. I wondered if there was anything to be learnt about workflow and processes, given the complexity and massive scale of some of the projects on show. One of the most well attended workshop sessions (standing room only when I arrived) was given by <a href="https://www.artstation.com/dannsw">Danny Sweeney</a>, who worked on character development for the Total Warhammer game series. Whilst much of the crowd were more interested in hearing about sculpting techniques, Sweeney principally ran an engaging session about the work pipelines at Creative Assembly. In much the same way as KDL might create a modular research tool, Creative Assembly used version control and repurposed 3D components in a Lean production pipeline that minimised repetition and duplication of effort. It was interesting to hear that even in this large commercial endeavour, team members were often called upon to be generalists. In this domain, that meant that artists often needed to be very technically minded. Likewise, in KDL, although we have specialist Designers, Analysts and Developers it is very healthy to have a good understanding of the tools and processes of all the roles and even better to be able to step from one role to another occasionally.</p>

@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <base href="/kdl/" />
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>How KDL applies Machine Learning to research projects - King&apos;s Digital Lab</title>
@@ -17,14 +19,14 @@
 
 <meta property="og:url" content="https://kdl.kcl.ac.uk/blog/how-kdl-applies-machine-learning-research-projects/">
 <meta property="og:description" content="As our new director, Arianna, mentioned in her recent blog post, Machine Learning (ML) is one of the research themes we are keen to start prioritising. Not only because it matches strong personal interests among the solution development team who are eager to experiment with new and exciting techniques (as you would expect from a Lab) but also because, as AI research moves quickly, it continuously brings new methodological opportunities to many scientific fields including the Humanities.">
-<meta property="og:image" content="/images/sunset-boulevard-in-512-0.01.original.png">
+<meta property="og:image" content="images/sunset-boulevard-in-512-0.01.original.png">
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@kingsdigitallab">
 <meta name="twitter:url" content="https://kdl.kcl.ac.uk/blog/how-kdl-applies-machine-learning-research-projects/">
 <meta name="twitter:title" content="How KDL applies Machine Learning to research projects - King&apos;s Digital Lab">
 <meta name="twitter:description" content="As our new director, Arianna, mentioned in her recent blog post, Machine Learning (ML) is one of the research themes we are keen to start prioritising. Not only because it matches strong personal interests among the solution development team who are eager to experiment with new and exciting techniques (as you would expect from a Lab) but also because, as AI research moves quickly, it continuously brings new methodological opportunities to many scientific fields including the Humanities.">
-<meta name="twitter:image" content="/images/sunset-boulevard-in-512-0.01.original.png">
+<meta name="twitter:image" content="images/sunset-boulevard-in-512-0.01.original.png">
 
 
 
@@ -33,17 +35,51 @@
 </head>
 
 <body>
-  <input id="menu-switch" type="checkbox" checked="">
+  
+
+<input id="menu-switch" type="checkbox" checked="">
 <nav id="menu">
-  
-
-  
-
-  <ul><li><a href="/kdl/">Home</a></li><li><a href="/kdl/projects/">Projects</a></li><li><a href="/kdl/blog/">Blog</a></li><li><a href="/kdl/contact us/">Contact us</a></li><li><input id="About" type="checkbox" hidden="">
-    <label for="About" class="check">About</label>
-    <ol class="level1-list"><li><a href="/kdl/about/overview/">Overview</a></li><li><a href="/kdl/about/people/">People</a></li><li><a href="/kdl/about/organisations/">Organisations</a></li></ol></li><li><input id="Resources" type="checkbox" hidden="">
-    <label for="Resources" class="check">Resources</label>
-    <ol class="level1-list"><li><a href="/kdl/resources/overview/">Overview</a></li><li><a href="/kdl/resources/faqs/">FAQs</a></li></ol></li></ul>
+  <ul>
+<li>
+  <a href="/kdl/">Home</a>
+</li>
+<li>
+  <a href="/kdl/projects/">Projects</a>
+</li>
+<li>
+  <a href="/kdl/blog/">Blog</a>
+</li>
+<li>
+  <a href="/kdl/contact us/">Contact us</a>
+</li>
+<li>
+  <input id="About" type="checkbox" hidden="">
+  <label for="About" class="check">About</label>
+  <ol class="level1-list">
+<li>
+  <a href="/kdl/about/overview/">Overview</a>
+</li>
+<li>
+  <a href="/kdl/about/people/">People</a>
+</li>
+<li>
+  <a href="/kdl/about/organisations/">Organisations</a>
+</li>
+  </ol>
+</li>
+<li>
+  <input id="Resources" type="checkbox" hidden="">
+  <label for="Resources" class="check">Resources</label>
+  <ol class="level1-list">
+<li>
+  <a href="/kdl/resources/overview/">Overview</a>
+</li>
+<li>
+  <a href="/kdl/resources/faqs/">FAQs</a>
+</li>
+  </ol>
+</li>
+  </ul>
 </nav>
 
 
@@ -97,7 +133,7 @@
   
   <div id="images">
     <figure>
-      <img src="/kdl/images/sunset-boulevard-in-512-0.01.original.png" alt="Image rendered by VQGAN-CLIP">
+      <img src="images/sunset-boulevard-in-512-0.01.original.png" alt="Image rendered by VQGAN-CLIP">
       <figcaption>Image rendered by VQGAN-CLIP</figcaption>
     </figure>
   </div>
@@ -108,16 +144,16 @@
 <h2 id="use-cases" tabindex="-1">Use Cases</h2>
 <p>Illustrated below are different facets of AI applied to a variety of projects I contributed to over the years (from legacy to new projects), with some notes on the reason why I used them and hopefully some interesting insights into our Research Software Engineering (RSE) processes. My colleagues will soon share their own experience separately as part of this new series of posts on ML to complement this very subjective and partial retrospective.</p>
 <h3 id="early-english-laws-(2009-2011%2C-ahrc%2C-pi%3A-jane-winters)" tabindex="-1"><a href="https://earlyenglishlaws.ac.uk/laws/texts/iii-cn/relationships/">Early English Laws</a> (2009-2011, AHRC, PI: Jane Winters)</h3>
-<p><img src="https://kdl.kcl.ac.uk/images/out-001.width-500.jpg" alt=""> <img src="https://raw.githubusercontent.com/kingsdigitallab/eel/main/doc/evolution.gif" alt=""></p>
+<p><img src="https://kdl.kcl.ac.ukimages/out-001.width-500.jpg" alt=""> <img src="https://raw.githubusercontent.com/kingsdigitallab/eel/main/doc/evolution.gif" alt=""></p>
 <p>Context: Our research partners requested a web visualisation of the dependency graph among early English legal texts (10th to 13th century) where a node represents a text and an edge indicates textual borrowing. Each law code has its own graph centred around it (Cnut’s Winchester code or I–II Cn, in the screenshots above). When a graph gets more crowded, arranging the nodes into an elegant and readable layout is tricky. At the time I didn’t manage to design (or find) a good layout algorithm for our specific needs.</p>
 <p>Use case: I decided to define what makes a good layout (e.g., vertically compact, without overlapping nodes or edges crossing each other), design an objective function that attributes a score to a layout according to those conditions and use <a href="https://en.wikipedia.org/wiki/Differential_evolution">Differential Evolution</a> to iteratively improve an initial population of random layouts until they efficiently converge to a minimum of our objective function. Machine Learning tends to shift the development work from algorithmic (how/imperative) to requirements (what/declarative) modeling which is more abstract and intuitive. Moreover, although the end results are not always optimal, this approach copes gracefully with configurations where an ideal layout is impossible (e.g., crossing edges are sometimes unavoidable, but will be minimised).</p>
 <h3 id="exon-domesday-(2014-2017%2C-ahrc%2C-pi%3A-julia-crick)" tabindex="-1"><a href="https://www.exondomesday.ac.uk/lab/hundreds/">Exon Domesday</a> (2014-2017, AHRC, PI: Julia Crick)</h3>
-<p><img src="/images/out-002.width-1024.png" alt="Patterns of hundredal orders in Exon Domesday book"></p>
+<p><img src="images/out-002.width-1024.png" alt="Patterns of hundredal orders in Exon Domesday book"></p>
 <p><a href="https://www.exondomesday.ac.uk/lab/hundreds/">Hundredal Order page</a> on the Exon Domesday project website (<a href="https://www.exondomesday.ac.uk/labs/hundredal-order/">introduction by P. Stokes</a>).</p>
 <p>Context: The entries in the surviving copy of the Exon Domesday book are grouped first by owners of the lands then by their locations or <a href="https://www.britannica.com/topic/hundred-English-government">hundreds</a>. I developed a web application to allow the researchers to visualise the sequence of hundreds among owners and identify possible patterns that could shed some light on the <a href="https://doi.org/10.1093/ehr/ceaa310">method of production of the Domesday survey and the assembly of the book</a>. The experts came up with their own pattern for each County. The interface automatically highlights all entries that deviate from that pattern in the Exon Domesday book.</p>
 <p>Use case: I adapted the <a href="http://scholarpedia.org/article/Metaheuristics">metaheuristic</a> developed in Early English Laws to find a sequence of hundreds that would minimise the number of deviations (i.e. our objective function) to see if it could come up with new sequences the researchers hadn’t considered. I did this by implementing a Genetic Algorithm with crossover &amp; mutation operators specially adapted for combinatorial optimisation. In this case Machine Learning complements rather than automates the research by offering new, albeit ahistorical, analytical suggestions. This form of suggestion works particularly well within such an exploratory web interface where patterns are easy to interactively inspect. It is also interesting to note that each time the algorithm generates a sequence, it is slightly different. That’s because the method is stochastic and there is no single perfect solution to this problem.</p>
 <h3 id="the-community-of-the-realm-in-scotland-(2017-2021%2C-ahrc%2C-pi%3A-alice-taylor)" tabindex="-1"><a href="https://cotr.ac.uk/lab/regions?parent=custom&amp;diff=region-vecs-ft-30.json&amp;texts=7,20,36,23,12,17">The Community of the realm in Scotland</a> (2017-2021, AHRC, PI: Alice Taylor)</h3>
-<p><img src="/images/out-003.width-1024.png" alt="Collation table with colour-coded textual distance"></p>
+<p><img src="images/out-003.width-1024.png" alt="Collation table with colour-coded textual distance"></p>
 <p><a href="https://cotr.ac.uk/lab/regions?parent=custom&amp;diff=region-vecs-ft-30.json&amp;texts=7,20,36,23,12,17">Collation table with colour-coded textual distances</a>. (See also the <a href="https://cotr.ac.uk/lab/regions/?parent=custom&amp;panel=help&amp;diff=region-vecs-ft-30.json&amp;texts=7,20,36,23,12,17">Help page</a>).</p>
 <p>Context: Near the end of the project development, I quickly experimented with an online collation table of the copies of the Declaration of Arbroath. True to the idea of a <a href="https://cotr.ac.uk/guidelines/dynamic-edition-key-concepts/">Dynamic Edition</a>, it displays user-selected copies side by side, without hierarchy, free from of the bias of what is known as a version or as the original copy. In each row the ‘readings’ are colour coded to intuitively convey the grouping among similar readings and the sense of textual distance. After formally exploring the multifaceted notion of distance (spelling, added words, word lengths and order, degree of disagreements among sources, ...) among a set of readings, and quantifying it with various metrics (e.g. Levenstein distance), my colleagues pointed out that the difference in meaning was not accounted for (sometimes a few letters can completely transform the meaning: e.g. magnificus → malificus).</p>
 <p>Use Case: I tried to estimate the semantic distance by converting the words into <a href="https://devopedia.org/word-embedding">static embeddings</a> using a public domain, pre-trained Latin language model (since our corpus is too small to train a new one), averaging the vectors for each reading and comparing the readings with a cosine distance. The result isn’t very convincing, even for single word readings, perhaps because the model I found had been trained on very different types of texts (including Latin Wikipedia!) but also because embeddings tend to capture (sometimes a loose notion of) relatedness rather than similarity.</p>
@@ -125,11 +161,11 @@
 <p>This project is quite different from the previous examples. The primary research objectives are heavily reliant on the ability to (semi-)automate the classification of a large quantity of legal texts according to a predefined taxonomy. This time an extensive evaluation of different types of classification models was seed-funded during our pre-grant analysis phase because the feasibility of the entire project depends on it. In this case Machine Learning (ML) is a core requirement, rather than an optional method suggested by KDL during the funded Agile development phase to enhance the research or its output.</p>
 <p>Use case: text classification is a very well-studied type of ML tasks with many available methods to choose from, often already packaged into ready-made tools. However, the relatively small amount of training samples (which is quite typical for niche historical corpora) and their very uneven distribution into a high number of very specific subcategories proved quite challenging. Moreover, the phrasing and vocabulary are particular to the period, geography and the legal domain under study. I fine-tuned more advanced and freely available language models (such as <a href="https://devopedia.org/transformer-neural-network-architecture">Transformers</a>) already <a href="https://machinelearningmastery.com/transfer-learning-for-deep-learning/">pre-trained</a> by other research teams on much larger datasets of contemporary legal texts to reach accuracy level which I estimated could be sufficient to make the rest of the project activities possible. Searching for the right model architecture and the best set of training hyperparameters - very sensitive to different pre-processing of various parts of the texts - can be extremely time consuming and requires powerful computers with high-end graphic cards.</p>
 <h3 id="word-alignment-across-translations-(2022%2C-pre-grant-analysis%2C-pi%3A-gabriele-salciute-civiliene)" tabindex="-1">Word alignment across translations (2022, pre-grant analysis, PI: Gabriele Salciute Civiliene)</h3>
-<p><img src="/images/out-004.width-1024.png" alt="Semi-automated word alignment interface"></p>
+<p><img src="images/out-004.width-1024.png" alt="Semi-automated word alignment interface"></p>
 <p>Proof of concept of a semi-automated word alignment interface, inspired by the concepts developed by Gabriele Salciute Civiliene</p>
 <p>In this pre-project (the pre-grant analysis that feeds into an application) phase, semi-automation of the alignment of instances of selected word forms among different translations of the same text was identified as an important pre-requisite to reduce highly repetitive manual labour and substantially extend the size of the research corpus. I have compared the performance of four open-source implementations of two approaches (<a href="https://handwiki.org/wiki/IBM_alignment_models">IBM Alignment models</a> and <a href="https://theaisummer.com/attention/">Attention</a> extraction from pre-trained multilingual <a href="https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)">Transformer models</a>) on a dataset manually labelled during an earlier <a href="https://kdl.kcl.ac.uk/our-work/distant-reading/">pilot of the project</a> also led by the same PI. Interestingly the state-of-the-art techniques proved less accurate, less consistent across languages and harder to configure and execute than its 30-years old counterpart (IBM models). I also built a proof of concept of an interactive editorial interface on top of the automated word aligner to let researchers quickly review and correct its suggestions. The interface is heavily inspired by earlier concepts designed by Gabriele Salciute Civiliene. It is worth noting that I managed to carry out this experimental work during the feasibility stage (i.e. pre-grant application) thanks to KDL “10% time” scheme (a ‘protected’ portion of each KDL RSE team member’s workload model carved out to experiment freely and independently from projects requirements and schedules).</p>
 <p>This is only a sample of use cases. In other projects in the Lab we are also applying topic modelling, text summarization, hierarchical clustering and neural search to help other partners discover major trends among their projects datasets. For example, my colleague Miguel Vieira has also recently fine-tuned generative language models to produce fictional narratives about the provenance of real heritage material.</p>
-<p><img src="/images/out-005.width-1024.jpg" alt="Character reconstruction"></p>
+<p><img src="images/out-005.width-1024.jpg" alt="Character reconstruction"></p>
 <p>Attempt at using convolutional networks to reconstruct OCRed text.</p>
 <p>Surprisingly I can't think of many applications of intelligent Computer Vision tasks to showcase here, even though we do host thousands of high-resolution images of manuscripts and other archival objects on our servers. One recent experiment consisted in the reconstructive pre-processing of character shapes from early 19th century printed official documents to mitigate its detrimental effect on the OCR. I’ve trained <a href="https://www.unite.ai/what-is-an-autoencoder/">convolutional autoencoders</a> on <a href="https://github.com/NVlabs/ocrodeg">synthetically corrupted</a> n-grams randomly cropped from undamaged regions of the same book. This is a form of self-supervised learning where training data is automatically derived from unlabeled samples. This is a very unconclusive work in progress that I initiated with my 10% time allowance.</p>
 <p>One interesting observation about this approach so far is that the computational model is very sensitive to how faithfully the artificial corruption matches the natural degradation of the ink. As explained earlier, ML tends to shift the design of the problem definition to a different space; from reconstruction to (methodical) destruction in this occurrence.</p>

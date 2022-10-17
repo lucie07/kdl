@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <base href="/kdl/" />
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The road to a more inclusive web - King&apos;s Digital Lab</title>
@@ -21,7 +23,7 @@ KDL joined the board from day one to help shape the College&rsquo;s digital acce
 <meta property="og:description" content="Recently I was asked to present the lab&rsquo;s progress on the work done to improve accessibility in our products to the Digital Accessibility Programme Board at King&rsquo;s.
 
 KDL joined the board from day one to help shape the College&rsquo;s digital accessibility policy and help scope the work that needed to be done to make every platform as accessible as possible.">
-<meta property="og:image" content="/images/liane-metzler-v3bWNXeInQA-unsplash-small.original.jpg">
+<meta property="og:image" content="images/liane-metzler-v3bWNXeInQA-unsplash-small.original.jpg">
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@kingsdigitallab">
@@ -30,7 +32,7 @@ KDL joined the board from day one to help shape the College&rsquo;s digital acce
 <meta name="twitter:description" content="Recently I was asked to present the lab&rsquo;s progress on the work done to improve accessibility in our products to the Digital Accessibility Programme Board at King&rsquo;s.
 
 KDL joined the board from day one to help shape the College&rsquo;s digital accessibility policy and help scope the work that needed to be done to make every platform as accessible as possible.">
-<meta name="twitter:image" content="/images/liane-metzler-v3bWNXeInQA-unsplash-small.original.jpg">
+<meta name="twitter:image" content="images/liane-metzler-v3bWNXeInQA-unsplash-small.original.jpg">
 
 
 
@@ -39,17 +41,51 @@ KDL joined the board from day one to help shape the College&rsquo;s digital acce
 </head>
 
 <body>
-  <input id="menu-switch" type="checkbox" checked="">
+  
+
+<input id="menu-switch" type="checkbox" checked="">
 <nav id="menu">
-  
-
-  
-
-  <ul><li><a href="/kdl/">Home</a></li><li><a href="/kdl/projects/">Projects</a></li><li><a href="/kdl/blog/">Blog</a></li><li><a href="/kdl/contact us/">Contact us</a></li><li><input id="About" type="checkbox" hidden="">
-    <label for="About" class="check">About</label>
-    <ol class="level1-list"><li><a href="/kdl/about/overview/">Overview</a></li><li><a href="/kdl/about/people/">People</a></li><li><a href="/kdl/about/organisations/">Organisations</a></li></ol></li><li><input id="Resources" type="checkbox" hidden="">
-    <label for="Resources" class="check">Resources</label>
-    <ol class="level1-list"><li><a href="/kdl/resources/overview/">Overview</a></li><li><a href="/kdl/resources/faqs/">FAQs</a></li></ol></li></ul>
+  <ul>
+<li>
+  <a href="/kdl/">Home</a>
+</li>
+<li>
+  <a href="/kdl/projects/">Projects</a>
+</li>
+<li>
+  <a href="/kdl/blog/">Blog</a>
+</li>
+<li>
+  <a href="/kdl/contact us/">Contact us</a>
+</li>
+<li>
+  <input id="About" type="checkbox" hidden="">
+  <label for="About" class="check">About</label>
+  <ol class="level1-list">
+<li>
+  <a href="/kdl/about/overview/">Overview</a>
+</li>
+<li>
+  <a href="/kdl/about/people/">People</a>
+</li>
+<li>
+  <a href="/kdl/about/organisations/">Organisations</a>
+</li>
+  </ol>
+</li>
+<li>
+  <input id="Resources" type="checkbox" hidden="">
+  <label for="Resources" class="check">Resources</label>
+  <ol class="level1-list">
+<li>
+  <a href="/kdl/resources/overview/">Overview</a>
+</li>
+<li>
+  <a href="/kdl/resources/faqs/">FAQs</a>
+</li>
+  </ol>
+</li>
+  </ul>
 </nav>
 
 
@@ -103,7 +139,7 @@ KDL joined the board from day one to help shape the College&rsquo;s digital acce
   
   <div id="images">
     <figure>
-      <img src="/kdl/images/liane-metzler-v3bWNXeInQA-unsplash-small.original.jpg" alt="Liane Metzler Unsplash - White stairs">
+      <img src="images/liane-metzler-v3bWNXeInQA-unsplash-small.original.jpg" alt="Liane Metzler Unsplash - White stairs">
       <figcaption>Liane Metzler Unsplash - White stairs</figcaption>
     </figure>
   </div>
@@ -116,7 +152,7 @@ KDL joined the board from day one to help shape the College&rsquo;s digital acce
 <p>We decided to have an independent body assess where we stood with respect to accessibility at the time to get an honest picture and remove any potential bias.</p>
 <p>I have attended more than one event where I listened to <a href="https://twitter.com/LeonieWatson">Léonie Watson</a>, from <a href="https://tetralogical.com/">TetraLogical</a>, present on web accessibility and so I got in touch with her. She agreed to run a light assessment on a sample of our products and produce a short report highlighting issues and offering recommendations.</p>
 <p>What we received is called a &quot;gap analysis report&quot;. The results were not flattering. We discovered that in our customisation of the front-end stack, we had introduced some issues and were not meeting <a href="https://www.w3.org/TR/WCAG21/">WCAG A standards</a>. Focusing on the positives: most of the big issues were easy to fix and we knew where to start.</p>
-<p><img src="/images/gap-analysis-data-screenshot.width-1024.png" alt="Gap analysis data screenshot"></p>
+<p><img src="images/gap-analysis-data-screenshot.width-1024.png" alt="Gap analysis data screenshot"></p>
 <p><em>Fig. 1</em> A screenshot of the gap analysis document section where some results are highlighted, in particular:<br>
 32 Level A issues affecting 38% of the website (8409 pages) and 4 Level AA issues affecting 1% of the website (133 pages).</p>
 <h2 id="embrace-the-work" tabindex="-1">Embrace the work</h2>
@@ -152,7 +188,7 @@ I’d like to take this opportunity to thank the staff that joined us then, for 
 <li><strong>Design iterations and user testing</strong></li>
 <li>Launch</li>
 </ul>
-<p><img src="/images/UX-design-workflow.width-1024.png" alt="KDL UX workflow"></p>
+<p><img src="images/UX-design-workflow.width-1024.png" alt="KDL UX workflow"></p>
 <p><em>Fig. 2</em> KDL's design workflow.</p>
 <p>Accessibility is present in each phase, but we identified <em>Research</em> and <em>Design iterations and user testing</em> as the two phases where we actively plan and work on it the most.</p>
 <p>While this approach works well for new projects — allowing us to plan accordingly, test frameworks and tools beforehand and set out usability testing with targeted objectives to cover accessibility as well as user experience (UX) — it doesn’t really fit legacy projects, where we have to test a finished product and consider the impact any little change would have in terms of implementation and roles in the lab who will need to be involved (designers, developers, system admins, project managers and analysts alike).</p>
@@ -167,7 +203,7 @@ I’d like to take this opportunity to thank the staff that joined us then, for 
 </ul>
 <p>We also excluded sites that could be considered archives based on the definition of archive in the UK government regulations.2</p>
 <p><strong>The result is a list of circa 90 sites, of which, at the time of writing, 17 have been rendered accessible, 2 are in progress, 4 in the pipeline and the rest of the list will be revaluated in due course to reassign priority.</strong></p>
-<p><img src="/images/Screenshot_2021-04-19_at_12.03.48.width-1024.png" alt="Screenshot of a bird’s eye view of the prioritised spreadsheet."></p>
+<p><img src="images/Screenshot_2021-04-19_at_12.03.48.width-1024.png" alt="Screenshot of a bird’s eye view of the prioritised spreadsheet."></p>
 <p><em>Fig. 3</em> Screenshot of a bird’s eye view of the prioritised spreadsheet.</p>
 <h2 id="evaluate" tabindex="-1">Evaluate</h2>
 <p>17 out of 90 doesn't seem like much, and we might consider the progress to be relatively slow, but when we take into account the manual labour that had to go into the task, we can claim it as a success. The work is not complete, but it's moving forward.<br>
