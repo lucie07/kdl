@@ -1,5 +1,5 @@
 #!/bin/sh
 set -ea
 
-node directus bootstrap
-node directus start
+npx directus bootstrap
+npx directus start
