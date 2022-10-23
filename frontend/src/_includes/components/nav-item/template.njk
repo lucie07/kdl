@@ -1,4 +1,3 @@
-{%- macro renderNavListItem(entry) %}
 <li{% if entry.url==page.url %} class="active"{% endif %}>
   {%- if entry.children.length %}
   <input id="{{ entry.key }}" type="checkbox" hidden="">
@@ -12,4 +11,3 @@
   <a href="{% route entry.url %}">{{ entry.title }}</a>
   {%- endif %}
 </li>
-{%- endmacro %}
