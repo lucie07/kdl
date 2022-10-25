@@ -87,7 +87,7 @@ class Manager {
           ),
           funder: this.parseList(project.Funder),
           team: this.parseList(project["KDL Project Team"]),
-          url: this.getURLs(project, ["Project URL", "GitHub URL"]),
+          url: this.getURLs(project, ["Project URL", "GitHub URL", "Models"]),
         }));
 
       resolve(projects);
@@ -139,11 +139,11 @@ class Manager {
   }
 
   getURLName(name, url) {
-    if (name === "Project URL") {
-      return name;
+    if (name === "GitHub URL") {
+      return `Repository: ${url.split("/").slice(3).join("/")}`;
     }
 
-    return `Repository: ${url.split("/").slice(3).join("/")}`;
+    return name;
   }
 
   /**
@@ -254,8 +254,9 @@ class Manager {
    * @returns {Array<Promise<Object>>} - An array of promises
    */
   async create(projects) {
-    let definedTermSet = await this.getOrCreateDrfinedTermSet("SDLC");
+    let definedTermSet = await this.getOrCreateDrfinedTermSet("Job titles");
 
+    definedTermSet = await this.getOrCreateDrfinedTermSet("SDLC");
     let values = [
       ...new Set(projects.map((project) => project.creativeWorkStatus)),
     ];
