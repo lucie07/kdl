@@ -254,14 +254,21 @@ class Manager {
    * @returns {Array<Promise<Object>>} - An array of promises
    */
   async create(projects) {
-    const definedTermSet = await this.getOrCreateDrfinedTermSet();
+    let definedTermSet = await this.getOrCreateDrfinedTermSet("SDLC");
 
-    const creativeWorkStatuses = [
+    let values = [
       ...new Set(projects.map((project) => project.creativeWorkStatus)),
     ];
-    const definedTerms = await this.getOrCreateDefinedTerms(
+    const creativeWorkStatuses = await this.getOrCreateDefinedTerms(
       definedTermSet,
-      creativeWorkStatuses
+      values
+    );
+
+    definedTermSet = await this.getOrCreateDrfinedTermSet("Project roles");
+    values = ["Principal investigator", "Researcher", "RSE team member"];
+    const projectRoleNames = await this.getOrCreateDefinedTerms(
+      definedTermSet,
+      values
     );
 
     const piNames = _.uniqWith(
@@ -334,7 +341,8 @@ class Manager {
 
     return await this.getOrCreateProjects(
       projects,
-      definedTerms,
+      creativeWorkStatuses,
+      projectRoleNames,
       piPersonAgents,
       piOrganisationAgents,
       researchersPersonAgents,
@@ -468,7 +476,8 @@ class Manager {
 
   async getOrCreateProjects(
     projects,
-    definedTerms,
+    creativeWorkStatuses,
+    projectRoleNames,
     piPersonAgents,
     piOrganisationAgents,
     researchersPersonAgents,
@@ -483,7 +492,8 @@ class Manager {
       data.push(
         await this.getOrCreateProject(
           project,
-          definedTerms,
+          creativeWorkStatuses,
+          projectRoleNames,
           piPersonAgents,
           piOrganisationAgents,
           researchersPersonAgents,
@@ -500,7 +510,8 @@ class Manager {
 
   async getOrCreateProject(
     project,
-    definedTerms,
+    creativeWorkStatuses,
+    projectRoleNames,
     piPersonAgents,
     piOrganisationAgents,
     researchersPersonAgents,
@@ -513,7 +524,7 @@ class Manager {
 
     project.pi.forEach((pi) =>
       members.push({
-        name: "Principal investigator",
+        roleName: projectRoleNames["Principal investigator"].id,
         agent: piPersonAgents[pi.name].agent,
         inOrganisation: piOrganisationAgents[pi.org].id,
       })
@@ -523,7 +534,7 @@ class Manager {
       .filter((r) => researchersPersonAgents[r.name] !== undefined)
       .forEach((r) =>
         members.push({
-          name: "Researcher",
+          roleName: projectRoleNames["Researcher"].id,
           agent: researchersPersonAgents[r.name].agent,
           inOrganisation: researchersOrganisationAgents[r.org].id,
         })
@@ -531,7 +542,10 @@ class Manager {
 
     project.team.forEach((person) => {
       if (teams[person]) {
-        members.push({ name: "RSE team member", agent: teams[person].agent });
+        members.push({
+          roleName: projectRoleNames["RSE team member"].id,
+          agent: teams[person].agent,
+        });
       }
     });
 
@@ -565,8 +579,8 @@ class Manager {
       foundingDate: project.foundingDate,
       dissolutionDate: project.dissolutionDate,
       description: project.description,
-      creativeWorkStatus: definedTerms[project.creativeWorkStatus]
-        ? definedTerms[project.creativeWorkStatus].id
+      creativeWorkStatus: creativeWorkStatuses[project.creativeWorkStatus]
+        ? creativeWorkStatuses[project.creativeWorkStatus].id
         : null,
       funder: fundersData,
       department: departments,
