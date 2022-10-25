@@ -62,7 +62,7 @@ layout: layouts/base.njk
       {% for member in project.member|sort(false, false, "agent.name") %}
       <li>
         <a href="{% route member.agent.slug, 'People' %}">{{ member.agent.name }}</a>,
-        {{ member.name }}
+        {{ member.roleName.name }}
         {%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}
       </li>
       {% endfor %}

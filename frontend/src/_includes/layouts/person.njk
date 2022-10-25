@@ -13,8 +13,9 @@ layout: layouts/agent.njk
       {% if member.inProject %}
       <a href="{% route member.inProject.slug, 'Projects' %}">{{ member.inProject.name }}</a>
       {% else %}
-      <a href="{% route member.inOrganisation.agent.slug, 'Organisations' %}">{{ member.inOrganisation.agent.name
-        }}</a>
+      <a href="{% route member.inOrganisation.agent.slug, 'Organisations' %}">
+        {{- member.inOrganisation.agent.name -}}
+      </a>
       {% endif %}
     </li>
     {% endfor %}
