@@ -5,6 +5,7 @@ const pluginTOC = require("eleventy-plugin-toc");
 const { Directus } = require("@directus/sdk");
 const markdownIt = require("markdown-it");
 const { DateTime } = require("luxon");
+const Nunjucks = require("nunjucks");
 const path = require("node:path");
 const sass = require("sass");
 
@@ -15,8 +16,19 @@ function getDirectus() {
 }
 
 module.exports = (eleventyConfig) => {
+  const kdlComponentsPath = "../node_modules/kdl-components/src";
+  const nunjucksEnvironment = new Nunjucks.Environment([
+    new Nunjucks.FileSystemLoader(kdlComponentsPath),
+    new Nunjucks.FileSystemLoader("./src/_includes"),
+  ]);
+  eleventyConfig.setLibrary("njk", nunjucksEnvironment);
+  eleventyConfig.addWatchTarget(kdlComponentsPath);
+
   eleventyConfig.setTemplateFormats(["html", "njk", "md"]);
-  eleventyConfig.addPassthroughCopy({ public: "/" });
+  eleventyConfig.addPassthroughCopy({
+    [`${kdlComponentsPath}/kdl/assets`]: "/assets",
+    public: "/",
+  });
 
   eleventyConfig.addPlugin(pluginEleventyNavigation);
   eleventyConfig.addPlugin(pluginSEO, require("./src/_data/seo.json"));

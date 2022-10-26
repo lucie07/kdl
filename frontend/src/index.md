@@ -6,3 +6,5 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
+
+This is the home page, to change the content edit the file at `/src/index.md`.
