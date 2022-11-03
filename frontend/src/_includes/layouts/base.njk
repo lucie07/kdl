@@ -1,47 +1,53 @@
 {% extends "kdl/base.njk" %}
 
-{% set baseUrl = "/" | url %}
-{% set assetsPath = "/assets" | url %}
+{% set baseUrl = config.baseUrl | url %}
+{% set assetsPath = config.paths.assets | url %}
+{% set imagesPath = config.paths.images | url %}
+{% set stylesheetsPath = config.paths.stylesheets | url %}
 
 {% block headExtra %}
-<base href="{{ baseUrl }}" />
-{% endblock %}
+  <base href="{{ baseUrl }}"/>
+{% endblock headExtra %}
 
 {% block headMeta %}
-{% seo "" %}
-{% endblock %}
+  {% seo "" %}
+{% endblock headMeta %}
 
 {% block stylesheets %}
-<link href="{% route '/_pagefind/pagefind-ui.css' %}" rel="stylesheet">
-{{ super() }}
-{% endblock %}
+  <link href="{% route '/_pagefind/pagefind-ui.css' %}" rel="stylesheet">
+  {{ super() }}
+{% endblock stylesheets %}
 
 {% block headerMain %}
-{{
-headerMacro({
-title: seo.title,
-logo: {
-src: "/assets/images/kings-logo-red.svg" | url,
-alt: "King's College London red logo"
-},
-url: baseUrl
-})
-}}
-{% endblock %}
+{{ headerMacro(config) }}
+{% endblock headerMain %}
+
+{% block menu %}
+{{-
+  navMacro({
+    title: "Main menu",
+    pages: collections.all | eleventyNavigation,
+    currentUrl: page.url
+  }, {
+    nested: true,
+    ordered: true
+  })
+-}}
+{% endblock menu %}
 
 {% block headerSearch %}
-<div id="search" role="search"></div>
-{% endblock %}
+  <div id="search" role="search"></div>
+{% endblock headerSearch %}
 
 {% block content %}
-{{ content | safe }}
-{% endblock %}
+  {{ content | safe }}
+{% endblock content %}
 
 {% block bodyEnd %}
-<script src="{% route '/_pagefind/pagefind-ui.js' %}" type="text/javascript"></script>
-<script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    new PagefindUI({element: "#search"});
-  });
-</script>
-{% endblock %}
+  <script src="{% route '/_pagefind/pagefind-ui.js' %}" type="text/javascript"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      new PagefindUI({element: "#search"});
+    });
+  </script>
+{% endblock bodyEnd %}

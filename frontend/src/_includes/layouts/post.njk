@@ -1,19 +1,10 @@
 ---
 layout: layouts/base.njk
 ---
+{% from "kdl/components/article/macros.njk" import articleMacro %}
 
-<article>
-  <header class="post-meta">
-    {% include "partials/byline.njk" %}
-  </header>
-  {% if feature and feature.image %}
-  <div id="images">
-    <figure>
-      <img src="{% route feature.image %}" alt="{{ feature.description }}">
-      <figcaption>{{ feature.description }}</figcaption>
-    </figure>
-  </div>
-  {% endif %}
-
-  {{ content | safe }}
-</article>
+{{-
+  articleMacro(obj, collections, {
+    addLink: false
+  })
+-}}
