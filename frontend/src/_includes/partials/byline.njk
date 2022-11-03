@@ -1,8 +1,0 @@
-<p>by
-    {% for author in authors %}
-    <span class="author"><a href="{% route author | slugify, 'People' %}">{{ author }}</a></span>
-    {%- if not forloop.last -%},{% endif %}
-    {% endfor %}
-  on
-  <time datetime="{{ date }}" class="datetime">{{ date | asPostDate }}</time>
-</p>
