@@ -1,4 +1,5 @@
 const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
+const kdlFilters = require("kdl-components/src/kdl/filters");
 const markdownItAnchor = require("markdown-it-anchor");
 const pluginSEO = require("eleventy-plugin-seo");
 const pluginTOC = require("eleventy-plugin-toc");
@@ -31,16 +32,15 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addPlugin(pluginEleventyNavigation);
-  eleventyConfig.addPlugin(pluginSEO, require("./src/_data/seo.json"));
+  eleventyConfig.addPlugin(pluginSEO, require("./src/_data/config.js"));
   eleventyConfig.addPlugin(pluginTOC);
 
   eleventyConfig.setLibrary("md", markdownIt().use(markdownItAnchor));
 
   eleventyConfig.addGlobalData("directus", getDirectus);
 
-  eleventyConfig.addFilter("asPostDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
-  });
+  eleventyConfig.addFilter("toLocaleDate", kdlFilters.toLocaleDate);
+  eleventyConfig.addFilter("filter", kdlFilters.filter);
 
   eleventyConfig.addFilter("asProjectDate", (dateObj) => {
     if (!dateObj) {
