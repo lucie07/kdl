@@ -18,26 +18,33 @@
   {{ super() }}
 {% endblock stylesheets %}
 
-{% block headerMain %}
-{{ headerMacro(config) }}
-{% endblock headerMain %}
+{% block headerStart %}
+  {{ headerMacro(config) }}
+{% endblock headerStart %}
 
 {% block menu %}
-{{-
+  {{-
   navMacro({
-    title: "Main menu",
-    pages: collections.all | eleventyNavigation,
-    currentUrl: page.url
+  title: "Main menu",
+  pages: collections.all | eleventyNavigation,
+  currentUrl: page.url
   }, {
-    nested: true,
-    ordered: true
+  nested: true,
+  ordered: true
   })
--}}
+  -}}
 {% endblock menu %}
 
-{% block headerSearch %}
+{% block headerEnd %}
+  {% if navKey and navKey != "Home" %}
+    {{-
+    breadcrumbsMacro({
+    pages: collections.all | eleventyNavigationBreadcrumb(navKey, { includeSelf: true })
+    })
+    -}}
+  {% endif %}
   <div id="search" role="search"></div>
-{% endblock headerSearch %}
+{% endblock headerEnd %}
 
 {% block content %}
   {{ content | safe }}
