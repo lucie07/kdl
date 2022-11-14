@@ -5,20 +5,18 @@ layout: layouts/agent.njk
 {% set agent = agentInstance.agent %}
 
 {% if agent.memberOf %}
-<div id="part-of">
-  <h2>Part of</h2>
-  <ul>
-    {% for member in agent.memberOf|sort(false, false, "name") %}
-    <li>
-      {% if member.inProject %}
-      <a href="{% route member.inProject.slug, 'Projects' %}">{{ member.inProject.name }}</a>
-      {% else %}
-      <a href="{% route member.inOrganisation.agent.slug, 'Organisations' %}">
-        {{- member.inOrganisation.agent.name -}}
-      </a>
-      {% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+  <div id="part-of">
+    <h2>Part of</h2>
+    <ul>
+      {% for member in agent.memberOf|sort(false, false, "name") %}
+        <li>
+          {% if member.inProject %}
+            <a href="{% route member.inProject.slug, 'Projects' %}">{{ member.inProject.name }}</a>
+          {% else %}
+            <a href="{% route member.inOrganisation.agent.slug, 'Organisations' %}">{{- member.inOrganisation.agent.name -}}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endif %}
