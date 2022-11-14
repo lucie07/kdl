@@ -1,14 +1,17 @@
 ---
 layout: layouts/base.njk
 ---
+<section>
+  {{ content | safe }}
 
-{{ content | safe }}
-
-{% for group in faqs|sort(false, false, "data.order") %}
-<h2 id="{{ group.data.slug }}">{{ group.data.title }}</h2>
-{% set tag = group.data.slug %}
-{% for faq in collections[tag] %}
-<h3 id="{{ faq.data.title | slugify }}">{{ faq.data.title }}</h3>
-{{ faq.data.content | safe }}
-{% endfor %}
-{% endfor %}
+  {% for group in faqs|sort(false, false, "data.order") %}
+    <article>
+      <h2 id="{{ group.data.slug }}">{{ group.data.title }}</h2>
+      {% set tag = group.data.slug %}
+      {% for faq in collections[tag] %}
+        <h3 id="{{ faq.data.title | slugify }}">{{ faq.data.title }}</h3>
+        {{ faq.data.content | safe }}
+      {% endfor %}
+    </article>
+  {% endfor %}
+</section>
