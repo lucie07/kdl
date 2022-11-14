@@ -47,6 +47,8 @@
 {% endblock headerEnd %}
 
 {% block content %}
+  <h1>{{ title | safe }}</h1>
+  {% include "partials/toc.njk" %}
   {{ content | safe }}
 {% endblock content %}
 
