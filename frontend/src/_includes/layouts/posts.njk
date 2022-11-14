@@ -5,12 +5,12 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 
 {% from "kdl/components/article/macros.njk" import articleMacro %}
 
 {%- for post in posts -%}
-{{-
+  {{-
   articleMacro(post.data, {
-    addLink: true,
-    contentField: "excerpt"
+  addLink: true,
+  contentField: "excerpt"
   })
--}}
+  -}}
 {%- endfor -%}
 
 {% set label = "Posts" %}
