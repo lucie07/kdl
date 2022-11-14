@@ -38,6 +38,12 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.setLibrary("md", markdownIt().use(markdownItAnchor));
 
   eleventyConfig.addGlobalData("directus", getDirectus);
+  eleventyConfig.addCollection("projectsByDate", function (collectionApi) {
+    return [...collectionApi.getFilteredByTag("projects")].sort(
+      (a, b) =>
+        new Date(b.data.dissolutionDate) - new Date(a.data.dissolutionDate)
+    );
+  });
 
   eleventyConfig.addFilter("toLocaleDate", kdlFilters.toLocaleDate);
   eleventyConfig.addFilter("filter", kdlFilters.filter);
