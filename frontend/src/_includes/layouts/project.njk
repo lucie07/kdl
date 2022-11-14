@@ -1,73 +1,66 @@
 ---
 layout: layouts/base.njk
 ---
+{% from "kdl/components/image/macros.njk" import imageMacro %}
 
-<section>
-
+<article>
   <!-- Images -->
-  <div id="images">
-    <figure>
-      <img src="https://placeimg.com/640/480/arch" alt="random technology image from placeimg.com">
-      <figcaption>
-        image caption
-      </figcaption>
-    </figure>
-  </div>
+  <section id="images">
+    {{ imageMacro(obj.feature) }}
+  </section>
 
   <!-- Overview -->
   {% if project.description %}
-  <div id="overview">
-    <p>{{ project.description }}</p>
-  </div>
+    <section id="overview">
+      <p>{{ project.description }}</p>
+    </section>
   {% endif %}
 
   {% if project.url %}
-  <div id="links">
-    <ul>
-      {% for url in project.url %}
-      <li>
-        <a href="{% route url.linkrole_id.url %}" role="button">{{ url.linkrole_id.name }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+    <section id="links">
+      <ul>
+        {% for url in project.url %}
+          <li>
+            <a href="{% route url.linkrole_id.url %}" role="button">{{ url.linkrole_id.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
   {% endif %}
 
 
   <!-- Information -->
-  <div id="information">
+  <section id="information">
     {% if project.funder %}
-    <div class="funder">
-      <h2>Funder</h2>
-      <ul>
-        {% for funder in project.funder %}
-        <li>
-          <a href="{% route funder.agent_id.slug, 'Organisations' %}">
-            {{- funder.agent_id.name -}}
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
+      <section class="funder">
+        <h2>Funder</h2>
+        <ul>
+          {% for funder in project.funder %}
+            <li>
+              <a href="{% route funder.agent_id.slug, 'Organisations' %}">{{- funder.agent_id.name -}}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
     {% endif %}
 
     {% include "partials/project.njk" %}
-  </div>
+
+  </section>
 
   <!-- Team -->
   {% if project.member %}
-  <div id="team">
-    <h2>Team</h2>
-    <ul>
-      {% for member in project.member|sort(false, false, "agent.name") %}
-      <li>
-        <a href="{% route member.agent.slug, 'People' %}">{{ member.agent.name }}</a>,
-        {{ member.roleName.name }}
-        {%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
-
-</section>
+    <section id="team">
+      <h2>Team</h2>
+      <ul>
+        {% for member in project.member|sort(false, false, "agent.name") %}
+          <li>
+            <a href="{% route member.agent.slug, 'People' %}">{{ member.agent.name }}</a>,
+            {{ member.roleName.name }}
+            {%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+  </article>

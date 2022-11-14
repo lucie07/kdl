@@ -2,30 +2,13 @@
 layout: layouts/base.njk
 permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
 ---
+{% from "kdl/components/article/macros.njk" import articleMacro %}
 
-<input type="radio" name="view-filter" id="grid" class="radio" checked>
-<label for="grid">⊞ Grid</label> |
-<input type="radio" name="view-filter" id="list" class="list-view radio">
-<label for="list">≣ List</label>
-
-<ol start="{{ pagination.pageNumber * 25 + 1}}">
-  {%- for project in paginatedProjects -%}
-  <li>
-    <a href="{% route project.slug, 'Projects' %}">
-      <h2>{{ project.name }}</h2>
-      <figure>
-        <img src="https://placeimg.com/640/480/arch" alt="random technology image from placeimg.com">
-        <figcaption>
-          image caption
-        </figcaption>
-      </figure>
-    </a>
-    <div class="index-information">
-      {% include "partials/project.njk" %}
-    </div>
-  </li>
-  {%- endfor -%}
-</ol>
-
+{%- for project in paginatedProjects -%}
+  {% set html %}
+  <div class="index-information">{%- include "partials/project.njk" -%}</div>
+{% endset %}
+{{ articleMacro(project.data, { addLink: true, html: html }) }}
+{%- endfor -%}
 {% set label = "Projects" %}
 {% include "partials/pagination.njk" %}
