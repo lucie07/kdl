@@ -4,14 +4,14 @@ layout: layouts/agent.njk
 
 {% set funded = projects | fundedProjects(agentInstance) %}
 {% if funded %}
-<div id="funded">
-  <h2>Funded</h2>
-  <ul>
-    {% for project in funded %}
-    <li>
-      <a href="{% route project.slug, 'Projects' %}">{{ project.name }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+  <div id="funded">
+    <h2>Funded</h2>
+    <ul>
+      {% for project in funded %}
+        <li>
+          <a href="{% route project.slug, 'Projects' %}">{{ project.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endif %}

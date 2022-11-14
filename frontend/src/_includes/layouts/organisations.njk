@@ -4,17 +4,18 @@ permalink: "about/organisations/{% if pagination.pageNumber > 0 %}{{ pagination.
 ---
 
 <input type="radio" name="view-filter" id="grid" class="radio" checked>
-<label for="grid">⊞ Grid</label> |
+<label for="grid">⊞ Grid</label>
+|
 <input type="radio" name="view-filter" id="list" class="list-view radio">
 <label for="list">≣ List</label>
 
-<ol start="{{ pagination.pageNumber * 10 + 1}}">
+<ol start="{{ pagination.pageNumber * 10 + 1 }}">
   {%- for org in paginatedOrganisations -%}
-  <li>
-    <a href="{% route org.agent.slug, 'Organisations' %}">
-      <h2>{{ org.agent.name }}</h2>
-    </a>
-  </li>
+    <li>
+      <a href="{% route org.agent.slug, 'Organisations' %}">
+        <h2>{{ org.agent.name }}</h2>
+      </a>
+    </li>
   {%- endfor -%}
 </ol>
 
