@@ -99,7 +99,7 @@ class Manager {
       return null;
     }
 
-    return DateTime.fromFormat(string, "dd/mm/yyyy").toISODate();
+    return DateTime.fromFormat(string, "d/M/yyyy").toISODate();
   }
 
   parseList(string) {
