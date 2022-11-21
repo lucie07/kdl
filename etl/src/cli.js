@@ -57,7 +57,7 @@ async function cli() {
     .action((path) => {
       const scraper = new Scraper("https://kdl.kcl.ac.uk/blog", path);
       scraper
-        .scrape("*", scraper.getBlogData)
+        .scrape("*", "blog", scraper.getBlogData)
         .then(() => console.info("Blog scraping done"))
         .catch((err) => console.error(err));
     });
@@ -68,7 +68,7 @@ async function cli() {
     .action((path) => {
       const scraper = new Scraper("https://kdl.kcl.ac.uk/how-we-work", path);
       scraper
-        .scrape("faq-partners", scraper.getFaqData)
+        .scrape("faq-partners", "resources", scraper.getFaqData)
         .then(() => console.info("FAQs scraping done"))
         .catch((err) => console.error(err));
     });

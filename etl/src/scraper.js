@@ -21,7 +21,7 @@ class Scraper {
     });
   }
 
-  scrape(glob, getDataCallback) {
+  scrape(glob, category, getDataCallback) {
     return new Promise((resolve, reject) => {
       const self = this;
 
@@ -37,9 +37,9 @@ class Scraper {
           self.downloadImages(images);
 
           if (data instanceof Array) {
-            data.forEach((d) => self.save(d.name, d, d.path));
+            data.forEach((d) => self.save(category, d.name, d, d.path));
           } else {
-            self.save(name, data);
+            self.save(category, name, data);
           }
 
           await enqueueLinks({
@@ -99,7 +99,7 @@ class Scraper {
     });
   }
 
-  save(name, data, subpath = null) {
+  save(category, name, data, subpath = null) {
     const content = ["---"];
     content.push(YAML.stringify(data.frontmatter).trim());
     content.push("---\n");
@@ -113,7 +113,9 @@ class Scraper {
     Promise.resolve(fs.mkdir(outputPath, { recursive: true })).then(() =>
       fs.writeFile(
         `${outputPath}/${name}.md`,
-        content.join("\n").replaceAll("/static/media/", "")
+        content
+          .join("\n")
+          .replaceAll("/static/media/images", `/assets/images/${category}`)
       )
     );
   }
