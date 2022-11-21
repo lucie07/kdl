@@ -8,7 +8,7 @@ authors:
 date: 2019-09-26
 excerpt: ""
 feature:
-  image: images/IMG_20190702_145840736.original.jpg
+  image: /assets/images/blog/IMG_20190702_145840736.original.jpg
   description: KDL-MaDIH1
 ---
 
@@ -22,7 +22,7 @@ Attendees from Jordan included the Project PI Dr Fadi Bala'awi, Dean of Queen Ra
 
 Led by the Project PI in London Dr James Smithies (Director of KDL), and Dr Arianna Ciula, (Deputy Director of KDL), the workshop introduced the project team to KDL project management practices, presenting the team’s  [Agile DSDM Process](https://www.agilebusiness.org/content/philosophy-and-fundamentals). Discussions on data modelling and ontologies informed one of the main outcomes of MaDiH Phase 1: a prototype of a National Data Catalogue to be stored on a [ckan.org](https://ckan.org/) To this end, a protocol detailing the methodology of data collection and practices was initiated and will be the core of a technical white paper to be produced at the end of this first phase. Considerations on data collection led to reflections on public and private cultural heritage and the associated code of ethics to be included in the policy whitepaper, together with indications on best practice in data collection and the potential inclusion of heritage datasets in the national policy for open data in Jordan.
 
-![KDL-MaDIH2](images/IMG_20190702_092247060_HDR.width-1024.jpg)
+![KDL-MaDIH2](/assets/images/blog/IMG_20190702_092247060_HDR.width-1024.jpg)
 
 (c) Pascal Flohr
 

@@ -10,7 +10,7 @@ authors:
 date: 2019-12-05
 excerpt: ""
 feature:
-  image: images/franck-v-U3sOwViXhkY-unsplash.original.jpg
+  image: /assets/images/blog/franck-v-U3sOwViXhkY-unsplash.original.jpg
   description: AI_music
 ---
 

@@ -14,7 +14,7 @@ excerpt: King’s Digital Lab continues a proud tradition of digital humanities 
   builds on a legacy that includes 30 years of activity, set against a
   background of rapid innovation and change.
 feature:
-  image: images/blog_hero_mq.original.jpg
+  image: /assets/images/blog/blog_hero_mq.original.jpg
   description: kdl blog launch hero mq
 ---
 
@@ -30,13 +30,13 @@ Our combined DDH - KDL model is not the only one possible, but reflects a level 
 
 Our primary purpose is to offer enhanced digital capability to researchers at King’s, and partners in cultural heritage organizations across London, Europe, and the world. This typically involves requirements definition and costing for major grant proposals, followed by development of the digital product after funding has been awarded. It also includes consultancy services, derived from the King’s Digital Consultancy Services (KDCS) previously directed by Simon Tanner.
 
-![Faculty of Arts and Humanities](images/kdl_fah.original.width-1024.png)
+![Faculty of Arts and Humanities](/assets/images/blog/kdl_fah.original.width-1024.png)
 
 Faculty of Arts and Humanities
 
 Our work ranges from the development of historical databases and digital archives, digital scholarly editions, map-based tools, data and text analysis, visualization, and eBooks. The capability and range of interests of the KDL team, combined with our mandate to explore new frontiers in research, means we can be open to any ideas colleagues might throw at us.
 
-![Software stack](images/dev_stack.original.width-1024.png)
+![Software stack](/assets/images/blog/dev_stack.original.width-1024.png)
 
 KDL's software stack. Image created by [Luis Figueira](/who-we-are/luis-figueira/)
 

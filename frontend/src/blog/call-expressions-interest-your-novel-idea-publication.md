@@ -17,9 +17,9 @@ feature:
 
 [Stanford University Press](http://sup.org/) (SUP) and [King’s Digital Lab](https://www.kdl.kcl.ac.uk/) (KDL, King’s College London) invite expressions of interest to propose ideas for a digital academic publication blending cutting-edge technology with very high quality scholarship.
 
-[![Links to King's Digital Lab](images/kdl-heading.original.png)](//kdl.kcl.ac.uk/)
+[![Links to King's Digital Lab](/assets/images/blog/kdl-heading.original.png)](//kdl.kcl.ac.uk/)
 
-[![Links to SUP Digital logo](images/DigitalBlogHeaderRedBlackTxp.original.png)](http://sup.org/)
+[![Links to SUP Digital logo](/assets/images/blog/DigitalBlogHeaderRedBlackTxp.original.png)](http://sup.org/)
 
 KDL and SUP wish to collaborate with interested researchers in developing a scholarly product that achieves technical quality while benefitting, at the same time, from robust archiving, and a responsible sustainability and research data management plan.[1](#fn1)
 

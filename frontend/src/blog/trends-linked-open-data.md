@@ -18,7 +18,7 @@ The [Georgian Papers Programme](http://georgianpapersprogramme.com/) (GPP) is an
 
 As the Metadata Analyst for GPP, my role is to discover how best to describe this material to ensure that it is fully searchable (using either UK or US, modern or historical spelling;)and that the methods of description conform to best practice. I was pleased to be offered the chance by Geoff Browell of KCL Archives to attend the [LODLAM Summit 2017](https://summit2017.lodlam.net/) which was held in Venice, 28-29 June. The summit offers opportunities for discussion and networking for those within the Linked Open Data (LOD) community working with and within Libraries, Archives and Museums. But the format for the summit was something new to me - an _unconference_?
 
-![Unconference](images/unconference.width-1024.jpg)
+![Unconference](/assets/images/blog/unconference.width-1024.jpg)
 
 Voting for "unconference" sessions
 
@@ -28,13 +28,13 @@ In that spirit, what follows is part reportage to direct the reader to some of e
 
 We opened with Pasquale Gagliardi, the Secretary General of the Cini Foundation (Fondazione Giorgio Cini), who warmly welcomed delegates to the foundation and discussed the work they are doing around opening up access to their own archives and graphic collections. Ingrid Mason, Deployment Strategist at AARNet, set the foundation for the conference specifically around the concept of OpenSpace technology.
 
-![Open Space](images/IMG_20170628_100830.width-1024.jpg)
+![Open Space](/assets/images/blog/IMG_20170628_100830.width-1024.jpg)
 
 Open Space Technology - a pragmatic philosophy!
 
 The first of the sessions I opted to attend concerned [Schema.org](http://schema.org/) (where did it come from?), and the proposal for an archives extension. Led by Richard Wallis, founder of [Data Liberate](http://dataliberate.com/), these sessions were very informative and I look forward to evaluating Schema.org as a possible metadata standard to use within the GPP. A particular point of interest for me from these two sessions was the huge uptake by website creators (12 million domains as of 2015) despite an uncertainty that it impacts on website usage due to the opacity of search engine algorithms. Schema.org is available in a number of metadata flavours too (microdata, RDFa, JSON-LD) to better fit into whatever your current LOD practice might be.
 
-![Venice Cloister](images/cloisters.width-1024.jpg)
+![Venice Cloister](/assets/images/blog/cloisters.width-1024.jpg)
 
 Lunch held in the Cypress Cloister (Buora)
 

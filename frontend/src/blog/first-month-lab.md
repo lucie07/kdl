@@ -23,7 +23,7 @@ Premise number 1: I have worked with some of the people in the Lab in the past i
 
 Premise number 2: many of the colleagues based here I did not know before my job interview or before actually sitting at my brand new desk, which rather aptly faces Sardinia Street. (Sardinia is the island of my birth).
 
-![Desk in the lab](images/blog_desk_2.width-1024.jpg)
+![Desk in the lab](/assets/images/blog/blog_desk_2.width-1024.jpg)
 
 While the culture of working remotely is accepted and endorsed in the ethos of the lab, I feel the place gives its best when everybody is around. It can become messy with conference calls, keyboards ticking, stand ups, visitors coming in and out, and improvised meetings in one of the corners. But I love the sense of working together. It is possibly one of the benefits of not being a traditional academic department nor a traditional professional service. One has to share – not everything but enough, and frequently enough to make things move. It’s as much a pragmatic approach as a work culture. Certainly, in the spectrum between technical development and research or project management, those of us who lean towards the latter have a lot to learn from the former. Developers have a unique way of solving problems and tackling challenges.
 
@@ -41,4 +41,4 @@ My fourth finding: the Lab has a common language set around the Agile methodolog
 
 My last finding is that I should get on with my work today! Come and visit the Lab; share your findings.
 
-![desk_shot](images/blog_desk.width-1024.jpg)
+![desk_shot](/assets/images/blog/blog_desk.width-1024.jpg)

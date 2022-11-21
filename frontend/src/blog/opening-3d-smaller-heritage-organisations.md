@@ -8,7 +8,7 @@ authors:
 date: 2019-12-06
 excerpt: ""
 feature:
-  image: images/blog_header-scaled.original.jpg
+  image: /assets/images/blog/blog_header-scaled.original.jpg
   description: liberty_header
 ---
 

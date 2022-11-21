@@ -8,7 +8,7 @@ authors:
 date: 2020-11-18
 excerpt: ""
 feature:
-  image: images/book_network.original.jpg
+  image: /assets/images/blog/book_network.original.jpg
   description: ursula_blog_feed
 ---
 

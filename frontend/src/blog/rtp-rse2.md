@@ -1,5 +1,5 @@
 ---
-title: What does the role of Research Technology Professional means to King’s
+title: What does the role of Research Technology Professional mean to King’s
   Digital Lab?
 subtitle: "Part 2: People, projects, infrastructure, methodologies and processes"
 tags:
@@ -11,11 +11,11 @@ excerpt: >-
 
   This is the second part of a blogpost published for International Research Software Engineering Day integrating and extracting from our response to the Arts and Humanities Research Council (AHRC) consultation this summer on what the role of Research Technology Professional (RTP) means to King’s Digital Lab. Research Software Engineering profiles are a category within RTPs so our response was based on the KDL experience of inhabiting those roles.
 feature:
-  image: images/pexels-adam-ernster-7767972.original.jpg
+  image: /assets/images/blog/pexels-adam-ernster-7767972.original.jpg
   description: Underwater Photo of Whale and Iceberg
 ---
 
-![RSE day 2022](images/rseday2022-frame-400x400-1_7SmANz5.width-500.png)
+![RSE day 2022](/assets/images/blog/rseday2022-frame-400x400-1_7SmANz5.width-500.png)
 
 This is the second part of [a blogpost](/blog/rtp-rse/) published for [International Research Software Engineering Day](https://society-rse.org/international-rse-day-13th-october-2022/) integrating and extracting from our response to the Arts and Humanities Research Council (AHRC) consultation this summer on what the role of Research Technology Professional (RTP) means to King’s Digital Lab. Research Software Engineering profiles are a category within RTPs so our response was based on the KDL experience of inhabiting those roles.
 
@@ -81,7 +81,7 @@ Development of projects in KDL is undertaken using a mature Software Development
 >
 > (Ciula et al. forthcoming)
 
-![Ong 2021](images/Distribution_of_Models.width-1024.jpg)
+![Ong 2021](/assets/images/blog/Distribution_of_Models.width-1024.jpg)
 
 Ong 2021
 
@@ -116,4 +116,4 @@ To sum up, RTP contribution to research is deep and unfolds in the iterative des
 >
 > (Ciula et al. Forthcoming)
 
-Part 3 will focus on our take around the pillars of the [Technician Commitment](https://www.ukri.org/wp-content/uploads/2021/02/UKRI-040221-TechnicianCommitmentActionPlan.pdf).
+[Part 3](/blog/rtp-rse3/) will focus on our take around the pillars of the [Technician Commitment](https://www.ukri.org/wp-content/uploads/2021/02/UKRI-040221-TechnicianCommitmentActionPlan.pdf).

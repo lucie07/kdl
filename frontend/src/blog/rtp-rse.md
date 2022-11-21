@@ -1,5 +1,5 @@
 ---
-title: What does the role of Research Technology Professional means to King’s
+title: What does the role of Research Technology Professional mean to King’s
   Digital Lab?
 subtitle: "Our integrated response to AHRC call for evidence - Part 1: Who are
   Research Technology Professionals?"
@@ -26,11 +26,11 @@ excerpt: "
 
   \        "
 feature:
-  image: images/bryan-goff-wT-dwxXCsE8-unsplash.original.jpg
+  image: /assets/images/blog/bryan-goff-wT-dwxXCsE8-unsplash.original.jpg
   description: McMurdo Station, Antarctica
 ---
 
-![RSE day 2022](images/rseday2022-frame-400x400-1_7SmANz5.width-500.png)
+![RSE day 2022](/assets/images/blog/rseday2022-frame-400x400-1_7SmANz5.width-500.png)
 
 For [International Research Software Engineering Day](https://society-rse.org/international-rse-day-13th-october-2022/) we are publishing a serialised blogpost integrating and extracting from our response to the Arts and Humanities Research Council (AHRC) consultation this summer on what the role of Research Technology Professional (RTP) means to King’s Digital Lab. Research Software Engineering profiles are a category within RTPs so our response was based on the KDL experience of inhabiting those roles.
 
@@ -74,7 +74,7 @@ The inclusion of additional roles as above is based on [this document](https://d
 
 [](https://doi.org/10.5281/zenodo.2559235)
 
-![RSE Careers](images/rse-careers.width-1024.png)
+![RSE Careers](/assets/images/blog/rse-careers.width-1024.png)
 
 Diversity of research contribution within the RSE spectrum (Smithies 2019)
 
@@ -82,7 +82,7 @@ The proposed additions also support the extension of RTP contribution, in the RS
 
 [](https://www.taylorfrancis.com/chapters/edit/10.4324/9780429777028-13/humans-loop-james-smithies-arianna-ciula)
 
-![SDLC](images/SDLC-Operational_Methods.width-1024.jpg)
+![SDLC](/assets/images/blog/SDLC-Operational_Methods.width-1024.jpg)
 
 Ong 2022, adapted from Smithies and Ciula 2020
 

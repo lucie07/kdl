@@ -15,7 +15,7 @@ excerpt: Modelling is a concept that is central to DH, though its various
   meanings. By happy providence, the act of modelling itself leads to new
   insights for our KDL Postdoctoral Research Associate Chris Pak ...
 feature:
-  image: images/graph.original.jpg
+  image: /assets/images/blog/graph.original.jpg
   description: Network Graph
 ---
 
@@ -31,7 +31,7 @@ I needed to identify an approach that would produce a visualisation suitable for
 
 D3.js is the swiss-army knife of dataviz toolkits - it’s scalable, allows flexible styling, is easily deployed (and thus consumed) and it’s free! Sure there’s a learning curve to climb, but that’s nothing a little coffee and determination can’t overcome, and with minimal frustration I was able to develop a graph format that can now be re-used throughout the lifecycle of the project.
 
-![model net graph](images/NetworkGraph.width-1024.jpg)
+![model net graph](/assets/images/blog/NetworkGraph.width-1024.jpg)
 
 (Graph will be reproduced in full detail in “Modelling between Digital and Humanities: Looking Back and Forward”)
 
@@ -45,7 +45,7 @@ There were a range of network graphs available as models through the d3.js libra
 
 I then created an Excel template to manage the data in the json file. This enabled me to quickly generate code that could be copy and pasted into a json file, which could then be used to generate the network graph.
 
-![spreadhseet snippet](images/Screen_Shot_2018-01-19_at_13.26.08.width-1024.png)
+![spreadhseet snippet](/assets/images/blog/Screen_Shot_2018-01-19_at_13.26.08.width-1024.png)
 
 Using Excel to edit a JSON file is a great way for reluctant coders to control a visualisation's parameters
 

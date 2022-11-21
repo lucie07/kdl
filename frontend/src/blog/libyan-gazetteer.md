@@ -10,7 +10,7 @@ excerpt: Toponyms are slippery things, meaning one place to one person and
   perhaps a whole region to another. They are encumbered with cultural baggage,
   questions of identity, temporality and language.
 feature:
-  image: images/libya_blog_hero.original.original.jpg
+  image: /assets/images/blog/libya_blog_hero.original.original.jpg
   description: Libya
 ---
 

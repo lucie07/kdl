@@ -11,7 +11,7 @@ excerpt: "At its inception in 2015, King’s Digital Lab became the de facto
   custodian of a rich legacy of Digital Humanities (DH) research projects
   spanning decades of experimentation... "
 feature:
-  image: images/SDLC_blog_banner.original.jpg
+  image: /assets/images/blog/SDLC_blog_banner.original.jpg
   description: SDLC_blog_banner_v2
 ---
 

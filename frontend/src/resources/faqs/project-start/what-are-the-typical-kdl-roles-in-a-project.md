@@ -15,18 +15,18 @@ tags:
 
 Below are some diagrams with more detailed descriptions that match our workflow to each role. For full role profiles see [KDL roles profiles document](https://zenodo.org/record/2564790).
 
-![Project Manager role](images/pm_role.width-1024.png)
+![Project Manager role](/assets/images/resources/pm_role.width-1024.png)
 
 Project Manager role ([MaDiH RSE training 2019](https://campus.dariah.eu/resource/rse2019))
 
-![Analyst role](images/analyst_role.width-1024.png)
+![Analyst role](/assets/images/resources/analyst_role.width-1024.png)
 
 Analyst role ([MaDiH RSE training 2019](https://campus.dariah.eu/resource/rse2019))
 
-![Software Engineer role](images/software-engineer_role.width-1024.png)
+![Software Engineer role](/assets/images/resources/software-engineer_role.width-1024.png)
 
 Software Engineer role ([MaDiH RSE training 2019](https://campus.dariah.eu/resource/rse2019))
 
-![UI/UX designer role](images/designer_role.width-1024.png)
+![UI/UX designer role](/assets/images/resources/designer_role.width-1024.png)
 
 UI/UX Designer role ([MaDiH RSE training 2019](https://campus.dariah.eu/resource/rse2019))

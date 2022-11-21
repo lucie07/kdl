@@ -15,7 +15,7 @@ excerpt: >-
 
   KDL joined the board from day one to help shape the College’s digital accessibility policy and help scope the work that needed to be done to make every platform as accessible as possible.
 feature:
-  image: images/liane-metzler-v3bWNXeInQA-unsplash-small.original.jpg
+  image: /assets/images/blog/liane-metzler-v3bWNXeInQA-unsplash-small.original.jpg
   description: Liane Metzler Unsplash - White stairs
 ---
 
@@ -33,7 +33,7 @@ I have attended more than one event where I listened to [Léonie Watson](https:/
 
 What we received is called a "gap analysis report". The results were not flattering. We discovered that in our customisation of the front-end stack, we had introduced some issues and were not meeting [WCAG A standards](https://www.w3.org/TR/WCAG21/). Focusing on the positives: most of the big issues were easy to fix and we knew where to start.
 
-![Gap analysis data screenshot](images/gap-analysis-data-screenshot.width-1024.png)
+![Gap analysis data screenshot](/assets/images/blog/gap-analysis-data-screenshot.width-1024.png)
 
 _Fig. 1_ A screenshot of the gap analysis document section where some results are highlighted, in particular:  
 32 Level A issues affecting 38% of the website (8409 pages) and 4 Level AA issues affecting 1% of the website (133 pages).
@@ -76,7 +76,7 @@ The five phases in our design workflow are:
 - **Design iterations and user testing**
 - Launch
 
-![KDL UX workflow](images/UX-design-workflow.width-1024.png)
+![KDL UX workflow](/assets/images/blog/UX-design-workflow.width-1024.png)
 
 _Fig. 2_ KDL's design workflow.
 
@@ -99,7 +99,7 @@ We also excluded sites that could be considered archives based on the definition
 
 **The result is a list of circa 90 sites, of which, at the time of writing, 17 have been rendered accessible, 2 are in progress, 4 in the pipeline and the rest of the list will be revaluated in due course to reassign priority.**
 
-![Screenshot of a bird’s eye view of the prioritised spreadsheet.](images/Screenshot_2021-04-19_at_12.03.48.width-1024.png)
+![Screenshot of a bird’s eye view of the prioritised spreadsheet.](/assets/images/blog/Screenshot_2021-04-19_at_12.03.48.width-1024.png)
 
 _Fig. 3_ Screenshot of a bird’s eye view of the prioritised spreadsheet.
 

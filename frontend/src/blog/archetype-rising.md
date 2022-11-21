@@ -14,7 +14,7 @@ excerpt: There have been some mysterious and intriguing noises coming out of KDL
   add the final touches to a digital behemoth hidden underneath an equally
   metaphorical, oil-stained tarpaulin...
 feature:
-  image: images/metropolis57fsam.original.jpg
+  image: /assets/images/blog/metropolis57fsam.original.jpg
   description: metropolis3
 ---
 
@@ -40,6 +40,6 @@ So, beneath the tarpaulin, we are hooking up the electrodes. We’re testing the
 
 “Arise, my child! Arise [ARCHETYPE](http://archetype.ink)!”
 
-![archetype_blog_feed_2](images/archetyp_blog.width-300.jpg)
+![archetype_blog_feed_2](/assets/images/blog/archetyp_blog.width-300.jpg)
 
 Arise Archetype

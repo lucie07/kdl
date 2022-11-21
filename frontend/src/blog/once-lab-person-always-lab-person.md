@@ -8,7 +8,7 @@ authors:
 date: 2018-07-27
 excerpt: ""
 feature:
-  image: images/KDL_mug_letterbox.original.jpg
+  image: /assets/images/blog/KDL_mug_letterbox.original.jpg
   description: KDL Mug Letterbox
 ---
 
