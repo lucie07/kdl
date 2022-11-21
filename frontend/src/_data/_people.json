@@ -2,6 +2,28 @@
   {
     "jobTitle": null,
     "agent": {
+      "name": "AbdoolKarim Vakil",
+      "slug": "abdool-karim-vakil",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
       "name": "Abigail Woods",
       "slug": "abigail-woods",
       "description": null,
@@ -83,6 +105,23 @@
           "inProject": {
             "name": "MOI: A Publishing and Communication History of the Ministry of Information, 1939-45",
             "slug": "moi"
+          },
+          "inOrganisation": null
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Alessia Coccato",
+      "slug": "alessia-coccato",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "CROSSREADS",
+            "slug": "crossreads"
           },
           "inOrganisation": null
         }
@@ -197,6 +236,28 @@
   {
     "jobTitle": null,
     "agent": {
+      "name": "Alice Hazard",
+      "slug": "alice-hazard",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
       "name": "Alice Rio",
       "slug": "alice-rio",
       "description": null,
@@ -237,7 +298,7 @@
         },
         {
           "inProject": {
-            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
+            "name": "COTR: The Community of the Realm in Scotland, 1249-1424",
             "slug": "cotr"
           },
           "inOrganisation": {
@@ -288,6 +349,28 @@
             "agent": {
               "name": "Newcastle University",
               "slug": "newcastle-university"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Ana de Medeiros",
+      "slug": "ana-de-medeiros",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
             }
           }
         }
@@ -626,8 +709,8 @@
           },
           "inOrganisation": {
             "agent": {
-              "name": "Oxford",
-              "slug": "oxford"
+              "name": "University of Oxford",
+              "slug": "university-of-oxford"
             }
           }
         }
@@ -650,6 +733,28 @@
             "agent": {
               "name": "UCL",
               "slug": "ucl"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Bozena Wislocka Breit",
+      "slug": "bozena-wislocka-breit",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "Queen Mary, University of London",
+              "slug": "queen-mary-university-of-london"
             }
           }
         }
@@ -701,7 +806,7 @@
         },
         {
           "inProject": {
-            "name": "OWRI: Languages Acts and Worldmaking",
+            "name": "Language Acts and Worldmaking",
             "slug": "owri"
           },
           "inOrganisation": null
@@ -737,7 +842,7 @@
         {
           "inProject": {
             "name": "RENSKIN: Renaissance Skin",
-            "slug": "renskin-2"
+            "slug": "renskin"
           },
           "inOrganisation": null
         },
@@ -754,52 +859,6 @@
             "slug": "mozartmc"
           },
           "inOrganisation": null
-        }
-      ]
-    }
-  },
-  {
-    "jobTitle": null,
-    "agent": {
-      "name": "Cambridge)",
-      "slug": "cambridge-2",
-      "description": null,
-      "memberOf": [
-        {
-          "inProject": {
-            "name": "IRCYR: Inscriptions of Roman Cyrenaica",
-            "slug": "ircyr"
-          },
-          "inOrganisation": {
-            "agent": {
-              "name": "Unknown organisation",
-              "slug": "unknown-organisation"
-            }
-          }
-        },
-        {
-          "inProject": {
-            "name": "EPAPP: The Epidoc Aphrodisias Project",
-            "slug": "epapp"
-          },
-          "inOrganisation": {
-            "agent": {
-              "name": "Unknown organisation",
-              "slug": "unknown-organisation"
-            }
-          }
-        },
-        {
-          "inProject": {
-            "name": "Inscriptions of Aphrodisias",
-            "slug": "inscriptions-of-aphrodisias"
-          },
-          "inOrganisation": {
-            "agent": {
-              "name": "Unknown organisation",
-              "slug": "unknown-organisation"
-            }
-          }
         }
       ]
     }
@@ -837,6 +896,28 @@
             "agent": {
               "name": "Royal Holloway",
               "slug": "royal-holloway"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Carlos Montoro",
+      "slug": "carlos-montoro",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "Open University",
+              "slug": "open-university"
             }
           }
         }
@@ -918,13 +999,35 @@
       "memberOf": [
         {
           "inProject": {
-            "name": "OWRI: Languages Acts and Worldmaking",
+            "name": "Language Acts and Worldmaking",
             "slug": "owri"
           },
           "inOrganisation": {
             "agent": {
               "name": "KCL",
               "slug": "kcl"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Charles Prior",
+      "slug": "charles-prior",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "BCC: Brightening the Covenant Chain",
+            "slug": "bcc"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "University of Hull",
+              "slug": "university-of-hull"
             }
           }
         }
@@ -1148,6 +1251,37 @@
   {
     "jobTitle": null,
     "agent": {
+      "name": "Christopher Pountain",
+      "slug": "christopher-pountain",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": null,
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
+            }
+          }
+        },
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "Queen Mary, University of London",
+              "slug": "queen-mary-university-of-london"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
       "name": "Christopher Ratté",
       "slug": "christopher-ratte",
       "description": null,
@@ -1256,6 +1390,28 @@
     }
   },
   {
+    "jobTitle": "a5e01de5-8b69-4518-8842-1aa93ba63157",
+    "agent": {
+      "name": "Cordelia Beattie",
+      "slug": "cordelia-beattie",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "AT: Alice Thornton digital edition",
+            "slug": "at"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "University of Edinburgh",
+              "slug": "university-of-edinburgh"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
     "jobTitle": null,
     "agent": {
       "name": "Cristina Viti",
@@ -1342,7 +1498,7 @@
       "memberOf": [
         {
           "inProject": {
-            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
+            "name": "COTR: The Community of the Realm in Scotland, 1249-1424",
             "slug": "cotr"
           },
           "inOrganisation": {
@@ -1467,6 +1623,28 @@
   {
     "jobTitle": null,
     "agent": {
+      "name": "Debra Kelly",
+      "slug": "debra-kelly",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "University of Westminster",
+              "slug": "university-of-westminster"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
       "name": "Denise Ho",
       "slug": "denise-ho",
       "description": null,
@@ -1541,6 +1719,28 @@
           "inProject": {
             "name": "DPRR: Digital Prosopography of the Roman Republic",
             "slug": "dprr"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Donata Puntil",
+      "slug": "donata-puntil",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
           },
           "inOrganisation": {
             "agent": {
@@ -1728,6 +1928,28 @@
   {
     "jobTitle": null,
     "agent": {
+      "name": "Ella Dunne",
+      "slug": "ella-dunne",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
       "name": "Elliott Hall",
       "slug": "elliott-hall",
       "description": null,
@@ -1752,6 +1974,18 @@
             "slug": "sharc"
           },
           "inOrganisation": null
+        },
+        {
+          "inProject": {
+            "name": "BCC: Brightening the Covenant Chain",
+            "slug": "bcc"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "DDH/KDL",
+              "slug": "ddh/kdl"
+            }
+          }
         },
         {
           "inProject": {
@@ -1892,8 +2126,8 @@
           },
           "inOrganisation": {
             "agent": {
-              "name": "Oxford",
-              "slug": "oxford"
+              "name": "University of Oxford",
+              "slug": "university-of-oxford"
             }
           }
         }
@@ -1910,7 +2144,7 @@
         {
           "inProject": {
             "name": "RENSKIN: Renaissance Skin - Visible Skin",
-            "slug": "renskin"
+            "slug": "visible-skin"
           },
           "inOrganisation": {
             "agent": {
@@ -1922,7 +2156,7 @@
         {
           "inProject": {
             "name": "RENSKIN: Renaissance Skin",
-            "slug": "renskin-2"
+            "slug": "renskin"
           },
           "inOrganisation": {
             "agent": {
@@ -2105,8 +2339,8 @@
       "memberOf": [
         {
           "inProject": {
-            "name": "KDL Archetype",
-            "slug": "kdl-archetype"
+            "name": "AT: Alice Thornton digital edition",
+            "slug": "at"
           },
           "inOrganisation": null
         },
@@ -2133,7 +2367,7 @@
         },
         {
           "inProject": {
-            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
+            "name": "COTR: The Community of the Realm in Scotland, 1249-1424",
             "slug": "cotr"
           },
           "inOrganisation": null
@@ -2155,7 +2389,14 @@
         {
           "inProject": {
             "name": "RENSKIN: Renaissance Skin",
-            "slug": "renskin-2"
+            "slug": "renskin"
+          },
+          "inOrganisation": null
+        },
+        {
+          "inProject": {
+            "name": "CROSSREADS",
+            "slug": "crossreads"
           },
           "inOrganisation": null
         },
@@ -2169,7 +2410,7 @@
         {
           "inProject": {
             "name": "RENSKIN: Renaissance Skin - Visible Skin",
-            "slug": "renskin"
+            "slug": "visible-skin"
           },
           "inOrganisation": null
         }
@@ -2206,6 +2447,28 @@
             "slug": "pbw"
           },
           "inOrganisation": null
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Germana Barone",
+      "slug": "germana-barone",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "CROSSREADS",
+            "slug": "crossreads"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "University of Catania",
+              "slug": "university-of-catania"
+            }
+          }
         }
       ]
     }
@@ -2258,8 +2521,8 @@
       "memberOf": [
         {
           "inProject": {
-            "name": "Ego-media: The impact of new media on forms and practices of self-presentation",
-            "slug": "ego-media"
+            "name": "AT: Alice Thornton digital edition",
+            "slug": "at"
           },
           "inOrganisation": null
         },
@@ -2267,6 +2530,13 @@
           "inProject": {
             "name": "Radical Translations: The Transfer of Revolutionary Culture between Britain, France and Italy (1789-1815)  ",
             "slug": "radical-translations"
+          },
+          "inOrganisation": null
+        },
+        {
+          "inProject": {
+            "name": "CROSSREADS",
+            "slug": "crossreads"
           },
           "inOrganisation": null
         },
@@ -2294,7 +2564,7 @@
         {
           "inProject": {
             "name": "RENSKIN: Renaissance Skin",
-            "slug": "renskin-2"
+            "slug": "renskin"
           },
           "inOrganisation": null
         },
@@ -2307,7 +2577,7 @@
         },
         {
           "inProject": {
-            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
+            "name": "COTR: The Community of the Realm in Scotland, 1249-1424",
             "slug": "cotr"
           },
           "inOrganisation": null
@@ -2382,7 +2652,7 @@
         },
         {
           "inProject": {
-            "name": "OWRI: Languages Acts and Worldmaking",
+            "name": "Language Acts and Worldmaking",
             "slug": "owri"
           },
           "inOrganisation": null
@@ -2598,7 +2868,7 @@
         {
           "inProject": {
             "name": "RENSKIN: Renaissance Skin - Visible Skin",
-            "slug": "renskin"
+            "slug": "visible-skin"
           },
           "inOrganisation": {
             "agent": {
@@ -2610,7 +2880,7 @@
         {
           "inProject": {
             "name": "RENSKIN: Renaissance Skin",
-            "slug": "renskin-2"
+            "slug": "renskin"
           },
           "inOrganisation": {
             "agent": {
@@ -2804,6 +3074,45 @@
   {
     "jobTitle": null,
     "agent": {
+      "name": "Ilenia Gradante",
+      "slug": "ilenia-gradante",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "CROSSREADS",
+            "slug": "crossreads"
+          },
+          "inOrganisation": null
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Inma Álvarez",
+      "slug": "inma-alvarez",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "Open University",
+              "slug": "open-university"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
       "name": "Irene Polinskaya",
       "slug": "irene-polinskaya",
       "description": null,
@@ -2817,6 +3126,50 @@
             "agent": {
               "name": "KCL",
               "slug": "kcl"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Isabel Cobo Palacios",
+      "slug": "isabel-cobo-palacios",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "Open University",
+              "slug": "open-university"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Isabel Garcia Ortiz",
+      "slug": "isabel-garcia-ortiz",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "Queen Mary, University of London",
+              "slug": "queen-mary-university-of-london"
             }
           }
         }
@@ -3023,8 +3376,52 @@
           },
           "inOrganisation": {
             "agent": {
-              "name": "Oxford",
-              "slug": "oxford"
+              "name": "University of Oxford",
+              "slug": "university-of-oxford"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Jenson Morse",
+      "slug": "jenson-morse",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "BCC: Brightening the Covenant Chain",
+            "slug": "bcc"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "University of Hull",
+              "slug": "university-of-hull"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Joanne Edge",
+      "slug": "joanne-edge",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "AT: Alice Thornton digital edition",
+            "slug": "at"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "University of Edinburgh",
+              "slug": "university-of-edinburgh"
             }
           }
         }
@@ -3151,7 +3548,7 @@
       "memberOf": [
         {
           "inProject": {
-            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
+            "name": "COTR: The Community of the Realm in Scotland, 1249-1424",
             "slug": "cotr"
           },
           "inOrganisation": {
@@ -3201,6 +3598,23 @@
   {
     "jobTitle": null,
     "agent": {
+      "name": "Jonathan Prag",
+      "slug": "jonathan-prag",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "CROSSREADS",
+            "slug": "crossreads"
+          },
+          "inOrganisation": null
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
       "name": "Joyce Reynholds",
       "slug": "joyce-reynholds",
       "description": null,
@@ -3238,6 +3652,28 @@
             "agent": {
               "name": "Newnham College",
               "slug": "newnham-college"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": "a5e01de5-8b69-4518-8842-1aa93ba63157",
+    "agent": {
+      "name": "Joy Porter",
+      "slug": "joy-porter",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "BCC: Brightening the Covenant Chain",
+            "slug": "bcc"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "University of Hull",
+              "slug": "university-of-hull"
             }
           }
         }
@@ -3318,6 +3754,28 @@
           "inProject": {
             "name": "PDE/PASE: Profile of a Doomed Elite: The Structure of English Landed Society in 1066/Prosopography of Anglo-Saxon England",
             "slug": "pde/pase"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Julian Weiss",
+      "slug": "julian-weiss",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
           },
           "inOrganisation": {
             "agent": {
@@ -3554,7 +4012,7 @@
         {
           "inProject": {
             "name": "RENSKIN: Renaissance Skin - Visible Skin",
-            "slug": "renskin"
+            "slug": "visible-skin"
           },
           "inOrganisation": {
             "agent": {
@@ -3815,6 +4273,28 @@
   {
     "jobTitle": null,
     "agent": {
+      "name": "Mara Fuertes Gutiérrez",
+      "slug": "mara-fuertes-gutierrez",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "Open University",
+              "slug": "open-university"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
       "name": "Marcus Husar",
       "slug": "marcus-husar",
       "description": null,
@@ -4032,6 +4512,28 @@
   {
     "jobTitle": null,
     "agent": {
+      "name": "Mary Ann Vargas",
+      "slug": "mary-ann-vargas",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
       "name": "Mary Clayton",
       "slug": "mary-clayton",
       "description": null,
@@ -4094,7 +4596,7 @@
         },
         {
           "inProject": {
-            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
+            "name": "COTR: The Community of the Realm in Scotland, 1249-1424",
             "slug": "cotr"
           },
           "inOrganisation": {
@@ -4145,6 +4647,28 @@
             "agent": {
               "name": "University of Winchester",
               "slug": "university-of-winchester"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Matthias Wong",
+      "slug": "matthias-wong",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "BCC: Brightening the Covenant Chain",
+            "slug": "bcc"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "University of Hull",
+              "slug": "university-of-hull"
             }
           }
         }
@@ -4339,7 +4863,7 @@
         },
         {
           "inProject": {
-            "name": "OWRI: Languages Acts and Worldmaking",
+            "name": "Language Acts and Worldmaking",
             "slug": "owri"
           },
           "inOrganisation": null
@@ -4563,6 +5087,13 @@
         },
         {
           "inProject": {
+            "name": "CROSSREADS",
+            "slug": "crossreads"
+          },
+          "inOrganisation": null
+        },
+        {
+          "inProject": {
             "name": "POMS: People of Medieval Scotland",
             "slug": "poms"
           },
@@ -4581,6 +5112,18 @@
             "slug": "kdl-archetype"
           },
           "inOrganisation": null
+        },
+        {
+          "inProject": {
+            "name": "BCC: Brightening the Covenant Chain",
+            "slug": "bcc"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "DDH/KDL",
+              "slug": "ddh/kdl"
+            }
+          }
         },
         {
           "inProject": {
@@ -4753,14 +5296,36 @@
   {
     "jobTitle": null,
     "agent": {
+      "name": "Paolo Mazzoleni",
+      "slug": "paolo-mazzoleni",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "CROSSREADS",
+            "slug": "crossreads"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "University of Catania",
+              "slug": "university-of-catania"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
       "name": "Paul Caton",
       "slug": "paul-caton",
       "description": null,
       "memberOf": [
         {
           "inProject": {
-            "name": "IBCC: Inventory of Byzantine Churches on Cyprus",
-            "slug": "ibcc"
+            "name": "AT: Alice Thornton digital edition",
+            "slug": "at"
           },
           "inOrganisation": null
         },
@@ -4780,15 +5345,27 @@
         },
         {
           "inProject": {
+            "name": "BCC: Brightening the Covenant Chain",
+            "slug": "bcc"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "DDH/KDL",
+              "slug": "ddh/kdl"
+            }
+          }
+        },
+        {
+          "inProject": {
             "name": "RENSKIN: Renaissance Skin",
-            "slug": "renskin-2"
+            "slug": "renskin"
           },
           "inOrganisation": null
         },
         {
           "inProject": {
             "name": "RENSKIN: Renaissance Skin - Visible Skin",
-            "slug": "renskin"
+            "slug": "visible-skin"
           },
           "inOrganisation": null
         },
@@ -4801,7 +5378,7 @@
         },
         {
           "inProject": {
-            "name": "OWRI: Languages Acts and Worldmaking",
+            "name": "Language Acts and Worldmaking",
             "slug": "owri"
           },
           "inOrganisation": null
@@ -4850,7 +5427,7 @@
         },
         {
           "inProject": {
-            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
+            "name": "COTR: The Community of the Realm in Scotland, 1249-1424",
             "slug": "cotr"
           },
           "inOrganisation": null
@@ -4908,7 +5485,7 @@
         },
         {
           "inProject": {
-            "name": "OWRI: Languages Acts and Worldmaking",
+            "name": "Language Acts and Worldmaking",
             "slug": "owri"
           },
           "inOrganisation": {
@@ -5071,7 +5648,7 @@
         {
           "inProject": {
             "name": "RENSKIN: Renaissance Skin - Visible Skin",
-            "slug": "renskin"
+            "slug": "visible-skin"
           },
           "inOrganisation": {
             "agent": {
@@ -5201,6 +5778,50 @@
     }
   },
   {
+    "jobTitle": "bf5c9e2e-905e-42c1-876b-3346088e66d4",
+    "agent": {
+      "name": "Priyal Shah",
+      "slug": "priyal-shah",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "AT: Alice Thornton digital edition",
+            "slug": "at"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "DDH/KDL",
+              "slug": "ddh/kdl"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Rachel Scott",
+      "slug": "rachel-scott",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
     "jobTitle": null,
     "agent": {
       "name": "Rachel Stone",
@@ -5256,7 +5877,7 @@
         {
           "inProject": {
             "name": "RENSKIN: Renaissance Skin",
-            "slug": "renskin-2"
+            "slug": "renskin"
           },
           "inOrganisation": {
             "agent": {
@@ -5277,7 +5898,7 @@
       "memberOf": [
         {
           "inProject": {
-            "name": "OWRI: Languages Acts and Worldmaking",
+            "name": "Language Acts and Worldmaking",
             "slug": "owri"
           },
           "inOrganisation": {
@@ -5299,7 +5920,7 @@
       "memberOf": [
         {
           "inProject": {
-            "name": "OWRI: Languages Acts and Worldmaking",
+            "name": "Language Acts and Worldmaking",
             "slug": "owri"
           },
           "inOrganisation": {
@@ -5325,6 +5946,45 @@
             "slug": "charm"
           },
           "inOrganisation": null
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Robert Crellin",
+      "slug": "robert-crellin",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "CROSSREADS",
+            "slug": "crossreads"
+          },
+          "inOrganisation": null
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Rocío Díaz Bravo",
+      "slug": "rocio-diaz-bravo",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
+            }
+          }
         }
       ]
     }
@@ -5387,8 +6047,8 @@
           },
           "inOrganisation": {
             "agent": {
-              "name": "KCL; Kirsten Tambling ",
-              "slug": "kcl;-kirsten-tambling"
+              "name": "KCL",
+              "slug": "kcl"
             }
           }
         }
@@ -5427,12 +6087,34 @@
         {
           "inProject": {
             "name": "RENSKIN: Renaissance Skin",
-            "slug": "renskin-2"
+            "slug": "renskin"
           },
           "inOrganisation": {
             "agent": {
               "name": "KCL",
               "slug": "kcl"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": "59cdea9e-1d94-4559-8414-2d00850ec973",
+    "agent": {
+      "name": "Sharon Howard",
+      "slug": "sharon-howard",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "AT: Alice Thornton digital edition",
+            "slug": "at"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "University of Edinburgh",
+              "slug": "university-of-edinburgh"
             }
           }
         }
@@ -5450,6 +6132,13 @@
           "inProject": {
             "name": "IBCC: Inventory of Byzantine Churches on Cyprus",
             "slug": "ibcc"
+          },
+          "inOrganisation": null
+        },
+        {
+          "inProject": {
+            "name": "CROSSREADS",
+            "slug": "crossreads"
           },
           "inOrganisation": null
         }
@@ -5603,6 +6292,28 @@
   {
     "jobTitle": null,
     "agent": {
+      "name": "Sophie Stevens",
+      "slug": "sophie-stevens",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
       "name": "Stephan Hügel",
       "slug": "stephan-hugel",
       "description": null,
@@ -5663,12 +6374,7 @@
             "name": "Exon Domesday: The Conqueror's Commissioners: Unlocking the Domesday Survey of South-Western England",
             "slug": "exon-domesday"
           },
-          "inOrganisation": {
-            "agent": {
-              "name": "University of Oxford",
-              "slug": "university-of-oxford"
-            }
-          }
+          "inOrganisation": null
         }
       ]
     }
@@ -5704,7 +6410,7 @@
       "memberOf": [
         {
           "inProject": {
-            "name": "COTR: Community of the Realm in Scotland, 1249-1424",
+            "name": "COTR: The Community of the Realm in Scotland, 1249-1424",
             "slug": "cotr"
           },
           "inOrganisation": {
@@ -5795,6 +6501,28 @@
   {
     "jobTitle": null,
     "agent": {
+      "name": "Suzanne Trill",
+      "slug": "suzanne-trill",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "AT: Alice Thornton digital edition",
+            "slug": "at"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "University of Edinburgh",
+              "slug": "university-of-edinburgh"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
       "name": "Tassos Papacostas",
       "slug": "tassos-papacostas",
       "description": null,
@@ -5859,8 +6587,20 @@
         },
         {
           "inProject": {
+            "name": "BCC: Brightening the Covenant Chain",
+            "slug": "bcc"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "DDH/KDL",
+              "slug": "ddh/kdl"
+            }
+          }
+        },
+        {
+          "inProject": {
             "name": "RENSKIN: Renaissance Skin - Visible Skin",
-            "slug": "renskin"
+            "slug": "visible-skin"
           },
           "inOrganisation": null
         },
@@ -5874,7 +6614,7 @@
         {
           "inProject": {
             "name": "RENSKIN: Renaissance Skin",
-            "slug": "renskin-2"
+            "slug": "renskin"
           },
           "inOrganisation": null
         },
@@ -6107,6 +6847,23 @@
   {
     "jobTitle": null,
     "agent": {
+      "name": "Valentina Mignosa",
+      "slug": "valentina-mignosa",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "CROSSREADS",
+            "slug": "crossreads"
+          },
+          "inOrganisation": null
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
       "name": "Valeria Vitale",
       "slug": "valeria-vitale",
       "description": null,
@@ -6138,7 +6895,7 @@
         {
           "inProject": {
             "name": "RENSKIN: Renaissance Skin - Visible Skin",
-            "slug": "renskin"
+            "slug": "visible-skin"
           },
           "inOrganisation": {
             "agent": {
@@ -6166,6 +6923,28 @@
             "agent": {
               "name": "University of the West of England",
               "slug": "university-of-the-west-of-england"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": null,
+    "agent": {
+      "name": "Yuval Evri",
+      "slug": "yuval-evri",
+      "description": null,
+      "memberOf": [
+        {
+          "inProject": {
+            "name": "Language Acts and Worldmaking",
+            "slug": "owri"
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "KCL",
+              "slug": "kcl"
             }
           }
         }

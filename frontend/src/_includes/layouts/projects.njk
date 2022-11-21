@@ -3,12 +3,14 @@ layout: layouts/base.njk
 permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
 ---
 {% from "kdl/components/article/macros.njk" import articleMacro %}
-
-{%- for project in paginatedProjects -%}
-  {% set html %}
-  <div class="index-information">{%- include "partials/project.njk" -%}</div>
+{%- for item in paginatedProjects -%}
+    {% set project = item.data.project %}
+    {% set html %}
+    <section class="index-information">
+        {%- include "partials/project.njk" -%}
+    </section>
 {% endset %}
-{{ articleMacro(project.data, { addLink: true, html: html }) }}
+{{ articleMacro(item.data, { addLink: true, html: html }) }}
 {%- endfor -%}
 {% set label = "Projects" %}
 {% include "partials/pagination.njk" %}
