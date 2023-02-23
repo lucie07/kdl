@@ -1,7 +1,9 @@
 {% from "components/nav-item/macro.njk" import renderNavListItem %}
-
-<input id="menu-switch" type="checkbox" checked="">
 <nav id="menu">
+  <input id="nav-menu" type="checkbox"/>
+  <label class="nav-menu" role="button" for="nav-menu"> 
+    Menu
+  </label>
   <ul>
     {%- set navPages = collections.all | eleventyNavigation %}
     {%- for entry in navPages -%}
@@ -9,3 +11,4 @@
     {%- endfor %}
   </ul>
 </nav>
+
