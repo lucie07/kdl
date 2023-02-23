@@ -11,18 +11,18 @@ permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
 <ol start="{{ pagination.pageNumber * 25 + 1}}">
   {%- for project in paginatedProjects -%}
   <li>
-    <a href="{% route project.slug, 'Projects' %}">
-      <h2>{{ project.name }}</h2>
+        <div class="index-information">
+          <a href="{% route project.slug, 'Projects' %}"><h2><span>ACROYMN</span>{{ project.name }}</h2></a>
+      {% include "partials/project.njk" %}
+    </div>
       <figure>
-        <img src="https://placeimg.com/640/480/arch" alt="random technology image from placeimg.com">
+        <img src="https://picsum.photos/400/600" alt="random auto-generated placeholder image">
         <figcaption>
           image caption
         </figcaption>
       </figure>
-    </a>
-    <div class="index-information">
-      {% include "partials/project.njk" %}
-    </div>
+    
+
   </li>
   {%- endfor -%}
 </ol>
