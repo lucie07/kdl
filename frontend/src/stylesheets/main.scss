@@ -189,7 +189,7 @@ header{
 
 // MENU
 #menu {
-  ul {
+  >ul {
       position: fixed;
       z-index:999;
       height:100vh;
@@ -206,17 +206,26 @@ text-align:left;
 visibility: hidden;
 opacity: 0;
 transition: visibility 0s linear 500ms, opacity 300ms;
-color:white;
+font-size:1.5em;
       .active {
 background:rgba(255,255,255,0.1);
 border-left:2px solid white;
 }
 
+//First-level
 li{
-  
+  color:white;
   a{
     color:white;
-  }
+  }//a
+  ul{ 
+    //Second-level
+    li{               
+      a{
+        color:white;
+      }//a
+    }//li
+  }//l
 }//li
 
 
