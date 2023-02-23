@@ -3,25 +3,20 @@
 
 <head>
   <base href="{% route '/' %}" />
-
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {% seo "" %}
-
   <link href="{% route '/_pagefind/pagefind-ui.css' %}" rel="stylesheet">
   <link href="{% route '/stylesheets/main.css' %}" rel="stylesheet" />
 </head>
 
 <body>
+  <header>
   {% include "partials/menu.njk" %}
+  {% include "partials/header.njk" %}
+  </header>
 
   <main>
-    {% include "partials/header.njk" %}
-
-    <section>
-      <div id="search"></div>
-    </section>
-
     <section>
       {% include "partials/header-section.njk" %}
       {% include "partials/toc.njk" %}
