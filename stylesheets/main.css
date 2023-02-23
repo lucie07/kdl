@@ -1,14 +1,4 @@
-/** Your custom scss here **/
-/************
-MENU
-
-// Mixins
-// Colours
-// General
-// Grid
-// Header
-*************/
-/***** Mixins  *****/
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Pragati+Narrow:wght@700&display=swap");
 .page-anchor {
   display: inline-block;
   height: 0;
@@ -22,7 +12,7 @@ body {
   padding: 0;
   min-height: 100%;
   height: 100%;
-  font-family: "Sorts Mill Goudy", serif;
+  font-family: "PT Serif", serif;
   width: 100%;
 }
 
@@ -75,6 +65,7 @@ header a > h1 {
   padding: 0;
   line-height: 1.8rem;
   display: inline-block;
+  font-family: "Pragati Narrow", sans-serif;
 }
 header a > h1 span {
   color: #c11609;
@@ -85,7 +76,7 @@ header a > h2 {
   color: black;
   margin: 0;
   font-variant: small-caps;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Pragati Narrow", sans-serif;
 }
 
 /***** Privacy Policy *****/
@@ -116,215 +107,152 @@ header a > h2 {
     }
 } **/
 /***** Navigation *****/
-@media screen and (min-width: 768px) {
-  #menu-toggle {
-    display: none !important;
-  }
-}
-/* MENU */
-#menu-switch {
-  display: none;
-}
-#menu-switch:checked ~ #menu {
-  left: 0;
-}
-
 #menu {
+  /* end ul */
+}
+#menu ul {
   position: fixed;
+  z-index: 999;
+  height: 100vh;
+  width: 15em;
   top: 0;
-  left: -10em;
-  min-width: 10em;
-  width: 10em;
-  height: 100%;
-  padding: 5em 1em;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  overflow: scroll;
-  font-size: 1.6em;
-  z-index: 2;
-  border-right: 1px solid black;
-}
-#menu > ul {
-  /* level1 */
-  margin: 0 0 0 -40px;
-  list-style: none;
-}
-#menu > ul > li {
-  margin-top: 0;
-}
-#menu > ul > li > a {
-  display: block;
-  text-decoration: none;
-}
-#menu > ul > li > ol {
-  /* level2 */
-  margin-left: -40px;
-  list-style: none;
-  counter-reset: li;
-}
-#menu > ul > li > ol > li {
-  margin-top: -1.5rem;
-}
-#menu > ul > li > ol > li:before {
-  counter-increment: li;
-  content: counter(li);
-  font-size: 2rem;
-  opacity: 0.4;
-  vertical-align: top;
-  position: relative;
-  line-height: 0;
-  top: 3.8rem;
-  left: 0.3rem;
-  font-family: "Libre Baskerville", serif;
-  z-index: 1;
-  color: white;
-}
-#menu > ul > li > ol > li > ol {
-  /* level3 */
-  list-style-type: none;
-  counter-reset: li -1;
-  margin-left: -40px;
-}
-#menu > ul > li > ol > li > ol > li {
-  line-height: 1;
-  margin-top: -1.5rem;
-  font-size: 1.1rem;
-}
-#menu > ul > li > ol > li > ol > li:before {
-  counter-increment: li;
-  content: counter(li, lower-roman);
-  opacity: 0.7;
-  vertical-align: top;
-  text-align: center;
-  line-height: 1rem;
-  font-family: "Libre Baskerville", serif;
-  color: white;
-  font-size: 0.8rem;
-  width: 2.8rem;
-  display: inline-block;
-  top: 2.1rem;
-  left: -0.5rem;
-  position: relative;
-}
-#menu > ul > li > ol > li > ol > li:first-child:before {
-  color: transparent;
-}
-#menu > ul > li .search-box {
+  right: -100vw;
   margin: 0;
+  -webkit-transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  -ms-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  background: #1f1f1f;
+  padding: 5em 0 0 3em;
+  line-height: 1.4;
+  overflow: scroll;
+  text-align: left;
+  /* end p */
 }
-#menu > ul > li .search-box form {
-  padding-bottom: 0.5rem;
+#menu ul .active {
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 2px solid white;
 }
-#menu > ul > li .search-box input {
-  box-shadow: none;
-  border: none;
-  font-family: "Sorts Mill Goudy", serif;
-  font-size: 1.4rem;
-  width: 73%;
-  outline: 0;
-  margin: 0.5rem 0 0.5rem 0.8rem;
-  float: left;
-  border-bottom: 1px solid white;
+#menu ul a {
+  display: block;
+  margin-bottom: 0;
+  text-decoration: none;
+  padding: 1em;
+}
+#menu ul a li {
+  font-family: "Homemade Apple";
+  font-family: "Clicker Script";
+  font-size: 1.5em;
+  display: block;
+  line-height: 1;
   color: white;
-  background: black;
 }
-#menu > ul > li .search-box input:focus {
-  box-shadow: none;
+#menu ul a li:hover {
+  opacity: 0.7;
 }
-#menu > ul > li .search-box .fa {
-  font-size: 1.3rem;
+#menu ul p {
+  margin: 0;
+  width: 100%;
+  padding: 0;
 }
-#menu > ul > li .search-box button {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border: 0;
-  margin: 0.08rem 0 0 -0.3rem;
-  line-height: 0;
-  background: none;
-  color: white;
-  width: 3rem;
+#menu ul figure {
+  margin: 3em 0;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  z-index: -1;
 }
-#menu > ul > li .search-box button:hover {
-  color: #b3b3b3;
+#menu ul figure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid lightgray;
 }
-#menu a,
+#menu ul figure figcaption {
+  font-family: "Homemade Apple";
+  font-size: 0.9em;
+}
+#menu ul:last-of-type {
+  padding-bottom: 50vh;
+}
+#menu ul p a {
+  font-style: italic;
+  color: black;
+}
+#menu ul p a:hover {
+  opacity: 0.7;
+}
 #menu label {
   display: block;
-  padding: 0.85rem;
+  -webkit-transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  -ms-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  z-index: 2;
   cursor: pointer;
+  color: black;
+  z-index: 1000;
 }
-#menu .level1-list a,
-#menu .level1-list label {
-  padding-left: 2rem;
-  background: rgba(255, 255, 255, 0.1);
-  line-height: 1.2;
-  padding-right: 2rem;
-}
-#menu .level2-list a,
-#menu .level2-list label {
-  padding-left: 2rem;
-  padding-right: 0.5rem;
-}
-#menu .level1-list,
-#menu .level2-list {
-  height: 100%;
-  max-height: 0;
-  overflow: scroll;
+#menu label:before {
+  content: "";
+  position: absolute;
+  right: 1em;
+  bottom: 0.3em;
   -webkit-transition: all 300ms ease-in;
   -moz-transition: all 300ms ease-in;
   -ms-transition: all 300ms ease-in;
   -o-transition: all 300ms ease-in;
   transition: all 300ms ease-in;
 }
-#menu ::-webkit-scrollbar {
+#menu input#nav-menu[type=checkbox] {
   display: none;
 }
-#menu input[type=checkbox]:checked + label + ul,
-#menu input[type=checkbox]:checked + label + ol {
-  /* reset the height when checkbox is checked */
-  max-height: 1000px;
+#menu input#nav-menu[type=checkbox]:checked ~ ul {
+  margin: 0;
+  right: 0;
 }
-#menu input[type=checkbox] + label.check {
-  /*** Plus icon ***/
-  position: relative;
-}
-#menu input[type=checkbox] + label.check:before, #menu input[type=checkbox] + label.check:after {
-  content: "";
-  display: block;
+#menu input#nav-menu[type=checkbox]:checked ~ label.nav-menu {
+  right: 0;
+  top: 0;
   position: absolute;
-  z-index: 1;
-  background-color: #888;
-  -webkit-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
-  -ms-transition: all 200ms ease-in;
-  -o-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
+  -moz-transform: rotate(0);
+  -o-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+  background: none;
+  box-shadow: none;
+  /* cross icon */
 }
-#menu input[type=checkbox] + label.check:after {
-  height: 9px;
-  margin-top: -5px;
-  right: 25px;
-  width: 1px;
-  top: 50%;
+#menu input#nav-menu[type=checkbox]:checked ~ label.nav-menu:before {
+  content: "X";
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 1.7em;
+  width: 1.7em;
+  text-align: center;
+  padding: 0.1em 0.1em 0 0;
+  color: white;
+  cursor: pointer;
+  font-family: "Sacramento";
+  font-size: 1.3em;
+  line-height: 2;
+  cursor: pointer;
 }
-#menu input[type=checkbox] + label.check:before {
-  height: 1px;
-  margin-top: -1px;
-  right: 21px;
-  width: 9px;
-  top: 50%;
+#menu input#nav-menu[type=checkbox]:checked ~ label.nav-menu:after {
+  -webkit-transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  -ms-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
 }
-#menu input[type=checkbox]:checked + label.check {
-  /*** Minus icon ***/
-}
-#menu input[type=checkbox]:checked + label.check:before, #menu input[type=checkbox]:checked + label.check:after {
-  transform: rotate(90deg);
-}
-#menu input[type=checkbox]:checked + label.check:before {
-  display: none;
+#menu input#nav-menu[type=checkbox]:checked ~ label.nav-menu:hover:before {
+  opacity: 0.7;
 }
 
+/* end menu*/
 header {
   padding: 0;
   background: rgba(255, 255, 255, 0.95);
@@ -379,59 +307,6 @@ footer li {
   list-style: none;
 }
 
-#menu-switch:checked ~ main {
-  margin-left: 15em;
-}
-
-#menu-toggle:focus {
-  outline: none;
-}
-
-#menu-toggle {
-  display: inline-block;
-  position: fixed;
-  top: 1rem;
-  margin-left: 0.5rem;
-  width: 51px;
-  height: 51px;
-  cursor: pointer;
-  border: none;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: 3;
-}
-
-#menu-toggle:before,
-#menu-toggle:after {
-  position: absolute;
-  content: "";
-  background-color: #232629;
-}
-
-#menu-toggle:before {
-  top: 12px;
-  left: 25px;
-  width: 1px;
-  height: 28px;
-}
-
-#menu-toggle:after {
-  top: 25px;
-  left: 12px;
-  width: 27px;
-  height: 1px;
-}
-
-#menu-switch:checked ~ main #menu-toggle {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
 /* CONTENT CONTAINER */
 .container {
   min-width: 200px;
@@ -448,6 +323,9 @@ footer li {
   position: absolute;
   top: 0;
   right: 0;
+}
+#kcl-logo img {
+  width: 9em;
 }
 
 section {
