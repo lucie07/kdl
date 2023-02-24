@@ -449,6 +449,10 @@ nav{
         list-style-type: none;
         flex: 27.3%;
         margin: 0 3% 1em 0;
+        span{
+          display:block;
+          font-size:0.8em;
+        }
       } //li
     } //ul
   } //#team
@@ -473,6 +477,10 @@ nav{
           img{
             width:100%;
           }//img
+          figcaption{
+            font-size: 0.8em;
+            text-align: center;
+          }
         }//figure
       }//images     
       #links {
