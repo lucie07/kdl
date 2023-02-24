@@ -427,7 +427,116 @@ nav{
     }//li
   }//ol
 }//nav
-} //section
+
+
+//* PROJECT PAGE
+
+//IMAGES
+  article{
+  //flex: 0 0 100vw;
+  //height: 50vw;
+  width: 100%;
+  display: flex;
+
+  #team {
+    width:100%;
+    ul {
+      margin-left: -40px;
+      display: flex;
+      flex-wrap: wrap;
+      width:100%;
+      li {
+        list-style-type: none;
+        flex: 27.3%;
+        margin: 0 3% 1em 0;
+      } //li
+    } //ul
+  } //#team
+
+    article{
+      width: 70%;
+      display:block;
+      border-bottom:0.1vw solid black;
+      &:last-child{
+        width: 30%;
+        border-left:0.1vw solid black;
+        border-bottom:0.1vw solid black;
+      }
+      #images, #overview{
+        margin-right:5%;
+      }
+      #images{
+        figure{
+          width: 100%;
+          margin:0;
+          padding:0;
+          img{
+            width:100%;
+          }//img
+        }//figure
+      }//images     
+      #links {
+        ul {
+          margin: 0 0 0 -40px;
+          li {
+            list-style-type: none;
+            a {
+              color: white;
+              background: black;
+              padding: 0.5em;
+              display: block;
+              border: 1px solid black;
+              text-align: center;
+              @include transition(all 200ms ease-in);
+              &:hover {
+                border: 1px solid black;
+                background: white;
+                color: black;
+                @include transition(all 200ms ease-in);
+              } //&:hover
+            } //a
+          } //li
+        } //ul
+      } //#links
+       
+      #metadata {
+        margin-left:5%;
+        dl {
+          dt {
+            margin-top: 1.2vw;
+            font-size: 0.8em;
+          } //dt
+          dd {
+            margin-left: 0;
+          } //dd
+        } //dl
+      } //#metatdata
+    }//article
+}//article
+
+
+
+
+
+.funder {
+  margin-top:3em;
+  h3{
+    font-size: 0.8em;
+    font-weight:normal;
+    margin:0;
+  }
+  ul {
+    padding:0;
+    margin:0;
+    li {
+
+      list-style-type: none;
+    }
+  }
+}
+
+
+}//article
 
 
 
@@ -534,62 +643,3 @@ li {
 // List Grid Radio
 
 
-
-//* PROJECT PAGE
-.funder {
-  ul {
-    margin-left: -40px;
-    li {
-      list-style-type: none;
-    }
-  }
-}
-#links {
-  ul {
-    margin-left: -40px;
-    li {
-      list-style-type: none;
-      margin-top: 1vw;
-      a {
-        color: white;
-        background: black;
-        padding: 0.5em;
-        display: block;
-        border: 1px solid black;
-        text-align: center;
-        @include transition(all 200ms ease-in);
-        &:hover {
-          border: 1px solid black;
-          background: white;
-          color: black;
-          @include transition(all 200ms ease-in);
-        } //&:hover
-      } //a
-    } //li
-  } //ul
-} //#links
-
-#information {
-  dl {
-    dt {
-      margin-top: 1.2vw;
-      font-size: 0.8em;
-    } //dt
-    dd {
-      margin-left: 0;
-    } //dd
-  } //dl
-} //#information
-
-#team {
-  border-top: 1px solid black;
-  ul {
-    margin-left: -40px;
-    li {
-      list-style-type: none;
-    } //li
-  } //ul
-} //#team
-//* END PROJECT PAGE
-
-//* End MAIN PAGE
