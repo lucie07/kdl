@@ -3,10 +3,10 @@ layout: layouts/base.njk
 permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
 ---
 
-<input type="radio" name="view-filter" id="grid" class="radio" checked>
+<!--<input type="radio" name="view-filter" id="grid" class="radio" checked>
 <label for="grid">⊞ Grid</label> |
 <input type="radio" name="view-filter" id="list" class="list-view radio">
-<label for="list">≣ List</label>
+<label for="list">≣ List</label>-->
 
 <ol start="{{ pagination.pageNumber * 25 + 1}}">
   {%- for project in paginatedProjects -%}
@@ -17,9 +17,6 @@ permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
     </div>
       <figure>
         <img src="https://picsum.photos/400/600" alt="random auto-generated placeholder image">
-        <figcaption>
-          image caption
-        </figcaption>
       </figure>
     
 

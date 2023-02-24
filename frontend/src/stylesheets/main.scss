@@ -371,13 +371,19 @@ ol{
 	flex-wrap: wrap;
   li{
     display:flex;
-    width:45%;
+    width:47.5%;
     border-bottom:1px solid black;
-    margin-right:5%;
+    margin:1% 5% 1% 0;
+
+    &:nth-child(even){
+      margin-right:0;
+    }//&:nth-child(odd)
     .index-information{
       display:block;
       width:100%;
+      margin-right:2%;
       h2{
+        margin:0;
         span{
           color:$red;
           display:block;
