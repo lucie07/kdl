@@ -318,6 +318,99 @@ section nav ol li {
 section nav ol li a {
   color: gray;
 }
+section article {
+  width: 100%;
+  display: flex;
+}
+section article #team {
+  width: 100%;
+}
+section article #team ul {
+  margin-left: -40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+section article #team ul li {
+  list-style-type: none;
+  flex: 27.3%;
+  margin: 0 3% 1em 0;
+}
+section article article {
+  width: 70%;
+  display: block;
+  border-bottom: 0.1vw solid black;
+}
+section article article:last-child {
+  width: 30%;
+  border-left: 0.1vw solid black;
+  border-bottom: 0.1vw solid black;
+}
+section article article #images, section article article #overview {
+  margin-right: 5%;
+}
+section article article #images figure {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+section article article #images figure img {
+  width: 100%;
+}
+section article article #links ul {
+  margin: 0 0 0 -40px;
+}
+section article article #links ul li {
+  list-style-type: none;
+}
+section article article #links ul li a {
+  color: white;
+  background: black;
+  padding: 0.5em;
+  display: block;
+  border: 1px solid black;
+  text-align: center;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+section article article #links ul li a:hover {
+  border: 1px solid black;
+  background: white;
+  color: black;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+section article article #metadata {
+  margin-left: 5%;
+}
+section article article #metadata dl dt {
+  margin-top: 1.2vw;
+  font-size: 0.8em;
+}
+section article article #metadata dl dd {
+  margin-left: 0;
+}
+section .funder {
+  margin-top: 3em;
+}
+section .funder h3 {
+  font-size: 0.8em;
+  font-weight: normal;
+  margin: 0;
+}
+section .funder ul {
+  padding: 0;
+  margin: 0;
+}
+section .funder ul li {
+  list-style-type: none;
+}
 
 footer {
   margin-top: 5em;
@@ -396,60 +489,4 @@ li {
 }
 .list-view:checked ~ ol li dl dd {
   width: 15vw;
-}
-
-.funder ul {
-  margin-left: -40px;
-}
-.funder ul li {
-  list-style-type: none;
-}
-
-#links ul {
-  margin-left: -40px;
-}
-#links ul li {
-  list-style-type: none;
-  margin-top: 1vw;
-}
-#links ul li a {
-  color: white;
-  background: black;
-  padding: 0.5em;
-  display: block;
-  border: 1px solid black;
-  text-align: center;
-  -webkit-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
-  -ms-transition: all 200ms ease-in;
-  -o-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
-}
-#links ul li a:hover {
-  border: 1px solid black;
-  background: white;
-  color: black;
-  -webkit-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
-  -ms-transition: all 200ms ease-in;
-  -o-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
-}
-
-#information dl dt {
-  margin-top: 1.2vw;
-  font-size: 0.8em;
-}
-#information dl dd {
-  margin-left: 0;
-}
-
-#team {
-  border-top: 1px solid black;
-}
-#team ul {
-  margin-left: -40px;
-}
-#team ul li {
-  list-style-type: none;
 }
