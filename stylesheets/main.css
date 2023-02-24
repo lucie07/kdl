@@ -336,6 +336,10 @@ section article #team ul li {
   flex: 27.3%;
   margin: 0 3% 1em 0;
 }
+section article #team ul li span {
+  display: block;
+  font-size: 0.8em;
+}
 section article article {
   width: 70%;
   display: block;
@@ -356,6 +360,10 @@ section article article #images figure {
 }
 section article article #images figure img {
   width: 100%;
+}
+section article article #images figure figcaption {
+  font-size: 0.8em;
+  text-align: center;
 }
 section article article #links ul {
   margin: 0 0 0 -40px;
