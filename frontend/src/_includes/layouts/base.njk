@@ -17,8 +17,9 @@
   </header>
 
   <main>
+    {% include "partials/header-section.njk" %}
     <section>
-      {% include "partials/header-section.njk" %}
+      
       {% include "partials/toc.njk" %}
 
       {{ content | safe }}

@@ -137,7 +137,7 @@ a {
 // ** Header
 
 header{
-  padding: 1% 0;
+  padding: 1% 0 3em 0;
   #sitename {
     font-weight: bold;
     font-size: 1.5em;
@@ -302,77 +302,57 @@ li{
 
 main {
   padding: 0 5%;
-// * Breadcrumbs
-  header{
-    padding: 0;
-    background: rgba(255, 255, 255, 0.95);
-    ul {
-      margin-left: 0;
-      li {
-        list-style-type: none;
-        margin-left: -40px;
-        font-size: 0.8em;
-        a {
-          color: #c11609;
-          font-weight: bold;
-          display: inline-block;
-          line-height: 1.3;
-        } //a
-        &::after {
-          content: ">";
-          position: absolute;
-          padding: 0 0.5em;
-        } //&::after
-      } //li
-    } //ul
-    ol {
+//BREADCRUMBS
+>header{
+  padding: 0;
+  background: rgba(255, 255, 255, 0.95);
+
+  ul {
+    margin: 0;
+    li {
+      list-style-type: none;
       margin-left: -40px;
-    }
-    h1 {
-      font-size: 1.2em;
-    }
-  } //header
-  // * End Breadcrumbs
-}
-
-footer {
-  border-top: 1px solid $gray;
-  bottom: 0;
-  left: 0;
-  margin-left: 16em;
-  padding: 0 1em;
-
-  li {
-    list-style: none;
-  }
-}
-
-/* CONTENT CONTAINER */
-.container {
-  //max-width: 1500px;
-  min-width: 200px;
-  margin: 0 auto;
-  max-width: 2000px;
-} //.container
-
-
-section {
-  margin: 3vw 0 0 0;
+      font-size: 0.8em;
+      a {
+        color: gray;
+        font-weight: bold;
+        display: inline-block;
+        line-height: 1.3;
+      } //a
+      &::after {
+        content: ">";
+        position: absolute;
+        padding: 0 0.5em;
+      } //&::after
+    } //li
+  } //ul
   ol {
     margin-left: -40px;
-    list-style-type: none;
-  } //ol
+  }
   h1 {
-    border-bottom: 0.1vw solid black;
-  } //h1
-} //section
+    font-size: 1.6em;
+    border-bottom: 0.2vw solid black;
+    font-weight: normal;
+    margin:0;
+    padding:0;
+  }
+} //ul
+}//header
+
+//SECTION
+section {
+  margin: 3vw 0 0 0;
+
+// PROJECT INDEX
 ol{
   display: flex;
 	flex-wrap: wrap;
+  margin-left: -40px;
+  list-style-type: none;
   li{
     display:flex;
     width:47.5%;
-    border-bottom:1px solid black;
+    border-bottom:1px solid lightgray;
     margin:1% 5% 1% 0;
 
     &:nth-child(even){
@@ -390,6 +370,24 @@ ol{
           font-size:0.5em;
         }//span
       }//h2
+        dl {
+          dt {
+            margin-top: 1.2vw;
+            font-size: 0.8em;
+            display: none;
+          } //dt
+          dd {
+            margin-left: 0;
+            &:last-child{
+              color:grey;
+              font-size:0.7em;
+            }
+          } //dd
+
+
+        } //dl
+      
+
     }//.index-information
     figure {
       position: relative;
@@ -413,8 +411,55 @@ ol{
   }//li
 }//ol
 
+//PAGE PAGINATION
+nav{
+  margin-top:5em;
+  border-top:0.2vw solid black;
+  ol{  
+    li{
+     border:none;
+      width:17%;
+      display: block;
+      text-align: center;
+      a{
+        color:gray;
+      }//a      
+    }//li
+  }//ol
+}//nav
+} //section
 
-//* PROJECT INDEX
+
+
+
+
+//FOOTER
+footer {
+  margin-top:5em;
+  border-top: 0.3vw solid black;
+  bottom: 0;
+  left: 0;
+  padding: 0 1em;
+
+  li {
+    list-style: none;
+
+  }//footer
+}//main
+
+/* CONTENT CONTAINER */
+.container {
+  //max-width: 1500px;
+  min-width: 200px;
+  margin: 0 auto;
+  max-width: 2000px;
+} //.container
+
+
+
+
+
+
 
 // List Grid Radio
 
@@ -488,18 +533,7 @@ li {
 
 // List Grid Radio
 
-.index-information {
-  dl {
-    dt {
-      margin-top: 1.2vw;
-      font-size: 0.8em;
-      display: none;
-    } //dt
-    dd {
-      margin-left: 0;
-    } //dd
-  } //dl
-}
+
 
 //* PROJECT PAGE
 .funder {
