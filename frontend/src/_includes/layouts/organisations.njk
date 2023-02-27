@@ -3,17 +3,17 @@ layout: layouts/base.njk
 permalink: "about/organisations/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
 ---
 
-<input type="radio" name="view-filter" id="grid" class="radio" checked>
-<label for="grid">⊞ Grid</label> |
-<input type="radio" name="view-filter" id="list" class="list-view radio">
-<label for="list">≣ List</label>
-
 <ol start="{{ pagination.pageNumber * 10 + 1}}">
   {%- for org in paginatedOrganisations -%}
-  <li>
+  <li>     
+    <figure>
+        <img src="https://picsum.photos/400/600" alt="random auto-generated placeholder image">
+      </figure>
+      <div class="index-information">
     <a href="{% route org.agent.slug, 'Organisations' %}">
       <h2>{{ org.agent.name }}</h2>
     </a>
+    </div>
   </li>
   {%- endfor -%}
 </ol>
