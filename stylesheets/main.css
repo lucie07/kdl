@@ -254,6 +254,7 @@ section ol {
 }
 section ol li {
   display: flex;
+  flex-wrap: wrap;
   width: 47.5%;
   border-bottom: 1px solid lightgray;
   margin: 1% 5% 1% 0;
@@ -263,8 +264,10 @@ section ol li:nth-child(even) {
 }
 section ol li .index-information {
   display: block;
-  width: 100%;
+  width: 50%;
   margin-right: 2%;
+  order: 1;
+  flex: 1 0 auto;
 }
 section ol li .index-information h2 {
   margin: 0;
@@ -289,7 +292,10 @@ section ol li .index-information dl dd:last-child {
 section ol li figure {
   position: relative;
   margin: 0;
-  width: 100%;
+  width: 50%;
+  order: 2;
+  width: calc(33.3333333333% - 20px);
+  flex: 1 0 auto;
 }
 section ol li figure img {
   width: 100%;
@@ -304,6 +310,10 @@ section ol li figure figcaption {
   color: white;
   font-size: 0.8em;
   padding: 0.5vw;
+}
+section ol li .status, section ol li .excerpt {
+  flex: 0 0 100%;
+  order: 3;
 }
 section nav {
   margin-top: 5em;
