@@ -117,8 +117,28 @@
 
       
 <article>
-  <header class="post-meta">
-    <p>by
+   <article>
+        <!-- Images -->
+    <div id="images">
+      <figure>
+        <img src="https://picsum.photos/1500/800" alt="random auto-generated placeholder image">
+        <figcaption>
+          image caption
+        </figcaption>
+      </figure>
+    </div>
+      <!--
+      <div id="images">
+        <figure>
+          <img src="images/sunset-boulevard-in-512-0.01.original.png" alt="Image rendered by VQGAN-CLIP">
+          <figcaption>Image rendered by VQGAN-CLIP</figcaption>
+        </figure>
+      </div>
+      -->
+    </article>
+    <article>
+      <div class="post-meta">
+        <p>by
     
     <span class="author"><a href="/kdl/about/people/geoffroy-noel">Geoffroy Noël</a></span>,
     
@@ -126,17 +146,11 @@
   <time datetime="Tue Apr 19 2022 00:00:00 GMT+0000 (Coordinated Universal Time)" class="datetime">Apr 19, 2022</time>
 </p>
 
-  </header>
-  
-  <div id="images">
-    <figure>
-      <img src="images/sunset-boulevard-in-512-0.01.original.png" alt="Image rendered by VQGAN-CLIP">
-      <figcaption>Image rendered by VQGAN-CLIP</figcaption>
-    </figure>
-  </div>
-  
-
-  <p>As our new director, Arianna, <a href="/blog/ciula-director/">mentioned in her recent blog post</a>, Machine Learning (ML) is one of the research themes we are keen to start prioritising. Not only because it matches strong personal interests among the solution development team who are eager to experiment with new and exciting techniques (as you would expect from a Lab) but also because, as AI research moves quickly, it continuously brings new methodological opportunities to many scientific fields including the Humanities.</p>
+      </div>
+    </article>  
+  </article>
+<article class="full">
+<p>As our new director, Arianna, <a href="/blog/ciula-director/">mentioned in her recent blog post</a>, Machine Learning (ML) is one of the research themes we are keen to start prioritising. Not only because it matches strong personal interests among the solution development team who are eager to experiment with new and exciting techniques (as you would expect from a Lab) but also because, as AI research moves quickly, it continuously brings new methodological opportunities to many scientific fields including the Humanities.</p>
 <p>This blog post comes at a time when there seems to be a noticeable step change in the attention given to such new opportunities during our pre-grant feasibility studies (when requirements for a project are discussed to assess technical feasibility before design and development begin). This obviously reflects transformations caused by AI within research fields and brought to our attention by our project partners. It also coincides with the relatively recent explosion of open-source machine learning tools ignited by a handful of extremely versatile deep learning frameworks such as <a href="https://www.tensorflow.org/">TensorFlow</a> or <a href="https://pytorch.org/">Pytorch</a>. Thanks in part to the <a href="https://www.capitalone.com/tech/machine-learning/pros-and-cons-of-end-to-end-models/">end-to-end property of Deep Learning (DL)</a>, many of those tools are deceptively easy to use (even with limited programming or AI skills) despite the new level of complexity of the tasks they can tackle. More on the flip side of that coin at the end of this post.</p>
 <h2 id="use-cases" tabindex="-1">Use Cases</h2>
 <p>Illustrated below are different facets of AI applied to a variety of projects I contributed to over the years (from legacy to new projects), with some notes on the reason why I used them and hopefully some interesting insights into our Research Software Engineering (RSE) processes. My colleagues will soon share their own experience separately as part of this new series of posts on ML to complement this very subjective and partial retrospective.</p>
@@ -174,7 +188,6 @@
 <p>There is appetite within our team for projects where AI is not just a supporting tool but the subject of critical exploration of possibly understudied potential, limitations and effects when it interacts with Digital Humanities methods. Deep Learning has undoubtedly brought very impressive breakthroughs to Computer Vision and Natural Language Processing. But its models are typically <a href="https://arxiv.org/pdf/1801.00631.pdf">very dense, opaque, heavy and difficult to control</a>. This can lead to uncritical (counter-)hype, <a href="https://www.newyorker.com/tech/annals-of-technology/the-hidden-costs-of-automated-thinking">intellectual debt</a>, <a href="https://interaktiv.br.de/ki-bewerbung/en/?mc_cid=4eaa79778c&amp;mc_eid=7fd9e6c91f">unscientific misuse</a>, <a href="https://algorithmwatch.org/en/google-translate-gender-bias/">hidden biases</a>, misrepresentations of knowledge, <a href="https://www.nature.com/articles/d41586-019-03013-5">unstable predictions</a>, <a href="https://www.itnonline.com/content/medical-ai-models-rely-shortcuts-could-lead-misdiagnosis-covid-19">poor modeling practices</a>, ... KDL could facilitate close experimental analysis of the nature of ML when applied to heritage or humanities material. Such an angle, which treats emerging technologies not as mere subordinates to Humanities endeavours but instead empirically, and introspectively delves into the rich and intricate interface between the two fields would be a welcome change in project focus from time to time. By making the reliability of the technology a central research question, uncertain capabilities identified from the outset are no longer a source of risk but an opportunity to objectively inform project partners and the DH community at large about caveats and best practices.</p>
 
 </article>
-
     </section>
   </main>
 
