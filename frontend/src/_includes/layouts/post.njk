@@ -3,17 +3,31 @@ layout: layouts/base.njk
 ---
 
 <article>
-  <header class="post-meta">
-    {% include "partials/byline.njk" %}
-  </header>
-  {% if feature and feature.image %}
-  <div id="images">
-    <figure>
-      <img src="{% route feature.image %}" alt="{{ feature.description }}">
-      <figcaption>{{ feature.description }}</figcaption>
-    </figure>
-  </div>
-  {% endif %}
-
-  {{ content | safe }}
+   <article>
+        <!-- Images -->
+    <div id="images">
+      <figure>
+        <img src="https://picsum.photos/1500/800" alt="random auto-generated placeholder image">
+        <figcaption>
+          image caption
+        </figcaption>
+      </figure>
+    </div>
+      <!--{% if feature and feature.image %}
+      <div id="images">
+        <figure>
+          <img src="{% route feature.image %}" alt="{{ feature.description }}">
+          <figcaption>{{ feature.description }}</figcaption>
+        </figure>
+      </div>
+      {% endif %}-->
+    </article>
+    <article>
+      <div class="post-meta">
+        {% include "partials/byline.njk" %}
+      </div>
+    </article>  
+  </article>
+<article class="full">
+{{ content | safe }}
 </article>

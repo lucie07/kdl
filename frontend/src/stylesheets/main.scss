@@ -488,6 +488,8 @@ nav{
           figcaption{
             font-size: 0.8em;
             text-align: center;
+            margin-bottom:1em;
+            font-style:italic;
           }
         }//figure
       }//images     
@@ -527,7 +529,12 @@ nav{
           } //dd
         } //dl
       } //#metatdata
+
+      .post-meta{
+        margin-left:5%;
+      }
     }//article
+
 }//article
 
 
@@ -551,7 +558,9 @@ nav{
   }
 }
 
-
+.full{
+  display:block;
+}
 }//article
 
 
