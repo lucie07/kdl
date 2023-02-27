@@ -6,14 +6,15 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 
 <ol start="{{ pagination.pageNumber * 25 + 1}}">
   {%- for post in posts -%}
   <li>
-      <div class="index-information">
-            <a href="{% route post.url %}">
-      <h2>{{ post.data.title }}</h2>
-    </a>
-    </div>
     <figure>
       <img src="https://picsum.photos/400/600" alt="random auto-generated placeholder image">
     </figure>
+    <div class="index-information">
+      <a href="{% route post.url %}">
+      <h2>{{ post.data.title }}</h2>
+    </a>
+    </div>
+
     <div class="excerpt">
       <em>{{ post.data.excerpt }}</em>
       {% set authors = post.data.authors %}

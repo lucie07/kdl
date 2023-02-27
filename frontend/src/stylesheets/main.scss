@@ -343,14 +343,15 @@ main {
 section {
   margin: 3vw 0 0 0;
 
-// PROJECT INDEX
+// PROJECT & BLOG INDEX
 ol{
   display: flex;
 	flex-wrap: wrap;
   margin-left: -40px;
   list-style-type: none;
   li{
-    display:flex;
+    display: flex;
+    flex-wrap: wrap;
     width:47.5%;
     border-bottom:1px solid lightgray;
     margin:1% 5% 1% 0;
@@ -360,8 +361,10 @@ ol{
     }//&:nth-child(odd)
     .index-information{
       display:block;
-      width:100%;
+      width:50%;
       margin-right:2%;
+      order:1;
+      flex: 1 0 auto;
       h2{
         margin:0;
         span{
@@ -383,16 +386,17 @@ ol{
               font-size:0.7em;
             }
           } //dd
-
-
         } //dl
       
-
     }//.index-information
     figure {
       position: relative;
       margin: 0;
-      width: 100%;
+      width: 50%;
+      order:2;
+      width: calc((100% / 3) - 20px);
+	flex: 1 0 auto;
+      //flex: 1 0 auto;
       img {
         width: 100%;
         height: 15vw;
@@ -408,6 +412,10 @@ ol{
         padding: 0.5vw;
       } //figcaption
     } //figure
+    .status, .excerpt{
+      flex: 0 0 100%;
+      order:3;
+    }
   }//li
 }//ol
 
