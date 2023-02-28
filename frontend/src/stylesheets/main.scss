@@ -448,6 +448,7 @@ nav{
 
   #team {
     width:100%;
+    text-align: center;
     ul {
       margin-left: -40px;
       display: flex;
@@ -455,8 +456,8 @@ nav{
       width:100%;
       li {
         list-style-type: none;
-        flex: 27.3%;
-        margin: 0 3% 1em 0;
+        flex: 0 0 33.3%;
+        margin-bottom: 1em;
         span{
           display:block;
           font-size:0.8em;
@@ -498,6 +499,7 @@ nav{
           margin: 0 0 0 -40px;
           li {
             list-style-type: none;
+            margin-bottom:0.5em;
             a {
               color: white;
               background: black;
@@ -507,9 +509,7 @@ nav{
               text-align: center;
               @include transition(all 200ms ease-in);
               &:hover {
-                border: 1px solid black;
-                background: white;
-                color: black;
+                background:lighten(black,3%);
                 @include transition(all 200ms ease-in);
               } //&:hover
             } //a
@@ -668,3 +668,45 @@ li {
 // List Grid Radio
 
 
+@media screen and (max-width: 768px){
+section{
+  ol{
+    display: block;
+
+    li{
+      display: block;
+      width:100%;
+        figure{
+          width:100%;
+        }//figure
+        .index-information{
+          width:100%;
+        }
+    }//li
+  }//ol
+
+
+
+
+  article{
+    display: block;
+    article{
+      width:100%;
+      &:last-child{
+        width:100%;
+        border-right:0.1vw solid black;
+      }//&:last-child
+      #images{
+        margin:0;
+      }//#images 
+    }//article
+    #team {
+      ul {
+        li {
+          flex: 0 0 50%;
+        }//li
+      }//ul
+    }//#team
+  }//article
+}//section
+}
