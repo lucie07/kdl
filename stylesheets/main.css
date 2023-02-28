@@ -334,6 +334,7 @@ section article {
 }
 section article #team {
   width: 100%;
+  text-align: center;
 }
 section article #team ul {
   margin-left: -40px;
@@ -343,8 +344,8 @@ section article #team ul {
 }
 section article #team ul li {
   list-style-type: none;
-  flex: 27.3%;
-  margin: 0 3% 1em 0;
+  flex: 0 0 33.3%;
+  margin-bottom: 1em;
 }
 section article #team ul li span {
   display: block;
@@ -382,6 +383,7 @@ section article article #links ul {
 }
 section article article #links ul li {
   list-style-type: none;
+  margin-bottom: 0.5em;
 }
 section article article #links ul li a {
   color: white;
@@ -397,9 +399,7 @@ section article article #links ul li a {
   transition: all 200ms ease-in;
 }
 section article article #links ul li a:hover {
-  border: 1px solid black;
-  background: white;
-  color: black;
+  background: #080808;
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
   -ms-transition: all 200ms ease-in;
@@ -515,4 +515,36 @@ li {
 }
 .list-view:checked ~ ol li dl dd {
   width: 15vw;
+}
+
+@media screen and (max-width: 768px) {
+  section ol {
+    display: block;
+  }
+  section ol li {
+    display: block;
+    width: 100%;
+  }
+  section ol li figure {
+    width: 100%;
+  }
+  section ol li .index-information {
+    width: 100%;
+  }
+  section article {
+    display: block;
+  }
+  section article article {
+    width: 100%;
+  }
+  section article article:last-child {
+    width: 100%;
+    border-right: 0.1vw solid black;
+  }
+  section article article #images {
+    margin: 0;
+  }
+  section article #team ul li {
+    flex: 0 0 50%;
+  }
 }
