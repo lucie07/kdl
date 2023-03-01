@@ -12,6 +12,6 @@ eleventyComputed:
   title: "{{ project.name }}{%- if project.alternateName %} <small>{{ project.alternateName }}</small>{% endif -%}"
   dissolutionDate: "{% if project.dissolutionDate %}{{ project.dissolutionDate }}{% else %}1970{% endif %}"
   feature:
-    image: "{% if project.image %}{{ project.image }}{% else %}https://placeimg.com/640/480/tech/grayscale{% endif %}"
-    description: "random technology image from placeimg.com, should be replaced with a placeholder"
+    image: "{% if project.image.id %}{% getDirectusAsset project.image.id %}{% else %}{{ project.image.path }}{% endif %}"
+    description: "{{ project.image.description }}"
 ---

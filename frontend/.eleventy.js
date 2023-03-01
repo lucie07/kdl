@@ -79,6 +79,10 @@ module.exports = (eleventyConfig) => {
     return undefined;
   });
 
+  eleventyConfig.addShortcode("getDirectusAsset", (id) => {
+    if (!id) return null;
+    return `${process.env.DIRECTUS_URL}/assets/${id}`;
+  });
   eleventyConfig.addShortcode("route", function (path, navigationKey = "") {
     const urlFilter = eleventyConfig.getFilter("url");
 
