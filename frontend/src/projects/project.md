@@ -9,7 +9,7 @@ permalink: "projects/{{ project.slug }}/"
 tags: projects
 eleventyComputed:
   navKey: "Projects"
-  title: "{{ project.name }}{%- if project.alternateName %} <small>{{ project.alternateName }}</small>{% endif -%}"
+  title: "{%- if project.alternateName %} <small>{{ project.alternateName }}</small>{% endif -%}{{ project.name }}"
   dissolutionDate: "{% if project.dissolutionDate %}{{ project.dissolutionDate }}{% else %}1970{% endif %}"
   feature:
     image: "{% if project.image.id %}{% getDirectusAsset project.image.id %}{% else %}{{ project.image.path }}{% endif %}"
