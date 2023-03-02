@@ -1,16 +1,18 @@
 <dl>
-  <dt>Revision:</dt>
-  <dd>{{ project.cmsStatus }}</dd>
-  <dt>Status:</dt>
-  <dd>{{ project.creativeWorkStatus.name }}</dd>
-  {% if project.foundingDate %}
-    <dt>Dates:</dt>
-    <dd>
-      {{ project.foundingDate | asProjectDate }}&#8211;{{ project.dissolutionDate | asProjectDate }}
-    </dd>
-  {% endif %}
-  <dt>Partner institutions:</dt>
-  {%- for department in project.department %}
-    <dd>{{ department.organisation_id.agent.name }}</dd>
-  {%- endfor %}
+    <dt>
+        Partner institutions:
+    </dt>
+    {%- for department in project.department %}
+        <dd>
+            {{ department.organisation_id.agent.name }}
+        </dd>
+    {%- endfor %}
+    {% if project.foundingDate %}
+        <dt>
+            Dates:
+        </dt>
+        <dd>
+            {{ project.foundingDate | asProjectDate }}&#8211;{{ project.dissolutionDate | asProjectDate }}
+        </dd>
+    {% endif %}
 </dl>

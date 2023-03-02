@@ -28,9 +28,8 @@ layout: layouts/base.njk
     </section>
   {% endif %}
 
-
   <!-- Information -->
-  <section id="information">
+  <section id="metadata">
     {% if project.funder %}
       <section class="funder">
         <h2>Funder</h2>
@@ -45,7 +44,6 @@ layout: layouts/base.njk
     {% endif %}
 
     {% include "partials/project.njk" %}
-
   </section>
 
   <!-- Team -->
@@ -58,9 +56,9 @@ layout: layouts/base.njk
             <a href="{% route member.agent.slug, 'People' %}">{{ member.agent.name }}</a>,
             {{ member.roleName.name }}
             {%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      </section>
-    {% endif %}
-  </article>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+</article>
