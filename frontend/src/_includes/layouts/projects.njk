@@ -11,10 +11,12 @@ permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
         {%- include "partials/project.njk" -%}
     </section>
     {% endset %}
-    {% set html %}
-    <section class="status">{{ project.creativeWorkStatus.name }}, {{ project.cmsStatus }}</section>
+    {% set footerHtml %}
+    <section class="status {{ project.creativeWorkStatus.name }}">
+        {{ project.creativeWorkStatus.name }}, {{ project.cmsStatus }}
+    </section>
     {% endset %}
-    {{ articleMacro(item.data, { addLink: true, headerHtml: headerHtml, html: html }) }}
+    {{ articleMacro(item.data, { addLink: true, headerHtml: headerHtml, footerHtml: footerHtml }) }}
 {%- endfor -%}
 {% set label = "Projects" %}
 {% include "partials/pagination.njk" %}
