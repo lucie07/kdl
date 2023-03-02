@@ -290,12 +290,14 @@ header {
 
 main {
   padding: 0 5%;
-  //BREADCRUMBS
+  display: flex;
+flex-wrap: wrap;
+   // MAIN HEADER
   > header {
-    padding: 0;
-    background: rgba(255, 255, 255, 0.95);
-
-    ul {
+    width: 100%;
+     //BREADCRUMBS
+    nav{ 
+    ol {
       margin: 0;
       li {
         list-style-type: none;
@@ -325,7 +327,51 @@ main {
       padding: 0;
     }
   } //ul
+}//nav
+h1{
+  border-bottom:0.2vw solid black;
+}
 } //header
+
+// ARTICLE
+article{
+  display: flex;
+  flex-wrap: wrap;
+  width: 47.5%;
+  header{
+
+  }//header
+  figure {
+    position: relative;
+    margin: 0;
+    width: 50%;
+    order: 2;
+    width: calc((100% / 3) - 20px);
+    flex: 1 0 auto;
+    //flex: 1 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      width: 100%;
+      height: 15vw;
+      object-fit: cover;
+    }
+    figcaption {
+      position: absolute;
+      bottom: 0.5vw;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      font-size: 0.8em;
+      padding: 0.5vw;
+    } //figcaption
+  } //figure
+
+
+}//article
+
+
+
 
 //SECTION
 section {
@@ -427,7 +473,7 @@ section {
   //* PROJECT PAGE
 
   //IMAGES
-  article {
+  /*article {
     //flex: 0 0 100vw;
     //height: 50vw;
     width: 100%;
@@ -543,7 +589,7 @@ section {
   .full {
     display: block;
   }
-} //article
+}*/ //article
 
 //FOOTER
 footer {
@@ -676,4 +722,5 @@ li {
       } //#team
     } //article
   } //section
+}
 }
