@@ -133,7 +133,7 @@ a {
 
 // ** Header
 
-header {
+>header {
   padding: 1% 0 3em 0;
   #sitename {
     font-weight: bold;
@@ -338,34 +338,108 @@ article{
   display: flex;
   flex-wrap: wrap;
   width: 47.5%;
+  margin: 1% 5% 1% 0;
+  border-bottom:0.1vw solid black;
+  &:nth-child(odd){
+
+    margin-right: 0;
+  }//&:nth-child(even)
+  //HEADER
   header{
+    width:100%;
+    display: flex;
+flex-wrap: wrap;
+    // FIGURE
+    figure {
+      position: relative;
+margin: 0;
+width: 50%;
+order: 2;
+width: calc(33.3333333333% - 20px);
+flex: 1 0 auto;
+      img {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
+      }
+      figcaption {
+        /*position: absolute;
+        bottom: 0.5vw;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        font-size: 0.8em;
+        padding: 0.5vw;*/
+        display:none;
+      } //figcaption
+    } //figure
+
+    >section{
+      display: block;
+      width: 50%;
+      margin:0;
+      order: 1;
+      flex: 1 0 auto;
+      a{
+        h2{
+          margin:0;
+          small{
+            color:$red;
+            display:block;
+            font-size:0.6em;
+          }//small
+        }//h2
+      }//a
+      >section{
+        dl{
+          dt{
+            display:none;
+          }//dt
+          dd{
+            margin-left:0;
+          }//d
+        }//dl
+      }//section
+
+    }//section
+
+
+
+
 
   }//header
-  figure {
-    position: relative;
-    margin: 0;
-    width: 50%;
-    order: 2;
-    width: calc((100% / 3) - 20px);
-    flex: 1 0 auto;
-    //flex: 1 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    img {
-      width: 100%;
-      height: 15vw;
-      object-fit: cover;
+  //FOOTER
+  footer{
+    flex: 0 0 100%;
+    order: 3;
+    margin-top:auto;
+    
+    >section{
+      font-size:0.8em;
+      color:gray;
+      text-align:right;
+      padding-right:1.4em;
+      &:after{
+        content: "";
+        position: absolute;
+        background: black;
+        width: 1em;
+        height: 0.5em;
+        margin-top: 0.9em;
+        margin-left: 0.4em;
+      }//:after
+      &.Maintained{
+        &:after{
+          background: $red;     
+        }//::after
+      }//&:maintained
+      &.Post-project{
+        &:after{
+          background: gray;     
+        }//::after
+      }//&:post-project
     }
-    figcaption {
-      position: absolute;
-      bottom: 0.5vw;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      color: white;
-      font-size: 0.8em;
-      padding: 0.5vw;
-    } //figcaption
-  } //figure
+  }
 
 
 }//article
