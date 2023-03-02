@@ -3,7 +3,7 @@
 [![Build 11ty frontend](https://github.com/kingsdigitallab/kdl/actions/workflows/frontend.yml/badge.svg)](https://github.com/kingsdigitallab/kdl/actions/workflows/frontend.yml)
 [![pages-build-deployment](https://github.com/kingsdigitallab/kdl/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/kingsdigitallab/kdl/actions/workflows/pages/pages-build-deployment)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/kingsdigitallab/kdl)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/kingsdigitallab/kdl/tree/components)
 
 ## Set up
 
@@ -37,7 +37,7 @@ Run the stack:
 
     npm run up
 
-The cms is available at http://localhost:8055/ by default and if no port configuration
+The cms is available at <http://localhost:8055/> by default and if no port configuration
 changed.
 
 #### Data model versioning
