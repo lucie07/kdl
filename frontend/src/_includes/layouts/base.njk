@@ -36,6 +36,11 @@
 {% endblock menu %}
 
 {% block headerEnd %}
+  <div id="search" role="search"></div>
+{% endblock headerEnd %}
+
+{% block content %}
+<header>
   {% if navKey and navKey != "Home" %}
     {{-
     breadcrumbsMacro({
@@ -43,13 +48,11 @@
     })
     -}}
   {% endif %}
-  <div id="search" role="search"></div>
-{% endblock headerEnd %}
-
-{% block content %}
   <h1>{{ title | safe }}</h1>
+  </header>
   {% include "partials/toc.njk" %}
   {{ content | safe }}
+
 {% endblock content %}
 
   <footer>
