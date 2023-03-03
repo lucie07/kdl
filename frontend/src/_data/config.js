@@ -15,7 +15,7 @@ module.exports = {
   twitter: "kingsdigitallab",
   feature: {
     image: `${paths.images}/kings-logo-red.svg`,
-    description: "King's College London log in red",
+    description: "King's College London logo in red",
   },
   // SEO plugin options
   options: {
