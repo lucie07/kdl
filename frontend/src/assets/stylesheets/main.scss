@@ -150,113 +150,112 @@ header {
   } //.logo
   /***** Navigation *****/
 
-// NAV MENU
-nav {
-  > ul {
-    position: fixed;
-    z-index: 999;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-    margin: 0;
-    @include transition(all 500ms ease-in);
-    background: lighten(black, 12%);
-    padding: 5em 0 0 3em;
-    line-height: 1.4;
-    overflow: scroll;
-    text-align: left;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s linear 500ms, opacity 300ms;
-    font-size: 1.5em;
-    .active {
-      background: rgba(255, 255, 255, 0.1);
-      border-left: 2px solid white;
-    }
-
-    //First-level
-    li {
-      color: white;
-      a {
-        color: white;
-      } //a
-      ul {
-        //Second-level
-        li {
-          a {
-            color: white;
-          } //a
-        } //li
-      } //l
-    } //li
-
-    &:last-of-type {
-      padding-bottom: 50vh;
-    } //&:not(:last-of-type)
-  } //ul
-  label {
-    display: block;
-    @include transition(all 500ms ease-in);
-    z-index: 2;
-    cursor: pointer;
-    color: black;
-    z-index: 1000;
-    position: absolute;
-    left: 5%;
-    top: 5%;
-    &:before {
-      content: "";
+  // NAV MENU
+  nav {
+    > ul {
       position: fixed;
-      right: 0;
+      z-index: 999;
+      height: 100vh;
+      width: 100%;
       top: 0;
-      height: 1.7em;
-      width: 1.7em;
-      text-align: center;
-      padding: 0.1em 0.1em 0 0;
-      color: white;
-      cursor: pointer;
-      font-size: 1.3em;
-      line-height: 2;
+      left: 0;
+      margin: 0;
+      @include transition(all 500ms ease-in);
+      background: lighten(black, 12%);
+      padding: 5em 0 0 3em;
+      line-height: 1.4;
+      overflow: scroll;
+      text-align: left;
       visibility: hidden;
       opacity: 0;
-      transition: visibility 0s linear 800ms, opacity 800ms;
-    }
-  } //label
+      transition: visibility 0s linear 500ms, opacity 300ms;
+      font-size: 1.5em;
+      .active {
+        background: rgba(255, 255, 255, 0.1);
+        border-left: 2px solid white;
+      }
 
-  input#menu[type="checkbox"] {
-    display: none;
-  }
-  input#menu[type="checkbox"]:checked ~ ul {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s linear 0s, opacity 500ms;
-  }
-  input#menu[type="checkbox"]:checked ~ label{
-    right: 0;
-    top: 5%;
-    position: absolute;
-    @include transform(rotate(0));
-    background: none;
-    box-shadow: none;
-    /* cross icon */
-    &:before {
-      content: "X";
+      //First-level
+      li {
+        color: white;
+        a {
+          color: white;
+        } //a
+        ul {
+          //Second-level
+          li {
+            a {
+              color: white;
+            } //a
+          } //li
+        } //l
+      } //li
+
+      &:last-of-type {
+        padding-bottom: 50vh;
+      } //&:not(:last-of-type)
+    } //ul
+    label {
+      display: block;
+      @include transition(all 500ms ease-in);
+      z-index: 2;
+      cursor: pointer;
+      color: black;
+      z-index: 1000;
+      position: absolute;
+      left: 5%;
+      top: 5%;
+      &:before {
+        content: "";
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 1.7em;
+        width: 1.7em;
+        text-align: center;
+        padding: 0.1em 0.1em 0 0;
+        color: white;
+        cursor: pointer;
+        font-size: 1.3em;
+        line-height: 2;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s linear 800ms, opacity 800ms;
+      }
+    } //label
+
+    input#menu[type="checkbox"] {
+      display: none;
+    }
+    input#menu[type="checkbox"]:checked ~ ul {
       visibility: visible;
       opacity: 1;
-      transition: visibility 0s linear 0s, opacity 800ms;
+      transition: visibility 0s linear 0s, opacity 500ms;
     }
-    &:after {
-      @include transition(all 500ms ease-in);
-    }
-    &:hover {
+    input#menu[type="checkbox"]:checked ~ label {
+      right: 0;
+      top: 5%;
+      position: absolute;
+      @include transform(rotate(0));
+      background: none;
+      box-shadow: none;
+      /* cross icon */
       &:before {
-        opacity: 0.7;
+        content: "X";
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s linear 0s, opacity 800ms;
       }
-    } //hover
-  }
-} /* end nav*/
-
+      &:after {
+        @include transition(all 500ms ease-in);
+      }
+      &:hover {
+        &:before {
+          opacity: 0.7;
+        }
+      } //hover
+    }
+  } /* end nav*/
 } //header
 
 /***** Privacy Policy *****/
@@ -286,7 +285,6 @@ nav {
         }
     }
 } **/
-
 
 //** MAIN PAGE
 
@@ -426,7 +424,7 @@ article {
       &.Maintained {
         &:after {
           background: black;
-          border-top:0.3em solid $red;
+          border-top: 0.3em solid $red;
           margin-top: 0.6em;
         } //::after
       } //&:maintained
@@ -436,19 +434,19 @@ article {
         } //::after
       } //&:post-project
     }
-  }//footer
+  } //footer
 } //article
 //PAGE PAGINATION
 nav {
   margin-top: 5em;
   border-top: 0.2vw solid black;
-  width:100%;
+  width: 100%;
   ol {
     display: flex;
     flex-wrap: wrap;
     li {
       border: none;
-      flex:1;
+      flex: 1;
       display: block;
       text-align: center;
       a {
@@ -461,9 +459,6 @@ nav {
 //SECTION
 section {
   margin: 3vw 0 0 0;
-
-
-
 
   //* PROJECT PAGE
 
