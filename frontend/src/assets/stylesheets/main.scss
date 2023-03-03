@@ -291,72 +291,71 @@ a {
 main {
   padding: 0 5%;
   display: flex;
-flex-wrap: wrap;
-   // MAIN HEADER
+  flex-wrap: wrap;
+  // MAIN HEADER
   > header {
     width: 100%;
-     //BREADCRUMBS
-    nav{ 
-    ol {
-      margin: 0;
-      li {
-        list-style-type: none;
+    //BREADCRUMBS
+    nav {
+      ol {
+        margin: 0;
+        li {
+          list-style-type: none;
+          margin-left: -40px;
+          font-size: 0.8em;
+          a {
+            color: gray;
+            font-weight: bold;
+            display: inline-block;
+            line-height: 1.3;
+          } //a
+          &::after {
+            content: ">";
+            position: absolute;
+            padding: 0 0.5em;
+          } //&::after
+        } //li
+      } //ul
+      ol {
         margin-left: -40px;
-        font-size: 0.8em;
-        a {
-          color: gray;
-          font-weight: bold;
-          display: inline-block;
-          line-height: 1.3;
-        } //a
-        &::after {
-          content: ">";
-          position: absolute;
-          padding: 0 0.5em;
-        } //&::after
-      } //li
+      }
+      h1 {
+        font-size: 1.6em;
+        border-bottom: 0.2vw solid black;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+      }
     } //ul
-    ol {
-      margin-left: -40px;
-    }
-    h1 {
-      font-size: 1.6em;
-      border-bottom: 0.2vw solid black;
-      font-weight: normal;
-      margin: 0;
-      padding: 0;
-    }
-  } //ul
-}//nav
-h1{
-  border-bottom:0.2vw solid black;
-}
+  } //nav
+  h1 {
+    border-bottom: 0.2vw solid black;
+  }
 } //header
 
 // ARTICLE
-article{
+article {
   display: flex;
   flex-wrap: wrap;
   width: 47.5%;
   margin: 1% 5% 1% 0;
-  border-bottom:0.1vw solid black;
-  &:nth-child(odd){
-
+  border-bottom: 0.1vw solid black;
+  &:nth-child(odd) {
     margin-right: 0;
-  }//&:nth-child(even)
+  } //&:nth-child(even)
   //HEADER
-  header{
-    width:100%;
+  header {
+    width: 100%;
     display: flex;
-flex-wrap: wrap;
+    flex-wrap: wrap;
     // FIGURE
     figure {
       position: relative;
-margin: 0;
-width: 50%;
-order: 2;
-width: calc(33.3333333333% - 20px);
-flex: 1 0 auto;
+      margin: 0;
+      width: 50%;
+      order: 2;
+      width: calc(33.3333333333% - 20px);
+      flex: 1 0 auto;
       img {
         width: 100%;
         height: 15vw;
@@ -370,56 +369,50 @@ flex: 1 0 auto;
         color: white;
         font-size: 0.8em;
         padding: 0.5vw;*/
-        display:none;
+        display: none;
       } //figcaption
     } //figure
 
-    >section{
+    > section {
       display: block;
       width: 50%;
-      margin:0;
+      margin: 0;
       order: 1;
       flex: 1 0 auto;
-      a{
-        h2{
-          margin:0;
-          small{
-            color:$red;
-            display:block;
-            font-size:0.6em;
-          }//small
-        }//h2
-      }//a
-      >section{
-        dl{
-          dt{
-            display:none;
-          }//dt
-          dd{
-            margin-left:0;
-          }//d
-        }//dl
-      }//section
-
-    }//section
-
-
-
-
-
-  }//header
+      a {
+        h2 {
+          margin: 0;
+          small {
+            color: $red;
+            display: block;
+            font-size: 0.6em;
+          } //small
+        } //h2
+      } //a
+      > section {
+        dl {
+          dt {
+            display: none;
+          } //dt
+          dd {
+            margin-left: 0;
+          } //d
+        } //dl
+      } //section
+    } //section
+  } //header
   //FOOTER
-  footer{
+  footer {
     flex: 0 0 100%;
     order: 3;
-    margin-top:auto;
-    
-    >section{
-      font-size:0.8em;
-      color:gray;
-      text-align:right;
-      padding-right:1.4em;
-      &:after{
+    margin-top: auto;
+
+    > section {
+      font-size: 0.8em;
+      color: gray;
+      text-align: right;
+      padding-right: 1.4em;
+      &:after {
         content: "";
         position: absolute;
         background: black;
@@ -427,25 +420,20 @@ flex: 1 0 auto;
         height: 0.5em;
         margin-top: 0.9em;
         margin-left: 0.4em;
-      }//:after
-      &.Maintained{
-        &:after{
-          background: $red;     
-        }//::after
-      }//&:maintained
-      &.Post-project{
-        &:after{
-          background: gray;     
-        }//::after
-      }//&:post-project
+      } //:after
+      &.Maintained {
+        &:after {
+          background: $red;
+        } //::after
+      } //&:maintained
+      &.Post-project {
+        &:after {
+          background: gray;
+        } //::after
+      } //&:post-project
     }
   }
-
-
-}//article
-
-
-
+} //article
 
 //SECTION
 section {
@@ -665,136 +653,136 @@ section {
   }
 }*/ //article
 
-//FOOTER
-footer {
-  margin-top: 5em;
-  border-top: 0.3vw solid black;
-  bottom: 0;
-  left: 0;
-  padding: 0 1em;
-
-  li {
-    list-style: none;
-  } //footer
-} //main
-
-/* CONTENT CONTAINER */
-.container {
-  //max-width: 1500px;
-  min-width: 200px;
-  margin: 0 auto;
-  max-width: 2000px;
-} //.container
-
-// List Grid Radio
-
-// Grid style (default view)
-li {
-  float: none;
-}
-
-// Set styles for a checked radio/option
-.radio {
-  display: none;
-
-  + label {
-    color: gray;
-    cursor: pointer;
-    display: inline-block;
-    @include transition(all 200ms ease-in);
-    &:hover {
-      opacity: 0.7;
-    }
-  }
-}
-
-// Set the checked styles for our labels
-.radio:checked {
-  + label {
-    color: black;
-    border-bottom: 0.1vw solid black;
-    @include transition(all 200ms ease-in);
-  }
-}
-
-// Styles for our List radio being checked
-.list-view:checked {
-  // Find the sibling content container div
-  ~ ol {
-    // Adjust styles for the individual block items
+  //FOOTER
+  footer {
+    margin-top: 5em;
+    border-top: 0.3vw solid black;
+    bottom: 0;
+    left: 0;
+    padding: 0 1em;
 
     li {
-      display: flex;
-      border: 0.1vw solid black;
-      border-bottom: none;
-      padding: 0.5vw;
-      &:last-of-type {
-        border-bottom: 0.1vw solid black;
-      }
+      list-style: none;
+    } //footer
+  } //main
 
-      a h2 {
-        width: 40vw;
-        margin: 0;
-        font-size: 1em;
-      }
-      figure {
-        display: none;
-        float: left;
-        margin-right: rem(15);
-      }
-      dl {
-        width: 30vw;
-        display: flex;
-        dt {
-          width: 15vw;
-        }
-        dd {
-          width: 15vw;
-        }
-      } //dl
-    } //li
-  } //ol
-} //.list-view:checked
+  /* CONTENT CONTAINER */
+  .container {
+    //max-width: 1500px;
+    min-width: 200px;
+    margin: 0 auto;
+    max-width: 2000px;
+  } //.container
 
-// List Grid Radio
+  // List Grid Radio
 
-@media screen and (max-width: 768px) {
-  section {
-    ol {
-      display: block;
+  // Grid style (default view)
+  li {
+    float: none;
+  }
+
+  // Set styles for a checked radio/option
+  .radio {
+    display: none;
+
+    + label {
+      color: gray;
+      cursor: pointer;
+      display: inline-block;
+      @include transition(all 200ms ease-in);
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  // Set the checked styles for our labels
+  .radio:checked {
+    + label {
+      color: black;
+      border-bottom: 0.1vw solid black;
+      @include transition(all 200ms ease-in);
+    }
+  }
+
+  // Styles for our List radio being checked
+  .list-view:checked {
+    // Find the sibling content container div
+    ~ ol {
+      // Adjust styles for the individual block items
 
       li {
-        display: block;
-        width: 100%;
-        figure {
-          width: 100%;
-        } //figure
-        .index-information {
-          width: 100%;
+        display: flex;
+        border: 0.1vw solid black;
+        border-bottom: none;
+        padding: 0.5vw;
+        &:last-of-type {
+          border-bottom: 0.1vw solid black;
         }
+
+        a h2 {
+          width: 40vw;
+          margin: 0;
+          font-size: 1em;
+        }
+        figure {
+          display: none;
+          float: left;
+          margin-right: rem(15);
+        }
+        dl {
+          width: 30vw;
+          display: flex;
+          dt {
+            width: 15vw;
+          }
+          dd {
+            width: 15vw;
+          }
+        } //dl
       } //li
     } //ol
+  } //.list-view:checked
 
-    article {
-      display: block;
-      article {
-        width: 100%;
-        &:last-child {
+  // List Grid Radio
+
+  @media screen and (max-width: 768px) {
+    section {
+      ol {
+        display: block;
+
+        li {
+          display: block;
           width: 100%;
-          border-right: 0.1vw solid black;
-        } //&:last-child
-        #images {
-          margin: 0;
-        } //#images
+          figure {
+            width: 100%;
+          } //figure
+          .index-information {
+            width: 100%;
+          }
+        } //li
+      } //ol
+
+      article {
+        display: block;
+        article {
+          width: 100%;
+          &:last-child {
+            width: 100%;
+            border-right: 0.1vw solid black;
+          } //&:last-child
+          #images {
+            margin: 0;
+          } //#images
+        } //article
+        #team {
+          ul {
+            li {
+              flex: 0 0 50%;
+            } //li
+          } //ul
+        } //#team
       } //article
-      #team {
-        ul {
-          li {
-            flex: 0 0 50%;
-          } //li
-        } //ul
-      } //#team
-    } //article
-  } //section
-}
+    } //section
+  }
 }
