@@ -25,12 +25,13 @@
 {% block menu %}
   {{-
   navMacro({
-  title: "Main menu",
+  title: "Menu",
   pages: collections.all | eleventyNavigation,
   currentUrl: page.url
   }, {
   nested: true,
-  ordered: false
+  ordered: false,
+  action: "menu"
   })
   -}}
 {% endblock menu %}
@@ -40,19 +41,18 @@
 {% endblock headerEnd %}
 
 {% block content %}
-<header>
-  {% if navKey and navKey != "Home" %}
+  <header>
+    {% if navKey and navKey != "Home" %}
     {{-
     breadcrumbsMacro({
     pages: collections.all | eleventyNavigationBreadcrumb(navKey, { includeSelf: true })
     })
     -}}
-  {% endif %}
-  <h1>{{ title | safe }}</h1>
+    {% endif %}
+    <h1>{{ title | safe }}</h1>
   </header>
   {% include "partials/toc.njk" %}
   {{ content | safe }}
-
 {% endblock content %}
 
   <footer>
