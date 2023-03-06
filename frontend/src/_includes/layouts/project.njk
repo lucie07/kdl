@@ -4,46 +4,50 @@ layout: layouts/base.njk
 {% from "kdl/components/image/macros.njk" import imageMacro %}
 
 <article>
-  <!-- Images -->
-  <section id="images">
+ <section>
+    <section>
+    <!-- Images -->
     {{ imageMacro(obj.feature) }}
-  </section>
-
-  <!-- Overview -->
-  {% if project.description %}
-    <section id="overview">
-      <p>{{ project.description }}</p>
+    
+    <!-- Overview -->
+    {% if project.description %}
+      <div id="overview">
+        <p>{{ project.description }}</p>
+      </div>
+    {% endif %}
     </section>
-  {% endif %}
 
-  {% if project.url %}
-    <section id="links">
-      <ul>
-        {% for url in project.url %}
-          <li>
-            <a href="{% route url.linkrole_id.url %}" role="button">{{ url.linkrole_id.name }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
-  {% endif %}
-
-  <!-- Information -->
-  <section id="metadata">
-    {% if project.funder %}
-      <section class="funder">
-        <h2>Funder</h2>
+    <section>
+    {% if project.url %}
+      <div id="links">
         <ul>
-          {% for funder in project.funder %}
+          {% for url in project.url %}
             <li>
-              <a href="{% route funder.agent_id.slug, 'Organisations' %}">{{- funder.agent_id.name -}}</a>
+              <a href="{% route url.linkrole_id.url %}" role="button">{{ url.linkrole_id.name }}</a>
             </li>
           {% endfor %}
         </ul>
-      </section>
+      </div>
     {% endif %}
 
-    {% include "partials/project.njk" %}
+    <!-- Information -->
+    <div id="metadata">
+      {% if project.funder %}
+        <div class="funder">
+          <dl>
+            {% for funder in project.funder %}
+            <dt>Funder:</dt>
+            <dd><a href="{% route funder.agent_id.slug, 'Organisations' %}">{{- funder.agent_id.name -}}</a></dd>
+            {% endfor %}
+          </dl>
+        </div>
+      {% endif %}
+
+      {% include "partials/project.njk" %}
+    </div>
+    </section>
+  </section>
+
   </section>
 
   <!-- Team -->
@@ -53,9 +57,11 @@ layout: layouts/base.njk
       <ul>
         {% for member in project.member|sort(false, false, "agent.name") %}
           <li>
-            <a href="{% route member.agent.slug, 'People' %}">{{ member.agent.name }}</a>,
+            <a href="{% route member.agent.slug, 'People' %}">{{ member.agent.name }}</a>
+            <span>
             {{ member.roleName.name }}
             {%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}
+            </span>
           </li>
         {% endfor %}
       </ul>
