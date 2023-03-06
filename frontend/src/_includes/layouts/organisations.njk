@@ -2,19 +2,14 @@
 layout: layouts/base.njk
 permalink: "about/organisations/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
 ---
-<ol start="{{ pagination.pageNumber * 10 + 1 }}">
+<ul start="{{ pagination.pageNumber * 10 + 1 }}">
   {%- for org in paginatedOrganisations -%}
     <li>
-      <figure>
-        <img src="https://picsum.photos/400/600" alt="random auto-generated placeholder image">
-      </figure>
-      <div class="index-information">
         <a href="{% route org.agent.slug, 'Organisations' %}">
           <h2>{{ org.agent.name }}</h2>
         </a>
-      </div>
     </li>
   {%- endfor -%}
-</ol>
+</ul>
 {% set label = "Organisations" %}
 {% include "partials/pagination.njk" %}
