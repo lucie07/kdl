@@ -299,6 +299,7 @@ main {
     nav {
       ol {
         margin: 0;
+        margin-left: -40px;
         li {
           list-style-type: none;
           margin-left: 0;
@@ -315,32 +316,24 @@ main {
             padding: 0 0.5em;
           } //&::after
         } //li
-      } //ul
-      ol {
-        margin-left: -40px;
-      }
-      h1 {
-        font-size: 1.6em;
-        border-bottom: 0.2vw solid black;
-        font-weight: normal;
-        margin: 0;
-        padding: 0;
-      }
-    } //ul
-  } //nav
+      } //ol
+    } //nav
+ 
   h1 {
     border-bottom: 0.2vw solid black;
     font-size: 1.5em;
+    margin: 0;
     small{
       color: #c11609;
       font-size: 0.6em;
       margin-right:0.5em;
     }//small
   }//h1
-} //main
+} //nav
+
 
 // INDEX PAGES
-.projects, .posts{
+&.projects, &.posts{
 // ARTICLE
 article {
   display: flex;
@@ -357,6 +350,9 @@ article {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    h2{
+      font-size:1.3em;
+    }//h2
     // FIGURE
     figure {
       position: relative;
@@ -381,7 +377,12 @@ article {
         display: none;
       } //figcaption
     } //figure
-
+    .info{
+      dd:last-child{
+        font-size:0.8em;
+        color:gray;
+      }
+    }
     > section {
       display: block;
       width: 50%;
@@ -455,6 +456,8 @@ article {
 }//.projects, .posts
 
 
+
+
 //PAGE PAGINATION
 nav.pagination {
   margin-top: 5em;
@@ -479,7 +482,7 @@ nav.pagination {
 
 // PROJECT POST PAGE
 
-.project{
+&.project, &.post{
   article{
     width: 100%;
     >section{
@@ -582,9 +585,6 @@ nav.pagination {
 
 //SECTION
 section {
-  margin: 3vw 0 0 0;
-
-
   //FOOTER
   footer {
     margin-top: 5em;
@@ -595,49 +595,32 @@ section {
 
     li {
       list-style: none;
-    } //footer
-  } //main
+    } //li
+  } //footer
+}//section
+
+} //main  
 
 
-  
-
-  @media screen and (max-width: 768px) {
-    section {
-      ol {
+@media screen and (max-width: 800px) {
+  main{
+      &.projects, &.posts{
+      article{
         display: block;
-
-        li {
-          display: block;
-          width: 100%;
-          figure {
-            width: 100%;
-          } //figure
-          .index-information {
-            width: 100%;
+        width: 100%;
+        margin: 1% 0;
+        header{
+          display:block;
+          figure{
+            width:100%;
+          }//figure
+          section{
+            width:100%;
           }
-        } //li
-      } //ol
+        }//header
+      }//article
+    }//.projects, .posts
+  }//main
+}//@media screen and (max-width: 768px)
+ 
 
-      article {
-        display: block;
-        article {
-          width: 100%;
-          &:last-child {
-            width: 100%;
-            border-right: 0.1vw solid black;
-          } //&:last-child
-          #images {
-            margin: 0;
-          } //#images
-        } //article
-        #team {
-          ul {
-            li {
-              flex: 0 0 50%;
-            } //li
-          } //ul
-        } //#team
-      } //article
-    } //section
-  }
-}

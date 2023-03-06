@@ -7,7 +7,7 @@ permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
 {%- for item in paginatedProjects -%}
     {% set project = item.data.project %}
     {% set headerHtml %}
-    <section class="index-information">
+    <section class="info">
         {%- include "partials/project.njk" -%}
     </section>
     {% endset %}
