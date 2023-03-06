@@ -3,6 +3,7 @@
 {% set baseUrl = config.baseUrl | url %}
 {% set assetsPath = config.paths.assets | url %}
 {% set imagesPath = config.paths.images | url %}
+{% set mainClass = layout | replace("layouts/", "") | replace(".njk", "") %}
 {% set stylesheetsPath = config.paths.stylesheets | url %}
 
 {% block headExtra %}

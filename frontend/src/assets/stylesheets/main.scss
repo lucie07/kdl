@@ -344,10 +344,11 @@ article {
     margin-right: 0;
   } //&:nth-child(even)
   //HEADER
-  header {
+  >header {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
     // FIGURE
     figure {
       position: relative;
@@ -377,6 +378,7 @@ article {
       display: block;
       width: 50%;
       margin: 0;
+      padding-right:5%;
       order: 1;
       flex: 1 0 auto;
       a {
@@ -408,36 +410,42 @@ article {
     margin-top: auto;
 
     > section {
-      font-size: 0.8em;
-      color: gray;
-      text-align: right;
-      padding-right: 1.4em;
-      &:after {
+      font-size: 0.6em;
+      text-transform: uppercase;
+      color: white;
+      text-align: left;
+      padding-left: 1.7em;
+      margin:0;
+      &:hover{
+        color: black;
+      }
+      &:before {
         content: "";
         position: absolute;
-        background: gray;
+        background: white;
+        border: 0.15em solid $black;
         width: 1em;
-        height: 0.5em;
-        margin-top: 0.9em;
-        margin-left: 0.4em;
+        height: 1em;
+        margin-top: 0em;
+        margin-left: -1.7em;
+        border-radius:50%;
       } //:after
       &.Maintained {
-        &:after {
-          background: black;
-          border-top: 0.3em solid $red;
-          margin-top: 0.6em;
+        &:before {
+          background: $black;
         } //::after
       } //&:maintained
       &.Post-project {
-        &:after {
-          background: black;
+        &:before {
+          background: lighten(gray,15%);
+          border:0.15em solid lighten(gray,15%);
         } //::after
       } //&:post-project
     }
   } //footer
 } //article
 //PAGE PAGINATION
-nav {
+nav.pagination {
   margin-top: 5em;
   border-top: 0.2vw solid black;
   width: 100%;
