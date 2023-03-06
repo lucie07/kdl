@@ -666,7 +666,32 @@ ul{
   }//&.people, &.organisations
 }//@media screen and (max-width: 800px)
 
+&.faqs{
+  display:flex;
+ aside{
+  width: 25%;
+  order:2;
+  margin-left:5%;
+  h2{
+      text-transform: uppercase;
+      font-size: 1em;
+  }//h2
+  nav{
+    border-left: 0.1em solid black;
+  }
+ }//aside
+ section{
+  width:70%;
+  figure{
+    width:100%;
+    margin:0;
+    img{
+      width:100%;
+    }
+  }
+ }//section
 
+}//&.faqs
 
 //SECTION
 section {
