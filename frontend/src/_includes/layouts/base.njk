@@ -1,10 +1,10 @@
 {% extends "kdl/base.njk" %}
 
-{% set baseUrl = config.baseUrl | url %}
-{% set assetsPath = config.paths.assets | url %}
-{% set imagesPath = config.paths.images | url %}
+{% set baseUrl = config.baseUrl %}
+{% set assetsPath = config.paths.assets %}
+{% set imagesPath = config.paths.images %}
 {% set mainClass = layout | replace("layouts/", "") | replace(".njk", "") %}
-{% set stylesheetsPath = config.paths.stylesheets | url %}
+{% set stylesheetsPath = config.paths.stylesheets %}
 
 {% block headExtra %}
   <base href="{{ baseUrl }}"/>
