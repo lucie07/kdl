@@ -1,5 +1,6 @@
 const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
 const kdlFilters = require("kdl-components/src/kdl/filters");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const markdownItAnchor = require("markdown-it-anchor");
 const pluginSEO = require("eleventy-plugin-seo");
 const pluginTOC = require("eleventy-plugin-toc");
@@ -31,6 +32,7 @@ module.exports = (eleventyConfig) => {
     public: "/",
   });
 
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPlugin(pluginEleventyNavigation);
   eleventyConfig.addPlugin(pluginSEO, require("./src/_data/config.js"));
   eleventyConfig.addPlugin(pluginTOC);
