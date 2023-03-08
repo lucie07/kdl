@@ -86,8 +86,6 @@ module.exports = (eleventyConfig) => {
     return `${process.env.DIRECTUS_URL}/assets/${id}`;
   });
   eleventyConfig.addShortcode("route", function (path, navigationKey = "") {
-    const urlFilter = eleventyConfig.getFilter("url");
-
     let url = path;
 
     if (navigationKey) {
@@ -101,7 +99,7 @@ module.exports = (eleventyConfig) => {
       }
     }
 
-    return urlFilter(url);
+    return url;
   });
 
   // https://www.11ty.dev/docs/languages/custom/#example-add-sass-support-to-eleventy
