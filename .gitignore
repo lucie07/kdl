@@ -74,5 +74,7 @@ dist
 .volumes
 cms/database/*
 cms/uploads/*
+etl/data
+etl/storage
 frontend/_site
 docker-compose.override.yaml
