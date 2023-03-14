@@ -23,7 +23,7 @@ layout: layouts/base.njk
         <ul>
           {% for url in project.url %}
             <li>
-              <a href="{% route url.linkrole_id.url %}" role="button">{{ url.linkrole_id.name }}</a>
+              <a href="{{ url.linkrole_id.url }}" role="button">{{ url.linkrole_id.name }}</a>
             </li>
           {% endfor %}
         </ul>
