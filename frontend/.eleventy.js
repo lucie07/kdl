@@ -49,6 +49,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addFilter("toLocaleDate", kdlFilters.toLocaleDate);
   eleventyConfig.addFilter("filter", kdlFilters.filter);
+  eleventyConfig.addFilter("renderMd", kdlFilters.renderMd);
 
   eleventyConfig.addFilter("asProjectDate", (dateObj) => {
     if (!dateObj) {

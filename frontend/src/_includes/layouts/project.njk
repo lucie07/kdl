@@ -12,7 +12,7 @@ layout: layouts/base.njk
     <!-- Overview -->
     {% if project.description %}
       <div id="overview">
-        <p>{{ project.description }}</p>
+        <p>{{ project.description | renderMd | safe }}</p>
       </div>
     {% endif %}
     </section>
