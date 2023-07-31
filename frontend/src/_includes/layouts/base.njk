@@ -1,10 +1,12 @@
-{% extends "kdl/base.njk" %}
+<!--{% extends "kdl/base.njk" %}-->
 
 {% set baseUrl = config.baseUrl %}
 {% set assetsPath = config.paths.assets %}
 {% set imagesPath = config.paths.images %}
 {% set mainClass = layout | replace("layouts/", "") | replace(".njk", "") %}
 {% set stylesheetsPath = config.paths.stylesheets %}
+
+
 
 {% block headExtra %}
   <base href="{{ baseUrl }}"/>
@@ -19,12 +21,12 @@
   {{ super() }}
 {% endblock stylesheets %}
 
-{% block headerStart %}
+{#{% block headerStart %}
   {{ headerMacro(config) }}
-{% endblock headerStart %}
+{% endblock headerStart %}#}
 
 {% block menu %}
-  {{-
+ {# {{-
   navMacro({
   title: "Menu",
   pages: collections.all | eleventyNavigation,
@@ -34,7 +36,57 @@
   ordered: false,
   action: "menu"
   })
-  -}}
+  -}}#}
+  
+  <header>
+
+<nav class="main">
+    <div class="wrapper">
+        <a class="sitename" href="//www.kdl.kcl.ac.uk/" title="King's Digital Lab">King's Digital Lab<!--<span><br>Academic research exploration</span>--></a><a class="kcl-logo" href="//www.kcl.ac.uk/" title="King's College London"><img src="https://kdl.kcl.ac.uk/static/images/kings-logo-red.svg" alt="King's College London"></a>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <span class='menu-button'></span>
+  </label>
+    <ul>
+               <li>
+        <input id="projects" type="checkbox" hidden />
+        <label for="projects" class="check"> Projects</label>
+        <ul>
+          <li><a href="#all">All</a></li>
+             <li><a href="#active">Active</a></li>
+          <li><a href="#archived">Archived</a></li>
+          <li>
+        </ul>
+      </li>
+      <li><a href="#blog">Blog</a></li>
+         <li>
+        <input id="about" type="checkbox" hidden />
+        <label for="about" class="check"> About</label>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+             <li><a href="#Team">Team</a></li>
+          <li>
+        </ul>
+      </li>
+              <li> <a href="#contact">Contact</a></li>
+      
+        </ul>
+      </li>
+      
+    </ul>
+  </div>
+  </nav>
+  <nav class="sub">
+   <div class="wrapper">
+    <h1>Projects</h1>
+    <ul>
+           <li><a href="#overview">All</a></li>
+          <li><a href="#Team">Active</a></li>
+          <li><a href="#Team">Archived</a></li>
+    </ul>
+   </div>
+  </nav>
+</header>
 {% endblock menu %}
 
 {% block headerEnd %}
@@ -54,7 +106,8 @@
   </header>
   {% include "partials/toc.njk" %}
   {{ content | safe }}
-{% endblock content %}
+
+{% endblock content %}-->
 
   <footer>
     {% include "partials/footer.njk" %}
