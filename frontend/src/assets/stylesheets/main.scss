@@ -346,6 +346,7 @@ nav.sub{
     small{
       font-weight:normal;
       font-size:0.6em;
+      display:inline-block;
     }
   }//h1
   ul{
@@ -389,27 +390,30 @@ main.projects{
        padding:0.5em 0;
         cursor:default;
         display:block;
-           h2{
-        display:inline-block;
-             font-weight:normal;
-             cursor:pointer;
-             margin:0;
-             font-family: "KingsCaslon",serif;
-                      &:hover{
-          text-decoration:underline;
-                       color: #c11609;
-                        color:#0a2d50;
-                }//&:hover
-      }//h2
+        h2{
+          display:inline-block;
+               font-weight:normal;
+               cursor:pointer;
+               margin:0;
+               font-family: "KingsCaslon",serif;
+                        &:hover{
+            text-decoration:underline;
+                         color: #c11609;
+                          color:#0a2d50;
+                  }//&:hover
+        }//h2
        small{
          color:gray;
          font-family: KingsBureauGrotThreeSeven,sans-serif;
          font-size:0.6em;
+         display:inline-block;
+         margin-left:0.3em;
          //color: #c11609;
           //font-family: "KingsCaslon",serif;
         }//small    
         span{
           font-style:italic;
+          display:block;
         }//span
         }//a
      
