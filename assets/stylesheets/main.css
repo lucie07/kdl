@@ -338,7 +338,7 @@ main.projects a span {
   text-align: center;
 }
 .project article > section #links {
-  border-top: 0.5em solid gray;
+  border-top: 0.3em solid rgb(220, 227, 230);
   width: 100%;
   padding-top: 2em;
 }
