@@ -249,6 +249,7 @@ header nav.sub h1 {
 header nav.sub h1 small {
   font-weight: normal;
   font-size: 0.6em;
+  display: inline-block;
 }
 header nav.sub ul {
   display: block;
@@ -300,9 +301,12 @@ main.projects a small {
   color: gray;
   font-family: KingsBureauGrotThreeSeven, sans-serif;
   font-size: 0.6em;
+  display: inline-block;
+  margin-left: 0.3em;
 }
 main.projects a span {
   font-style: italic;
+  display: block;
 }
 
 .project {
