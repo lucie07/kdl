@@ -1,406 +1,355 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Pragati+Narrow:wght@700&display=swap");
-.page-anchor {
-  display: inline-block;
-  height: 0;
-  overflow: hidden;
-  width: 0;
+html {
+  scroll-behavior: smooth;
 }
 
-html,
-body {
-  margin: 0 auto;
-  padding: 0;
-  min-height: 100%;
+html, body {
+  margin: 0;
   height: 100%;
-  font-family: "PT Serif", serif;
-  width: 100%;
-}
-
-[hidden] {
-  /* Hidden fallback */
-  display: none;
-  visibility: hidden;
+  font-family: KingsBureauGrotThreeSeven, sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
 
-h5 {
-  text-align: center;
-}
-
-strong.title {
-  display: block;
-}
-
-*,
-*:before,
-*:after {
-  outline: none;
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-a:hover {
-  opacity: 0.7;
-}
-
-header {
-  padding: 1% 0 3em 0;
-  /***** Navigation *****/
-  /* end nav*/
-}
-header .sitename {
-  font-weight: bold;
-  font-size: 1.5em;
-  text-align: center;
-}
-header .logo {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-header .logo img {
-  width: 9em;
-}
-header nav > ul {
-  position: fixed;
-  z-index: 999;
-  height: 100vh;
+section {
   width: 100%;
-  top: 0;
-  left: 0;
-  margin: 0;
-  -webkit-transition: all 500ms ease-in;
-  -moz-transition: all 500ms ease-in;
-  -ms-transition: all 500ms ease-in;
-  -o-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;
-  background: #1f1f1f;
-  padding: 5em 0 0 3em;
-  line-height: 1.4;
-  overflow: scroll;
-  text-align: left;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s linear 500ms, opacity 300ms;
-  font-size: 1.5em;
 }
-header nav > ul .active {
-  background: rgba(255, 255, 255, 0.1);
-  border-left: 2px solid white;
+
+.wrapper {
+  max-width: 1220px;
+  margin: 0 auto;
 }
-header nav > ul li {
+
+header a.sitename {
+  text-decoration: none;
   color: white;
-}
-header nav > ul li a {
-  color: white;
-}
-header nav > ul li ul li a {
-  color: white;
-}
-header nav > ul:last-of-type {
-  padding-bottom: 50vh;
-}
-header nav label {
-  display: block;
-  -webkit-transition: all 500ms ease-in;
-  -moz-transition: all 500ms ease-in;
-  -ms-transition: all 500ms ease-in;
-  -o-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;
-  z-index: 2;
-  cursor: pointer;
-  color: black;
-  z-index: 1000;
   position: absolute;
-  left: 5%;
-  top: 5%;
+  font-size: 1.6em;
+  padding: 0.4em 0;
 }
-header nav label:before {
-  content: "";
-  position: fixed;
-  right: 0;
-  top: 0;
-  height: 1.7em;
-  width: 1.7em;
-  text-align: center;
-  padding: 0.1em 0.1em 0 0;
+header a.sitename span {
+  font-family: Georgia, Times, Times New Roman, serif;
+  font-size: 1.2em;
+}
+header a.kcl-logo {
+  width: 8em;
+  text-align: right;
+  float: right;
+  position: relative;
+  display: inline-block;
+  align-self: flex-end;
+}
+header a.kcl-logo img {
+  width: 8em;
+  text-align: right;
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+header nav.main {
+  z-index: 1;
+  background: rgb(90, 99, 105);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
-  cursor: pointer;
-  font-size: 1.3em;
-  line-height: 2;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s linear 800ms, opacity 800ms;
+  height: 50px;
+  padding: 0 1em;
+  border-bottom: 0.3em solid lightgray;
 }
-header nav input#menu[type=checkbox] {
+header nav.main .wrapper {
+  margin: 0 auto;
+}
+header nav.main .wrapper > ul { /* first-level */
+  margin: 0 2em 0 auto;
+  list-style-type: none;
+  float: right;
+  /** chevron icon **/
+}
+header nav.main .wrapper > ul > li {
+  display: block;
+  float: left;
+  transition: all ease-out 250ms;
+  position: relative;
+  color: #cccccc;
+}
+header nav.main .wrapper > ul > li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #999999;
+  transition: transform 0.25s ease-out;
+}
+header nav.main .wrapper > ul > li.active {
+  color: white;
+  position: relative;
+  padding: 10px;
+}
+header nav.main .wrapper > ul > li.active:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: transform 0.25s ease-out;
+}
+header nav.main .wrapper > ul > li a {
+  text-decoration: none;
+  color: #cccccc;
+}
+header nav.main .wrapper > ul > li a:hover {
+  color: white;
+}
+header nav.main .wrapper > ul > li a, header nav.main .wrapper > ul > li label {
+  display: block;
+  padding: 0.9em 1em;
+  transition: all 0.25s ease-in;
+}
+header nav.main .wrapper > ul > li label {
+  cursor: pointer;
+}
+header nav.main .wrapper > ul > li > ul { /* second-level */
+  margin-left: -40px;
+  height: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  list-style-type: none;
+}
+header nav.main .wrapper > ul > li > ul li a, header nav.main .wrapper > ul > li > ul li label {
+  background: #353535;
+  box-shadow: inset 0 -1px #474747;
+}
+header nav.main .wrapper > ul > li > ul li a:focus, header nav.main .wrapper > ul > li > ul li a:hover, header nav.main .wrapper > ul > li > ul li label:focus, header nav.main .wrapper > ul > li > ul li label:hover {
+  background: #232323;
+}
+header nav.main .wrapper > ul > li > ul li > ul { /* third-level */
+  height: 100%;
+  max-height: 0;
+  overflow: hidden;
+  list-style-type: none;
+  transition: max-height 0.5s ease-in-out;
+}
+header nav.main .wrapper > ul > li > ul li > ul li a, header nav.main .wrapper > ul > li > ul li > ul li label {
+  background: #454545;
+  box-shadow: inset 0 -1px #575757;
+}
+header nav.main .wrapper > ul > li > ul li > ul li a:focus, header nav.main .wrapper > ul > li > ul li > ul li a:hover, header nav.main .wrapper > ul > li > ul li > ul li label:focus, header nav.main .wrapper > ul > li > ul li > ul li label:hover {
+  background: #333333;
+}
+header nav.main .wrapper > ul > li > ul li > ul li > ul { /* fourth-level */
+  height: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  list-style-type: none;
+}
+header nav.main .wrapper > ul > li > ul li > ul li > ul li a, header nav.main .wrapper > ul > li > ul li > ul li > ul li label {
+  background: #454545;
+  box-shadow: inset 0 -1px #575757;
+}
+header nav.main .wrapper > ul > li > ul li > ul li > ul li a:focus, header nav.main .wrapper > ul > li > ul li > ul li > ul li a:hover, header nav.main .wrapper > ul > li > ul li > ul li > ul li label:focus, header nav.main .wrapper > ul > li > ul li > ul li > ul li label:hover {
+  background: #333333;
+}
+header nav.main .wrapper > ul input[type=checkbox]:checked + label + ul {
+  /* reset the height when checkbox is checked */
+  max-height: 1000px;
+}
+header nav.main .wrapper > ul input[type=checkbox] + label.check {
+  position: relative;
+}
+header nav.main .wrapper > ul input[type=checkbox] + label.check:after {
+  content: "";
+  display: inline-block;
+  z-index: 1;
+  top: 0.15em;
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  height: 0.5em;
+  position: relative;
+  transform: rotate(135deg);
+  transition: 0.35s ease-in-out;
+  vertical-align: top;
+  width: 0.5em;
+  left: 0.5em;
+}
+header nav.main .wrapper > ul input[type=checkbox]:checked + label.check:before, header nav.main .wrapper > ul input[type=checkbox]:checked + label.check:after {
+  transform: rotate(-45deg);
+}
+header nav.main .wrapper > ul input[type=checkbox]:checked + label.check:before {
   display: none;
 }
-header nav input#menu[type=checkbox]:checked ~ ul {
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s linear 0s, opacity 500ms;
+header nav.main .menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-header nav input#menu[type=checkbox]:checked ~ label {
-  right: 0;
-  top: 5%;
+header nav.main #menu-toggle {
+  display: none;
+}
+header nav.main .menu-button,
+header nav.main .menu-button::before,
+header nav.main .menu-button::after {
+  display: block;
+  background-color: #fff;
   position: absolute;
-  -moz-transform: rotate(0);
-  -o-transform: rotate(0);
-  -ms-transform: rotate(0);
-  -webkit-transform: rotate(0);
-  transform: rotate(0);
-  background: none;
-  box-shadow: none;
-  /* cross icon */
+  height: 2px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
-header nav input#menu[type=checkbox]:checked ~ label:before {
-  content: "X";
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s linear 0s, opacity 800ms;
+header nav.main .menu-button::before {
+  content: "";
+  margin-top: -8px;
 }
-header nav input#menu[type=checkbox]:checked ~ label:after {
-  -webkit-transition: all 500ms ease-in;
-  -moz-transition: all 500ms ease-in;
-  -ms-transition: all 500ms ease-in;
-  -o-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;
+header nav.main .menu-button::after {
+  content: "";
+  margin-top: 8px;
 }
-header nav input#menu[type=checkbox]:checked ~ label:hover:before {
-  opacity: 0.7;
+header nav.main #menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
 }
-
-/***** Privacy Policy *****/
-/** #privacy-alert{
-    background: rgba(0,0,0, 0.8);
-    bottom: 0;
-    color: #fff;
-    display: none;
-    padding: 40px 0;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    z-index: 100;
-
-    a{
-        color: #aaa;
-        border-bottom: 1px solid #aaa;
-
-        &#privacy-alert-agree{
-            border: 1px solid #fff;
-            color: #fff;
-            cursor: pointer;
-            display: block;
-            margin: 20px auto 0 auto;
-            padding: 5px 0;
-            width: 100px;
-        }
-    }
-} **/
-main {
-  padding: 0 5%;
-  display: flex;
-  flex-wrap: wrap;
+header nav.main #menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(45deg);
 }
-main > header {
-  width: 100%;
+header nav.main #menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-45deg);
 }
-main > header nav ol {
-  margin: 0;
+header nav.sub {
+  background: rgb(230, 235, 237);
+  padding: 1em 1em;
+  border-bottom: 0.7em solid rgb(10, 45, 80);
+}
+header nav.sub .breadcrumbs ol {
+  list-style-type: none;
   margin-left: -40px;
 }
-main > header nav ol li {
-  list-style-type: none;
-  margin-left: 0;
-  font-size: 0.8em;
-}
-main > header nav ol li a {
+header nav.sub .breadcrumbs ol li a {
   color: gray;
-  font-weight: bold;
-  display: inline-block;
-  line-height: 1.3;
 }
-main > header nav ol li::after {
+header nav.sub .breadcrumbs ol li a:after {
   content: ">";
   position: absolute;
   padding: 0 0.5em;
 }
-main > header h1 {
-  border-bottom: 0.2vw solid black;
-  font-size: 1.5em;
+header nav.sub h1 {
   margin: 0;
 }
-main > header h1 small {
-  color: #c11609;
+header nav.sub h1 small {
+  font-weight: normal;
   font-size: 0.6em;
-  margin-right: 0.5em;
 }
-main.projects article, main.posts article {
-  display: flex;
-  flex-wrap: wrap;
-  width: 47.5%;
-  margin: 1% 5% 1% 0;
-  border-bottom: 0.1vw solid black;
-}
-main.projects article:nth-child(odd), main.posts article:nth-child(odd) {
-  margin-right: 0;
-}
-main.projects article > header, main.posts article > header {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-}
-main.projects article > header h2, main.posts article > header h2 {
-  font-size: 1.3em;
-}
-main.projects article > header figure, main.posts article > header figure {
-  position: relative;
-  margin: 0;
-  width: 50%;
-  order: 2;
-  width: calc(33.3333333333% - 20px);
-  flex: 1 0 auto;
-}
-main.projects article > header figure img, main.posts article > header figure img {
-  width: 100%;
-  height: 15vw;
-  object-fit: cover;
-}
-main.projects article > header figure figcaption, main.posts article > header figure figcaption {
-  /*position: absolute;
-  bottom: 0.5vw;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  font-size: 0.8em;
-  padding: 0.5vw;*/
-  display: none;
-}
-main.projects article > header .info dd:last-child, main.posts article > header .info dd:last-child {
-  font-size: 0.8em;
-  color: gray;
-}
-main.projects article > header > section, main.posts article > header > section {
+header nav.sub ul {
   display: block;
-  width: 50%;
-  margin: 0;
-  padding-right: 5%;
-  order: 1;
-  flex: 1 0 auto;
+  list-style-type: none;
+  margin: 0.5em 0 0 -40px;
 }
-main.projects article > header > section a h2, main.posts article > header > section a h2 {
-  margin: 0;
+header nav.sub ul li {
+  padding: 0 1em;
+  border-right: 0.1em solid;
+  display: inline-block;
 }
-main.projects article > header > section a h2 small, main.posts article > header > section a h2 small {
-  color: #c11609;
-  display: block;
-  font-size: 0.6em;
-}
-main.projects article > header > section > section dl dt, main.posts article > header > section > section dl dt {
-  display: none;
-}
-main.projects article > header > section > section dl dd, main.posts article > header > section > section dl dd {
-  margin-left: 0;
-}
-main.projects article footer, main.posts article footer {
-  flex: 0 0 100%;
-  order: 3;
-  margin-top: auto;
-}
-main.projects article footer > section, main.posts article footer > section {
-  font-size: 0.6em;
-  text-transform: uppercase;
-  color: white;
-  text-align: left;
-  padding-left: 1.7em;
-  margin: 0;
-}
-main.projects article footer > section:hover, main.posts article footer > section:hover {
+header nav.sub ul li a {
   color: black;
+  text-decoration: none;
 }
-main.projects article footer > section:before, main.posts article footer > section:before {
-  content: "";
-  position: absolute;
-  background: white;
-  border: 0.15em solid #1a1a1a;
-  width: 1em;
-  height: 1em;
-  margin-top: 0em;
-  margin-left: -1.7em;
-  border-radius: 50%;
+header nav.sub ul li:hover {
+  text-decoration: underline;
 }
-main.projects article footer > section.Maintained:before, main.posts article footer > section.Maintained:before {
-  background: #1a1a1a;
+header nav.sub ul li:first-child {
+  padding-left: 0;
 }
-main.projects article footer > section.Post-project:before, main.posts article footer > section.Post-project:before {
-  background: #a6a6a6;
-  border: 0.15em solid #a6a6a6;
+header nav.sub ul li:last-child {
+  border-right: none;
 }
-main nav.pagination {
-  margin-top: 5em;
-  border-top: 0.2vw solid black;
-  width: 100%;
+
+main.projects {
+  padding: 5em 1em;
 }
-main nav.pagination ol {
-  display: flex;
-  flex-wrap: wrap;
-}
-main nav.pagination ol li {
-  border: none;
-  flex: 1;
+main.projects a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5em 0;
+  cursor: default;
   display: block;
-  text-align: center;
 }
-main nav.pagination ol li a {
+main.projects a h2 {
+  display: inline-block;
+  font-weight: normal;
+  cursor: pointer;
+  margin: 0;
+  font-family: "KingsCaslon", serif;
+}
+main.projects a h2:hover {
+  text-decoration: underline;
+  color: #c11609;
+  color: #0a2d50;
+}
+main.projects a small {
   color: gray;
+  font-family: KingsBureauGrotThreeSeven, sans-serif;
+  font-size: 0.6em;
 }
-main.project article {
-  width: 100%;
+main.projects a span {
+  font-style: italic;
 }
-main.project article > section {
+
+.project {
+  padding: 0 1em;
+}
+.project article {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.project article > section {
   width: 100%;
   display: flex;
   border-bottom: 0.1vw solid black;
 }
-main.project article > section > section {
+.project article > section > section {
   display: block;
   width: 70%;
   margin: 0 5% 0 0;
 }
-main.project article > section > section:last-child {
+.project article > section > section:last-child {
   width: 30%;
   margin: 0;
-  border-left: 0.1vw solid black;
+  background: rgb(237, 241, 242);
 }
-main.project article > section figure {
+.project article > section figure {
   margin: 0;
 }
-main.project article > section figure img {
+.project article > section figure img {
   width: 100%;
 }
-main.project article > section figure figcaption {
+.project article > section figure figcaption {
   font-size: 0.7em;
   text-align: center;
 }
-main.project article > section #links ul {
+.project article > section #links {
+  border-top: 0.5em solid gray;
+  width: 100%;
+  padding-top: 2em;
+}
+.project article > section #links ul {
   margin: 0 0 0 -40px;
 }
-main.project article > section #links ul li {
+.project article > section #links ul li {
   list-style-type: none;
   margin-bottom: 0.5em;
 }
-main.project article > section #links ul li a {
-  color: white;
-  background: black;
+.project article > section #links ul li a {
   padding: 0.5em;
   display: block;
   border: 1px solid black;
@@ -411,7 +360,7 @@ main.project article > section #links ul li a {
   -o-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
-main.project article > section #links ul li a:hover {
+.project article > section #links ul li a:hover {
   background: #080808;
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
@@ -419,158 +368,130 @@ main.project article > section #links ul li a:hover {
   -o-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
-main.project article > section #metadata {
-  margin-left: 5%;
+.project article > section #metadata {
+  margin: 0 5%;
+  padding-top: 1em;
 }
-main.project article > section #metadata dl dt {
+.project article > section #metadata dl dt {
   margin-top: 1.2vw;
-  font-size: 0.8em;
+  font-size: 1.2em;
+  font-weight: bold;
 }
-main.project article > section #metadata dl dd {
+.project article > section #metadata dl dd {
   margin-left: 0;
 }
-main.project article > section .post-meta {
+.project article > section #metadata span {
+  background: rgb(40, 195, 130);
+  margin-left: -5%;
+  padding: 0.3em 0.5em;
+}
+.project article > section .post-meta {
   margin-left: 5%;
 }
-main.project article #team {
+.project article #team {
   width: 100%;
-  text-align: center;
   display: block;
 }
-main.project article #team h2 {
+.project article #team h2 {
   width: 100%;
 }
-main.project article #team ul {
+.project article #team ul {
   margin-left: -40px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-main.project article #team ul li {
+.project article #team ul li {
   list-style-type: none;
   flex: 0 0 33.3%;
   margin-bottom: 1em;
 }
-main.project article #team ul li span {
-  display: block;
+.project article #team ul li span {
   font-size: 0.8em;
 }
-main.post {
-  display: flex;
-}
-main.post aside {
-  width: 25%;
-  order: 2;
-  margin-left: 5%;
-}
-main.post aside h2 {
-  text-transform: uppercase;
-  font-size: 1em;
-}
-main.post aside nav {
-  border-left: 0.1em solid black;
-}
-main.post article {
-  width: 70%;
-}
-main.post article figure {
-  width: 100%;
-  margin: 0;
-}
-main.post article figure img {
-  width: 100%;
-}
-@media screen and (max-width: 800px) {
-  main.post {
-    display: block;
-  }
-  main.post aside {
-    width: 100%;
-    margin: 0;
-  }
-  main.post article {
-    width: 100%;
-  }
-}
-main.people ul, main.organisations ul {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -40px;
-}
-main.people ul li, main.organisations ul li {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  width: 31.2%;
-  padding: 0 1% 1em 1%;
-  border-left: 0.1em solid black;
-}
-main.people ul li a, main.organisations ul li a {
-  margin: 0;
-}
-main.people ul li a h2, main.organisations ul li a h2 {
-  margin: 0;
-}
-@media screen and (max-width: 1200px) {
-  main.people ul li, main.organisations ul li {
-    width: 47.8%;
-  }
-}
-@media screen and (max-width: 800px) {
-  main.people ul li, main.organisations ul li {
-    width: 100%;
-    padding: 0 2% 1em 2%;
-  }
-}
-main.faqs {
-  display: flex;
-}
-main.faqs aside {
-  width: 25%;
-  order: 2;
-  margin-left: 5%;
-}
-main.faqs aside h2 {
-  text-transform: uppercase;
-  font-size: 1em;
-}
-main.faqs aside nav {
-  border-left: 0.1em solid black;
-}
-main.faqs section {
-  width: 70%;
-}
-main.faqs section figure {
-  width: 100%;
-  margin: 0;
-}
-main.faqs section figure img {
-  width: 100%;
-}
-main section footer {
-  margin-top: 5em;
-  border-top: 0.3vw solid black;
-  bottom: 0;
-  left: 0;
-  padding: 0 1em;
-}
-main section footer li {
-  list-style: none;
-}
 
-@media screen and (max-width: 800px) {
-  main.projects article, main.posts article {
+@media (max-width: 800px) {
+  header a.sitename {
+    font-size: 1.5em;
+    padding: 0.5em 0;
+  }
+  header a.kcl-logo img {
+    width: 3.65em;
+  }
+  header nav.main .wrapper > ul {
+    margin-top: 100px;
+    width: 100%;
+  }
+  header nav.main .wrapper > ul > li {
+    text-align: center;
+    margin: 0;
+    width: calc(100% + 40px);
+    color: white;
+    background-color: #222;
+    margin-left: 10px;
+    padding: 0;
+  }
+  header nav.main .wrapper > ul > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+  header nav.main .wrapper .menu-button-container {
+    display: flex;
+    position: absolute;
+    right: 7em;
+    top: 1.3em;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: initial;
+  }
+  header nav.main .wrapper #menu-toggle {
+    /*    ~ ul li, ~ ul li label {
+    //height: 0;
+     margin: 0;
+       padding: 0;
+      border: 0; 
+     // opacity:0;    
+    // transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);*/
+    /*   a{
+    // opacity:0;
+     padding:5vh 0;
+      color:white;
+        }//a
+        }//~ .menu li*/
+  }
+  header nav.main .wrapper #menu-toggle ~ ul {
+    width: 0;
+    opacity: 0;
+  }
+  header nav.main .wrapper #menu-toggle:checked {
+    /*      ~ ul li, ~ ul li label{
+              border: 1px solid #333;
+      height: 100%;
+    transition: height 100ms cubic-bezier(0.23, 1, 0.32, 1);
+    opacity:1;
+      z-index:9;
+             background:green;
+          a{
+          opacity:1;
+            display:block;
+             z-index:9;
+          }//a
+          }//~ .menu li
+          ~ ul li label{
+           padding:5vh 0;
+          }*/
+  }
+  header nav.main .wrapper #menu-toggle:checked ~ ul {
+    width: calc(100% + 40px);
+    opacity: 1;
+    margin-top: 0;
+  }
+  header nav.sub {
+    border: none;
+  }
+  header nav.sub ul {
+    display: none;
+  }
+  main.projects span {
     display: block;
-    width: 100%;
-    margin: 1% 0;
-  }
-  main.projects article header, main.posts article header {
-    display: block;
-  }
-  main.projects article header figure, main.posts article header figure {
-    width: 100%;
-  }
-  main.projects article header section, main.posts article header section {
-    width: 100%;
   }
 }
