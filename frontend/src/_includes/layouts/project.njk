@@ -18,8 +18,31 @@ layout: layouts/base.njk
     </section>
 
     <section>
+    <!-- Information -->
+    <div id="metadata">
+      <span>Project Status: Active</span>
+      {% if project.funder %}
+        <div class="funder">
+          <dl>
+            {% for funder in project.funder %}
+            <dt>Funder</dt>
+            <dd><a href="{% route funder.agent_id.slug, 'Organisations' %}">{{- funder.agent_id.name -}}</a></dd>
+            {% endfor %}
+          </dl>
+        </div>
+      {% endif %}
+
+    {% include "partials/project.njk" %}
+
     {% if project.url %}
       <div id="links">
+          <dl>
+            <dt>Project site</dt>
+            <dd><a>https://crossreads.web.ox.ac.uk/</a></dd>
+              <dt>Repository</dt>
+            <dd><a>https://github.com/kingsdigitallab/crossreads</a></dd>
+          </dl>
+
         <ul>
           {% for url in project.url %}
             <li>
@@ -30,20 +53,9 @@ layout: layouts/base.njk
       </div>
     {% endif %}
 
-    <!-- Information -->
-    <div id="metadata">
-      {% if project.funder %}
-        <div class="funder">
-          <dl>
-            {% for funder in project.funder %}
-            <dt>Funder:</dt>
-            <dd><a href="{% route funder.agent_id.slug, 'Organisations' %}">{{- funder.agent_id.name -}}</a></dd>
-            {% endfor %}
-          </dl>
-        </div>
-      {% endif %}
 
-      {% include "partials/project.njk" %}
+
+  
     </div>
     </section>
   </section>
