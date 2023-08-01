@@ -86,6 +86,25 @@ section{
   margin:0 auto;
   //display:flex;
 }
+main{
+  a{
+    font-family: "KingsCaslon", serif;
+    color:black;
+    text-decoration-style: solid;
+    &:hover{
+      text-decoration-style: double;
+                    color:#0a2d50;
+            }//&:hover
+    }//a
+    p{
+      a{
+        text-decoration-style: solid;
+        &:hover{
+          text-decoration-style: double;
+        }
+      }//a
+    }//p
+}//main
 
 
 //*** 2. Header/Navigation ***//
@@ -386,22 +405,21 @@ nav.sub{
 main.projects{
   padding: 5em 1em;
       a{
-        text-decoration:none;
+        //display:inline-block;
         color:black;
        padding:0.5em 0;
         cursor:default;
         display:block;
+        text-decoration: none;
         h2{
-          display:inline-block;
                font-weight:normal;
                cursor:pointer;
                margin:0;
-               font-family: "KingsCaslon",serif;
-                        &:hover{
-            text-decoration:underline;
-                         color: #c11609;
-                          color:#0a2d50;
-                  }//&:hover
+               
+               &:hover{
+                text-decoration: underline;
+                //text-decoration-style: double;
+               }
         }//h2
        small{
          color:gray;
@@ -409,11 +427,12 @@ main.projects{
          font-size:0.6em;
          display:inline-block;
          margin-left:0.3em;
+         font-style:normal;
          //color: #c11609;
           //font-family: "KingsCaslon",serif;
         }//small    
         span{
-          font-style:italic;
+          font-family: KingsBureauGrotThreeSeven,sans-serif;
           display:block;
         }//span
         }//a
@@ -423,11 +442,7 @@ main.projects{
 
 
 
-
-
-
-
-
+//*** 4. Project Individual Page ***//
 
 .project{
   padding: 0 1em;
@@ -527,16 +542,14 @@ main.projects{
         list-style-type: none;
         flex: 0 0 33.3%;
         margin-bottom: 1em;
+        font-size:1.3em;
         a{
-          font-family: "KingsCaslon", serif;
-          color:black;
           text-decoration:none;
-          font-size:1.3em;
           &:hover{
             text-decoration:underline;
-                          color:#0a2d50;
-                  }//&:hover
-          }//a
+            text-decoration-style: solid;
+          }
+        }
         span {
           font-size: 0.8em;
           display:block;
@@ -544,13 +557,35 @@ main.projects{
       } //li
     } //ul
   } //#team
-
-
   }//article
-
-
 }//.project
 
+//*** 5. People Index page ***//
+main.people{
+ul{
+  display:flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-left:-40px;
+  li{
+    flex: 0 0 33.3%;
+    list-style-type: none;
+    padding:0 0 0.5em 0;
+    font-size:1.2em;
+  }//li
+}//ul
+}//main.people
+
+//*** 6. Person page ***//
+main.person{
+  ul{
+    width: 100%;
+    margin-left:-40px;
+    li{
+      font-size:1.2em;
+    }//li
+  }//ul
+  }//main.people
 
 @media (max-width: 800px) {
   header{
