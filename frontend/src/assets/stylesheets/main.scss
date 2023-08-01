@@ -99,6 +99,7 @@ main{
     p{
       a{
         text-decoration-style: solid;
+        font-family: KingsBureauGrotThreeSeven,sans-serif;
         &:hover{
           text-decoration-style: double;
         }
@@ -119,7 +120,6 @@ header{
     font-size:1.6em;
     padding: 0.4em 0;
     span{
-      font-family:Georgia, Times, Times New Roman, serif;
       font-size:1.2em;      
     }// span
   }// a.sitename
@@ -562,6 +562,7 @@ main.projects{
 
 //*** 5. People Index page ***//
 main.people{
+  padding:0 1em;
 ul{
   display:flex;
   width: 100%;
@@ -571,21 +572,120 @@ ul{
     flex: 0 0 33.3%;
     list-style-type: none;
     padding:0 0 0.5em 0;
-    font-size:1.2em;
+    font-size:1.4em;
+    a{
+      text-decoration:none;
+      &:hover{
+        text-decoration:underline;
+        text-decoration-style:solid;
+      }
+    }
   }//li
 }//ul
 }//main.people
 
 //*** 6. Person page ***//
 main.person{
+  padding:0 1em;
+  article{
+    img{
+      width:30%;
+      height:auto;
+      max-width:15em;
+      object-fit: contain;
+      display:inline-block;
+      vertical-align: top;
+    }
+    section{
+      display:inline-block;
+      width:60%;
+      padding-left:5%;
+      border-bottom:0.01em solid black;
+      h2{
+        margin:0;
+        span{
+          display:block;
+          font-weight:normal;
+          font-size:0.7em;
+          color:gray;
+        }//span
+      }//h2
+    }//section
+  }//article
+
+        #part-of{
+          a{
+            //display:inline-block;
+            color:black;
+           padding:0.5em 0;
+            cursor:default;
+            display:block;
+            text-decoration: none;
+            h2{
+                   font-weight:normal;
+                   margin:0;
+                   cursor:pointer;                  
+                   &:hover{
+                    text-decoration: underline;
+                   }
+            }//h2
+           small{
+             color:gray;
+             font-family: KingsBureauGrotThreeSeven,sans-serif;
+             font-size:0.6em;
+             display:inline-block;
+             margin-left:0.3em;
+             font-style:normal;
+             //color: #c11609;
+              //font-family: "KingsCaslon",serif;
+            }//small    
+            span{
+              font-family: KingsBureauGrotThreeSeven,sans-serif;
+              display:block;
+            }//span
+            }//a
+        }
   ul{
     width: 100%;
     margin-left:-40px;
+    list-style-type: none;
     li{
       font-size:1.2em;
+          a{
+        //display:inline-block;
+        color:black;
+       padding:0.5em 0;
+        cursor:default;
+        display:block;
+        text-decoration: none;
+        h2{
+               font-weight:normal;
+               cursor:pointer;
+               margin:0;
+               
+               &:hover{
+                text-decoration: underline;
+                //text-decoration-style: double;
+               }
+        }//h2
+       small{
+         color:gray;
+         font-family: KingsBureauGrotThreeSeven,sans-serif;
+         font-size:0.6em;
+         display:inline-block;
+         margin-left:0.3em;
+         font-style:normal;
+         //color: #c11609;
+          //font-family: "KingsCaslon",serif;
+        }//small    
+        span{
+          font-family: KingsBureauGrotThreeSeven,sans-serif;
+          display:block;
+        }//span
+        }//a
     }//li
   }//ul
-  }//main.people
+  }//main.person
 
 @media (max-width: 800px) {
   header{
@@ -667,8 +767,7 @@ main.person{
     }//nav.sub  
   }//header
  
-  main{
-    &.project{
+  main.project{
      article{
        section{
         width:100%;
@@ -694,8 +793,44 @@ main.person{
     }//section
      }//article
     
-    }//.project
-      }//main
+    }//main.project
+    
+    main.people{
+      ul{
+        display:block;
+        width: 100%;
+      }//ul
+      }//main.people
+      
+      main.person{
+        article{
+          img{
+            width:100%;
+            display:block;
+          }//img
+          section{
+            display:block;
+            width:100%;
+            padding-left:0;
+            h2{
+              margin-top:0.5em;
+              span{
+                display:block;
+                font-weight:normal;
+                font-size:0.7em;
+                color:gray;
+              }//span
+            }//h2
+          }//section
+        }//article
+        ul{
+          width: 100%;
+          margin-left:-40px;
+          li{
+            font-size:1.2em;
+          }//li
+        }//ul
+        }//main.person
 
       
 }//@media (max-width: 800px)

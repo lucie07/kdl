@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 permalink: "about/people/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
 ---
-
+<div class="wrapper">
 <ul start="{{ pagination.pageNumber * 10 + 1 }}">
     {%- for person in paginatedPeople -%}
         <li>
@@ -12,6 +12,7 @@ permalink: "about/people/{% if pagination.pageNumber > 0 %}{{ pagination.pageNum
         </li>
     {%- endfor -%}
 </ul>
+</div>
 
 {% set label = "People" %}
 {% include "partials/pagination.njk" %}
