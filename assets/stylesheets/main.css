@@ -32,6 +32,7 @@ main a:hover {
 }
 main p a {
   text-decoration-style: solid;
+  font-family: KingsBureauGrotThreeSeven, sans-serif;
 }
 main p a:hover {
   text-decoration-style: double;
@@ -48,7 +49,6 @@ header .site a.sitename {
   padding: 0.4em 0;
 }
 header .site a.sitename span {
-  font-family: Georgia, Times, Times New Roman, serif;
   font-size: 1.2em;
 }
 header .site a.kcl-logo {
@@ -435,6 +435,9 @@ main.projects a span {
   display: block;
 }
 
+main.people {
+  padding: 0 1em;
+}
 main.people ul {
   display: flex;
   width: 100%;
@@ -445,15 +448,103 @@ main.people ul li {
   flex: 0 0 33.3%;
   list-style-type: none;
   padding: 0 0 0.5em 0;
-  font-size: 1.2em;
+  font-size: 1.4em;
+}
+main.people ul li a {
+  text-decoration: none;
+}
+main.people ul li a:hover {
+  text-decoration: underline;
+  text-decoration-style: solid;
 }
 
+main.person {
+  padding: 0 1em;
+}
+main.person article img {
+  width: 30%;
+  height: auto;
+  max-width: 15em;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: top;
+}
+main.person article section {
+  display: inline-block;
+  width: 60%;
+  padding-left: 5%;
+  border-bottom: 0.01em solid black;
+}
+main.person article section h2 {
+  margin: 0;
+}
+main.person article section h2 span {
+  display: block;
+  font-weight: normal;
+  font-size: 0.7em;
+  color: gray;
+}
+main.person #part-of a {
+  color: black;
+  padding: 0.5em 0;
+  cursor: default;
+  display: block;
+  text-decoration: none;
+}
+main.person #part-of a h2 {
+  font-weight: normal;
+  margin: 0;
+  cursor: pointer;
+}
+main.person #part-of a h2:hover {
+  text-decoration: underline;
+}
+main.person #part-of a small {
+  color: gray;
+  font-family: KingsBureauGrotThreeSeven, sans-serif;
+  font-size: 0.6em;
+  display: inline-block;
+  margin-left: 0.3em;
+  font-style: normal;
+}
+main.person #part-of a span {
+  font-family: KingsBureauGrotThreeSeven, sans-serif;
+  display: block;
+}
 main.person ul {
   width: 100%;
   margin-left: -40px;
+  list-style-type: none;
 }
 main.person ul li {
   font-size: 1.2em;
+}
+main.person ul li a {
+  color: black;
+  padding: 0.5em 0;
+  cursor: default;
+  display: block;
+  text-decoration: none;
+}
+main.person ul li a h2 {
+  font-weight: normal;
+  cursor: pointer;
+  margin: 0;
+}
+main.person ul li a h2:hover {
+  text-decoration: underline;
+}
+main.person ul li a small {
+  color: gray;
+  font-family: KingsBureauGrotThreeSeven, sans-serif;
+  font-size: 0.6em;
+  display: inline-block;
+  margin-left: 0.3em;
+  font-style: normal;
+}
+main.person ul li a span {
+  font-family: KingsBureauGrotThreeSeven, sans-serif;
+  display: block;
 }
 
 @media (max-width: 800px) {
@@ -528,5 +619,34 @@ main.person ul li {
     display: block;
     background: none;
     border-top: 0.01em solid black;
+  }
+  main.people ul {
+    display: block;
+    width: 100%;
+  }
+  main.person article img {
+    width: 100%;
+    display: block;
+  }
+  main.person article section {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+  }
+  main.person article section h2 {
+    margin-top: 0.5em;
+  }
+  main.person article section h2 span {
+    display: block;
+    font-weight: normal;
+    font-size: 0.7em;
+    color: gray;
+  }
+  main.person ul {
+    width: 100%;
+    margin-left: -40px;
+  }
+  main.person ul li {
+    font-size: 1.2em;
   }
 }
