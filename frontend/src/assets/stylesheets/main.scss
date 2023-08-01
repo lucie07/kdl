@@ -687,6 +687,31 @@ main.person{
   }//ul
   }//main.person
 
+   //PAGE PAGINATION
+   nav.pagination {
+    margin-top: 5em;
+    border-top: 0.2vw solid black;
+    width: 100%;
+    ol {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        border: none;
+        flex: 1;
+        display: block;
+        text-align: center;
+        a {
+          color: gray;
+          text-decoration:none;
+          &:hover{
+            color:black;
+          }//&:hover
+        } //a
+      } //li
+    } //ol
+  } //nav
+
+
 @media (max-width: 800px) {
   header{
     .site{
