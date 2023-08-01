@@ -547,6 +547,29 @@ main.person ul li a span {
   display: block;
 }
 
+nav.pagination {
+  margin-top: 5em;
+  border-top: 0.2vw solid black;
+  width: 100%;
+}
+nav.pagination ol {
+  display: flex;
+  flex-wrap: wrap;
+}
+nav.pagination ol li {
+  border: none;
+  flex: 1;
+  display: block;
+  text-align: center;
+}
+nav.pagination ol li a {
+  color: gray;
+  text-decoration: none;
+}
+nav.pagination ol li a:hover {
+  color: black;
+}
+
 @media (max-width: 800px) {
   header .site a.sitename {
     font-size: 1.5em;
