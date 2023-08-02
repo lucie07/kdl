@@ -5,8 +5,8 @@
 // Header/Navigation
 // Projects Index Page 
 // Project Individual Page
-// People Index page 
-// Person Individual Page 
+// People/Organisations Index Page
+// Person/Organisation Individual Page 
 // Page Pagination
 
 //-- Fonts --
@@ -577,10 +577,10 @@ main.projects{
 }//.wrapper
 }//.project
 
-//-- People Index Page --
-main.people{
+//-- People/Organisations Index Page --
+main.people, main.organisations{
   padding:0 1em;
-ul{
+/*ul{
   display:flex;
   width: 100%;
   flex-wrap: wrap;
@@ -598,11 +598,30 @@ ul{
       }
     }
   }//li
+}//ul*/
+ul{
+  margin-left:-40px;
+  list-style-type: none;
+  list-style-type: none;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  li{
+    padding-bottom:0.5em;
+    font-size:1.4em;
+    a{
+      text-decoration:none;
+      &:hover{
+        text-decoration:underline;
+        text-decoration-style:solid;
+      }//&:hover
+    }//a
+  }//li
 }//ul
 }//main.people
 
-//-- Person Individual Page --
-main.person{
+//-- Person/Organisation Individual Page --
+main.person, main.organisation{
   padding:0 1em;
   article{
     img{
@@ -808,8 +827,8 @@ main.person{
     }//nav.sub  
   }//header
  
-//-- Project Individual Page --
-  .project{
+//-- Project/Organisation Individual Page --
+  main.project{
     padding: 1em 1em;
     .wrapper{
       display:block;
@@ -846,12 +865,13 @@ main.person{
   }//.wrapper
   }//.project
     
-//-- People Index page --
+//-- People/Organisations Index Page --
 
-    main.people{
+    main.people, main.organisations{
       ul{
-        display:block;
-        width: 100%;
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
       }//ul
       }//main.people
 

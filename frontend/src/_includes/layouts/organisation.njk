@@ -5,7 +5,7 @@ layout: layouts/agent.njk
 {% set funded = projects | fundedProjects(agentInstance) %}
 {% if funded %}
   <div id="funded">
-    <h2>Funded</h2>
+    <h2>Projects funded</h2>
     <ul>
       {% for project in funded %}
         <li>
