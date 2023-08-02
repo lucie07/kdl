@@ -1,7 +1,19 @@
-// 1. General
-// 2. Header/Navigation
+// Fonts
 // Mixins
+// Colours
+// General
+// Header/Navigation
+// Projects Index Page 
+// Project Individual Page
+// People Index page 
+// Person Individual Page 
+// Page Pagination
 
+//-- Fonts --
+@import 'fonts';
+
+
+//-- Mixins --
 @mixin calc($prop, $val) {
   @each $pre in -webkit-, -moz-, -o- {
     #{$prop}: $pre + calc(#{$val});
@@ -61,7 +73,16 @@
   -o-transition: $args;
   transition: $args;
 }
-//*** 1. General  ***//
+
+
+
+//-- Colours --
+$navy: #0a2d50;;
+//$lightgray:;
+//$darkgray: ;
+
+
+//-- General --
 html {
   scroll-behavior: smooth;
 }
@@ -93,7 +114,7 @@ main{
     text-decoration-style: solid;
     &:hover{
       text-decoration-style: double;
-                    color:#0a2d50;
+      color:$navy;
             }//&:hover
     }//a
     p{
@@ -108,7 +129,7 @@ main{
 }//main
 
 
-//*** 2. Header/Navigation ***//
+//-- Header/Navigation --
 
 header{
   .site{
@@ -395,12 +416,7 @@ nav.sub{
 }//nav.sub
 }//header
 
-
-  
-
-//*** End Navigation ***//
-
-//*** 3. Project Index Page ***//
+//-- Projects Index Page --
 
 main.projects{
   padding: 5em 1em;
@@ -442,7 +458,7 @@ main.projects{
 
 
 
-//*** 4. Project Individual Page ***//
+//-- Project Individual Page --
 
 .project{
   padding: 5em 1em;
@@ -561,7 +577,7 @@ main.projects{
 }//.wrapper
 }//.project
 
-//*** 5. People Index page ***//
+//-- People Index Page --
 main.people{
   padding:0 1em;
 ul{
@@ -585,7 +601,7 @@ ul{
 }//ul
 }//main.people
 
-//*** 6. Person page ***//
+//-- Person Individual Page --
 main.person{
   padding:0 1em;
   article{
@@ -688,7 +704,7 @@ main.person{
   }//ul
   }//main.person
 
-   //PAGE PAGINATION
+//-- Page Pagination --
    nav.pagination {
     margin-top: 5em;
     border-top: 0.2vw solid black;
@@ -714,6 +730,8 @@ main.person{
 
 
 @media (max-width: 800px) {
+
+//-- Header/Navigation --
   header{
     .site{
     a.sitename{
@@ -786,13 +804,11 @@ main.person{
     }//.wrapper
   }//.nav.main
     nav.sub{
-      ul{
-        display:none;
-      }//ul
       border:none;
     }//nav.sub  
   }//header
  
+//-- Project Individual Page --
   .project{
     padding: 1em 1em;
     .wrapper{
@@ -830,13 +846,16 @@ main.person{
   }//.wrapper
   }//.project
     
+//-- People Index page --
+
     main.people{
       ul{
         display:block;
         width: 100%;
       }//ul
       }//main.people
-      
+
+//-- Person Individual Page --
       main.person{
         article{
           img{
