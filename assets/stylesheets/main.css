@@ -1,3 +1,37 @@
+/** Importing King's Fonts **/
+/** King's Bureau Grotesque **/
+@font-face {
+  font-family: "KingsBureauGrot";
+  src: url("/static/fonts/KingsBureauGrot/KingsBureauGrot-ThreeSeven.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+}
+@font-face {
+  font-family: "KingsBureauGrot";
+  src: url("/static/fonts/KingsBureauGrot/KingsBureauGrot-ThrSevenItal.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-style: italic;
+}
+/** King's Caslon **/
+@font-face {
+  font-family: "KingsCaslon";
+  src: url("/static/fonts/KingsCaslon_V1.560/KingsCaslon.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+}
+@font-face {
+  font-family: "KingsCaslon";
+  src: url("/static/fonts/KingsCaslon_V1.560/KingsCaslonItalic.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-style: italic;
+}
+@font-face {
+  font-family: "KingsCaslon";
+  src: url("/static/fonts/KingsCaslon_V1.560/KingsCaslonSemiBold.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: bold;
+}
+@font-face {
+  font-family: "KingsCaslon";
+  src: url("/static/fonts/KingsCaslon_V1.560/KingsCaslonSemiBoldItalic.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: italic;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -619,9 +653,6 @@ nav.pagination ol li a:hover {
   }
   header nav.sub {
     border: none;
-  }
-  header nav.sub ul {
-    display: none;
   }
   .project {
     padding: 1em 1em;
