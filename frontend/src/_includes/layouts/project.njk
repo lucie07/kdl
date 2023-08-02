@@ -3,9 +3,9 @@ layout: layouts/base.njk
 ---
 {% from "kdl/components/image/macros.njk" import imageMacro %}
 
-<article>
- <section>
+<div class="wrapper">
     <section>
+    <h1>COTR: The Community of the Realm in Scotland, 1249-1424 <small>COTR</small></h1>
     <!-- Images -->
     {{ imageMacro(obj.feature) }}
     
@@ -15,56 +15,9 @@ layout: layouts/base.njk
         <p>{{ project.description | renderMd | safe }}</p>
       </div>
     {% endif %}
-    </section>
-
-    <section>
-    <!-- Information -->
-    <div id="metadata">
-      <span>Project Status: Active</span>
-      {% if project.funder %}
-        <div class="funder">
-          <dl>
-            {% for funder in project.funder %}
-            <dt>Funder</dt>
-            <dd><a href="{% route funder.agent_id.slug, 'Organisations' %}">{{- funder.agent_id.name -}}</a></dd>
-            {% endfor %}
-          </dl>
-        </div>
-      {% endif %}
-
-    {% include "partials/project.njk" %}
-
-    {% if project.url %}
-      <div id="links">
-          <dl>
-            <dt>Project links</dt>
-            <dd><a>Website https://crossreads.web.ox.ac.uk/</a></dd>
-            <dd><a>Repository https://crossreads.web.ox.ac.uk/</a></dd>
-            <dd><a>Repository https://crossreads.web.ox.ac.uk/</a></dd>
-          </dl>
-
-        <ul>
-          {% for url in project.url %}
-            <li>
-              <a href="{{ url.linkrole_id.url }}" role="button">{{ url.linkrole_id.name }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endif %}
-
-
-
-  
-    </div>
-    </section>
-  </section>
-
-  </section>
-
-  <!-- Team -->
+      <!-- Team -->
   {% if project.member %}
-    <section id="team">
+    <div id="team">
       <h2>Team</h2>
       <ul>
         {% for member in project.member|sort(false, false, "agent.name") %}
@@ -77,6 +30,42 @@ layout: layouts/base.njk
           </li>
         {% endfor %}
       </ul>
-    </section>
+    </div>
   {% endif %}
-</article>
+    </section>
+
+    <section>
+    <!-- Information -->
+    <div id="metadata">
+      <span>Project Status: Active</span>
+
+         {% if project.url %}
+      <div id="links">
+        <h3>Project links</h3>   
+        <ul>
+          {% for url in project.url %}
+            <li>
+              <a href="{{ url.linkrole_id.url }}" role="button">{{ url.linkrole_id.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+      {% if project.funder %}
+        <div class="funder">
+          <dl>
+            {% for funder in project.funder %}
+            <dt>Funder</dt>
+            <dd><a href="{% route funder.agent_id.slug, 'Organisations' %}">{{- funder.agent_id.name -}}</a></dd>
+            {% endfor %}
+          </dl>
+        </div>
+      {% endif %}
+
+    {% include "partials/project.njk" %}
+  
+    </div>
+    </section>
+ </div>
+
