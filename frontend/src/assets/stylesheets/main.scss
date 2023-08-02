@@ -76,7 +76,7 @@
 //-- Colours --
 $navy: #0a2d50;
 //$lightgray:;
-//$darkgray: ;
+$darkgray: rgb(90, 99, 105);
 
 //-- General --
 html {
@@ -752,6 +752,71 @@ nav.pagination {
     } //li
   } //ol
 } //nav
+
+//-- Footer --
+   footer{
+     background:$darkgray;
+     .connect{
+       padding:0 1em;
+       background:$navy;
+       color:white;
+       width:100%;
+       .wrapper{
+         display: flex;
+       ul{
+         display: flex;
+        //justify-content: center;
+         align-items: center;
+         list-style-type: none ;
+         li{
+           flex-direction: row;
+           justify-content: left;
+           a{
+             color:white;
+             min-width: 6em;
+             display: block;
+             text-decoration:none;
+             &:hover{
+               text-decoration:underline;
+             }//&:hover
+           }//a
+         }//li
+       }//ul
+     }//.wrapper
+   }//.connect
+     nav.footer{
+       padding:0 1em;
+       color:white;
+       .wrapper{
+         display:flex;
+       h2{
+         border-bottom: 0.13em solid rgb(139, 146, 150);
+         padding-bottom:0.5em;
+       }//h2
+       section{
+         margin-right:2em;
+         ul{
+           margin-left:-40px;
+           li{
+             list-style-type: none;
+             padding-bottom:0.5em;
+             a{
+               color:white;
+               min-width: 6em;
+               display: block;
+               text-decoration:none;
+               &:hover{
+                 text-decoration:underline;
+                 text-decoration-style: solid;
+               }//&:hover
+             }//a
+           }//li
+         }//ul
+       }
+    }//.wrapper
+     }//nav.footer
+ }//footer
+
 
 @media (max-width: 800px) {
   //-- Header/Navigation --
