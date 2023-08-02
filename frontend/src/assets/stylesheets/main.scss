@@ -75,7 +75,7 @@
 
 //-- Colours --
 $navy: #0a2d50;
-//$lightgray:;
+$lightgray: rgb(230, 235, 237);
 $darkgray: rgb(90, 99, 105);
 
 //-- General --
@@ -88,6 +88,7 @@ body {
   margin: 0;
   height: 100%;
   font-family: KingsBureauGrotFiveOne, sans-serif;
+  font-weight: 400;
   //font-family: KingsBureauGrotFiveOne,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -117,6 +118,7 @@ main {
     a {
       text-decoration-style: solid;
       font-family: KingsBureauGrotThreeSeven, sans-serif;
+      font-weight:400;
       &:hover {
         text-decoration-style: double;
       }
@@ -162,7 +164,7 @@ header {
   } //.site
   nav.main {
     z-index: 1;
-    background: rgb(90, 99, 105);
+    background: $darkgray;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
     height: 50px;
@@ -188,11 +190,12 @@ header {
             height: 1px;
             bottom: 0;
             left: 0;
-            background-color: darken(white, 40%);
+            background-color: white;
             transition: transform 0.25s ease-out;
           } //&:after
           &.active {
-            color: white;
+            color: black;
+            background:white;
             position: relative; //underline animation
             padding: 10px;
             &:after {
@@ -207,25 +210,34 @@ header {
               transition: transform 0.25s ease-out;
             } //&:after
           } //&.active
-          a {
+          a,label {
             text-decoration: none;
-            color: darken(white, 20%);
-            &:hover {
-              color: white;
-            } //&:hover
-          } //a
-          a,
-          label {
+            color: white;
             display: block;
             padding: 0.9em 1em;
             transition: all 0.25s ease-in;
-            &:focus,
-            &:hover {
-            } // &:focus,&:hover
-          } // a,label
-          label {
             cursor: pointer;
-          } //label
+          } //a
+          &:focus,
+            &:hover {
+            background:$lightgray;
+            a,label{
+              color: black;
+            }//a,label
+            input[type="checkbox"] + label.check {
+              position: relative;
+              &:after {
+                border-color: black;
+              }//&:after
+            }//input[type="checkbox"] + label.check 
+            ul{
+              li{
+                a{
+                  background:$lightgray;
+                }
+              }
+            }
+          } //&:focus,&:hover
           > ul {
             /* second-level */
             margin-left: -40px;
@@ -237,11 +249,10 @@ header {
             li {
               a,
               label {
-                background: #353535;
-                box-shadow: inset 0 -1px lighten(#353535, 7%);
+                background: $darkgray;
                 &:focus,
                 &:hover {
-                  background: darken(#353535, 7%);
+                  background: white
                 } // &:focus,&:hover
               } // a,label
               > ul {
@@ -300,6 +311,7 @@ header {
             z-index: 1;
             top: 0.15em;
             border-style: solid;
+            border-color: white;
             border-width: 1px 1px 0 0;
             height: 0.5em;
             position: relative;
@@ -410,6 +422,9 @@ header {
         padding: 0 1em;
         border-right: 0.1em solid;
         display: inline-block;
+        &:active{
+          font-family: KingsBureauGrotThreeSeven, sans-serif;
+        }
         a {
           color: black;
           text-decoration: none;
@@ -457,7 +472,7 @@ main.projects {
     small {
       color: gray;
       font-family: KingsBureauGrotFiveOne, sans-serif;
-      font-family: KingsBureauGrotThreeSeven, sans-serif;
+      //font-family: KingsBureauGrotThreeSeven, sans-serif;
       font-weight:400;
       font-size: 0.6em;
       display: inline-block;
@@ -775,6 +790,10 @@ nav.pagination {
        width:100%;
        .wrapper{
          display: flex;
+         h2{
+          font-family: KingsBureauGrotThreeSeven, sans-serif;
+          font-weight:400;
+         }
        ul{
          display: flex;
         //justify-content: center;
@@ -804,6 +823,9 @@ nav.pagination {
        h2{
          border-bottom: 0.13em solid rgb(139, 146, 150);
          padding-bottom:0.5em;
+         font-family: KingsBureauGrotFiveOne, sans-serif;
+        font-weight: 400;
+        font-size: 1.4em;
        }//h2
        section{
          margin-right:2em;
@@ -811,12 +833,13 @@ nav.pagination {
            margin-left:-40px;
            li{
              list-style-type: none;
-             padding-bottom:0.5em;
+             padding-bottom:1em;
              a{
                color:white;
                min-width: 6em;
                display: block;
                text-decoration:none;
+               font-family: KingsBureauGrotFiveOne, sans-serif;
                &:hover{
                  text-decoration:underline;
                  text-decoration-style: solid;
@@ -824,6 +847,20 @@ nav.pagination {
              }//a
            }//li
          }//ul
+         p{
+          line-height:1.5;
+          padding:0.4em 0 0 0;
+          margin:0;
+          a{
+            color:white;
+            font-family: KingsBureauGrotFiveOne, sans-serif;
+            cursor: pointer;
+            &:hover{
+              text-decoration:underline;
+              text-decoration-style: solid;
+            }
+          }
+         }
        }
     }//.wrapper
      }//nav.footer
