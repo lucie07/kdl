@@ -2,33 +2,44 @@
 /** King's Bureau Grotesque **/
 @font-face {
   font-family: "KingsBureauGrot";
-  src: url("/static/fonts/KingsBureauGrot/KingsBureauGrot-ThreeSeven.ttf") format("truetype"); /* Safari, Android, iOS */
+  src: url("/assets/fonts/KingsBureauGrot/KingsBureauGrot-ThreeSeven.ttf") format("truetype"); /* Safari, Android, iOS */
   font-weight: normal;
 }
 @font-face {
   font-family: "KingsBureauGrot";
-  src: url("/static/fonts/KingsBureauGrot/KingsBureauGrot-ThrSevenItal.ttf") format("truetype"); /* Safari, Android, iOS */
+  src: url("/assets/fonts/KingsBureauGrot/KingsBureauGrot-ThrSevenItal.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-style: italic;
+}
+@font-face {
+  font-family: "KingsBureauGrot";
+  src: url("/assets/fonts/KingsBureauGrot/KingsBureauGrot-FiveOne.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 300;
+}
+@font-face {
+  font-family: "KingsBureauGrot";
+  src: url("/assets/fonts/KingsBureauGrot/KingsBureauGrot-FiveOneItal.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 300;
   font-style: italic;
 }
 /** King's Caslon **/
 @font-face {
   font-family: "KingsCaslon";
-  src: url("/static/fonts/KingsCaslon_V1.560/KingsCaslon.ttf") format("truetype"); /* Safari, Android, iOS */
+  src: url("/assets/fonts/KingsCaslon_V1.560/KingsCaslon.ttf") format("truetype"); /* Safari, Android, iOS */
   font-weight: normal;
 }
 @font-face {
   font-family: "KingsCaslon";
-  src: url("/static/fonts/KingsCaslon_V1.560/KingsCaslonItalic.ttf") format("truetype"); /* Safari, Android, iOS */
+  src: url("/assets/fonts/KingsCaslon_V1.560/KingsCaslonItalic.ttf") format("truetype"); /* Safari, Android, iOS */
   font-style: italic;
 }
 @font-face {
   font-family: "KingsCaslon";
-  src: url("/static/fonts/KingsCaslon_V1.560/KingsCaslonSemiBold.ttf") format("truetype"); /* Safari, Android, iOS */
+  src: url("/assets/fonts/KingsCaslon_V1.560/KingsCaslonSemiBold.ttf") format("truetype"); /* Safari, Android, iOS */
   font-weight: bold;
 }
 @font-face {
   font-family: "KingsCaslon";
-  src: url("/static/fonts/KingsCaslon_V1.560/KingsCaslonSemiBoldItalic.ttf") format("truetype"); /* Safari, Android, iOS */
+  src: url("/assets/fonts/KingsCaslon_V1.560/KingsCaslonSemiBoldItalic.ttf") format("truetype"); /* Safari, Android, iOS */
   font-weight: bold;
   font-style: italic;
 }
@@ -469,33 +480,52 @@ main.projects a span {
   display: block;
 }
 
-main.people {
+main.people, main.organisations {
   padding: 0 1em;
+  /*ul{
+    display:flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left:-40px;
+    li{
+      flex: 0 0 33.3%;
+      list-style-type: none;
+      padding:0 0 0.5em 0;
+      font-size:1.4em;
+      a{
+        text-decoration:none;
+        &:hover{
+          text-decoration:underline;
+          text-decoration-style:solid;
+        }
+      }
+    }//li
+  }//ul*/
 }
-main.people ul {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
+main.people ul, main.organisations ul {
   margin-left: -40px;
-}
-main.people ul li {
-  flex: 0 0 33.3%;
   list-style-type: none;
-  padding: 0 0 0.5em 0;
+  list-style-type: none;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
+main.people ul li, main.organisations ul li {
+  padding-bottom: 0.5em;
   font-size: 1.4em;
 }
-main.people ul li a {
+main.people ul li a, main.organisations ul li a {
   text-decoration: none;
 }
-main.people ul li a:hover {
+main.people ul li a:hover, main.organisations ul li a:hover {
   text-decoration: underline;
   text-decoration-style: solid;
 }
 
-main.person {
+main.person, main.organisation {
   padding: 0 1em;
 }
-main.person article img {
+main.person article img, main.organisation article img {
   width: 30%;
   height: auto;
   max-width: 15em;
@@ -503,37 +533,37 @@ main.person article img {
   display: inline-block;
   vertical-align: top;
 }
-main.person article section {
+main.person article section, main.organisation article section {
   display: inline-block;
   width: 60%;
   padding-left: 5%;
   border-bottom: 0.01em solid black;
 }
-main.person article section h2 {
+main.person article section h2, main.organisation article section h2 {
   margin: 0;
 }
-main.person article section h2 span {
+main.person article section h2 span, main.organisation article section h2 span {
   display: block;
   font-weight: normal;
   font-size: 0.7em;
   color: gray;
 }
-main.person #part-of a {
+main.person #part-of a, main.organisation #part-of a {
   color: black;
   padding: 0.5em 0;
   cursor: default;
   display: block;
   text-decoration: none;
 }
-main.person #part-of a h2 {
+main.person #part-of a h2, main.organisation #part-of a h2 {
   font-weight: normal;
   margin: 0;
   cursor: pointer;
 }
-main.person #part-of a h2:hover {
+main.person #part-of a h2:hover, main.organisation #part-of a h2:hover {
   text-decoration: underline;
 }
-main.person #part-of a small {
+main.person #part-of a small, main.organisation #part-of a small {
   color: gray;
   font-family: KingsBureauGrotThreeSeven, sans-serif;
   font-size: 0.6em;
@@ -541,34 +571,34 @@ main.person #part-of a small {
   margin-left: 0.3em;
   font-style: normal;
 }
-main.person #part-of a span {
+main.person #part-of a span, main.organisation #part-of a span {
   font-family: KingsBureauGrotThreeSeven, sans-serif;
   display: block;
 }
-main.person ul {
+main.person ul, main.organisation ul {
   width: 100%;
   margin-left: -40px;
   list-style-type: none;
 }
-main.person ul li {
+main.person ul li, main.organisation ul li {
   font-size: 1.2em;
 }
-main.person ul li a {
+main.person ul li a, main.organisation ul li a {
   color: black;
   padding: 0.5em 0;
   cursor: default;
   display: block;
   text-decoration: none;
 }
-main.person ul li a h2 {
+main.person ul li a h2, main.organisation ul li a h2 {
   font-weight: normal;
   cursor: pointer;
   margin: 0;
 }
-main.person ul li a h2:hover {
+main.person ul li a h2:hover, main.organisation ul li a h2:hover {
   text-decoration: underline;
 }
-main.person ul li a small {
+main.person ul li a small, main.organisation ul li a small {
   color: gray;
   font-family: KingsBureauGrotThreeSeven, sans-serif;
   font-size: 0.6em;
@@ -576,7 +606,7 @@ main.person ul li a small {
   margin-left: 0.3em;
   font-style: normal;
 }
-main.person ul li a span {
+main.person ul li a span, main.organisation ul li a span {
   font-family: KingsBureauGrotThreeSeven, sans-serif;
   display: block;
 }
@@ -654,44 +684,45 @@ nav.pagination ol li a:hover {
   header nav.sub {
     border: none;
   }
-  .project {
+  main.project {
     padding: 1em 1em;
   }
-  .project .wrapper {
+  main.project .wrapper {
     display: block;
   }
-  .project .wrapper section {
+  main.project .wrapper section {
     width: 100%;
     margin: 0;
   }
-  .project .wrapper section:last-child {
+  main.project .wrapper section:last-child {
     width: 100%;
     background: none;
     border-top: 0.01em solid black;
   }
-  .project .wrapper section #metadata {
+  main.project .wrapper section #metadata {
     margin: 0;
     padding-top: 1em;
   }
-  .project .wrapper section #metadata span {
+  main.project .wrapper section #metadata span {
     background: rgb(40, 195, 130);
     margin-left: 0;
     padding: 0.3em 0.5em;
   }
-  .project .wrapper section #team {
+  main.project .wrapper section #team {
     width: 100%;
     display: block;
     border-top: 0.01em solid;
   }
-  .project .wrapper section #team h2 {
+  main.project .wrapper section #team h2 {
     width: 100%;
   }
-  .project .wrapper section #team ul {
+  main.project .wrapper section #team ul {
     display: block;
   }
-  main.people ul {
-    display: block;
-    width: 100%;
+  main.people ul, main.organisations ul {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
   }
   main.person article img {
     width: 100%;
