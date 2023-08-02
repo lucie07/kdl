@@ -87,7 +87,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  font-family: KingsBureauGrot, sans-serif;
+  font-family: KingsBureauGrotFiveOne, sans-serif;
   //font-family: KingsBureauGrotFiveOne,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -135,6 +135,7 @@ header {
       position: absolute;
       font-size: 1.6em;
       padding: 0.4em 0;
+      font-weight:bold;
       span {
         font-size: 1.2em;
       } // span
@@ -393,7 +394,9 @@ header {
       } //ol
     } //breadcrumbs
     h1 {
+      font-family: KingsBureauGrotThreeSeven, sans-serif;
       margin: 0;
+      font-weight:400;
       small {
         font-weight: normal;
         font-size: 0.6em;
@@ -436,11 +439,16 @@ main.projects {
     cursor: default;
     display: block;
     text-decoration: none;
+    line-height:1.4;
     h2 {
+      font-family: KingsCaslon, serif;
+      //font-family: KingsBureauGrotThreeSeven, sans-serif;
+      //font-family: KingsBureauGrotFiveOne, sans-serif;
       font-weight: normal;
       cursor: pointer;
       margin: 0;
-
+      line-height:1;
+      display: inline-block;
       &:hover {
         text-decoration: underline;
         //text-decoration-style: double;
@@ -448,7 +456,9 @@ main.projects {
     } //h2
     small {
       color: gray;
+      font-family: KingsBureauGrotFiveOne, sans-serif;
       font-family: KingsBureauGrotThreeSeven, sans-serif;
+      font-weight:400;
       font-size: 0.6em;
       display: inline-block;
       margin-left: 0.3em;
@@ -457,8 +467,10 @@ main.projects {
       //font-family: "KingsCaslon",serif;
     } //small
     span {
-      font-family: KingsBureauGrotThreeSeven, sans-serif;
+      font-family: KingsBureauGrotFiveOne, sans-serif;
+      //font-family: KingsCaslon, serif;
       display: block;
+
     } //span
   } //a
 } //main.projects
