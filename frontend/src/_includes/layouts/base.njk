@@ -20,7 +20,15 @@
 {% endblock stylesheets %}
 
 {% block headerStart %}
-  {{ headerMacro(config) }}
+  <div class="site">
+    <div class="kdl-container">
+      <a class="sitename" href="{{ config.url | default("/") }}">{{ data.title }}</a>
+      <a class="logo" href="//kcl.ac.uk">
+        <img src="{{ config.feature.image }}"
+             alt="{{ config.feature.description }}">
+      </a>
+    </div>
+  </div>
 {% endblock headerStart %}
 
 {% block menu %}
@@ -40,32 +48,16 @@
 {% block headerEnd %}
   <div id="search" role="search"></div>
 
-  <nav class="sub">
-    <div class="kdl-container">
-      <h1>Projects</h1>
-      <ul>
-        <li>
-          <a href="#overview">All</a>
-        </li>
-        <li>
-          <a href="#Team">Active</a>
-        </li>
-        <li>
-          <a href="#Team">Archived</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
   {% if navKey and navKey != "Home" %}
     {{- breadcrumbsMacro({
         pages: collections.all | eleventyNavigationBreadcrumb(navKey, { includeSelf: true }) 
-    })
+    }, {class: "sub"})
     -}}
   {% endif %}
 {% endblock headerEnd %}
-
+ 
 {% block content %}
+ 
   <div class="kdl-container">
     <h1>{{ title | safe }}</h1>
 
