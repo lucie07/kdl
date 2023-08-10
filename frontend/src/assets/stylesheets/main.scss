@@ -107,20 +107,22 @@ section {
 main {
   a {
     font-family: "KingsCaslon", serif;
-    color: black;
+    color: lighten($navy,7%);
     text-decoration-style: solid;
     &:hover {
       text-decoration-style: double;
-      color: $navy;
+      color:lighten($navy,17%);
     } //&:hover
   } //a
   p {
     a {
       text-decoration-style: solid;
-      font-family: KingsBureauGrotThreeSeven, sans-serif;
-      font-weight: 400;
+      font-family: KingsBureauGrotFiveOne, sans-serif;
+      color:lighten($navy,7%);
+      font-weight: bold;
       &:hover {
         text-decoration-style: double;
+        color:lighten($navy,17%);
       }
     } //a
   } //p
@@ -456,7 +458,7 @@ main.projects {
   padding: 5em 1em;
   a {
     //display:inline-block;
-    color: black;
+    color: $navy;
     padding: 0.5em 0;
     cursor: default;
     display: block;
@@ -474,6 +476,7 @@ main.projects {
       &:hover {
         text-decoration: underline;
         //text-decoration-style: double;
+        color:lighten($navy,15%);
       }
     } //h2
     small {
@@ -642,7 +645,41 @@ main.posts{
 }//main.posts
 
 //-- Blog Individual Page --
-main.post{
+main.post, main.faqs{
+  .kdl-container{
+    display: flex;
+    flex-wrap: wrap;
+    h1{
+      width:100%;
+      order: 1;
+    }//h1
+aside{
+  flex:1;
+  background: rgb(237, 241, 242);
+  order: 3;
+  margin: 0 0 0 5%;
+  padding:0 1em;
+}//aside
+article{
+  flex:3;
+  order: 2;
+  width:70%;
+  figure{
+    width:100%;
+    margin:0; 
+    img{
+      width:100%;
+    }//img
+  }//figure
+}//article
+footer{
+  background:white;
+}//footer
+  }//.kdl-container
+}//main.post
+
+//-- Blog Individual Page --
+main.faq{
   .kdl-container{
     display: flex;
     flex-wrap: wrap;
