@@ -22,7 +22,7 @@
 {% block headerStart %}
   <div class="site">
     <div class="kdl-container">
-      <a class="sitename" href="{{ config.url | default("/") }}">{{ data.title }}</a>
+      <a class="sitename" href="{{ config.url | default("/") }}">{{ config.title }}</a>
       <a class="logo" href="//kcl.ac.uk">
         <img src="{{ config.feature.image }}"
              alt="{{ config.feature.description }}">
