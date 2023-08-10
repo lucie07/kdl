@@ -107,20 +107,22 @@ section {
 main {
   a {
     font-family: "KingsCaslon", serif;
-    color: black;
+    color: lighten($navy,7%);
     text-decoration-style: solid;
     &:hover {
       text-decoration-style: double;
-      color: $navy;
+      color:lighten($navy,17%);
     } //&:hover
   } //a
   p {
     a {
       text-decoration-style: solid;
-      font-family: KingsBureauGrotThreeSeven, sans-serif;
-      font-weight: 400;
+      font-family: KingsBureauGrotFiveOne, sans-serif;
+      color:lighten($navy,7%);
+      font-weight: bold;
       &:hover {
         text-decoration-style: double;
+        color:lighten($navy,17%);
       }
     } //a
   } //p
@@ -394,13 +396,16 @@ header {
     background: rgb(230, 235, 237);
     padding: 1em 1em;
     border-bottom: 0.7em solid rgb(10, 45, 80);
-    .breadcrumbs {
       ol {
         list-style-type: none;
         margin-left: -40px;
         li {
           a {
-            color: gray;
+            color: black;
+            text-decoration: none;
+            &:hover{
+              text-decoration: underline;
+            }//&:hover
             &:after {
               content: ">";
               position: absolute;
@@ -409,7 +414,6 @@ header {
           } //a
         } //li
       } //ol
-    } //breadcrumbs
     h1 {
       font-family: KingsBureauGrotThreeSeven, sans-serif;
       margin: 0;
@@ -454,7 +458,7 @@ main.projects {
   padding: 5em 1em;
   a {
     //display:inline-block;
-    color: black;
+    color: $navy;
     padding: 0.5em 0;
     cursor: default;
     display: block;
@@ -472,6 +476,7 @@ main.projects {
       &:hover {
         text-decoration: underline;
         //text-decoration-style: double;
+        color:lighten($navy,15%);
       }
     } //h2
     small {
@@ -500,20 +505,24 @@ main.projects {
   padding: 5em 1em;
   .kdl-container {
     display: flex;
-    section {
+    flex-wrap: wrap;
       h1 {
+        width: 100%;
         small {
           color: gray;
           font-size: 0.6em;
           font-weight: normal;
         } //small
       } //h1
-      display: block;
-      width: 70%;
+      section {
+      //display: block;
+      //width: 70%;
       margin: 0 5% 0 0;
+      flex:3;
       &:last-child {
-        width: 30%;
+        //width: 30%;
         margin: 0;
+        flex:1;
         //border-left: 0.1vw solid black;
         background: rgb(237, 241, 242);
       } //&:last-child{
@@ -611,6 +620,97 @@ main.projects {
     } //>section 2nd level
   } //.wrapper
 } //.project
+
+//-- Blog Index page --
+main.posts{
+  article{
+    width:100%;
+    display: flex;
+    header{
+      display: flex;
+    }//header
+    figure{
+      width:100%;
+      margin:0;
+      img{
+        width:30em;
+        height: auto;
+        max-width: 15em;
+        object-fit: contain;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+  }//article
+}//main.posts
+
+//-- Blog Individual Page --
+main.post, main.faqs{
+  .kdl-container{
+    display: flex;
+    flex-wrap: wrap;
+    h1{
+      width:100%;
+      order: 1;
+    }//h1
+aside{
+  flex:1;
+  background: rgb(237, 241, 242);
+  order: 3;
+  margin: 0 0 0 5%;
+  padding:0 1em;
+}//aside
+article{
+  flex:3;
+  order: 2;
+  width:70%;
+  figure{
+    width:100%;
+    margin:0; 
+    img{
+      width:100%;
+    }//img
+  }//figure
+}//article
+footer{
+  background:white;
+}//footer
+  }//.kdl-container
+}//main.post
+
+//-- Blog Individual Page --
+main.faq{
+  .kdl-container{
+    display: flex;
+    flex-wrap: wrap;
+    h1{
+      width:100%;
+      order: 1;
+    }//h1
+aside{
+  flex:1;
+  background: rgb(237, 241, 242);
+  order: 3;
+  margin: 0 0 0 5%;
+  padding:0 1em;
+}//aside
+article{
+  flex:3;
+  order: 2;
+  figure{
+    width:100%;
+    margin:0; 
+    img{
+      width:100%;
+    }//img
+  }//figure
+}//article
+footer{
+  background:white;
+}//footer
+  }//.kdl-container
+}//main.post
+
 
 //-- People/Organisations Index Page --
 main.people,
