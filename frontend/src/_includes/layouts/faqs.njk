@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 ---
-<section>
+<article>
   {{ content | safe }}
 
   {% for group in faqs|sort(false, false, "data.order") %}
@@ -14,4 +14,4 @@ layout: layouts/base.njk
       {% endfor %}
     </article>
   {% endfor %}
-</section>
+</article>
