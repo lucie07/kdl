@@ -618,7 +618,7 @@ main.projects {
   } //.wrapper
 } //.project
 
-//-- Blog --
+//-- Blog Index page --
 main.posts{
   article{
     width:100%;
@@ -640,6 +640,39 @@ main.posts{
     }
   }//article
 }//main.posts
+
+//-- Blog Individual Page --
+main.post{
+  .kdl-container{
+    display: flex;
+    flex-wrap: wrap;
+    h1{
+      width:100%;
+      order: 1;
+    }//h1
+aside{
+  flex:1;
+  background: rgb(237, 241, 242);
+  order: 3;
+  margin: 0 0 0 5%;
+  padding:0 1em;
+}//aside
+article{
+  flex:3;
+  order: 2;
+  figure{
+    width:100%;
+    margin:0; 
+    img{
+      width:100%;
+    }//img
+  }//figure
+}//article
+footer{
+  background:white;
+}//footer
+  }//.kdl-container
+}//main.post
 
 
 //-- People/Organisations Index Page --
