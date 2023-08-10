@@ -1,21 +1,23 @@
 ---
 layout: layouts/base.njk
 ---
+
 {% from "kdl/components/image/macros.njk" import imageMacro %}
 
-<div class="wrapper">
-    <section>
-    <h1>COTR: The Community of the Realm in Scotland, 1249-1424 <small>COTR</small></h1>
-    <!-- Images -->
-    {{ imageMacro(obj.feature) }}
-    
-    <!-- Overview -->
-    {% if project.description %}
-      <div id="overview">
-        <p>{{ project.description | renderMd | safe }}</p>
-      </div>
-    {% endif %}
-      <!-- Team -->
+<section>
+  <!-- Images -->
+  {% if obj.feature %}
+  {{ imageMacro(obj.feature) }}
+  {% endif %}
+ 
+  <!-- Overview -->
+  {% if project.description %}
+    <div id="overview">
+      <p>{{ project.description | renderMd | safe }}</p>
+    </div>
+  {% endif %}
+
+  <!-- Team -->
   {% if project.member %}
     <div id="team">
       <h2>Team</h2>
@@ -24,24 +26,24 @@ layout: layouts/base.njk
           <li>
             <a href="{% route member.agent.slug, 'People' %}">{{ member.agent.name }}</a>
             <span>
-            {{ member.roleName.name }}
-            {%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}
-            </span>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endif %}
-    </section>
+              {{ member.roleName.name }}
+              {%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}
+              </span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+</section>
 
-    <section>
-    <!-- Information -->
-    <div id="metadata">
-      <span>Project Status: Active</span>
+<section>
+  <!-- Information -->
+  <div id="metadata">
+    <span>Project Status: {{ project.creativeWorkStatus.name }}</span>
 
-         {% if project.url %}
+    {% if project.url.length > 0 %}
       <div id="links">
-        <h3>Project links</h3>   
+      <h3>Project links</h3>
         <ul>
           {% for url in project.url %}
             <li>
@@ -52,20 +54,19 @@ layout: layouts/base.njk
       </div>
     {% endif %}
 
-      {% if project.funder %}
-        <div class="funder">
-          <dl>
-            {% for funder in project.funder %}
+    {% if project.funder %}
+      <div class="funder">
+        <dl>
+          {% for funder in project.funder %}
             <dt>Funder</dt>
-            <dd><a href="{% route funder.agent_id.slug, 'Organisations' %}">{{- funder.agent_id.name -}}</a></dd>
-            {% endfor %}
-          </dl>
-        </div>
-      {% endif %}
+            <dd>
+              <a href="{% route funder.agent_id.slug, 'Organisations' %}">{{- funder.agent_id.name -}}</a>
+            </dd>
+          {% endfor %}
+        </dl>
+      </div>
+    {% endif %}
 
     {% include "partials/project.njk" %}
-  
-    </div>
-    </section>
- </div>
-
+  </div>
+</section>

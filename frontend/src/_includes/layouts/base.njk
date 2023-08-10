@@ -1,4 +1,4 @@
-<!--{% extends "kdl/base.njk" %}-->
+{% extends "kdl/base.njk" %}
 
 {% set baseUrl = config.baseUrl %}
 {% set assetsPath = config.paths.assets %}
@@ -6,10 +6,8 @@
 {% set mainClass = layout | replace("layouts/", "") | replace(".njk", "") %}
 {% set stylesheetsPath = config.paths.stylesheets %}
 
-
-
 {% block headExtra %}
-  <base href="{{ baseUrl }}"/>
+  <base href="{{ baseUrl }}" />
 {% endblock headExtra %}
 
 {% block headMeta %}
@@ -21,101 +19,68 @@
   {{ super() }}
 {% endblock stylesheets %}
 
-{#{% block headerStart %}
+{% block headerStart %}
   {{ headerMacro(config) }}
-{% endblock headerStart %}#}
+{% endblock headerStart %}
 
 {% block menu %}
- {# {{-
-  navMacro({
-  title: "Menu",
-  pages: collections.all | eleventyNavigation,
-  currentUrl: page.url
-  }, {
-  nested: true,
-  ordered: false,
-  action: "menu"
-  })
-  -}}#}
-  
- <header>
-<div class="site">
-<div class="wrapper">
-        <a class="sitename" href="//www.kdl.kcl.ac.uk/" title="King's Digital Lab">King's Digital Lab<!--<span><br>Academic research exploration</span>--></a><a class="kcl-logo" href="//www.kcl.ac.uk/" title="King's College London"><img src="https://kdl.kcl.ac.uk/static/images/kings-logo-red.svg" alt="King's College London"></a>
-  </div>
-  </div>
-<nav class="main">
-    <div class="wrapper">
-    <input id="menu-toggle" type="checkbox" />
-    <label class='menu-button-container' for="menu-toggle">
-    <span class='menu-button'></span>
-  </label>
-    <ul>
-               <li>
-        <input id="projects" type="checkbox" hidden />
-        <label for="projects" class="check"> Projects</label>
-        <ul>
-          <li><a href="#all">All</a></li>
-             <li><a href="#active">Active</a></li>
-          <li><a href="#archived">Archived</a></li>
-          <li>
-        </ul>
-      </li>
-      <li><a href="#blog">Blog</a></li>
-         <li>
-        <input id="about" type="checkbox" hidden />
-        <label for="about" class="check"> About</label>
-        <ul>
-          <li><a href="#overview">Overview</a></li>
-             <li><a href="#Team">Team</a></li>
-          <li>
-        </ul>
-      </li>
-              <li> <a href="#contact">Contact</a></li>
-        </ul>
-      </li>
-      
-    </ul>
-  </div>
-  </nav>
- <nav class="sub">
-   <div class="wrapper">
-    <h1>Projects</h1>
-    <ul>
-           <li><a href="#overview">All</a></li>
-          <li><a href="#Team">Active</a></li>
-          <li><a href="#Team">Archived</a></li>
-    </ul>
-   </div>
-  </nav>
-</header>
+  {{- navMacro({
+    title: "Menu",
+    pages: collections.all | eleventyNavigation,
+    currentUrl: page.url
+    }, {
+    action: "menu-toggle",
+    class: "main",
+    nested: true,
+    ordered: false
+    }) 
+  -}}
 {% endblock menu %}
 
 {% block headerEnd %}
   <div id="search" role="search"></div>
+
+  <nav class="sub">
+    <div class="kdl-container">
+      <h1>Projects</h1>
+      <ul>
+        <li>
+          <a href="#overview">All</a>
+        </li>
+        <li>
+          <a href="#Team">Active</a>
+        </li>
+        <li>
+          <a href="#Team">Archived</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  {% if navKey and navKey != "Home" %}
+    {{- breadcrumbsMacro({
+        pages: collections.all | eleventyNavigationBreadcrumb(navKey, { includeSelf: true }) 
+    })
+    -}}
+  {% endif %}
 {% endblock headerEnd %}
 
 {% block content %}
-  <header>
-    {% if navKey and navKey != "Home" %}
-    {{-
-    breadcrumbsMacro({
-    pages: collections.all | eleventyNavigationBreadcrumb(navKey, { includeSelf: true })
-    })
-    -}}
-    {% endif %}
+  <div class="kdl-container">
     <h1>{{ title | safe }}</h1>
-  </header>
-  {% include "partials/toc.njk" %}
-  {{ content | safe }}
 
+    {% include "partials/toc.njk" %}
 
+    {{ content | safe }}
+  </div>
+{% endblock content %}
+
+{% block footer %}
   <footer>
     {% include "partials/footer.njk" %}
+
   </footer>
-
-
-{% endblock content %}
+{% endblock footer %}
 
 {% block bodyEnd %}
   <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
