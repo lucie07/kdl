@@ -644,42 +644,9 @@ main.posts{
   }//article
 }//main.posts
 
-//-- Blog Individual Page --
+//-- Blog Individual Page & FAQs --
 main.post, main.faqs{
-  .kdl-container{
-    display: flex;
-    flex-wrap: wrap;
-    h1{
-      width:100%;
-      order: 1;
-    }//h1
-aside{
-  flex:1;
-  background: rgb(237, 241, 242);
-  order: 3;
-  margin: 0 0 0 5%;
-  padding:0 1em;
-}//aside
-article{
-  flex:3;
-  order: 2;
-  width:70%;
-  figure{
-    width:100%;
-    margin:0; 
-    img{
-      width:100%;
-    }//img
-  }//figure
-}//article
-footer{
-  background:white;
-}//footer
-  }//.kdl-container
-}//main.post
-
-//-- Blog Individual Page --
-main.faq{
+  padding: 0 1em;
   .kdl-container{
     display: flex;
     flex-wrap: wrap;
@@ -709,7 +676,7 @@ footer{
   background:white;
 }//footer
   }//.kdl-container
-}//main.post
+}//main.post, main.faqs
 
 
 //-- People/Organisations Index Page --
@@ -887,6 +854,7 @@ nav.pagination {
 //-- Footer --
 footer {
   background: $darkgray;
+  margin-top:2em;
   .connect {
     padding: 0 1em;
     background: $navy;
@@ -970,7 +938,7 @@ footer {
   } //nav.footer
 } //footer
 
-@media (max-width: 800px) {
+@media (max-width: 800px) {  
   //-- Header/Navigation --
   header {
     .site {
@@ -1136,6 +1104,18 @@ footer {
       } //li
     } //ul
   } //main.person
+
+  //-- Blog Individual Page & FAQs --
+main.post, main.faqs{
+  .kdl-container{
+    display: block;
+  aside{
+    margin:0 0 1em 0;
+    padding:0.1em 1em;
+  }//aside
+  }//.kdl-container
+}//main.post, main.faqs
+
 
   footer {
     background: $darkgray;
