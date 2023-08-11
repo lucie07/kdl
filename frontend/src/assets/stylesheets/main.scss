@@ -136,6 +136,8 @@ main {
 //-- Header/Navigation --
 
 header {
+  float:left;
+  width:100%;
   .site {
     padding: 0 1em;
     a.sitename {
@@ -178,6 +180,7 @@ header {
       height: 50px;
       padding: 0 1em;
       border-bottom: 0.3em solid lightgray;
+      //display:flex;
       .kdl-container {
         > ul {
           /* first-level */
@@ -985,6 +988,7 @@ footer {
 @media (max-width: 800px) {  
   //-- Header/Navigation --
   header {
+    float:none;
     .site {
       a.sitename {
         font-size: 1.5em;
@@ -1029,7 +1033,6 @@ footer {
           align-items: initial;
         } //.menu-button-container
         > ul {
-          background: green;
           margin-top: 50px;
           width: 100%;
           > li {
