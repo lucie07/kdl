@@ -909,6 +909,7 @@ footer {
     width: 100%;
     .kdl-container {
       display: flex;
+      align-items: center;
       h2 {
         font-family: KingsBureauGrotThreeSeven, sans-serif;
         font-weight: 400;
@@ -923,9 +924,21 @@ footer {
           justify-content: left;
           a {
             color: white;
-            min-width: 6em;
+            min-width: 4em;
             display: block;
             text-decoration: none;
+            img{
+              width:3em;
+              border:0.125em solid rgba(0, 0, 0, 0.4);
+              padding:0.7em;
+              filter:invert(100%);
+              border-radius: 50%;
+              &:hover{
+                background:white;
+                filter:invert(0);
+                border:0.125em solid white;
+              }//&:hover
+            }//img
             &:hover {
               text-decoration: underline;
             } //&:hover
