@@ -11,7 +11,7 @@ layout: layouts/agent.njk
         <span>{{ agent.jobDescription.name }}</span>
       </h2>
     {% endif %}
-    {{ agent.description | renderMd }}
+    {% if agent.description %}{{ agent.description | renderMd }}{% endif %}
   </section>
 
   {% if agent.memberOf %}
