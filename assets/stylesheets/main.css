@@ -1,22 +1,22 @@
 /** Importing King's Fonts **/
 /** King's Bureau Grotesque **/
 @font-face {
-  font-family: "KingsBureauGrot";
+  font-family: "KingsBureauGrotThreeSeven";
   src: url("/assets/fonts/KingsBureauGrot/KingsBureauGrot-ThreeSeven.ttf") format("truetype"); /* Safari, Android, iOS */
   font-weight: normal;
 }
 @font-face {
-  font-family: "KingsBureauGrot";
+  font-family: "KingsBureauGrotThreeSeven";
   src: url("/assets/fonts/KingsBureauGrot/KingsBureauGrot-ThrSevenItal.ttf") format("truetype"); /* Safari, Android, iOS */
   font-style: italic;
 }
 @font-face {
-  font-family: "KingsBureauGrot";
+  font-family: "KingsBureauGrotFiveOne";
   src: url("/assets/fonts/KingsBureauGrot/KingsBureauGrot-FiveOne.ttf") format("truetype"); /* Safari, Android, iOS */
   font-weight: 300;
 }
 @font-face {
-  font-family: "KingsBureauGrot";
+  font-family: "KingsBureauGrotFiveOne";
   src: url("/assets/fonts/KingsBureauGrot/KingsBureauGrot-FiveOneItal.ttf") format("truetype"); /* Safari, Android, iOS */
   font-weight: 300;
   font-style: italic;
@@ -47,10 +47,14 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
-  font-family: KingsBureauGrotThreeSeven, sans-serif;
+  font-family: KingsBureauGrotFiveOne, sans-serif;
+  font-weight: 400;
+  float: left;
+  width: 100%;
 }
 
 * {
@@ -61,28 +65,38 @@ section {
   width: 100%;
 }
 
-.wrapper {
+.kdl-container {
   max-width: 1220px;
   margin: 0 auto;
 }
 
 main a {
   font-family: "KingsCaslon", serif;
-  color: black;
+  color: #0e3f70;
   text-decoration-style: solid;
 }
 main a:hover {
   text-decoration-style: double;
-  color: #0a2d50;
+  color: #14589d;
 }
 main p a {
   text-decoration-style: solid;
-  font-family: KingsBureauGrotThreeSeven, sans-serif;
+  font-family: KingsBureauGrotFiveOne, sans-serif;
+  color: #0e3f70;
+  font-weight: bold;
 }
 main p a:hover {
   text-decoration-style: double;
+  color: #14589d;
+}
+main img {
+  width: 100%;
 }
 
+header {
+  float: left;
+  width: 100%;
+}
 header .site {
   padding: 0 1em;
 }
@@ -92,48 +106,48 @@ header .site a.sitename {
   position: absolute;
   font-size: 1.6em;
   padding: 0.4em 0;
+  font-weight: bold;
 }
 header .site a.sitename span {
   font-size: 1.2em;
 }
-header .site a.kcl-logo {
+header .site a.logo {
   width: 8em;
   text-align: right;
   float: right;
   position: relative;
-  display: inline-block;
   align-self: flex-end;
 }
-header .site a.kcl-logo img {
+header .site a.logo img {
   width: 8em;
   text-align: right;
-  float: right;
   position: relative;
   display: inline-block;
 }
 header nav.main {
   z-index: 1;
-  background: rgb(90, 99, 105);
+  background: #5a6369;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   height: 50px;
   padding: 0 1em;
   border-bottom: 0.3em solid lightgray;
 }
-header nav.main .wrapper > ul { /* first-level */
+header nav.main .kdl-container > ul {
+  /* first-level */
   margin: 0 2em 0 auto;
   list-style-type: none;
   float: right;
   /** chevron icon **/
 }
-header nav.main .wrapper > ul > li {
+header nav.main .kdl-container > ul > li {
   display: block;
   float: left;
   transition: all ease-out 250ms;
   position: relative;
   color: #cccccc;
 }
-header nav.main .wrapper > ul > li:after {
+header nav.main .kdl-container > ul > li:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -141,15 +155,17 @@ header nav.main .wrapper > ul > li:after {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #999999;
+  background-color: white;
   transition: transform 0.25s ease-out;
 }
-header nav.main .wrapper > ul > li.active {
-  color: white;
+header nav.main .kdl-container > ul > li.active {
+  background: white;
   position: relative;
-  padding: 10px;
 }
-header nav.main .wrapper > ul > li.active:after {
+header nav.main .kdl-container > ul > li.active a {
+  color: black;
+}
+header nav.main .kdl-container > ul > li.active:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -160,22 +176,34 @@ header nav.main .wrapper > ul > li.active:after {
   background-color: white;
   transition: transform 0.25s ease-out;
 }
-header nav.main .wrapper > ul > li a {
+header nav.main .kdl-container > ul > li a,
+header nav.main .kdl-container > ul > li label {
   text-decoration: none;
-  color: #cccccc;
-}
-header nav.main .wrapper > ul > li a:hover {
   color: white;
-}
-header nav.main .wrapper > ul > li a, header nav.main .wrapper > ul > li label {
   display: block;
   padding: 0.9em 1em;
   transition: all 0.25s ease-in;
-}
-header nav.main .wrapper > ul > li label {
   cursor: pointer;
 }
-header nav.main .wrapper > ul > li > ul { /* second-level */
+header nav.main .kdl-container > ul > li:focus, header nav.main .kdl-container > ul > li:hover {
+  background: #e6ebed;
+}
+header nav.main .kdl-container > ul > li:focus a,
+header nav.main .kdl-container > ul > li:focus label, header nav.main .kdl-container > ul > li:hover a,
+header nav.main .kdl-container > ul > li:hover label {
+  color: black;
+}
+header nav.main .kdl-container > ul > li:focus input[type=checkbox] + label.kdl-checkbox, header nav.main .kdl-container > ul > li:hover input[type=checkbox] + label.kdl-checkbox {
+  position: relative;
+}
+header nav.main .kdl-container > ul > li:focus input[type=checkbox] + label.kdl-checkbox:after, header nav.main .kdl-container > ul > li:hover input[type=checkbox] + label.kdl-checkbox:after {
+  border-color: black;
+}
+header nav.main .kdl-container > ul > li:focus ul li a, header nav.main .kdl-container > ul > li:hover ul li a {
+  background: #e6ebed;
+}
+header nav.main .kdl-container > ul > li > ul {
+  /* second-level */
   margin-left: -40px;
   height: 100%;
   max-height: 0;
@@ -183,54 +211,65 @@ header nav.main .wrapper > ul > li > ul { /* second-level */
   transition: max-height 0.5s ease-in-out;
   list-style-type: none;
 }
-header nav.main .wrapper > ul > li > ul li a, header nav.main .wrapper > ul > li > ul li label {
-  background: #353535;
-  box-shadow: inset 0 -1px #474747;
+header nav.main .kdl-container > ul > li > ul li a,
+header nav.main .kdl-container > ul > li > ul li label {
+  background: #5a6369;
 }
-header nav.main .wrapper > ul > li > ul li a:focus, header nav.main .wrapper > ul > li > ul li a:hover, header nav.main .wrapper > ul > li > ul li label:focus, header nav.main .wrapper > ul > li > ul li label:hover {
-  background: #232323;
+header nav.main .kdl-container > ul > li > ul li a:focus, header nav.main .kdl-container > ul > li > ul li a:hover,
+header nav.main .kdl-container > ul > li > ul li label:focus,
+header nav.main .kdl-container > ul > li > ul li label:hover {
+  background: white;
 }
-header nav.main .wrapper > ul > li > ul li > ul { /* third-level */
+header nav.main .kdl-container > ul > li > ul li > ul {
+  /* third-level */
   height: 100%;
   max-height: 0;
   overflow: hidden;
   list-style-type: none;
   transition: max-height 0.5s ease-in-out;
 }
-header nav.main .wrapper > ul > li > ul li > ul li a, header nav.main .wrapper > ul > li > ul li > ul li label {
+header nav.main .kdl-container > ul > li > ul li > ul li a,
+header nav.main .kdl-container > ul > li > ul li > ul li label {
   background: #454545;
   box-shadow: inset 0 -1px #575757;
 }
-header nav.main .wrapper > ul > li > ul li > ul li a:focus, header nav.main .wrapper > ul > li > ul li > ul li a:hover, header nav.main .wrapper > ul > li > ul li > ul li label:focus, header nav.main .wrapper > ul > li > ul li > ul li label:hover {
+header nav.main .kdl-container > ul > li > ul li > ul li a:focus, header nav.main .kdl-container > ul > li > ul li > ul li a:hover,
+header nav.main .kdl-container > ul > li > ul li > ul li label:focus,
+header nav.main .kdl-container > ul > li > ul li > ul li label:hover {
   background: #333333;
 }
-header nav.main .wrapper > ul > li > ul li > ul li > ul { /* fourth-level */
+header nav.main .kdl-container > ul > li > ul li > ul li > ul {
+  /* fourth-level */
   height: 100%;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
   list-style-type: none;
 }
-header nav.main .wrapper > ul > li > ul li > ul li > ul li a, header nav.main .wrapper > ul > li > ul li > ul li > ul li label {
+header nav.main .kdl-container > ul > li > ul li > ul li > ul li a,
+header nav.main .kdl-container > ul > li > ul li > ul li > ul li label {
   background: #454545;
   box-shadow: inset 0 -1px #575757;
 }
-header nav.main .wrapper > ul > li > ul li > ul li > ul li a:focus, header nav.main .wrapper > ul > li > ul li > ul li > ul li a:hover, header nav.main .wrapper > ul > li > ul li > ul li > ul li label:focus, header nav.main .wrapper > ul > li > ul li > ul li > ul li label:hover {
+header nav.main .kdl-container > ul > li > ul li > ul li > ul li a:focus, header nav.main .kdl-container > ul > li > ul li > ul li > ul li a:hover,
+header nav.main .kdl-container > ul > li > ul li > ul li > ul li label:focus,
+header nav.main .kdl-container > ul > li > ul li > ul li > ul li label:hover {
   background: #333333;
 }
-header nav.main .wrapper > ul input[type=checkbox]:checked + label + ul {
+header nav.main .kdl-container > ul input[type=checkbox]:checked + label + ul {
   /* reset the height when checkbox is checked */
   max-height: 1000px;
 }
-header nav.main .wrapper > ul input[type=checkbox] + label.check {
+header nav.main .kdl-container > ul input[type=checkbox] + label.kdl-checkbox {
   position: relative;
 }
-header nav.main .wrapper > ul input[type=checkbox] + label.check:after {
+header nav.main .kdl-container > ul input[type=checkbox] + label.kdl-checkbox:after {
   content: "";
   display: inline-block;
   z-index: 1;
   top: 0.15em;
   border-style: solid;
+  border-color: white;
   border-width: 1px 1px 0 0;
   height: 0.5em;
   position: relative;
@@ -240,13 +279,13 @@ header nav.main .wrapper > ul input[type=checkbox] + label.check:after {
   width: 0.5em;
   left: 0.5em;
 }
-header nav.main .wrapper > ul input[type=checkbox]:checked + label.check:before, header nav.main .wrapper > ul input[type=checkbox]:checked + label.check:after {
+header nav.main .kdl-container > ul input[type=checkbox]:checked + label.kdl-checkbox:before, header nav.main .kdl-container > ul input[type=checkbox]:checked + label.kdl-checkbox:after {
   transform: rotate(-45deg);
 }
-header nav.main .wrapper > ul input[type=checkbox]:checked + label.check:before {
+header nav.main .kdl-container > ul input[type=checkbox]:checked + label.kdl-checkbox:before {
   display: none;
 }
-header nav.main .menu-button-container {
+header nav.main .kdl-menu-button-container {
   display: none;
   height: 100%;
   width: 30px;
@@ -258,9 +297,9 @@ header nav.main .menu-button-container {
 header nav.main #menu-toggle {
   display: none;
 }
-header nav.main .menu-button,
-header nav.main .menu-button::before,
-header nav.main .menu-button::after {
+header nav.main .kdl-menu-button,
+header nav.main .kdl-menu-button::before,
+header nav.main .kdl-menu-button::after {
   display: block;
   background-color: #fff;
   position: absolute;
@@ -268,44 +307,54 @@ header nav.main .menu-button::after {
   width: 30px;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
-header nav.main .menu-button::before {
+header nav.main .kdl-menu-button::before {
   content: "";
   margin-top: -8px;
 }
-header nav.main .menu-button::after {
+header nav.main .kdl-menu-button::after {
   content: "";
   margin-top: 8px;
 }
-header nav.main #menu-toggle:checked + .menu-button-container .menu-button {
+header nav.main #menu-toggle:checked + .kdl-menu-button-container .kdl-menu-button {
   background: rgba(255, 255, 255, 0);
 }
-header nav.main #menu-toggle:checked + .menu-button-container .menu-button::before {
+header nav.main #menu-toggle:checked + .kdl-menu-button-container .kdl-menu-button::before {
   margin-top: 0px;
   transform: rotate(45deg);
 }
-header nav.main #menu-toggle:checked + .menu-button-container .menu-button::after {
+header nav.main #menu-toggle:checked + .kdl-menu-button-container .kdl-menu-button::after {
   margin-top: 0px;
   transform: rotate(-45deg);
 }
 header nav.sub {
   background: rgb(230, 235, 237);
-  padding: 1em 1em;
+  padding: 0.5em 1em;
   border-bottom: 0.7em solid rgb(10, 45, 80);
 }
-header nav.sub .breadcrumbs ol {
+header nav.sub ol {
   list-style-type: none;
   margin-left: -40px;
 }
-header nav.sub .breadcrumbs ol li a {
-  color: gray;
+header nav.sub ol li {
+  display: inline-block;
+  margin-right: 1em;
 }
-header nav.sub .breadcrumbs ol li a:after {
+header nav.sub ol li a {
+  color: black;
+  text-decoration: none;
+}
+header nav.sub ol li a:hover {
+  text-decoration: underline;
+}
+header nav.sub ol li a:after {
   content: ">";
   position: absolute;
   padding: 0 0.5em;
 }
 header nav.sub h1 {
+  font-family: KingsBureauGrotThreeSeven, sans-serif;
   margin: 0;
+  font-weight: 400;
 }
 header nav.sub h1 small {
   font-weight: normal;
@@ -320,6 +369,9 @@ header nav.sub ul li {
   padding: 0 1em;
   border-right: 0.1em solid;
   display: inline-block;
+}
+header nav.sub ul li:active {
+  font-family: KingsBureauGrotThreeSeven, sans-serif;
 }
 header nav.sub ul li a {
   color: black;
@@ -339,98 +391,107 @@ main.projects {
   padding: 5em 1em;
 }
 main.projects a {
-  color: black;
+  color: #0a2d50;
   padding: 0.5em 0;
   cursor: default;
   display: block;
   text-decoration: none;
+  line-height: 1.4;
 }
 main.projects a h2 {
+  font-family: KingsCaslon, serif;
   font-weight: normal;
   cursor: pointer;
   margin: 0;
+  line-height: 1;
+  display: inline-block;
 }
 main.projects a h2:hover {
   text-decoration: underline;
+  color: #135394;
 }
 main.projects a small {
   color: gray;
-  font-family: KingsBureauGrotThreeSeven, sans-serif;
+  font-family: KingsBureauGrotFiveOne, sans-serif;
+  font-weight: 400;
   font-size: 0.6em;
   display: inline-block;
   margin-left: 0.3em;
   font-style: normal;
 }
 main.projects a span {
-  font-family: KingsBureauGrotThreeSeven, sans-serif;
+  font-family: KingsBureauGrotFiveOne, sans-serif;
   display: block;
 }
 
 .project {
   padding: 5em 1em;
 }
-.project .wrapper {
+.project .kdl-container {
   display: flex;
+  flex-wrap: wrap;
 }
-.project .wrapper section {
-  display: block;
-  width: 70%;
-  margin: 0 5% 0 0;
+.project .kdl-container h1 {
+  width: 100%;
 }
-.project .wrapper section h1 small {
+.project .kdl-container h1 small {
   color: gray;
   font-size: 0.6em;
   font-weight: normal;
 }
-.project .wrapper section:last-child {
-  width: 30%;
+.project .kdl-container section {
+  margin: 0 5% 0 0;
+  flex: 3;
+}
+.project .kdl-container section:last-child {
   margin: 0;
+  flex: 1;
   background: rgb(237, 241, 242);
 }
-.project .wrapper section figure {
+.project .kdl-container section figure {
   margin: 0;
 }
-.project .wrapper section figure img {
+.project .kdl-container section figure img {
   width: 100%;
 }
-.project .wrapper section figure figcaption {
+.project .kdl-container section figure figcaption {
   font-size: 0.7em;
   text-align: center;
 }
-.project .wrapper section #metadata {
+.project .kdl-container section #metadata {
   margin: 0 5%;
   padding-top: 1em;
 }
-.project .wrapper section #metadata dl dt {
+.project .kdl-container section #metadata dl dt {
   margin-top: 1.5em;
   font-size: 1.2em;
   font-weight: bold;
 }
-.project .wrapper section #metadata dl dd {
+.project .kdl-container section #metadata dl dd {
   margin-left: 20px;
   margin-top: 0.5em;
 }
-.project .wrapper section #metadata span {
+.project .kdl-container section #metadata span {
   background: rgb(40, 195, 130);
   margin-left: -5%;
   padding: 0.3em 0.5em;
 }
-.project .wrapper section #metadata #links {
+.project .kdl-container section #metadata #links {
   border-bottom: 0.3em solid rgb(220, 227, 230);
   width: 100%;
   padding-top: 2em;
 }
-.project .wrapper section #metadata #links ul {
+.project .kdl-container section #metadata #links ul {
   margin: 0 0 0 -20px;
 }
-.project .wrapper section #metadata #links ul li {
+.project .kdl-container section #metadata #links ul li {
   margin-bottom: 0.5em;
 }
-.project .wrapper section #metadata #links ul li a {
+.project .kdl-container section #metadata #links ul li a {
   font-size: 1.2em;
   text-decoration: none;
 }
-.project .wrapper section #metadata #links ul li a:hover {
+.project .kdl-container section #metadata #links ul li a:hover {
   text-decoration: underline;
   text-decoration-style: solid;
   -webkit-transition: all 200ms ease-in;
@@ -439,48 +500,134 @@ main.projects a span {
   -o-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
-.project .wrapper section #metadata .funder {
+.project .kdl-container section #metadata .funder {
   border-bottom: 0.3em solid rgb(220, 227, 230);
 }
-.project .wrapper section .post-meta {
+.project .kdl-container section .post-meta {
   margin-left: 5%;
 }
-.project .wrapper section #team {
+.project .kdl-container section #team {
   width: 100%;
   display: block;
   border-top: 0.01em solid;
 }
-.project .wrapper section #team h2 {
+.project .kdl-container section #team h2 {
   width: 100%;
 }
-.project .wrapper section #team ul {
+.project .kdl-container section #team ul {
   margin-left: -40px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-.project .wrapper section #team ul h2 {
+.project .kdl-container section #team ul h2 {
   font-size: 1.2em;
 }
-.project .wrapper section #team ul li {
+.project .kdl-container section #team ul li {
   list-style-type: none;
   flex: 0 0 50%;
   margin-bottom: 1em;
   font-size: 1.1em;
 }
-.project .wrapper section #team ul li a {
+.project .kdl-container section #team ul li a {
   text-decoration: none;
 }
-.project .wrapper section #team ul li a:hover {
+.project .kdl-container section #team ul li a:hover {
   text-decoration: underline;
   text-decoration-style: solid;
 }
-.project .wrapper section #team ul li span {
+.project .kdl-container section #team ul li span {
   font-size: 0.8em;
   display: block;
 }
 
-main.people, main.organisations {
+main.posts article {
+  width: 100%;
+  display: flex;
+}
+main.posts article header {
+  display: flex;
+}
+main.posts article figure {
+  width: 100%;
+  margin: 0;
+}
+main.posts article figure img {
+  width: 30em;
+  height: auto;
+  max-width: 15em;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: top;
+}
+
+main.post, main.faqs {
+  padding: 0 1em;
+}
+main.post .kdl-container, main.faqs .kdl-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+main.post .kdl-container h1, main.faqs .kdl-container h1 {
+  width: 100%;
+  order: 1;
+}
+main.post .kdl-container aside, main.faqs .kdl-container aside {
+  flex: 1;
+  background: rgb(237, 241, 242);
+  order: 3;
+  margin: 0 0 0 5%;
+  padding: 0 1em;
+}
+main.post .kdl-container aside ol, main.faqs .kdl-container aside ol {
+  margin-left: -20px;
+  counter-reset: counter;
+  list-style: none;
+}
+main.post .kdl-container aside ol li, main.faqs .kdl-container aside ol li {
+  counter-increment: counter;
+  line-height: 1.3;
+  margin-top: 0.5em;
+  font-weight: bold;
+}
+main.post .kdl-container aside ol li a, main.faqs .kdl-container aside ol li a {
+  text-decoration: none;
+}
+main.post .kdl-container aside ol li a:hover, main.faqs .kdl-container aside ol li a:hover {
+  text-decoration: underline;
+}
+main.post .kdl-container aside ol li:before, main.faqs .kdl-container aside ol li:before {
+  content: counters(counter, ".");
+  position: absolute;
+  margin-left: -1em;
+  margin-top: 0.15em;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #E12726;
+}
+main.post .kdl-container aside ol li ol li:before, main.faqs .kdl-container aside ol li ol li:before {
+  margin-left: -1.7em;
+  margin-top: 0.4em;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+main.post .kdl-container > article, main.faqs .kdl-container > article {
+  flex: 3;
+  order: 2;
+}
+main.post .kdl-container > article figure, main.faqs .kdl-container > article figure {
+  width: 100%;
+  margin: 0;
+}
+main.post .kdl-container > article figure img, main.faqs .kdl-container > article figure img {
+  width: 100%;
+}
+main.post .kdl-container footer, main.faqs .kdl-container footer {
+  background: white;
+}
+
+main.people,
+main.organisations {
   padding: 0 1em;
   /*ul{
     display:flex;
@@ -502,7 +649,8 @@ main.people, main.organisations {
     }//li
   }//ul*/
 }
-main.people ul, main.organisations ul {
+main.people ul,
+main.organisations ul {
   margin-left: -40px;
   list-style-type: none;
   list-style-type: none;
@@ -510,22 +658,27 @@ main.people ul, main.organisations ul {
   -webkit-columns: 3;
   -moz-columns: 3;
 }
-main.people ul li, main.organisations ul li {
+main.people ul li,
+main.organisations ul li {
   padding-bottom: 0.5em;
   font-size: 1.4em;
 }
-main.people ul li a, main.organisations ul li a {
+main.people ul li a,
+main.organisations ul li a {
   text-decoration: none;
 }
-main.people ul li a:hover, main.organisations ul li a:hover {
+main.people ul li a:hover,
+main.organisations ul li a:hover {
   text-decoration: underline;
   text-decoration-style: solid;
 }
 
-main.person, main.organisation {
+main.person,
+main.organisation {
   padding: 0 1em;
 }
-main.person article img, main.organisation article img {
+main.person article img,
+main.organisation article img {
   width: 30%;
   height: auto;
   max-width: 15em;
@@ -533,37 +686,44 @@ main.person article img, main.organisation article img {
   display: inline-block;
   vertical-align: top;
 }
-main.person article section, main.organisation article section {
+main.person article section,
+main.organisation article section {
   display: inline-block;
   width: 60%;
   padding-left: 5%;
   border-bottom: 0.01em solid black;
 }
-main.person article section h2, main.organisation article section h2 {
+main.person article section h2,
+main.organisation article section h2 {
   margin: 0;
 }
-main.person article section h2 span, main.organisation article section h2 span {
+main.person article section h2 span,
+main.organisation article section h2 span {
   display: block;
   font-weight: normal;
   font-size: 0.7em;
   color: gray;
 }
-main.person #part-of a, main.organisation #part-of a {
+main.person #part-of a,
+main.organisation #part-of a {
   color: black;
   padding: 0.5em 0;
   cursor: default;
   display: block;
   text-decoration: none;
 }
-main.person #part-of a h2, main.organisation #part-of a h2 {
+main.person #part-of a h2,
+main.organisation #part-of a h2 {
   font-weight: normal;
   margin: 0;
   cursor: pointer;
 }
-main.person #part-of a h2:hover, main.organisation #part-of a h2:hover {
+main.person #part-of a h2:hover,
+main.organisation #part-of a h2:hover {
   text-decoration: underline;
 }
-main.person #part-of a small, main.organisation #part-of a small {
+main.person #part-of a small,
+main.organisation #part-of a small {
   color: gray;
   font-family: KingsBureauGrotThreeSeven, sans-serif;
   font-size: 0.6em;
@@ -571,34 +731,41 @@ main.person #part-of a small, main.organisation #part-of a small {
   margin-left: 0.3em;
   font-style: normal;
 }
-main.person #part-of a span, main.organisation #part-of a span {
+main.person #part-of a span,
+main.organisation #part-of a span {
   font-family: KingsBureauGrotThreeSeven, sans-serif;
   display: block;
 }
-main.person ul, main.organisation ul {
+main.person ul,
+main.organisation ul {
   width: 100%;
   margin-left: -40px;
   list-style-type: none;
 }
-main.person ul li, main.organisation ul li {
+main.person ul li,
+main.organisation ul li {
   font-size: 1.2em;
 }
-main.person ul li a, main.organisation ul li a {
+main.person ul li a,
+main.organisation ul li a {
   color: black;
   padding: 0.5em 0;
   cursor: default;
   display: block;
   text-decoration: none;
 }
-main.person ul li a h2, main.organisation ul li a h2 {
+main.person ul li a h2,
+main.organisation ul li a h2 {
   font-weight: normal;
   cursor: pointer;
   margin: 0;
 }
-main.person ul li a h2:hover, main.organisation ul li a h2:hover {
+main.person ul li a h2:hover,
+main.organisation ul li a h2:hover {
   text-decoration: underline;
 }
-main.person ul li a small, main.organisation ul li a small {
+main.person ul li a small,
+main.organisation ul li a small {
   color: gray;
   font-family: KingsBureauGrotThreeSeven, sans-serif;
   font-size: 0.6em;
@@ -606,7 +773,8 @@ main.person ul li a small, main.organisation ul li a small {
   margin-left: 0.3em;
   font-style: normal;
 }
-main.person ul li a span, main.organisation ul li a span {
+main.person ul li a span,
+main.organisation ul li a span {
   font-family: KingsBureauGrotThreeSeven, sans-serif;
   display: block;
 }
@@ -634,36 +802,129 @@ nav.pagination ol li a:hover {
   color: black;
 }
 
+footer {
+  background: #5a6369;
+  margin-top: 2em;
+}
+footer .connect {
+  padding: 0 1em;
+  background: #0a2d50;
+  color: white;
+  width: 100%;
+}
+footer .connect .kdl-container {
+  display: flex;
+  align-items: center;
+}
+footer .connect .kdl-container h2 {
+  font-family: KingsBureauGrotThreeSeven, sans-serif;
+  font-weight: 400;
+}
+footer .connect .kdl-container ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+footer .connect .kdl-container ul li {
+  flex-direction: row;
+  justify-content: left;
+}
+footer .connect .kdl-container ul li a {
+  color: white;
+  min-width: 4em;
+  display: block;
+  text-decoration: none;
+}
+footer .connect .kdl-container ul li a img {
+  width: 3em;
+  border: 0.125em solid rgba(0, 0, 0, 0.4);
+  padding: 0.7em;
+  filter: invert(100%);
+  border-radius: 50%;
+}
+footer .connect .kdl-container ul li a img:hover {
+  background: white;
+  filter: invert(0);
+  border: 0.125em solid white;
+}
+footer .connect .kdl-container ul li a:hover {
+  text-decoration: underline;
+}
+footer nav.footer {
+  padding: 0 1em;
+  color: white;
+}
+footer nav.footer .kdl-container {
+  display: flex;
+}
+footer nav.footer .kdl-container h2 {
+  border-bottom: 0.13em solid rgb(139, 146, 150);
+  padding-bottom: 0.5em;
+  font-family: KingsBureauGrotFiveOne, sans-serif;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+footer nav.footer .kdl-container section {
+  margin-right: 2em;
+}
+footer nav.footer .kdl-container section ul {
+  margin-left: -40px;
+}
+footer nav.footer .kdl-container section ul li {
+  list-style-type: none;
+  padding-bottom: 1em;
+}
+footer nav.footer .kdl-container section ul li a {
+  color: white;
+  min-width: 6em;
+  display: block;
+  text-decoration: none;
+  font-family: KingsBureauGrotFiveOne, sans-serif;
+}
+footer nav.footer .kdl-container section ul li a:hover {
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+footer nav.footer .kdl-container section p {
+  line-height: 1.5;
+  padding: 0.4em 0 0 0;
+  margin: 0;
+}
+footer nav.footer .kdl-container section p a {
+  color: white;
+  font-family: KingsBureauGrotFiveOne, sans-serif;
+  cursor: pointer;
+}
+footer nav.footer .kdl-container section p a:hover {
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
 @media (max-width: 800px) {
+  header {
+    float: none;
+  }
   header .site a.sitename {
     font-size: 1.5em;
     padding: 0.5em 0;
   }
-  header .site a.kcl-logo img {
+  header .site a.logo img {
     width: 3.65em;
   }
-  header nav.main .wrapper > ul {
-    margin-top: 100px;
-    width: 100%;
+  header nav.main .kdl-container #menu-toggle ~ ul {
+    height: 0;
+    width: 0;
+    opacity: 1;
+    display: none;
   }
-  header nav.main .wrapper > ul > li {
-    margin: 0;
+  header nav.main .kdl-container #menu-toggle:checked ~ ul {
+    height: 100%;
     width: calc(100% + 40px);
-    color: white;
-    background-color: #222;
-    margin-left: 10px;
-    padding: 0;
+    opacity: 1;
+    margin-top: 0;
+    display: block;
   }
-  header nav.main .wrapper > ul > li:not(:last-child) {
-    border-bottom: 1px solid #444;
-  }
-  header nav.main .wrapper > ul > li:not(:last-child) > ul {
-    margin-left: -40px;
-  }
-  header nav.main .wrapper > ul > li:not(:last-child) > ul > li {
-    padding-left: 20px;
-  }
-  header nav.main .wrapper .menu-button-container {
+  header nav.main .kdl-container .kdl-menu-button-container {
     display: flex;
     position: absolute;
     right: 7em;
@@ -672,14 +933,30 @@ nav.pagination ol li a:hover {
     justify-content: normal;
     align-items: initial;
   }
-  header nav.main .wrapper #menu-toggle ~ ul {
-    width: 0;
-    opacity: 0;
+  header nav.main .kdl-container > ul {
+    margin-top: 50px;
+    width: 100%;
   }
-  header nav.main .wrapper #menu-toggle:checked ~ ul {
+  header nav.main .kdl-container > ul > li {
+    margin: 0;
     width: calc(100% + 40px);
-    opacity: 1;
-    margin-top: 0;
+    color: white;
+    background-color: #42494e;
+    margin-left: 10px;
+    padding: 0;
+  }
+  header nav.main .kdl-container > ul > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+  header nav.main .kdl-container > ul > li:not(:last-child) > ul {
+    margin-left: -40px;
+  }
+  header nav.main .kdl-container > ul > li:not(:last-child) > ul > li {
+    padding-left: 20px;
+  }
+  header nav.main.kdl-container > ul {
+    margin-top: 100px;
+    width: 100%;
   }
   header nav.sub {
     border: none;
@@ -687,39 +964,40 @@ nav.pagination ol li a:hover {
   main.project {
     padding: 1em 1em;
   }
-  main.project .wrapper {
+  main.project .kdl-container {
     display: block;
   }
-  main.project .wrapper section {
+  main.project .kdl-container section {
     width: 100%;
     margin: 0;
   }
-  main.project .wrapper section:last-child {
+  main.project .kdl-container section:last-child {
     width: 100%;
     background: none;
     border-top: 0.01em solid black;
   }
-  main.project .wrapper section #metadata {
+  main.project .kdl-container section #metadata {
     margin: 0;
     padding-top: 1em;
   }
-  main.project .wrapper section #metadata span {
+  main.project .kdl-container section #metadata span {
     background: rgb(40, 195, 130);
     margin-left: 0;
     padding: 0.3em 0.5em;
   }
-  main.project .wrapper section #team {
+  main.project .kdl-container section #team {
     width: 100%;
     display: block;
     border-top: 0.01em solid;
   }
-  main.project .wrapper section #team h2 {
+  main.project .kdl-container section #team h2 {
     width: 100%;
   }
-  main.project .wrapper section #team ul {
+  main.project .kdl-container section #team ul {
     display: block;
   }
-  main.people ul, main.organisations ul {
+  main.people ul,
+main.organisations ul {
     columns: 1;
     -webkit-columns: 1;
     -moz-columns: 1;
@@ -748,5 +1026,36 @@ nav.pagination ol li a:hover {
   }
   main.person ul li {
     font-size: 1.2em;
+  }
+  main.post .kdl-container, main.faqs .kdl-container {
+    display: block;
+  }
+  main.post .kdl-container aside, main.faqs .kdl-container aside {
+    margin: 0 0 1em 0;
+    padding: 0.1em 1em;
+  }
+  footer {
+    background: #5a6369;
+  }
+  footer .connect {
+    text-align: center;
+    padding: 0.1em 0;
+  }
+  footer .connect .kdl-container {
+    display: block;
+  }
+  footer .connect .kdl-container h2 {
+    font-family: KingsBureauGrotThreeSeven, sans-serif;
+    font-weight: 400;
+    width: 100%;
+  }
+  footer .connect .kdl-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  footer nav.footer .kdl-container {
+    display: block;
   }
 }
