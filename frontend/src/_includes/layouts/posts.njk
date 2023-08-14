@@ -15,6 +15,7 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 
         <figcaption>{{ post.feature.description }}</figcaption>
       </figure>
     </a>
+    <section>
     <a href="{{ post.url }}">
       <h2>{{ post.data.title }}</h2>
     </a>
@@ -31,6 +32,7 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 
     {% endif %}
 
     <p>{{ post.data.excerpt }}</p>
+    </section>
   </article>
 {%- endfor -%}
 

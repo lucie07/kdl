@@ -642,24 +642,34 @@ main.projects {
 
 //-- Blog Index page --
 main.posts {
+  padding:0 1em;
   article {
     width: 100%;
     display: flex;
-    header {
-      display: flex;
-    } //header
+    margin-bottom: 1em;
     figure {
       width: 100%;
       margin: 0;
       img {
-        width: 30em;
         height: auto;
         max-width: 15em;
         object-fit: contain;
         display: inline-block;
         vertical-align: top;
-      }
-    }
+      }//img
+    }//figure
+    section{
+      margin-left: 2em;
+      a{ 
+        text-decoration: none;
+        h2{
+        margin-top: 0;
+      }//h2
+      &:hover{
+        text-decoration:underline;
+      }//&:hover
+    }//a
+    }//section
   } //article
 } //main.posts
 
@@ -1173,6 +1183,23 @@ footer {
     } //ul
   } //main.person
 
+  //-- Blog Index page --
+  main.posts {
+    article {
+      width: 100%;
+      display: block;
+      a{
+        figure{
+          img{
+            max-width:100%;
+          }//img
+        }//figure
+      }//a
+      section{
+        margin:1em 0 0 0;
+      }//section
+    }//article
+  }//main.posts
   //-- Blog Individual Page & FAQs --
   main.post,
   main.faqs {
