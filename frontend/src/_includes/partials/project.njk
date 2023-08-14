@@ -1,18 +1,11 @@
-<dl>
-    <dt>
-        Partner institutions:
-    </dt>
-    {%- for department in project.department %}
-        <dd>
-            {{ department.organisation_id.agent.name }}
-        </dd>
-    {%- endfor %}
-    {% if project.foundingDate %}
-        <dt>
-            Dates:
-        </dt>
-        <dd>
-            {{ project.foundingDate | asProjectDate }}&#8211;{{ project.dissolutionDate | asProjectDate }}
-        </dd>
-    {% endif %}
-</dl>
+<h{% if level %}{{ level }}{% else %}2{% endif %}>
+  {{ project.name }}<small>{{ project.slug }}</small>
+</h{% if level %}{{ level }}{% else %}2{% endif %}>
+{% if project.department %}
+<span>
+  {%- for department in project.department %}{{ department.organisation_id.agent.name }},{% endfor %}
+  {% if project.foundingDate %}
+    {{ project.foundingDate | asProjectDate }}&#8211;{{ project.dissolutionDate | asProjectDate }}
+  {% endif %}
+</span>
+{% endif %}
