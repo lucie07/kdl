@@ -1,0 +1,25 @@
+{% extends "layouts/base.njk" %}
+
+{% block stylesheets %}
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  {{ super() }}
+{% endblock stylesheets %}
+
+{% block content %}
+  <div class="kdl-container">
+    <h1>Search</h1>
+
+    {{ content | safe }}
+
+    <div id="search" role="search"></div>
+  </div>
+{% endblock content %}
+
+{% block bodyEnd %}
+  <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      new PagefindUI({element: "#search", showImages: false});
+    });
+  </script>
+{% endblock bodyEnd %}

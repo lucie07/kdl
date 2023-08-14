@@ -14,11 +14,6 @@
   {% seo "" %}
 {% endblock headMeta %}
 
-{% block stylesheets %}
-  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
-  {{ super() }}
-{% endblock stylesheets %}
-
 {% block headerStart %}
   <div class="site">
     <div class="kdl-container">
@@ -46,8 +41,6 @@
 {% endblock menu %}
 
 {% block headerEnd %}
-  <div id="search" role="search"></div>
-
   {% if navKey and navKey != "Home" %}
     {{- breadcrumbsMacro({
         pages: collections.all | eleventyNavigationBreadcrumb(navKey, { includeSelf: true }) 
@@ -57,7 +50,6 @@
 {% endblock headerEnd %}
  
 {% block content %}
- 
   <div class="kdl-container">
     <h1>{{ title | safe }}</h1>
 
@@ -73,12 +65,3 @@
 
   </footer>
 {% endblock footer %}
-
-{% block bodyEnd %}
-  <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
-  <script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-      new PagefindUI({element: "#search"});
-    });
-  </script>
-{% endblock bodyEnd %}
