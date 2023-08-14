@@ -145,7 +145,6 @@ main {
 //-- Header/Navigation --
 
 header {
-  float: left;
   width: 100%;
   .site {
     padding: 0 1em;
@@ -474,7 +473,7 @@ header {
 //-- Projects Index Page --
 
 main.projects {
-  padding: 5em 1em;
+  padding: 2em 1em;
   a {
     //display:inline-block;
     color: $navy;
@@ -570,16 +569,19 @@ main.projects {
           } //dd
         } //dl
         span {
-          background: rgb(40, 195, 130);
+          background: $darkgray;
           margin-left: -5%;
           padding: 0.3em 0.5em;
+          margin-bottom:1em;
+          color:white;
         }
-        #links {
+        #links, .funder {
           border-bottom: 0.3em solid rgb(220, 227, 230);
           width: 100%;
-          padding-top: 2em;
+          padding: 1em 0;
           ul {
             margin: 0 0 0 -20px;
+            list-style-type: circle;
             li {
               margin-bottom: 0.5em;
               a {
@@ -656,6 +658,10 @@ main.posts {
         object-fit: contain;
         display: inline-block;
         vertical-align: top;
+        &:hover{
+          filter:grayscale(100%);
+          transition: transform 1s, filter 0.5s ease-in-out;
+        }
       }//img
     }//figure
     section{
@@ -792,6 +798,9 @@ main.organisations {
 main.person,
 main.organisation {
   padding: 0 1em;
+  h1{
+    width:100%;
+  }//h1
   article {
     img {
       width: 30%;
@@ -802,9 +811,9 @@ main.organisation {
       vertical-align: top;
     }
     section {
-      display: inline-block;
-      width: 60%;
-      padding-left: 5%;
+      display: block;
+      width: 100%;
+      padding:1em 0;
       border-bottom: 0.01em solid black;
       h2 {
         margin: 0;
@@ -821,33 +830,35 @@ main.organisation {
   #part-of {
     a {
       //display:inline-block;
-      color: black;
+      color: $navy;
       padding: 0.5em 0;
       cursor: default;
       display: block;
       text-decoration: none;
-      h2 {
+      h3 {
         font-weight: normal;
         margin: 0;
         cursor: pointer;
-        &:hover {
-          text-decoration: underline;
-        }
-      } //h2
-      small {
-        color: gray;
-        font-family: KingsBureauGrotThreeSeven, sans-serif;
-        font-size: 0.6em;
-        display: inline-block;
-        margin-left: 0.3em;
-        font-style: normal;
-        //color: #c11609;
-        //font-family: "KingsCaslon",serif;
-      } //small
+        small {
+          color: gray;
+          font-family: KingsBureauGrotThreeSeven, sans-serif;
+          font-size: 0.6em;
+          display: inline-block;
+          margin-left: 0.3em;
+          font-weight: normal;
+          //color: #c11609;
+          //font-family: "KingsCaslon",serif;
+        } //small
+       
+      } //h3
       span {
         font-family: KingsBureauGrotThreeSeven, sans-serif;
         display: block;
       } //span
+      &:hover{
+        color:lighten($navy,15%);
+          text-decoration: underline;
+      }//&:hover
     } //a
   }
   ul {
@@ -900,6 +911,7 @@ nav.pagination {
   ol {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     li {
       border: none;
       flex: 1;
@@ -911,6 +923,10 @@ nav.pagination {
         &:hover {
           color: black;
         } //&:hover
+        span{
+          display: inline-block;
+          font-family: "KingsCaslon", serif;
+        }
       } //a
     } //li
   } //ol

@@ -56,14 +56,14 @@ layout: layouts/base.njk
 
     {% if project.funder %}
       <div class="funder">
-        <dl>
+        <h3>Funder</h3>
+        <ul>
           {% for funder in project.funder %}
-            <dt>Funder</dt>
-            <dd>
+            <li>
               <a href="{% route funder.agent_id.slug, 'Organisations' %}">{{- funder.agent_id.name -}}</a>
-            </dd>
+            </li>
           {% endfor %}
-        </dl>
+        </ul>
       </div>
     {% endif %}
 
