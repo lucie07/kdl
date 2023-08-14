@@ -2,14 +2,37 @@
 layout: layouts/base.njk
 permalink: "blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
 ---
-{% from "kdl/components/article/macros.njk" import articleMacro %}
+
+{% from "kdl/components/person/macros.njk" import authorMacro %}
+{% from "kdl/components/time/macros.njk" import timeMacro %}
+
 {%- for post in posts -%}
-    {{-
-    articleMacro(post.data, {
-    addLink: true,
-    contentField: "excerpt"
-    })
-    -}}
+  <article>
+    <a href="{{ post.url }}">
+      <figure>
+        <img src="{{ post.data.feature.image }}"
+             alt="{{ post.data.feature.description }}">
+        <figcaption>{{ post.feature.description }}</figcaption>
+      </figure>
+    </a>
+    <a href="{{ post.url }}">
+      <h2>{{ post.data.title }}</h2>
+    </a>
+
+    {% if post.data.authors %}
+      by
+      {% for person in post.data.collections.people | filter(post.data.authors, "data.id") %}
+        {{- authorMacro(person) -}}
+        {%- if not loop.last -%},{%- endif -%}
+      {% endfor %}
+    {% endif %}
+    {% if post.data.date %}
+      on {{ timeMacro(post.data.date) -}}
+    {% endif %}
+
+    <p>{{ post.data.excerpt }}</p>
+  </article>
 {%- endfor -%}
+
 {% set label = "Posts" %}
 {% include "partials/pagination.njk" %}
