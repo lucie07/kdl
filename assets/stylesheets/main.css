@@ -100,7 +100,6 @@ main img {
 }
 
 header {
-  float: left;
   width: 100%;
 }
 header .site {
@@ -394,7 +393,7 @@ header nav.sub ul li:last-child {
 }
 
 main.projects {
-  padding: 5em 1em;
+  padding: 2em 1em;
 }
 main.projects a {
   color: #0a2d50;
@@ -478,26 +477,29 @@ main.projects a span {
   margin-top: 0.5em;
 }
 .project .kdl-container section #metadata span {
-  background: rgb(40, 195, 130);
+  background: #5a6369;
   margin-left: -5%;
   padding: 0.3em 0.5em;
+  margin-bottom: 1em;
+  color: white;
 }
-.project .kdl-container section #metadata #links {
+.project .kdl-container section #metadata #links, .project .kdl-container section #metadata .funder {
   border-bottom: 0.3em solid rgb(220, 227, 230);
   width: 100%;
-  padding-top: 2em;
+  padding: 1em 0;
 }
-.project .kdl-container section #metadata #links ul {
+.project .kdl-container section #metadata #links ul, .project .kdl-container section #metadata .funder ul {
   margin: 0 0 0 -20px;
+  list-style-type: circle;
 }
-.project .kdl-container section #metadata #links ul li {
+.project .kdl-container section #metadata #links ul li, .project .kdl-container section #metadata .funder ul li {
   margin-bottom: 0.5em;
 }
-.project .kdl-container section #metadata #links ul li a {
+.project .kdl-container section #metadata #links ul li a, .project .kdl-container section #metadata .funder ul li a {
   font-size: 1.2em;
   text-decoration: none;
 }
-.project .kdl-container section #metadata #links ul li a:hover {
+.project .kdl-container section #metadata #links ul li a:hover, .project .kdl-container section #metadata .funder ul li a:hover {
   text-decoration: underline;
   text-decoration-style: solid;
   -webkit-transition: all 200ms ease-in;
@@ -547,24 +549,40 @@ main.projects a span {
   display: block;
 }
 
+main.posts {
+  padding: 0 1em;
+}
 main.posts article {
   width: 100%;
   display: flex;
-}
-main.posts article header {
-  display: flex;
+  margin-bottom: 1em;
 }
 main.posts article figure {
   width: 100%;
   margin: 0;
 }
 main.posts article figure img {
-  width: 30em;
   height: auto;
   max-width: 15em;
   object-fit: contain;
   display: inline-block;
   vertical-align: top;
+}
+main.posts article figure img:hover {
+  filter: grayscale(100%);
+  transition: transform 1s, filter 0.5s ease-in-out;
+}
+main.posts article section {
+  margin-left: 2em;
+}
+main.posts article section a {
+  text-decoration: none;
+}
+main.posts article section a h2 {
+  margin-top: 0;
+}
+main.posts article section a:hover {
+  text-decoration: underline;
 }
 
 main.post,
@@ -697,6 +715,10 @@ main.person,
 main.organisation {
   padding: 0 1em;
 }
+main.person h1,
+main.organisation h1 {
+  width: 100%;
+}
 main.person article img,
 main.organisation article img {
   width: 30%;
@@ -708,9 +730,9 @@ main.organisation article img {
 }
 main.person article section,
 main.organisation article section {
-  display: inline-block;
-  width: 60%;
-  padding-left: 5%;
+  display: block;
+  width: 100%;
+  padding: 1em 0;
   border-bottom: 0.01em solid black;
 }
 main.person article section h2,
@@ -726,35 +748,36 @@ main.organisation article section h2 span {
 }
 main.person #part-of a,
 main.organisation #part-of a {
-  color: black;
+  color: #0a2d50;
   padding: 0.5em 0;
   cursor: default;
   display: block;
   text-decoration: none;
 }
-main.person #part-of a h2,
-main.organisation #part-of a h2 {
+main.person #part-of a h3,
+main.organisation #part-of a h3 {
   font-weight: normal;
   margin: 0;
   cursor: pointer;
 }
-main.person #part-of a h2:hover,
-main.organisation #part-of a h2:hover {
-  text-decoration: underline;
-}
-main.person #part-of a small,
-main.organisation #part-of a small {
+main.person #part-of a h3 small,
+main.organisation #part-of a h3 small {
   color: gray;
   font-family: KingsBureauGrotThreeSeven, sans-serif;
   font-size: 0.6em;
   display: inline-block;
   margin-left: 0.3em;
-  font-style: normal;
+  font-weight: normal;
 }
 main.person #part-of a span,
 main.organisation #part-of a span {
   font-family: KingsBureauGrotThreeSeven, sans-serif;
   display: block;
+}
+main.person #part-of a:hover,
+main.organisation #part-of a:hover {
+  color: #135394;
+  text-decoration: underline;
 }
 main.person ul,
 main.organisation ul {
@@ -807,6 +830,7 @@ nav.pagination {
 nav.pagination ol {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 nav.pagination ol li {
   border: none;
@@ -820,6 +844,10 @@ nav.pagination ol li a {
 }
 nav.pagination ol li a:hover {
   color: black;
+}
+nav.pagination ol li a span {
+  display: inline-block;
+  font-family: "KingsCaslon", serif;
 }
 
 footer {
@@ -1046,6 +1074,16 @@ main.organisations ul {
   }
   main.person ul li {
     font-size: 1.2em;
+  }
+  main.posts article {
+    width: 100%;
+    display: block;
+  }
+  main.posts article a figure img {
+    max-width: 100%;
+  }
+  main.posts article section {
+    margin: 1em 0 0 0;
   }
   main.post .kdl-container,
 main.faqs .kdl-container {
