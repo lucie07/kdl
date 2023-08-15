@@ -23,8 +23,9 @@ layout: layouts/agent.njk
           <li>
             {% if member.inProject %}
               <a href="{% route member.inProject.slug, 'Projects' %}">
-                {% set project = member.inProject %}
                 {% set level = 3 %}
+                {% set project = member.inProject %}
+                {% set showTitle = true %}
                 {%- include "partials/project.njk" -%}
               </a>
             {% else %}
