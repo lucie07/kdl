@@ -483,23 +483,28 @@ main.projects a span {
   margin-bottom: 1em;
   color: white;
 }
-.project .kdl-container section #metadata #links, .project .kdl-container section #metadata .funder {
+.project .kdl-container section #metadata #links,
+.project .kdl-container section #metadata .funder {
   border-bottom: 0.3em solid rgb(220, 227, 230);
   width: 100%;
   padding: 1em 0;
 }
-.project .kdl-container section #metadata #links ul, .project .kdl-container section #metadata .funder ul {
+.project .kdl-container section #metadata #links ul,
+.project .kdl-container section #metadata .funder ul {
   margin: 0 0 0 -20px;
   list-style-type: circle;
 }
-.project .kdl-container section #metadata #links ul li, .project .kdl-container section #metadata .funder ul li {
+.project .kdl-container section #metadata #links ul li,
+.project .kdl-container section #metadata .funder ul li {
   margin-bottom: 0.5em;
 }
-.project .kdl-container section #metadata #links ul li a, .project .kdl-container section #metadata .funder ul li a {
+.project .kdl-container section #metadata #links ul li a,
+.project .kdl-container section #metadata .funder ul li a {
   font-size: 1.2em;
   text-decoration: none;
 }
-.project .kdl-container section #metadata #links ul li a:hover, .project .kdl-container section #metadata .funder ul li a:hover {
+.project .kdl-container section #metadata #links ul li a:hover,
+.project .kdl-container section #metadata .funder ul li a:hover {
   text-decoration: underline;
   text-decoration-style: solid;
   -webkit-transition: all 200ms ease-in;
@@ -933,17 +938,21 @@ footer nav.footer .kdl-container section ul li a:hover {
   text-decoration: underline;
   text-decoration-style: solid;
 }
-footer nav.footer .kdl-container section p {
+footer nav.footer .kdl-container section p,
+footer nav.footer .kdl-container section address {
+  font-style: normal;
   line-height: 1.5;
   padding: 0.4em 0 0 0;
   margin: 0;
 }
-footer nav.footer .kdl-container section p a {
+footer nav.footer .kdl-container section p a,
+footer nav.footer .kdl-container section address a {
   color: white;
   font-family: KingsBureauGrotFiveOne, sans-serif;
   cursor: pointer;
 }
-footer nav.footer .kdl-container section p a:hover {
+footer nav.footer .kdl-container section p a:hover,
+footer nav.footer .kdl-container section address a:hover {
   text-decoration: underline;
   text-decoration-style: solid;
 }
