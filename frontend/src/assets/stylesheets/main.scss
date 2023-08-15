@@ -852,82 +852,66 @@ main.organisation {
           color: gray;
         } //span
       } //h2
+      #part-of {
+        ul {
+          width: 100%;
+          margin-left: -40px;
+          list-style-type: none;
+          li {
+            font-size: 1.2em;
+            a {
+              //display:inline-block;
+              color: $navy;
+              padding: 0.5em 0;
+              cursor: default;
+              display: block;
+              text-decoration: none;
+              line-height: 1.4;
+              h3{
+                font-family: KingsCaslon, serif;
+                //font-family: KingsBureauGrotThreeSeven, sans-serif;
+                //font-family: KingsBureauGrotFiveOne, sans-serif;
+                font-weight: normal;
+                cursor: pointer;
+                margin: 0;
+                line-height: 1;
+                display: inline-block;
+                &:hover {
+                  text-decoration: underline;
+                  //text-decoration-style: double;
+                  color: lighten($navy, 15%);
+                }
+              } //h3
+              small {
+                color: gray;
+                font-family: KingsBureauGrotFiveOne, sans-serif;
+                //font-family: KingsBureauGrotThreeSeven, sans-serif;
+                font-weight: 400;
+                font-size: 0.6em;
+                display: inline-block;
+                margin-left: 0.3em;
+                font-style: normal;
+                //color: #c11609;
+                //font-family: "KingsCaslon",serif;
+              } //small
+              span {
+                font-family: KingsBureauGrotFiveOne, sans-serif;
+                //font-family: KingsCaslon, serif;
+                font-weight: normal;
+                display: block;
+              } //span
+            } //a
+          } //li
+        } //ul
+      }
+
+
+
     } //section
   } //article
 
-  #part-of {
-    a {
-      //display:inline-block;
-      color: $navy;
-      padding: 0.5em 0;
-      cursor: default;
-      display: block;
-      text-decoration: none;
-      h3 {
-        font-weight: normal;
-        margin: 0;
-        cursor: pointer;
-        small {
-          color: gray;
-          font-family: KingsBureauGrotThreeSeven, sans-serif;
-          font-size: 0.6em;
-          display: inline-block;
-          margin-left: 0.3em;
-          font-weight: normal;
-          //color: #c11609;
-          //font-family: "KingsCaslon",serif;
-        } //small
-      } //h3
-      span {
-        font-family: KingsBureauGrotThreeSeven, sans-serif;
-        display: block;
-      } //span
-      &:hover {
-        color: lighten($navy, 15%);
-        text-decoration: underline;
-      } //&:hover
-    } //a
-  }
-  ul {
-    width: 100%;
-    margin-left: -40px;
-    list-style-type: none;
-    li {
-      font-size: 1.2em;
-      a {
-        //display:inline-block;
-        color: black;
-        padding: 0.5em 0;
-        cursor: default;
-        display: block;
-        text-decoration: none;
-        h2 {
-          font-weight: normal;
-          cursor: pointer;
-          margin: 0;
+  
 
-          &:hover {
-            text-decoration: underline;
-            //text-decoration-style: double;
-          }
-        } //h2
-        small {
-          color: gray;
-          font-family: KingsBureauGrotThreeSeven, sans-serif;
-          font-size: 0.6em;
-          display: inline-block;
-          margin-left: 0.3em;
-          font-style: normal;
-          //color: #c11609;
-          //font-family: "KingsCaslon",serif;
-        } //small
-        span {
-          font-family: KingsBureauGrotThreeSeven, sans-serif;
-          display: block;
-        } //span
-      } //a
-    } //li
-  } //ul
 } //main.person
 
 //-- Page Pagination --
