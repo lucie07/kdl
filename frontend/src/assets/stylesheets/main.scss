@@ -572,10 +572,11 @@ main.projects {
           background: $darkgray;
           margin-left: -5%;
           padding: 0.3em 0.5em;
-          margin-bottom:1em;
-          color:white;
+          margin-bottom: 1em;
+          color: white;
         }
-        #links, .funder {
+        #links,
+        .funder {
           border-bottom: 0.3em solid rgb(220, 227, 230);
           width: 100%;
           padding: 1em 0;
@@ -644,7 +645,7 @@ main.projects {
 
 //-- Blog Index page --
 main.posts {
-  padding:0 1em;
+  padding: 0 1em;
   article {
     width: 100%;
     display: flex;
@@ -658,24 +659,24 @@ main.posts {
         object-fit: contain;
         display: inline-block;
         vertical-align: top;
-        &:hover{
-          filter:grayscale(100%);
+        &:hover {
+          filter: grayscale(100%);
           transition: transform 1s, filter 0.5s ease-in-out;
         }
-      }//img
-    }//figure
-    section{
+      } //img
+    } //figure
+    section {
       margin-left: 2em;
-      a{ 
+      a {
         text-decoration: none;
-        h2{
-        margin-top: 0;
-      }//h2
-      &:hover{
-        text-decoration:underline;
-      }//&:hover
-    }//a
-    }//section
+        h2 {
+          margin-top: 0;
+        } //h2
+        &:hover {
+          text-decoration: underline;
+        } //&:hover
+      } //a
+    } //section
   } //article
 } //main.posts
 
@@ -798,9 +799,9 @@ main.organisations {
 main.person,
 main.organisation {
   padding: 0 1em;
-  h1{
-    width:100%;
-  }//h1
+  h1 {
+    width: 100%;
+  } //h1
   article {
     img {
       width: 30%;
@@ -813,7 +814,7 @@ main.organisation {
     section {
       display: block;
       width: 100%;
-      padding:1em 0;
+      padding: 1em 0;
       border-bottom: 0.01em solid black;
       h2 {
         margin: 0;
@@ -849,16 +850,15 @@ main.organisation {
           //color: #c11609;
           //font-family: "KingsCaslon",serif;
         } //small
-       
       } //h3
       span {
         font-family: KingsBureauGrotThreeSeven, sans-serif;
         display: block;
       } //span
-      &:hover{
-        color:lighten($navy,15%);
-          text-decoration: underline;
-      }//&:hover
+      &:hover {
+        color: lighten($navy, 15%);
+        text-decoration: underline;
+      } //&:hover
     } //a
   }
   ul {
@@ -923,7 +923,7 @@ nav.pagination {
         &:hover {
           color: black;
         } //&:hover
-        span{
+        span {
           display: inline-block;
           font-family: "KingsCaslon", serif;
         }
@@ -1013,7 +1013,9 @@ footer {
             } //a
           } //li
         } //ul
-        p {
+        p,
+        address {
+          font-style: normal;
           line-height: 1.5;
           padding: 0.4em 0 0 0;
           margin: 0;
@@ -1204,18 +1206,18 @@ footer {
     article {
       width: 100%;
       display: block;
-      a{
-        figure{
-          img{
-            max-width:100%;
-          }//img
-        }//figure
-      }//a
-      section{
-        margin:1em 0 0 0;
-      }//section
-    }//article
-  }//main.posts
+      a {
+        figure {
+          img {
+            max-width: 100%;
+          } //img
+        } //figure
+      } //a
+      section {
+        margin: 1em 0 0 0;
+      } //section
+    } //article
+  } //main.posts
   //-- Blog Individual Page & FAQs --
   main.post,
   main.faqs {
