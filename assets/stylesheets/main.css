@@ -1061,7 +1061,7 @@ footer nav.footer .kdl-container section address a:hover {
   }
   main.project .kdl-container section #metadata {
     margin: 0;
-    padding-top: 1em;
+    padding: 1em 0 2em 0;
   }
   main.project .kdl-container section #metadata span {
     background: rgb(40, 195, 130);
