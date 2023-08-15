@@ -532,6 +532,8 @@ main.projects {
         font-weight: normal;
       } //small
     } //h1
+    article{
+      display: flex;
     section {
       //display: block;
       //width: 70%;
@@ -568,12 +570,13 @@ main.projects {
             margin-top: 0.5em;
           } //dd
         } //dl
-        span {
+        span.status {
           background: $darkgray;
           margin-left: -5%;
           padding: 0.3em 0.5em;
           margin-bottom: 1em;
           color: white;
+          font-size:1.2em;
         }
         #links,
         .funder {
@@ -600,6 +603,20 @@ main.projects {
         .funder {
           border-bottom: 0.3em solid rgb(220, 227, 230);
         } //#funder
+        .date{
+          ul{
+            margin: 0 0 0 -20px;
+            list-style-type: circle;
+            span{
+              background:none;
+              margin:0;
+              padding:0;
+              font-family: "KingsCaslon",serif;
+              color:black;
+
+            }//span
+          }//ul
+        }//.date
       } //#metatdata
 
       .post-meta {
@@ -640,6 +657,7 @@ main.projects {
         } //ul
       } //#team
     } //>section 2nd level
+  }//article
   } //.wrapper
 } //.project
 
