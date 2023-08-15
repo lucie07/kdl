@@ -646,45 +646,53 @@ main.projects {
 //-- Blog Index page --
 main.posts {
   padding: 0 1em;
+  float: left;
+  width: 100%;
   article {
-    width: 100%;
-    display: flex;
-    margin-bottom: 1em;
-    figure {
+    display: block;
+    article {
       width: 100%;
-      margin: 0;
-      img {
-        height: auto;
-        max-width: 15em;
-        object-fit: contain;
-        display: inline-block;
-        vertical-align: top;
-        &:hover {
-          filter: grayscale(100%);
-          transition: transform 1s, filter 0.5s ease-in-out;
-        }
-      } //img
-    } //figure
-    section {
-      margin-left: 2em;
-      a {
-        text-decoration: none;
-        h2 {
-          margin-top: 0;
-        } //h2
-        &:hover {
-          text-decoration: underline;
-        } //&:hover
-      } //a
-    } //section
+      display: flex;
+      margin-bottom: 1em;
+      figure {
+        width: 100%;
+        margin: 0;
+        img {
+          height: auto;
+          max-width: 15em;
+          object-fit: contain;
+          display: inline-block;
+          vertical-align: top;
+          &:hover {
+            filter: grayscale(100%);
+            transition: transform 1s, filter 0.5s ease-in-out;
+          }
+        } //img
+      } //figure
+      section {
+        margin-left: 2em;
+        a {
+          text-decoration: none;
+          h2 {
+            margin-top: 0;
+          } //h2
+          &:hover {
+            text-decoration: underline;
+          } //&:hover
+        } //a
+      } //section
+    } //article
   } //article
 } //main.posts
 
 //-- Blog Individual Page & FAQs --
 main.post,
 main.faqs,
-main.base {
+main.base,
+main.home {
   padding: 0 1em;
+  float: left;
+  width: 100%;
   .kdl-container {
     display: flex;
     flex-wrap: wrap;
@@ -750,7 +758,7 @@ main.base {
       background: white;
     } //footer
   } //.kdl-container
-} //main.post, main.faqs
+} //main.post, main.faqs, main.base
 
 //-- People/Organisations Index Page --
 main.people,
@@ -937,6 +945,8 @@ nav.pagination {
 footer {
   background: $darkgray;
   margin-top: 2em;
+  float: left;
+  width: 100%;
   .connect {
     padding: 0 1em;
     background: $navy;
@@ -1221,7 +1231,9 @@ footer {
   } //main.posts
   //-- Blog Individual Page & FAQs --
   main.post,
-  main.faqs {
+  main.faqs,
+  main.base,
+  main.home {
     .kdl-container {
       display: block;
       aside {
@@ -1229,7 +1241,7 @@ footer {
         padding: 0.1em 1em;
       } //aside
     } //.kdl-container
-  } //main.post, main.faqs
+  } //main.post, main.faqs, main.base, main.home
 
   footer {
     background: $darkgray;
