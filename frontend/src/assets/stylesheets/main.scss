@@ -558,7 +558,7 @@ main.projects {
       } //figure
       #metadata {
         margin: 0 5%;
-        padding-top: 1em;
+        padding: 1em 0 2em 0;
         dl {
           dt {
             margin-top: 1.5em;
@@ -1139,6 +1139,8 @@ footer {
     padding: 1em 1em;
     .kdl-container {
       display: block;
+      article{
+        display:block;
       section {
         width: 100%;
         margin: 0;
@@ -1149,9 +1151,7 @@ footer {
         } //&:last-child{
         #metadata {
           margin: 0;
-          padding: 1em 0 2em 0;
-          span {
-            background: rgb(40, 195, 130);
+          span.status {
             margin-left: 0;
             padding: 0.3em 0.5em;
           }
@@ -1169,6 +1169,7 @@ footer {
           } //ul
         } //#team
       } //>section
+    }//article
     } //.wrapper
   } //.project
 
