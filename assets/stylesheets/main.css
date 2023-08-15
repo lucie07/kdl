@@ -591,21 +591,23 @@ main.posts article section a:hover {
 }
 
 main.post,
-main.faqs, main.base {
+main.faqs, main.base, main.home {
   padding: 0 1em;
+  float: left;
+  width: 100%;
 }
 main.post .kdl-container,
-main.faqs .kdl-container, main.base .kdl-container {
+main.faqs .kdl-container, main.base .kdl-container, main.home .kdl-container {
   display: flex;
   flex-wrap: wrap;
 }
 main.post .kdl-container h1,
-main.faqs .kdl-container h1, main.base .kdl-container h1 {
+main.faqs .kdl-container h1, main.base .kdl-container h1, main.home .kdl-container h1 {
   width: 100%;
   order: 1;
 }
 main.post .kdl-container aside,
-main.faqs .kdl-container aside, main.base .kdl-container aside {
+main.faqs .kdl-container aside, main.base .kdl-container aside, main.home .kdl-container aside {
   flex: 1;
   background: rgb(237, 241, 242);
   order: 3;
@@ -613,28 +615,28 @@ main.faqs .kdl-container aside, main.base .kdl-container aside {
   padding: 0 1em;
 }
 main.post .kdl-container aside ol,
-main.faqs .kdl-container aside ol, main.base .kdl-container aside ol {
+main.faqs .kdl-container aside ol, main.base .kdl-container aside ol, main.home .kdl-container aside ol {
   margin-left: -20px;
   counter-reset: counter;
   list-style: none;
 }
 main.post .kdl-container aside ol li,
-main.faqs .kdl-container aside ol li, main.base .kdl-container aside ol li {
+main.faqs .kdl-container aside ol li, main.base .kdl-container aside ol li, main.home .kdl-container aside ol li {
   counter-increment: counter;
   line-height: 1.3;
   margin-top: 0.5em;
   font-weight: bold;
 }
 main.post .kdl-container aside ol li a,
-main.faqs .kdl-container aside ol li a, main.base .kdl-container aside ol li a {
+main.faqs .kdl-container aside ol li a, main.base .kdl-container aside ol li a, main.home .kdl-container aside ol li a {
   text-decoration: none;
 }
 main.post .kdl-container aside ol li a:hover,
-main.faqs .kdl-container aside ol li a:hover, main.base .kdl-container aside ol li a:hover {
+main.faqs .kdl-container aside ol li a:hover, main.base .kdl-container aside ol li a:hover, main.home .kdl-container aside ol li a:hover {
   text-decoration: underline;
 }
 main.post .kdl-container aside ol li:before,
-main.faqs .kdl-container aside ol li:before, main.base .kdl-container aside ol li:before {
+main.faqs .kdl-container aside ol li:before, main.base .kdl-container aside ol li:before, main.home .kdl-container aside ol li:before {
   content: counters(counter, ".");
   position: absolute;
   margin-left: -1em;
@@ -644,28 +646,28 @@ main.faqs .kdl-container aside ol li:before, main.base .kdl-container aside ol l
   color: #e12726;
 }
 main.post .kdl-container aside ol li ol li:before,
-main.faqs .kdl-container aside ol li ol li:before, main.base .kdl-container aside ol li ol li:before {
+main.faqs .kdl-container aside ol li ol li:before, main.base .kdl-container aside ol li ol li:before, main.home .kdl-container aside ol li ol li:before {
   margin-left: -1.7em;
   margin-top: 0.4em;
   font-size: 0.7em;
   font-weight: bold;
 }
 main.post .kdl-container > article,
-main.faqs .kdl-container > article, main.base .kdl-container > article {
+main.faqs .kdl-container > article, main.base .kdl-container > article, main.home .kdl-container > article {
   flex: 3;
   order: 2;
 }
 main.post .kdl-container > article figure,
-main.faqs .kdl-container > article figure, main.base .kdl-container > article figure {
+main.faqs .kdl-container > article figure, main.base .kdl-container > article figure, main.home .kdl-container > article figure {
   width: 100%;
   margin: 0;
 }
 main.post .kdl-container > article figure img,
-main.faqs .kdl-container > article figure img, main.base .kdl-container > article figure img {
+main.faqs .kdl-container > article figure img, main.base .kdl-container > article figure img, main.home .kdl-container > article figure img {
   width: 100%;
 }
 main.post .kdl-container footer,
-main.faqs .kdl-container footer, main.base .kdl-container footer {
+main.faqs .kdl-container footer, main.base .kdl-container footer, main.home .kdl-container footer {
   background: white;
 }
 
@@ -858,6 +860,8 @@ nav.pagination ol li a span {
 footer {
   background: #5a6369;
   margin-top: 2em;
+  float: left;
+  width: 100%;
 }
 footer .connect {
   padding: 0 1em;
@@ -1095,11 +1099,11 @@ main.organisations ul {
     margin: 1em 0 0 0;
   }
   main.post .kdl-container,
-main.faqs .kdl-container {
+main.faqs .kdl-container, main.base .kdl-container, main.home .kdl-container {
     display: block;
   }
   main.post .kdl-container aside,
-main.faqs .kdl-container aside {
+main.faqs .kdl-container aside, main.base .kdl-container aside, main.home .kdl-container aside {
     margin: 0 0 1em 0;
     padding: 0.1em 1em;
   }
