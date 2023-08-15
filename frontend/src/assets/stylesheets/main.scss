@@ -682,8 +682,10 @@ main.posts {
 
 //-- Blog Individual Page & FAQs --
 main.post,
-main.faqs, main.base {
+main.faqs, main.base, main.home{
   padding: 0 1em;
+  float:left;
+  width:100%;
   .kdl-container {
     display: flex;
     flex-wrap: wrap;
@@ -749,7 +751,7 @@ main.faqs, main.base {
       background: white;
     } //footer
   } //.kdl-container
-} //main.post, main.faqs
+} //main.post, main.faqs, main.base 
 
 //-- People/Organisations Index Page --
 main.people,
@@ -936,6 +938,8 @@ nav.pagination {
 footer {
   background: $darkgray;
   margin-top: 2em;
+  float:left;
+  width:100%;
   .connect {
     padding: 0 1em;
     background: $navy;
@@ -1220,7 +1224,7 @@ footer {
   } //main.posts
   //-- Blog Individual Page & FAQs --
   main.post,
-  main.faqs {
+  main.faqs, main.base, main.home{
     .kdl-container {
       display: block;
       aside {
@@ -1228,7 +1232,7 @@ footer {
         padding: 0.1em 1em;
       } //aside
     } //.kdl-container
-  } //main.post, main.faqs
+  } //main.post, main.faqs, main.base, main.home
 
   footer {
     background: $darkgray;
