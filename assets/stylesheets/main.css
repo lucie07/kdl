@@ -556,37 +556,42 @@ main.projects a span {
 
 main.posts {
   padding: 0 1em;
+  float: left;
+  width: 100%;
 }
 main.posts article {
+  display: block;
+}
+main.posts article article {
   width: 100%;
   display: flex;
   margin-bottom: 1em;
 }
-main.posts article figure {
+main.posts article article figure {
   width: 100%;
   margin: 0;
 }
-main.posts article figure img {
+main.posts article article figure img {
   height: auto;
   max-width: 15em;
   object-fit: contain;
   display: inline-block;
   vertical-align: top;
 }
-main.posts article figure img:hover {
+main.posts article article figure img:hover {
   filter: grayscale(100%);
   transition: transform 1s, filter 0.5s ease-in-out;
 }
-main.posts article section {
+main.posts article article section {
   margin-left: 2em;
 }
-main.posts article section a {
+main.posts article article section a {
   text-decoration: none;
 }
-main.posts article section a h2 {
+main.posts article article section a h2 {
   margin-top: 0;
 }
-main.posts article section a:hover {
+main.posts article article section a:hover {
   text-decoration: underline;
 }
 
