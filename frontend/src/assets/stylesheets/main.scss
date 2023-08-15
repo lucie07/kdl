@@ -646,10 +646,14 @@ main.projects {
 //-- Blog Index page --
 main.posts {
   padding: 0 1em;
+  float:left;
+  width:100%;
   article {
-    width: 100%;
-    display: flex;
-    margin-bottom: 1em;
+display:block;
+    article{
+      width: 100%;
+      display: flex;
+      margin-bottom: 1em;
     figure {
       width: 100%;
       margin: 0;
@@ -677,6 +681,7 @@ main.posts {
         } //&:hover
       } //a
     } //section
+  }//article
   } //article
 } //main.posts
 
