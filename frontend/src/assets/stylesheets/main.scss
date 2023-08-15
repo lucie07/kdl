@@ -682,7 +682,8 @@ main.posts {
 
 //-- Blog Individual Page & FAQs --
 main.post,
-main.faqs, main.base {
+main.faqs,
+main.base {
   padding: 0 1em;
   .kdl-container {
     display: flex;
