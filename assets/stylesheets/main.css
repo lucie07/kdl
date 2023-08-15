@@ -468,7 +468,7 @@ main.projects a span {
 }
 .project .kdl-container article section #metadata {
   margin: 0 5%;
-  padding-top: 1em;
+  padding: 1em 0 2em 0;
 }
 .project .kdl-container article section #metadata dl dt {
   margin-top: 1.5em;
@@ -1050,33 +1050,34 @@ footer nav.footer .kdl-container section address a:hover {
   main.project .kdl-container {
     display: block;
   }
-  main.project .kdl-container section {
+  main.project .kdl-container article {
+    display: block;
+  }
+  main.project .kdl-container article section {
     width: 100%;
     margin: 0;
   }
-  main.project .kdl-container section:last-child {
+  main.project .kdl-container article section:last-child {
     width: 100%;
     background: none;
     border-top: 0.01em solid black;
   }
-  main.project .kdl-container section #metadata {
+  main.project .kdl-container article section #metadata {
     margin: 0;
-    padding: 1em 0 2em 0;
   }
-  main.project .kdl-container section #metadata span {
-    background: rgb(40, 195, 130);
+  main.project .kdl-container article section #metadata span.status {
     margin-left: 0;
     padding: 0.3em 0.5em;
   }
-  main.project .kdl-container section #team {
+  main.project .kdl-container article section #team {
     width: 100%;
     display: block;
     border-top: 0.01em solid;
   }
-  main.project .kdl-container section #team h2 {
+  main.project .kdl-container article section #team h2 {
     width: 100%;
   }
-  main.project .kdl-container section #team ul {
+  main.project .kdl-container article section #team ul {
     display: block;
   }
   main.people ul,
