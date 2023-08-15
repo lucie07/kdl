@@ -20,6 +20,9 @@ module.exports = async ({ directus }) => {
       "agent.memberOf.inProject.department.organisation_id.agent.name",
       "agent.memberOf.inOrganisation.agent.name",
       "agent.memberOf.inOrganisation.agent.slug",
+      "agent.memberOf.roleName.name",
+      "agent.memberOf.startDate",
+      "agent.memberOf.endDate",
     ],
     "agent.name"
   );

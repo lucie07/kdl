@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+permalink: "about/people/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
+---
+
+<ul>
+  {%- for person in people -%}
+    {% for member in person.agent.memberOf %}
+      {% if member.inOrganisation.agent.name == "King's Digital Lab" %}
+        <li>
+          <h2>
+            <a href="{% route person.agent.slug, 'People' %}">{{ person.agent.name }}</a>
+          </h2>
+          <p>
+            {{ member.roleName.name }}
+            {%- if member.startDate %}, {{ member.startDate }}&#8211;{{ member.endDate }}{% endif %}
+          </p>
+        </li>
+      {% endif %}
+    {% endfor %}
+  {%- endfor -%}
+</ul>
