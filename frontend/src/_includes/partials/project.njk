@@ -1,6 +1,10 @@
+{% if showTitle %}
 <h{% if level %}{{ level }}{% else %}2{% endif %}>
-  {{ project.name }}<small>{{ project.slug }}</small>
+  {{ project.name }}
+  {%- if project.alternateName %}<small>{{ project.alternateName }}</small>{% endif -%}
 </h{% if level %}{{ level }}{% else %}2{% endif %}>
+{% endif %}
+
 {% if project.department %}
 <span>
   {%- for department in project.department %}{{ department.organisation_id.agent.name }},{% endfor %}
