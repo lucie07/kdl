@@ -39,7 +39,7 @@ layout: layouts/base.njk
 <section>
   <!-- Information -->
   <div id="metadata">
-    <span>Project Status: {{ project.creativeWorkStatus.name }}</span>
+    <span class="status">Project Status: {{ project.creativeWorkStatus.name }}</span>
 
     {% if project.url.length > 0 %}
       <div id="links">
