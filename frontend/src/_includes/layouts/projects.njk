@@ -5,15 +5,8 @@ permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
 {%- for item in paginatedProjects -%}
   {% set project = item.data.project %}
   <a href="{{ item.data.page.url }}">
-    <h2>
-      {{ project.name }}<small>{{ project.slug }}</small>
-    </h2>
-    <span>
-      {%- for department in project.department %}{{ department.organisation_id.agent.name }},{% endfor %}
-      {% if project.foundingDate %}
-        {{ project.foundingDate | asProjectDate }}&#8211;{{ project.dissolutionDate | asProjectDate }}
-      {% endif %}
-    </span>
+    {% set showTitle = true %}
+    {% include "partials/project.njk" %}
   </a>
 {%- endfor -%}
 
