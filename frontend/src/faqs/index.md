@@ -1,10 +1,6 @@
 ---
 layout: layouts/faqs.njk
 title: Frequently asked questions
-eleventyNavigation:
-  key: FAQs
-  parent: Resources
-  order: 2
 pagination:
   data: collections.faqs
   size: 10
