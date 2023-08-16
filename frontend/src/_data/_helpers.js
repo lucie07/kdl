@@ -1,11 +1,18 @@
 const fs = require("fs/promises");
 
 module.exports = {
-  async loadData(directus, collection, fileName, fields, sort = "name") {
+  async loadData(
+    directus,
+    collection,
+    fileName,
+    fields,
+    sort = "name",
+    callback = null
+  ) {
     return fs
       .readFile(`./src/_data/_${fileName}.json`)
       .then((data) => JSON.parse(data))
-      .then((projects) => Promise.resolve(projects))
+      .then((data) => Promise.resolve(data))
       .catch((err) => {
         console.warn(`${err.message}, using Directus instead`);
 
@@ -13,13 +20,14 @@ module.exports = {
           .items(collection)
           .readByQuery({ fields: fields, sort: sort, limit: -1 })
           .then((response) => response.data)
-          .then((projects) => {
+          .then((data) => (callback ? callback(data) : data))
+          .then((data) => {
             fs.writeFile(
               `./src/_data/_${fileName}.json`,
-              JSON.stringify(projects, null, 2)
+              JSON.stringify(data, null, 2)
             );
 
-            return Promise.resolve(projects);
+            return Promise.resolve(data);
           })
           .catch((err) => console.error(err));
       });
