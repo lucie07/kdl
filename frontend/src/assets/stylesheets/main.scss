@@ -382,6 +382,7 @@ header {
       }
 
       .kdl-menu-button {
+        font-size: 0;
         &::before {
           content: "";
           margin-top: -8px;
@@ -532,132 +533,131 @@ main.projects {
         font-weight: normal;
       } //small
     } //h1
-    article{
+    article {
       display: flex;
-    section {
-      //display: block;
-      //width: 70%;
-      margin: 0 5% 0 0;
-      flex: 3;
-      &:last-child {
-        //width: 30%;
-        margin: 0;
-        flex: 1;
-        //border-left: 0.1vw solid black;
-        background: rgb(237, 241, 242);
-      } //&:last-child{
-      figure {
-        margin: 0;
-        img {
-          width: 100%;
-        } //img
-        figcaption {
-          font-size: 0.7em;
-          text-align: center;
-        }
-      } //figure
-      #metadata {
-        margin: 0 5%;
-        padding: 1em 0 2em 0;
-        dl {
-          dt {
-            margin-top: 1.5em;
+      section {
+        //display: block;
+        //width: 70%;
+        margin: 0 5% 0 0;
+        flex: 3;
+        &:last-child {
+          //width: 30%;
+          margin: 0;
+          flex: 1;
+          //border-left: 0.1vw solid black;
+          background: rgb(237, 241, 242);
+        } //&:last-child{
+        figure {
+          margin: 0;
+          img {
+            width: 100%;
+          } //img
+          figcaption {
+            font-size: 0.7em;
+            text-align: center;
+          }
+        } //figure
+        #metadata {
+          margin: 0 5%;
+          padding: 1em 0 2em 0;
+          dl {
+            dt {
+              margin-top: 1.5em;
+              font-size: 1.2em;
+              font-weight: bold;
+            } //dt
+            dd {
+              margin-left: 20px;
+              margin-top: 0.5em;
+            } //dd
+          } //dl
+          span.status {
+            background: $darkgray;
+            margin-left: -5%;
+            padding: 0.3em 0.5em;
+            margin-bottom: 1em;
+            color: white;
             font-size: 1.2em;
-            font-weight: bold;
-          } //dt
-          dd {
-            margin-left: 20px;
-            margin-top: 0.5em;
-          } //dd
-        } //dl
-        span.status {
-          background: $darkgray;
-          margin-left: -5%;
-          padding: 0.3em 0.5em;
-          margin-bottom: 1em;
-          color: white;
-          font-size:1.2em;
+          }
+          #links,
+          .funder {
+            border-bottom: 0.3em solid rgb(220, 227, 230);
+            width: 100%;
+            padding: 1em 0;
+            ul {
+              margin: 0 0 0 -20px;
+              list-style-type: circle;
+              li {
+                margin-bottom: 0.5em;
+                a {
+                  font-size: 1.2em;
+                  text-decoration: none;
+                  &:hover {
+                    text-decoration: underline;
+                    text-decoration-style: solid;
+                    @include transition(all 200ms ease-in);
+                  } //&:hover
+                } //a
+              } //li
+            } //ul
+          } //#links
+          .funder {
+            border-bottom: 0.3em solid rgb(220, 227, 230);
+          } //#funder
+          .date {
+            ul {
+              margin: 0 0 0 -20px;
+              list-style-type: circle;
+              span {
+                background: none;
+                margin: 0;
+                padding: 0;
+                font-family: "KingsCaslon", serif;
+                color: black;
+              } //span
+            } //ul
+          } //.date
+        } //#metatdata
+
+        .post-meta {
+          margin-left: 5%;
         }
-        #links,
-        .funder {
-          border-bottom: 0.3em solid rgb(220, 227, 230);
+        #team {
           width: 100%;
-          padding: 1em 0;
+          display: block;
+          border-top: 0.01em solid;
+          h2 {
+            width: 100%;
+          }
           ul {
-            margin: 0 0 0 -20px;
-            list-style-type: circle;
+            margin-left: -40px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            h2 {
+              font-size: 1.2em;
+            }
             li {
-              margin-bottom: 0.5em;
+              list-style-type: none;
+              flex: 0 0 50%;
+              margin-bottom: 1em;
+              font-size: 1.1em;
               a {
-                font-size: 1.2em;
                 text-decoration: none;
                 &:hover {
                   text-decoration: underline;
                   text-decoration-style: solid;
-                  @include transition(all 200ms ease-in);
-                } //&:hover
-              } //a
+                }
+              }
+              span {
+                font-size: 0.8em;
+                display: block;
+              }
             } //li
           } //ul
-        } //#links
-        .funder {
-          border-bottom: 0.3em solid rgb(220, 227, 230);
-        } //#funder
-        .date{
-          ul{
-            margin: 0 0 0 -20px;
-            list-style-type: circle;
-            span{
-              background:none;
-              margin:0;
-              padding:0;
-              font-family: "KingsCaslon",serif;
-              color:black;
-
-            }//span
-          }//ul
-        }//.date
-      } //#metatdata
-
-      .post-meta {
-        margin-left: 5%;
-      }
-      #team {
-        width: 100%;
-        display: block;
-        border-top: 0.01em solid;
-        h2 {
-          width: 100%;
-        }
-        ul {
-          margin-left: -40px;
-          display: flex;
-          flex-wrap: wrap;
-          width: 100%;
-          h2 {
-            font-size: 1.2em;
-          }
-          li {
-            list-style-type: none;
-            flex: 0 0 50%;
-            margin-bottom: 1em;
-            font-size: 1.1em;
-            a {
-              text-decoration: none;
-              &:hover {
-                text-decoration: underline;
-                text-decoration-style: solid;
-              }
-            }
-            span {
-              font-size: 0.8em;
-              display: block;
-            }
-          } //li
-        } //ul
-      } //#team
-    } //>section 2nd level
-  }//article
+        } //#team
+      } //>section 2nd level
+    } //article
   } //.wrapper
 } //.project
 
@@ -867,7 +867,7 @@ main.organisation {
               display: block;
               text-decoration: none;
               line-height: 1.4;
-              h3{
+              h3 {
                 font-family: KingsCaslon, serif;
                 //font-family: KingsBureauGrotThreeSeven, sans-serif;
                 //font-family: KingsBureauGrotFiveOne, sans-serif;
@@ -904,14 +904,8 @@ main.organisation {
           } //li
         } //ul
       }
-
-
-
     } //section
   } //article
-
-  
-
 } //main.person
 
 //-- Page Pagination --
@@ -1139,37 +1133,37 @@ footer {
     padding: 1em 1em;
     .kdl-container {
       display: block;
-      article{
-        display:block;
-      section {
-        width: 100%;
-        margin: 0;
-        &:last-child {
+      article {
+        display: block;
+        section {
           width: 100%;
-          background: none;
-          border-top: 0.01em solid black;
-        } //&:last-child{
-        #metadata {
           margin: 0;
-          span.status {
-            margin-left: 0;
-            padding: 0.3em 0.5em;
-          }
-        } //#metatdata
-
-        #team {
-          width: 100%;
-          display: block;
-          border-top: 0.01em solid;
-          h2 {
+          &:last-child {
             width: 100%;
-          }
-          ul {
+            background: none;
+            border-top: 0.01em solid black;
+          } //&:last-child{
+          #metadata {
+            margin: 0;
+            span.status {
+              margin-left: 0;
+              padding: 0.3em 0.5em;
+            }
+          } //#metatdata
+
+          #team {
+            width: 100%;
             display: block;
-          } //ul
-        } //#team
-      } //>section
-    }//article
+            border-top: 0.01em solid;
+            h2 {
+              width: 100%;
+            }
+            ul {
+              display: block;
+            } //ul
+          } //#team
+        } //>section
+      } //article
     } //.wrapper
   } //.project
 
