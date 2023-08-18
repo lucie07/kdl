@@ -849,7 +849,7 @@ main.organisation {
           display: block;
           font-weight: normal;
           font-size: 0.7em;
-          color: gray;
+          color: $darkgray;
         } //span
       } //h2
       #part-of {
@@ -883,7 +883,7 @@ main.organisation {
                 }
               } //h3
               small {
-                color: gray;
+                color: $darkgray;
                 font-family: KingsBureauGrotFiveOne, sans-serif;
                 //font-family: KingsBureauGrotThreeSeven, sans-serif;
                 font-weight: 400;
@@ -1195,7 +1195,7 @@ footer {
             display: block;
             font-weight: normal;
             font-size: 0.7em;
-            color: gray;
+            color: $darkgray;
           } //span
         } //h2
       } //section
