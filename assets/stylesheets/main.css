@@ -419,7 +419,7 @@ main.projects a h2:hover {
   color: #135394;
 }
 main.projects a small {
-  color: gray;
+  color: #5a6369;
   font-family: KingsBureauGrotFiveOne, sans-serif;
   font-weight: 400;
   font-size: 0.6em;
@@ -443,7 +443,7 @@ main.projects a span {
   width: 100%;
 }
 .project .kdl-container h1 small {
-  color: gray;
+  color: #5a6369;
   font-size: 0.6em;
   font-weight: normal;
 }
@@ -871,7 +871,7 @@ nav.pagination ol li {
   text-align: center;
 }
 nav.pagination ol li a {
-  color: gray;
+  color: #5a6369;
   text-decoration: none;
 }
 nav.pagination ol li a:hover {
