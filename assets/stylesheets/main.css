@@ -312,6 +312,9 @@ header nav.main .kdl-menu-button::after {
   width: 30px;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+header nav.main .kdl-menu-button {
+  font-size: 0;
+}
 header nav.main .kdl-menu-button::before {
   content: "";
   margin-top: -8px;
