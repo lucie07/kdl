@@ -802,7 +802,7 @@ main.organisation article section h2 span {
   display: block;
   font-weight: normal;
   font-size: 0.7em;
-  color: gray;
+  color: #5a6369;
 }
 main.person article section #part-of ul,
 main.organisation article section #part-of ul {
@@ -839,7 +839,7 @@ main.organisation article section #part-of ul li a h3:hover {
 }
 main.person article section #part-of ul li a small,
 main.organisation article section #part-of ul li a small {
-  color: gray;
+  color: #5a6369;
   font-family: KingsBureauGrotFiveOne, sans-serif;
   font-weight: 400;
   font-size: 0.6em;
@@ -1105,7 +1105,7 @@ main.organisations ul {
     display: block;
     font-weight: normal;
     font-size: 0.7em;
-    color: gray;
+    color: #5a6369;
   }
   main.person ul {
     width: 100%;
