@@ -4,37 +4,39 @@ layout: layouts/agent.njk
 
 {% set agent = agentInstance.agent %}
 
-
-  <section>
-    {% if agent.jobDescription %}
-      <h2>
-        <span>{{ agent.jobDescription.name }}</span>
-      </h2>
-    {% endif %}
-    {% if agent.description %}{{ agent.description | renderMd }}{% endif %}
-  </section>
-
-  {% if agent.memberOf %}
-    <section id="part-of">
-      <h2>Involved in</h2>
- 
-      <ul>
-        {% for member in agent.memberOf|sort(false, false, "name") %}
-          <li>
-            {% if member.inProject %}
-              <a href="{% route member.inProject.slug, 'Projects' %}">
-                {% set level = 3 %}
-                {% set project = member.inProject %}
-                {% set showTitle = true %}
-                {%- include "partials/project.njk" -%}
-              </a>
-            {% else %}
-              <a href="{% route member.inOrganisation.agent.slug, 'Organisations' %}">{{- member.inOrganisation.agent.name -}}</a>
-            {% endif %}
-          </li>
-        {% endfor %}
- 
-      </ul>
-    </section>
+<section>
+  {% if agentInstance.jobTitle %}
+    <h2>{{ agentInstance.jobTitle.name }}</h2>
   {% endif %}
+  {% for member in agentInstance.memberOfKDL %}
+      <h2>
+        {{ member.role }}
+        {%- if member.startYear %}, {{ member.startYear }}&#8211;{{ member.endYear }}{% endif %}
+      </h2>
+  {% endfor %}
+  {% if agent.description %}{{ agent.description | renderMd }}{% endif %}
+</section>
 
+{% if agent.memberOf %}
+  <section id="part-of">
+    <h2>Involved in</h2>
+
+    <ul>
+      {% for member in agent.memberOf|sort(false, false, "name") %}
+        <li>
+          {% if member.inProject %}
+            <a href="{% route member.inProject.slug, 'Projects' %}">
+              {% set level = 3 %}
+              {% set project = member.inProject %}
+              {% set showTitle = true %}
+              {%- include "partials/project.njk" -%}
+            </a>
+          {% else %}
+           <a href="{% route member.inOrganisation.agent.slug, 'Organisations' %}">{{- member.inOrganisation.agent.name -}}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+
+    </ul>
+  </section>
+{% endif %}
