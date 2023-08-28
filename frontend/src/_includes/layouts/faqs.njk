@@ -4,14 +4,10 @@ layout: layouts/base.njk
 <article>
   {{ content | safe }}
 
-  {% for group in faqs|sort(false, false, "data.order") %}
+  {% for faq in faqs %}
     <article>
-      <h2 id="{{ group.data.slug }}">{{ group.data.title }}</h2>
-      {% set tag = group.data.slug %}
-      {% for faq in collections[tag] %}
-        <h3 id="{{ faq.data.title | slugify }}">{{ faq.data.title }}</h3>
-        {{ faq.data.content | safe }}
-      {% endfor %}
+      <h2 id="{{ faq.data.title | slugify }}">{{ faq.data.title }}</h2>
+      {{ faq.data.content | safe }}
     </article>
   {% endfor %}
 </article>
