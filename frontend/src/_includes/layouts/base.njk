@@ -1,6 +1,5 @@
 {% extends "kdl/base.njk" %}
 
-{% set baseUrl = config.baseUrl %}
 {% set assetsPath = config.paths.assets %}
 {% set imagesPath = config.paths.images %}
 {% set mainClass = layout | replace("layouts/", "") | replace(".njk", "") %}
@@ -54,9 +53,8 @@
     <h1>{{ title | safe }}</h1>
 
     {% include "partials/toc.njk" %}
-    <article>
-    {{ content | safe }}
-    </article>
+
+    <article>{{ content | safe }}</article>
   </div>
 {% endblock content %}
 
