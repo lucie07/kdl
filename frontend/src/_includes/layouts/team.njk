@@ -4,17 +4,19 @@ permalink: "about/people/{% if pagination.pageNumber > 0 %}{{ pagination.pageNum
 ---
 
 <ul>
-  {%- for person in people -%}
-    {% for member in person.memberOfKDL %}
-      <li>
-        <h2>
-          <a href="{% route person.agent.slug, 'People' %}">{{ person.agent.name }}</a>
-        </h2>
-        <p>
-          {{ member.role }}
-          {%- if member.startYear %}, {{ member.startYear }}&#8211;{{ member.endYear }}{% endif %}
-        </p>
-      </li>
-    {% endfor %}
+  {%- for person in team -%}
+    {% set agent = people | filter(person.slug, 'agent.slug') | first %}
+    <li>
+      <h2>
+        <a href="{% route person.slug, 'People' %}">
+          {% if agent %}
+            {{ agent.agent.name }}
+          {% else %}
+            {{ person.slug }}
+          {% endif %}
+        </a>
+      </h2>
+      <p>{{ person.jobTitle }}</p>
+    </li>
   {%- endfor -%}
 </ul>
