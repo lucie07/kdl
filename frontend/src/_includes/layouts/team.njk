@@ -3,20 +3,21 @@ layout: layouts/base.njk
 permalink: "about/people/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
 ---
 
-<ul>
-  {%- for person in team -%}
-    {% set agent = people | filter(person.slug, 'agent.slug') | first %}
-    <li>
-      <h2>
-        <a href="{% route person.slug, 'People' %}">
+{% for team, items in team | groupby("team") %}
+  {% if team != "KDL" %}<h2>{{ team }}</h2>{% endif %}
+  <ul>
+    {%- for item in items -%}
+      {% set agent = people | filter(item.slug, 'agent.slug') | first %}
+      <li>
+        <h3>
           {% if agent %}
-            {{ agent.agent.name }}
+            <a href="{% route item.slug, 'People' %}">{{ agent.agent.name }}</a>
           {% else %}
-            {{ person.slug }}
+            {{ item.slug }}
           {% endif %}
-        </a>
-      </h2>
-      <p>{{ person.jobTitle }}</p>
-    </li>
-  {%- endfor -%}
-</ul>
+        </h3>
+        <p>{{ item.jobTitle }}</p>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endfor -%}
