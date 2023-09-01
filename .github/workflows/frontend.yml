@@ -22,7 +22,7 @@ jobs:
 
       - name: create env file
         run: |
-          touch .env
+          touch frontend/.env
           echo DIRECTUS_URL=${{ secrets.DIRECTUS_URL }} >> .env
 
       - name: Install dependencies and build
