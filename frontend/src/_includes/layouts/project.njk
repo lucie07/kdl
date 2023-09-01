@@ -6,9 +6,7 @@ layout: layouts/base.njk
 
 <section>
   <!-- Images -->
-  {% if obj.feature %}
-  {{ imageMacro(obj.feature) }}
-  {% endif %}
+  {% if obj.feature %}{{ imageMacro(obj.feature) }}{% endif %}
  
   <!-- Overview -->
   {% if project.description %}
@@ -23,17 +21,17 @@ layout: layouts/base.njk
       <h2>Team</h2>
       <ul>
         {% for member in project.member|sort(false, false, "agent.name") %}
+          {% set kdlTeamMember = team | filter(member.agent.slug, 'slug') | first %}
           <li>
-            <a href="{% route member.agent.slug, 'People' %}">{{ member.agent.name }}</a>
-            <span>
-              {{ member.roleName.name }}
-              {%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}
-              </span>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endif %}
+            <a {% if kdlTeamMember %}class="kdl-member"{% endif %}
+               href="{% route member.agent.slug, 'People' %}">{{ member.agent.name }}</a>
+            {% if kdlTeamMember %}<span>{{ kdlTeamMember.jobTitle }}</span><span>King's Digital Lab</span>{% endif %}
+            <span>{{ member.roleName.name }}{%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
 </section>
 
 <section>
@@ -43,7 +41,7 @@ layout: layouts/base.njk
 
     {% if project.url.length > 0 %}
       <div id="links">
-      <h3>Project links</h3>
+        <h3>Project links</h3>
         <ul>
           {% for url in project.url %}
             <li>
@@ -70,8 +68,9 @@ layout: layouts/base.njk
       <h3>Partner institution</h3>
       <ul>
         <li>
-    {% include "partials/project.njk" %}
-      </li>
+          {% include "partials/project.njk" %}
+
+        </li>
       </ul>
 
     </div>
