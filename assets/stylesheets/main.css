@@ -76,6 +76,10 @@ section {
   margin: 0 auto;
 }
 
+.kdl-member {
+  font-weight: bold;
+}
+
 main a {
   font-family: "KingsCaslon", serif;
   color: #0e3f70;
