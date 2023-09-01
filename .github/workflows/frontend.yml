@@ -20,6 +20,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: create env file
+        run: |
+          touch .env
+          echo DIRECTUS_URL=${{ secrets.DIRECTUS_URL }} >> .env
+
       - name: Install dependencies and build
         run: |
           npm ci -w frontend
