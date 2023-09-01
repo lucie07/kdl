@@ -1,15 +1,18 @@
 {% if showTitle %}
-<h{% if level %}{{ level }}{% else %}2{% endif %}>
+  <h {%- if level -%}{{- level -}}{%- else -%}2{%- endif -%}>
   {{ project.name }}
-  {%- if project.alternateName %}<small>{{ project.alternateName }}</small>{% endif -%}
-</h{% if level %}{{ level }}{% else %}2{% endif %}>
+  {%- if project.alternateName %}<small>{{ project.alternateName }}</small>
+{% endif -%}
+</h {%- if level -%}{{- level -}}{%- else -%}2{%- endif -%}>
 {% endif %}
 
-{% if project.department %}
-<span>
-    {%- for department in project.department %}{{ department.organisation_id.agent.name }}{% if not loop.last %}, {% endif %}{% endfor %}
-  {% if project.foundingDate %}
-    {{ project.foundingDate | asProjectDate }}&#8211;{{ project.dissolutionDate | asProjectDate }}
-  {% endif %}
-</span>
+{% if project.department.length > 0 %}
+  <span>
+    {%- for department in project.department %}{{ department.organisation_id.agent.name }}
+      {% if not loop.last %},{% endif %}
+    {% endfor %}
+    {% if project.foundingDate %}
+      {{ project.foundingDate | asProjectDate }}&#8211;{{ project.dissolutionDate | asProjectDate }}
+    {% endif %}
+  </span>
 {% endif %}
