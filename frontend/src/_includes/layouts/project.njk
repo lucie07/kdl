@@ -16,17 +16,16 @@ layout: layouts/base.njk
   {% endif %}
 
   <!-- Team -->
-  {% if project.member %}
+  {% if project.member and project.member.length > 0 %}
     <div id="team">
       <h2>Team</h2>
       <ul>
-        {% for member in project.member|sort(false, false, "agent.name") %}
+        {% for member in project.member | getProjectMembers | sort(false, false, "agent.name") %}
           {% set kdlTeamMember = team | filter(member.agent.slug, 'slug') | first %}
-          <li>
-            <a {% if kdlTeamMember %}class="kdl-member"{% endif %}
-               href="{% route member.agent.slug, 'People' %}">{{ member.agent.name }}</a>
-            {% if kdlTeamMember %}<span>{{ kdlTeamMember.jobTitle }}</span><span>King's Digital Lab</span>{% endif %}
+          <li {% if kdlTeamMember %}class="kdl-member"{% endif %}>
+            <a href="{% route member.agent.slug, 'People' %}">{{ member.agent.name }}</a>
             <span>{{ member.roleName.name }}{%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}</span>
+            {% if kdlTeamMember %}<span>{{ kdlTeamMember.jobTitle }}</span><span>King's Digital Lab</span>{% endif %}
           </li>
         {% endfor %}
       </ul>
@@ -52,7 +51,7 @@ layout: layouts/base.njk
       </div>
     {% endif %}
 
-    {% if project.funder %}
+    {% if project.funder.length > 0 %}
       <div class="funder">
         <h3>Funder</h3>
         <ul>
@@ -72,7 +71,6 @@ layout: layouts/base.njk
 
         </li>
       </ul>
-
     </div>
   </div>
 </section>
