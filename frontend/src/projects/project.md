@@ -12,6 +12,6 @@ eleventyComputed:
   title: "{{ project.name }}{%- if project.alternateName %} <small>{{ project.alternateName }}</small>{% endif -%}"
   dissolutionDate: "{% if project.dissolutionDate %}{{ project.dissolutionDate }}{% else %}1970{% endif %}"
   feature:
-    image: "{% if project.image.id %}{% getDirectusAsset project.image.id %}{% else %}{{ project.image.path }}{% endif %}"
-    description: "{{ project.image.description }}"
+    image: "{% if project.image %}{% getDirectusAsset project.image.id %}{% endif %}"
+    description: "{% if project.image %}{{ project.image.description }}{% endif %}"
 ---
