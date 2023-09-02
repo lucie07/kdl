@@ -1,10 +1,9 @@
-{% if showTitle %}
+{%- if showTitle %}
   <h {%- if level -%}{{- level -}}{%- else -%}2{%- endif -%}>
-  {{ project.name }}
-  {%- if project.alternateName %}<small>{{ project.alternateName }}</small>
-{% endif -%}
-</h {%- if level -%}{{- level -}}{%- else -%}2{%- endif -%}>
-{% endif %}
+  {{- project.name | trim -}}
+  {%- if project.alternateName -%}<small>{{ project.alternateName }}</small>{%- endif -%}
+  </h {%- if level -%}{{- level -}}{%- else -%}2{%- endif -%}>
+{%- endif -%}
 
 {% if project.department.length > 0 %}
   <span>

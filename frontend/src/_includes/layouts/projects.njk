@@ -2,11 +2,12 @@
 layout: layouts/base.njk
 permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
 ---
+
 {%- for item in paginatedProjects -%}
   {% set project = item.data.project %}
   <a href="{{ item.data.page.url }}">
     {% set showTitle = true %}
-    {% include "partials/project.njk" %}
+    {%- include "partials/project.njk" -%}
   </a>
 {%- endfor -%}
 

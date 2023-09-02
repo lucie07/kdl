@@ -2,6 +2,6 @@
   "indent": "2",
   "profile": "nunjucks",
   "ignore": "H017,T001",
-  "blank_line_after_tag": "load,extends,include,from",
+  "blank_line_after_tag": "load,extends,from",
   "preserve_blank_lines": true
 }
