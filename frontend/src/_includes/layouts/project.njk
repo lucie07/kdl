@@ -23,7 +23,11 @@ layout: layouts/base.njk
         {% for member in project.member | getProjectMembers | sort(false, false, "agent.name") %}
           {% set kdlTeamMember = team | filter(member.agent.slug, 'slug') | first %}
           <li {% if kdlTeamMember %}class="kdl-member"{% endif %}>
-            <a href="{% route member.agent.slug, 'People' %}">{{ member.agent.name }}</a>
+            {% if people | filter(member.agent.slug, 'agent.slug') | first %}
+              <a href="{% route member.agent.slug, 'People' %}">{{ member.agent.name }}</a>
+            {% else %}
+              {{ member.agent.name }}
+            {% endif %}
             <span>{{ member.roleName.name }}{%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}</span>
             {% if kdlTeamMember %}<span>{{ kdlTeamMember.jobTitle }}</span><span>King's Digital Lab</span>{% endif %}
           </li>
