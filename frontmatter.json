@@ -1,0 +1,96 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        }
+      ]
+    }
+  ],
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "src",
+      "path": "[[workspace]]/frontend/src"
+    }
+  ],
+  "frontMatter.data.types": [
+    {
+      "id": "team",
+      "schema": {
+        "title": "Team",
+        "type": "object",
+        "required": ["slug", "jobTitle", "team"],
+        "properties": {
+          "slug": {
+            "type": "slug",
+            "title": "Slug"
+          },
+          "jobTitle": {
+            "type": "string",
+            "title": "Job title"
+          },
+          "team": {
+            "type": "choices",
+            "choices": [
+              "KDL",
+              "Academic affiliates",
+              "Research fellows",
+              "Former staff"
+            ],
+            "title": "Team name"
+          }
+        }
+      }
+    }
+  ],
+  "frontMatter.data.files": [
+    {
+      "id": "team",
+      "title": "Team",
+      "file": "[[workspace]]/frontend/src/_data/team.json",
+      "fileType": "json",
+      "labelField": "slug",
+      "singleEntry": false,
+      "type": "team"
+    }
+  ]
+}
