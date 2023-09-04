@@ -1,4 +1,3 @@
-// const { createCanvas } = require("canvas");
 const helpers = require("./_helpers");
 
 module.exports = async ({ directus }) => {
