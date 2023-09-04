@@ -36,7 +36,7 @@
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.6.2",
     "prettier-plugin-sort-imports": "^1.7.0",
-    "release-it": "^15.7.0",
+    "release-it": "^15.11.0",
     "simple-git-hooks": "^2.8.0",
     "vscode-langservers-extracted": "^4.2.1"
   },
@@ -55,6 +55,7 @@
   "release-it": {
     "github": {
       "release": true
-    }
+    },
+    "npm": false
   }
 }
