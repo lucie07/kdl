@@ -18,5 +18,6 @@ vscode:
     - DavidAnson.vscode-markdownlint
     - dbaeumer.vscode-eslint
     - ecmel.vscode-html-css
+    - eliostruyf.vscode-front-matter
     - esbenp.prettier-vscode
     - eseom.nunjucks-template
