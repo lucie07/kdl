@@ -54,7 +54,7 @@
   ],
   "release-it": {
     "github": {
-      "release": true
+      "release": false
     },
     "npm": false
   }
