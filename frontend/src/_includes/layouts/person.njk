@@ -5,14 +5,12 @@ layout: layouts/agent.njk
 {% set agent = agentInstance.agent %}
 
 <section>
-  {% if agentInstance.jobTitle %}
-    <h2>{{ agentInstance.jobTitle.name }}</h2>
-  {% endif %}
+  {% if agentInstance.jobTitle %}<h2>{{ agentInstance.jobTitle.name }}</h2>{% endif %}
   {% for member in agentInstance.memberOfKDL %}
-      <h2>
-        {{ member.role }}
-        {%- if member.startYear %}, {{ member.startYear }}&#8211;{{ member.endYear }}{% endif %}
-      </h2>
+    <h2>
+      {{ member.role }}
+      {%- if member.startYear %}, {{ member.startYear }}&#8211;{{ member.endYear }}{% endif %}
+    </h2>
   {% endfor %}
   {% if agent.description %}{{ agent.description | renderMd }}{% endif %}
 </section>
@@ -32,7 +30,7 @@ layout: layouts/agent.njk
               {%- include "partials/project.njk" -%}
             </a>
           {% else %}
-           <a href="{% route member.inOrganisation.agent.slug, 'Organisations' %}">{{- member.inOrganisation.agent.name -}}</a>
+            <a href="{% route member.inOrganisation.agent.slug, 'Organisations' %}">{{- member.inOrganisation.agent.name -}}</a>
           {% endif %}
         </li>
       {% endfor %}
