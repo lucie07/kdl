@@ -7,7 +7,7 @@
     "build": "eleventy",
     "dev": "eleventy --serve",
     "debug": "DEBUG=Eleventy* npm run dev",
-    "index": "npx pagefind --source _site",
+    "index": "npx -y pagefind --source _site",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "King's Digital Lab",
