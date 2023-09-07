@@ -89,6 +89,9 @@ main a:hover {
   text-decoration-style: double;
   color: #14589d;
 }
+main p {
+  line-height: 1.5;
+}
 main p a {
   text-decoration-style: solid;
   font-family: KingsBureauGrotFiveOne, sans-serif;
