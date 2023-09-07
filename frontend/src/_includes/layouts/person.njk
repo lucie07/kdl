@@ -5,14 +5,13 @@ layout: layouts/agent.njk
 {% set agent = agentInstance.agent %}
 
 <section>
-  {% if agentInstance.jobTitle %}<h2>{{ agentInstance.jobTitle.name }}</h2>{% endif %}
-  {% for member in agentInstance.memberOfKDL %}
-    <h2>
-      {{ member.role }}
-      {%- if member.startYear %}, {{ member.startYear }}&#8211;{{ member.endYear }}{% endif %}
-    </h2>
-  {% endfor %}
-  {% if agent.description %}{{ agent.description | renderMd }}{% endif %}
+  {% if agentInstance.jobTitle %}
+    <h2>{{ agentInstance.jobTitle.name }}</h2>
+  {% else %}
+    {% set member = team | filter(agent.slug, 'slug') | first %}
+    {% if member %}<h2>{{ member.jobTitle }}</h2>{% endif %}
+  {% endif %}
+  {% if agent.description %}{{ agent.description | renderMd | safe }}{% endif %}
 </section>
 
 {% if agent.memberOf %}
@@ -34,7 +33,6 @@ layout: layouts/agent.njk
           {% endif %}
         </li>
       {% endfor %}
-
     </ul>
   </section>
 {% endif %}

@@ -226,7 +226,7 @@
     "agent": {
       "name": "Alesssandra Esposito",
       "slug": "alesssandra-esposito",
-      "description": null,
+      "description": "Alessandra is responsible for high-level project management of internally and externally funded projects, liaising between the Solution Development Team (SDT) and project partners, as well as working closely with the Director and Lab Manager to ensure the efficient running of the Lab.\n\nAfter obtaining a PhD in Classics from King’s College London, she has since worked on humanities research projects including the AHRC/Newton funded project MaDiH (مديح): Mapping Digital Cultural Heritage in Jordan at King’s Digital Lab and the Infrastructure for Digital Arts and Humanities (IDAH) project at the University of Oxford. As an archaeologist, her research interests lie in management and process improvements of digitisation strategies of museums and archaeological fieldwork archives.",
       "memberOf": [
         {
           "startDate": null,
@@ -811,7 +811,7 @@
     "agent": {
       "name": "Arianna Ciula",
       "slug": "arianna-ciula",
-      "description": null,
+      "description": "Arianna has broad experience in digital humanities research and teaching, research management, and digital research infrastructures. She holds a PhD in Manuscript and Book Studies (digital palaeography, University of Siena), an MA in Applied Computing in the Humanities (King’s College London) and a BA Hons in Communication sciences (computational linguistics, University of Siena).\n\nShe worked at King’s in the past as Research Associate (Centre for Computing in the Humanities, 2003-2009). From 2009 to 2012, she worked as Science officer at the European Science Foundation (Humanities) where her primary responsibilities included the supervision of instruments to fund collaborative research in the humanities and the coordination of strategic activities. From 2013 she worked as Research Facilitator at the University of Roehampton for three years, where she expanded the research funding portfolio and supported research strategies across the Humanities and beyond. She was appointed Director of KDL in 2022.\n\nHer personal research interests focus on the modelling of scholarly digital resources related to primary sources. She lectured and published on humanities computing, in particular on digital manuscript studies and editing; she has organised conferences and workshops in digital humanities, and is an active member of its international community. She was co-PI in the project ‘Modelling between Digital and Humanities: Thinking in Practice’ funded by the Volkswagen Foundation.",
       "memberOf": [
         {
           "startDate": null,
@@ -1604,7 +1604,7 @@
     "agent": {
       "name": "Brian Maher",
       "slug": "brian-maher",
-      "description": null,
+      "description": "After completing his MSc in Bioinformatics at KCL, Brian joined the\nDepartment of Digital Humanities in 2013 as a Research Developer\nworking on two projects - “The Art of Making” and “The Making of\nCharlemagne’s Europe”.\n\nBrian's main research interests are rather split, starting with\nHeuristic algorithms – attempting to solve problems which are\nimpractical (or impossible) to solve by normal means. He is also\ninterested in data analysis and modelling, including visualising data\nin fun and informative ways. He has previously taught classes in Data\nStructures and the Foundations of Computing – a module which teaches the underpinnings of modern computer systems.\n\nHe has experience developing for iOS, Mac and the web, and is highly\ninterested in the advantages of cloud computing in modern web systems. His time working at Apple also taught him the huge advantages brought by mobile computing, and his web development environment is now almost entirely based around an iPad – moving away from the traditional “laptop on desk” way of working. He believes that bringing software development away from the days of complicated editing environments not only increases productivity, but also encourages more people to think about developing software, rather than just using it.\n\nAway from computing, Brian is a keen guitarist, enjoying both playing\nand collecting guitars. He also has a passion for Italian cars – no\nmatter how unreliable they always turn out to be!",
       "memberOf": [
         {
           "startDate": null,
@@ -1908,7 +1908,7 @@
     "agent": {
       "name": "Carina Westling",
       "slug": "carina-westling",
-      "description": null,
+      "description": "Carina researches interaction and experience design with a focus on the infrastructures of interactive systems. She holds a PhD in Media and Cultural Studies from the University of Sussex, for which she undertook ethnographies of Punchdrunk’s interactive work in theatre and blended media, including their making cultures, live and digital audiences, and developed a methodology for critical analysis of interactive systems.\n\nShe previously worked at King’s Digital Lab as project manager, collaborating with her colleagues to develop processes for putting 100 legacy digital humanities projects under contractual agreement and secure maintenance or responsible archiving. She is Co-Investigator on the AHRC-funded project Digital Ghost Hunt with King’s Digital Lab and the University of Sussex, producing an augmented reality project in collaboration with PI Mary Krell, Co-I Elliott Hall, and key partner Tom Bowtell at KIT Theatre. She is also Creative Director at interaction design consultancy the [Nimbus Group](http://the-nimbus-group.com/), where she designed and produced interactive art projects 0-1, The Nimbus, and Giddy.\n\nCarina’s research interests are focused on digital entropy and infrastructures for interaction design. She teaches a range of subjects across theory and practice, including communication and interaction design, critical analysis, and digital cultures. She has organised a conference and academic workshops on interaction design and collaborative research, as well as a wide range of public art events.",
       "memberOf": [
         {
           "startDate": null,
@@ -2158,7 +2158,7 @@
     "agent": {
       "name": "Charlotte Roueché",
       "slug": "charlotte-roueche",
-      "description": null,
+      "description": "Charlotte is a classicist by training, with a particular interest in the later periods of the Roman world, and in the Byzantine Empire. She has worked with the digital humanists at King’s since the early 1990s, and since 2004 has published online corpora, and literary texts, exploring the uses of changing technologies.",
       "memberOf": [
         {
           "startDate": null,
@@ -3783,7 +3783,7 @@
     "agent": {
       "name": "Elliott Hall",
       "slug": "elliott-hall",
-      "description": null,
+      "description": "Elliott grew up in a small town near Toronto, Ontario and received a BA Honours from the University of Toronto in 2001, which included studying at the University of Leeds for a year.\n\nElliott's research is at the technical end of the department's spectrum. He uses Python, Java, and Javascript to develop robust sites and applications for academic research.\n\nHe is also the published author of three novels: The First Stone, The Rapture, and The Children’s Crusade.  He is currently working on combining his technical research with his writing through a digital storytelling project.",
       "memberOf": [
         {
           "startDate": null,
@@ -4608,7 +4608,7 @@
     "agent": {
       "name": "Geoffroy Noël",
       "slug": "geoffroy-noel",
-      "description": null,
+      "description": "Geoffroy is a programmer analyst who joined King's College London in 2008, after more than nine years working for various technology startups in Brussels and London, and has since contributed to and led the analysis and software development of several Digital Humanities projects. Most of these projects were specifically about digital palaeography, codicology, diplomatics and online scholarly editions of medieval manuscripts. \n\nHe has a degree in Business Computing and a MSc in Intelligent Technologies from Birkbeck, University of London, with a particular focus on machine learning, knowledge representation, computational intelligence and evolutionary algorithms.\n\nGeoffroy enjoys building innovative and open source tools that empower academics with new ways to exploit the untapped potentials of their digitised research material.",
       "memberOf": [
         {
           "startDate": null,
@@ -5024,7 +5024,7 @@
     "agent": {
       "name": "Ginestra Ferraro",
       "slug": "ginestra-ferraro",
-      "description": null,
+      "description": "Ginestra studied Graphic Design at IED Milan. While working as an Art Director in few Advertising Companies in Italy, such as TBWA Italia and Factory Group, she developed an interest in web technologies. The transition from traditional to digital design took some learning of PHP, HTML and CSS and led Ginestra to become a freelance Creative Designer, mixing her design knowledge with some coding. She worked at KDL as a Senior Research Software UI/UX Designer, having over ten years experience in the field of Web Design / Front-end Development. Her interests focus mainly on data visualisations, video interaction with HTML and responsive web design. Ginestra is also a co-organiser of London Web Standards, a non-profit organisation that provides monthly events for web enthusiasts and the annual conference State of the Browser.",
       "memberOf": [
         {
           "startDate": null,
@@ -5895,7 +5895,7 @@
     "agent": {
       "name": "Harold Short",
       "slug": "harold-short",
-      "description": null,
+      "description": "Harold Short is Emeritus Professor of King’s College London, where he founded and directed the Centre for Computing in the Humanities (later Department of Digital Humanities) until retirement in 2010. He was involved in the development of three MA programmes: Digital Humanities, Digital Culture and Society and Digital Asset Management, and, with Willard McCarty, of the world's first PhD programme in Digital Humanities, launched in 2005. He also played a lead role as Co-Investigator or Technical Research Director in over 20 large-scale inter-disciplinary research projects.\n\nHe is a former Chair of the European Association for Digital Humanities and the Alliance of Digital Humanities Organisations in which he has a continuing role to support the development of digital humanities associations world-wide. He is a general editor of the Routledge series Digital Research in the Arts and Humanities.\n\nCurrently he is a Visiting Professorial Fellow at Australian Catholic University in Sydney, where he is co-Director of the [Julfa Cemetery Digital Repatriation Project](https://julfaproject.wordpress.com/).",
       "memberOf": [
         {
           "startDate": null,
@@ -6462,7 +6462,7 @@
     "agent": {
       "name": "James Smithies",
       "slug": "james-smithies",
-      "description": null,
+      "description": "James Smithies was Director of King’s Digital Lab (KDL) from 2015-September 2021. He was previously Senior Lecturer in Digital Humanities and Associate Director of the UC CEISMIC Digital Archive at the University of Canterbury, New Zealand. He has worked in the government and commercial IT sectors as a technical writer and editor, business analyst, and project manager. In 2017 he published a monograph for Palgrave Macmillan titled [Digital Humanities and the Digital Modern](https://link.springer.com/book/10.1057/978-1-137-49944-8).\n\nJames is interested in applied and theoretical digital humanities, including big data analysis, minimal computing, digital archives, modelling and virtual worlds. He has subsidiary interests in critical and media theory, and postphenomenology. His historical work focuses on the history of ideas, technology (including but not limited to computing), and literature.\n\nSee his [personal website](https://www.jamessmithies.org/) for more information about his work.",
       "memberOf": [
         {
           "startDate": null,
@@ -6976,7 +6976,7 @@
     "agent": {
       "name": "John Bradley",
       "slug": "john-bradley",
-      "description": null,
+      "description": "John has worked in the Digital Humanities since the late 1970s; first at the University of Toronto, and then, starting in 1997, at King's College London in the Department of Digital Humanities (initially called the Centre for Computing in the Humanities). He retired in 2015, having been involved in the creation of more than 20 humanities-oriented online digital resources which at King's. During his time at Toronto he was best known for the development of the text analysis TACT system. For most of his time at King's he held a post of Senior Analyst, but in 2011 was made an academic when he became a Senior Lecturer. Among the highly collaborative projects in which he was involved are a number of structured prosopographies, including the [Prosopography of Anglo-Saxon England (PASE)](https://pase.ac.uk/) and the [Prosopography of the Roman Republic (DPRR)](https://romanrepublic.ac.uk/). Other, non prosopographical, projects in which he had a role include [the Art of Making in Antiquity](https://artofmaking.ac.uk/) resource.\n\nWhile at King's he has published 22 articles (many authored collaboratively), many of which appear in prominent DH journals such as Literary and Linguistic Computing, Digital Scholarship in the Humanities, and the Digital Humanities Quarterly. His research interests include, the place of structured data in the Humanities, approaches to structured digital Prosopography, the place of software development as research in the Humanities, and new places for digital technology in humanities scholarship, centred on new kinds of support for traditional methodologies (the last of which resulted in his [Pliny project](https://www.kcl.ac.uk/research/pliny-project)).\n\nHe is presently continuing his interests by exploring the use of Semantic Web technologies in the context of the Digital Humanities (see the work done on this so far for [DPRR](https://romanrepublic.ac.uk/rdf/doc/)), and continues to be involved with digital developments with the [Records of Early English Drama](https://reed.utoronto.ca/) project at the University of Toronto.",
       "memberOf": [
         {
           "startDate": null,
@@ -8299,7 +8299,7 @@
     "agent": {
       "name": "Luis Figueira",
       "slug": "luis-figueira",
-      "description": null,
+      "description": "Luis worked as a software developer at KDL from 2015-2016.",
       "memberOf": [
         {
           "startDate": null,
@@ -9278,7 +9278,7 @@
     "agent": {
       "name": "Miguel Vieira",
       "slug": "miguel-vieira",
-      "description": null,
+      "description": "Miguel Vieira has worked in the digital humanities domain since 2006, when he took responsibility for the re-design of the XML development strategy at the then Centre for Computing in the Humanities at King's College London, though before that he was already developing software for libraries and archives.\n\nHe has expertise in designing, developing, and deploying web based projects, analysing and modelling humanities and unstructured data, natural language processing, machine learning, and systems administration.\n\nHe holds a degree in Engineering and Computer Sciences from the Universidade de Coimbra, and a BSc in Informatics and Systems Engineering from the Instituto Superior de Engenharia de Coimbra, Portugal.",
       "memberOf": [
         {
           "startDate": null,
@@ -9860,7 +9860,7 @@
     "agent": {
       "name": "Natasha Romanova",
       "slug": "natasha-romanova",
-      "description": null,
+      "description": "Natasha joined KDL in July 2019 as Digital Methods Lead as part of the [DARIAH-DESIR](https://kdl.kcl.ac.uk/our-work/dariah-desir/) project. In the past, she worked in the \"Online Froissart\" project (Liverpool) and in the \"Anglo-Norman Dictionary\" (Aberystwyth). More recently, she acted as a researcher on \"Distant Reading across Languages\", a joint project between KDL and the Department of Digital Humanities at King's.",
       "memberOf": [
         {
           "startDate": null,
@@ -9910,7 +9910,7 @@
     "agent": {
       "name": "Neil Jakeman",
       "slug": "neil-jakeman",
-      "description": null,
+      "description": "Neil came to the Department of Digital Humanities as a Research Developer in 2011 to help steer development in the spatial turn that DH research that was enjoying at that time. Arriving with a background in environmental analysis, spatial statistics, his interests within the department broadened to encompass the diversity of topics in the department’s portfolio. \n\nNeil has led technical development on a number of projects, including collaborating with the University of Wales to create a database of archaeological and palaeo-linguistic evidence regarding the origin of the Celtic language in the Bronze Age. He created a text and manuscript comparison tool for the study of vectors of transmission of medieval French. \n\nHis role within the Lab has now evolved to encompass cultivating new projects and relationships in the digital community and beyond as a Project Analyst. As one of three permanent analysts in the Lab, Neil oversees has particular responsibility over those which involve digital creative practice in emerging technologies such AR, VR and real-time engines. He is an accomplished 3D modeler, photographer and, occasionally, guitar player.",
       "memberOf": [
         {
           "startDate": null,
@@ -10473,7 +10473,7 @@
     "agent": {
       "name": "Olga Loboda",
       "slug": "olga-loboda",
-      "description": null,
+      "description": "With a background in digital humanities and front-end development, Olga joined King’s Digital Lab as a UX/UI Designer from 2019 to 2021.",
       "memberOf": [
         {
           "startDate": null,
@@ -10592,7 +10592,7 @@
     "agent": {
       "name": "Pam Mellen",
       "slug": "pam-mellen",
-      "description": null,
+      "description": "Pamela Mellen oversees the Lab's business functions and is deeply involved in managing the Lab's strategic and continuous improvement goals. She also manages key elements of KDL projects, coordinating between the KDL development team and our range of external partners. \n\nShe has worked at King's since 2012, where she turned an existing background in general project management and administration into into a more in-depth understanding of research management before moving across to the newly formed Digital Lab in 2016. \n\nShe has an MA in Victorian Media and Culture from Royal Holloway, University of London and a BA in Theatre and English and Creative Writing from the George Washington University, as well as a Practitioner qualification from the Association for Project Management. She is interested in process improvement and change management.",
       "memberOf": [
         {
           "startDate": null,
@@ -10661,7 +10661,7 @@
     "agent": {
       "name": "Paul Caton",
       "slug": "paul-caton",
-      "description": null,
+      "description": "Paul Caton took up his first digital humanities post - as Electronic Publications Editor at the Women Writers Project - whilst completing his Ph.D in English Literature at Brown University. He also worked as a project analyst for Brown's Scholarly Technology Group. After leaving Brown he spent two years as a Marie Curie postdoctoral fellow with the TEXTE Project at the National University of Ireland, Galway. In the autumn of 2009 he went to the University of Victoria in British Columbia to take up another postdoctoral position, with the INKE Project. He joined King's Department of Digital Humanities as a Research Associate in 2010 and then with other members of the production team helped form King's Digital Lab in 2015.\n\nDr. Caton's research centres on the representation of text by formal models and by markup languages. Related areas that also interest him include ontologies of personal relations and models of transcription.",
       "memberOf": [
         {
           "startDate": null,
@@ -11778,7 +11778,7 @@
     "agent": {
       "name": "Priyal Shah",
       "slug": "priyal-shah",
-      "description": null,
+      "description": "Priyal contributed to the Alice Thornton project, amongst others, during her time as a UI/UX Designer at the Lab.",
       "memberOf": [
         {
           "startDate": null,
@@ -12562,7 +12562,7 @@
     "agent": {
       "name": "Simon Tanner",
       "slug": "simon-tanner",
-      "description": null,
+      "description": "Simon Tanner has over 20 years’ experience working  with major cultural institutions across the world to assist them to transform their collections and online presence. Simon is Professor of Digital Cultural Heritage in the Department of Digital Humanities and also founded the Digital Futures Academy that has had participants from over 40 countries and run in the UK, Australia and Africa. \n\nHis personal research interests encompass digitisation, openGLAM, measuring impact and assessing value in the digital domain. He has an excellent record of delivering digitisation programmes and strategic change management for many museums, national libraries and archives; including the British Library, Europeana, digitising the Dead Sea Scrolls,  and other special collections.\n\nLink to his research page [here](Link to his research page.).",
       "memberOf": [
         {
           "startDate": null,
@@ -12873,7 +12873,7 @@
     "agent": {
       "name": "Stuart Dunn",
       "slug": "stuart-dunn",
-      "description": null,
+      "description": "Stuart Dunn is Head of the Department of Digital Humanities at King's. He started out as an archaeologist, with interests in the history of cartography, digital approaches to landscape studies, and spatial humanities. Stuart has worked with members of the KDL team on many projects.",
       "memberOf": [
         {
           "startDate": null,
@@ -13062,7 +13062,7 @@
     "agent": {
       "name": "Tiffany Ong",
       "slug": "tiffany-ong",
-      "description": null,
+      "description": "Tiffany is a designer with a background in textiles. She completed her BA in Ravensbourne University London and later an MA at the Royal College of Art. After a few years working in the knitwear field, she entered digital design unsure if she was ready to give up the tactile aspect but soon was deeply engaged with the ever evolving vibrant community constantly open to sharing new ideas and developments. Once she started integrating design with code, it brought about even more interest and exploration.\n\nSee her [personal website](https://ongtiffany.github.io/) which includes her contribution to KDL projects for further information.",
       "memberOf": [
         {
           "startDate": null,
@@ -13424,7 +13424,7 @@
     "agent": {
       "name": "Tim Watts",
       "slug": "tim-watts",
-      "description": null,
+      "description": "Tim Watts has worked for 20 years with computers and the last 10 as a Linux Systems Manager. He has worked previously as Systems Manager for the Computing Support Group at Imperial College London in the Department of Computing. He has also worked for Astraguard Ltd and Raster Vision Ltd. Tim loves Linux and Perl and is a firm believer that open source software benefits mankind.",
       "memberOf": [
         {
           "startDate": null,
