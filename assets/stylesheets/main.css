@@ -598,7 +598,7 @@ main.posts article article figure {
 }
 main.posts article article figure img {
   height: auto;
-  max-width: 15em;
+  max-width: 45em;
   object-fit: contain;
   display: inline-block;
   vertical-align: top;
@@ -612,6 +612,9 @@ main.posts article article section {
 }
 main.posts article article section a {
   text-decoration: none;
+}
+main.posts article article section a:hover {
+  text-decoration: underline;
 }
 main.posts article article section a h2 {
   margin-top: 0;
