@@ -18,7 +18,7 @@ layout: layouts/agent.njk
 {% set organisations = agent.memberOf | getAgentOrganisations %}
 
 {% if projects.length > 0 %}
-  <section id="part-of">
+  <section class="part-of">
     <h2>Projects</h2>
     <ul>
       {% for member in projects | sort(false, false, "inProject.slug") %}
@@ -40,7 +40,7 @@ layout: layouts/agent.njk
 {% endif %}
 
 {% if organisations.length > 0 %}
-  <section id="part-of">
+  <section class="part-of">
     <h2>Organisations</h2>
     <ul>
       {% for member in organisations | sort(false, false, "inOrganisation.agent.slug") %}
