@@ -815,18 +815,18 @@ main.organisation article section h2 span {
   font-size: 0.7em;
   color: #5a6369;
 }
-main.person article section #part-of ul,
-main.organisation article section #part-of ul {
+main.person article section .part-of ul,
+main.organisation article section .part-of ul {
   width: 100%;
   margin-left: -40px;
   list-style-type: none;
 }
-main.person article section #part-of ul li,
-main.organisation article section #part-of ul li {
+main.person article section .part-of ul li,
+main.organisation article section .part-of ul li {
   font-size: 1.2em;
 }
-main.person article section #part-of ul li a,
-main.organisation article section #part-of ul li a {
+main.person article section .part-of ul li a,
+main.organisation article section .part-of ul li a {
   color: #0a2d50;
   padding: 0.5em 0;
   cursor: default;
@@ -834,8 +834,8 @@ main.organisation article section #part-of ul li a {
   text-decoration: none;
   line-height: 1.4;
 }
-main.person article section #part-of ul li a h3,
-main.organisation article section #part-of ul li a h3 {
+main.person article section .part-of ul li a h3,
+main.organisation article section .part-of ul li a h3 {
   font-family: KingsCaslon, serif;
   font-weight: normal;
   cursor: pointer;
@@ -843,13 +843,13 @@ main.organisation article section #part-of ul li a h3 {
   line-height: 1;
   display: inline-block;
 }
-main.person article section #part-of ul li a h3:hover,
-main.organisation article section #part-of ul li a h3:hover {
+main.person article section .part-of ul li a h3:hover,
+main.organisation article section .part-of ul li a h3:hover {
   text-decoration: underline;
   color: #135394;
 }
-main.person article section #part-of ul li a small,
-main.organisation article section #part-of ul li a small {
+main.person article section .part-of ul li a small,
+main.organisation article section .part-of ul li a small {
   color: #5a6369;
   font-family: KingsBureauGrotFiveOne, sans-serif;
   font-weight: 400;
@@ -858,8 +858,8 @@ main.organisation article section #part-of ul li a small {
   margin-left: 0.3em;
   font-style: normal;
 }
-main.person article section #part-of ul li a span,
-main.organisation article section #part-of ul li a span {
+main.person article section .part-of ul li a span,
+main.organisation article section .part-of ul li a span {
   font-family: KingsBureauGrotFiveOne, sans-serif;
   font-weight: normal;
   display: block;
