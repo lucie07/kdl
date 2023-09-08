@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** Importing King's Fonts **/
 /** King's Bureau Grotesque **/
 @font-face {
@@ -76,8 +77,23 @@ section {
   margin: 0 auto;
 }
 
-.kdl-member {
-  font-weight: bold;
+.kdl-member a:after {
+  background-image: url("https://thenounproject.com/api/private/icons/1085531/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0");
+  background-size: 1.4em 1.4em;
+  background-repeat: no-repeat;
+  padding-left: 1.4em;
+  margin-left: 0.3em;
+  content: "";
+  vertical-align: super;
+  font-size: 0.7em;
+  color: black;
+  font-family: KingsBureauGrotFiveOne, sans-serif;
+}
+.kdl-member a:hover {
+  text-decoration: none;
+}
+.kdl-member a:hover:after {
+  content: " ➟ Currently at King's Digital Lab";
 }
 
 main a {
