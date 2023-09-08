@@ -64,5 +64,8 @@
     "npm": {
       "publish": false
     }
+  },
+  "dependencies": {
+    "release-it": "^16.1.5"
   }
 }
