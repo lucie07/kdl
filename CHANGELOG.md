@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/kingsdigitallab/kdl/compare/0.3.0...HEAD)
 
+### Added
+
+- Auto-generate `CHANGELOG.md`
+
 ## [0.3.0](https://github.com/kingsdigitallab/kdl/compare/0.2.1...0.3.0) (2023-09-08)
 
 - fix(frontend): team member slug [`3c3d60e`](https://github.com/kingsdigitallab/kdl/commit/3c3d60ed0d5a95d41eca1c3d606707de7a791cc3)
