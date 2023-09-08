@@ -31,7 +31,6 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.18.2",
     "@babel/eslint-plugin": "^7.17.7",
-    "@release-it/keep-a-changelog": "^4.0.0",
     "djlint": "^1.19.4",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
@@ -64,11 +63,6 @@
     },
     "npm": {
       "publish": false
-    },
-    "plugins": {
-      "@release-it/keep-a-changelog": {
-        "filename": "CHANGELOG.md"
-      }
     }
   }
 }
