@@ -188,6 +188,36 @@
     }
   },
   {
+    "jobTitle": "89f2f99e-2079-4d4b-b75a-a38a4faaa432",
+    "agent": {
+      "name": "Alessandra Esposito",
+      "slug": "alessandra-esposito",
+      "description": "Alessandra is responsible for high-level project management of internally and externally funded projects, liaising between the Solution Development Team (SDT) and project partners, as well as working closely with the Director and Lab Manager to ensure the efficient running of the Lab.\n\nAfter obtaining a PhD in Classics from King’s College London, she has since worked on humanities research projects including the AHRC/Newton funded project MaDiH (مديح): Mapping Digital Cultural Heritage in Jordan at King’s Digital Lab and the Infrastructure for Digital Arts and Humanities (IDAH) project at the University of Oxford. As an archaeologist, her research interests lie in management and process improvements of digitisation strategies of museums and archaeological fieldwork archives.",
+      "memberOf": [
+        {
+          "startDate": null,
+          "endDate": null,
+          "inProject": {
+            "name": "MaDiH: Mapping Digital Cultural Heritage in Jordan",
+            "alternateName": "MaDiH (مديح)",
+            "slug": "madih",
+            "foundingDate": "2019-02-01",
+            "dissolutionDate": "2021-02-28",
+            "department": [
+              {
+                "organisation_id": null
+              }
+            ]
+          },
+          "inOrganisation": null,
+          "roleName": {
+            "name": "RSE team member"
+          }
+        }
+      ]
+    }
+  },
+  {
     "jobTitle": null,
     "agent": {
       "name": "Alessia Coccato",
@@ -216,36 +246,6 @@
           "inOrganisation": null,
           "roleName": {
             "name": "Researcher"
-          }
-        }
-      ]
-    }
-  },
-  {
-    "jobTitle": null,
-    "agent": {
-      "name": "Alesssandra Esposito",
-      "slug": "alesssandra-esposito",
-      "description": "Alessandra is responsible for high-level project management of internally and externally funded projects, liaising between the Solution Development Team (SDT) and project partners, as well as working closely with the Director and Lab Manager to ensure the efficient running of the Lab.\n\nAfter obtaining a PhD in Classics from King’s College London, she has since worked on humanities research projects including the AHRC/Newton funded project MaDiH (مديح): Mapping Digital Cultural Heritage in Jordan at King’s Digital Lab and the Infrastructure for Digital Arts and Humanities (IDAH) project at the University of Oxford. As an archaeologist, her research interests lie in management and process improvements of digitisation strategies of museums and archaeological fieldwork archives.",
-      "memberOf": [
-        {
-          "startDate": null,
-          "endDate": null,
-          "inProject": {
-            "name": "MaDiH: Mapping Digital Cultural Heritage in Jordan",
-            "alternateName": "MaDiH (مديح)",
-            "slug": "madih",
-            "foundingDate": "2019-02-01",
-            "dissolutionDate": "2021-02-28",
-            "department": [
-              {
-                "organisation_id": null
-              }
-            ]
-          },
-          "inOrganisation": null,
-          "roleName": {
-            "name": "RSE team member"
           }
         }
       ]
@@ -12217,6 +12217,107 @@
           "inOrganisation": null,
           "roleName": {
             "name": "Researcher"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jobTitle": "48abbe32-441b-40ae-9094-b5d4058ae38e",
+    "agent": {
+      "name": "Samantha Callaghan",
+      "slug": "samantha-callaghan",
+      "description": "Samantha Callaghan initially joined KDL in 2017 as the Metadata Analyst for the Georgian Papers Programme and has held a number of roles within the Lab.\n\nSamantha has an MLIS and received her training in the field of digitisation through her work at the New Zealand Electronic Text Centre. She has worked on a wide variety of digitisation projects, large and small, both in NZ and in the UK. She has written or co-written articles around interlibrary loan, digitisation and Mātauranga Māori, digitisation in small institutions and orphan work licensing schemes.\n\nSamantha’s research interests and volunteer work centres around Indigenous and other source community participation in research projects as well as representation in GLAM sector institutions.",
+      "memberOf": [
+        {
+          "startDate": null,
+          "endDate": null,
+          "inProject": {
+            "name": "Digital Sudan: A Partnership for Conserving and Promoting Sudanese Cultural and Documentary Heritage",
+            "alternateName": "Sudan Memory",
+            "slug": "sudan-memory",
+            "foundingDate": "2022-01-10",
+            "dissolutionDate": null,
+            "department": [
+              {
+                "organisation_id": null
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "Sudanese Association for Archiving Knowledge"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "Africa City of Technology"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "National Records Office of Sudan"
+                  }
+                }
+              }
+            ]
+          },
+          "inOrganisation": {
+            "agent": {
+              "name": "King's College London",
+              "slug": "kings-college-london"
+            }
+          },
+          "roleName": {
+            "name": "RSE team member"
+          }
+        },
+        {
+          "startDate": null,
+          "endDate": null,
+          "inProject": {
+            "name": "Georgian Papers Programme",
+            "alternateName": "GPP",
+            "slug": "gpp",
+            "foundingDate": "2015-04-01",
+            "dissolutionDate": null,
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "College of William and Mary Libraries"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "Omohundro Institute"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "Royal Archives & Royal Library"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
+                  }
+                }
+              }
+            ]
+          },
+          "inOrganisation": null,
+          "roleName": {
+            "name": "RSE team member"
           }
         }
       ]
