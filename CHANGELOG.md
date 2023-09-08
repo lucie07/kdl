@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.2](https://github.com/kingsdigitallab/kdl/compare/0.3.1...0.3.2) (2023-09-08)
+
+- build: remove keepachangelog plugin, doesn't work well with auto-changelog [`8a7c4ed`](https://github.com/kingsdigitallab/kdl/commit/8a7c4ed55a2e2b7a56c53c3bb0f3ab8023ad1708)
+- build: restore release-it [`4bfc59e`](https://github.com/kingsdigitallab/kdl/commit/4bfc59e73ab30092bc692b0360d56bbae0c6bea5)
+- feat(frontend): sort projects by name; add organisations section [`8ed729e`](https://github.com/kingsdigitallab/kdl/commit/8ed729eea390d2591036e71c74194fbf14974818)
+- Release 0.3.2 [`f4c5538`](https://github.com/kingsdigitallab/kdl/commit/f4c55386a3a21bc591fb5c77e9556172aa4089ff)
+- docs: fix the heading format [`63fc381`](https://github.com/kingsdigitallab/kdl/commit/63fc38170e3ceccf125329a2627caff8122af55a)
+- build: fix the auto-changelog hook to use the keepachangelog template [`f58b932`](https://github.com/kingsdigitallab/kdl/commit/f58b9321397f54080ebd43920766123ffe9ac9ba)
+
 ## [0.3.1](https://github.com/kingsdigitallab/kdl/compare/0.3.0...0.3.1) (2023-09-08)
 
 - build: add auto-changelog to release-it [`3c3af86`](https://github.com/kingsdigitallab/kdl/commit/3c3af8635b2d890aea22fbf1842e29b82bd1d309)
