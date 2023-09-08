@@ -1,13 +1,10 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+## [0.3.1](https://github.com/kingsdigitallab/kdl/compare/0.3.0...0.3.1) (2023-09-08)
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-## [0.3.1](https://github.com/kingsdigitallab/kdl/compare/0.3.0...HEAD) (2023-09-08)
-
-- build: auto-generate `CHANGELOG.md`
+- build: add auto-changelog to release-it [`3c3af86`](https://github.com/kingsdigitallab/kdl/commit/3c3af8635b2d890aea22fbf1842e29b82bd1d309)
+- Release 0.3.1 [`b45938f`](https://github.com/kingsdigitallab/kdl/commit/b45938f8ab32f5fb4dd28cf98edf492ec90d69fe)
+- docs: add release information [`b750699`](https://github.com/kingsdigitallab/kdl/commit/b75069961225abfb7b6f96c6c06634501a4be854)
 
 ## [0.3.0](https://github.com/kingsdigitallab/kdl/compare/0.2.1...0.3.0) (2023-09-08)
 
@@ -453,13 +450,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## v0.1.1 (2022-05-13)
 
 - 📦 New: Initial commit with directus, docker and base package configuration. [`1802ce2`](https://github.com/kingsdigitallab/kdl/commit/1802ce28758e9181256948effc73f55ca727496b)
-
-### Added
-
-- [Directus](https://docs.directus.io/) headless CMS.
-- [Docker](https://www.docker.com/) configuration files.
-- Package configuration with scripts to interact with the stack.
-- [Directus slug extensions](https://github.com/dimitrov-adrian/directus-extension-wpslug-interface).
-- Initial [schema.org](https://schema.org) based data model based.
-- ETL service to manage data imports.
-- [11ty](https://www.11ty.dev) frontend app.
