@@ -86,6 +86,13 @@ module.exports = (eleventyConfig) => {
     members.filter((member) => member.agent)
   );
 
+  eleventyConfig.addFilter("getAgentProjects", (memberOf) =>
+    memberOf.filter((role) => role.inProject)
+  );
+  eleventyConfig.addFilter("getAgentOrganisations", (memberOf) =>
+    memberOf.filter((role) => role.inOrganisation)
+  );
+
   eleventyConfig.addShortcode("getDirectusAsset", (id) => {
     if (!id) return null;
     return `${process.env.DIRECTUS_URL}/assets/${id}`;

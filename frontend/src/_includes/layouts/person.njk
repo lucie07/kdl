@@ -14,12 +14,14 @@ layout: layouts/agent.njk
   {% if agent.description %}{{ agent.description | renderMd | safe }}{% endif %}
 </section>
 
-{% if agent.memberOf %}
-  <section id="part-of">
-    <h2>Involved in</h2>
+{% set projects = agent.memberOf | getAgentProjects %}
+{% set organisations = agent.memberOf | getAgentOrganisations %}
 
+{% if projects.length > 0 %}
+  <section id="part-of">
+    <h2>Projects</h2>
     <ul>
-      {% for member in agent.memberOf|sort(false, false, "name") %}
+      {% for member in projects | sort(false, false, "inProject.slug") %}
         <li>
           {% if member.inProject %}
             <a href="{% route member.inProject.slug, 'Projects' %}">
@@ -31,6 +33,19 @@ layout: layouts/agent.njk
           {% else %}
             <a href="{% route member.inOrganisation.agent.slug, 'Organisations' %}">{{- member.inOrganisation.agent.name -}}</a>
           {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}
+
+{% if organisations.length > 0 %}
+  <section id="part-of">
+    <h2>Organisations</h2>
+    <ul>
+      {% for member in organisations | sort(false, false, "inOrganisation.agent.slug") %}
+        <li>
+          <a href="{% route member.inOrganisation.agent.slug, 'Organisations' %}">{{- member.inOrganisation.agent.name -}}</a>
         </li>
       {% endfor %}
     </ul>
