@@ -116,9 +116,30 @@ section {
 }
 
 .kdl-member {
-  // background: rgb(237, 241, 242);
-  font-weight: bold;
-}
+  a{
+  &:after{
+    background-image: url('https://thenounproject.com/api/private/icons/1085531/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0');
+    background-size: 1.4em 1.4em;
+    background-repeat: no-repeat;
+    padding-left: 1.4em;// equal to width of image.
+    margin-left:0.3em;
+    content:"";
+    vertical-align: super;
+    //font-variant: small-caps;
+    //font-style: italic;
+    font-size:0.7em;
+    color:black;
+    font-family: KingsBureauGrotFiveOne, sans-serif;
+     }//&:after
+     &:hover{
+      text-decoration: none;
+      &:after{
+        content:" ➟ Currently at King's Digital Lab";
+         }//&:after
+        }//&:hover
+      }//&:after
+  }//a
+//.kdl-member 
 
 main {
   a {
