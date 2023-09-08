@@ -31,12 +31,12 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.18.2",
     "@babel/eslint-plugin": "^7.17.7",
+    "@release-it/keep-a-changelog": "^4.0.0",
     "djlint": "^1.19.4",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.6.2",
     "prettier-plugin-sort-imports": "^1.7.0",
-    "release-it": "^15.11.0",
     "simple-git-hooks": "^2.8.0",
     "vscode-langservers-extracted": "^4.2.1"
   },
@@ -53,11 +53,22 @@
     "etl"
   ],
   "release-it": {
+    "git": {
+      "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/main/templates/keepachangelog.hbs"
+    },
     "github": {
       "release": false
     },
+    "hooks": {
+      "after:bump": "npx auto-changelog -p"
+    },
     "npm": {
       "publish": false
+    },
+    "plugins": {
+      "@release-it/keep-a-changelog": {
+        "filename": "CHANGELOG.md"
+      }
     }
   }
 }
