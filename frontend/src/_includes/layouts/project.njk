@@ -4,6 +4,8 @@ layout: layouts/base.njk
 
 {% from "kdl/components/image/macros.njk" import imageMacro %}
 
+{% set assetsPath = config.paths.assets %}
+
 <section>
   <!-- Images -->
   {% if obj.feature %}{{ imageMacro(obj.feature) }}{% endif %}
@@ -28,8 +30,12 @@ layout: layouts/base.njk
             {% else %}
               {{ member.agent.name }}
             {% endif %}
+            {% if kdlTeamMember %}
+              <img src="{{ assetsPath }}/icons/team.png"
+                   alt="Current KDL team member icon"
+                   title="Current KDL team member">
+            {% endif %}
             <span>{{ member.roleName.name }}{%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}</span>
-            {% if kdlTeamMember %}<span>{{ kdlTeamMember.jobTitle }}</span><span>King's Digital Lab</span>{% endif %}
           </li>
         {% endfor %}
       </ul>

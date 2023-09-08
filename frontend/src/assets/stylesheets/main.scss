@@ -116,30 +116,12 @@ section {
 }
 
 .kdl-member {
-  a{
-  &:after{
-    background-image: url('https://thenounproject.com/api/private/icons/1085531/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0');
-    background-size: 1.4em 1.4em;
-    background-repeat: no-repeat;
-    padding-left: 1.4em;// equal to width of image.
-    margin-left:0.3em;
-    content:"";
-    vertical-align: super;
-    //font-variant: small-caps;
-    //font-style: italic;
-    font-size:0.7em;
-    color:black;
-    font-family: KingsBureauGrotFiveOne, sans-serif;
-     }//&:after
-     &:hover{
-      text-decoration: none;
-      &:after{
-        content:" ➟ Currently at King's Digital Lab";
-         }//&:after
-        }//&:hover
-      }//&:after
-  }//a
-//.kdl-member 
+  img {
+    height: 1.5em;
+    width: 1.5em;
+  }
+}
+//.kdl-member
 
 main {
   a {
@@ -152,7 +134,7 @@ main {
     } //&:hover
   } //a
   p {
-    line-height:1.5;
+    line-height: 1.5;
     a {
       text-decoration-style: solid;
       font-family: KingsBureauGrotFiveOne, sans-serif;
@@ -718,7 +700,7 @@ main.posts {
         margin-left: 2em;
         a {
           text-decoration: none;
-          &:hover{
+          &:hover {
             text-decoration: underline;
           }
           h2 {
