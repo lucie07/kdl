@@ -48,4 +48,4 @@ Investment in human expertise could include funding to support specialised train
 - unpacking the complexities of a research domain/context
 - identifying opportunities for innovative infrastructural solutions beyond the single research project
 
-Part 4 will be the end of the series with a focus on our understanding of Equality, Diversity and Inclusion issues affecting RTP based on KDL experience.
+[Part 4](/blog/rtp-rse4/) will be the end of the series with a focus on our understanding of Equality, Diversity and Inclusion issues affecting RTP based on KDL experience.

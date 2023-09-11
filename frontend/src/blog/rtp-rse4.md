@@ -21,7 +21,7 @@ This is the fourth part of [a blogpost](/blog/rtp-rse/) published for [Internati
 
 ## Part 4
 
-This is last part in the series ([Part 1: "Who are Research Technology Professionals?"](/blog/rtp-rse/); [Part 2: "People, projects, infrastructure, methodologies and processes"](/blog/rtp-rse2/); [Part 3: "Visibility, recognition, career development, sustainability and training"](/blog/rtp-rse3/)). There is no need to be read in sequence but it might be useful for context.
+This is last part in the series ([](/blog/rtp-rse/)[Part 1: "Who are Research Technology Professionals?"](/blog/rtp-rse/); [](/blog/rtp-rse/)[Part 2: "People, projects, infrastructure, methodologies and processes"](/blog/rtp-rse2/); [](/blog/rtp-rse/)[Part 3: "Visibility, recognition, career development, sustainability and training"](/blog/rtp-rse3/)). There is no need to be read in sequence but it might be useful for context.
 
 Last but not least, the final point of the AHRC consultation (Equality Diversity and Inclusion issues) is the one that allows us to subsume several aspects of Research Technology Professionals (RTPs) roles in Arts and Humanities (A&H) research and how we see them changing and becoming professionalised in a healthy and inclusive environment:
 
