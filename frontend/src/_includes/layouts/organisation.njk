@@ -3,7 +3,7 @@ layout: layouts/agent.njk
 ---
 
 {% set funded = projects | fundedProjects(agentInstance) %}
-{% if funded %}
+{% if funded.length > 0 %}
   <div id="funded">
     <h2>Projects funded</h2>
     <ul>

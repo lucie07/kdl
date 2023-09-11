@@ -59,12 +59,17 @@ module.exports = (eleventyConfig) => {
     return DateTime.fromISO(dateObj).get("year");
   });
 
-  eleventyConfig.addFilter("fundedProjects", (projects, funder) => {
-    if (!projects || !funder) return null;
+  eleventyConfig.addFilter("fundedProjects", (projects, agent) => {
+    if (!projects || !agent) return null;
 
-    return projects.filter((project) =>
-      project.funder.some((funded) => funded.agent_id.id === funder.agent.id)
-    );
+    return projects.filter((project) => {
+      return (
+        project.funder &&
+        project.funder.some(
+          (funder) => funder?.agent_id?.id === agent?.agent?.id
+        )
+      );
+    });
   });
 
   eleventyConfig.addFilter("asToc", (content) => {
