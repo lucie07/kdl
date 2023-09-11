@@ -1,5 +1,18 @@
 # Changelog
 
+## [Unreleased](https://github.com/kingsdigitallab/kdl/compare/0.3.3...HEAD)
+
+- feat(frontend): add latest version of the data [`c96c19e`](https://github.com/kingsdigitallab/kdl/commit/c96c19ef221052bdffe64f17947da69fa1ade675)
+- fix(frontend): check if project has funder [`8900eb5`](https://github.com/kingsdigitallab/kdl/commit/8900eb50ed222b566fd7d2370eb9399e36c0317c)
+- refactor(frontend): change the navkey from organisation to partners and funders to match url [`72957d9`](https://github.com/kingsdigitallab/kdl/commit/72957d9e32da36cd6b5fbde6e08f67c8410fb823)
+- build: include unreleased section in the changelog [`94eee2b`](https://github.com/kingsdigitallab/kdl/commit/94eee2b4a61f8aed5b16542025ddf56c1c853a79)
+
+## [0.3.3](https://github.com/kingsdigitallab/kdl/compare/0.3.2...0.3.3) (2023-09-08)
+
+- feat(frontend): update projects data [`811c202`](https://github.com/kingsdigitallab/kdl/commit/811c2023f0ad0f4418b31a983f11b923a146d2bd)
+- Release 0.3.3 [`fdcd968`](https://github.com/kingsdigitallab/kdl/commit/fdcd968f4a1cf524f3504faef87c89dd1fe9efc0)
+- fix(frontend): convert id to class to prevent duplicate ids [`27efe36`](https://github.com/kingsdigitallab/kdl/commit/27efe36279a57f53f7c9f8a62ae069e0d1ed34fb)
+
 ## [0.3.2](https://github.com/kingsdigitallab/kdl/compare/0.3.1...0.3.2) (2023-09-08)
 
 - build: remove keepachangelog plugin, doesn't work well with auto-changelog [`8a7c4ed`](https://github.com/kingsdigitallab/kdl/commit/8a7c4ed55a2e2b7a56c53c3bb0f3ab8023ad1708)
