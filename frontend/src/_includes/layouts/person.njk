@@ -31,7 +31,7 @@ layout: layouts/agent.njk
               {%- include "partials/project.njk" -%}
             </a>
           {% else %}
-            <a href="{% route member.inOrganisation.agent.slug, 'Organisations' %}">{{- member.inOrganisation.agent.name -}}</a>
+            <a href="{% route member.inOrganisation.agent.slug, 'Partners and funders' %}">{{- member.inOrganisation.agent.name -}}</a>
           {% endif %}
         </li>
       {% endfor %}
@@ -45,7 +45,7 @@ layout: layouts/agent.njk
     <ul>
       {% for member in organisations | sort(false, false, "inOrganisation.agent.slug") %}
         <li>
-          <a href="{% route member.inOrganisation.agent.slug, 'Organisations' %}">{{- member.inOrganisation.agent.name -}}</a>
+          <a href="{% route member.inOrganisation.agent.slug, 'Partners and funders' %}">{{- member.inOrganisation.agent.name -}}</a>
         </li>
       {% endfor %}
     </ul>

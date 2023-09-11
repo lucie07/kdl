@@ -1,5 +1,5 @@
 ---
-breadcrumb: Organisations
+breadcrumb: "Partners and funders"
 layout: layouts/organisation.njk
 pagination:
   data: organisations
@@ -7,6 +7,6 @@ pagination:
   alias: agentInstance
 permalink: "about/partners-and-funders/{{ agentInstance.agent.slug }}/"
 eleventyComputed:
-  navKey: "People"
+  navKey: "Partners and funders"
   title: "{{ agentInstance.agent.name }}{%-if agentInstance.agent.alternateName %} <span>{{ agentInstance.agent.alternateName }}</span>{% endif %}"
 ---

@@ -67,7 +67,7 @@ layout: layouts/base.njk
         <ul>
           {% for funder in project.funder %}
             <li>
-              <a href="{% route funder.agent_id.slug, 'Organisations' %}">{{- funder.agent_id.name -}}</a>
+              <a href="{% route funder.agent_id.slug, 'Partners and funders' %}">{{- funder.agent_id.name -}}</a>
             </li>
           {% endfor %}
         </ul>
