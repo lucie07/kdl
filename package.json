@@ -59,7 +59,7 @@
       "release": false
     },
     "hooks": {
-      "after:bump": "npx auto-changelog --commit-limit false --template https://raw.githubusercontent.com/release-it/release-it/main/templates/keepachangelog.hbs"
+      "after:bump": "npx auto-changelog --commit-limit false --unreleased --template https://raw.githubusercontent.com/release-it/release-it/main/templates/keepachangelog.hbs"
     },
     "npm": {
       "publish": false
