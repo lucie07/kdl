@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+  <base href=".">
+
+
+    
+  <title>Critical Modelling of Extensive Literary Data | King&apos;s Digital Lab</title>
+
+<meta name="description" content="This blogpost discusses and reflects on the process and findings of the collaboration between colleagues at the Australian National University (ANU) and at King&rsquo;s Digital Lab (KDL), supported by the King&rsquo;s College London Australia Partnership Seed Fund and Australian National University Global Research Partnership scheme, for the period 2020-22. It provides some background and outlines three approaches to investigating the&nbsp;Reading at the Interface&nbsp;project dataset.">
+<meta name="robots" content="index,follow">
+<meta name="author" content="Arianna Ciula">
+
+<link rel="canonical" href="https://kdl.kcl.ac.uk/blog/cmeld-ae/">
+
+<meta property="og:title" content="Critical Modelling of Extensive Literary Data | King&apos;s Digital Lab">
+<meta property="og:type" content="article">
+
+<meta property="og:url" content="https://kdl.kcl.ac.uk/blog/cmeld-ae/">
+<meta property="og:description" content="This blogpost discusses and reflects on the process and findings of the collaboration between colleagues at the Australian National University (ANU) and at King&rsquo;s Digital Lab (KDL), supported by the King&rsquo;s College London Australia Partnership Seed Fund and Australian National University Global Research Partnership scheme, for the period 2020-22. It provides some background and outlines three approaches to investigating the&nbsp;Reading at the Interface&nbsp;project dataset.">
+<meta property="og:image" content="https://kdl.kcl.ac.uk/assets/images/blog/robert-anasch-McX3XuJRsUM-unsplash.original.jpg">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@kingsdigitallab">
+<meta name="twitter:url" content="https://kdl.kcl.ac.uk/blog/cmeld-ae/">
+<meta name="twitter:title" content="Critical Modelling of Extensive Literary Data | King&apos;s Digital Lab">
+<meta name="twitter:description" content="This blogpost discusses and reflects on the process and findings of the collaboration between colleagues at the Australian National University (ANU) and at King&rsquo;s Digital Lab (KDL), supported by the King&rsquo;s College London Australia Partnership Seed Fund and Australian National University Global Research Partnership scheme, for the period 2020-22. It provides some background and outlines three approaches to investigating the&nbsp;Reading at the Interface&nbsp;project dataset.">
+<meta name="twitter:image" content="https://kdl.kcl.ac.uk/assets/images/blog/robert-anasch-McX3XuJRsUM-unsplash.original.jpg">
+
+
+
+
+    
+      <link rel="icon" href="/kdl/assets/images/favicon.ico" sizes="any">
+      <link rel="icon" href="/kdl/assets/images/icon.svg" type="image/svg+xml">
+      <link rel="apple-touch-icon" href="/kdl/assets/images/icon.png">
+    
+
+    
+      <link href="/kdl/assets/stylesheets/main.css" rel="stylesheet">
+    
+
+    <meta name="theme-color" content="#d16014">
+  </head>
+  <body>
+    
+    
+
+    
+      <header>
+        
+  <div class="site">
+    <div class="kdl-container">
+      <a class="sitename" href="/kdl/">King&#39;s Digital Lab</a>
+      <a class="logo" href="//kcl.ac.uk">
+        <img src="/kdl/assets/images/kings-logo-red.svg" alt="King&#39;s College London logo in red">
+      </a>
+    </div>
+  </div>
+
+
+        
+  
+  
+  <nav class="main" aria-label="Menu">
+    <div class="kdl-container">
+      
+        <input id="menu-toggle" type="checkbox">
+        <label class="kdl-menu-button-container" role="button" for="menu-toggle">
+          <span class="kdl-menu-button">Menu</span>
+        </label>
+      
+      <ul>
+      
+        
+  
+<li>
+    <a href="/kdl/about/">About</a>
+</li>
+
+      
+        
+  
+<li>
+    <a href="/kdl/projects/">Projects</a>
+</li>
+
+      
+        
+  
+<li>
+    <a href="/kdl/blog/">Blog</a>
+</li>
+
+      
+        
+  
+<li>
+    <a href="/kdl/search/">Search</a>
+</li>
+
+      
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+        
+  
+  
+  <nav class="sub" aria-label="breadcrumbs">
+    <div class="kdl-container">
+      <ol>
+        
+          <li>
+            <a href="/kdl/blog/" aria-current="page">Blog</a>
+          </li>
+        
+      </ol>
+    </div>
+  </nav>
+
+
+
+
+      </header>
+    
+
+    
+      <main class="post">
+        
+  <div class="kdl-container">
+    <h1>Critical Modelling of Extensive Literary Data</h1>
+
+    <aside>
+    <h2>Table of contents</h2>
+    <nav class="toc">
+        <ol><li><a href="#background">Background</a></li><li><a href="#the-problem">The Problem</a></li><li><a href="#our-experiment">Our experiment</a><ol><li><a href="#inspirations-and-aspirations">Inspirations and aspirations</a></li><li><a href="#experimental-modes">Experimental modes</a><ol><li><a href="#nlp-parts-of-speech-(by-geoff)">NLP Parts of speech (by Geoff)</a></li><li><a href="#exploring-textual-data-with-notebooks-(by-miguel)">Exploring Textual Data with Notebooks (by Miguel)</a></li><li><a href="#entropy-in-large-language-models">Entropy in Large Language Models</a></li></ol></li></ol></li><li><a href="#what-next%3F">What next?</a></li></ol>
+      </nav>
+  </aside>
+
+    <article>
+
+  
+  <article>
+    <header>
+      <figure>
+  <img src="/kdl/assets/images/blog/robert-anasch-McX3XuJRsUM-unsplash.original.jpg" alt="Image5 for critical modelling blog">
+  <figcaption>
+    Image5 for critical modelling blog
+  </figcaption>
+</figure>
+
+      
+  </header>
+
+  
+    
+    <article>
+    <p>Authors: Katherine Bode, Arianna Ciula, Galen Cuthbertson, Geoff Hinchcliffe, Ginestra Ferraro, Miguel Vieira, and Millicent Weber</p>
+<p>This blogpost discusses and reflects on the process and findings of the collaboration between colleagues at the Australian National University (ANU) and at King’s Digital Lab (KDL), supported by the King’s College London Australia Partnership Seed Fund and Australian National University Global Research Partnership scheme, for the period 2020-22. It provides some background and outlines three approaches to investigating the Reading at the Interface project dataset.</p>
+<h2 id="background" tabindex="-1">Background</h2>
+<p>The Reading at the Interface (RTI) dataset was generated between 2018 and 2022 by querying a range of platforms (social media, newspaper, and academic) using <a href="https://www.austlit.edu.au/">AustLit</a> records of works of Australian literature, published between 1788 and 2018, in a range of “forms” (including children’s fiction, essays, novels, novellas, poetry and short stories). The forthcoming platform ANU aims to launch in due course will publish the data in two ways:</p>
+<ul>
+<li>via an API, that will allow others to query it in something close to the form of the dataset (some copyright issues pending);</li>
+<li>via a bespoke user interface or interfaces for engaging with the textual data.</li>
+</ul>
+<p>This approach is driven by a core interest in exploring the question of what textual data is or should or might be for humanities disciplines. At present, digital humanities projects, including (or perhaps, especially) in computational literary studies, explore textual data in ways that follow what we might call “structural” or even “structuralist” principles. According to this understanding, culture and language are systems in which meaning is determined by their structures. The relationship between culture and language is considered arbitrary but can also be studied in order to understand how both work.</p>
+<p>All of the methods used in this collaboration between ANU and KDL teams have structuralist roots, in that NLP parts of speech, word and sentence embeddings, and large language models are premised on the notion that finding relations among parts of a whole (a sentence, a corpus, other ‘linguistic’ units) is a way of uncovering the operations by which meaning exists.</p>
+<h2 id="the-problem" tabindex="-1">The Problem</h2>
+<p>The problem we see with this approach is that very few areas of inquiry in the humanities hold to structuralist explanations or to predetermined relations across defined units of analysis. Rather than systems having structures that determine meanings that can be interpreted by subjects, the general move across the humanities is “poststructuralist” - i.e. it understands subjects (and objects and situations) as created by systems that they also create, or less strongly, shaped by systems that they shape. Because language, for instance, is understood as a condition of being a subject, there is no place outside of language from which to see the structures it supposedly contains. Another problem is that this structuralist approach is at odds with the way that textual transmission is generally understood in humanities disciplines such as textual and media studies: as bound up in or inseparable from both the material forms with which it is expressed, and the social forms in which it is received.</p>
+<p>Techniques of reading and writing (or reading-writing, to emphasise the extent to which each requires the other) and technologies such as the book have been the practices with which humanities disciplines have made meaning, and these cannot be separated from design. Though they have structure, they do not presume structure determines meaning, which instead arises from experiences that shape or even create its participants.</p>
+<h2 id="our-experiment" tabindex="-1">Our experiment</h2>
+<p>The ANU/KDL experiment in playing with and publishing textual data tries to understand whether it is possible to use structuralist methods without fully subscribing to their logic, and to do so in ways that are attentive to the importance of materiality and sociality, to their capacity to mean anything, and ultimately to producing their simultaneous determinacy and indeterminacy.</p>
+<h3 id="inspirations-and-aspirations" tabindex="-1">Inspirations and aspirations</h3>
+<p>Here are some sources of inspiration:</p>
+<p>In 1985, D. F. McKenzie wrote:</p>
+<blockquote>
+<p>The procedural constraints that traditional textualities lay upon the larger semeiotic field that they model and simulate are far more pragmatic, in a full Peircean sense, than the electronic models that we are currently deploying. [...] Digital tools have yet to develop models for displaying and replicating the self-reflexive operations of bibliographical tools, which alone are operations for thinking and communicating—which is to say, for transforming storage into memory, and data into knowledge. [...] Traditional textuality provides us with autopoietic models that have been engineered as effective analytic tools. The codex is the greatest and most famous of these. Our problem is imagining ways to recode them for digital space. To do that we have to conceive formal models for autopoietic processes that can be written as computer software programs.</p>
+<p>(McKenzie, 1985)</p>
+</blockquote>
+<p>However, as McGann (2014) states, the models we use in those systems have limits:</p>
+<blockquote>
+<p>It should also be remembered that it was not the sophistication of computing in its early stages which biased its use towards science, but its limited memory and therefore its inability to handle the complexity and range of verbal language as distinct from combinations of the numbers 0 to 9. Only as its memory systems have grown has the computer changed its nature from blackboard to book. It has at long last become literate and qualified to join other textual systems.</p>
+<p>(McGann, 2014)</p>
+</blockquote>
+<p><a href="https://www.wikiwand.com/en/Generative_artificial_intelligence">Generative AI</a> advances might very well challenge these limits and are in fact making researchers question the essence of reading-writing and how that practice is acquired and thought of in humanities disciplines. Regardless, our question is in what ways are our approaches of engaging with digital textual technologies still bound by structuralist assumptions, and in what ways can they build on and develop textual technologies appropriate for new situations and practices? Or in Fazi’s words (2018) is a “digital aesthetics” possible?</p>
+<p>Of the codex technology in the context of the development of the novel in the eighteenth-century, Christina Lupton writes that: “the book [is] a machine that embodies contingency” (1187) because it “doubles as a sign of an already determined future, and as a sign of openness to the incalculable,” (1189) with “its pages bound and yet open to permutation” (1173). Contingency, as Lupton defines it, is not a synonym for chance but a proposition from which both “necessity and impossibility” are excluded. Seltzer discusses contingency in these terms as a way of “acting confidently and building descriptions of the world out of the unknown and out of knowing about nonknowing, since there’s no alternative anyway”. Fazi (2018) likewise argues that “contingent formalism” and hence “generative capacity” are at the heart of digital computation:</p>
+<blockquote>
+<p>Computation’s preprogrammed procedures should be understood not as an all-encompassing and preformed total determinism, but as processes of determination that are always exposed to, and in fact ingressed by, indeterminacy.</p>
+<p>(Fazi, 2018)</p>
+</blockquote>
+<p>Design-first approaches offer another source of inspiration. The visual examples quoted below are grounded on (often textual) data trustworthiness, yet work with readers’ perception and foreground the creative process not availed of technical functionalism.</p>
+<p><img src="/kdl/assets/images/blog/Blank_4_Grids_Collage.width-1024.png" alt="Image for critical modelling blog"></p>
+<p>Images clockwise from top left: <a href="https://www.stefanieposavec.com/work">Stefanie Posavec</a>; <a href="https://www.behance.net/gallery/83315693/Italo-Calvino-text-data-data-visualization-book">Hanna Piotrowska</a>; Stefanie Posavec again; <a href="http://feltron.com/FAR14.html">Nicholas Felton</a></p>
+<p>Are we able to design systems for contemporary textual data that operate like the codex, fixing things in place without suggesting that they are structurally predetermined to be that way, and creating the relations in which or through which engagement can occur without predetermining what will be done and how? Can these be generative in virtue of their structures rather than despite it?</p>
+<h3 id="experimental-modes" tabindex="-1">Experimental modes</h3>
+<p>The three structuralist modes of text-arrangement we have experimented with are:</p>
+<ol>
+<li>NLP parts of speech (led by Geoff)</li>
+<li>Exploring textual data with notebooks (led by Miguel)</li>
+<li>Large language models (or potentially a simple method for designating entropy) (led by Galen)</li>
+</ol>
+<p>They are outlined below by reflecting on the interests of each lead experimenter and produced artefacts (notebooks, code and design assets).</p>
+<h4 id="nlp-parts-of-speech-(by-geoff)" tabindex="-1">NLP Parts of speech (by Geoff)</h4>
+<p>Interests:</p>
+<ul>
+<li>Exploring alternatives for aggregating RTI reviews content.</li>
+<li>Developing approaches that could be deployed for public interaction.</li>
+<li>Developing novel modes of representation and interaction.</li>
+</ul>
+<p>Working with large textual datasets, like the corpus in this project, the questions we ask are dictated by the structures and qualities of the data. A key focus of this experiment was to consider how we might work outside the familiar structures that dominate our understanding of the data; beyond the connections of reviews to works and works to reviews, how else can we think about the data? This experiment aims not to consider what is being reviewed, nor who is reviewing, but how works are being discussed.</p>
+<p>To explore this idea, I decided to use Parts Of Speech (POS) tagging. A POS process involves tagging each word in a sentence using a lexical tag set; noun, verb, adjective, or other grammatical category. There are around 36 different tags in a typical NLP POS library such as the <a href="https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html">Penn Treebank Project</a>. Tagging is dependent on the relational context of each word, rather than using a static mapping between word and tag. My hunch was that POS encoding could show us something about how, in a grammatical sense, people were discussing Australian literature and use POS tagging to draw together review texts that would otherwise have no relation.</p>
+<p>To test this hunch, I used the <a href="https://finnlp.gitbook.io/fin/in-depth-look/pos-tagger">Fin NLP POS Tagger</a> to encode the review texts as POS and saved them as flat text files. I then created a JavaScript web app which encodes a user’s text input into a POS string and finds matching patterns in the POS encoded review files, displaying matching texts as a list.</p>
+<p><img src="/kdl/assets/images/blog/Capture1.width-1024.png" alt="Image2 for critical modelling blog"></p>
+<p>A user’s text input is encoded as POS.</p>
+<p><img src="/kdl/assets/images/blog/Capture2.width-300.png" alt="Image3 for critical modelling blog"></p>
+<p>The list of matches, denoted by source (review publication type): [a]cademic, [s]ocial (media), [n]ewspaper.</p>
+<p>The results the app produces can be satisfyingly recognisable and also curiously oblique. The relevance of some results is clear and for others much less so, however, they consistently appear plausible and avoid the sense of being entirely random and meaningless. Ultimately, it feels like there is something there even if you’re unsure what it is, or why exactly the match has been made.</p>
+<p>As I’ve written about <a href="https://www.bloomsbury.com/au/making-data-9781350133235/">elsewhere</a>, the choice to work in the web browser is a strategic one. It allows me to experiment freely without dependence on exclusive infrastructure or proprietary systems, and makes the task of deploying for a public audience a relatively easy one. This experiment is one of many I have conducted on the RTI corpus, and sees me working in an iterative reflective cycle of experimentation; apply a technique, evaluate the results, reflect on if / how the technique could be used, adjust and repeat or move on to another approach.</p>
+<p>In terms of the key goals; the POS approach does offer potential to explore how the literary works are being discussed by reviewers and provides a means for drawing together review texts that is not dependent on the overt structures of the metadata but instead utilises the inherent qualities of the texts themselves. This initial prototype aimed only to test the viability of the POS approach, and having demonstrated its feasibility, future work will explore the opportunity for interesting modes of interaction and representation.</p>
+<h4 id="exploring-textual-data-with-notebooks-(by-miguel)" tabindex="-1">Exploring Textual Data with Notebooks (by Miguel)</h4>
+<p>Interests:</p>
+<ul>
+<li>Data exploration and machine learning as a means to discovery and ﬁnding new ways to visualise textual data.</li>
+<li>Use of notebooks as a way to share not only the results of investigations around textual data but also the thought process behind them.</li>
+</ul>
+<p>Explorations, data dimensions and assets:</p>
+<p><a href="https://www.wikiwand.com/en/Notebook_interface">Notebooks</a>, interactive documents that combine code, data and documentation, are a powerful tool for data exploration and machine learning, enabling researchers to discover new ways to visualise textual data and share their thought processes with others. They provide a flexible and collaborative environment for exploring data, experimenting with different algorithms, and creating visualisations to communicate findings.</p>
+<p>KDL experimented with data exploration and machine learning techniques to analyse a large collection of literary works and their reviews. We used notebooks to share not only the results of the investigations but also the thought process behind them, demonstrating the use of notebooks to collaborate and share knowledge.</p>
+<p>The <a href="http://tinyurl.com/y3p7nhun">ﬁrst notebook</a> we created was designed for data exploration, to get a better understanding of the textual data.  The data consists of around 615,000 literary works with corresponding metadata, and also 65,000 reviews for which the text of the review was available. We created new dimensions, such as the sentiment and n-grams of the text of the reviews, which  were used to experiment with different types of visualisations.</p>
+<p>The <a href="http://tinyurl.com/59ys8pz6">second notebook</a> was focused on temporal exploration and aimed to understand how the data evolved over time. Unlike the first notebook, this one didn’t focus on the text of the reviews, but rather on dimensions around the text, such as work metadata and the sentiment of the reviews. By exploring cyclical patterns in the data, we could analyse how the reviews evolved over time.</p>
+<p><a href="http://tinyurl.com/ycy27y7z">The final notebook</a> used  machine learning to create sentence embeddings. <a href="https://www.wikiwand.com/en/Sentence_embedding">Sentence embeddings</a> are mathematical representations of sentences that capture their features and are used for computational processing of sentence data. These can then be used for several applications, in this project it was used for <a href="https://www.sbert.net/examples/applications/semantic-search/README.html">semantic search</a> and <a href="https://www.wikiwand.com/en/Cluster_analysis">clustering</a>. This allows us to search and find reviews based on context and meaning rather than just keywords, making it easier to identify patterns in the data. We also explored different visualisations to represent the embeddings.</p>
+<p><img src="/kdl/assets/images/blog/Capture3_AxrPb2c.width-1024.png" alt="Image4 for critical modelling blog"></p>
+<p>Sentence embeddings of the RTI reviews (academic, social and newspapers) coloured by cluster</p>
+<p>Elements of the final exploration will be integrated into the Reading at the Interface platform.</p>
+<h4 id="entropy-in-large-language-models" tabindex="-1">Entropy in Large Language Models</h4>
+<p>Interests:</p>
+<ul>
+<li>Exploring the relationship between concepts of 'surprise', 'entropy', and commonsense user understandings of 'interesting content'.</li>
+<li>Resisting 'generative' paradigms of Large Language Model use.</li>
+<li>Developing unusual or 'alien' metrics for intuitive exploration of the corpus.</li>
+</ul>
+<p>Large Language Models (LLMs) have grown rapidly in scale and popularity; however, the majority of scholarly and popular attention has been on the generative capacities of these models, and the capabilities which appear in response to specific prompts. In my exploration of the Reading at the Interface dataset, I sought to shift focus towards the inverse: rather than examining the extent to which a given LLM (such as GPT-3) could generate compelling text, I sought to measure the extent to which each review in the dataset was 'well-modelled' by the LLM. For each review, the questions are counterfactual:</p>
+<ul>
+<li>How likely is it that an LLM would have generated this review?</li>
+<li>On a scale from 'human' to 'machine', how 'human' is this review?</li>
+<li>Or, to use more historical terminology: from the perspective of the model, how much 'information' is in this review?</li>
+</ul>
+<p>In ‘<a href="http://languagelog.ldc.upenn.edu/myl/Shannon1950.pdf">Prediction and Entropy of Printed English</a>’, Claude Shannon provided a useful definition of character-wise information in language:</p>
+<p>The entropy is a statistical parameter which measures, in a certain sense, how much information is produced on the average for each letter of a text in the language. If the language is translated into binary digits (0 or 1) in the most efficient way, the entropy is the average number of binary digits required per letter of the original language.</p>
+<p>Shannon was commenting on the entropy of a language using a per-character measure — something that can only be approximated empirically — but his intuitive account of the 'entropy' of a text is closely entangled with modern, token-based approaches. While the performance of pre-trained LLMs today is often measured in terms of downstream tasks — as exemplified by the <a href="https://gluebenchmark.com">GLUE benchmark</a> — training of the models themselves is governed by a more basic measure: perplexity, the exponentiated average negative log-likelihood of a sequence. This is, in essence, a measure of a model's ability to predict each token in a text given the previous tokens in that sequence; the cross-entropy between the data and the model's predictions. A text with lower 'perplexity' is one which is more predictable by the model.</p>
+<p>My explorations of this began with use of OpenAI's GPT-3 API. Unfortunately, three entangled challenges emerged. First, the lack of access to the underlying model, combined with the limited nature of the API output, meant that it was impossible to access the log-probability for each token in a sequence. Second, I discovered that the only way to access the log-probability of a given token was to repeatedly query the API for each token in a text string. The scale of our corpus meant that this would be prohibitively expensive. And, finally, relying on a closed model meant sacrificing the replicability of our experiment (and possible interface).</p>
+<p>Here, the <a href="https://www.theverge.com/2023/3/8/23629362/meta-ai-language-model-llama-leak-online-misuse">unintended release</a> of Meta AI's <a href="https://ai.facebook.com/blog/large-language-model-llama-meta-ai/">LLaMA</a> model offered a solution. Thanks to the efforts of the open source community in developing optimisations such as '<a href="https://github.com/ggerganov/llama.cpp">llama.cpp</a>' and high-level wrappers such as '<a href="https://github.com/cocktailpeanut/dalai">dalai</a>', it is now possible for us to generate an accurate perplexity measure on our own hardware, with full access to the log-probability of each token in a given review. While still computationally costly, we now have the ability to generate an accurate measure of perplexity which is complete and replicable. Critically, this measure can also be integrated into an interface for measuring user input, enabling us to compare collected reviews to user-generated contributions without relying on an external corporation which may change or remove model access at any time.</p>
+<h2 id="what-next%3F" tabindex="-1">What next?</h2>
+<p>We collaborated remotely, sometimes severely impacted by the material disruptions of climate change and COVID-19 pandemic.</p>
+<p>While our experiment did not have a definite outcome in mind in terms of delivery of design products and interfaces, we attempted to remain true to a Research Software Engineering perspective, driven by the objective of making something that works (for which structure - meaning reduction, parametrization, metrics etc. is a sine qua non) and sharing our results in diverse ways (Notebooks, blogpost, workshop). However, at the same time we embedded perspectives and openness of interpretation with a certain playfulness and indeterminacy of process both in the creation of the experimental modes and hopefully in its fruition once online. Some modes of our data explorations will feed into the forthcoming digital platform AWRI: A Reading-Writing Interface.</p>
+
+    </article>
+  
+
+  
+    <footer>
+      
+        
+          by
+          <span class="author"><a href="/kdl/about/people/arianna-ciula/">Arianna Ciula</a></span>
+
+          
+          
+            on
+            <time datetime="Tue May 09 2023 00:00:00 GMT+0000 (Coordinated Universal Time)">May 9, 2023</time>
+
+        
+      </footer>
+    
+
+  </article>
+
+
+
+</article>
+  </div>
+
+      </main>
+    
+
+    
+  <footer>
+    <div class="connect">
+  <div class="kdl-container">
+    <h2>Connect with King’s Digital Lab</h2>
+    <ul>
+      <li>
+        <a href="//github.com/kingsdigitallab/" title="KDL on GitHub">
+          <img src="/kdl/assets/icons/github.svg" alt="GitHub icon">
+        </a>
+      </li>
+      <li>
+        <a href="//hachyderm.io/@kingsdigitallab" title="KDL on Mastodon">
+          <img src="/kdl/assets/icons/mastodon.svg" alt="Mastodon icon">
+        </a>
+      </li>
+      <li>
+        <a href="//twitter.com/kingsdigitallab/" title="KDL on Twitter">
+          <img src="/kdl/assets/icons/twitter.svg" alt="Twitter icon">
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<nav class="footer" aria-label="Footer navigation">
+  <div class="kdl-container">
+    <section>
+      <h2>Information</h2>
+      <ul>
+        <li>
+          <a href="/kdl/about/team/">Team</a>
+        </li>
+        <li>
+          <a href="/kdl/faqs/">Frequently Asked Questions</a>
+        </li>
+        <li>
+          <a href="/kdl/about/archiving-and-sustainability/">Archiving and sustainability</a>
+        </li>
+        <li>
+          <a href="/kdl/about/maintenance/">Maintenance</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Directory</h2>
+      <ul>
+        <li>
+          <a href="/kdl/about/people/">People</a>
+        </li>
+        <li>
+          <a href="/kdl/about/partners-and-funders/">Partners & funders</a>
+        </li>
+        <li>
+          <a href="/kdl/sitemap.xml">Site map</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Policies</h2>
+      <ul>
+        <li>
+          <a href="/kdl/accessibility-statement/">Accessibility statement</a>
+        </li>
+        <li>
+          <a href="/kdl/privacy-policy/">Privacy policy</a>
+        </li>
+        <li>
+          <a href="/kdl/terms-and-conditions/">Terms &amp; conditions</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Contact us</h2>
+      <ul>
+        <li>
+          <a href="https://forms.clickup.com/26475560/f/t7z18-72308/NK252MBKP2M3U8YGXU">✏ New project ideas</a>
+        </li>
+        <li>
+          <a href="https://forms.clickup.com/26475560/f/t7z18-72288/ZIZZG9QOO8ZE1TCMQG">✏ Report a problem</a>
+        </li>
+      </ul>
+      <address>
+        <a href="mailto:kdl-info@kcl.ac.uk">kdl-info@kcl.ac.uk</a>
+      </address>
+      <br>
+      <address>
+        King's College London
+        <br>
+        Room VWB 2.50,
+        <br>
+        Virginia Woolf Building
+        <br>
+        22 Kingsway
+        <br>
+        London WC2B 6LE
+      </address>
+    </section>
+  </div>
+</nav>
+
+
+  </footer>
+
+
+    
+    
+  </body>
+</html>
