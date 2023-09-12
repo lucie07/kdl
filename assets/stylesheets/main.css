@@ -981,18 +981,30 @@ footer nav.footer .kdl-container section ul li a:hover {
 footer nav.footer .kdl-container section p,
 footer nav.footer .kdl-container section address {
   font-style: normal;
+}
+footer nav.footer .kdl-container section p.postal,
+footer nav.footer .kdl-container section address.postal {
   line-height: 1.5;
   padding: 0.4em 0 0 0;
   margin: 0;
 }
-footer nav.footer .kdl-container section p a,
-footer nav.footer .kdl-container section address a {
+footer .footer-end {
+  background-color: #3e4649;
   color: white;
-  font-family: KingsBureauGrotFiveOne, sans-serif;
-  cursor: pointer;
+  padding: 1.25em 1em;
 }
-footer nav.footer .kdl-container section p a:hover,
-footer nav.footer .kdl-container section address a:hover {
+footer .footer-end .kdl-container {
+  display: flex;
+  margin-right: 2em;
+}
+footer .footer-end .kdl-container a {
+  color: white;
+  min-width: 6em;
+  display: block;
+  text-decoration: none;
+  font-family: KingsBureauGrotFiveOne, sans-serif;
+}
+footer .footer-end .kdl-container a:hover {
   text-decoration: underline;
   text-decoration-style: solid;
 }
