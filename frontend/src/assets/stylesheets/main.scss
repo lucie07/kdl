@@ -1035,22 +1035,35 @@ footer {
         p,
         address {
           font-style: normal;
-          line-height: 1.5;
-          padding: 0.4em 0 0 0;
-          margin: 0;
-          a {
-            color: white;
-            font-family: KingsBureauGrotFiveOne, sans-serif;
-            cursor: pointer;
-            &:hover {
-              text-decoration: underline;
-              text-decoration-style: solid;
-            } // &:hover
-          } //a
-        } //p
+          &.postal {
+            line-height: 1.5;
+            padding: 0.4em 0 0 0;
+            margin: 0;
+          }
+        }
       } //section
     } //.wrapper
   } //nav.footer
+  .footer-end {
+    background-color: #3e4649;
+    color: white;
+    padding: 1.25em 1em;
+    .kdl-container {
+      display: flex;
+      margin-right: 2em;
+      a {
+        color: white;
+        min-width: 6em;
+        display: block;
+        text-decoration: none;
+        font-family: KingsBureauGrotFiveOne, sans-serif;
+        &:hover {
+          text-decoration: underline;
+          text-decoration-style: solid;
+        } //&:hover
+      } //a
+    }
+  }
 } //footer
 
 @media (max-width: 800px) {
