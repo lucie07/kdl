@@ -59,19 +59,6 @@ module.exports = (eleventyConfig) => {
     return DateTime.fromISO(dateObj).get("year");
   });
 
-  eleventyConfig.addFilter("fundedProjects", (projects, agent) => {
-    if (!projects || !agent) return null;
-
-    return projects.filter((project) => {
-      return (
-        project.funder &&
-        project.funder.some(
-          (funder) => funder?.agent_id?.id === agent?.agent?.id
-        )
-      );
-    });
-  });
-
   eleventyConfig.addFilter("asToc", (content) => {
     const tocFilter = eleventyConfig.getFilter("toc");
 
@@ -87,6 +74,37 @@ module.exports = (eleventyConfig) => {
     return undefined;
   });
 
+  eleventyConfig.addFilter("featuredPosts", function (posts, number = 3) {
+    return posts.reverse().slice(0, number);
+  });
+
+  eleventyConfig.addFilter(
+    "featuredProjects",
+    function (projects, status = "Active", number = 3) {
+      return projects
+        .filter((project) => project.creativeWorkStatus.name === status)
+        .filter((project) => project.image)
+        .filter(
+          (project) => project.description && project.description.length > 0
+        )
+        .sort(() => Math.random() - 0.5)
+        .slice(0, number);
+    }
+  );
+
+  eleventyConfig.addFilter("fundedProjects", (projects, agent) => {
+    if (!projects || !agent) return null;
+
+    return projects.filter((project) => {
+      return (
+        project.funder &&
+        project.funder.some(
+          (funder) => funder?.agent_id?.id === agent?.agent?.id
+        )
+      );
+    });
+  });
+
   eleventyConfig.addFilter("getProjectMembers", (members) =>
     members.filter((member) => member.agent)
   );
@@ -94,6 +112,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter("getAgentProjects", (memberOf) =>
     memberOf.filter((role) => role.inProject)
   );
+
   eleventyConfig.addFilter("getAgentOrganisations", (memberOf) =>
     memberOf.filter((role) => role.inOrganisation)
   );
@@ -102,6 +121,7 @@ module.exports = (eleventyConfig) => {
     if (!id) return null;
     return `${process.env.DIRECTUS_URL}/assets/${id}`;
   });
+
   eleventyConfig.addShortcode("route", function (path, navigationKey = "") {
     let url = path;
 

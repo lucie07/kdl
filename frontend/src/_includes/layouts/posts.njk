@@ -9,35 +9,33 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 
 {%- for post in posts -%}
   <article>
     {% if post.data.feature.image %}
-    <a href="{{ post.url }}">
-      <figure>
-        <img src="{{ post.data.feature.image }}"
-             alt="{{ post.data.feature.description }}">
-        <figcaption>{{ post.feature.description }}</figcaption>
-      </figure>
-    </a>
+      <a href="{{ post.url }}">
+        <figure>
+          <img src="{{ post.data.feature.image }}"
+               alt="{{ post.data.feature.description }}">
+          <figcaption>{{ post.feature.description }}</figcaption>
+        </figure>
+      </a>
     {% endif %}
 
     <section>
-    <a href="{{ post.url }}">
-      <h2>{{ post.data.title }}</h2>
-    </a>
+      <a href="{{ post.url }}">
+        <h2>{{ post.data.title }}</h2>
+      </a>
 
-    {% if post.data.authors %}
-      by
-      {% for person in post.data.collections.people | filter(post.data.authors, "data.id") %}
-        {{- authorMacro(person) -}}
-        {%- if not loop.last -%},{%- endif -%}
-      {% endfor %}
-    {% endif %}
-    {% if post.data.date %}
-      on {{ timeMacro(post.data.date) -}}
-    {% endif %}
+      {% if post.data.authors %}
+        by
+        {% for person in post.data.collections.people | filter(post.data.authors, "data.id") %}
+          {{- authorMacro(person) -}}
+          {%- if not loop.last -%},{%- endif -%}
+          {% endfor %}
+        {% endif %}
+        {% if post.data.date %}on {{ timeMacro(post.data.date) -}}{% endif %}
 
-    <p>{{ post.data.excerpt }}</p>
-    </section>
-  </article>
-{%- endfor -%}
+        <p>{{ post.data.excerpt }}</p>
+      </section>
+    </article>
+  {%- endfor -%}
 
-{% set label = "Posts" %}
-{% include "partials/pagination.njk" %}
+  {% set label = "Posts" %}
+  {% include "partials/pagination.njk" %}

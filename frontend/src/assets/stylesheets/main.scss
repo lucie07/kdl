@@ -77,6 +77,7 @@
 $navy: #0a2d50;
 $lightgray: #e6ebed; //rgb(230, 235, 237)
 $darkgray: #5a6369; //rgb(90, 99, 105)
+$darkergray: #3e4649;
 $red: #e12726;
 
 // -- Pagefind --
@@ -94,12 +95,11 @@ html {
 
 html,
 body {
-  margin: 0;
-  height: 100%;
   font-family: KingsBureauGrotFiveOne, sans-serif;
   font-weight: 400;
-  //font-family: KingsBureauGrotFiveOne,"Helvetica Neue",Helvetica,Arial,sans-serif;
   float: left;
+  height: 100%;
+  margin: 0;
   width: 100%;
 }
 
@@ -149,6 +149,126 @@ main {
   img {
     width: 100%;
   }
+
+  &.home {
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: KingsBureauGrotThreeSeven;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 1.5em;
+    }
+
+    h4 {
+      font-size: 1.3em;
+    }
+
+    figcaption {
+      display: none;
+    }
+
+    .hero {
+      background-color: $navy;
+      color: white;
+      padding: 40px;
+      text-align: center;
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+      }
+
+      img {
+        border: 1px solid white;
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    }
+
+    .discover {
+      background-color: white;
+      padding: 40px;
+      margin-top: 20px;
+
+      .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .project {
+          flex-basis: calc(33.33% - 20px);
+          margin-bottom: 20px;
+          padding: 20px;
+          background-color: $lightgray;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .blog {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .post {
+          flex-basis: calc(33.33% - 20px);
+          margin-bottom: 20px;
+          padding: 20px;
+          background-color: $lightgray;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+
+          small {
+            font-size: 0.8em;
+            color: $navy;
+          }
+        }
+      }
+    }
+
+    .information {
+      background-color: lighten($lightgray, 6%);
+      padding: 40px;
+      margin-top: 20px;
+
+      .info-blocks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .info-block {
+          background-color: $navy;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+          color: white;
+          flex-basis: calc(33.33% - 20px);
+          margin-bottom: 20px;
+          padding: 20px;
+          text-align: center;
+
+          a {
+            color: white;
+            font-family: KingsBureauGrotThreeSeven;
+          }
+        }
+      }
+    }
+  } // home
 } //main
 
 //-- Header/Navigation --
@@ -1045,7 +1165,7 @@ footer {
     } //.wrapper
   } //nav.footer
   .footer-end {
-    background-color: #3e4649;
+    background-color: $darkergray;
     color: white;
     padding: 1.25em 1em;
     .kdl-container {

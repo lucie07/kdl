@@ -1,14 +1,14 @@
 ---
 layout: layouts/home.njk
 ogtype: website
-title: King's Digital Lab
+navKey: Home
 ---
 
-This is the home page, to change the content edit the file at `/src/index.md`.
+# Welcome to the King's Digital Lab site
 
-_King’s Digital Lab (KDL) is a Research Software Engineering (RSE) team within King’s College London
+King’s Digital Lab (KDL) is a Research Software Engineering (RSE) team within King’s College London
 Faculty of Arts and Humanities. Our focus is on designing and implementing systems, infrastructure,
 tools, and processes to produce high-quality digital scholarly outputs. At KDL, we embrace a
-collaborative and open culture, fostering co-research as new tools and methods emerge._
+collaborative and open culture, fostering co-research as new tools and methods emerge.
 
 ![Collage of KDL projects' images](/assets/images/general/project-collage.jpg)

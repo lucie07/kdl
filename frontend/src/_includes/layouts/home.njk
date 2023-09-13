@@ -2,4 +2,65 @@
 layout: layouts/base.njk
 ---
 
-{{ content | safe }}
+{% from "kdl/components/image/macros.njk" import imageMacro %}
+{% from "kdl/components/time/macros.njk" import timeMacro %}
+
+<!-- Hero Section -->
+<section class="hero">
+  {{ content | safe }}
+</section>
+
+<section class="discover">
+  <h2>Discover</h2>
+
+  <h3>Active projects</h3>
+  <section class="projects">
+    {% for project in projects | featuredProjects %}
+      <div class="project">
+        {% set image %}
+          {% getDirectusAsset project.image.id %}
+        {% endset %}
+        {{- imageMacro({image: image, description: project.image.description }) -}}
+        <h4>
+          <a href="{% route project.slug, 'Projects' %}">{{ project.name }}</a>
+        </h4>
+        <p>{{ project.description | truncate(250) }}</p>
+      </div>
+    {% endfor %}
+  </section>
+
+  <h3>Latest blog posts</h3>
+  <section class="blog">
+    {% for post in collections.post | featuredPosts %}
+      <div class="post">
+        {{- imageMacro(post.data.feature) -}}
+        <small>{{ timeMacro(post.data.date) -}}</small>
+        <h4>
+          <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </h4>
+        <p>{{ post.data.excerpt }}</p>
+      </div>
+    {% endfor %}
+  </section>
+</section>
+
+<section class="information">
+  <h2>Information</h2>
+  <section class="info-blocks">
+    <div class="info-block">
+      <h3>
+        <a href="/about/">About us</a>
+      </h3>
+    </div>
+    <div class="info-block">
+      <h3>
+        <a href="/about/team">Team</a>
+      </h3>
+    </div>
+    <div class="info-block">
+      <h3>
+        <a href="/faqs/">FAQs</a>
+      </h3>
+    </div>
+  </section>
+</section>
