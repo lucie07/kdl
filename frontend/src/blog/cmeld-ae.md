@@ -14,6 +14,7 @@ tags:
   - literary data
 authors:
   - Arianna Ciula
+  - Miguel Vieira
 date: 2023-05-09
 excerpt: This blogpost discusses and reflects on the process and findings of the
   collaboration between colleagues at the Australian National University (ANU)
