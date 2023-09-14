@@ -49,13 +49,13 @@
 {% endblock headerEnd %}
  
 {% block content %}
-  <div class="kdl-container">
+  {% if navKey != "Home" %}<div class="kdl-container">{% endif %}
     {% if navKey != "Home" %}<h1>{{ title | safe }}</h1>{% endif %}
 
     {% include "partials/toc.njk" %}
 
     <article>{{ content | safe }}</article>
-  </div>
+  {% if navKey != "Home" %}</div>{% endif %}
 {% endblock content %}
 
 {% block footer %}
