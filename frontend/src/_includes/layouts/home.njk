@@ -7,10 +7,18 @@ layout: layouts/base.njk
 
 <!-- Hero Section -->
 <section class="hero">
-  {{ content | safe }}
+  <div class="hero-content">
+    {{ content | safe }}
+    <a href="#discover" title="Scroll down for more content">⧋</a>
+  </div>
+  <video autoplay loop muted playsinline>
+    <source src="/assets/videos/network.mp4" type="video/mp4">
+    <!-- Add additional video sources for different formats if needed -->
+    Your browser does not support the video tag.
+  </video>
 </section>
 
-<section class="discover">
+<section id="discover" class="discover">
   <h2>Discover</h2>
 
   <h3>Active projects</h3>
