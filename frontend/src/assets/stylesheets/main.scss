@@ -310,13 +310,13 @@ main {
       padding: 3em;
       margin-top: 1.5em;
       figure{
-        padding:2em;
+        padding:3vw;
         img{
           background-color: white;
           border-radius: 50%;
           width:100%;
           border: 9px double $navy;
-          padding: 1em;
+          padding: 1vw;
         }
       }
 
@@ -332,7 +332,7 @@ main {
           color: white;
           flex-basis: calc(33.33% - 1.5em);
           margin-bottom: 1.5em;
-          padding: 1.5em;
+          padding: 1.5vw;
           text-align: center;
 
           a {
