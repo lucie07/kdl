@@ -3,13 +3,19 @@ layout: layouts/base.njk
 permalink: "about/people/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
 ---
 
+{% set assetsPath = config.paths.assets %}
+
 <div class="wrapper">
     <ul start="{{ pagination.pageNumber * 10 + 1 }}">
         {%- for person in paginatedPeople -%}
             {% set kdlTeamMember = team | filter(person.agent.slug, 'slug') | first %}
-            <li>
-                <a {% if kdlTeamMember %}class="kdl-member"{% endif %}
-                   href="{% route person.agent.slug, 'People' %}">{{ person.agent.name }}</a>
+            <li {% if kdlTeamMember %}class="kdl-member"{% endif %}>
+                <a href="{% route person.agent.slug, 'People' %}">{{ person.agent.name }}</a>
+                {% if kdlTeamMember %}
+                    <img src="{{ assetsPath }}/icons/team.png"
+                         alt="Current KDL team member icon"
+                         title="Current KDL team member">
+                {% endif %}
             </li>
         {%- endfor -%}
     </ul>
