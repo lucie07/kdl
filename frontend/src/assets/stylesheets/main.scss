@@ -309,6 +309,16 @@ main {
       background-color: lighten($lightgray, 6%);
       padding: 3em;
       margin-top: 1.5em;
+      figure{
+        padding:2em;
+        img{
+          background-color: white;
+          border-radius: 50%;
+          width:100%;
+          border: 9px double $navy;
+          padding: 1em;
+        }
+      }
 
       .info-blocks {
         display: flex;
