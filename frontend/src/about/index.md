@@ -9,3 +9,5 @@ eleventyNavigation:
 About ...
 
 This is the about page. 
+
+Welcome to KDL.
