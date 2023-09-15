@@ -33,7 +33,7 @@ layout: layouts/base.njk
 <section id="discover" class="discover">
   <h2>Discover</h2>
 
-  <h3>Active projects</h3>
+  <h3>Featured projects</h3>
   <section class="projects">
     {% for project in projects | featuredProjects %}
       <div class="project">
@@ -47,6 +47,10 @@ layout: layouts/base.njk
         <p>{{ project.description | truncate(250) }}</p>
       </div>
     {% endfor %}
+ 
+    <a href="/projects/">
+      <button>Browse all projects</button>
+    </a>
   </section>
 
   <h3>Latest blog posts</h3>
@@ -61,6 +65,29 @@ layout: layouts/base.njk
         <p>{{ post.data.excerpt }}</p>
       </div>
     {% endfor %}
+    <a href="/blog/">
+      <button>Browse all posts</button>
+    </a>
+  </section>
+</section>
+
+<section class="information">
+  <h2>Services</h2>
+  <section class="info-blocks">
+    <ul>
+      <li>Funding proposals</li>
+      <li>Research software engineering and web development</li>
+      <li>Digital creativity</li>
+      <li>Machine learning</li>
+      <li>Data visualisation</li>
+      <li>...</li>
+    </ul>
+    <a href="https://forms.clickup.com/26475560/f/t7z18-72308/NK252MBKP2M3U8YGXU">
+      <button>Contact us</button>
+    </a>
+    <a href="/faqs/">
+      <button>Frequently Asked Questions</button>
+    </a>
   </section>
 </section>
 
