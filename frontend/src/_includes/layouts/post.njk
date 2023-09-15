@@ -1,5 +1,7 @@
 ---
 layout: layouts/base.njk
 ---
+
 {% from "kdl/components/article/macros.njk" import articleMacro %}
+
 {{ articleMacro(obj, collections, { addLink: false }) }}
