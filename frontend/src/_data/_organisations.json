@@ -277,6 +277,29 @@
     "subOrganisation": []
   },
   {
+    "cmsDateCreated": "2023-09-15T11:22:15.651Z",
+    "cmsDateUpdated": null,
+    "cmsSort": null,
+    "cmsStatus": "draft",
+    "dissolutionDate": null,
+    "foundingDate": null,
+    "id": "62da7118-bbe3-45cc-9bc9-39380d24f912",
+    "agent": {
+      "alternateName": "CBRL",
+      "cmsDateCreated": "2023-09-15T11:22:15.506Z",
+      "cmsDateUpdated": null,
+      "cmsSort": null,
+      "description": null,
+      "id": "0188ac0d-6726-4a28-8280-bdf6c2efd236",
+      "name": "Council for British Research in the Levant",
+      "slug": "council-for-british-research-in-the-levant",
+      "url": [],
+      "memberOf": []
+    },
+    "parentOrganisation": null,
+    "subOrganisation": []
+  },
+  {
     "cmsDateCreated": "2022-10-25T13:33:57.968Z",
     "cmsDateUpdated": null,
     "cmsSort": null,
