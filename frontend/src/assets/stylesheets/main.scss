@@ -173,7 +173,8 @@ main {
       font-size: 1.3em;
     }
 
-    a {
+    a,
+    button {
       color: $navy;
       font-family: KingsBureauGrotThreeSeven;
       text-decoration: none;
@@ -181,6 +182,7 @@ main {
       &:focus,
       &:hover {
         color: $blue;
+        cursor: pointer;
       }
     }
 
@@ -217,6 +219,7 @@ main {
         top: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
+
         &:hover {
           text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
           ~ video {
@@ -233,25 +236,25 @@ main {
           font-size: 1.2em;
         }
       }
-      a {
+
+      a.scroll {
+        bottom: 1em;
         color: white;
         display: block;
-        font-size: 1.5em;
-        margin-top: 25vh;
-        transform: rotate(180deg);
         position: absolute;
-        bottom: 1em;
         text-align: center;
         width: 100%;
-        opacity: 0.8;
+        z-index: 1;
+
         @include transition(all 300ms ease-in-out);
+
         &:focus,
         &:hover {
-          opacity: 1;
+          ~ video {
+            opacity: 0.3;
+          }
+
           text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
-          font-size: 1.6em;
-          line-height: 1.1;
-          font-weight: bold;
         }
       }
     }

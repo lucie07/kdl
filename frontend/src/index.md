@@ -8,6 +8,6 @@ navKey: Home
 
 # and
 
-# Data experts
+# Data wranglers
 
 We create digital tools to explore academic research in new ways.
