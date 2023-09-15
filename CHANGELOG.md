@@ -1,9 +1,31 @@
 # Changelog
 
-## [Unreleased](https://github.com/kingsdigitallab/kdl/compare/0.3.3...HEAD)
+## [Unreleased](https://github.com/kingsdigitallab/kdl/compare/0.4.0...HEAD)
+
+- build: update dependencies [`4fe9522`](https://github.com/kingsdigitallab/kdl/commit/4fe95224dd947e3a13980a4e41d009cfa8baa354)
+- feat(frontend): update data [`56ab099`](https://github.com/kingsdigitallab/kdl/commit/56ab0991ac588343dc8e1c3be59a139706284182)
+- feat(frontend): import blog posts [`ee14cac`](https://github.com/kingsdigitallab/kdl/commit/ee14caca6ba2d495eab617eae56c04afcc03f661)
+- feat(frontend): add content and configure base layout for the home page [`a978173`](https://github.com/kingsdigitallab/kdl/commit/a97817343832fde9f92d805292ab3e97b60bcd80)
+- feat(frontend): add hero video to the home page [`147aefa`](https://github.com/kingsdigitallab/kdl/commit/147aefa34c9dc1800dfc843f0b468df9c2a3c46a)
+- feat(frontend): add link to previous version of the kdl site [`1dacde8`](https://github.com/kingsdigitallab/kdl/commit/1dacde82ca127833cf4f64c126f7db5c52b8e98e)
+- style: change hero to full width [`10f65ad`](https://github.com/kingsdigitallab/kdl/commit/10f65ada8faa8e3c421c4661bb8f4bd5cac4e022)
+- style: add object-fit to images [`d23c355`](https://github.com/kingsdigitallab/kdl/commit/d23c355fee6047e8788e740a28559adbd4a5af50)
+- fix(frontend): increase the height of the hero section [`15663d8`](https://github.com/kingsdigitallab/kdl/commit/15663d879f92f653143358c184c22a8c34f1f0af)
+- feat (frontend): add icon for information section [`2270511`](https://github.com/kingsdigitallab/kdl/commit/22705112e8bcb977b9b666cbc0150b346f7416e4)
+- fix(frontend): capitalise roles and add seniority [`3ae05b4`](https://github.com/kingsdigitallab/kdl/commit/3ae05b47c0f6b347838619ec11aa547fa011c16a)
+- feat(frontend): display post subtitle [`af938ea`](https://github.com/kingsdigitallab/kdl/commit/af938eac2a823155439857417ddd89c79bde8083)
+- feat(frontend): style home links [`51320f1`](https://github.com/kingsdigitallab/kdl/commit/51320f1fabe40af8caa8206d75f23b6ea4f45bb4)
+- fix(frontend): highlight current kdl team members in the list [`ff7441c`](https://github.com/kingsdigitallab/kdl/commit/ff7441cd18b248126a372cb2cebafa4aa76b1c3c)
+- style: change padding units on information icons [`72e3e73`](https://github.com/kingsdigitallab/kdl/commit/72e3e735b79e4eee159164c9f4ff4110f6233fec)
+- style: add logo z-index [`161caea`](https://github.com/kingsdigitallab/kdl/commit/161caea519933b9cc25ac9c2b29d570b655e0e4d)
+- feat(frontend): change the font of the logo [`c9b3d5a`](https://github.com/kingsdigitallab/kdl/commit/c9b3d5a66db95bf4b0a890704db19e84790b05c6)
+- refactor(frontend): add full kdl authors [`5f5c9cd`](https://github.com/kingsdigitallab/kdl/commit/5f5c9cd24d580c7e0911c0ec6fb6f3d4b4223eb4)
+
+## [0.4.0](https://github.com/kingsdigitallab/kdl/compare/0.3.3...0.4.0) (2023-09-11)
 
 - feat(frontend): add latest version of the data [`c96c19e`](https://github.com/kingsdigitallab/kdl/commit/c96c19ef221052bdffe64f17947da69fa1ade675)
 - fix(frontend): check if project has funder [`8900eb5`](https://github.com/kingsdigitallab/kdl/commit/8900eb50ed222b566fd7d2370eb9399e36c0317c)
+- Release 0.4.0 [`cd59c2b`](https://github.com/kingsdigitallab/kdl/commit/cd59c2bcde03d9ff0d280a95625fa909349b63ef)
 - refactor(frontend): change the navkey from organisation to partners and funders to match url [`72957d9`](https://github.com/kingsdigitallab/kdl/commit/72957d9e32da36cd6b5fbde6e08f67c8410fb823)
 - build: include unreleased section in the changelog [`94eee2b`](https://github.com/kingsdigitallab/kdl/commit/94eee2b4a61f8aed5b16542025ddf56c1c853a79)
 
