@@ -157,11 +157,12 @@ main {
     h3,
     h4 {
       font-family: KingsBureauGrotThreeSeven;
+      font-weight: 400;
     }
 
     h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
+      font-size: 2.4em;
+      margin-bottom: 2em;
       text-align: center;
     }
 
@@ -177,8 +178,10 @@ main {
     button {
       color: $navy;
       font-family: KingsBureauGrotThreeSeven;
+      font-weight: 400;
       text-decoration: none;
-
+      margin: 0 auto;
+      border: none;
       &:focus,
       &:hover {
         color: $blue;
@@ -303,11 +306,50 @@ main {
         }
       }
 
+      h3{
+        float:left;
+        margin: 0 0 1em 0;
+      }
+
+      a.browse{
+        float:right;
+        font-family: KingsCaslon, serif;
+        font-family: KingsBureauGrotFiveOne, sans-serif;
+        font-weight: 400;
+        margin: 0;
+        line-height:1.7;
+        font-size: 1.1em;
+        text-decoration: underline;
+
+        &:hover{
+          text-decoration-style: dashed;
+        }
+
+      }
+
+      button{
+        border: 0.1em solid $navy;
+        background: $navy;
+        color: white; 
+        padding: 0.5em 1.5em;
+        font-size: 1.2em;
+        margin-top: 2em;
+        @include transition(all 300ms ease-in-out);
+        border-radius: 0.2em;
+
+        &:hover{
+          background: white;
+          color: $navy; 
+        }
+
+      }
+
+
       .projects {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
+        margin-bottom: 4em;
         .project {
           flex-basis: calc(33.33% - 1.5em);
           margin-bottom: 1.5em;
@@ -386,12 +428,12 @@ header {
     padding: 0 1em;
     a.sitename {
       font-family: KingsBureauGrotThreeSeven;
+      font-weight: 400;
       text-decoration: none;
       color: white;
       position: absolute;
       font-size: 1.6em;
       padding: 0.4em 0;
-      font-weight: bold;
       span {
         font-size: 1.2em;
       } // span
