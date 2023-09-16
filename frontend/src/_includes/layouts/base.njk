@@ -55,7 +55,7 @@
     {% include "partials/toc.njk" %}
 
     <article>{{ content | safe }}</article>
-  {% if navKey != "Home" %}</div>{% endif %}
+    {% if navKey != "Home" %}</div>{% endif %}
 {% endblock content %}
 
 {% block footer %}
@@ -64,3 +64,8 @@
 
   </footer>
 {% endblock footer %}
+
+{% block bodyEnd %}
+  <script type="module"
+          src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+{% endblock bodyEnd %}

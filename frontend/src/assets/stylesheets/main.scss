@@ -241,6 +241,8 @@ main {
         bottom: 1em;
         color: white;
         display: block;
+        font-size: 2em;
+        font-weight: 100;
         position: absolute;
         text-align: center;
         width: 100%;
@@ -256,6 +258,18 @@ main {
 
           text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
         }
+      }
+    }
+
+    .about {
+      background-color: $lightgray;
+      margin-top: 20px;
+      padding: 40px 25%;
+      text-align: center;
+
+      p {
+        font-size: 1.2em;
+        line-height: 2;
       }
     }
 
@@ -1489,3 +1503,7 @@ footer {
     } //nav.footer
   } //footer
 } //@media (max-width: 800px)
+
+ion-icon {
+  --ionicon-stroke-width: 16px;
+}
