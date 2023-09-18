@@ -1064,6 +1064,44 @@
           "startDate": null,
           "endDate": null,
           "inProject": {
+            "name": "Living with Machines",
+            "alternateName": "LwM",
+            "slug": "living-with-machines",
+            "foundingDate": "2023-03-01",
+            "dissolutionDate": "2023-12-31",
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "Queen Mary, University of London"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "The British Library"
+                  }
+                }
+              }
+            ]
+          },
+          "inOrganisation": null,
+          "roleName": {
+            "name": "Research Software Analyst"
+          }
+        },
+        {
+          "startDate": null,
+          "endDate": null,
+          "inProject": {
             "name": "Profile of a Doomed Elite: The Structure of English Landed Society in 1066/Prosopography of Anglo-Saxon England",
             "alternateName": "PDE/PASE",
             "slug": "pde-pase",
@@ -2217,9 +2255,6 @@
             "foundingDate": "2017-05-23",
             "dissolutionDate": "2017-11-30",
             "department": [
-              {
-                "organisation_id": null
-              },
               {
                 "organisation_id": {
                   "agent": {
@@ -5154,9 +5189,6 @@
             "dissolutionDate": "2022-01-18",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "FAH Department of History"
@@ -5180,9 +5212,6 @@
             "foundingDate": "2017-05-23",
             "dissolutionDate": "2017-11-30",
             "department": [
-              {
-                "organisation_id": null
-              },
               {
                 "organisation_id": {
                   "agent": {
@@ -5769,9 +5798,6 @@
             "dissolutionDate": "2017-11-30",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "FAH Department of History"
@@ -5839,9 +5865,6 @@
             "foundingDate": "2021-01-14",
             "dissolutionDate": "2022-01-18",
             "department": [
-              {
-                "organisation_id": null
-              },
               {
                 "organisation_id": {
                   "agent": {
@@ -6173,9 +6196,6 @@
             "foundingDate": "2017-05-23",
             "dissolutionDate": "2017-11-30",
             "department": [
-              {
-                "organisation_id": null
-              },
               {
                 "organisation_id": {
                   "agent": {
@@ -6992,9 +7012,6 @@
             "dissolutionDate": "2022-01-18",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "FAH Department of History"
@@ -7018,9 +7035,6 @@
             "foundingDate": "2017-05-23",
             "dissolutionDate": "2017-11-30",
             "department": [
-              {
-                "organisation_id": null
-              },
               {
                 "organisation_id": {
                   "agent": {
@@ -9448,9 +9462,6 @@
             "dissolutionDate": "2022-01-18",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "FAH Department of History"
@@ -11670,6 +11681,44 @@
           "startDate": null,
           "endDate": null,
           "inProject": {
+            "name": "Living with Machines",
+            "alternateName": "LwM",
+            "slug": "living-with-machines",
+            "foundingDate": "2023-03-01",
+            "dissolutionDate": "2023-12-31",
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "Queen Mary, University of London"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "The British Library"
+                  }
+                }
+              }
+            ]
+          },
+          "inOrganisation": null,
+          "roleName": {
+            "name": "Research Software Engineer"
+          }
+        },
+        {
+          "startDate": null,
+          "endDate": null,
+          "inProject": {
             "name": "Shakespeare400",
             "alternateName": "SHAK400",
             "slug": "shak",
@@ -12908,9 +12957,6 @@
             "dissolutionDate": "2017-11-30",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "FAH Department of History"
@@ -12934,9 +12980,6 @@
             "foundingDate": "2021-01-14",
             "dissolutionDate": "2022-01-18",
             "department": [
-              {
-                "organisation_id": null
-              },
               {
                 "organisation_id": {
                   "agent": {
@@ -13843,9 +13886,6 @@
             "dissolutionDate": "2022-01-18",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "FAH Department of History"
@@ -14314,9 +14354,6 @@
             "foundingDate": "2017-05-23",
             "dissolutionDate": "2017-11-30",
             "department": [
-              {
-                "organisation_id": null
-              },
               {
                 "organisation_id": {
                   "agent": {
@@ -14798,9 +14835,6 @@
             "foundingDate": "2017-05-23",
             "dissolutionDate": "2017-11-30",
             "department": [
-              {
-                "organisation_id": null
-              },
               {
                 "organisation_id": {
                   "agent": {
@@ -15803,9 +15837,6 @@
             "dissolutionDate": "2022-01-18",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "FAH Department of History"
@@ -15878,7 +15909,35 @@
             "dissolutionDate": "2017-11-30",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
+                  }
+                }
+              }
+            ]
+          },
+          "inOrganisation": null,
+          "roleName": {
+            "name": "RSE team member"
+          }
+        },
+        {
+          "startDate": null,
+          "endDate": null,
+          "inProject": {
+            "name": "People of Medieval Scotland",
+            "alternateName": "POMS",
+            "slug": "poms",
+            "foundingDate": null,
+            "dissolutionDate": null,
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Glasgow"
+                  }
+                }
               },
               {
                 "organisation_id": {
@@ -15922,6 +15981,51 @@
           "startDate": null,
           "endDate": null,
           "inProject": {
+            "name": "Georgian Papers Programme",
+            "alternateName": "GPP",
+            "slug": "gpp",
+            "foundingDate": "2015-04-01",
+            "dissolutionDate": null,
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "College of William and Mary Libraries"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "Omohundro Institute"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "Royal Archives & Royal Library"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
+                  }
+                }
+              }
+            ]
+          },
+          "inOrganisation": null,
+          "roleName": {
+            "name": "RSE team member"
+          }
+        },
+        {
+          "startDate": null,
+          "endDate": null,
+          "inProject": {
             "name": "German Screen Studies Network",
             "alternateName": "GSSN",
             "slug": "gssn",
@@ -15932,6 +16036,30 @@
                 "organisation_id": {
                   "agent": {
                     "name": "FAH Department of Film Studies"
+                  }
+                }
+              }
+            ]
+          },
+          "inOrganisation": null,
+          "roleName": {
+            "name": "RSE team member"
+          }
+        },
+        {
+          "startDate": null,
+          "endDate": null,
+          "inProject": {
+            "name": "CROSSREADS",
+            "alternateName": "crossreads",
+            "slug": "crossreads",
+            "foundingDate": "2020-10-01",
+            "dissolutionDate": "2025-09-30",
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Oxford"
                   }
                 }
               }
@@ -15971,6 +16099,44 @@
           "inOrganisation": null,
           "roleName": {
             "name": "RSE team member"
+          }
+        },
+        {
+          "startDate": null,
+          "endDate": null,
+          "inProject": {
+            "name": "Living with Machines",
+            "alternateName": "LwM",
+            "slug": "living-with-machines",
+            "foundingDate": "2023-03-01",
+            "dissolutionDate": "2023-12-31",
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "Queen Mary, University of London"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "The British Library"
+                  }
+                }
+              }
+            ]
+          },
+          "inOrganisation": null,
+          "roleName": {
+            "name": "Research Software Designer"
           }
         },
         {
@@ -16566,9 +16732,6 @@
             "foundingDate": "2021-01-14",
             "dissolutionDate": "2022-01-18",
             "department": [
-              {
-                "organisation_id": null
-              },
               {
                 "organisation_id": {
                   "agent": {
