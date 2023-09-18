@@ -76,7 +76,16 @@ layout: layouts/base.njk
     <div class="date">
       <h3>Partner institution</h3>
       <ul>
-        <li>{% include "partials/project.njk" %}</li>
+        {% if project.department.length > 0 %}
+          {%- for department in project.department %}
+            <li>
+              <a href="{% route department.organisation_id.agent.slug, 'Partners and funders' %}">{{ department.organisation_id.agent.name }}</a>
+            </li>
+          {% endfor %}
+        {% endif %}
+        {% if project.foundingDate %}
+          <li class="date">{{ project.foundingDate | asProjectDate }}–{{ project.dissolutionDate | asProjectDate }}</li>
+        {% endif %}
       </ul>
     </div>
   </div>
