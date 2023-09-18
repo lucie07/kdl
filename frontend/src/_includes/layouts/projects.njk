@@ -3,6 +3,8 @@ layout: layouts/base.njk
 permalink: "projects/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
 ---
 
+{{ content | renderMd | safe }}
+
 {%- for item in paginatedProjects -%}
   {% set project = item.data.project %}
   <a href="{{ item.data.page.url }}">
