@@ -5,6 +5,8 @@ permalink: "about/people/{% if pagination.pageNumber > 0 %}{{ pagination.pageNum
 
 {% set assetsPath = config.paths.assets %}
 
+{{ content | renderMd | safe }}
+
 <div class="wrapper">
     <ul start="{{ pagination.pageNumber * 10 + 1 }}">
         {%- for person in paginatedPeople -%}
