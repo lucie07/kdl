@@ -203,11 +203,7 @@
             "slug": "madih",
             "foundingDate": "2019-02-01",
             "dissolutionDate": "2021-02-28",
-            "department": [
-              {
-                "organisation_id": null
-              }
-            ]
+            "department": []
           },
           "inOrganisation": null,
           "roleName": {
@@ -299,7 +295,11 @@
             "dissolutionDate": "2023-06-30",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of English"
+                  }
+                }
               }
             ]
           },
@@ -329,12 +329,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -524,7 +535,11 @@
             "dissolutionDate": "2023-06-30",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of English"
+                  }
+                }
               }
             ]
           },
@@ -623,12 +638,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -817,16 +843,36 @@
           "startDate": null,
           "endDate": null,
           "inProject": {
+            "name": "Henry III Fine Rolls",
+            "alternateName": "",
+            "slug": "henry-iii-fine-rolls",
+            "foundingDate": null,
+            "dissolutionDate": null,
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
+                  }
+                }
+              }
+            ]
+          },
+          "inOrganisation": null,
+          "roleName": {
+            "name": "Research Software Analyst"
+          }
+        },
+        {
+          "startDate": null,
+          "endDate": null,
+          "inProject": {
             "name": "Mapping Digital Cultural Heritage in Jordan",
             "alternateName": "MaDiH (مديح)",
             "slug": "madih",
             "foundingDate": "2019-02-01",
             "dissolutionDate": "2021-02-28",
-            "department": [
-              {
-                "organisation_id": null
-              }
-            ]
+            "department": []
           },
           "inOrganisation": null,
           "roleName": {
@@ -889,13 +935,55 @@
             "dissolutionDate": "2020-07-02",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
+                  }
+                }
               }
             ]
           },
           "inOrganisation": null,
           "roleName": {
             "name": "RSE team member"
+          }
+        },
+        {
+          "startDate": null,
+          "endDate": null,
+          "inProject": {
+            "name": "Profile of a Doomed Elite: The Structure of English Landed Society in 1066/Prosopography of Anglo-Saxon England",
+            "alternateName": "PDE/PASE",
+            "slug": "pde-pase",
+            "foundingDate": null,
+            "dissolutionDate": null,
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
+                  }
+                }
+              }
+            ]
+          },
+          "inOrganisation": null,
+          "roleName": {
+            "name": "Research Software Analyst"
           }
         },
         {
@@ -909,7 +997,18 @@
             "dissolutionDate": "2022-07-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Languages, Literatures and Cultures"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Milano-Bicocca"
+                  }
+                }
               }
             ]
           },
@@ -929,9 +1028,6 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "Sudanese Association for Archiving Knowledge"
@@ -949,6 +1045,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "National Records Office of Sudan"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
                   }
                 }
               }
@@ -970,7 +1073,11 @@
             "dissolutionDate": "2023-06-30",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of English"
+                  }
+                }
               }
             ]
           },
@@ -988,11 +1095,43 @@
             "slug": "critical-modelling",
             "foundingDate": "2020-01-01",
             "dissolutionDate": "2023-06-30",
-            "department": []
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "The Australia National University"
+                  }
+                }
+              }
+            ]
           },
           "inOrganisation": null,
           "roleName": {
             "name": "RSE team member"
+          }
+        },
+        {
+          "startDate": null,
+          "endDate": null,
+          "inProject": {
+            "name": "Language of Landscape",
+            "alternateName": "Langscape",
+            "slug": "langscape",
+            "foundingDate": null,
+            "dissolutionDate": null,
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              }
+            ]
+          },
+          "inOrganisation": null,
+          "roleName": {
+            "name": "Research Software Analyst"
           }
         },
         {
@@ -1006,9 +1145,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -1019,6 +1155,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -1060,7 +1203,11 @@
             "dissolutionDate": "2019-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
@@ -1076,17 +1223,52 @@
             "name": "Inscriptions of Roman Cyrenaica",
             "alternateName": "IRCYR",
             "slug": "ircyr",
-            "foundingDate": null,
-            "dissolutionDate": null,
+            "foundingDate": "2020-01-01",
+            "dissolutionDate": "2020-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Classics"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
           "inOrganisation": null,
           "roleName": {
             "name": "RSE team member"
+          }
+        },
+        {
+          "startDate": null,
+          "endDate": null,
+          "inProject": {
+            "name": "Alice Thornton digital edition",
+            "alternateName": "AT",
+            "slug": "at",
+            "foundingDate": "2022-09-01",
+            "dissolutionDate": "2024-08-31",
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Edinburgh"
+                  }
+                }
+              }
+            ]
+          },
+          "inOrganisation": null,
+          "roleName": {
+            "name": "Research Software Analyst"
           }
         },
         {
@@ -1102,7 +1284,7 @@
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "Aalto University"
+                    "name": "FAH Department of Digital Humanities"
                   }
                 }
               }
@@ -1158,9 +1340,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -1171,6 +1350,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -1247,9 +1433,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -1260,6 +1443,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -1368,12 +1558,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -1440,12 +1641,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -1587,7 +1799,18 @@
             "dissolutionDate": "2022-07-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Languages, Literatures and Cultures"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Milano-Bicocca"
+                  }
+                }
               }
             ]
           },
@@ -1615,11 +1838,7 @@
             "slug": "madih",
             "foundingDate": "2019-02-01",
             "dissolutionDate": "2021-02-28",
-            "department": [
-              {
-                "organisation_id": null
-              }
-            ]
+            "department": []
           },
           "inOrganisation": null,
           "roleName": {
@@ -1718,11 +1937,22 @@
             "name": "Inscriptions of Roman Cyrenaica",
             "alternateName": "IRCYR",
             "slug": "ircyr",
-            "foundingDate": null,
-            "dissolutionDate": null,
+            "foundingDate": "2020-01-01",
+            "dissolutionDate": "2020-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Classics"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
@@ -1884,12 +2114,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -2167,11 +2408,22 @@
             "name": "Inscriptions of Roman Cyrenaica",
             "alternateName": "IRCYR",
             "slug": "ircyr",
-            "foundingDate": null,
-            "dissolutionDate": null,
+            "foundingDate": "2020-01-01",
+            "dissolutionDate": "2020-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Classics"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
@@ -2361,9 +2613,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -2374,6 +2623,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -2486,12 +2742,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -2710,7 +2977,11 @@
             "dissolutionDate": "2023-06-30",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of English"
+                  }
+                }
               }
             ]
           },
@@ -2843,7 +3114,18 @@
             "dissolutionDate": "2022-07-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Languages, Literatures and Cultures"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Milano-Bicocca"
+                  }
+                }
               }
             ]
           },
@@ -2902,12 +3184,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -3159,12 +3452,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -3196,7 +3500,11 @@
             "dissolutionDate": "2020-07-02",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
+                  }
+                }
               }
             ]
           },
@@ -3467,11 +3775,7 @@
             "slug": "madih",
             "foundingDate": "2019-02-01",
             "dissolutionDate": "2021-02-28",
-            "department": [
-              {
-                "organisation_id": null
-              }
-            ]
+            "department": []
           },
           "inOrganisation": {
             "agent": {
@@ -3502,11 +3806,7 @@
             "slug": "madih",
             "foundingDate": "2019-02-01",
             "dissolutionDate": "2021-02-28",
-            "department": [
-              {
-                "organisation_id": null
-              }
-            ]
+            "department": []
           },
           "inOrganisation": {
             "agent": {
@@ -3537,11 +3837,7 @@
             "slug": "madih",
             "foundingDate": "2019-02-01",
             "dissolutionDate": "2021-02-28",
-            "department": [
-              {
-                "organisation_id": null
-              }
-            ]
+            "department": []
           },
           "inOrganisation": {
             "agent": {
@@ -3638,9 +3934,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -3651,6 +3944,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -3857,11 +4157,7 @@
             "slug": "madih",
             "foundingDate": "2019-02-01",
             "dissolutionDate": "2021-02-28",
-            "department": [
-              {
-                "organisation_id": null
-              }
-            ]
+            "department": []
           },
           "inOrganisation": null,
           "roleName": {
@@ -3944,6 +4240,44 @@
           "startDate": null,
           "endDate": null,
           "inProject": {
+            "name": "Profile of a Doomed Elite: The Structure of English Landed Society in 1066/Prosopography of Anglo-Saxon England",
+            "alternateName": "PDE/PASE",
+            "slug": "pde-pase",
+            "foundingDate": null,
+            "dissolutionDate": null,
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
+                  }
+                }
+              }
+            ]
+          },
+          "inOrganisation": null,
+          "roleName": {
+            "name": "Research Software Engineer"
+          }
+        },
+        {
+          "startDate": null,
+          "endDate": null,
+          "inProject": {
             "name": "Room is Sad",
             "alternateName": null,
             "slug": "room-is-sad",
@@ -3978,6 +4312,30 @@
           "inOrganisation": null,
           "roleName": {
             "name": "RSE team member"
+          }
+        },
+        {
+          "startDate": null,
+          "endDate": null,
+          "inProject": {
+            "name": "Language of Landscape",
+            "alternateName": "Langscape",
+            "slug": "langscape",
+            "foundingDate": null,
+            "dissolutionDate": null,
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              }
+            ]
+          },
+          "inOrganisation": null,
+          "roleName": {
+            "name": "Research Software Engineer"
           }
         },
         {
@@ -4055,9 +4413,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -4068,6 +4423,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -4164,7 +4526,18 @@
             "dissolutionDate": "2022-07-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Languages, Literatures and Cultures"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Milano-Bicocca"
+                  }
+                }
               }
             ]
           },
@@ -4342,12 +4715,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -4454,11 +4838,22 @@
             "name": "Inscriptions of Roman Cyrenaica",
             "alternateName": "IRCYR",
             "slug": "ircyr",
-            "foundingDate": null,
-            "dissolutionDate": null,
+            "foundingDate": "2020-01-01",
+            "dissolutionDate": "2020-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Classics"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
@@ -4528,7 +4923,11 @@
             "dissolutionDate": "2019-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
@@ -4582,7 +4981,11 @@
             "dissolutionDate": "2019-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
@@ -4942,7 +5345,15 @@
             "slug": "critical-modelling",
             "foundingDate": "2020-01-01",
             "dissolutionDate": "2023-06-30",
-            "department": []
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "The Australia National University"
+                  }
+                }
+              }
+            ]
           },
           "inOrganisation": null,
           "roleName": {
@@ -4960,7 +5371,18 @@
             "dissolutionDate": "2022-07-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Languages, Literatures and Cultures"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Milano-Bicocca"
+                  }
+                }
               }
             ]
           },
@@ -5112,9 +5534,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -5125,6 +5544,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -5317,11 +5743,22 @@
             "name": "Inscriptions of Roman Cyrenaica",
             "alternateName": "IRCYR",
             "slug": "ircyr",
-            "foundingDate": null,
-            "dissolutionDate": null,
+            "foundingDate": "2020-01-01",
+            "dissolutionDate": "2020-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Classics"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
@@ -5334,14 +5771,18 @@
           "startDate": null,
           "endDate": null,
           "inProject": {
-            "name": "Distant Reading across Languages",
-            "alternateName": "DRaL",
-            "slug": "dral",
-            "foundingDate": "2018-01-01",
-            "dissolutionDate": "2019-12-31",
+            "name": "Alice Thornton digital edition",
+            "alternateName": "AT",
+            "slug": "at",
+            "foundingDate": "2022-09-01",
+            "dissolutionDate": "2024-08-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Edinburgh"
+                  }
+                }
               }
             ]
           },
@@ -5614,9 +6055,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -5627,6 +6065,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -5644,11 +6089,22 @@
             "name": "Inscriptions of Roman Cyrenaica",
             "alternateName": "IRCYR",
             "slug": "ircyr",
-            "foundingDate": null,
-            "dissolutionDate": null,
+            "foundingDate": "2020-01-01",
+            "dissolutionDate": "2020-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Classics"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
@@ -5668,12 +6124,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -5865,9 +6332,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -5878,6 +6342,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -5895,11 +6366,22 @@
             "name": "Inscriptions of Roman Cyrenaica",
             "alternateName": "IRCYR",
             "slug": "ircyr",
-            "foundingDate": null,
-            "dissolutionDate": null,
+            "foundingDate": "2020-01-01",
+            "dissolutionDate": "2020-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Classics"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
@@ -5943,12 +6425,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -6312,7 +6805,18 @@
             "dissolutionDate": "2022-07-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Languages, Literatures and Cultures"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Milano-Bicocca"
+                  }
+                }
               }
             ]
           },
@@ -6415,11 +6919,7 @@
             "slug": "madih",
             "foundingDate": "2019-02-01",
             "dissolutionDate": "2021-02-28",
-            "department": [
-              {
-                "organisation_id": null
-              }
-            ]
+            "department": []
           },
           "inOrganisation": null,
           "roleName": {
@@ -6435,11 +6935,7 @@
             "slug": "madih",
             "foundingDate": "2019-02-01",
             "dissolutionDate": "2021-02-28",
-            "department": [
-              {
-                "organisation_id": null
-              }
-            ]
+            "department": []
           },
           "inOrganisation": null,
           "roleName": {
@@ -6531,12 +7027,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -6598,11 +7105,22 @@
             "name": "Inscriptions of Roman Cyrenaica",
             "alternateName": "IRCYR",
             "slug": "ircyr",
-            "foundingDate": null,
-            "dissolutionDate": null,
+            "foundingDate": "2020-01-01",
+            "dissolutionDate": "2020-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Classics"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
@@ -6712,12 +7230,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -6933,9 +7462,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -6946,6 +7472,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -6967,12 +7500,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -7264,11 +7808,22 @@
             "name": "Inscriptions of Roman Cyrenaica",
             "alternateName": "IRCYR",
             "slug": "ircyr",
-            "foundingDate": null,
-            "dissolutionDate": null,
+            "foundingDate": "2020-01-01",
+            "dissolutionDate": "2020-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Classics"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
@@ -7387,9 +7942,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -7400,6 +7952,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -7485,12 +8044,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -7797,9 +8367,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -7810,6 +8377,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -8094,7 +8668,11 @@
             "dissolutionDate": "2023-06-30",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of English"
+                  }
+                }
               }
             ]
           },
@@ -8654,9 +9232,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -8667,6 +9242,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -8698,12 +9280,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -8765,9 +9358,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -8778,6 +9368,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -9043,7 +9640,11 @@
             "dissolutionDate": "2023-06-30",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of English"
+                  }
+                }
               }
             ]
           },
@@ -9175,7 +9776,15 @@
             "slug": "critical-modelling",
             "foundingDate": "2020-01-01",
             "dissolutionDate": "2023-06-30",
-            "department": []
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "The Australia National University"
+                  }
+                }
+              }
+            ]
           },
           "inOrganisation": null,
           "roleName": {
@@ -9378,7 +9987,15 @@
             "slug": "henry-iii-fine-rolls",
             "foundingDate": null,
             "dissolutionDate": null,
-            "department": []
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
+                  }
+                }
+              }
+            ]
           },
           "inOrganisation": null,
           "roleName": {
@@ -9420,12 +10037,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -9433,7 +10061,7 @@
           },
           "inOrganisation": null,
           "roleName": {
-            "name": "RSE team member"
+            "name": "Research Software Engineer"
           }
         },
         {
@@ -9443,11 +10071,22 @@
             "name": "Inscriptions of Roman Cyrenaica",
             "alternateName": "IRCYR",
             "slug": "ircyr",
-            "foundingDate": null,
-            "dissolutionDate": null,
+            "foundingDate": "2020-01-01",
+            "dissolutionDate": "2020-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Classics"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
@@ -9467,7 +10106,11 @@
             "dissolutionDate": "2020-07-02",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
+                  }
+                }
               }
             ]
           },
@@ -9547,7 +10190,11 @@
             "dissolutionDate": "2023-06-30",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of English"
+                  }
+                }
               }
             ]
           },
@@ -9589,11 +10236,19 @@
             "slug": "langscape",
             "foundingDate": null,
             "dissolutionDate": null,
-            "department": []
+            "department": [
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              }
+            ]
           },
           "inOrganisation": null,
           "roleName": {
-            "name": "RSE team member"
+            "name": "Research Software Engineer"
           }
         },
         {
@@ -9618,7 +10273,7 @@
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "Aalto University"
+                    "name": "FAH Department of Digital Humanities"
                   }
                 }
               }
@@ -9744,7 +10399,18 @@
             "dissolutionDate": "2022-07-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Languages, Literatures and Cultures"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Milano-Bicocca"
+                  }
+                }
               }
             ]
           },
@@ -9802,11 +10468,7 @@
             "slug": "madih",
             "foundingDate": "2019-02-01",
             "dissolutionDate": "2021-02-28",
-            "department": [
-              {
-                "organisation_id": null
-              }
-            ]
+            "department": []
           },
           "inOrganisation": null,
           "roleName": {
@@ -9897,12 +10559,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -9939,7 +10612,11 @@
             "dissolutionDate": "2019-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
@@ -10005,11 +10682,22 @@
             "name": "Inscriptions of Roman Cyrenaica",
             "alternateName": "IRCYR",
             "slug": "ircyr",
-            "foundingDate": null,
-            "dissolutionDate": null,
+            "foundingDate": "2020-01-01",
+            "dissolutionDate": "2020-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Classics"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
@@ -10387,7 +11075,18 @@
             "dissolutionDate": "2022-07-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Languages, Literatures and Cultures"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Milano-Bicocca"
+                  }
+                }
               }
             ]
           },
@@ -10530,7 +11229,18 @@
             "dissolutionDate": "2022-07-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Languages, Literatures and Cultures"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Milano-Bicocca"
+                  }
+                }
               }
             ]
           },
@@ -10675,11 +11385,22 @@
             "name": "Inscriptions of Roman Cyrenaica",
             "alternateName": "IRCYR",
             "slug": "ircyr",
-            "foundingDate": null,
-            "dissolutionDate": null,
+            "foundingDate": "2020-01-01",
+            "dissolutionDate": "2020-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Classics"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
@@ -11244,9 +11965,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -11257,6 +11975,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -11328,12 +12053,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -11459,9 +12195,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -11472,6 +12205,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -11571,9 +12311,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -11584,6 +12321,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -11689,12 +12433,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -11776,9 +12531,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -11789,6 +12541,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -12196,7 +12955,18 @@
             "dissolutionDate": "2022-07-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Languages, Literatures and Cultures"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Milano-Bicocca"
+                  }
+                }
               }
             ]
           },
@@ -12295,9 +13065,6 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "Sudanese Association for Archiving Knowledge"
@@ -12315,6 +13082,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "National Records Office of Sudan"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
                   }
                 }
               }
@@ -12396,7 +13170,18 @@
             "dissolutionDate": "2022-07-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Languages, Literatures and Cultures"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Milano-Bicocca"
+                  }
+                }
               }
             ]
           },
@@ -12668,12 +13453,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -12869,12 +13665,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -12926,9 +13733,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -12939,6 +13743,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -13311,37 +14122,16 @@
           "startDate": null,
           "endDate": null,
           "inProject": {
-            "name": "Georgian Papers Programme",
-            "alternateName": "GPP",
-            "slug": "gpp",
-            "foundingDate": "2015-04-01",
-            "dissolutionDate": null,
+            "name": "Alice Thornton digital edition",
+            "alternateName": "AT",
+            "slug": "at",
+            "foundingDate": "2022-09-01",
+            "dissolutionDate": "2024-08-31",
             "department": [
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "College of William and Mary Libraries"
-                  }
-                }
-              },
-              {
-                "organisation_id": {
-                  "agent": {
-                    "name": "Omohundro Institute"
-                  }
-                }
-              },
-              {
-                "organisation_id": {
-                  "agent": {
-                    "name": "Royal Archives & Royal Library"
-                  }
-                }
-              },
-              {
-                "organisation_id": {
-                  "agent": {
-                    "name": "FAH Department of History"
+                    "name": "University of Edinburgh"
                   }
                 }
               }
@@ -13451,7 +14241,18 @@
             "dissolutionDate": "2022-07-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Languages, Literatures and Cultures"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Milano-Bicocca"
+                  }
+                }
               }
             ]
           },
@@ -13501,12 +14302,23 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "University of Cambridge"
+                  }
+                }
               },
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "University of Cambridge"
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -13538,9 +14350,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -13551,6 +14360,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
@@ -13583,11 +14399,22 @@
             "name": "Inscriptions of Roman Cyrenaica",
             "alternateName": "IRCYR",
             "slug": "ircyr",
-            "foundingDate": null,
-            "dissolutionDate": null,
+            "foundingDate": "2020-01-01",
+            "dissolutionDate": "2020-12-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Classics"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of Digital Humanities"
+                  }
+                }
               }
             ]
           },
@@ -14046,9 +14873,6 @@
             "dissolutionDate": "2009-10-01",
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "University of Kent"
@@ -14059,6 +14883,13 @@
                 "organisation_id": {
                   "agent": {
                     "name": "Durham University"
+                  }
+                }
+              },
+              {
+                "organisation_id": {
+                  "agent": {
+                    "name": "FAH Department of History"
                   }
                 }
               }
