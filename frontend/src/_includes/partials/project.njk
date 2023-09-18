@@ -8,10 +8,12 @@
 {% if project.department.length > 0 %}
   <span>
     {%- for department in project.department %}{{ department.organisation_id.agent.name }}
-      {% if not loop.last %},{% endif %}
+      {%- if not loop.last -%}
+        ,
+      {% endif -%}
     {% endfor %}
-    {% if project.foundingDate %}
-      {{ project.foundingDate | asProjectDate }}&#8211;{{ project.dissolutionDate | asProjectDate }}
-    {% endif %}
   </span>
+{% endif %}
+{% if project.foundingDate %}
+  <span>{{ project.foundingDate | asProjectDate }}&#8211;{{ project.dissolutionDate | asProjectDate }}</span>
 {% endif %}
