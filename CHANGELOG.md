@@ -1,6 +1,26 @@
 # Changelog
 
-## [Unreleased](https://github.com/kingsdigitallab/kdl/compare/0.4.0...HEAD)
+## [Unreleased](https://github.com/kingsdigitallab/kdl/compare/0.4.1...HEAD)
+
+- feat(frontend): update data after cms cleanup of AC data [`19ed479`](https://github.com/kingsdigitallab/kdl/commit/19ed4799b1cc8d8492d913f5092a3bae056f4521)
+- feat(frontend): update data after partner and funder clean up [`efd3f7d`](https://github.com/kingsdigitallab/kdl/commit/efd3f7d169058d6de64bdf7b0faf17c8d266a748)
+- fix(frontend): remove commented section and fix html structure [`d3f38b8`](https://github.com/kingsdigitallab/kdl/commit/d3f38b8b2841a058c711291057a35429f6317d24)
+- feat: updated information section [`0a94282`](https://github.com/kingsdigitallab/kdl/commit/0a9428283e5e24b2d211370a4757139524b62fce)
+- fix(frontend): add correct id to jump to more content [`ec71c3d`](https://github.com/kingsdigitallab/kdl/commit/ec71c3df5eb7ab874ff307bb85de8e4fd8179ebe)
+- feat: added contact section [`2f26593`](https://github.com/kingsdigitallab/kdl/commit/2f265932ea283275868700243238667f1e2b2b46)
+- feat: moved browse links [`c40c449`](https://github.com/kingsdigitallab/kdl/commit/c40c4494aea1ad7407489d1deee81b3ec451813e)
+- feat(frontend): add about block to the home page [`fad9f8f`](https://github.com/kingsdigitallab/kdl/commit/fad9f8ffe7449d1978aadc458ccaafd080a64c8d)
+- feat(frontend): add link to about in the home hero section [`5929235`](https://github.com/kingsdigitallab/kdl/commit/5929235957f6a1581236b33c73482fc886215ba6)
+- feat(frontend): add services section [`811d70c`](https://github.com/kingsdigitallab/kdl/commit/811d70c550fa28116577181c1748e27a4932c768)
+- style: hero section [`89888da`](https://github.com/kingsdigitallab/kdl/commit/89888da23cf1d203c702aa74a929d3fecf5f3d58)
+- fix(frontend): replace html entity with character [`3777103`](https://github.com/kingsdigitallab/kdl/commit/377710313b032b8d662b483c22ac6beec3178f69)
+- fix(frontend): check for dates separately from checking for department [`aa51946`](https://github.com/kingsdigitallab/kdl/commit/aa51946afc5959753d5db6614dd7d219e9435e35)
+- feat(frontend): add blurb to the people listing [`2522c41`](https://github.com/kingsdigitallab/kdl/commit/2522c41fec42c4584f3e1341c29d1274ef93ac81)
+- style: scroll down chevron with hover animation [`997b83c`](https://github.com/kingsdigitallab/kdl/commit/997b83c79fbb569541c602a94f2501d291df87f8)
+- feat(frontend): add blurb to the partners and funders listing [`a8aa8b2`](https://github.com/kingsdigitallab/kdl/commit/a8aa8b21cde6e2a926a66a052a940b9b7f0bdc66)
+- feat(frontend): add blurb to the projects' listing [`3cbcbcd`](https://github.com/kingsdigitallab/kdl/commit/3cbcbcdfd542a85e796b9ddb5720c66f0661e369)
+
+## [0.4.1](https://github.com/kingsdigitallab/kdl/compare/0.4.0...0.4.1) (2023-09-15)
 
 - build: update dependencies [`4fe9522`](https://github.com/kingsdigitallab/kdl/commit/4fe95224dd947e3a13980a4e41d009cfa8baa354)
 - feat(frontend): update data [`56ab099`](https://github.com/kingsdigitallab/kdl/commit/56ab0991ac588343dc8e1c3be59a139706284182)
@@ -12,6 +32,7 @@
 - style: add object-fit to images [`d23c355`](https://github.com/kingsdigitallab/kdl/commit/d23c355fee6047e8788e740a28559adbd4a5af50)
 - fix(frontend): increase the height of the hero section [`15663d8`](https://github.com/kingsdigitallab/kdl/commit/15663d879f92f653143358c184c22a8c34f1f0af)
 - feat (frontend): add icon for information section [`2270511`](https://github.com/kingsdigitallab/kdl/commit/22705112e8bcb977b9b666cbc0150b346f7416e4)
+- Release 0.4.1 [`8e849a5`](https://github.com/kingsdigitallab/kdl/commit/8e849a5268a7fd455b4e9d951a27331f4439f24e)
 - fix(frontend): capitalise roles and add seniority [`3ae05b4`](https://github.com/kingsdigitallab/kdl/commit/3ae05b47c0f6b347838619ec11aa547fa011c16a)
 - feat(frontend): display post subtitle [`af938ea`](https://github.com/kingsdigitallab/kdl/commit/af938eac2a823155439857417ddd89c79bde8083)
 - feat(frontend): style home links [`51320f1`](https://github.com/kingsdigitallab/kdl/commit/51320f1fabe40af8caa8206d75f23b6ea4f45bb4)
