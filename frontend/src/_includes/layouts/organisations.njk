@@ -3,6 +3,8 @@ layout: layouts/base.njk
 permalink: "about/partners-and-funders/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}/"
 ---
 
+{{ content | renderMd | safe }}
+
 <div class="wrapper">
   <ul start="{{ pagination.pageNumber * 10 + 1 }}">
     {%- for org in paginatedOrganisations -%}
