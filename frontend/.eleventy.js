@@ -105,6 +105,20 @@ module.exports = (eleventyConfig) => {
     });
   });
 
+  eleventyConfig.addFilter("partnerProjects", (projects, agent) => {
+    if (!projects || !agent) return null;
+
+    return projects.filter((project) => {
+      return (
+        project.department &&
+        project.department.some(
+          (department) =>
+            department?.organisation_id?.agent?.id === agent?.agent?.id
+        )
+      );
+    });
+  });
+
   eleventyConfig.addFilter("getProjectMembers", (members) =>
     members.filter((member) => member.agent)
   );

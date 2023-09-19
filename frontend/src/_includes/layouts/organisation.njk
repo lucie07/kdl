@@ -2,6 +2,20 @@
 layout: layouts/agent.njk
 ---
 
+{% set partner = projects | partnerProjects(agentInstance) %}
+{% if partner.length > 0 %}
+  <div id="partner">
+    <h2>Projects involved in</h2>
+    <ul>
+      {% for project in partner %}
+        <li>
+          <a href="{% route project.slug, 'Projects' %}">{{ project.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
 {% set funded = projects | fundedProjects(agentInstance) %}
 {% if funded.length > 0 %}
   <div id="funded">
