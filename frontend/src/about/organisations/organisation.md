@@ -8,5 +8,5 @@ pagination:
 permalink: "about/partners-and-funders/{{ agentInstance.agent.slug }}/"
 eleventyComputed:
   navKey: "Partners and funders"
-  title: "{{ agentInstance.agent.name }}{%-if agentInstance.agent.alternateName %} <span>{{ agentInstance.agent.alternateName }}</span>{% endif %}"
+  title: "{% include 'partials/organisation.njk' %}"
 ---

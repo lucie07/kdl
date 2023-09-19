@@ -1,0 +1,3 @@
+{{ agentInstance.agent.name }}{%- if agentInstance.agent.alternateName %} <span>{{ agentInstance.agent.alternateName }}</span>
+{% endif %}
+{%- if agentInstance.parentOrganisation.agent.name -%}, <span class="parent">{{ agentInstance.parentOrganisation.agent.name }}</span>{%- endif -%}

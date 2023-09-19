@@ -6,14 +6,16 @@
 {%- endif -%}
 
 {% if project.department.length > 0 %}
-  <span>
-    {%- for department in project.department %}{{ department.organisation_id.agent.name }}
+  <p>
+    {%- for department in project.department %}
+      {% set agentInstance = department.organisation_id %}
+      {% include "partials/organisation.njk" %}
       {%- if not loop.last -%}
         ,
       {% endif -%}
     {% endfor %}
-  </span>
+  </p>
 {% endif %}
 {% if project.foundingDate %}
-  <span>{{ project.foundingDate | asProjectDate }}–{{ project.dissolutionDate | asProjectDate }}</span>
+  <p>{{ project.foundingDate | asProjectDate }}–{{ project.dissolutionDate | asProjectDate }}</p>
 {% endif %}

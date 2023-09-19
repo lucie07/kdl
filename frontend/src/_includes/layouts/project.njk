@@ -79,7 +79,10 @@ layout: layouts/base.njk
         {% if project.department.length > 0 %}
           {%- for department in project.department %}
             <li>
-              <a href="{% route department.organisation_id.agent.slug, 'Partners and funders' %}">{{ department.organisation_id.agent.name }}</a>
+              <a href="{% route department.organisation_id.agent.slug, 'Partners and funders' %}">
+                {%- set agentInstance = department.organisation_id -%}
+                {% include "partials/organisation.njk" %}
+              </a>
             </li>
           {% endfor %}
         {% endif %}
