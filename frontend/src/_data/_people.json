@@ -4616,9 +4616,6 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "FAH Department of English"
@@ -6388,9 +6385,6 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "FAH Department of English"
@@ -6715,9 +6709,6 @@
             "foundingDate": null,
             "dissolutionDate": null,
             "department": [
-              {
-                "organisation_id": null
-              },
               {
                 "organisation_id": {
                   "agent": {
@@ -9425,9 +9416,6 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "FAH Department of English"
@@ -11725,9 +11713,6 @@
             "foundingDate": null,
             "dissolutionDate": null,
             "department": [
-              {
-                "organisation_id": null
-              },
               {
                 "organisation_id": {
                   "agent": {
