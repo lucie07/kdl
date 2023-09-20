@@ -1144,7 +1144,7 @@
             "alternateName": "Radical Translations",
             "slug": "radical-translations",
             "foundingDate": "2019-08-01",
-            "dissolutionDate": "2022-07-31",
+            "dissolutionDate": "2023-09-23",
             "department": [
               {
                 "organisation_id": {
@@ -1425,7 +1425,7 @@
           "startDate": null,
           "endDate": null,
           "inProject": {
-            "name": " Digital Humanities Laboratory: Studying the Entanglement of Infrastructure and Technology in Knowledge Production",
+            "name": "Digital Humanities Laboratory: Studying the Entanglement of Infrastructure and Technology in Knowledge Production",
             "alternateName": "Marie Curie Fellowship: DHLab",
             "slug": "marie-curie-fellowship-dhlab",
             "foundingDate": "2020-10-01",
@@ -1990,7 +1990,7 @@
             "alternateName": "Radical Translations",
             "slug": "radical-translations",
             "foundingDate": "2019-08-01",
-            "dissolutionDate": "2022-07-31",
+            "dissolutionDate": "2023-09-23",
             "department": [
               {
                 "organisation_id": {
@@ -2805,9 +2805,6 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "FAH Department of Digital Humanities"
@@ -3506,7 +3503,7 @@
             "alternateName": "Radical Translations",
             "slug": "radical-translations",
             "foundingDate": "2019-08-01",
-            "dissolutionDate": "2022-07-31",
+            "dissolutionDate": "2023-09-23",
             "department": [
               {
                 "organisation_id": {
@@ -4583,7 +4580,7 @@
     "agent": {
       "name": "Elliott Hall",
       "slug": "elliott-hall",
-      "description": "Elliott grew up in a small town near Toronto, Ontario and received a BA Honours from the University of Toronto in 2001, which included studying at the University of Leeds for a year.\n\nElliott's research is at the technical end of the department's spectrum. He uses Python, Java, and Javascript to develop robust sites and applications for academic research.\n\nHe is also the published author of three novels: The First Stone, The Rapture, and The Children’s Crusade.  He is currently working on combining his technical research with his writing through a digital storytelling project.",
+      "description": "Elliott Hall is a Creative Technologist, Writer, and Research Software Engineer.\n\nAs a Creative Technologist he makes immersive family shows using a combination of AR, embedded systems and live performance, using Unreal Engine, Unity, and embedded systems like Raspberry Pis and Micro:Bits.  He is the creator of the Digital Ghost Hunt, co-created with Tom Bowtell of [KIT Theatre](https://www.kittheatre.org/), and the immersive AI installation Room is Sad.\n\nAs a Research Software Engineer(RSE) he is a full stack developer using Django/Python, SQL, Node, Docker, and Javascript to collaborate with academic partners.\n\nElliott is also a novelist, author of The Strange Trilogy, published by John Murray in the UK and Silvertail Books in the US.",
       "memberOf": [
         {
           "startDate": null,
@@ -4929,14 +4926,18 @@
           "startDate": null,
           "endDate": null,
           "inProject": {
-            "name": "Tangible programming",
-            "alternateName": null,
+            "name": "Tangible Inclusive Block-Based Language for Widening Access to Programming",
+            "alternateName": "TIBBIL",
             "slug": "tangible-programming",
             "foundingDate": "2022-11-10",
             "dissolutionDate": "2023-07-31",
             "department": [
               {
-                "organisation_id": null
+                "organisation_id": {
+                  "agent": {
+                    "name": "Faculty of Natural, Mathematical & Engineering Sciences"
+                  }
+                }
               }
             ]
           },
@@ -5077,7 +5078,7 @@
             "alternateName": "Radical Translations",
             "slug": "radical-translations",
             "foundingDate": "2019-08-01",
-            "dissolutionDate": "2022-07-31",
+            "dissolutionDate": "2023-09-23",
             "department": [
               {
                 "organisation_id": {
@@ -5429,9 +5430,6 @@
             "foundingDate": null,
             "dissolutionDate": null,
             "department": [
-              {
-                "organisation_id": null
-              },
               {
                 "organisation_id": {
                   "agent": {
@@ -6047,7 +6045,7 @@
             "alternateName": "Radical Translations",
             "slug": "radical-translations",
             "foundingDate": "2019-08-01",
-            "dissolutionDate": "2022-07-31",
+            "dissolutionDate": "2023-09-23",
             "department": [
               {
                 "organisation_id": {
@@ -6104,9 +6102,6 @@
             "foundingDate": null,
             "dissolutionDate": null,
             "department": [
-              {
-                "organisation_id": null
-              },
               {
                 "organisation_id": {
                   "agent": {
@@ -6929,9 +6924,6 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "FAH Department of Digital Humanities"
@@ -7661,7 +7653,7 @@
             "alternateName": "Radical Translations",
             "slug": "radical-translations",
             "foundingDate": "2019-08-01",
-            "dissolutionDate": "2022-07-31",
+            "dissolutionDate": "2023-09-23",
             "department": [
               {
                 "organisation_id": {
@@ -7732,37 +7724,16 @@
           "startDate": null,
           "endDate": null,
           "inProject": {
-            "name": "Georgian Papers Programme",
-            "alternateName": "GPP",
-            "slug": "gpp",
-            "foundingDate": "2015-04-01",
-            "dissolutionDate": null,
+            "name": "Digital Humanities Laboratory: Studying the Entanglement of Infrastructure and Technology in Knowledge Production",
+            "alternateName": "Marie Curie Fellowship: DHLab",
+            "slug": "marie-curie-fellowship-dhlab",
+            "foundingDate": "2020-10-01",
+            "dissolutionDate": "2023-03-17",
             "department": [
               {
                 "organisation_id": {
                   "agent": {
-                    "name": "College of William and Mary Libraries"
-                  }
-                }
-              },
-              {
-                "organisation_id": {
-                  "agent": {
-                    "name": "Omohundro Institute"
-                  }
-                }
-              },
-              {
-                "organisation_id": {
-                  "agent": {
-                    "name": "Royal Archives & Royal Library"
-                  }
-                }
-              },
-              {
-                "organisation_id": {
-                  "agent": {
-                    "name": "FAH Department of History"
+                    "name": "FAH Department of Digital Humanities"
                   }
                 }
               }
@@ -7770,7 +7741,7 @@
           },
           "inOrganisation": null,
           "roleName": {
-            "name": "RSE team member"
+            "name": "Researcher"
           }
         },
         {
@@ -9782,7 +9753,7 @@
   {
     "jobTitle": "dfde9351-8a1e-4f40-9f99-c1bf78debe4f",
     "agent": {
-      "name": " Lucie Mingmei Hao",
+      "name": "Lucie Mingmei Hao",
       "slug": "lucie-mingmei-hao",
       "description": "Lucie joined KDL in August 2023 as a designer. She has an interdisciplinary background with expertise in academic research, human-computer interaction, frontend and web technologies, UI/UX. She is keen to draw connections between both digital media and innovative technologies. she also has practical experience in industry-focused media projects. \n\nShe was at the School of Medicine, Trinity College Dublin, Ireland before joining KDL and had hands-on experience working on web and online technologies. She has also previously worked at iBreve, an Irish-German digital health startup, where she was responsible for Innovation Management & R&D. During her time there she worked on TRUSTMEDICOS, a project funded by EU Horizon 2020. \n\nShe is passionate about creative design, digital health technologies, data visualization, AI, as well as the intersection of digital humanities and culture.\n\nShe holds a Master of Science in Interactive Digital Media in the School of Computer Science and Statistics from Trinity College Dublin, and a BA (Hons) in Film and Television Production in the School of Informatics and Creative Arts from Dundalk Institute of Technology. ",
       "memberOf": []
@@ -11499,7 +11470,7 @@
           "startDate": null,
           "endDate": null,
           "inProject": {
-            "name": " Digital Humanities Laboratory: Studying the Entanglement of Infrastructure and Technology in Knowledge Production",
+            "name": "Digital Humanities Laboratory: Studying the Entanglement of Infrastructure and Technology in Knowledge Production",
             "alternateName": "Marie Curie Fellowship: DHLab",
             "slug": "marie-curie-fellowship-dhlab",
             "foundingDate": "2020-10-01",
@@ -11642,7 +11613,7 @@
             "alternateName": "Radical Translations",
             "slug": "radical-translations",
             "foundingDate": "2019-08-01",
-            "dissolutionDate": "2022-07-31",
+            "dissolutionDate": "2023-09-23",
             "department": [
               {
                 "organisation_id": {
@@ -12084,9 +12055,6 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "FAH Department of Digital Humanities"
@@ -12428,7 +12396,7 @@
             "alternateName": "Radical Translations",
             "slug": "radical-translations",
             "foundingDate": "2019-08-01",
-            "dissolutionDate": "2022-07-31",
+            "dissolutionDate": "2023-09-23",
             "department": [
               {
                 "organisation_id": {
@@ -12607,7 +12575,7 @@
             "alternateName": "Radical Translations",
             "slug": "radical-translations",
             "foundingDate": "2019-08-01",
-            "dissolutionDate": "2022-07-31",
+            "dissolutionDate": "2023-09-23",
             "department": [
               {
                 "organisation_id": {
@@ -14562,7 +14530,7 @@
             "alternateName": "Radical Translations",
             "slug": "radical-translations",
             "foundingDate": "2019-08-01",
-            "dissolutionDate": "2022-07-31",
+            "dissolutionDate": "2023-09-23",
             "department": [
               {
                 "organisation_id": {
@@ -14777,7 +14745,7 @@
             "alternateName": "Radical Translations",
             "slug": "radical-translations",
             "foundingDate": "2019-08-01",
-            "dissolutionDate": "2022-07-31",
+            "dissolutionDate": "2023-09-23",
             "department": [
               {
                 "organisation_id": {
@@ -15560,9 +15528,6 @@
             "dissolutionDate": null,
             "department": [
               {
-                "organisation_id": null
-              },
-              {
                 "organisation_id": {
                   "agent": {
                     "name": "FAH Department of Digital Humanities"
@@ -15741,7 +15706,7 @@
     "agent": {
       "name": "Tiffany Ong",
       "slug": "tiffany-ong",
-      "description": "Tiffany is a designer with a background in textiles. She completed her BA in Ravensbourne University London and later an MA at the Royal College of Art. After a few years working in the knitwear field, she entered digital design unsure if she was ready to give up the tactile aspect but soon was deeply engaged with the ever evolving vibrant community constantly open to sharing new ideas and developments. Once she started integrating design with code, it brought about even more interest and exploration.\n\nSee her [personal website](https://ongtiffany.github.io/) which includes her contribution to KDL projects for further information.",
+      "description": "Tiffany is a designer with a background in textiles who has worked in the field of journalism, fashion, marketing, advertising. After completing an MA at the Royal College of Art and entered digital design unsure if she was ready to give up the tactile aspect but soon was deeply engaged with the ever evolving vibrant community. Once she started integrating design with code, along with the complexity of content and diversity of human interactions, it brought about even more interest and exploration. Her current interest is data visualisation, experimenting to improve clarity, curiosity and engagement using geometric shapes.\n\nSee her [personal website](https://ongtiffany.github.io/) which includes her contribution to KDL projects and further information.",
       "memberOf": [
         {
           "startDate": null,
@@ -16063,7 +16028,7 @@
             "alternateName": "Radical Translations",
             "slug": "radical-translations",
             "foundingDate": "2019-08-01",
-            "dissolutionDate": "2022-07-31",
+            "dissolutionDate": "2023-09-23",
             "department": [
               {
                 "organisation_id": {
@@ -16639,9 +16604,6 @@
             "foundingDate": null,
             "dissolutionDate": null,
             "department": [
-              {
-                "organisation_id": null
-              },
               {
                 "organisation_id": {
                   "agent": {
