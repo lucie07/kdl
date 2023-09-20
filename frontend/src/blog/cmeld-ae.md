@@ -113,7 +113,7 @@ To test this hunch, I used the [Fin NLP POS Tagger](https://finnlp.gitbook.io/fi
 
 A user’s text input is encoded as POS.
 
-![Image3 for critical modelling blog](/assets/images/blog/Capture2.width-300.png)
+![Image3 for critical modelling blog](/assets/images/blog/Capture2.width-300.png){.media-small}
 
 The list of matches, denoted by source (review publication type): \[a\]cademic, \[s\]ocial (media), \[n\]ewspaper.
 

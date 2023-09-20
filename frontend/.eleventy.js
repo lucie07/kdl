@@ -1,7 +1,9 @@
+const markdownItImplicitFigures = require("markdown-it-implicit-figures");
 const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
 const kdlFilters = require("kdl-components/src/kdl/filters");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItAttrs = require("markdown-it-attrs");
 const pluginSEO = require("eleventy-plugin-seo");
 const pluginTOC = require("eleventy-plugin-toc");
 const { Directus } = require("@directus/sdk");
@@ -37,7 +39,13 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(pluginSEO, require("./src/_data/config.js"));
   eleventyConfig.addPlugin(pluginTOC);
 
-  eleventyConfig.setLibrary("md", markdownIt().use(markdownItAnchor));
+  eleventyConfig.setLibrary(
+    "md",
+    markdownIt()
+      .use(markdownItAnchor)
+      .use(markdownItAttrs)
+      .use(markdownItImplicitFigures, { figcaption: true, copyAttrs: "class" })
+  );
 
   eleventyConfig.addGlobalData("directus", getDirectus);
   eleventyConfig.addCollection("projectsByDate", function (collectionApi) {

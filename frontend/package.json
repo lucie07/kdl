@@ -23,6 +23,8 @@
     "kdl-components": "github:kingsdigitallab/kdl-components",
     "luxon": "^3.0.4",
     "markdown-it-anchor": "^8.6.5",
+    "markdown-it-attrs": "^4.1.6",
+    "markdown-it-implicit-figures": "^0.12.0",
     "nunjucks": "^3.2.3",
     "sass": "^1.54.3"
   },
