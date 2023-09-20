@@ -1,9 +1,13 @@
 name: Build 11ty frontend
+
 on:
   push:
     branches:
       - main
       - develop
+  schedule:
+    - cron: "*/30 * * * *"
+
 jobs:
   build:
     runs-on: ubuntu-22.04
