@@ -44,7 +44,7 @@ module.exports = (eleventyConfig) => {
     markdownIt()
       .use(markdownItAnchor)
       .use(markdownItAttrs)
-      .use(markdownItImplicitFigures, { figcaption: true, copyAttrs: "class" })
+      .use(markdownItImplicitFigures, { figcaption: true })
   );
 
   eleventyConfig.addGlobalData("directus", getDirectus);
