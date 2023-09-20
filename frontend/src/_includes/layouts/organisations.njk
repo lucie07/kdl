@@ -6,16 +6,22 @@ permalink: "about/partners-and-funders/{% if pagination.pageNumber > 0 %}{{ pagi
 {{ content | renderMd | safe }}
 
 <div class="wrapper">
-  <ul start="{{ pagination.pageNumber * 10 + 1 }}">
-    {%- for org in paginatedOrganisations -%}
+  <ul>
+    {%- for type, items in collections.organisations | groupby('data.index') -%}
       <li>
-        <a href="{% route org.agent.slug, 'Partners and funders' %}">
-          {% set agentInstance = org %}
-          {% include "partials/organisation.njk" %}
-        </a>
+        <h2>{{ type }}</h2>
+        <ol>
+          {%- for item in items -%}
+            {% set org = item.data.agentInstance %}
+            <li>
+              <a href="{% route org.agent.slug, 'Partners and funders' %}">
+                {% set agentInstance = org %}
+                {% include "partials/organisation.njk" %}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ol>
       </li>
     {%- endfor -%}
   </ul>
 </div>
-{% set label = "Organisations" %}
-{% include "partials/pagination.njk" %}

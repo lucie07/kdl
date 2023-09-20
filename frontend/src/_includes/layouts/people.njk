@@ -8,20 +8,25 @@ permalink: "about/people/{% if pagination.pageNumber > 0 %}{{ pagination.pageNum
 {{ content | renderMd | safe }}
 
 <div class="wrapper">
-    <ul start="{{ pagination.pageNumber * 10 + 1 }}">
-        {%- for person in paginatedPeople -%}
+  <ul>
+    {%- for type, items in collections.people | groupby('data.index') -%}
+      <li>
+        <h2>{{ type }}</h2>
+        <ol>
+          {%- for item in items -%}
+            {% set person = item.data.agentInstance %}
             {% set kdlTeamMember = team | filter(person.agent.slug, 'slug') | first %}
             <li {% if kdlTeamMember %}class="kdl-member"{% endif %}>
-                <a href="{% route person.agent.slug, 'People' %}">{{ person.agent.name }}</a>
-                {% if kdlTeamMember %}
-                    <img src="{{ assetsPath }}/icons/team.png"
-                         alt="Current KDL team member icon"
-                         title="Current KDL team member">
-                {% endif %}
+              <a href="{% route person.agent.slug, 'People' %}">{{ person.agent.name }}</a>
+              {% if kdlTeamMember %}
+                <img src="{{ assetsPath }}/icons/team.png"
+                     alt="Current KDL team member icon"
+                     title="Current KDL team member">
+              {% endif %}
             </li>
-        {%- endfor -%}
-    </ul>
+          {%- endfor -%}
+        </ol>
+      </li>
+    {%- endfor -%}
+  </ul>
 </div>
-
-{% set label = "People" %}
-{% include "partials/pagination.njk" %}

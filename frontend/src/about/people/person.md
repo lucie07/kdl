@@ -12,5 +12,6 @@ eleventyComputed:
   navKey: "People"
   id: "{{ agentInstance.agent.name }}"
   name: "{{ agentInstance.agent.name }}"
+  index: "{{ agentInstance.agent.name[0] | downcase }}"
   title: "{{ agentInstance.agent.name }}{%-if agentInstance.agent.alternateName %} <span>{{ agentInstance.agent.alternateName }}</span>{% endif %}"
 ---
