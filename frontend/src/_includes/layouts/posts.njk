@@ -33,7 +33,8 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 
       {% endif %}
       {% if post.data.date %}on {{ timeMacro(post.data.date) -}}{% endif %}
 
-      {% if post.data.subtitle %}<div class="subtitle">{{ post.data.subtitle }}</div>{% endif %}
+      {% if post.data.subtitle %}<div class="subtitle"><span>{{ post.data.subtitle }}</span></div>{% endif %}
+      
       <p>{{ post.data.excerpt }}</p>
     </section>
   </article>
