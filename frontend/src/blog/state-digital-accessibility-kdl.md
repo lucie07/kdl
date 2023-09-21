@@ -33,7 +33,7 @@ I have attended more than one event where I listened to [Léonie Watson](https:/
 
 What we received is called a "gap analysis report". The results were not flattering. We discovered that in our customisation of the front-end stack, we had introduced some issues and were not meeting [WCAG A standards](https://www.w3.org/TR/WCAG21/). Focusing on the positives: most of the big issues were easy to fix and we knew where to start.
 
-![Gap analysis data screenshot](/assets/images/blog/gap-analysis-data-screenshot.width-1024.png)
+![Gap analysis data screenshot](/assets/images/blog/gap-analysis-data-screenshot.width-1024.png){.media-medium}
 
 _Fig. 1_ A screenshot of the gap analysis document section where some results are highlighted, in particular:  
 32 Level A issues affecting 38% of the website (8409 pages) and 4 Level AA issues affecting 1% of the website (133 pages).

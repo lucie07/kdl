@@ -15,7 +15,7 @@ feature:
   description: Underwater Photo of Whale and Iceberg
 ---
 
-![RSE day 2022](/assets/images/blog/rseday2022-frame-400x400-1_7SmANz5.width-500.png)
+![RSE day 2022](/assets/images/blog/rseday2022-frame-400x400-1_7SmANz5.width-500.png){.media-small}
 
 This is the second part of [a blogpost](/blog/rtp-rse/) published for [International Research Software Engineering Day](https://society-rse.org/international-rse-day-13th-october-2022/) integrating and extracting from our response to the Arts and Humanities Research Council (AHRC) consultation this summer on what the role of Research Technology Professional (RTP) means to King’s Digital Lab. Research Software Engineering profiles are a category within RTPs so our response was based on the KDL experience of inhabiting those roles.
 

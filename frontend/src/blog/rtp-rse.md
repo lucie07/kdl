@@ -30,7 +30,7 @@ feature:
   description: McMurdo Station, Antarctica
 ---
 
-![RSE day 2022](/assets/images/blog/rseday2022-frame-400x400-1_7SmANz5.width-500.png)
+![RSE day 2022](/assets/images/blog/rseday2022-frame-400x400-1_7SmANz5.width-500.png){.media-small}
 
 For [International Research Software Engineering Day](https://society-rse.org/international-rse-day-13th-october-2022/) we are publishing a serialised blogpost integrating and extracting from our response to the Arts and Humanities Research Council (AHRC) consultation this summer on what the role of Research Technology Professional (RTP) means to King’s Digital Lab. Research Software Engineering profiles are a category within RTPs so our response was based on the KDL experience of inhabiting those roles.
 

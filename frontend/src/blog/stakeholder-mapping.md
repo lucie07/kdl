@@ -197,4 +197,4 @@ Workshop link: [Multi-Dimensional Visual Datasets in the Arts and Humanities - 
 
 ## Project Consortium and Funder
 
-[![Project Consortium](/assets/images/blog/ConsortiumLogos.width-300.png)](https://blogs.brighton.ac.uk/3ddataservice/team/)
+[![Project Consortium](/assets/images/blog/ConsortiumLogos.width-300.png)](https://blogs.brighton.ac.uk/3ddataservice/team/){.media-small}
