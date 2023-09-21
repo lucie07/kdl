@@ -31,11 +31,11 @@ The resources you will find in the [KDL CKAN instance](http://data.kdl.kcl.ac.uk
 
 The datasets and resources we collected and catalogued range from summarised (so called ‘calendared’) editions of medieval documents to collections of modern correspondence, from ontologies adapted to express complex entities and relations in medieval documents to corresponding guides for encoding and data modelling. The default CKAN mask mapped to international cataloguing standards allows the capture of important dataset information such as creator and maintainer details, version etc. However, given that our legacy datasets are mainly project-based, we also decided to enhance the catalogue with project metadata (see related code at our [github repository](https://github.com/kingsdigitallab/ckanext-kdl_metadata_schema)) ranging from information about the collaborative teams (typically including academics, archivists, designers, software engineers, analysts) to details on funders and period of activity. This slight modification of the data ingest form was then re-used in a currently active project - [MaDiH (مديح): Mapping Digital Cultural Heritage in Jordan](http://madih-jordan.org/) - which is looking at scoping the landscape of Jordanian cultural heritage datasets and also opted for a KDL-hosted [CKAN instance](https://madih-data.kdl.kcl.ac.uk/) as its core solution architecture (the code associated to other MaDiH-specific CKAN extensions including detailed tagging for time periods and data types is available at this other [github repository](https://github.com/kingsdigitallab/ckanext-kdl_madih)).
 
-![CKAN mask first part](/assets/images/blog/CKAN_mask_1_ryyMyGY.width-1024.png)
+![CKAN mask first part](/assets/images/blog/CKAN_mask_1_ryyMyGY.width-1024.png){.media-medium}
 
 The CKAN mask for KDL instance (part 1)
 
-![CKAN mask entry second part](/assets/images/blog/CKAN_mask_2_0AGTUjW.width-1024.png)
+![CKAN mask entry second part](/assets/images/blog/CKAN_mask_2_0AGTUjW.width-1024.png){.media-medium}
 
 The CKAN mask for KDL instance (part 2)
 

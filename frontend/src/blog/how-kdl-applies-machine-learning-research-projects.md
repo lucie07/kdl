@@ -65,7 +65,7 @@ Use case: text classification is a very well-studied type of ML tasks with many 
 
 ### Word alignment across translations (2022, pre-grant analysis, PI: Gabriele Salciute Civiliene)
 
-![Semi-automated word alignment interface](/assets/images/blog/out-004.width-1024.png)
+![Semi-automated word alignment interface](/assets/images/blog/out-004.width-1024.png){.media-medium}
 
 Proof of concept of a semi-automated word alignment interface, inspired by the concepts developed by Gabriele Salciute Civiliene
 
@@ -73,7 +73,7 @@ In this pre-project (the pre-grant analysis that feeds into an application) phas
 
 This is only a sample of use cases. In other projects in the Lab we are also applying topic modelling, text summarization, hierarchical clustering and neural search to help other partners discover major trends among their projects datasets. For example, my colleague Miguel Vieira has also recently fine-tuned generative language models to produce fictional narratives about the provenance of real heritage material.
 
-![Character reconstruction](/assets/images/blog/out-005.width-1024.jpg)
+![Character reconstruction](/assets/images/blog/out-005.width-1024.jpg){.media-medium}
 
 Attempt at using convolutional networks to reconstruct OCRed text.
 

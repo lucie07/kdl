@@ -45,13 +45,13 @@ I decided to use generative AI to provide some elements of Room’s mind.  Firs
 - "A sad family in an 80s living room"
 - "a photograph of a frowning person in a living room with a plant, old computer, and lamp"
 
-![StableDiffusionScreenshot.png](/assets/images/blog/StableDiffusionScreenshot.width-300.png)
+![StableDiffusionScreenshot.png](/assets/images/blog/StableDiffusionScreenshot.width-300.png){.media-small}
 
-![T_80s_family_2_SD21.jpeg](/assets/images/blog/T_80s_family_2_SD21.width-300.jpg)
+![T_80s_family_2_SD21.jpeg](/assets/images/blog/T_80s_family_2_SD21.width-300.jpg){.media-small}
 
-![T_Frown_SD21.jpeg](/assets/images/blog/T_Frown_SD21.width-300.jpg)
+![T_Frown_SD21.jpeg](/assets/images/blog/T_Frown_SD21.width-300.jpg){.media-small}
 
-![T_50s_family_sad_2_SD21.jpeg](/assets/images/blog/T_50s_family_sad_2_SD21.width-300.jpg)
+![T_50s_family_sad_2_SD21.jpeg](/assets/images/blog/T_50s_family_sad_2_SD21.width-300.jpg){.media-small}
 
 I also used [OpenAI's Chat GPT-4,](https://openai.com/research/gpt-4) though not to write any of Room itself, for reasons I hope to go into in a later post.  The short version is that I wanted GPT-4 to be a character on its own, so I made it into Room’s therapist. Here is the therapy session, that I then cut down for use in the installation:
 

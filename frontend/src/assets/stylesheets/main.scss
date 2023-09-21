@@ -1057,7 +1057,7 @@ main.posts {
           }
         } //img
       } //figure
-      
+
       section {
         margin-left: 2em;
         a {
@@ -1144,25 +1144,25 @@ main.home {
         img {
           width: 100%;
           display: flex;
-           margin: 0 auto;
-          &.media-small{
-            width:300px;
-            display:flex;
-          }
-          &.media-medium{
-            width:50%;
-            max-width: 800px;
-            min-width: 800px;
-            display:flex;
-          }
+          margin: 0 auto;
         } //img
-        figcaption{
+        figcaption {
           text-align: center;
           padding: 0.5em 0 1em 0;
           font-size: 0.7em;
           color: dimgray;
-        }//figcaption
+        } //figcaption
       } //figure
+      .media-small {
+        width: 300px;
+        display: flex;
+        margin: 0 auto;
+      }
+      .media-medium {
+        max-width: 600px;
+        display: flex;
+        margin: 0 auto;
+      }
     } //article
     footer {
       background: white;
