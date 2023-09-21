@@ -8,8 +8,10 @@ authors:
 date: 2020-08-17
 excerpt: ""
 feature:
-  image:
-  description:
+  image: /assets/images/blog/pexels-tara-winstead-8386123.jpg
+  description: Photo scattered white puzzle pieces on a pastel blue and green background
+---
+
 ---
 
 In early August [a post](https://humanist.kdl.kcl.ac.uk/volume/34/220/) commenting on an essay by the writer Khalid Warsame, was circulated to the recipients of the Humanist email list. This post referred to Warsame’s alleged beliefs about British colonial guilt and made direct reference to 'casual anti-white racism'. Several members of the list responded to condemn the use of this term, including a researcher and colleague in DDH. We understand that the forum editor and moderator chose not to publish two of these responses, a decision which is not in line with the behaviours and guiding principles we in the Department of Digital Humanities (DDH) and King’s Digital Lab (KDL) expect. We are therefore disappointed that these standards and values were not maintained on this occasion. We will ensure this is not repeated. The moderator has since posted an [apology](https://dhhumanist.org/volume/34/224/) on Humanist, admitting that the decision to censor the responses was “mistaken” and subsequently released a number of the responses.
