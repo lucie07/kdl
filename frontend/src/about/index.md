@@ -30,7 +30,7 @@ The rapid and widespread changes in 'the digital' constantly open up new areas o
 
 ## Interested in working with KDL?
 
-Please get in touch via LINKthis formLINK or via email (kdl-info@kcl.ac.uk). You can also approach members of our team directly if their profiles inspire you. If you’re unsure whether we are the right technical partners for you, email us at kdl-info@kcl.ac.uk, and we’ll point you in the right direction.
+Please get in touch via this [contact form](https://forms.clickup.com/26475560/f/t7z18-72308/NK252MBKP2M3U8YGXU) or via email (kdl-info@kcl.ac.uk). You can also approach members of our team directly if their profiles inspire you. If you’re unsure whether we are the right technical partners for you, email us at kdl-info@kcl.ac.uk, and we’ll point you in the right direction.
 
 ## Further information
 
