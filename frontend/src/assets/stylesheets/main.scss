@@ -129,7 +129,7 @@ main {
     font-family: "KingsCaslon", serif;
     color: lighten($navy, 7%);
     text-decoration-style: solid;
-    cursor: pointer
+    cursor: pointer;
     &:hover {
       text-decoration-style: dashed;
       color: lighten($navy, 17%);
@@ -319,7 +319,6 @@ main {
       }
 
       a {
-        float: right;
         font-family: KingsBureauGrotFiveOne, sans-serif;
         font-weight: 400;
         margin: 0;
@@ -330,6 +329,9 @@ main {
         &:hover {
           text-decoration-style: dashed;
         }
+        &.browse{
+          float: right;
+        }//browse
       }
 
       .projects {
