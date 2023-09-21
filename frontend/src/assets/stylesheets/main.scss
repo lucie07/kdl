@@ -129,8 +129,9 @@ main {
     font-family: "KingsCaslon", serif;
     color: lighten($navy, 7%);
     text-decoration-style: solid;
+    cursor: pointer
     &:hover {
-      text-decoration-style: double;
+      text-decoration-style: dashed;
       color: lighten($navy, 17%);
     } //&:hover
   } //a
@@ -142,8 +143,9 @@ main {
       color: lighten($navy, 7%);
       font-weight: bold;
       &:hover {
-        text-decoration-style: double;
+        text-decoration-style: dashed;
         color: lighten($navy, 17%);
+        cursor: pointer;
       }
     } //a
   } //p
@@ -1100,6 +1102,11 @@ main.home {
       width: 100%;
       order: 1;
     } //h1
+    h3, h3 a{
+      font-family: KingsBureauGrotFiveOne, sans-serif;
+      font-weight: 400;
+      font-size: 1.1em;
+    }
     aside {
       flex: 1;
       background: rgb(237, 241, 242);
