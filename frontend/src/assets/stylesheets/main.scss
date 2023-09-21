@@ -1057,6 +1057,7 @@ main.posts {
           }
         } //img
       } //figure
+      
       section {
         margin-left: 2em;
         a {
@@ -1142,7 +1143,25 @@ main.home {
         margin: 0;
         img {
           width: 100%;
+          display: flex;
+           margin: 0 auto;
+          &.media-small{
+            width:300px;
+            display:flex;
+          }
+          &.media-medium{
+            width:50%;
+            max-width: 800px;
+            min-width: 800px;
+            display:flex;
+          }
         } //img
+        figcaption{
+          text-align: center;
+          padding: 0.5em 0 1em 0;
+          font-size: 0.7em;
+          color: dimgray;
+        }//figcaption
       } //figure
     } //article
     footer {
