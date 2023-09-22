@@ -1,10 +1,11 @@
 ---
 layout: layouts/base.njk
 ---
+
 <article>
   {{ content | safe }}
 
-  {% for faq in faqs %}
+  {% for faq in collections.faq | sort(false, false, "data.order") %}
     <article>
       <h2 id="{{ faq.data.title | slugify }}">{{ faq.data.title }}</h2>
       {{ faq.data.content | safe }}
