@@ -452,9 +452,8 @@ header {
 main {
   a {
     text-decoration-style: solid;
-    font-family: KingsBureauGrotFiveOne, sans-serif;
+    font-weight: 400;
     color: lighten($navy, 7%);
-    font-weight: bold;
     cursor: pointer;
     &:hover {
       text-decoration-style: dashed;
@@ -477,14 +476,6 @@ main {
   h4 {
     font-family: KingsBureauGrotThreeSeven;
     font-weight: 400;
-  }
-
-  h2 {
-    margin: 3em 0 2em 0;
-    text-align: center;
-    text-shadow: rgba(10, 189, 240, 0.25) 5px 5px 0px,
-      rgba(254, 1, 1, 0.25) -5px -5px 0px;
-    font-size: 3em;
   }
 
   h3 {
@@ -522,6 +513,15 @@ main {
   .kdl-container {
     max-width: 1500px;
   }
+
+  h2 {
+    margin: 3em 0 2em 0;
+    text-align: center;
+    text-shadow: rgba(10, 189, 240, 0.25) 5px 5px 0px,
+      rgba(254, 1, 1, 0.25) -5px -5px 0px;
+    font-size: 3em;
+  }
+
   .hero {
     background-color: $navy;
     color: white;
@@ -560,7 +560,7 @@ main {
 
       h1 {
         font-size: 2.5em;
-        margin: 0px;
+        margin: 0;
       }
 
       p {
@@ -638,7 +638,7 @@ main {
       }
     }
     a{
-      line-height: 1.7;
+      line-height: 1.5;
       &.browse {
         float: right;
         margin-top: 1.7em;
