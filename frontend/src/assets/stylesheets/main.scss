@@ -480,15 +480,11 @@ main {
   }
 
   h2 {
-    margin-bottom: 2em;
+    margin: 3em 0 2em 0;
     text-align: center;
     text-shadow: rgba(10, 189, 240, 0.25) 5px 5px 0px,
       rgba(254, 1, 1, 0.25) -5px -5px 0px;
     font-size: 3em;
-
-    span {
-      text-shadow: none;
-    }
   }
 
   h3 {
@@ -523,14 +519,16 @@ main {
 //--Home--
 
 .home {
+  .kdl-container {
+    max-width: 1500px;
+  }
   .hero {
     background-color: $navy;
     color: white;
-    display: flex;
     height: calc(100vh - 55px);
     position: relative;
-    width: calc(100% + 2em);
-    margin: -54px -1em 0 -1em;
+    width: calc(100% + 1em);
+    margin: 0 -1em 6em -1em;
 
     video {
       height: 100%;
@@ -611,8 +609,6 @@ main {
   }
 
  .discover, .information, .contact{
-  padding: 40px;
-  margin-top: 20px;
     section{
       display: flex;
       flex-wrap: wrap;
@@ -645,6 +641,7 @@ main {
       line-height: 1.7;
       &.browse {
         float: right;
+        margin-top: 1.7em;
       } //browse
     }
 
@@ -682,8 +679,12 @@ main {
         flex-basis: calc(33.3% - 1.5em);
       }
     }//.services-blocks    
-  }//.discover
-
+  }//.discover, .information, .contact
+  .discover{
+    h3{
+      float: left;
+    }
+  }//disover
   .contact {
     text-align: center;
   }
