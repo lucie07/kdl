@@ -1,5 +1,6 @@
 ---
 title: How does KDL determine its costs for partners and funders?
+order: 8
 tags:
   - faq
 ---

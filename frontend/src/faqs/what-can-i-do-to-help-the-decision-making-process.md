@@ -1,5 +1,6 @@
 ---
 title: What can I do to help the decision-making process?
+order: 5
 tags:
   - faq
 ---

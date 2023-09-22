@@ -1,5 +1,6 @@
 ---
 title: What is ‘MoSCoW’ prioritization?
+order: 7
 tags:
   - faq
 ---
