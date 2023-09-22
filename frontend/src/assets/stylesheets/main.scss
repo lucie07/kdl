@@ -461,15 +461,13 @@ main {
     }
   } //a
 
-
-
   p {
     line-height: 1.5;
-
   } //p
   img {
     width: 100%;
   }
+
   h1,
   h2,
   h3,
@@ -504,8 +502,6 @@ main {
     }
   }//button
 } //main
-
-//--HOME--
 
 //--Home--
 
@@ -688,8 +684,54 @@ main {
   .contact {
     text-align: center;
   }
-
 }//.home
+
+
+//-- Projects Index Page --
+main.projects {
+  a{
+    display:block;
+    padding: 1em 1.5em 1em 0.5em;
+    text-decoration:none;
+    border-left:0.2em solid $lightgray;
+    &:hover{
+      background:lighten(lightgray,15%);
+      border-left:0.2em solid lighten($navy,17%);
+    }
+    p{
+      color:black;
+      margin: 0.2em 0;
+    }
+  }
+  h2 {
+    margin: 0;
+    display: inline-block;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-style: dashed;
+    }
+    small {
+      color: $darkgray;
+      font-family: KingsCaslon, serif;
+      font-size: 0.7em;
+      display: inline-block;
+      margin-left: 0.3em;
+    } //small
+  } //h2
+
+
+
+
+}//.projects 
+
+
+
+
+
+
+
+
+
 
 
 //-- Footer --
