@@ -3,6 +3,7 @@
 // Colours
 // General
 // Header/Navigation
+// Main
 // Projects Index Page
 // Project Individual Page
 // People/Organisations Index Page
@@ -81,7 +82,7 @@ $lightgray: #e6ebed; //rgb(230, 235, 237)
 $navy: #0a2d50;
 $red: #e12726;
 
-// -- Pagefind --
+//-- Pagefind --
 
 :root {
   --pagefind-ui-background: white;
@@ -115,414 +116,6 @@ section {
   max-width: 1220px;
   margin: 0 auto;
 }
-
-.kdl-member {
-  img {
-    height: 1.5em;
-    width: 1.5em;
-  }
-}
-
-.kdl-subtitle,
-.subtitle {
-  margin-top: 2em;
-  line-height: 1.3;
-  span {
-    background: linear-gradient(to left, lightcyan, lighten(lightgreen, 20%));
-    padding: 0.5em;
-  }
-}
-
-main {
-  a {
-    font-family: "KingsCaslon", serif;
-    color: lighten($navy, 7%);
-    text-decoration-style: solid;
-    cursor: pointer;
-    &:hover {
-      text-decoration-style: dashed;
-      color: lighten($navy, 17%);
-    } //&:hover
-  } //a
-  p {
-    line-height: 1.5;
-    a {
-      text-decoration-style: solid;
-      font-family: KingsBureauGrotFiveOne, sans-serif;
-      color: lighten($navy, 7%);
-      font-weight: bold;
-      &:hover {
-        text-decoration-style: dashed;
-        color: lighten($navy, 17%);
-        cursor: pointer;
-      }
-    } //a
-  } //p
-  img {
-    width: 100%;
-  }
-
-  &.home {
-    h1,
-    h2,
-    h3,
-    h4 {
-      font-family: KingsBureauGrotThreeSeven;
-      font-weight: 400;
-    }
-
-    h2 {
-      margin-bottom: 2em;
-      text-align: center;
-      text-shadow: rgba(10, 189, 240, 0.25) 5px 5px 0px,
-        rgba(254, 1, 1, 0.25) -5px -5px 0px;
-      font-size: 3em;
-
-      span {
-        text-shadow: none;
-      }
-    }
-
-    h3 {
-      font-size: 1.5em;
-    }
-
-    h4 {
-      font-size: 1.3em;
-    }
-
-    a,
-    button {
-      color: $navy;
-      font-family: KingsBureauGrotThreeSeven;
-      font-weight: 400;
-      text-decoration: none;
-      margin: 0 auto;
-      border: none;
-      &:focus,
-      &:hover {
-        color: $blue;
-        cursor: pointer;
-      }
-    }
-
-    figcaption {
-      display: none;
-    }
-
-    .hero {
-      background-color: $navy;
-      color: white;
-      display: flex;
-      height: calc(100vh - 55px);
-      position: relative;
-      width: calc(100% + 2em);
-      margin: -54px -1em 0 -1em;
-
-      video {
-        height: 100%;
-        left: 0;
-        object-fit: cover;
-        opacity: 0.5;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        @include transition(all 400ms ease-in-out);
-      }
-
-      .hero-content {
-        color: white;
-        left: 50%;
-        position: absolute;
-        text-align: center;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-        top: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-
-        &:hover {
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-          ~ video {
-            opacity: 0.3;
-          }
-        }
-
-        h1 {
-          font-size: 2.5em;
-          margin: 0px;
-        }
-
-        p {
-          font-size: 2.7em;
-          font-family: KingsCaslon, serif;
-        }
-
-        button {
-          background: rgba(255, 255, 255, 0.7);
-          border: none;
-          font-size: 1.2em;
-          padding: 0.5em 1.5em;
-          @include transition(all 300ms ease-in);
-
-          &:hover {
-            background: white;
-            opacity: 1;
-            color: $navy;
-          }
-        }
-      }
-
-      a.scroll {
-        bottom: 1em;
-        color: white;
-        display: block;
-        font-size: 2.4em;
-        line-height: 1;
-        font-weight: 100;
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        z-index: 1;
-        opacity: 0.7;
-        @include transition(all 300ms ease-in-out);
-
-        &:focus,
-        &:hover {
-          opacity: 1;
-          line-height: 0.7;
-          ~ video {
-            opacity: 0.3;
-          }
-        }
-      }
-    }
-
-    .about {
-      background-color: $lightgray;
-      margin-top: 20px;
-      padding: 40px 25%;
-      text-align: center;
-
-      p {
-        font-size: 1.2em;
-        line-height: 2;
-      }
-    }
-
-    .discover {
-      background-color: white;
-      padding: 40px;
-      margin-top: 20px;
-      figure {
-        margin: 0;
-        img {
-          width: 100%;
-          height: 15em;
-          object-fit: cover;
-        }
-      }
-
-      h3 {
-        float: left;
-        margin: 0 0 1em 0;
-      }
-
-      a {
-        font-family: KingsBureauGrotFiveOne, sans-serif;
-        font-weight: 400;
-        margin: 0;
-        line-height: 1.7;
-        font-size: 1.1em;
-        text-decoration: underline;
-
-        &:hover {
-          text-decoration-style: dashed;
-        }
-        &.browse {
-          float: right;
-        } //browse
-      }
-
-      .projects {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 4em;
-        .project {
-          flex-basis: calc(33.33% - 1.5em);
-          margin-bottom: 1.5em;
-          padding: 1.5em;
-          background-color: lighten($lightgray, 5%);
-          //box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-        }
-      }
-
-      .blog {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 1.5em;
-
-        .post {
-          flex-basis: calc(33.33% - 1.5em);
-          margin-bottom: 1.5em;
-          padding: 1.5em;
-          background-color: lighten($lightgray, 5%);
-          //box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-
-          small {
-            font-size: 0.8em;
-            color: $navy;
-          }
-        }
-      }
-    }
-
-    .information {
-      padding: 3em;
-      margin-top: 1.5em;
-      margin-bottom: 8em;
-      figure {
-        margin: 0;
-        img {
-          //background-color: white;
-          //border-radius: 50%;
-          width: 100%;
-          //border: 9px double $navy;
-          ///padding: 1vw;
-          height: 15em;
-          object-fit: cover;
-        }
-      }
-
-      .services-blocks {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 1.5em;
-        position: relative;
-        padding: 2em;
-        &:before {
-          content: " ";
-          display: block;
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          opacity: 0.4;
-          background-image: url("https://images.pexels.com/photos/17485710/pexels-photo-17485710/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-visualises-the-input-and-output-of-neural-networks-and-how-ai-systems-perceive-data-it-was-created-by-rose-pilkington.png?auto=compress&cs=tinysrgb&w=1200&lazy=load");
-          background-repeat: no-repeat;
-          background-position: 50% 0;
-          background-size: cover;
-          background-color: #cccccc;
-        }
-        .services-block {
-          //border: 0.1em solid $blue;
-          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-          flex-basis: calc(33.33% - 1.5em);
-          margin-bottom: 1.5em;
-          padding: 1.5vw;
-          position: relative;
-          background-color: white;
-          ul {
-            margin-left: -20px;
-            li {
-              list-style-type: circle;
-            }
-          }
-
-          a {
-            color: white;
-            font-family: KingsBureauGrotThreeSeven;
-          }
-        }
-      }
-      .research-blocks {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 1.5em;
-        position: relative;
-        padding: 2em;
-        &:before {
-          content: " ";
-          display: block;
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          opacity: 0.4;
-          background-image: url("https://images.pexels.com/photos/17485819/pexels-photo-17485819/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-represents-the-ways-in-which-ai-can-solve-important-problems-it-was-created-by-vincent-schwenk-as-part-of-the-visualis.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-          background-repeat: no-repeat;
-          background-position: 50% 0;
-          background-size: cover;
-          background-color: #cccccc;
-        }
-        .research-block {
-          background-color: white;
-          padding: 0.5em 1.5em;
-          //color:white;
-          flex-basis: calc(20% - 1.5em);
-          //border: 0.1em solid $blue;
-          color: black;
-          position: relative;
-        }
-      }
-
-      .info-blocks {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 1.5em;
-
-        .info-block {
-          background-color: $blue;
-          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-          color: white;
-          flex-basis: calc(33.33% - 1.5em);
-          margin-bottom: 1.5em;
-          padding: 1.5vw;
-          text-align: center;
-
-          a {
-            color: white;
-            font-family: KingsBureauGrotThreeSeven;
-          }
-        }
-      }
-    }
-
-    .contact {
-      text-align: center;
-      margin-bottom: 6em;
-      button {
-        border: 0.1em solid $navy;
-        background: $navy;
-        color: white;
-        padding: 0.5em 1.5em;
-        font-size: 1.2em;
-        @include transition(all 300ms ease-in-out);
-        border-radius: 0.2em;
-
-        &:hover {
-          background: white;
-          color: $navy;
-        }
-      }
-      a {
-        font-family: KingsBureauGrotFiveOne, sans-serif;
-        font-weight: 400;
-        text-decoration: underline;
-
-        &:hover {
-          text-decoration-style: dashed;
-        }
-      }
-    }
-  } // home
-} //main
 
 //-- Header/Navigation --
 
@@ -854,508 +447,257 @@ header {
   } //nav.sub
 } //header
 
-//-- Projects Index Page --
+//--Main-- (General)
 
-main.projects {
-  padding: 2em 1em;
+main {
   a {
-    //display:inline-block;
-    color: $navy;
-    padding: 0.5em 0;
-    cursor: default;
-    display: block;
-    text-decoration: none;
-    line-height: 1.4;
-    h2 {
-      font-family: KingsCaslon, serif;
-      //font-family: KingsBureauGrotThreeSeven, sans-serif;
-      //font-family: KingsBureauGrotFiveOne, sans-serif;
-      font-weight: normal;
-      cursor: pointer;
-      margin: 0;
-      line-height: 1;
-      display: inline-block;
-      &:hover {
-        text-decoration: underline;
-        //text-decoration-style: double;
-        color: lighten($navy, 15%);
-      }
-    } //h2
-    small {
-      color: $darkgray;
-      font-family: KingsBureauGrotFiveOne, sans-serif;
-      //font-family: KingsBureauGrotThreeSeven, sans-serif;
-      font-weight: 400;
-      font-size: 0.6em;
-      display: inline-block;
-      margin-left: 0.3em;
-      font-style: normal;
-      //color: #c11609;
-      //font-family: "KingsCaslon",serif;
-    } //small
-    span {
-      font-family: KingsBureauGrotFiveOne, sans-serif;
-      //font-family: KingsCaslon, serif;
-      display: block;
-    } //span
+    text-decoration-style: solid;
+    font-family: KingsBureauGrotFiveOne, sans-serif;
+    color: lighten($navy, 7%);
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      text-decoration-style: dashed;
+      color: lighten($navy, 17%);
+    }
   } //a
-} //main.projects
 
-//-- Project Individual Page --
 
-.project {
-  padding: 5em 1em;
-  .kdl-container {
-    display: flex;
-    flex-wrap: wrap;
-    h1 {
-      width: 100%;
-      small {
-        color: $darkgray;
-        font-size: 0.6em;
-        font-weight: normal;
-      } //small
-    } //h1
-    article {
-      display: flex;
-      section {
-        //display: block;
-        //width: 70%;
-        margin: 0 5% 0 0;
-        flex: 3;
-        &:last-child {
-          //width: 30%;
-          margin: 0;
-          flex: 1;
-          //border-left: 0.1vw solid black;
-          background: rgb(237, 241, 242);
-        } //&:last-child{
-        figure {
-          margin: 0;
-          img {
-            width: 100%;
-          } //img
-          figcaption {
-            font-size: 0.7em;
-            text-align: center;
-          }
-        } //figure
-        #metadata {
-          margin: 0 5%;
-          padding: 1em 0 2em 0;
-          dl {
-            dt {
-              margin-top: 1.5em;
-              font-size: 1.2em;
-              font-weight: bold;
-            } //dt
-            dd {
-              margin-left: 20px;
-              margin-top: 0.5em;
-            } //dd
-          } //dl
-          span.status {
-            background: $darkgray;
-            margin-left: -5%;
-            padding: 0.3em 0.5em;
-            margin-bottom: 1em;
-            color: white;
-            font-size: 1.2em;
-          }
-          #links,
-          .funder {
-            border-bottom: 0.3em solid rgb(220, 227, 230);
-            width: 100%;
-            padding: 1em 0;
-            ul {
-              margin: 0 0 0 -20px;
-              list-style-type: circle;
-              li {
-                margin-bottom: 0.5em;
-                a {
-                  font-size: 1.2em;
-                  text-decoration: none;
-                  &:hover {
-                    text-decoration: underline;
-                    text-decoration-style: solid;
-                    @include transition(all 200ms ease-in);
-                  } //&:hover
-                } //a
-              } //li
-            } //ul
-          } //#links
-          .funder {
-            border-bottom: 0.3em solid rgb(220, 227, 230);
-          } //#funder
-          .date {
-            ul {
-              margin: 0 0 0 -20px;
-              list-style-type: circle;
-              span {
-                background: none;
-                margin: 0;
-                padding: 0;
-                font-family: "KingsCaslon", serif;
-                color: black;
-              } //span
-            } //ul
-          } //.date
-        } //#metatdata
 
-        .post-meta {
-          margin-left: 5%;
-        }
-        #team {
-          width: 100%;
-          display: block;
-          border-top: 0.01em solid;
-          h2 {
-            width: 100%;
-          }
-          ul {
-            margin-left: -40px;
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            h2 {
-              font-size: 1.2em;
-            }
-            li {
-              list-style-type: none;
-              flex: 0 0 50%;
-              margin-bottom: 1em;
-              font-size: 1.1em;
-              a {
-                text-decoration: none;
-                &:hover {
-                  text-decoration: underline;
-                  text-decoration-style: solid;
-                }
-              }
-              span {
-                font-size: 0.8em;
-                display: block;
-              }
-            } //li
-          } //ul
-        } //#team
-      } //>section 2nd level
-    } //article
-  } //.wrapper
-} //.project
+  p {
+    line-height: 1.5;
 
-//-- Blog Index page --
-main.posts {
-  padding: 0 1em;
-  float: left;
-  width: 100%;
-  article {
-    display: block;
-    article {
-      width: 100%;
-      display: flex;
-      margin-bottom: 1em;
-      figure {
-        width: 100%;
-        margin: 0;
-        img {
-          height: auto;
-          max-width: 45em;
-          object-fit: contain;
-          display: inline-block;
-          vertical-align: top;
-          &:hover {
-            filter: grayscale(100%);
-            transition: transform 1s, filter 0.5s ease-in-out;
-          }
-        } //img
-      } //figure
-
-      section {
-        margin-left: 2em;
-        a {
-          text-decoration: none;
-          &:hover {
-            text-decoration: underline;
-          }
-          h2 {
-            margin: 0 0 0.3em 0;
-          } //h2
-          &:hover {
-            text-decoration: underline;
-          } //&:hover
-        } //a
-      } //section
-    } //article
-  } //article
-} //main.posts
-
-//-- Blog Individual Page & FAQs --
-main.post,
-main.faqs,
-main.base,
-main.home {
-  padding: 0 1em;
-  float: left;
-  width: 100%;
-  .kdl-container {
-    display: flex;
-    flex-wrap: wrap;
-    h1 {
-      width: 100%;
-      order: 1;
-    } //h1
-    h3,
-    h3 a {
-      font-family: KingsBureauGrotFiveOne, sans-serif;
-      font-weight: 400;
-      font-size: 1.1em;
-    }
-    aside {
-      flex: 1;
-      background: rgb(237, 241, 242);
-      order: 3;
-      margin: 0 0 0 5%;
-      padding: 0 1em;
-      ol {
-        margin-left: -20px;
-        counter-reset: counter;
-        list-style: none;
-        li {
-          //counter-increment: counter;
-          line-height: 1.3;
-          margin-top: 0.5em;
-          font-weight: bold;
-          list-style-type: circle;
-          a {
-            text-decoration: none;
-            &:hover {
-              text-decoration: underline;
-            } //&:hover
-          } //a
-          /*&:before {
-            content: counters(counter, ".");
-            
-            margin-left: -1em;
-            margin-top: 0.15em;
-            font-size: 0.9em;
-            font-weight: bold;
-            padding-right:0.5em;
-            //color: $red;
-          } //&:before;*/
-          ol {
-            li {
-              /* &:before {
-                margin-left: -1.7em;
-                margin-top: 0.4em;
-                font-size: 0.7em;
-                font-weight: bold;
-              } //&:before;*/
-            } //li
-          } //ol
-        } //li
-      } //ol
-    } //aside
-    > article {
-      flex: 3;
-      order: 2;
-      figure {
-        width: 100%;
-        margin: 0;
-        img {
-          width: 100%;
-          display: flex;
-          margin: 0 auto;
-        } //img
-        figcaption {
-          text-align: center;
-          padding: 0.5em 0 1em 0;
-          font-size: 0.7em;
-          color: dimgray;
-        } //figcaption
-      } //figure
-      .media-small {
-        width: 300px;
-        display: flex;
-        margin: 0 auto;
-      }
-      .media-medium {
-        max-width: 600px;
-        display: flex;
-        margin: 0 auto;
-      }
-    } //article
-    footer {
-      background: white;
-    } //footer
-  } //.kdl-container
-} //main.post, main.faqs, main.base
-
-//-- People/Organisations Index Page --
-main.people,
-main.organisations {
-  padding: 0 1em;
-  /*ul{
-  display:flex;
-  width: 100%;
-  flex-wrap: wrap;
-  margin-left:-40px;
-  li{
-    flex: 0 0 33.3%;
-    list-style-type: none;
-    padding:0 0 0.5em 0;
-    font-size:1.4em;
-    a{
-      text-decoration:none;
-      &:hover{
-        text-decoration:underline;
-        text-decoration-style:solid;
-      }
-    }
-  }//li
-}//ul*/
-  ul {
-    margin-left: -40px;
-    list-style-type: none;
-    list-style-type: none;
-    columns: 3;
-    -webkit-columns: 3;
-    -moz-columns: 3;
-    li {
-      padding-bottom: 0.5em;
-      font-size: 1.4em;
-      a {
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-          text-decoration-style: solid;
-        } //&:hover
-      } //a
-    } //li
-  } //ul
-} //main.people
-
-//-- Person/Organisation Individual Page --
-main.person,
-main.organisation {
-  padding: 0 1em;
-  h1 {
+  } //p
+  img {
     width: 100%;
-  } //h1
-  article {
-    img {
-      width: 30%;
-      height: auto;
-      max-width: 15em;
-      object-fit: contain;
-      display: inline-block;
-      vertical-align: top;
-    }
-    section {
-      display: block;
-      width: 100%;
-      padding: 1em 0;
-      border-bottom: 0.01em solid black;
-      h2 {
-        margin: 0;
-        span {
-          display: block;
-          font-weight: normal;
-          font-size: 0.7em;
-          color: $darkgray;
-        } //span
-      } //h2
-      .part-of {
-        ul {
-          width: 100%;
-          margin-left: -40px;
-          list-style-type: none;
-          li {
-            font-size: 1.2em;
-            a {
-              //display:inline-block;
-              color: $navy;
-              padding: 0.5em 0;
-              cursor: default;
-              display: block;
-              text-decoration: none;
-              line-height: 1.4;
-              h3 {
-                font-family: KingsCaslon, serif;
-                //font-family: KingsBureauGrotThreeSeven, sans-serif;
-                //font-family: KingsBureauGrotFiveOne, sans-serif;
-                font-weight: normal;
-                cursor: pointer;
-                margin: 0;
-                line-height: 1;
-                display: inline-block;
-                &:hover {
-                  text-decoration: underline;
-                  //text-decoration-style: double;
-                  color: lighten($navy, 15%);
-                }
-              } //h3
-              small {
-                color: $darkgray;
-                font-family: KingsBureauGrotFiveOne, sans-serif;
-                //font-family: KingsBureauGrotThreeSeven, sans-serif;
-                font-weight: 400;
-                font-size: 0.6em;
-                display: inline-block;
-                margin-left: 0.3em;
-                font-style: normal;
-                //color: #c11609;
-                //font-family: "KingsCaslon",serif;
-              } //small
-              span {
-                font-family: KingsBureauGrotFiveOne, sans-serif;
-                //font-family: KingsCaslon, serif;
-                font-weight: normal;
-                display: block;
-              } //span
-            } //a
-          } //li
-        } //ul
-      }
-    } //section
-  } //article
-} //main.person
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: KingsBureauGrotThreeSeven;
+    font-weight: 400;
+  }
 
-//-- Page Pagination --
-nav.pagination {
-  margin-top: 5em;
-  border-top: 0.2vw solid black;
-  width: 100%;
-  ol {
+  h2 {
+    margin-bottom: 2em;
+    text-align: center;
+    text-shadow: rgba(10, 189, 240, 0.25) 5px 5px 0px,
+      rgba(254, 1, 1, 0.25) -5px -5px 0px;
+    font-size: 3em;
+
+    span {
+      text-shadow: none;
+    }
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+
+  button {
+    color: white;
+    font-family: KingsBureauGrotThreeSeven;
+    margin: 0 auto;
+    font-size: 1.2em;
+    padding: 0.5em 2em;
+    background: $navy;
+    border:0.1em solid $navy;
+    cursor: pointer;
+    @include transition(all 300ms ease-in);
+    border-radius: 1.1em;
+    &:focus,
+    &:hover {
+      background: white;
+      color: $navy;
+    }
+  }//button
+} //main
+
+//--HOME--
+
+//--Home--
+
+.home {
+  .hero {
+    background-color: $navy;
+    color: white;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    li {
-      border: none;
-      flex: 1;
-      display: block;
+    height: calc(100vh - 55px);
+    position: relative;
+    width: calc(100% + 2em);
+    margin: -54px -1em 0 -1em;
+
+    video {
+      height: 100%;
+      left: 0;
+      object-fit: cover;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      @include transition(all 400ms ease-in-out);
+    }
+
+    .hero-content {
+      color: white;
+      left: 50%;
+      position: absolute;
       text-align: center;
-      a {
-        color: $darkgray;
-        text-decoration: none;
-        &:hover {
-          color: black;
-        } //&:hover
-        span {
-          display: inline-block;
-          font-family: "KingsCaslon", serif;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+
+      &:hover {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+        ~ video {
+          opacity: 0.3;
         }
-      } //a
-    } //li
-  } //ol
-} //nav
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin: 0px;
+      }
+
+      p {
+        font-size: 2.7em;
+        font-family: KingsCaslon, serif;
+      }
+     button {
+        background: rgba(255, 255, 255, 0.8);
+        color: $navy;
+        border:0.05em solid white;
+        &:hover {
+          background: white;
+          border:0.05em solid $navy;
+        }
+      }//button
+    }//.hero-content
+
+    a.scroll {
+      bottom: 1em;
+      color: white;
+      display: block;
+      font-size: 2.4em;
+      line-height: 1;
+      font-weight: 100;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      z-index: 1;
+      opacity: 0.7;
+      @include transition(all 300ms ease-in-out);
+
+      &:focus,
+      &:hover {
+        opacity: 1;
+        line-height: 0.7;
+        ~ video {
+          opacity: 0.3;
+        }
+      }
+    }//a.scroll
+  }//.hero
+
+
+  figcaption {
+    display: none;
+  }
+
+ .discover, .information, .contact{
+  padding: 40px;
+  margin-top: 20px;
+    section{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 4em;
+      div{
+        flex-basis: calc(33.33% - 1.5em);
+        margin-bottom: 1.5em;
+        padding: 1.5em;
+        background-color: lighten($lightgray, 5%);
+      }
+      a{
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+          text-decoration-style: dashed;
+        }
+      }
+    }//section
+
+    figure {
+      margin: 0;
+      img {
+        width: 100%;
+        height: 15em;
+        object-fit: cover;
+      }
+    }
+    a{
+      line-height: 1.7;
+      &.browse {
+        float: right;
+      } //browse
+    }
+
+    .research-themes , .services{
+      position: relative;
+      padding: 2em;
+      &:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background-image: url("https://images.pexels.com/photos/17485819/pexels-photo-17485819/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-represents-the-ways-in-which-ai-can-solve-important-problems-it-was-created-by-vincent-schwenk-as-part-of-the-visualis.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+        background-color: #cccccc;
+      }//:before
+      .research-block, .services-block{
+        flex-basis: calc(20% - 1.5em);
+        background-color: white;
+        position: relative;
+      }
+
+    }//.research-themes, .services
+
+    .services{
+      &:before {
+        background-image: url("https://images.pexels.com/photos/17485710/pexels-photo-17485710/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-visualises-the-input-and-output-of-neural-networks-and-how-ai-systems-perceive-data-it-was-created-by-rose-pilkington.png?auto=compress&cs=tinysrgb&w=1200&lazy=load");
+      }
+      .services-block{
+        flex-basis: calc(33.3% - 1.5em);
+      }
+    }//.services-blocks    
+  }//.discover
+
+  .contact {
+    text-align: center;
+  }
+
+}//.home
+
 
 //-- Footer --
 footer {
   background: $darkgray;
-  margin-top: 2em;
+  margin-top: 8em;
   float: left;
   width: 100%;
+  color: white;
   .connect {
     padding: 0 1em;
     background: $navy;
@@ -1370,17 +712,14 @@ footer {
       } //h2
       ul {
         display: flex;
-        //justify-content: center;
         align-items: center;
         list-style-type: none;
         li {
           flex-direction: row;
           justify-content: left;
           a {
-            color: white;
             min-width: 4em;
             display: block;
-            text-decoration: none;
             img {
               width: 3em;
               border: 0.125em solid rgba(0, 0, 0, 0.4);
@@ -1393,17 +732,12 @@ footer {
                 border: 0.125em solid white;
               } //&:hover
             } //img
-            &:hover {
-              text-decoration: underline;
-            } //&:hover
           } //a
         } //li
       } //ul
     } //.wrapper
   } //.connect
   nav.footer {
-    padding: 0 1em;
-    color: white;
     .kdl-container {
       display: flex;
       h2 {
@@ -1425,10 +759,8 @@ footer {
               min-width: 6em;
               display: block;
               text-decoration: none;
-              font-family: KingsBureauGrotFiveOne, sans-serif;
               &:hover {
                 text-decoration: underline;
-                text-decoration-style: solid;
               } //&:hover
             } //a
           } //li
@@ -1449,251 +781,14 @@ footer {
     background-color: $darkergray;
     color: white;
     padding: 1.25em 1em;
-    .kdl-container {
-      display: flex;
-      margin-right: 2em;
-      a {
-        color: white;
-        min-width: 6em;
-        display: block;
-        text-decoration: none;
-        font-family: KingsBureauGrotFiveOne, sans-serif;
-        &:hover {
-          text-decoration: underline;
-          text-decoration-style: solid;
-        } //&:hover
-      } //a
+    text-align: center;
+    a{
+      color:white;
+      opacity:0.8;
+      &:hover{
+        text-decoration-style: dashed;
+        opacity:1;
+      }
     }
   }
 } //footer
-
-@media (max-width: 800px) {
-  //-- Header/Navigation --
-  header {
-    float: none;
-    .site {
-      a.sitename {
-        font-size: 1.5em;
-        padding: 0.5em 0;
-      } //a.sitename
-      a.logo {
-        img {
-          width: 3.65em;
-        } //img
-      } // a.logo
-    } //.site
-
-    nav.main {
-      .kdl-container {
-        #menu-toggle {
-          ~ ul {
-            height: 0;
-            width: 0;
-            opacity: 1;
-            display: none;
-            //transition: width 100ms cubic-bezier(0.23, 1, 0.32, 1);
-          } //~ ul
-          &:checked {
-            ~ ul {
-              height: 100%;
-              width: calc(100% + 40px);
-              opacity: 1;
-              margin-top: 0;
-              display: block;
-              //transition: width 100ms cubic-bezier(0.23, 1, 0.32, 1);
-            } //~ ul
-          } //&:checked
-        } //#menu-toggle
-
-        .kdl-menu-button-container {
-          display: flex;
-          position: absolute;
-          right: 7em;
-          top: 1.3em;
-          flex-direction: row;
-          justify-content: normal;
-          align-items: initial;
-        } //.menu-button-container
-        > ul {
-          margin-top: 50px;
-          width: 100%;
-          > li {
-            margin: 0;
-            width: calc(100% + 40px);
-            color: white;
-            background-color: darken($darkgray, 10%);
-            margin-left: 10px;
-            padding: 0;
-            &:not(:last-child) {
-              border-bottom: 1px solid #444;
-              > ul {
-                margin-left: -40px;
-                > li {
-                  padding-left: 20px;
-                }
-              } // >ul
-            } //&:not(:last-child)
-          } //> li
-        } //ul
-      } //.wrapper
-    } //nav.main
-    nav {
-      &.main.kdl-container {
-        > ul {
-          //position: absolute;
-          //top: 0;
-          margin-top: 100px;
-          //left:0;
-          width: 100%;
-          //margin-left: 40px;
-        } //.ul
-      }
-    } //.nav.main
-    nav.sub {
-      border: none;
-    } //nav.sub
-  } //header
-
-  //-- Project/Organisation Individual Page --
-  main.project {
-    padding: 1em 1em;
-    .kdl-container {
-      display: block;
-      article {
-        display: block;
-        section {
-          width: 100%;
-          margin: 0;
-          &:last-child {
-            width: 100%;
-            background: none;
-            border-top: 0.01em solid black;
-          } //&:last-child{
-          #metadata {
-            margin: 0;
-            span.status {
-              margin-left: 0;
-              padding: 0.3em 0.5em;
-            }
-          } //#metatdata
-
-          #team {
-            width: 100%;
-            display: block;
-            border-top: 0.01em solid;
-            h2 {
-              width: 100%;
-            }
-            ul {
-              display: block;
-            } //ul
-          } //#team
-        } //>section
-      } //article
-    } //.wrapper
-  } //.project
-
-  //-- People/Organisations Index Page --
-
-  main.people,
-  main.organisations {
-    ul {
-      columns: 1;
-      -webkit-columns: 1;
-      -moz-columns: 1;
-    } //ul
-  } //main.people
-
-  //-- Person Individual Page --
-  main.person {
-    article {
-      img {
-        width: 100%;
-        display: block;
-      } //img
-      section {
-        display: block;
-        width: 100%;
-        padding-left: 0;
-        h2 {
-          margin-top: 0.5em;
-          span {
-            display: block;
-            font-weight: normal;
-            font-size: 0.7em;
-            color: $darkgray;
-          } //span
-        } //h2
-      } //section
-    } //article
-    ul {
-      width: 100%;
-      margin-left: -40px;
-      li {
-        font-size: 1.2em;
-      } //li
-    } //ul
-  } //main.person
-
-  //-- Blog Index page --
-  main.posts {
-    article {
-      width: 100%;
-      display: block;
-      a {
-        figure {
-          img {
-            max-width: 100%;
-          } //img
-        } //figure
-      } //a
-      section {
-        margin: 1em 0 0 0;
-      } //section
-    } //article
-  } //main.posts
-  //-- Blog Individual Page & FAQs --
-  main.post,
-  main.faqs,
-  main.base,
-  main.home {
-    .kdl-container {
-      display: block;
-      aside {
-        margin: 0 0 1em 0;
-        padding: 0.1em 1em;
-      } //aside
-    } //.kdl-container
-  } //main.post, main.faqs, main.base, main.home
-
-  footer {
-    background: $darkgray;
-    .connect {
-      text-align: center;
-      padding: 0.1em 0;
-      .kdl-container {
-        display: block;
-        h2 {
-          font-family: KingsBureauGrotThreeSeven, sans-serif;
-          font-weight: 400;
-          width: 100%;
-        } //h2
-        ul {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-        } //ul
-      } //.wrapper
-    } //.connect
-    nav.footer {
-      .kdl-container {
-        display: block;
-      } //.wrapper
-    } //nav.footer
-  } //footer
-} //@media (max-width: 800px)
-
-ion-icon {
-  --ionicon-stroke-width: 16px;
-}
