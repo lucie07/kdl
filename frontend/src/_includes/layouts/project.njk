@@ -31,9 +31,10 @@ layout: layouts/base.njk
               {{ member.agent.name }}
             {% endif %}
             {% if kdlTeamMember %}
-              <img src="{{ assetsPath }}/icons/team.png"
+            <sup title="Current KDL team member">KDL</sup>
+             <!-- <img src="{{ assetsPath }}/icons/team.png"
                    alt="Current KDL team member icon"
-                   title="Current KDL team member">
+                   title="Current KDL team member">-->
             {% endif %}
             <span>{{ member.roleName.name }}{%- if member.inOrganisation -%}, {{ member.inOrganisation.agent.name }}{%- endif %}</span>
           </li>

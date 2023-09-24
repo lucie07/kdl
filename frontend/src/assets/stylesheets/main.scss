@@ -508,6 +508,7 @@ main {
 .home {
   .kdl-container {
     max-width: 1500px;
+    padding: 0 2em;
   }
 
   h2 {
@@ -716,6 +717,148 @@ main.projects {
   } //h2
 }//.projects 
 
+//-- Project Individual Page --
+
+.project {
+  padding: 5em 1em;
+  .kdl-container {
+    display: flex;
+    flex-wrap: wrap;
+    h1 {
+      width: 100%;
+      small {
+        color: $darkgray;
+        font-size: 0.6em;
+        font-family: KingsCaslon, serif;
+      } //small
+    } //h1
+    h3{
+      margin: 1em 0 0.5em 0;
+    }//h3
+    article {
+      display: flex;
+      section {
+        margin: 0 5% 0 0;
+        flex: 3;
+        &:last-child {
+          margin: 0;
+          flex: 1;
+          background: rgb(237, 241, 242);
+        } //&:last-child{
+        figure {
+          margin: 0;
+          img {
+            width: 100%;
+          } //img
+          figcaption {
+            font-size: 0.7em;
+            text-align: center;
+          }
+        } //figure
+        #metadata {
+          margin: 0 5%;
+          padding: 1em 0 2em 0;
+          line-height: 1.5;
+          dl {
+            dt {
+              margin-top: 1.5em;
+              font-size: 1.2em;
+              font-weight: bold;
+            } //dt
+            dd {
+              margin-left: 20px;
+              margin-top: 0.5em;
+            } //dd
+          } //dl
+          span.status {
+            background: $darkgray;
+            margin-left: -5%;
+            padding: 0.3em 0.5em;
+            margin-bottom: 1em;
+            color: white;
+            font-size: 1.2em;
+          }
+          #links,
+          .funder {
+            border-bottom: 0.3em solid rgb(220, 227, 230);
+            width: 100%;
+            padding: 1em 0;
+            ul {
+              margin: 0 0 0 -20px;
+              list-style-type: circle;
+              li {
+                margin-bottom: 0.5em;
+
+              } //li
+            } //ul
+          } //#links
+          .funder {
+            border-bottom: 0.3em solid rgb(220, 227, 230);
+          } //#funder
+          .date {
+            ul {
+              margin: 0 0 0 -20px;
+              list-style-type: circle;
+              span {
+                background: none;
+                margin: 0;
+                padding: 0;
+                font-family: "KingsCaslon", serif;
+                color: black;
+              } //span
+            } //ul
+          } //.date
+        } //#metatdata
+
+        .post-meta {
+          margin-left: 5%;
+        }
+        #team {
+          width: 100%;
+          display: block;
+          border-top: 0.01em solid;
+          h2 {
+            width: 100%;
+          }
+          ul {
+            margin-left: -40px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            h2 {
+              font-size: 1.2em;
+            }
+            li {
+              list-style-type: none;
+              flex: 0 0 50%;
+              margin-bottom: 1em;
+              font-size: 1.1em;
+              a {
+                text-decoration: none;
+                &:hover {
+                  text-decoration: underline;
+                  text-decoration-style: dashed;
+                }
+              }
+              span {
+                font-size: 0.8em;
+                display: block;
+              }
+            } //li
+          } //ul
+          .kdl-member {
+            sup{
+              font-family: KingsBureauGrotThreeSeven;
+              text-shadow: rgba(10, 189, 240, 0.25) 2px 2px 0px,
+              rgba(254, 1, 1, 0.25) -2px -2px 0px;
+            font-size: 0.7em;
+            }
+          }//.kdl-member
+        } //#team
+      } //>section 2nd level
+    } //article
+  } //.wrapper
+} //.project
 
 
 
