@@ -859,6 +859,60 @@ main.projects {
 } //.project
 
 
+//-- Blog Index page --
+main.posts {
+  padding: 0 1em;
+  float: left;
+  width: 100%;
+  article {
+    display: block;
+    article {
+      width: 100%;
+      display: flex;
+      margin-bottom: 1em;
+      figure {
+        width: 100%;
+        margin: 0;
+        img {
+          height: auto;
+          max-width: 45em;
+          object-fit: contain;
+          display: inline-block;
+          vertical-align: top;
+          &:hover {
+            filter: grayscale(100%);
+            transition: transform 1s, filter 0.5s ease-in-out;
+          }
+        } //img
+      } //figure
+
+      section {
+        margin-left: 2em;
+        a {
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+            text-decoration-style: dashed;
+          }
+          h2 {
+            margin: 0 0 0.3em 0;
+          } //h2
+        } //a
+
+        .subtitle {
+          margin-top: 2em;
+          line-height: 1.3;
+          span {
+            background: linear-gradient(to left, lightcyan, lighten(lightgreen, 20%));
+            padding: 0.5em;
+          }
+        }
+      } //section
+    } //article
+  } //article
+} //main.posts
+
+
 
 //-- Page Pagination --
 nav.pagination {
