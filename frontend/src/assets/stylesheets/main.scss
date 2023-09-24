@@ -505,6 +505,14 @@ main {
       color: $navy;
     }
   }//button
+  .kdl-member {
+    sup{
+      font-family: KingsBureauGrotThreeSeven;
+      text-shadow: rgba(10, 189, 240, 0.25) 2px 2px 0px,
+      rgba(254, 1, 1, 0.25) -2px -2px 0px;
+    font-size: 0.7em;
+    }
+  }//.kdl-member
 } //main
 
 //--Home--
@@ -848,14 +856,6 @@ main.projects {
               }
             } //li
           } //ul
-          .kdl-member {
-            sup{
-              font-family: KingsBureauGrotThreeSeven;
-              text-shadow: rgba(10, 189, 240, 0.25) 2px 2px 0px,
-              rgba(254, 1, 1, 0.25) -2px -2px 0px;
-            font-size: 0.7em;
-            }
-          }//.kdl-member
         } //#team
       } //>section 2nd level
     } //article
@@ -933,11 +933,12 @@ main.home {
       order: 1;
     } //h1
     aside {
+
       flex: 1;
       background: rgb(237, 241, 242);
       order: 3;
       margin: 0 0 0 5%;
-      padding: 0 1em;
+      padding: 0.5em 1em;
       h2{
         font-size: 1.3em;
       }
@@ -994,7 +995,7 @@ main.home {
           margin-bottom: 0;
         }
         h2{
-          border-bottom:0.1em solid $blue;
+          border-bottom:0.03em solid darken($lightgray, 20%);
         }
         footer {
           background: white;
@@ -1007,6 +1008,111 @@ main.home {
     } //article
   } //.kdl-container
 } //main.post, main.faqs, main.base
+
+//-- People/Organisations Index Page --
+main.people,
+main.organisations {
+  padding: 0 1em;
+  h2{
+    text-transform: uppercase;
+    text-shadow: rgba(10, 189, 240, 0.25) 5px 5px 0px,
+    rgba(254, 1, 1, 0.25) -5px -5px 0px;
+    font-size: 2.5em;
+    border-bottom:0.03em solid darken($lightgray, 20%);
+    margin-top: 0;
+  }
+  ul {
+    margin-top:5em;
+    margin-left: -40px;
+    list-style-type: none;
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    
+    li {
+      padding-bottom: 0.5em;
+      padding-right: 2em;
+      ol{
+        list-style-type: none;
+        margin-left: -40px;
+        margin-bottom:2em;
+      }
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+          text-decoration-style: dashed;
+        } //&:hover
+      } //a
+    } //li
+  } //ul
+} //main.people, main.organisations
+
+  //-- Person Individual Page --
+  main.person, main.organisation {
+    article {
+      line-height:1.7;
+      h2{
+        border-bottom:0.03em solid darken($lightgray, 20%);
+      }
+      img {
+        width: 100%;
+        display: block;
+      } //img
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+          text-decoration-style: dashed;
+        } //&:hover
+      } //a
+      section {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+        h2 {
+          margin-top: 0.5em;
+          span {
+            display: block;
+            font-weight: normal;
+            font-size: 0.7em;
+            color: $darkgray;
+          } //span
+        } //h2
+      } //section
+    } //article
+    ul {
+      width: 100%;
+      margin-left: -40px;
+      li{
+        a{
+            display:block;
+            padding: 1em 1.5em 1em 0.5em;
+            text-decoration:none;
+            border-left:0.2em solid $lightgray;
+            &:hover{
+              background:lighten(lightgray,15%);
+              border-left:0.2em solid lighten($navy,17%);
+              text-decoration: none;
+            }
+          }
+          display: inherit;
+          h3{
+            margin:0;
+            small{
+              color: #5a6369;
+              font-family: KingsCaslon, serif;
+              font-size: 0.7em;
+              margin-left: 0.3em;
+            }
+          }
+          p{
+            margin:0;
+          }
+      }
+    } //ul
+  } //main.person
+
 
 
 

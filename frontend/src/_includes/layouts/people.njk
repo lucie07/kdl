@@ -19,9 +19,10 @@ permalink: "about/people/{% if pagination.pageNumber > 0 %}{{ pagination.pageNum
             <li {% if kdlTeamMember %}class="kdl-member"{% endif %}>
               <a href="{% route person.agent.slug, 'People' %}">{{ person.agent.name }}</a>
               {% if kdlTeamMember %}
-                <img src="{{ assetsPath }}/icons/team.png"
+                <sup title="Current KDL team member">KDL</sup>
+                <!--<img src="{{ assetsPath }}/icons/team.png"
                      alt="Current KDL team member icon"
-                     title="Current KDL team member">
+                     title="Current KDL team member">-->
               {% endif %}
             </li>
           {%- endfor -%}
