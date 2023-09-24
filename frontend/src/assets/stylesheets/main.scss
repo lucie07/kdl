@@ -737,13 +737,17 @@ main.projects {
     }//h3
     article {
       display: flex;
+      width:100%;
       section {
         margin: 0 5% 0 0;
-        flex: 3;
+        //flex: 3;
+        width:65%;
         &:last-child {
           margin: 0;
-          flex: 1;
+          //flex: 1;
+          width:30%;
           background: rgb(237, 241, 242);
+          min-width:20em;
         } //&:last-child{
         figure {
           margin: 0;
@@ -799,13 +803,6 @@ main.projects {
             ul {
               margin: 0 0 0 -20px;
               list-style-type: circle;
-              span {
-                background: none;
-                margin: 0;
-                padding: 0;
-                font-family: "KingsCaslon", serif;
-                color: black;
-              } //span
             } //ul
           } //.date
         } //#metatdata
@@ -843,6 +840,7 @@ main.projects {
               span {
                 font-size: 0.8em;
                 display: block;
+                color: $darkgray;
               }
             } //li
           } //ul
