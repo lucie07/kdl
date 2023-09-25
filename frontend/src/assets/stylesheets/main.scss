@@ -1144,7 +1144,10 @@ nav.pagination {
       &:nth-child(1),
       &:nth-child(5) {
         max-width: 3em;
-        background: $navy;
+        background: lighten($navy,10%);
+        &:hover{
+          background: $navy;
+        }
         a {
           color: darken(white, 10%);
           &:hover {
@@ -1155,7 +1158,11 @@ nav.pagination {
       &:nth-child(2),
       &:nth-child(4) {
         max-width: 5em;
-        background: $lightgray;
+        background: lighten($lightgray,5%);
+        border:0.05em solid lighten($lightgray,5%);
+        &:hover{
+          border:0.05em solid darken($lightgray,10%);
+        }
       } //&:nth-child(2), &:nth-child(4)
       &:nth-child(3) {
         min-width: 7em;
