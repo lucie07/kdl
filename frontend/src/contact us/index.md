@@ -1,6 +1,9 @@
 ---
 layout: layouts/base.njk
 title: Contact us
+eleventyNavigation:
+  key: Contact
+  order: 8
 permalink: "contact-us/"
 ---
 

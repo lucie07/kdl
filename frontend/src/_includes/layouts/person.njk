@@ -14,14 +14,14 @@ layout: layouts/agent.njk
   {% if agent.description %}{{ agent.description | renderMd | safe }}{% endif %}
 </section>
 
-{% set projects = agent.memberOf | getAgentProjects %}
-{% set organisations = agent.memberOf | getAgentOrganisations %}
+{% set agentProjects = agent.memberOf | getAgentProjects %}
+{% set agentOrganisations = agent.memberOf | getAgentOrganisations %}
 
-{% if projects.length > 0 %}
+{% if agentProjects.length > 0 %}
   <section class="part-of">
     <h2>Projects</h2>
     <ul>
-      {% for member in projects | sort(true, false, "inProject.dissolutionDate") %}
+      {% for member in agentProjects | sort(true, false, "inProject.dissolutionDate") %}
         <li>
           {% if member.inProject %}
             <a href="{% route member.inProject.slug, 'Projects' %}">
@@ -39,11 +39,11 @@ layout: layouts/agent.njk
   </section>
 {% endif %}
 
-{% if organisations.length > 0 %}
+{% if agentOrganisations.length > 0 %}
   <section class="part-of">
     <h2>Organisations</h2>
     <ul>
-      {% for member in organisations | sort(false, false, "inOrganisation.agent.slug") %}
+      {% for member in agentOrganisations | sort(false, false, "inOrganisation.agent.slug") %}
         <li>
           <a href="{% route member.inOrganisation.agent.slug, 'Partners and funders' %}">{{- member.inOrganisation.agent.name -}}</a>
         </li>

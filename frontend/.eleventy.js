@@ -136,7 +136,15 @@ module.exports = (eleventyConfig) => {
   );
 
   eleventyConfig.addFilter("getAgentProjects", (memberOf) =>
-    memberOf.filter((role) => role.inProject)
+    memberOf
+      .filter((role) => role.inProject)
+      .map((role) => ({
+        ...role,
+        inProject: {
+          ...role.inProject,
+          dissolutionDate: role.inProject.dissolutionDate || "1970-01-01",
+        },
+      }))
   );
 
   eleventyConfig.addFilter("getAgentOrganisations", (memberOf) =>
