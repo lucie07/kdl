@@ -17,8 +17,6 @@ layout: layouts/agent.njk
 {% set agentProjects = agent.memberOf | getAgentProjects %}
 {% set agentOrganisations = agent.memberOf | getAgentOrganisations %}
 
-{{ agentProjects | dump | safe }}
-
 {% if agentProjects.length > 0 %}
   <section class="part-of">
     <h2>Projects</h2>
