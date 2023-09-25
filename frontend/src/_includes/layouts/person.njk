@@ -23,7 +23,6 @@ layout: layouts/agent.njk
     <ul>
       {% for member in agentProjects | sort(true, false, "inProject.dissolutionDate") %}
         <li>
-          [{{ member.inProject.dissolutionDate }}]
           {% if member.inProject %}
             <a href="{% route member.inProject.slug, 'Projects' %}">
               {% set level = 3 %}
