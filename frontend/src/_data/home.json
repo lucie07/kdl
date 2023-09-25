@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Research areas",
+    "class": "research",
+    "description": "Research areas description...",
+    "items": [
+      {
+        "title": "Digital creativity",
+        "description": "Experimenting with digital tools to enable, enhance, and expand our cultural experiences and interactions."
+      },
+      {
+        "title": "Indigenous DH",
+        "description": "Fostering understanding, respect, and cooperation among holding institutions, researchers and minority groups to help work on complex issues around data from indigenous community sources."
+      },
+      {
+        "title": "Machine learning and AI",
+        "description": "Working to create a virtual cycle around ML and AI that goes beyond single projects solutions across the triangle of critical, analytical and practical RSE-driven research."
+      },
+      {
+        "title": "Data visualisation",
+        "description": "Organizing data with form, structure and shape to help users understand the story it has to tell."
+      }
+    ]
+  }
+]
