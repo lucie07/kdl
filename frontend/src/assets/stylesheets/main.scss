@@ -632,7 +632,7 @@ main {
       div {
         flex-basis: calc(33.33% - 1.5em);
         margin-bottom: 1.5em;
-        padding: 1.5em;
+        padding: 1.5em 1.5em 1em 1.5em;
         background-color: lighten($lightgray, 5%);
       }
       a {
@@ -663,7 +663,7 @@ main {
     .research,
     .services {
       position: relative;
-      padding: 2em;
+      padding: 3em 2em 1.1em 2em;
       &:before {
         content: " ";
         display: block;
@@ -681,9 +681,14 @@ main {
       } //:before
       .research-block,
       .services-block {
-        flex-basis: calc(20% - 1.5em);
+        flex-basis: calc(25% - 1.5em);
         background-color: white;
         position: relative;
+        padding: 0em 1.7em 1em 1.7em;
+        h4{
+          background: linear-gradient(to left, lightcyan, #e8fce8);
+          padding:0.3em 0.2em 0.2em 0.4em;
+        }
       }
     } //.research, .services
 
