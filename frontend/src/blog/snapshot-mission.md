@@ -40,7 +40,7 @@ In September 2021 KDL had the first change in team line management with the foun
 - Research Services Catalogue
 - College Contributions
 
-### Mission, Resources Allocation and Primary Value
+## Mission, Resources Allocation and Primary Value
 
 A clear vision, mission and range of services is useful not only for a large and well resourced RSE team operating across nations and domains such as the [EPCC](https://www.epcc.ed.ac.uk/high-performance-computing-services) based at the University of Edinburgh but also for smaller embedded teams that are either in their consolidation phases (such as KDL), scaling up or in fact emerging into the RSE landscape and in need of a strategy to communicate their values and ambitions, guide operations and set expectations.
 
@@ -90,7 +90,7 @@ While KDL has stable mechanisms to plan and monitor targets for 1 and 3, 2 is ma
 
 **Commercial consultancy** can also be offered by KDL; however, the document clarifies that this is not a primary activity for the lab and it “cannot lead to an overshoot in TRAC billable hours”.
 
-### Operational Overheads
+## Operational Overheads
 
 The Operational Overheads section of the document might be informative for newly established RSE teams as it outlines what in business terms would be defined mainly as enabling activities – in other words, it defines what areas of investment might be necessary to consider for a research lab to operate, to deliver high quality products and to incubate innovation in addressing research challenges or achieving research impact while fostering personal development, keeping team members motivated and networked in the wider RSE and other relevant communities.
 
@@ -124,7 +124,7 @@ The community element is recognised as another fundamental pillar of RSE – for
 
 As highlighted by others in the RSE community and recently also in relation to the Arts and Humanities RSE co-hort, continuing personal development (via training and research) and headspace for individual and collaborative experimentation are a _sine qua non_ to enable innovative research, particularly in areas that are fast-growing such as machine learning and artificial intelligence. As presented at the [RSE UK Society conference last year](https://rsecon2022.society-rse.org/), developing RSE-driven research themes (currently active and emerging ones include _Digital Creativity_; _[Indigenous Digital Humanities](/blog/indigenous-digital-humanities-research-theme-under-development/)_; _AI and Machine Learning_) is one way to achieve this.
 
-### Research Services Catalogue
+## Research Services Catalogue
 
 In this document and blogpost, following the UKRI vision that highly values Research Technology Professionals’ (RSEs included) contribution to research in a holistic manner, _service_ is understood in a wide sense beyond access to specific platforms and tools to encompass a wide range of expertise as outlined above and as it will hopefully emerge further from what follows.
 
@@ -139,7 +139,7 @@ In line with other institutions’ work in making explicit what RSE expertise ca
 
 Without describing all RSC activities in detail, some descriptions and examples follow.
 
-#### Internal Consultancy
+## Internal Consultancy
 
 1.  ### Advising A&H staff on (early) concept review
 
@@ -169,7 +169,7 @@ Without describing all RSC activities in detail, some descriptions and examples 
 
     In support of A&H and departmental strategies.
 
-#### Digital Research and Data Capacity Development
+## Digital Research and Data Capacity Development
 
 1.  ### Defining, contributing and promulgating appropriate quality standards
 
@@ -193,7 +193,7 @@ KDL team tracks time spent on all these activities; in particular, it has emerge
 
 While an optimal balance in allocating capacity for RSC activities is still far from being obtained, making this list explicit has certainly helped in identifying the team core remit as well as other areas of expertise that are secondary to KDL primary value and yet of potential benefit to enhance digital scholarship and software-intensive research. One area in particular where KDL RSE expertise might be subject to change is around contribution to educational offer, which is currently sporadic and based on ad hoc demand, but in the process of being reviewed as part of the Faculty and College educational strategies.
 
-### College Contributions
+## College Contributions
 
 The document clarifies that KDL contributes to the College digital research and data strategy and operations indirectly via all its activities described above but can also provide specific inputs, for example via participation to relevant College committees (e.g. [KCL AI Insitute](https://www.kcl.ac.uk/ai)) and working groups (whether at the operational level or to develop RSE-relevant policies), as well as development of digital research and data capacity via training or other means. Accounting for these contributions in explicit terms is another useful mechanism to benefit from RSE expertise in a holistic manner, account for workload and facilitate delegation within the team, but also, crucially, to manage demand and expectations.
 
@@ -201,7 +201,7 @@ The document clarifies that KDL contributes to the College digital research and 
 
 RSE research facilities in HEI contexts are still emerging and consolidating their remit and operations. Sharing good practices while also highlighting challenges and lessons learned is a way for the community to mature and strengthen its identity. KDL Mission and Activities document is generic in its formulation so we hope it could be of interest to RSE units managers engaged in similar efforts of communicating what their units do or can do but also to RSE team members to negotiate their workload and resources allocation based on individual development plans and talents as well as RSE-driven (research, communication and funding) strategy.
 
-### References
+## References
 
 - Link to slides for the conference presentation in [PDF](/documents/3/ciula_RSECon23-paper28_slides_3lTKY7L.pdf) and [Power Point](/documents/4/ciula_RSECon23-paper28_slides.pptx) formats.
 - A [template](https://github.com/kingsdigitallab/sdlc-for-rse/wiki/Z1:-RSE-Team-Mission-and-Activities) version of the document for others to adapt and critique.

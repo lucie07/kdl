@@ -8,7 +8,7 @@ authors:
 date: 2018-04-05
 excerpt: ""
 feature:
-  image:
+  image: /assets/images/blog/digi_emily.width-1024.jpg
   description:
 ---
 
