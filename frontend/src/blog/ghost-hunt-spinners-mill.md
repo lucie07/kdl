@@ -30,13 +30,7 @@ The Digital Ghost Hunt creates a brand new story around the history and memories
 
 Spinners Mill has many stories to tell of the people who have worked there since it opened in 1912 (including mysterious supernatural events). For this production Tom Bowtell and I used an accident from more than a hundred years ago, when the mill's great steam engine(pictured below) blew up.  We took a little dramatic license and told the story of the Mill and the people who worked there through the ghost of a worker killed in the explosion (in reality, no one died.)
 
-![Mill_Engine_3](/assets/images/blog/PHOTO-2021-10-25-13-08-59.width-300.jpg)
-
-![Mill_Engine_2](/assets/images/blog/PHOTO-2021-10-25-13-08-59_2.width-300.jpg)
-
-![Mill_Engine_1](/assets/images/blog/PHOTO-2021-10-25-13-08-58.width-300.jpg)
-
-![PHOTO-2021-10-25-13-08-57.jpg](/assets/images/blog/PHOTO-2021-10-25-13-08-57.width-300.jpg)
+![Four pictures illustrating the functioning of a steam engine machine within the premises of a factory](/assets/images/blog/themill-steamengine.jpg "The steam engine within the Mill")
 
 As we devised the show, we kept in contact with the local ambassadors, asking them questions about the building and the area, showing them drafts of the story we were building around it, and looking for ways that we could collaborate during the production.  This ensured our work was anchored in the local community, even if practicalities and COVID meant we were doing most of the writing in London.
 
@@ -46,13 +40,7 @@ Our story began in the Den theatre itself, recruiting our family audience into a
 
 What they find leads them inside the mill, to interrogate the volunteer making tea (one of our Leigh Ambassadors) about an engineer named Stanley who died in the accident.  He was blamed for the accident  until the ghost hunters uncovered a secret cache of letters, and a historical wrong against our spirit.  Together the audience sets the record straight, by rewriting an exhibit on the accident in the engine room, finally setting the ghost free.  Stanley appears to thank them, bring the old engine to life in the process.
 
-![Trash Maze](/assets/images/blog/PHOTO-2021-08-04-17-21-10.width-300.jpg)
-
-![Heritage_1](/assets/images/blog/IMG_4959.width-300.jpg)
-
-![Heritage_3](/assets/images/blog/IMG_4968.width-300.jpg)
-
-![Stanley_1](/assets/images/blog/PHOTO-2021-08-08-18-29-09_3.width-300.jpg)
+![Four photos featuring an array prop display styles and people](/assets/images/blog/themill-performance.jpg "Photos of the performance")
 
 ### Some reactions from our audience:
 
@@ -72,7 +60,7 @@ Our audience was drawn almost exclusively from Leigh and the surrounding area. 
 
 In the coming year the project is planning to do more work with early career practitioners in immersive theatre, as part of the lab's project to collaborate and support the Digital Creativity ecosystem.  As for the Ghost Hunt, the Ministry of Real Paranormal Hygiene (MORPH) is famously secretive about its work, but there is always another ghost to find, to help, and to set free.
 
-![Spinners Mill cast](/assets/images/blog/PHOTO-2021-08-08-18-29-09.width-1024.jpg)
+![A group of people standing proudly alongside a majestic steam engine](/assets/images/blog/PHOTO-2021-08-08-18-29-09.width-1024.jpg "Spinners Mill cast")
 
 The cast, dwarfed by the spectacular (and potentially dangerous) historic machinery
 

@@ -476,9 +476,9 @@ main {
     font-weight: 400;
   }
 
-  h1{
+  h1 {
     font-size: 2.2em;
-    border-bottom: 2px solid darken(lightgray,10%);
+    border-bottom: 2px solid darken(lightgray, 10%);
   }
 
   h2 {
@@ -869,7 +869,7 @@ main.projects {
 } //.project
 
 //-- Blog Index page --
-main.posts{
+main.posts {
   padding: 0 1em;
   float: left;
   width: 100%;
@@ -926,7 +926,8 @@ main.posts{
 } //main.posts
 
 //-- Blog Individual Page & FAQs --
-main.post, main.faqs {
+main.post,
+main.faqs {
   padding: 0 1em;
   float: left;
   width: 100%;
@@ -1123,7 +1124,7 @@ main.organisation {
 //-- Page Pagination --
 nav.pagination {
   margin-top: 5em;
-  border-top:  2px solid darken(lightgray,10%);
+  border-top: 2px solid darken(lightgray, 10%);
   width: 100%;
   ol {
     display: flex;
@@ -1147,8 +1148,8 @@ nav.pagination {
       &:nth-child(1),
       &:nth-child(5) {
         max-width: 3em;
-        background: lighten($navy,10%);
-        &:hover{
+        background: lighten($navy, 10%);
+        &:hover {
           background: $navy;
         }
         a {
@@ -1161,10 +1162,10 @@ nav.pagination {
       &:nth-child(2),
       &:nth-child(4) {
         max-width: 5em;
-        background: lighten($lightgray,5%);
-        border:0.05em solid lighten($lightgray,5%);
-        &:hover{
-          border:0.05em solid darken($lightgray,10%);
+        background: lighten($lightgray, 5%);
+        border: 0.05em solid lighten($lightgray, 5%);
+        &:hover {
+          border: 0.05em solid darken($lightgray, 10%);
         }
       } //&:nth-child(2), &:nth-child(4)
       &:nth-child(3) {
