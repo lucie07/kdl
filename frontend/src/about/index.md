@@ -10,4 +10,4 @@ About ...
 
 This is the about page. 
 
-Welcome to KDL. The lab space is based in VWB. 
+Welcome to KDL. The lab space is based in VWB. VWB is close to Strand campus. 
